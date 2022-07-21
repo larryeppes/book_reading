@@ -187,118 +187,21 @@ theorems-ams-extended-chap-bytype
 \begin_body
 
 \begin_layout Title
-Formulas for the Remainder Term in Taylor Series
+Infinite Series
+\end_layout
+
+\begin_layout Section
+Background
 \end_layout
 
 \begin_layout Standard
-对于任意阶可导的函数
-\begin_inset Formula $f$
-\end_inset
-
-, 可以考虑它的Taylor级数
-\begin_inset Formula 
-\[
-\sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x-a)^{n}.
-\]
-
-\end_inset
-
-Taylor级数中的前
-\begin_inset Formula $n$
-\end_inset
-
-阶部分和称为函数
-\begin_inset Formula $f$
-\end_inset
-
-在点
-\begin_inset Formula $a$
-\end_inset
-
-处的
-\begin_inset Formula $n$
-\end_inset
-
-次Taylor多项式
-\begin_inset Formula 
-\[
-T_{n}(x)=f(a)+\frac{f'(a)}{1!}(x-a)+\frac{f''(a)}{2!}(x-a)^{2}+\cdots+\frac{f^{(n)}(a)}{n!}(x-a)^{n}.
-\]
-
-\end_inset
-
-记
-\begin_inset Formula 
-\[
-f(x)=T_{n}(x)+R_{n}(x),
-\]
-
-\end_inset
-
-其中
-\begin_inset Formula $R_{n}(x)$
-\end_inset
-
-称为Taylor级数的余项.
-\end_layout
-
-\begin_layout Theorem
-若
-\begin_inset Formula $a\in I$
-\end_inset
-
-为开区间, 
-\begin_inset Formula $f\in C^{n+1}(I)$
-\end_inset
-
-, 则
-\begin_inset Formula 
-\[
-R_{n}(x)=\frac{1}{n!}\int_{a}^{x}(x-t)^{n}f^{(n+1)}(t)\ud t.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-这个定理的数学归纳法证明是容易的, 略.
- 
+Berkeley Math Circle
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-TODO: 积分型余项的分部积分法证明
+TODO: 查查看
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Theorem
-(Weighted Mean Value Theorem for Integrals) 若
-\begin_inset Formula $f,g\in C[a,b]$
-\end_inset
-
-, 且
-\begin_inset Formula $g$
-\end_inset
-
-在
-\begin_inset Formula $[a,b]$
-\end_inset
-
-上不变号, 则存在
-\begin_inset Formula $c\in[a,b]$
-\end_inset
-
-使得
-\begin_inset Formula 
-\[
-\int_{a}^{b}f(x)g(x)\ud x=f(c)\int_{a}^{b}g(x)\ud x.
-\]
 
 \end_inset
 
@@ -306,50 +209,159 @@ TODO: 积分型余项的分部积分法证明
 \end_layout
 
 \begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
+Jocob Bernoulli的书Tractatus De Seriebus Infinitis有没有英文版?
 \end_layout
 
-\begin_layout Theorem
-设
-\begin_inset Formula $I$
+\begin_layout Standard
+Polya的书Mathematics and Plausible Reasoning.
+\end_layout
+
+\begin_layout Standard
+E.
+ L.
+ Stark在Mathematics Magazin, 47 (1974) pp 197-202列出的参考文献.
+\end_layout
+
+\begin_layout Standard
+G.
+ Chrystal在Textbook of Algebra的注记, 1889.
+\end_layout
+
+\begin_layout Section
+Geometric Series
+\end_layout
+
+\begin_layout Standard
+序列收敛于实数
+\begin_inset Formula $L$
 \end_inset
 
-为开区间, 若
-\begin_inset Formula $f\in C^{n+1}(I)$
+, iff, 序列中只有有限项在以
+\begin_inset Formula $L$
 \end_inset
 
-, 
-\begin_inset Formula $a,x\in I$
+为中点的任何区间外.
+\end_layout
+
+\begin_layout Standard
+换句话说, 对于任何给定的以
+\begin_inset Formula $L$
 \end_inset
 
-, 则在
-\begin_inset Formula $a$
+为中心的区间, 序列从某一项之后总是落在区间内.
+\end_layout
+
+\begin_layout Standard
+每个有界实数集总有最小上界和最大下界.
+ 这是紧性性质, 有理数集没有紧性.
+\end_layout
+
+\begin_layout Standard
+一个级数收敛, iff, 序列的部分和收敛.
+\end_layout
+
+\begin_layout Exercise
+(Mandelbrot Competition March 2002)
+\end_layout
+
+\begin_layout Exercise
+Find 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{F_{n}}{3^{n}}$
 \end_inset
 
-和
-\begin_inset Formula $x$
+, where 
+\begin_inset Formula $F_{n}$
 \end_inset
 
-之间存在
-\begin_inset Formula $c$
+ is the 
+\begin_inset Formula $n$
 \end_inset
 
-使得
-\begin_inset Formula 
-\[
-R_{n}(x)=\frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}.
-\]
+-th Fibonacci number.
+\end_layout
 
+\begin_layout Section
+Telescoping Series
+\end_layout
+
+\begin_layout Standard
+可以裂项的级数
+\end_layout
+
+\begin_layout Section
+Maclaurin Series
+\end_layout
+
+\begin_layout Section
+Harmonic Series
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $p$
+\end_inset
+
+-Series and the Exact Value of 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{2}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-上面定理的余项公式通常称为Lagrange型余项.
+\begin_inset Formula $p$
+\end_inset
+
+-Series就是Riemann 
+\begin_inset Formula $\zeta$
+\end_inset
+
+函数.
+\end_layout
+
+\begin_layout Exercise
+Find the ratio of 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{p}}$
+\end_inset
+
+ to 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^{p}}$
+\end_inset
+
+, where 
+\begin_inset Formula $p>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Formula 
+\begin{align*}
+\frac{\sum_{n=1}^{\infty}\frac{1}{n^{p}}}{\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^{p}}} & =\frac{\sum_{n=1}^{\infty}\frac{1}{n^{p}}}{\sum_{n\text{ odd}}\frac{1}{n^{p}}-\sum_{n\text{ even}}\frac{1}{n^{p}}}\\
+ & =\frac{\zeta(p)}{\sum_{n\text{ odd}}\frac{1}{n^{p}}-\frac{1}{2^{p}}\zeta(p)}\\
+ & =\frac{\zeta(p)}{\zeta(p)-\frac{1}{2^{p-1}}\zeta(p)}=\frac{2^{p-1}}{2^{p-1}-1}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+References
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
