@@ -1,0 +1,2676 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+
+\DeclareMathOperator{\sech}{sech}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+度量空间及其拓扑
+\end_layout
+
+\begin_layout Paragraph
+定义1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X$
+\end_inset
+
+是某个集合, 
+\begin_inset Formula $d:X\times X\to\RR$
+\end_inset
+
+是一个二元映射, 满足
+\end_layout
+
+\begin_layout Standard
+(1).
+ 
+\begin_inset Formula $d(x,y)\ge0$
+\end_inset
+
+; 
+\begin_inset Formula $d(x,y)=0$
+\end_inset
+
+, iff, 
+\begin_inset Formula $x=y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(2).
+ 
+\begin_inset Formula $d(x,y)=d(y,x)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(3).
+ 
+\begin_inset Formula $d(x,z)\le d(x,y)+d(y,z)$
+\end_inset
+
+, (三角不等式).
+\end_layout
+
+\begin_layout Standard
+则称
+\begin_inset Formula $d$
+\end_inset
+
+是
+\begin_inset Formula $X$
+\end_inset
+
+上的度量函数, 距离函数, 称
+\begin_inset Formula $X$
+\end_inset
+
+为度量空间, 距离空间, 记为
+\begin_inset Formula $(X,d)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+度量空间的子集合
+\begin_inset Formula $E$
+\end_inset
+
+, 仍以
+\begin_inset Formula $d$
+\end_inset
+
+为
+\begin_inset Formula $E$
+\end_inset
+
+上的度量, 构成的度量空间称为
+\begin_inset Formula $(X,d)$
+\end_inset
+
+的子空间.
+\end_layout
+
+\begin_layout Paragraph
+例1
+\end_layout
+
+\begin_layout Standard
+对于
+\begin_inset Formula $\RR^{n}$
+\end_inset
+
+中的点
+\begin_inset Formula $x=(x_{1},\cdots,x_{n})$
+\end_inset
+
+和
+\begin_inset Formula $y=(y_{1},\cdots,y_{n})$
+\end_inset
+
+, 定义
+\begin_inset Formula 
+\[
+d(x,y)=\left(\sum_{i=1}^{n}\left|x_{i}-y_{i}\right|^{2}\right)^{1/2},
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $d$
+\end_inset
+
+是
+\begin_inset Formula $\RR^{n}$
+\end_inset
+
+上的度量函数, 记此空间为
+\begin_inset Formula $(\RR^{n},d)$
+\end_inset
+
+, 称为
+\begin_inset Formula $n$
+\end_inset
+
+维欧式空间.
+\end_layout
+
+\begin_layout Standard
+在
+\begin_inset Formula $\RR^{n}$
+\end_inset
+
+ 上定义的其它度量有, 如
+\begin_inset Formula $d_{1}(x,y)=\max_{i}\left|x_{i}-y_{i}\right|$
+\end_inset
+
+, 
+\begin_inset Formula $(\RR^{n},d_{1})$
+\end_inset
+
+仍是度量空间.
+\end_layout
+
+\begin_layout Paragraph
+例2
+\end_layout
+
+\begin_layout Standard
+空间
+\begin_inset Formula $s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+对线性空间
+\begin_inset Formula $\RR^{\infty}$
+\end_inset
+
+中两点
+\begin_inset Formula $x=(x_{n})$
+\end_inset
+
+和
+\begin_inset Formula $y=(y_{n})$
+\end_inset
+
+定义
+\begin_inset Formula 
+\[
+d(x,y)=\sum_{i=1}^{\infty}\frac{1}{2^{i}}\frac{\left|x_{i}-y_{i}\right|}{1+\left|x_{i}-y_{i}\right|}
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $d$
+\end_inset
+
+是度量函数, 记此空间为
+\begin_inset Formula $s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证
+\end_layout
+
+\begin_layout Standard
+(1).
+ 显然 
+\begin_inset Formula $d(x,y)\geq0$
+\end_inset
+
+.
+ 若 
+\begin_inset Formula $d(x,y)=0$
+\end_inset
+
+, 则必有 
+\begin_inset Formula $\left|x_{i}-y_{i}\right|=0$
+\end_inset
+
+, 即 
+\begin_inset Formula $x_{i}=y_{i}$
+\end_inset
+
+, (
+\begin_inset Formula $i=1,2,\cdots$
+\end_inset
+
+), 故 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(2).
+ 
+\begin_inset Formula $d(x,y)=d(y,x)$
+\end_inset
+
+ 显然.
+\end_layout
+
+\begin_layout Standard
+(3).
+ 考虑函数 
+\begin_inset Formula $f(t)=\frac{t}{1+t}$
+\end_inset
+
+, 
+\begin_inset Formula $t\geq0$
+\end_inset
+
+.
+ 由于 
+\begin_inset Formula $f(t)$
+\end_inset
+
+ 的递增性, 对于任意实数 
+\begin_inset Formula $a,b$
+\end_inset
+
+, 由 
+\begin_inset Formula $|a+b|\leq|a|+|b|$
+\end_inset
+
+ 得到 
+\begin_inset Formula 
+\[
+\frac{|a+b|}{1+|a+b|}\leq\frac{|a|+|b|}{1+|a+b|}\leq\frac{|a|}{1+|a|}+\frac{|b|}{1+|b|}
+\]
+
+\end_inset
+
+所以 
+\begin_inset Formula 
+\[
+\begin{aligned}d(x,z) & =\sum_{i=1}^{\infty}\frac{1}{2^{i}}\frac{\left|x_{i}-z_{i}\right|}{1+\left|x_{i}-z_{i}\right|}\\
+ & =\sum_{i=1}^{\infty}\frac{1}{2^{i}}\frac{\left|x_{i}-y_{i}+y_{i}-z_{i}\right|}{1+\left|x_{i}-y_{i}+y_{i}-z_{i}\right|}\\
+ & \leq\sum_{i=1}^{\infty}\frac{1}{2^{i}}\left(\frac{\left|x_{i}-y_{i}\right|}{1+\left|x_{i}-y_{i}\right|}+\frac{\left|y_{i}-z_{i}\right|}{1+\left|y_{i}-z_{i}\right|}\right)\\
+ & =d(x,y)+d(y,z).
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例3
+\end_layout
+
+\begin_layout Standard
+空间
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+是区间
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数全体, 对于
+\begin_inset Formula $x,y\in C[a,b]$
+\end_inset
+
+, 定义
+\begin_inset Formula 
+\[
+d(x,y)=\max_{t\in[a,b]}\left|x(t)-y(t)\right|.
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $d$
+\end_inset
+
+是
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+上的度量函数.
+\end_layout
+
+\begin_layout Standard
+(1).
+ 
+\begin_inset Formula $d(x,y)\geq0$
+\end_inset
+
+.
+ 若 
+\begin_inset Formula $d(x,y)=0$
+\end_inset
+
+, 则 
+\begin_inset Formula $\forall t\in[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $x(t)=y(t)$
+\end_inset
+
+, 故 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(2).
+ 显然 
+\begin_inset Formula $d(x,y)=d(y,x)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(3).
+ 
+\begin_inset Formula 
+\[
+\begin{aligned}d(x,z) & =\max_{a\leq t\leq b}|x(t)-z(t)|\\
+ & \leq\max_{a\leq t\leq b}\left(|x(t)-y(t)|+|y(t)-z(t)|\right)\\
+ & \leq\max_{a\leq t\leq b}|x(t)-y(t)|+\max_{a\leq t\leq b}|y(t)-z(t)|\\
+ & =d(x,y)+d(y,z)
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+ 是度量空间.
+\end_layout
+
+\begin_layout Paragraph
+定义2
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $(X,d)$
+\end_inset
+
+是度量空间, 
+\begin_inset Formula $E\subseteq X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(1) 称
+\begin_inset Formula 
+\[
+\mathrm{diam}E=\sup\left\{ d(x,y):x,y\in E\right\} 
+\]
+
+\end_inset
+
+是
+\begin_inset Formula $E$
+\end_inset
+
+的直径, 若
+\begin_inset Formula $\mathrm{diam}E<\infty$
+\end_inset
+
+, 称
+\begin_inset Formula $E$
+\end_inset
+
+是有界集.
+\end_layout
+
+\begin_layout Standard
+(2) 对于
+\begin_inset Formula $x_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 若
+\begin_inset Formula 
+\[
+d(x_{n},x)\to0,\qquad n\to\infty
+\]
+
+\end_inset
+
+称
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+, 记为
+\begin_inset Formula $\lim_{n\to\infty}x_{n}=x$
+\end_inset
+
+或
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定理1.
+ 
+\end_layout
+
+\begin_layout Standard
+度量空间中序列的极限是唯一的, 收敛序列的元素构成有界集.
+\end_layout
+
+\begin_layout Paragraph
+证
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+, 
+\begin_inset Formula $y_{n}\to y$
+\end_inset
+
+, 即
+\begin_inset Formula 
+\[
+d\left(x_{n},x\right)\rightarrow0,\quad d\left(x_{n},y\right)\rightarrow0,\quad(n\rightarrow\infty),
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+0\leq d(x,y)\leq d\left(x_{n},x\right)+d\left(x_{n},y\right)\rightarrow0,\quad(n\rightarrow\infty).
+\]
+
+\end_inset
+
+故
+\begin_inset Formula $d(x,y)=0$
+\end_inset
+
+, 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定理2
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $d(x,y)\in C(X^{2})$
+\end_inset
+
+, 即当
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+, 
+\begin_inset Formula $y_{n}\to y$
+\end_inset
+
+时,
+\begin_inset Formula 
+\[
+d(x_{n},y_{n})\to d(x,y).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证:
+\begin_inset Formula 
+\[
+\begin{aligned}\left|d\left(x_{n},y_{n}\right)-d(x,y)\right| & \leq\left|d\left(x_{n},y_{n}\right)-d\left(y_{n},x\right)\right|+\left|d\left(y_{n},x\right)-d(x,y)\right|\\
+ & \leq d\left(x_{n},x\right)+d\left(y_{n},y\right)\rightarrow0.\qquad n\to\infty.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例4
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X$
+\end_inset
+
+是任一点集, 定义
+\begin_inset Formula 
+\[
+d(x,y)=\left\{ \begin{array}{ll}
+0, & x=y,\\
+1, & x\neq y
+\end{array}\quad\forall x,y\in X\right.
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $(X,d)$
+\end_inset
+
+是度量空间, 称为离散度量空间.
+\end_layout
+
+\begin_layout Standard
+上例说明, 对于任一点集
+\begin_inset Formula $X$
+\end_inset
+
+, 可以在
+\begin_inset Formula $X$
+\end_inset
+
+上定义度量函数, 使其称为度量空间, 但研究度量空间的目的是研究空间的性质, 用于解决实际问题, 因此我们通常关心的是与空间的某种性质紧密联系的度量函数.
+\end_layout
+
+\begin_layout Paragraph
+命题2
+\end_layout
+
+\begin_layout Standard
+在
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+中, 
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+, iff, 
+\begin_inset Formula $x_{n}(t)\rightrightarrows x(t)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例5
+\end_layout
+
+\begin_layout Standard
+空间
+\begin_inset Formula $S$
+\end_inset
+
+.
+ 设
+\begin_inset Formula $(\Omega,\Sigma,\mu)$
+\end_inset
+
+是有限测度空间, 
+\begin_inset Formula $\mu(\Omega)<\infty$
+\end_inset
+
+, 关于
+\begin_inset Formula $\Sigma$
+\end_inset
+
+可测的函数全体记为
+\begin_inset Formula $S$
+\end_inset
+
+, 定义
+\begin_inset Formula 
+\[
+d(x,y)=\int_{\Omega}\frac{|x(t)-y(t)|}{1+|x(t)-y(t)|}\mathrm{d}\mu,\quad x,y\in S
+\]
+
+\end_inset
+
+将
+\begin_inset Formula $S$
+\end_inset
+
+中关于
+\begin_inset Formula $\mu$
+\end_inset
+
+几乎处处相等的函数视为同一元.
+ 则
+\begin_inset Formula $(S,d)$
+\end_inset
+
+是度量空间.
+\end_layout
+
+\begin_layout Paragraph
+命题3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(S,d)$
+\end_inset
+
+中, 
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+, iff, 
+\begin_inset Formula $x_{n}\stackrel{m}{\to}x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\sigma>0$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\mu\left(\left\{ t,\left|x_{n}(t)-x(t)\right|\geq\sigma\right\} \right)=0\eqqcolon\lim_{n\rightarrow\infty}\mu(E_{n}(\sigma)).
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+\begin{aligned}d\left(x_{n},x\right) & =\int_{E_{n}(\sigma)}\frac{\left|x_{n}(t)-x(t)\right|}{1+\left|x_{n}(t)-x(t)\right|}\mathrm{d}\mu+\int_{\Omega\setminus E_{n}(\sigma)}\frac{\left|x_{n}(t)-x(t)\right|}{1+\left|x_{n}(t)-x(t)\right|}\mathrm{d}\mu\\
+ & \leq\mu\left(E_{n}(\sigma)\right)+\frac{\sigma}{1+\sigma}\mu(\Omega).
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\Omega$
+\end_inset
+
+是有限测度空间, 
+\begin_inset Formula $d(x_{n},x)\to0$
+\end_inset
+
+, 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\forall\sigma>0$
+\end_inset
+
+, 
+\begin_inset Formula $E_{n}(\sigma)\coloneqq\left\{ t,\left|x_{n}(t)-x(t)\right|\geq\sigma\right\} $
+\end_inset
+
+, 由于
+\begin_inset Formula 
+\[
+\frac{\sigma}{1+\sigma}\mu\left(E_{n}(\sigma)\right)\leq\int_{E_{n}(\sigma)}\frac{\left|x_{n}(t)-x(t)\right|}{1+\left|x_{n}(t)-x(t)\right|}\mathrm{d}\mu\leq d\left(x_{n},x\right)\to0,\qquad n\to\infty.
+\]
+
+\end_inset
+
+故
+\begin_inset Formula $\mu\left(E_{n}(\sigma)\right)\to0$
+\end_inset
+
+, 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+ex1.
+ 
+\end_layout
+
+\begin_layout Standard
+空间
+\begin_inset Formula $s$
+\end_inset
+
+中依度量
+\begin_inset Formula $d$
+\end_inset
+
+收敛, iff, 依坐标收敛.
+\end_layout
+
+\begin_layout Paragraph
+ex2.
+\end_layout
+
+\begin_layout Standard
+证明: 当
+\begin_inset Formula $d$
+\end_inset
+
+是
+\begin_inset Formula $X$
+\end_inset
+
+上的度量时, 
+\begin_inset Formula $\min\left\{ d,1\right\} $
+\end_inset
+
+与
+\begin_inset Formula $\frac{d}{1+d}$
+\end_inset
+
+也是.
+\end_layout
+
+\begin_layout Standard
+同时是线性又是度量的空间称为线性度量空间, 假设加法和数乘关于此度量连续.
+\end_layout
+
+\begin_layout Paragraph
+定义3
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ 是度量空间.
+ 
+\end_layout
+
+\begin_layout Standard
+(1) 若 
+\begin_inset Formula $x_{0}\in X$
+\end_inset
+
+, 
+\begin_inset Formula $r>0$
+\end_inset
+
+, 称 
+\begin_inset Formula 
+\[
+\begin{aligned}B\left(x_{0},r\right) & =\left\{ x\in X;d\left(x,x_{0}\right)<r\right\} ,\\
+\overline{B}\left(x_{0},r\right) & =\left\{ x\in X;d\left(x,x_{0}\right)\leq r\right\} ,
+\end{aligned}
+\]
+
+\end_inset
+
+分别是以 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 为中心, 
+\begin_inset Formula $r$
+\end_inset
+
+ 为半径的球和闭球.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 集合 
+\begin_inset Formula $B\subseteq X$
+\end_inset
+
+ 称为开集, 若 
+\begin_inset Formula $\forall x\in B$
+\end_inset
+
+, 存在 
+\begin_inset Formula $r_{x}>0$
+\end_inset
+
+, 使得 
+\begin_inset Formula $B\left(x_{0},r\right)\subset B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(3) 包含 
+\begin_inset Formula $x$
+\end_inset
+
+ 的任一开集称为 
+\begin_inset Formula $x$
+\end_inset
+
+ 的邻域.
+ 
+\end_layout
+
+\begin_layout Standard
+(4) 集合 
+\begin_inset Formula $E\subset X$
+\end_inset
+
+ 称为闭集, 若 
+\begin_inset Formula $X\backslash E$
+\end_inset
+
+ 为开集.
+\end_layout
+
+\begin_layout Paragraph
+引理
+\end_layout
+
+\begin_layout Standard
+球
+\begin_inset Formula $B(x_{0},r)$
+\end_inset
+
+, (
+\begin_inset Formula $r>0$
+\end_inset
+
+), 是开集.
+\end_layout
+
+\begin_layout Paragraph
+证
+\end_layout
+
+\begin_layout Standard
+对于任意的 
+\begin_inset Formula $y\in B\left(x_{0},r\right)$
+\end_inset
+
+, 取 
+\begin_inset Formula $r^{\prime}=r-d\left(y,x_{0}\right)>0$
+\end_inset
+
+, 则 
+\begin_inset Formula $\forall z\in B\left(y,r^{\prime}\right)$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+d\left(z,x_{0}\right)\leq d(z,y)+d\left(y,x_{0}\right)<r^{\prime}+d\left(y,x_{0}\right)=r,
+\]
+
+\end_inset
+
+故 
+\begin_inset Formula $z\in B\left(x_{0},r\right)$
+\end_inset
+
+.
+ 即 
+\begin_inset Formula $B\left(y,r^{\prime}\right)\subset B\left(x_{0},r\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定理3
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X$
+\end_inset
+
+是度量空间, 则
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+与
+\begin_inset Formula $X$
+\end_inset
+
+是开集.
+\end_layout
+
+\begin_layout Standard
+(2) 任意多个开集之并是开集.
+\end_layout
+
+\begin_layout Standard
+(3) 有限个开集之交是开集.
+\end_layout
+
+\begin_layout Standard
+设有集合 
+\begin_inset Formula $X$
+\end_inset
+
+ 的子集族 
+\begin_inset Formula $\left\{ B_{\lambda},\lambda\in A\right\} $
+\end_inset
+
+, 若空集 
+\begin_inset Formula $\varnothing$
+\end_inset
+
+ 与 
+\begin_inset Formula $X$
+\end_inset
+
+ 都属于该集族, 且该集族中的集合对于任意并和有限交封闭, 则称 
+\begin_inset Formula $\left\{ B_{\lambda},\lambda\in\Lambda\right\} $
+\end_inset
+
+ 是 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的拓扑, 称 
+\begin_inset Formula $X$
+\end_inset
+
+ 是拓扑空间.
+ 每个 
+\begin_inset Formula $B_{\lambda}$
+\end_inset
+
+ 都称为是该空间中的一个开集.
+\end_layout
+
+\begin_layout Standard
+度量空间是一个拓扑空间.
+\end_layout
+
+\begin_layout Paragraph
+定义4
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X$
+\end_inset
+
+是度量空间, 
+\begin_inset Formula $E\subseteq X$
+\end_inset
+
+, 
+\begin_inset Formula $x_{0}\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(1).
+ 若存在
+\begin_inset Formula $r>0$
+\end_inset
+
+, 使
+\begin_inset Formula $B(x_{0},r)\subseteq E$
+\end_inset
+
+, 称
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是
+\begin_inset Formula $E$
+\end_inset
+
+的内点, 
+\begin_inset Formula $E$
+\end_inset
+
+的内点全体称为
+\begin_inset Formula $E$
+\end_inset
+
+的内部, 记为
+\begin_inset Formula $E^{\circ}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(2).
+ 若存在
+\begin_inset Formula $r>0$
+\end_inset
+
+, 使
+\begin_inset Formula $B(x_{0},r)\cap E=\emptyset$
+\end_inset
+
+, 称
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是
+\begin_inset Formula $E$
+\end_inset
+
+的外点, 
+\begin_inset Formula $E$
+\end_inset
+
+的外点全体记为
+\begin_inset Formula $E^{e}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(3) 若 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $B\left(x_{0},\varepsilon\right)\cap E\neq\varnothing$
+\end_inset
+
+, 称
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是 
+\begin_inset Formula $E$
+\end_inset
+
+ 的接触点.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ 的接触点全体称为 
+\begin_inset Formula $E$
+\end_inset
+
+ 的闭包, 记为 
+\begin_inset Formula $\overline{E}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(4) 若 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $B\left(x_{0},\varepsilon\right)\cap\left(E\backslash\left\{ x_{0}\right\} \right)\neq\varnothing$
+\end_inset
+
+, 称 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 是 
+\begin_inset Formula $E$
+\end_inset
+
+ 的聚点.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ 的聚点全体记为 
+\begin_inset Formula $E^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+命题4
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\overline{E}\cup E^{e}=X$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{E}\cap E'=\varnothing$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{E}=E\cup E^{\prime}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $x_{0}\in\overline{E}$
+\end_inset
+
+ 当且仅当存在 
+\begin_inset Formula $x_{n}\in E$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}\rightarrow x_{0}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $x_{0}\in E^{\prime}$
+\end_inset
+
+ 当且仅当存在 
+\begin_inset Formula $x_{n}\in E$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}\neq x_{0}$
+\end_inset
+
+ 使得 
+\begin_inset Formula $x_{n}\rightarrow x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定理4
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $X$
+\end_inset
+
+ 是度量空间, 
+\begin_inset Formula $E\subseteq X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $E$
+\end_inset
+
+ 为开集当且仅当 
+\begin_inset Formula $E=E^{\circ}$
+\end_inset
+
+, 
+\begin_inset Formula $E^{\circ}$
+\end_inset
+
+ 是包含在 
+\begin_inset Formula $E$
+\end_inset
+
+ 中的最大开集.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $E$
+\end_inset
+
+ 为闭集当且仅当 
+\begin_inset Formula $E=\overline{E}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{E}$
+\end_inset
+
+ 是包含 
+\begin_inset Formula $E$
+\end_inset
+
+ 的最小闭集.
+ 
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $E$
+\end_inset
+
+ 为闭集当且仅当任何 
+\begin_inset Formula $x_{n}\in E$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}\rightarrow x_{0}$
+\end_inset
+
+, 则 
+\begin_inset Formula $x_{0}\in E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证明
+\end_layout
+
+\begin_layout Standard
+1.
+ 若
+\begin_inset Formula $E$
+\end_inset
+
+是开集, 
+\begin_inset Formula $\forall x_{0}\in E$
+\end_inset
+
+, 存在
+\begin_inset Formula $r>0$
+\end_inset
+
+, 使得
+\begin_inset Formula $B(x_{0},r)\subseteq E$
+\end_inset
+
+.
+ 从而
+\begin_inset Formula $x_{0}\in E^{\circ}$
+\end_inset
+
+, 故
+\begin_inset Formula $E\subset E^{\circ}$
+\end_inset
+
+, 显然 
+\begin_inset Formula $E^{\circ}\subseteq E$
+\end_inset
+
+, 所以 
+\begin_inset Formula $E=E^{\circ}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+反之若 
+\begin_inset Formula $E=E^{\circ}$
+\end_inset
+
+.
+ 只须证明 
+\begin_inset Formula $E^{\circ}$
+\end_inset
+
+ 为开集.
+ 
+\begin_inset Formula $x_{0}\in E^{\circ}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 为 
+\begin_inset Formula $E$
+\end_inset
+
+ 的内点, 故存在 
+\begin_inset Formula $r>0$
+\end_inset
+
+, 
+\begin_inset Formula $B(x_{0},r)\subseteq E$
+\end_inset
+
+.
+ 由引理, 
+\begin_inset Formula $B(x_{0},r)$
+\end_inset
+
+为开集, 故其中没一点
+\begin_inset Formula $z\in B(x_{0},r)$
+\end_inset
+
+是
+\begin_inset Formula $B(x_{0},r)$
+\end_inset
+
+的内点, 从而是
+\begin_inset Formula $E$
+\end_inset
+
+的内点.
+\end_layout
+
+\begin_layout Standard
+若 
+\begin_inset Formula $G$
+\end_inset
+
+ 为开集, 
+\begin_inset Formula $G\subset E$
+\end_inset
+
+, 显然 
+\begin_inset Formula $G^{\circ}\subset E^{\circ}$
+\end_inset
+
+, 由以上所证 
+\begin_inset Formula $G=G^{\circ}\subset E^{\circ}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ 对于任一集合 
+\begin_inset Formula $E\subset X$
+\end_inset
+
+, 由定义可以得出, 
+\begin_inset Formula $E$
+\end_inset
+
+ 的外点等于 
+\begin_inset Formula $E$
+\end_inset
+
+ 的余集的内点, 即 
+\begin_inset Formula $(X\backslash E)^{\circ}=X\backslash\overline{E}$
+\end_inset
+
+.
+ 若 
+\begin_inset Formula $E$
+\end_inset
+
+ 闭, 则 
+\begin_inset Formula $X\backslash E$
+\end_inset
+
+ 开, 由 1 知道 
+\begin_inset Formula $X\backslash E=(X\backslash\overline{E})^{\circ}=X\backslash\overline{E}$
+\end_inset
+
+, 从而 
+\begin_inset Formula $E=\overline{E}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+反之若 
+\begin_inset Formula $E=\overline{E}$
+\end_inset
+
+, 则 
+\begin_inset Formula $X\backslash E=X\backslash\overline{E}=(X\backslash E)^{\circ}$
+\end_inset
+
+ 是开集, 从而 
+\begin_inset Formula $E$
+\end_inset
+
+ 是闭集.
+\end_layout
+
+\begin_layout Standard
+3.
+ 用命题4.
+\end_layout
+
+\begin_layout Paragraph
+定义 5
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $X$
+\end_inset
+
+ 为线性空间, 若 
+\begin_inset Formula $p:X\rightarrow\RR$
+\end_inset
+
+ 是一个映射, 使得 
+\begin_inset Formula $\forall x,y\in X$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha\in\RR$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $p(x)\geq0$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $p(\alpha x)=|\alpha|p(x)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $p(x+y)\leq p(x)+p(y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+则称 
+\begin_inset Formula $p$
+\end_inset
+
+ 是 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的半范数.
+ 若还有 
+\end_layout
+
+\begin_layout Standard
+(4) 
+\begin_inset Formula $p(x)=0$
+\end_inset
+
+, 则 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+称 
+\begin_inset Formula $p$
+\end_inset
+
+ 是 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的范数.
+ 此时记 
+\begin_inset Formula $p(x)=\|x\|$
+\end_inset
+
+, 称 
+\begin_inset Formula $(X,\|\cdot\|)$
+\end_inset
+
+ 是线性赋范空间.
+ 在不至于混淆时记 
+\begin_inset Formula $(X,\|\cdot\|)$
+\end_inset
+
+ 为 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定理 5
+\end_layout
+
+\begin_layout Standard
+(1) 线性赋范空间是度量空间, 并且 
+\begin_inset Formula 
+\[
+d(x,y)=\|x-y\|
+\]
+
+\end_inset
+
+是此空间上的度量函数.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 范数关于变元 
+\begin_inset Formula $x$
+\end_inset
+
+ 是连续函数, 即若 
+\begin_inset Formula $x_{n}\rightarrow x$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+\norm{x_{n}}\rightarrow\|x\|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(3) 若 
+\begin_inset Formula $x_{n},y_{n},x,y\in X$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{n},\lambda\in\RR$
+\end_inset
+
+, 并且 
+\begin_inset Formula $x_{n}\rightarrow x$
+\end_inset
+
+, 
+\begin_inset Formula $y_{n}\rightarrow y$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{n}\rightarrow\lambda$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+x_{n}+y_{n}\rightarrow x+y,\ \lambda_{n}x_{n}\rightarrow\lambda x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明
+\end_layout
+
+\begin_layout Standard
+(2) 在定义中零
+\begin_inset Formula $\alpha=-1$
+\end_inset
+
+, 有
+\begin_inset Formula $\norm{-x}=\norm{x}$
+\end_inset
+
+.
+ 再由三角不等式
+\begin_inset Formula 
+\[
+\norm{x_{n}}\le\norm{x}+\norm{x_{n}-x},
+\]
+
+\end_inset
+
+或者
+\begin_inset Formula 
+\[
+\norm{x_{n}}-\|x\|\leq\norm{x_{n}-x},
+\]
+
+\end_inset
+
+同样地
+\begin_inset Formula 
+\[
+\norm{x}-\norm{x_{n}}\le\norm{x-x_{n}}=\norm{x_{n}-x},
+\]
+
+\end_inset
+
+从而
+\begin_inset Formula 
+\[
+\left|\norm{x_{n}}-\norm{x}\right|\le\norm{x_{n}-x},
+\]
+
+\end_inset
+
+若
+\begin_inset Formula $x_{n}\to x$
+\end_inset
+
+, 即
+\begin_inset Formula $\norm{x_{n}-x}\to0$
+\end_inset
+
+, 所以
+\begin_inset Formula $\norm{x_{n}}\to\norm{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(3) 若 
+\begin_inset Formula $x_{n}\rightarrow x$
+\end_inset
+
+, 
+\begin_inset Formula $y_{n}\rightarrow y$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+\norm{\left(x_{n}+y_{n}\right)-(x+y)}\leq\norm{x_{n}-x}+\norm{y_{n}-y}\rightarrow0,
+\]
+
+\end_inset
+
+即 
+\begin_inset Formula $x_{n}+y_{n}\rightarrow x+y$
+\end_inset
+
+.
+ 为证后面的式子成立, 注意到收敛数列 
+\begin_inset Formula $\lambda_{n}$
+\end_inset
+
+ 是有界的, 不妨设 
+\begin_inset Formula $\left|\lambda_{n}\right|\leq M$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+\begin{aligned}\norm{\lambda_{n}x_{n}-\lambda x} & \leq\norm{\lambda_{n}x_{n}-\lambda_{n}x}+\norm{\lambda_{n}x-\lambda x}\\
+ & \leq\left|\lambda_{n}\right|\norm{x_{n}-x}+\left|\lambda_{n}-\lambda\right|\|x\|\\
+ & \leq M\norm{x_{n}-x}+\left|\lambda_{n}-\lambda\right|\|x\|
+\end{aligned}
+\]
+
+\end_inset
+
+当 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ 时后面两项都趋于 0 , 故知结论成立.
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $(X,\|\cdot\|)$
+\end_inset
+
+ 是线性赋范空间, 以 
+\begin_inset Formula 
+\[
+d(x,y)=\|x-y\|
+\]
+
+\end_inset
+
+定义的 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的度量称为是由范数 
+\begin_inset Formula $\|\cdot\|$
+\end_inset
+
+ 诱导的度量.
+ 线性赋范空间是线性度量空间.
+ 此时 
+\begin_inset Formula $x_{n}\rightarrow x$
+\end_inset
+
+ 当且仅当 
+\begin_inset Formula 
+\[
+\left\Vert x_{n}-x\right\Vert \rightarrow0.
+\]
+
+\end_inset
+
+称这种收敛是依范数收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+集合 
+\begin_inset Formula $E\subset X$
+\end_inset
+
+ 有界, 当且仅当 
+\begin_inset Formula $\sup\{\|x\|:x\in E\}<\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定理 6
+\end_layout
+
+\begin_layout Standard
+线性空间 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的度量 
+\begin_inset Formula $d$
+\end_inset
+
+ 使得 
+\begin_inset Formula $X$
+\end_inset
+
+ 成为线性赋范空间, 当且仅当 
+\begin_inset Formula $d$
+\end_inset
+
+ 满足
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $d(\alpha x,0)=|\alpha|d(x,0)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha\in\RR$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $d(x+z,y+z)=d(x,y)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x,y,z\in X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+证明
+\end_layout
+
+\begin_layout Standard
+若 
+\begin_inset Formula $X$
+\end_inset
+
+ 是线性赋范空间, 
+\begin_inset Formula $\|\cdot\|$
+\end_inset
+
+ 为其范数, 
+\begin_inset Formula $d(x,y)=\|x-y\|$
+\end_inset
+
+, 由范数的性质可知 
+\begin_inset Formula 
+\[
+\begin{aligned}d(\alpha x,0) & =\|\alpha x\|=|\alpha|\|x\|=|\alpha|d(x,0),\\
+d(x+z,y+z) & =\|(x+z)-(y+z)\|=\|x-y\|=d(x,y).
+\end{aligned}
+\]
+
+\end_inset
+
+反之, 若 
+\begin_inset Formula $d$
+\end_inset
+
+ 满足条件 (1)，(2), 定义 
+\begin_inset Formula $\|x\|=d(x,0)$
+\end_inset
+
+, 则 
+\end_layout
+
+\begin_layout Standard
+1.
+ 显然 
+\begin_inset Formula $\|x\|\geq0$
+\end_inset
+
+.
+ 若 
+\begin_inset Formula $\|x\|=0$
+\end_inset
+
+, 即 
+\begin_inset Formula $d(x,0)=0$
+\end_inset
+
+, 由度量函数的性质, 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $\|\alpha x\|=d(\alpha x,0)=|\alpha|d(x,0)=|\alpha|\|x\|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula 
+\begin{align*}
+\|x+y\| & =d(x+y,0)=d(x,-y)\\
+ & \leq d(x,0)+d(0,-y)\\
+ & =d(x,0)+d(y,0)=\|x\|+\|y\|.
+\end{align*}
+
+\end_inset
+
+故 
+\begin_inset Formula $\norm{\cdot}$
+\end_inset
+
+ 为 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的范数, 
+\begin_inset Formula $X$
+\end_inset
+
+ 为线性赋范空间.
+\end_layout
+
+\begin_layout Paragraph
+例 3'
+\end_layout
+
+\begin_layout Standard
+考虑例 3 中的度量空间 
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+.
+ 对于每个 
+\begin_inset Formula $x=x(t)\in C[a,b]$
+\end_inset
+
+, 现在定义 
+\begin_inset Formula 
+\[
+\|x\|=\max_{a\leq t\leq b}|x(t)|.
+\]
+
+\end_inset
+
+按照函数空间的加法与数乘, 
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+ 是线性空间.
+ 
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+ 是赋范空间.
+\end_layout
+
+\begin_layout Standard
+例 4 的欧氏空间是赋范空间.
+ 注意例 5 中的 
+\begin_inset Formula $s$
+\end_inset
+
+ 和例 8 中的 
+\begin_inset Formula $S$
+\end_inset
+
+ 不是线性赋范空间.
+ 比如, 对于 
+\begin_inset Formula $s$
+\end_inset
+
+, 取 
+\begin_inset Formula $x=(1,0,\cdots)$
+\end_inset
+
+, 若 
+\begin_inset Formula $\alpha\neq0,\pm1$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+d(\alpha x,0)=\frac{|\alpha|}{2(1+|\alpha|)}\neq\frac{1}{4}|\alpha|=|\alpha|d(x,0).
+\]
+
+\end_inset
+
+由定理 6, 
+\begin_inset Formula $s$
+\end_inset
+
+ 不是线性赋范空间.
+\end_layout
+
+\begin_layout Paragraph
+定义 7 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $X$
+\end_inset
+
+ 为线性空间, 若 
+\begin_inset Formula $\forall x,y\in X$
+\end_inset
+
+, 对应有标量, 记为 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+, 满足 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $(y,x)=\overline{(x,y)}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x,y\in X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $(\alpha x,y)=\alpha(x,y)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x,y\in X$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha\in\RR$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $(x+y,z)=(x,z)+(y,z)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x,y,z\in X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(4) 
+\begin_inset Formula $\forall x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $(x,x)\geq0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $(x,x)=0$
+\end_inset
+
+ 时, 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+则称 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ 是 
+\begin_inset Formula $x,y$
+\end_inset
+
+ 的内积, 称 
+\begin_inset Formula $X$
+\end_inset
+
+ 为内积空间.
+\end_layout
+
+\begin_layout Standard
+注意 
+\begin_inset Formula $\forall x,y,z\in X,\alpha,\beta\in\RR$
+\end_inset
+
+, 容易得到
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $(0,y)=(x,0)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $(x,\alpha y)=\overline{(\alpha y,x)}=\overline{\alpha(y,x)}=\overline{\alpha}(x,y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $(\alpha x+\beta y,z)=\alpha(x,z)+\beta(y,z)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+4.
+ 
+\begin_inset Formula $(x,\alpha y+\beta z)=\overline{\alpha}(x,y)+\overline{\beta}(x,z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+若标量域是 
+\begin_inset Formula $\RR$
+\end_inset
+
+, 则 2, 3, 4 中的共轭均可以不出现.
+\end_layout
+
+\begin_layout Paragraph
+定理 7
+\end_layout
+
+\begin_layout Standard
+在内积空间 
+\begin_inset Formula $X$
+\end_inset
+
+ 中, 若规定 
+\begin_inset Formula $\|x\|=\sqrt{(x,x)}$
+\end_inset
+
+, 则
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $|(x,y)|\leq\|x\|\|y\|$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x,y\in X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\|\cdot\|$
+\end_inset
+
+ 是 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的范数, 
+\begin_inset Formula $(X,\|\cdot\|)$
+\end_inset
+
+ 为线性赋范空间.
+\end_layout
+
+\begin_layout Paragraph
+证明
+\end_layout
+
+\begin_layout Standard
+(1) 容易知道当 
+\begin_inset Formula $x=0$
+\end_inset
+
+ 或 
+\begin_inset Formula $y=0$
+\end_inset
+
+ 时, 
+\begin_inset Formula $(x,y)=0$
+\end_inset
+
+, 此时 (1) 中等式成立.
+ 
+\end_layout
+
+\begin_layout Standard
+现在设 
+\begin_inset Formula $y\neq0$
+\end_inset
+
+, 对于任意的 
+\begin_inset Formula $\lambda\in\RR$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+0\leq(x+\lambda y,x+\lambda y)=(x,x)+2\mathrm{Re}\overline{\lambda}(x,y)+|\lambda|^{2}(y,y).
+\]
+
+\end_inset
+
+取 
+\begin_inset Formula $\lambda=-\frac{(x,y)}{(y,y)}$
+\end_inset
+
+, 代入得 
+\begin_inset Formula 
+\[
+0\leq(x,x)-2\frac{|(x,y)|^{2}}{(y,y)}+\frac{|(x,y)|^{2}}{(y,y)}=\frac{1}{(y,y)}\left((x,x)(y,y)-|(x,y)|^{2}\right).
+\]
+
+\end_inset
+
+从而 
+\begin_inset Formula 
+\[
+|(x,y)|\leq\sqrt{(x,x)}\sqrt{(y,y)}=\|x\|\|y\|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2) 由定义 7 (4) 知 
+\begin_inset Formula $\|x\|\geq0$
+\end_inset
+
+.
+ 若 
+\begin_inset Formula $\|x\|=0$
+\end_inset
+
+, 即 
+\begin_inset Formula $(x,x)=0$
+\end_inset
+
+, 从而 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+又由定义 7 (2), 
+\begin_inset Formula 
+\[
+\|\alpha x\|=\sqrt{(\alpha x,\alpha x)}=\sqrt{|\alpha|^{2}(x,x)}=|\alpha|\|x\|.
+\]
+
+\end_inset
+
+由上面 (1) 的证明知道 
+\begin_inset Formula 
+\[
+\begin{aligned}\|x+y\|^{2} & =(x+y,x+y)\\
+ & =(x,x)+2\mathrm{Re}(x,y)+(y,y)\\
+ & \leq(x,x)+2|(x,y)|+(y,y)\\
+ & \leq\|x\|^{2}+2\|x\|\|y\|+\|y\|^{2}\\
+ & =(\|x\|+\|y\|)^{2}
+\end{aligned}
+\]
+
+\end_inset
+
+所以 
+\begin_inset Formula $\|x+y\|\leq\|x\|+\|y\|$
+\end_inset
+
+, 
+\begin_inset Formula $\|\cdot\|$
+\end_inset
+
+ 是 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的范数.
+\end_layout
+
+\begin_layout Standard
+定理 7 说明任一内积空间是线性赋范空间.
+ 以 
+\begin_inset Formula 
+\[
+\|x\|=\sqrt{(x,x)}
+\]
+
+\end_inset
+
+定义的 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的范数称为由内积诱导的范数.
+ 不难验证内积 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ 关于两变元是连续的.
+ 即若 
+\begin_inset Formula $x_{n}\rightarrow x,y_{n}\rightarrow y$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+\left(x_{n},y_{n}\right)\rightarrow(x,y).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+定理 8
+\end_layout
+
+\begin_layout Standard
+赋范空间 
+\begin_inset Formula $(X,\|\cdot\|)$
+\end_inset
+
+ 是内积空间当且仅当平行四边形公式成立 
+\begin_inset Formula 
+\[
+\|x+y\|^{2}+\|x-y\|^{2}=2\left(\|x\|^{2}+\|y\|^{2}\right),\quad\forall x,y\in X.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明
+\end_layout
+
+\begin_layout Standard
+先证必要性.
+ 若 
+\begin_inset Formula $X$
+\end_inset
+
+ 是内积空间, 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+\begin{aligned}\|x+y\|^{2} & =(x+y,x+y)=(x,x)+(x,y)+(y,x)+(y,y),\\
+\|x-y\|^{2} & =(x-y,x-y)=(x,x)-(x,y)-(y,x)+(y,y),
+\end{aligned}
+\]
+
+\end_inset
+
+相加即得
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\|x+y\|^{2}+\|x-y\|^{2}=2\left(\|x\|^{2}+\|y\|^{2}\right).
+\]
+
+\end_inset
+
+为了证明充分性, 只需证明当平行四边形公式成立时, 若标量在 
+\begin_inset Formula $\CC$
+\end_inset
+
+ 中取值, 令 
+\begin_inset Formula 
+\[
+(x,y)=\frac{1}{4}\left(\|x+y\|^{2}-\|x-y\|^{2}+\mathrm{i}\|x+\mathrm{i}y\|^{2}-\mathrm{i}\|x-\mathrm{i}y\|^{2}\right),
+\]
+
+\end_inset
+
+若在 
+\begin_inset Formula $\RR$
+\end_inset
+
+ 中考虑, 令 
+\begin_inset Formula 
+\[
+(x,y)=\frac{1}{4}\left(\|x+y\|^{2}-\|x-y\|^{2}\right),
+\]
+
+\end_inset
+
+则 
+\begin_inset Formula $(\cdot,\cdot)$
+\end_inset
+
+ 即是 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的内积, 并且由它诱导的范数正好是 
+\begin_inset Formula $\|\cdot\|$
+\end_inset
+
+.
+ 这两个等式被称为极化恒等式.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
