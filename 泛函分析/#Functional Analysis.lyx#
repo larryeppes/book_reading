@@ -1523,13 +1523,6 @@ Theorem 4.2.3 (Bessel不等式)
 
 \begin_layout Paragraph
 Theorem 4.2.4 (Basis criterion, Parseval方程)
-\begin_inset CommandInset label
-LatexCommand label
-name "par:Theorem-4.2.4-(Basis"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1643,50 +1636,6 @@ name "par:Theorem-4.2.4-(Basis"
 \end_inset
 
 进行.
-\end_layout
-
-\begin_layout Paragraph
-注: 
-\end_layout
-
-\begin_layout Standard
-定理对
-\begin_inset Formula $E$
-\end_inset
-
-的完备性需做讨论, 结论(1)已经包含了
-\begin_inset Formula $E$
-\end_inset
-
-的完备性.
- 另外3条结论需要补充
-\begin_inset Formula $E$
-\end_inset
-
-是完备的证明.
- 或者不考虑
-\begin_inset Formula $E$
-\end_inset
-
-的完备性, 将(1)中的结论改为
-\begin_inset Formula 
-\[
-\overline{\mathrm{span}\left\{ e_{1},e_{2},\cdots\right\} }\supseteq E,
-\]
-
-\end_inset
-
-参考
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "par:Theorem-4.4.2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-的证明.
 \end_layout
 
 \begin_layout Subsection
@@ -1805,13 +1754,6 @@ f(\xi)=\left\langle \xi,\eta\right\rangle .
 
 \begin_layout Paragraph
 Theorem 4.4.2
-\begin_inset CommandInset label
-LatexCommand label
-name "par:Theorem-4.4.2"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1942,7 +1884,7 @@ f=\sum a_{n}z^{n},
 故
 \begin_inset Formula 
 \[
-\norm{\sum_{n=0}^{N}a_{n}z^{n}-f(z)}_{r}^{2}\le\left(\pi r^{2}\right)\norm{\sum_{n=0}^{N}a_{n}z^{n}-f(z)}_{\infty}^{2}\to0,\quad N\to\infty.
+\norm{\sum^{N}a_{n}z^{n}-f(z)}_{r}^{2}\le\left(\pi r^{2}\right)\norm{\sum^{N}a_{n}z^{n}-f(z)}_{\infty}^{2}\to0,\quad N\to\infty.
 \]
 
 \end_inset
@@ -1950,114 +1892,12 @@ f=\sum a_{n}z^{n},
 所以
 \begin_inset Formula 
 \[
-\norm{\sum_{n=0}^{N}a_{n}z^{n}}_{r}\to\norm{f(z)}_{r},\qquad N\to\infty.
+\norm{\sum_{n=0}^{N}a_{n}z^{n}}_{r}\to\norm{f(z)}_{r}
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-再取
-\begin_inset Formula $r\to1^{-}$
-\end_inset
-
-, 有
-\begin_inset Formula $\norm{f(z)}_{r}\to\norm{f(z)}$
-\end_inset
-
-.
-\begin_inset Formula 
-\[
-\norm{\sum_{n=0}^{\infty}a_{n}z^{n}}_{r}^{2}=\sum_{n=0}^{\infty}\left|a_{n}\right|^{2}\cdot\frac{\pi}{n+1}\cdot r^{2(n+1)}\to\sum_{n=0}^{\infty}\left|\left\langle f,e_{n}\right\rangle \right|^{2},\quad r\to1^{-}.
-\]
-
-\end_inset
-
-这里用到了
-\begin_inset Formula 
-\[
-\left\langle f,e_{n}\right\rangle =\left\langle a_{n}z^{n},e_{n}\right\rangle =a_{n}\sqrt{\frac{n+1}{\pi}}\left\langle z^{n},z^{n}\right\rangle =a_{n}\sqrt{\frac{\pi}{n+1}}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-3.
- 证明
-\begin_inset Formula $L_{hol}^{2}(D)$
-\end_inset
-
-是完备的.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $L_{hol}^{2}(D)$
-\end_inset
-
-中的元素均能表示成
-\begin_inset Formula $\sum\left\langle f,e_{n}\right\rangle e_{n}$
-\end_inset
-
-的形式, 并不蕴含完备性, 
-\begin_inset Formula $\ell^{2}$
-\end_inset
-
-是完备的, 任取
-\begin_inset Formula $\left(b_{n}\right)\in\ell^{2}$
-\end_inset
-
-, 构造
-\begin_inset Formula $\sum b_{n}e_{n}$
-\end_inset
-
-给出
-\begin_inset Formula $L_{hol}^{2}(D)$
-\end_inset
-
-中的一个元素.
-\end_layout
-
-\begin_layout Standard
-有基
-\begin_inset Formula $\left(e_{n}\right)$
-\end_inset
-
-的内积空间
-\begin_inset Formula $E$
-\end_inset
-
-, 
-\begin_inset Formula $E$
-\end_inset
-
-完备的充分必要条件是, 对于任何
-\begin_inset Formula $\left(a_{n}\right)\in\ell^{2}$
-\end_inset
-
-, 总有
-\begin_inset Formula $\sum a_{n}e_{n}\in E$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-注意参考定理
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "par:Theorem-4.2.4-(Basis"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Bibliography
