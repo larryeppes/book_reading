@@ -1149,6 +1149,13 @@ TODO: 补充证明积分型内积定义的合理性
 
 \begin_layout Subsection
 Closest points and the projection theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Closest-points-and"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2058,6 +2065,542 @@ noprefix "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Fourier series and the Dirichlet problem
+\end_layout
+
+\begin_layout Paragraph
+Proposition 5.0.3
+\begin_inset CommandInset label
+LatexCommand label
+name "par:Proposition-5.0.3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $K_{n}(x,y)$
+\end_inset
+
+是满足以下条件的
+\begin_inset Formula $[a,b]\times[a,b]$
+\end_inset
+
+上的核:
+\end_layout
+
+\begin_layout Standard
+(a) 
+\begin_inset Formula $K_{n}\ge0$
+\end_inset
+
+, 且
+\begin_inset Formula $K_{n}(x,y)\in C[a,b]^{2}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(b) 
+\begin_inset Formula $\int K_{n}(x,y)\ud y\rightrightarrows1$
+\end_inset
+
+, 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in[a,b]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(c) 对于任何事先给定的
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 有
+\begin_inset Formula $\int_{\left|y-x\right|\ge\delta}K_{n}(x,y)\ud y\rightrightarrows0$
+\end_inset
+
+, 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 定义
+\begin_inset Formula 
+\[
+f_{n}(x)=\int K_{n}(x,y)f(y)\ud y.
+\]
+
+\end_inset
+
+则在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上, 
+\begin_inset Formula $f_{n}\rightrightarrows f$
+\end_inset
+
+, 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证明主要依赖于下式
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\left|f(x)-f_{n}(x)\right| & \leq\int_{|y-x|\leq\delta}|f(x)-f(y)|K_{n}(x,y)dy\\
+ & \quad+\int_{|y-x|\geq\delta}|f(x)-f(y)|K_{n}(x,y)dy+|f(x)|\left|1-\int K_{n}(x,y)dy\right|\\
+ & \leq\epsilon\int K_{n}(x,y)dy+2\|f\|_{\infty}\int_{|y-x|\geq\delta}K_{n}(x,y)dy+\|f\|_{\infty}\left|1-\int K_{n}(x,y)dy\right|.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Proposition 5.0.4
+\end_layout
+
+\begin_layout Standard
+设Poisson积分
+\begin_inset Formula 
+\[
+f_{r}(x)=\frac{1}{2\pi}\int_{0}^{2\pi}K_{r}(x,y)f(y)\ud y,
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula 
+\[
+K_{r}(x,y)=\frac{1-r^{2}}{1-2r\cos(x-y)+r^{2}}
+\]
+
+\end_inset
+
+为Poisson核.
+ 取
+\begin_inset Formula $r_{n}\nearrow1$
+\end_inset
+
+, 
+\begin_inset Formula $K_{n}(x,y)=K_{r_{n}}(x,y)$
+\end_inset
+
+.
+ 则
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $\frac{K_{n}}{2\pi}$
+\end_inset
+
+满足命题
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "par:Proposition-5.0.3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+的所有条件;
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula 
+\[
+\frac{1}{2\pi}\int_{0}^{2\pi}K_{r}(x,y)f(y)\ud y=\sum_{n\in\ZZ}r^{|n|}a_{n}\ue^{\ui nx},\quad a_{n}=\left\langle f,e_{n}\right\rangle ,\ e_{n}=\ue^{\ui nx};
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $\norm{f_{r}-f}_{L^{\infty}}\to0$
+\end_inset
+
+, 
+\begin_inset Formula $r\nearrow1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 5.0.5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C(\TT)$
+\end_inset
+
+上的任何函数均可由三角多项式一致逼近.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 5.0.6 (Weierstrass逼近定理)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C[0,1]$
+\end_inset
+
+上的任何函数可以用多项式一致逼近.
+\end_layout
+
+\begin_layout Standard
+定理证明中注意
+\begin_inset Formula $\widetilde{f}$
+\end_inset
+
+可能不连续.
+\end_layout
+
+\begin_layout Standard
+注: Taylor定理并不能用来证明此定理.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 5.0.7
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $C(\TT)$
+\end_inset
+
+上赋予内积
+\begin_inset Formula 
+\[
+\left\langle f,g\right\rangle =\frac{1}{2\pi}\int_{0}^{2\pi}f(x)\overline{g(x)}\ud x,
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $\left(e_{n}=\ue^{\ui nx}\right)$
+\end_inset
+
+是
+\begin_inset Formula $C(\TT)$
+\end_inset
+
+上的正交基.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 5.0.8
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $E$
+\end_inset
+
+为
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+上分段连续函数空间.
+ 则
+\begin_inset Formula $\left(e_{n}=\ue^{\ui nx}\right)$
+\end_inset
+
+是
+\begin_inset Formula $E$
+\end_inset
+
+上的正交基, 且
+\begin_inset Formula 
+\[
+\norm{f}_{2}^{2}=\sum\left|a_{n}\right|^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这个证明初看起来似乎没有在证明定理, 事实上, 当三角多项式一致逼近
+\begin_inset Formula $f$
+\end_inset
+
+时, 自然有定理的结论, 注意小节
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Closest-points-and"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+和定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "par:Theorem-4.2.4-(Basis"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+这个推论可以用来计算
+\begin_inset Formula $\zeta(2n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+The Dirichlet Problem
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C(\partial D;\RR)$
+\end_inset
+
+, 
+\begin_inset Formula $D$
+\end_inset
+
+为闭单位圆盘, 则
+\begin_inset Formula 
+\[
+\begin{cases}
+\Delta F=0, & z\in D^{\circ},\\
+F(z)=f(z), & z\in\partial D.
+\end{cases}
+\]
+
+\end_inset
+
+有解
+\begin_inset Formula 
+\[
+F(z)=F(r\ue^{\ui x})=\frac{1}{2\pi}\int_{0}^{2\pi}K_{r}(x,y)f(y)\ud y.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.1.1 (极大原理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f:\overline{D}\to\RR$
+\end_inset
+
+为
+\begin_inset Formula $D$
+\end_inset
+
+上的调和函数, 则
+\begin_inset Formula 
+\[
+\max_{\overline{D}}f=\max_{\partial D}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+证明使用反证法, 并取充分小的
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 使辅助函数
+\begin_inset Formula $g(x)\coloneqq f(x)+\epsilon\norm{x-a}^{2}$
+\end_inset
+
+仍符合反证法的不等式.
+\end_layout
+
+\begin_layout Subsection
+Uniformly convergent Fourier series
+\end_layout
+
+\begin_layout Standard
+存在连续函数, 它的Fourier级数在一个稠子集上不收敛.
+\end_layout
+
+\begin_layout Standard
+Carleson, 1966, 证明了, 存在连续的
+\begin_inset Formula $f$
+\end_inset
+
+, 其Fourier级数无处收敛.
+\end_layout
+
+\begin_layout Standard
+Kolmogorov证明了, 存在
+\begin_inset Formula $f\in L^{1}[0,2\pi]$
+\end_inset
+
+, 其Fourier级数几乎处处收敛.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.2.1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C^{1}(\TT)$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\sum_{n\in\ZZ}\widehat{f}(n)\ue^{\ui nx}\rightrightarrows f(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明
+\end_layout
+
+\begin_layout Standard
+使用Sobolev理论, 
+\begin_inset Formula $\widehat{f'}(n)=\ui n\cdot\widehat{f}(n)$
+\end_inset
+
+.
+ 所以
+\begin_inset Formula 
+\begin{align*}
+f\in C^{1}(\TT) & \Longrightarrow f'\in C(\TT)\\
+ & \Longrightarrow\norm{f'}_{L^{2}}^{2}=\sum\left|\widehat{f'}(n)\right|^{2}=\sum n^{2}\left|\widehat{f}(n)\right|^{2}\eqqcolon\sum n^{2}\left|a_{n}\right|^{2}<\infty.\\
+ & \Longrightarrow\sum_{n\ne0}\left|a_{n}\right|\le\left(\sum_{n\ne0}n^{2}\left|a_{n}\right|^{2}\right)^{1/2}\left(\sum_{n\ne0}\frac{1}{n^{2}}\right)^{1/2}<\infty,\\
+ & \Longrightarrow\sum\widehat{f}(n)\ue^{\ui nx}\rightrightarrows f(x).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.2.2 (Poisson求和公式)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C^{1}(\RR)$
+\end_inset
+
+, 
+\begin_inset Formula $(1+x^{2})f,\ (1+x^{2})f'\in\mathrm{UB}(\RR)$
+\end_inset
+
+.
+ 则
+\begin_inset Formula 
+\[
+\sum_{n\in\ZZ}f(2n\pi)=\sum_{n\in\ZZ}\frac{1}{2\pi}\int_{\RR}f(x)\ue^{-\ui nx}\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明
+\end_layout
+
+\begin_layout Standard
+记
+\begin_inset Formula 
+\[
+F(x)=\sum f(x+2\pi n),\quad G(x)=\sum f'(x+2\pi n).
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $F'(x)=G(x)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $F(x)\in C^{1}(\TT)$
+\end_inset
+
+, 所以
+\begin_inset Formula 
+\[
+\sum\widehat{F}(n)\ue^{\ui nx}\rightrightarrows F(x),
+\]
+
+\end_inset
+
+故
+\begin_inset Formula 
+\[
+F(0)=\sum\widehat{F}(n).
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Bibliography
