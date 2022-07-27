@@ -2952,24 +2952,7 @@ The Riemann zeta function
 \end_inset
 
 所以
-\begin_inset Formula $\xi(s)=\xi(1-s)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\theta$
-\end_inset
-
-函数能用来证明二次互反律.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: 补充证明.
-\end_layout
-
+\begin_inset Formula $\xi(s)=$
 \end_inset
 
 
