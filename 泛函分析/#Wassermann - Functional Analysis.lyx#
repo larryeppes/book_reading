@@ -2952,7 +2952,499 @@ The Riemann zeta function
 \end_inset
 
 所以
-\begin_inset Formula $\xi(s)=$
+\begin_inset Formula $\xi(s)=\xi(1-s)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta$
+\end_inset
+
+函数能用来证明二次互反律.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: 补充证明.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Stone-Weierstrass Theorem
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X$
+\end_inset
+
+是紧度量空间, 
+\begin_inset Formula $C(X)$
+\end_inset
+
+是
+\begin_inset Formula $X$
+\end_inset
+
+上的连续函数空间, 在一致范数
+\begin_inset Formula 
+\[
+\norm{f}_{\infty}=\sup_{x\in X}\left|f(x)\right|
+\]
+
+\end_inset
+
+下是完备的赋范空间.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C(X)$
+\end_inset
+
+是一个*-代数:
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $C(X)$
+\end_inset
+
+是向量空间;
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $C(X)$
+\end_inset
+
+是乘积运算封闭的, 交换环;
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $\lambda(fg)=(\lambda f)g$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda\in\CC$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+4.
+ 存在映射
+\begin_inset Formula $*:C(X)\to C(X)$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)\mapsto f^{*}(X)=\overline{f(x)}$
+\end_inset
+
+, 满足
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(fg)^{*}=f^{*}g^{*}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\lambda f)^{*}=\overline{\lambda}f^{*}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f^{**}=f$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(f+g)^{*}=f^{*}+g^{*}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+*-代数结果与范数定义相容
+\begin_inset Formula 
+\[
+\|fg\|_{\infty}=\sup_{x\in X}|f(x)g(x)|\leq\sup_{y\in X}f(y)\cdot\sup_{z\in X}g(z)=\|f\|_{\infty}\|g\|_{\infty}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C(X)$
+\end_inset
+
+是酉空间 (unital).
+\end_layout
+
+\begin_layout Standard
+(These properties can be generalised to give commutative 
+\begin_inset Formula $*$
+\end_inset
+
+-algebras.
+ If such an algebra is complete under 
+\begin_inset Formula $\|\cdot\|$
+\end_inset
+
+, and 
+\begin_inset Formula $\|ff\|^{*}=\left\Vert f^{2}\right\Vert $
+\end_inset
+
+ it must take the form of 
+\begin_inset Formula $C(X)$
+\end_inset
+
+ with 
+\begin_inset Formula $\|\cdot\|_{\infty}$
+\end_inset
+
+.
+ This is the celebrated theorem of Gelfand and Naimark.)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: check
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.0.1 (Weierstrass逼近定理
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C([0,1])$
+\end_inset
+
+, 定义
+\begin_inset Formula $N$
+\end_inset
+
+次多项式
+\begin_inset Formula 
+\[
+\ensuremath{f_{N}(x)=\sum_{k=0}^{N}f(k/N)\binom{N}{k}x^{k}(1-x)^{N-k}}.
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $\norm{f_{n}-f}_{\infty}\to0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.0.2 (Dini定理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X$
+\end_inset
+
+是紧度量空间, 
+\begin_inset Formula $f_{n}\in C(X;\RR)$
+\end_inset
+
+是函数序列, 若
+\begin_inset Formula $f_{n}$
+\end_inset
+
+点态单调收敛于
+\begin_inset Formula $f\in C(X;\RR)$
+\end_inset
+
+.
+ 则
+\begin_inset Formula $f_{n}\rightrightarrows f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+证明使用连续函数保号性+有限覆盖性质.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.0.3 (Stone-Weierstrass定理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X$
+\end_inset
+
+是紧度量空间, 
+\begin_inset Formula $A\subseteq C(X;\RR)$
+\end_inset
+
+是
+\begin_inset Formula $C(X;\RR)$
+\end_inset
+
+的子代数, 即在乘法运算下封闭的线性子空间, 且满足
+\end_layout
+
+\begin_layout Standard
+(i) 对于任意的
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 存在
+\begin_inset Formula $f\in A$
+\end_inset
+
+使得
+\begin_inset Formula $f(x)\ne0$
+\end_inset
+
+; (existence of nonvanishing functions);
+\end_layout
+
+\begin_layout Standard
+(ii) 对于任给的
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+, 
+\begin_inset Formula $x\ne y$
+\end_inset
+
+, 存在
+\begin_inset Formula $f\in A$
+\end_inset
+
+使得
+\begin_inset Formula $f(x)\ne f(y)$
+\end_inset
+
+; (A distinguishes points).
+\end_layout
+
+\begin_layout Standard
+则
+\begin_inset Formula $A$
+\end_inset
+
+在
+\begin_inset Formula $f(x)\ne0$
+\end_inset
+
+中稠密, 即任何连续函数
+\begin_inset Formula $f:X\to\RR$
+\end_inset
+
+, 可以由
+\begin_inset Formula $A$
+\end_inset
+
+中的函数一致逼近.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+这个证明值的多读几遍.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 7.0.4 (复Stone-Weierstrass定理)
+\end_layout
+
+\begin_layout Standard
+假设
+\begin_inset Formula $A\subseteq C(X;\CC)$
+\end_inset
+
+是复的子代数, 满足上面的分离性和非消失性条件, 如果还是有性质
+\begin_inset Formula $f\in A\Longrightarrow\overline{f}\in A$
+\end_inset
+
+.
+ 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $C(X;\CC)$
+\end_inset
+
+可以一致逼近.
+\end_layout
+
+\begin_layout Standard
+证明按照实虚部分别给出.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 7.0.5 (
+\begin_inset Formula $\RR$
+\end_inset
+
+上的Stone-Weierstrass定理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula 
+\[
+C_{0}(\RR)=\left\{ f:\RR\to\CC\mid\ f\text{ 连续, }\left|f(x)\right|\to0,\ \left|x\right|\to\infty\right\} .
+\]
+
+\end_inset
+
+若
+\begin_inset Formula $A$
+\end_inset
+
+是
+\begin_inset Formula $C_{0}(\RR)$
+\end_inset
+
+的一个*-子代数, 并有分离点性质和非消失性质, 则
+\begin_inset Formula $A$
+\end_inset
+
+在
+\begin_inset Formula $C_{0}(\RR)$
+\end_inset
+
+中一致稠密.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 7.0.6 (Stone-Weierstrass定理的弱化形式)
+\end_layout
+
+\begin_layout Standard
+在以上提到的各种Stone-Weierstrass定理中, 代数条件
+\begin_inset Formula 
+\[
+f,g\in A\Longrightarrow fg\in A,
+\]
+
+\end_inset
+
+可以弱化为
+\begin_inset Formula 
+\[
+f,g\in A\Longrightarrow fg\in\overline{A}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Important example: Hermite functions
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.1.1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula 
+\[
+R_{n}=e^{-x}-\sum_{k<n}\frac{(-x)^{k}}{k!}.
+\]
+
+\end_inset
+
+则对于固定的
+\begin_inset Formula $k$
+\end_inset
+
+和
+\begin_inset Formula $0<\lambda<1$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+b_{n}:=\sup_{x\geq0}\left|x^{k}R_{n}(\lambda x)e^{-x}\right|\rightarrow0\text{ as }n\rightarrow\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Products and easy Fubini theorem
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.2.1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X,Y$
+\end_inset
+
+是紧度量空间, 则有乘积
+\begin_inset Formula $f(x)g(y)$
+\end_inset
+
+ (
+\begin_inset Formula $f\in C(X)$
+\end_inset
+
+, 
+\begin_inset Formula $g\in C(Y)$
+\end_inset
+
+) 生成的线性空间在
+\begin_inset Formula $C(X\times Y)$
+\end_inset
+
+中一致稠.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.2.2
+\end_layout
+
+\begin_layout Standard
+1.
+ 若
+\begin_inset Formula $f\in C([a,b]$
 \end_inset
 
 
