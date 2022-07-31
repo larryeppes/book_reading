@@ -1,0 +1,1265 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+
+\DeclareMathOperator{\sech}{sech}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+数学分析 - 梅加强
+\end_layout
+
+\begin_layout Section
+数列极限
+\end_layout
+
+\begin_layout Definition
+给定序列
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+, 实数
+\begin_inset Formula $A\in\RR$
+\end_inset
+
+, 如果
+\begin_inset Formula 
+\[
+\forall\epsilon>0,\exists N=N(\epsilon),s.t.\forall n>N,\left|a_{n}-A\right|<\epsilon,
+\]
+
+\end_inset
+
+就称
+\begin_inset Formula $a_{n}\to A$
+\end_inset
+
+, 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+.
+ 反面表述序列
+\begin_inset Formula $a_{n}\not\to A$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\exists\epsilon>0,s.t.\forall N=N(\epsilon),\exists n>N,\left|a_{n}-A\right|\ge\epsilon.
+\]
+
+\end_inset
+
+如果
+\begin_inset Formula 
+\[
+\forall A>0,\exists N,s.t.\forall n>N,a_{n}>A,
+\]
+
+\end_inset
+
+则称
+\begin_inset Formula $a_{n}\to+\infty$
+\end_inset
+
+.
+ 如果
+\begin_inset Formula 
+\[
+\forall A<0,\exists N,s.t.\forall n>N,a_{n}<A,
+\]
+
+\end_inset
+
+则称
+\begin_inset Formula $a_{n}\to-\infty$
+\end_inset
+
+.
+ 如果
+\begin_inset Formula 
+\[
+\forall A>0,\exists N,s.t.\forall n>N,\left|a_{n}\right|>A,
+\]
+
+\end_inset
+
+则称
+\begin_inset Formula $a_{n}\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+性质 (极限的性质)
+\end_layout
+
+\begin_layout Standard
+1.
+ 序列极限如果存在, 必然唯一.
+\end_layout
+
+\begin_layout Standard
+2.
+ 序列极限收敛于有限实数, 必然有界.
+ (这个性质可以弱化, 比如允许序列前几项中有
+\begin_inset Formula $\infty$
+\end_inset
+
+出现, 这时本条的序列极限性质可以表述为, 从某项开始序列有界)
+\end_layout
+
+\begin_layout Standard
+3.
+ 保序性, 当
+\begin_inset Formula $a_{n}\to A$
+\end_inset
+
+, 
+\begin_inset Formula $b_{n}\to B$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}\ge b_{n}$
+\end_inset
+
+, 则
+\begin_inset Formula $A\ge B$
+\end_inset
+
+.
+ 不等式
+\begin_inset Formula $a_{n}\ge b_{n}$
+\end_inset
+
+可以换成
+\begin_inset Formula $a_{n}>b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+求极限的方法
+\end_layout
+
+\begin_layout Standard
+求极限没有通用方法, 不要有能学到通用方法的任何期待.
+ 我们所能做的只有从最简单的方法到最复杂的方法进行逐个尝试.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\epsilon-N$
+\end_inset
+
+法
+\end_layout
+
+\begin_layout Standard
+也就是定义法, 这个方法要求事先知道所求极限为何, 然后套用这一框架.
+ 方法比较基本, 不再举例.
+\end_layout
+
+\begin_layout Subsubsection
+夹逼原理
+\end_layout
+
+\begin_layout Standard
+这也是一个求解框架, 找到满足
+\begin_inset Formula $a_{n}\le b_{n}\le c_{n}$
+\end_inset
+
+, 且
+\begin_inset Formula $a_{n}\to A$
+\end_inset
+
+, 
+\begin_inset Formula $c_{n}\to A$
+\end_inset
+
+的上下界来求解
+\begin_inset Formula $b_{n}$
+\end_inset
+
+的极限.
+\end_layout
+
+\begin_layout Subsubsection
+单调有界原理
+\end_layout
+
+\begin_layout Standard
+主要用于求解抽象型极限问题.
+\end_layout
+
+\begin_layout Paragraph
+例2.2.3
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $a_{1}>0$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n+1}=\frac{1}{2}\left(a_{n}+\frac{1}{a_{n}}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+, 求
+\begin_inset Formula $a_{n}$
+\end_inset
+
+的极限.
+\end_layout
+
+\begin_layout Standard
+求解递推公式的极限问题常用不动点法先找到极限是什么.
+ 也就是求解
+\begin_inset Formula $x=\frac{1}{2}\left(x+\frac{1}{x}\right)$
+\end_inset
+
+, 得到
+\begin_inset Formula $x=\pm1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+注意到
+\begin_inset Formula $a_{1}>0$
+\end_inset
+
+, 所以数列的每一项
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+.
+ 并计算
+\begin_inset Formula 
+\[
+a_{n+1}-1=\frac{1}{2a_{n}}(a_{n}-1)^{2}\ge0\Longrightarrow a_{n+1}\ge1,\quad\forall n\ge1.
+\]
+
+\end_inset
+
+这表明当
+\begin_inset Formula $n\ge2$
+\end_inset
+
+时, 
+\begin_inset Formula $\frac{1}{a_{n}}\le1\le a_{n}$
+\end_inset
+
+, 所以
+\begin_inset Formula 
+\[
+a_{n+1}=\frac{1}{2}\left(a_{n}+\frac{1}{a_{n}}\right)\le a_{n}.
+\]
+
+\end_inset
+
+序列
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+从第二项起单调递减, 有下界
+\begin_inset Formula $1$
+\end_inset
+
+.
+ 递推方程的正不动点只有
+\begin_inset Formula $x=1$
+\end_inset
+
+, 所以
+\begin_inset Formula $a_{n}\to1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+事实上, 对于递推公式型极限问题也可以尝试求解它的通项公式, 比如
+\begin_inset Formula 
+\[
+\frac{a_{n+1}-1}{a_{n+1}+1}=\left(\frac{a_{n}-1}{a_{n}+1}\right)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+重要极限
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Formula $e$
+\end_inset
+
+相关
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1+\frac{1}{n}\right)^{n}<\left(1+\frac{1}{n+1}\right)^{n+1}<e<\left(1+\frac{1}{n+1}\right)^{n+2}<\left(1+\frac{1}{n}\right)^{n+1},\quad\forall n\ge1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(1+\frac{1}{n}\right)^{n}\cdot1\le\left(\frac{n\left(1+\frac{1}{n}\right)+1}{n+1}\right)^{n+1}=\left(1+\frac{1}{n+1}\right)^{n+1},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\frac{1+\frac{1}{n-1}}{1+\frac{1}{n}}\right)^{n}=\left(\frac{n^{2}}{n^{2}-1}\right)^{n}=\left(1+\frac{1}{n^{2}-1}\right)^{n}>1+\frac{n}{n^{2}-1}>1+\frac{1}{n}\Longrightarrow\left(1+\frac{1}{n-1}\right)^{n}>\left(1+\frac{1}{n}\right)^{n+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bernoulli不等式
+\begin_inset Formula 
+\[
+x\ge-1\Longrightarrow(1+x)^{n}\ge1+nx,
+\]
+
+\end_inset
+
+等号当且仅当
+\begin_inset Formula $x=0$
+\end_inset
+
+取到.
+ 推广形式
+\begin_inset Formula 
+\[
+\prod_{k=1}^{n}\left(1+x_{k}\right)\ge1+\sum_{k=1}^{n}x_{k},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $x_{k}\ge0$
+\end_inset
+
+.
+ 注意, 这里给出的两种Bernoulli不等式的前提条件不同, 后者不能是
+\begin_inset Formula $x_{k}\ge-1$
+\end_inset
+
+, 因为
+\begin_inset Formula $(1-x)(1+x)=1-x^{2}\le1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Euler常数
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{n}=\ln n+\gamma+o(1).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例2.2.7
+\end_layout
+
+\begin_layout Standard
+求
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left(\frac{1}{n+1}+\cdots+\frac{1}{2n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1.
+ 单调上升有上界.
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $H_{2n}-H_{n}=\ln2n-\ln n+o(1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n}\frac{1}{1+\frac{k}{n}}=\int_{0}^{1}\frac{1}{1+x}\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ Euler求和公式
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}\frac{1}{n+k}=\ln\frac{2n}{n+1}+\frac{1}{2}\left(\frac{1}{n+1}+\frac{1}{2n}\right)-\int_{1}^{n}\frac{\left\langle x\right\rangle }{(n+x)^{2}}\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Stirling公式
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n!\sim\sqrt{2\pi n}\left(\frac{n}{e}\right)^{n}e^{\frac{\theta_{n}}{12n}},\quad\theta_{n}\in\left(0,1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+上下极限
+\end_layout
+
+\begin_layout Standard
+这种方法也常用于求解抽象型序列极限问题.
+ 
+\end_layout
+
+\begin_layout Standard
+序列收敛的一个充要条件是, 序列的上下极限相等.
+\end_layout
+
+\begin_layout Standard
+定义
+\begin_inset Formula 
+\[
+\limsup_{n\to\infty}a_{n}\coloneqq\lim_{n\to\infty}\left(\sup_{k\ge n}a_{k}\right),\quad\liminf_{n\to\infty}a_{n}\coloneqq\lim_{n\to\infty}\left(\inf_{k\ge n}a_{k}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+命题2.2.4
+\end_layout
+
+\begin_layout Standard
+1.
+ 存在
+\begin_inset Formula $N_{0}$
+\end_inset
+
+, 当
+\begin_inset Formula $n>N_{0}$
+\end_inset
+
+时, 
+\begin_inset Formula $a_{n}\ge b_{n}$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\liminf_{n\to\infty}a_{n}\ge\liminf_{n\to\infty}b_{n},\quad\limsup_{n\to\infty}a_{n}\le\limsup_{n\to\infty}b_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula 
+\[
+\limsup_{n\to\infty}\left(a_{n}+b_{n}\right)\le\limsup_{n\to\infty}a_{n}+\limsup_{n\to\infty}b_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例2.2.12
+\end_layout
+
+\begin_layout Standard
+设序列
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}\ge0$
+\end_inset
+
+, 满足
+\begin_inset Formula $a_{m+n}\le a_{m}+a_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall m,n\ge1$
+\end_inset
+
+.
+ 证明
+\begin_inset Formula $\left(\frac{a_{n}}{n}\right)$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+证明: 设
+\begin_inset Formula $n>m$
+\end_inset
+
+, 则
+\begin_inset Formula $n=mk+l$
+\end_inset
+
+, 其中
+\begin_inset Formula $0\le l\le m-1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+对于任意固定的
+\begin_inset Formula $m$
+\end_inset
+
+, 有
+\begin_inset Formula 
+\[
+a_{n}=a_{mk+l}\le ka_{m}+a_{l}\Longrightarrow\frac{a_{n}}{n}\le\frac{ka_{m}}{km+l}+\frac{a_{l}}{n}.
+\]
+
+\end_inset
+
+不等式两边同时取上极限
+\begin_inset Formula 
+\[
+\limsup_{n\to\infty}\frac{a_{n}}{n}\le\frac{a_{m}}{m}.
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\limsup_{n\to\infty}\frac{a_{n}}{n}\le\liminf_{m\to\infty}\frac{a_{m}}{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cauchy收敛准则
+\end_layout
+
+\begin_layout Paragraph
+定义
+\end_layout
+
+\begin_layout Standard
+序列
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+, 如果
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists N=N(\epsilon)$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall m,n>N$
+\end_inset
+
+, 
+\begin_inset Formula $\left|a_{m}-a_{n}\right|<\epsilon$
+\end_inset
+
+, 则称
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+为Cauchy列.
+\end_layout
+
+\begin_layout Standard
+其它表述: 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists N=N(\epsilon)$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall n>N$
+\end_inset
+
+, 
+\begin_inset Formula $\forall p>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left|a_{n+p}-a_{n}\right|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+反面描述: 
+\begin_inset Formula $\exists\epsilon_{0}>0$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall N$
+\end_inset
+
+, 
+\begin_inset Formula $\exists m_{0},n_{0}>N$
+\end_inset
+
+, 使得
+\begin_inset Formula $\left|a_{m_{0}}-a_{n_{0}}\right|\ge\epsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Cauchy列均有解.
+ (这里仍然可以允许序列的前几项可以取
+\begin_inset Formula $\infty$
+\end_inset
+
+, 此时Cauchy除了开始的有限项外是有界序列).
+\end_layout
+
+\begin_layout Standard
+序列
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+收敛当且仅当
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+是Cauchy列.
+\end_layout
+
+\begin_layout Paragraph
+习题2
+\end_layout
+
+\begin_layout Standard
+设序列
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+满足
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\left|a_{n+p}-a_{n}\right|=0,\quad\forall p\ge1.
+\]
+
+\end_inset
+
+问
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+是否是Cauchy列?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}=H_{n}$
+\end_inset
+
+就是反例.
+\end_layout
+
+\begin_layout Subsubsection
+Stolz公式
+\end_layout
+
+\begin_layout Paragraph
+定理2.4.2
+\end_layout
+
+\begin_layout Standard
+设序列
+\begin_inset Formula $(x_{n})$
+\end_inset
+
+, 
+\begin_inset Formula $(y_{n})$
+\end_inset
+
+, 其中
+\begin_inset Formula $y_{n}$
+\end_inset
+
+单调上升趋向
+\begin_inset Formula $\infty$
+\end_inset
+
+, 若
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{x_{n}-x_{n-1}}{y_{n}-y_{n-1}}=A,
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{x_{n}}{y_{n}}=A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+注: 
+\end_layout
+
+\begin_layout Standard
+和洛必达法则的情况一样, 当
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{x_{n}-x_{n-1}}{y_{n}-y_{n-1}}
+\]
+
+\end_inset
+
+不存在时, 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{x_{n}}{y_{n}}
+\]
+
+\end_inset
+
+仍可能存在.
+\end_layout
+
+\begin_layout Paragraph
+定理2.4.3
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+单调下降趋向于0, 
+\begin_inset Formula $\left(x_{n}\right)\to0$
+\end_inset
+
+, 若
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{x_{n}-x_{n-1}}{y_{n}-y_{n-1}}=A,
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{x_{n}}{y_{n}}=A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+注
+\end_layout
+
+\begin_layout Standard
+条件
+\begin_inset Formula $\left(x_{n}\right)\to0$
+\end_inset
+
+是必要的, 比如
+\begin_inset Formula $x_{n}\equiv C$
+\end_inset
+
+是一个矛盾.
+\end_layout
+
+\begin_layout Paragraph
+例2.1.15
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=A$
+\end_inset
+
+, 证明
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{a_{1}+\cdots+a_{n}}{n}=A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这个例子有多种证法, 使用Stolz公式只需一步.
+\end_layout
+
+\begin_layout Paragraph
+例2.4.3
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $x_{1}\in\left(0,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n+1}=x_{n}(1-x_{n})$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n\ge1$
+\end_inset
+
+.
+ 证明
+\begin_inset Formula $nx_{n}\to1$
+\end_inset
+
+, 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+单调收敛证明
+\begin_inset Formula $x_{n+1}<x_{n}$
+\end_inset
+
+.
+ 假设极限为
+\begin_inset Formula $x$
+\end_inset
+
+, 则
+\begin_inset Formula $x=x(1-x)$
+\end_inset
+
+, 解的
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ 所以
+\begin_inset Formula $x_{n}\to0$
+\end_inset
+
+, 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+从递推公式得到
+\begin_inset Formula 
+\[
+\frac{1}{x_{n+1}}-\frac{1}{x_{n}}=\frac{1}{1-x_{n}}\to1,\quad n\to\infty.
+\]
+
+\end_inset
+
+由Stolz公式
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}nx_{n}=\lim_{n\to\infty}\frac{n}{x_{n}^{-1}}=\lim_{n\to\infty}\frac{n-(n-1)}{x_{n}^{-1}-x_{n-1}^{-1}}=\lim_{n\to\infty}\frac{1}{\frac{1}{1-x_{n-1}}}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+不用Stolz公式的证法
+\end_layout
+
+\begin_layout Standard
+和上面一样, 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+单调收敛到0, 且有
+\begin_inset Formula $x_{n+1}^{-1}-x_{n}^{-1}=\frac{1}{1-x_{n}}\to1$
+\end_inset
+
+, 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+.
+ 则
+\begin_inset Formula 
+\[
+\frac{1}{nx_{n}}=\frac{x_{n}^{-1}}{n}=\frac{\left(x_{n}^{-1}-x_{n-1}^{-1}\right)+\left(x_{n-1}^{-1}-x_{n-2}^{-1}\right)+\cdots+\left(x_{2}^{-1}-x_{1}^{-1}\right)+x_{1}^{-1}}{n}\to\lim_{n\to\infty}\left(x_{n}^{-1}-x_{n-1}^{-1}\right)=1.
+\]
+
+\end_inset
+
+上面最后一步用到了例2.1.15.
+\end_layout
+
+\begin_layout Paragraph
+习题9
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $\lim_{n\to\infty}(a_{n+1}-a_{n})=A$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{a_{n}}{n}=A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Stolz公式不是万能的, 比如
+\end_layout
+
+\begin_layout Paragraph
+习题15
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}a_{n}=A,\quad\lim_{n\to\infty}b_{n}=B,
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+\frac{1}{n}\left(a_{1}b_{n}+a_{2}b_{n-1}+\cdots+a_{n}b_{1}\right)=AB.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $a_{n}=A+\alpha_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{n}=B+\beta_{n}$
+\end_inset
+
+, 则问题不妨在
+\begin_inset Formula $A=B=0$
+\end_inset
+
+时证明即可.
+ 其实
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{n}\sum_{k=1}^{n}a_{k}b_{n+1-k} & =\frac{1}{n}\sum_{k=1}^{n}\left(AB+A\beta_{n+1-k}+B\alpha_{k}+\alpha_{k}\beta_{n+1-k}\right)\\
+ & =AB+\frac{A}{n}\sum_{k=1}^{n}\beta_{k}+\frac{B}{n}\sum_{k=1}^{n}\alpha_{k}+\frac{1}{n}\sum_{k=1}^{n}\alpha_{k}\beta_{n+1-k}\\
+ & =AB+A\cdot o(1)+B\cdot o(1)+M\cdot o(1)=AB+o(1).
+\end{align*}
+
+\end_inset
+
+上式最后用到收敛序列有界的结论.
+\end_layout
+
+\end_body
+\end_document
