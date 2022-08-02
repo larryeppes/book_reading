@@ -3379,12 +3379,1678 @@ f(x+y)=f(x)+f(y),\qquad\forall x,y\in\RR.
 所以
 \begin_inset Formula 
 \[
-\int_{0}^{x+y}f(t)\ud t=yf(x)+\int_{0}^{x}f
+\int_{0}^{x+y}f(t)\ud t=yf(x)+\int_{0}^{x}f(t)\ud t+\int_{0}^{y}f(t)\ud t.
+\]
+
+\end_inset
+
+交换
+\begin_inset Formula $x,y$
+\end_inset
+
+的位置即得
+\begin_inset Formula $yf(x)=xf(y)$
+\end_inset
+
+, 再取
+\begin_inset Formula $y=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例3.5.15
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+是周期为
+\begin_inset Formula $T$
+\end_inset
+
+的连续函数, 则
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\int_{a}^{b}f(x)g(nx)\ud x=\frac{1}{T}\int_{a}^{b}f(x)\ud x\int_{0}^{T}g(x)\ud x.
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+作业
+\end_layout
+
+\begin_layout Standard
+3.
+ 设
+\begin_inset Formula $b,\alpha>0$
+\end_inset
+
+, 求积分
+\begin_inset Formula $\int_{0}^{b}x^{\alpha}\ud x$
+\end_inset
+
+, 利用积分计算极限
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{1^{\alpha}+2^{\alpha}+\cdots+n^{\alpha}}{n^{\alpha+1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+8.
+ 设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 如果对于任意的
+\begin_inset Formula $g\in\left\{ g\in C[a,b]:g(a)=g(b)=0\right\} $
+\end_inset
+
+, 均有
+\begin_inset Formula $\int_{a}^{b}f(x)g(x)\ud x=0$
+\end_inset
+
+, 则
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+此题类比变分基本定理.
+\end_layout
+
+\begin_layout Standard
+9.
+ 设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 如果对于任意的
+\begin_inset Formula $g\in\left\{ g\in C[a,b]:\int_{a}^{b}g(x)\ud x=0\right\} $
+\end_inset
+
+, 均有
+\begin_inset Formula $\int_{a}^{b}f(x)g(x)\ud x=0$
+\end_inset
+
+, 则
+\begin_inset Formula $f=C$
+\end_inset
+
+为常函数.
+\end_layout
+
+\begin_layout Standard
+提示: 设
+\begin_inset Formula $f$
+\end_inset
+
+的平均值为
+\begin_inset Formula $C$
+\end_inset
+
+, 考虑
+\begin_inset Formula $g=f-C$
+\end_inset
+
+和
+\begin_inset Formula $g^{2}$
+\end_inset
+
+的积分.
+\end_layout
+
+\begin_layout Standard
+12.
+ 设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\lim_{n\to+\infty}\left(\int_{a}^{b}\left|f(x)\right|^{n}\ud x\right)^{1/n}=\max_{x\in[a,b]}\left|f(x)\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+14.
+ 设
+\begin_inset Formula $f,g\in C[a,b]$
+\end_inset
+
+, 且
+\begin_inset Formula $f,g>0$
+\end_inset
+
+, 证明
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{\int_{a}^{b}f^{n+1}(x)g(x)\ud x}{\int_{a}^{b}f^{n}(x)g(x)\ud x}=\max_{x\in[a,b]}f(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+17.
+ 设
+\begin_inset Formula $f(x)\in C[0,+\infty)$
+\end_inset
+
+严格单调递增, 则
+\begin_inset Formula 
+\[
+F(x)=\begin{cases}
+\frac{1}{x}\int_{0}^{x}f(t)\ud t, & x>0,\\
+f(0), & x=0
+\end{cases}
+\]
+
+\end_inset
+
+也是严格单调递增连续函数.
+\end_layout
+
+\begin_layout Standard
+18.
+ 设
+\begin_inset Formula $f(x)\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $f>0$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\lim_{r\to0+}\left(\frac{1}{b-a}\int_{a}^{b}f^{r}(x)\ud x\right)^{1/r}=\exp\left(\frac{1}{b-a}\int_{a}^{b}\ln f(x)\ud x\right),
+\]
+
+\end_inset
+
+并用H
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+lder不等式说明上式左端关于
+\begin_inset Formula $r$
+\end_inset
+
+单调递增.
+\end_layout
+
+\begin_layout Section
+微分及其逆运算
+\end_layout
+
+\begin_layout Subsection
+可导与可微
+\end_layout
+
+\begin_layout Standard
+研究函数的局部性质
+\end_layout
+
+\begin_layout Paragraph
+定义4.1.1 (导数)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近有定义, 如果极限
+\begin_inset Formula 
+\[
+\lim_{x\to x_{0}}\frac{f(x)-f(x_{0})}{x-x_{0}}
+\]
+
+\end_inset
+
+存在且有限, 则称
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可导, 极限称为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处的导数, 记为
+\begin_inset Formula $f'(x_{0})$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{\ud f}{\ud x}(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+用
+\begin_inset Formula $\epsilon-\delta$
+\end_inset
+
+语言表述.
+\end_layout
+
+\begin_layout Paragraph
+命题4.1.1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可导, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处连续.
+\end_layout
+
+\begin_layout Paragraph
+命题4.1.2 (导数的运算法则)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f,g$
+\end_inset
+
+在
+\begin_inset Formula $x$
+\end_inset
+
+处可导, 则
+\begin_inset Formula $fg$
+\end_inset
+
+也在
+\begin_inset Formula $x$
+\end_inset
+
+处可导; 对于任意的常数
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha f+\beta g$
+\end_inset
+
+也在
+\begin_inset Formula $x$
+\end_inset
+
+处可导.
+ 且
+\end_layout
+
+\begin_layout Standard
+(1).
+ 
+\begin_inset Formula $(\alpha f+\beta g)'=\alpha f'+\beta g'$
+\end_inset
+
+, (线性性);
+\end_layout
+
+\begin_layout Standard
+(2).
+ 
+\begin_inset Formula $(fg)'=f'g+fg'$
+\end_inset
+
+.
+ (导性).
+\end_layout
+
+\begin_layout Paragraph
+推论4.1.3
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f,g$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可导, 
+\begin_inset Formula $g(x_{0})\ne0$
+\end_inset
+
+, 则
+\begin_inset Formula $\frac{f}{g}$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处也可导, 且
+\begin_inset Formula 
+\[
+\left(\frac{f}{g}\right)'=\frac{f'g-fg'}{g^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+可以用导数表述曲线在一点处的切线和法线, 事实上仅仅是用导数给出了切线和法线的定义, 属于先有导数的概念才有的切线和法线的概念.
+\end_layout
+
+\begin_layout Paragraph
+定义4.1.2 (微分)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近有定义, 如果存在常数
+\begin_inset Formula $A$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+f(x)=f(x_{0})+A(x-x_{0})+o(x-x_{0}),
+\]
+
+\end_inset
+
+则称
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可微, 线性映射
+\begin_inset Formula $x\mapsto Ax$
+\end_inset
+
+称为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处的微分, 记为
+\begin_inset Formula $df(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+命题4.1.4
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近有定义, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可导当且仅当
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可微, 且微分的斜率就是导数
+\begin_inset Formula $f'(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+可导对应函数在一点差商存在极限, 可微对应函数的局部线性化, 产生线性变换的主项.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x$
+\end_inset
+
+处的微分是一个斜率为
+\begin_inset Formula $f'(x)$
+\end_inset
+
+的线性映射, 当
+\begin_inset Formula $x$
+\end_inset
+
+变化时, 线性映射也变化, 即
+\begin_inset Formula $x\mapsto df(x)$
+\end_inset
+
+是一个新的映射, 记为
+\begin_inset Formula $df$
+\end_inset
+
+, 称为
+\begin_inset Formula $f$
+\end_inset
+
+的外微分或全微分.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x$
+\end_inset
+
+的全微分
+\begin_inset Formula $dx$
+\end_inset
+
+把任意点
+\begin_inset Formula $x$
+\end_inset
+
+映为
+\begin_inset Formula $x$
+\end_inset
+
+处的恒等映射.
+ 
+\end_layout
+
+\begin_layout Standard
+因为
+\begin_inset Formula $df(x)$
+\end_inset
+
+和
+\begin_inset Formula $dx$
+\end_inset
+
+都是线性变换, 所以有
+\begin_inset Formula $df=f'(x)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+把形如
+\begin_inset Formula $fdx$
+\end_inset
+
+的表达式(
+\begin_inset Formula $f$
+\end_inset
+
+为函数)称为
+\begin_inset Formula $1$
+\end_inset
+
+次微分形式.
+\end_layout
+
+\begin_layout Standard
+可以把微分运算看做升维运算, 把
+\begin_inset Formula $x$
+\end_inset
+
+和
+\begin_inset Formula $dx$
+\end_inset
+
+看做两个独立的变量, 
+\begin_inset Formula $dx$
+\end_inset
+
+就是
+\begin_inset Formula $\Delta x$
+\end_inset
+
+, 它与
+\begin_inset Formula $x$
+\end_inset
+
+的选取无关.
+ 
+\begin_inset Formula $df$
+\end_inset
+
+把单变量函数
+\begin_inset Formula $f$
+\end_inset
+
+映射为二元函数
+\begin_inset Formula $df(x)=f'(x)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+命题4.1.5 (链式法则)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $g$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可导, 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $g(x_{0})$
+\end_inset
+
+处可导, 则复合函数
+\begin_inset Formula $f\circ g=f(g)$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可导, 且
+\begin_inset Formula 
+\[
+\left(f(g)\right)'(x_{0})=f'\left(g(x_{0})\right)g'(x_{0}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+证明依赖于下式
+\begin_inset Formula 
+\[
+\begin{aligned}f(g(x)) & =f\left(g\left(x_{0}\right)\right)+f^{\prime}\left(g\left(x_{0}\right)\right)\left(g(x)-g\left(x_{0}\right)\right)+o\left(g(x)-g\left(x_{0}\right)\right)\\
+ & =f\left(g\left(x_{0}\right)\right)+f^{\prime}\left(g\left(x_{0}\right)\right)g^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+f^{\prime}\left(g\left(x_{0}\right)\right)o\left(x-x_{0}\right)+o\left(x-x_{0}\right)\\
+ & =f\left(g\left(x_{0}\right)\right)+f^{\prime}\left(g\left(x_{0}\right)\right)g^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+o\left(x-x_{0}\right)
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+命题4.1.6 (反函数求导法则)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近有定义, 且反函数为
+\begin_inset Formula $g$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可导, 且导数非零, 则
+\begin_inset Formula $g$
+\end_inset
+
+在
+\begin_inset Formula $y_{0}=f(x_{0})$
+\end_inset
+
+处可导, 且
+\begin_inset Formula 
+\[
+g'(y_{0})=\frac{1}{f'(x_{0})}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这个定理并没有要求
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近每点上都连续.
+ 导数
+\begin_inset Formula $f'(x_{0})\ne0$
+\end_inset
+
+的条件不能省掉, 否则考虑
+\begin_inset Formula $f(x)=x^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+命题4.1.8
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f,g$
+\end_inset
+
+可微, 则
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $d(\alpha f+\beta g)=\alpha df+\beta dg$
+\end_inset
+
+, 其中
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+为常数;
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $d(fg)=gdf+fdg$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $d(f/g)=\frac{gdf-fdg}{g^{2}}$
+\end_inset
+
+, 其中
+\begin_inset Formula $g\ne0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+命题4.1.9
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f,g$
+\end_inset
+
+均可微, 且复合函数
+\begin_inset Formula $f(g)$
+\end_inset
+
+有定义, 则
+\begin_inset Formula 
+\[
+d\left(f(g)\right)=f'(g)dg.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+高阶导数
+\end_layout
+
+\begin_layout Standard
+本节没有太多复杂的知识点, 仅做一些结论的罗列.
+\end_layout
+
+\begin_layout Paragraph
+定义4.2.1 (高阶导数)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近可导, 如果导数
+\begin_inset Formula $f'$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处仍可导, 则称
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处2阶可导.
+ 记为
+\begin_inset Formula 
+\[
+f''(x_{0})=(f')'(x_{0}),
+\]
+
+\end_inset
+
+并称为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处的2阶导数.
+ 
+\end_layout
+
+\begin_layout Standard
+一般地, 如果
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近
+\begin_inset Formula $n$
+\end_inset
+
+ (
+\begin_inset Formula $n\ge1$
+\end_inset
+
+) 阶可导, 且
+\begin_inset Formula $n$
+\end_inset
+
+阶导函数
+\begin_inset Formula $f^{(n)}$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可导, 则称
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处
+\begin_inset Formula $n+1$
+\end_inset
+
+阶可导, 记为
+\begin_inset Formula 
+\[
+f^{(n+1)}(x_{0})=\left(f^{(n)}\right)'(x_{0}),
+\]
+
+\end_inset
+
+称为
+\begin_inset Formula $f$
+\end_inset
+
+的
+\begin_inset Formula $n+1$
+\end_inset
+
+阶导数.
+\end_layout
+
+\begin_layout Paragraph
+注:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+的2阶导数要求
+\begin_inset Formula $f'$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近有定义, 也就是对于
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近的
+\begin_inset Formula $x$
+\end_inset
+
+能够计算
+\begin_inset Formula $f'(x)$
+\end_inset
+
+的值.
+ 另有一种用差分方法定义的二阶导数, 比如
+\begin_inset Formula 
+\[
+\lim_{h\to0}\frac{f(x+h)-2f(x)+f(x-h)}{h^{2}}
+\]
+
+\end_inset
+
+它避免了计算
+\begin_inset Formula $f'(x)$
+\end_inset
+
+, 而且允许一阶导数不存在, 而仅存在二阶导数.
+ 一般用于推广导数的概念.
+\end_layout
+
+\begin_layout Paragraph
+定义4.2.2
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+上的每点都
+\begin_inset Formula $n$
+\end_inset
+
+阶可导, 则称
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+中
+\begin_inset Formula $n$
+\end_inset
+
+阶可导; 如果
+\begin_inset Formula $f$
+\end_inset
+
+可导, 且导函数
+\begin_inset Formula $f'$
+\end_inset
+
+连续, 则称
+\begin_inset Formula $f$
+\end_inset
+
+(1阶)连续可导, 记为
+\begin_inset Formula $f\in C^{1}(I)$
+\end_inset
+
+; 一般
+\begin_inset Formula $n$
+\end_inset
+
+阶连续可导记为
+\begin_inset Formula $f\in C^{n}(I)$
+\end_inset
+
+.
+ 如果
+\begin_inset Formula $f$
+\end_inset
+
+有任意阶导数, 则称
+\begin_inset Formula $f$
+\end_inset
+
+是光滑的, 记为
+\begin_inset Formula $f\in C^{\infty}(I)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例4.2.3
+\end_layout
+
+\begin_layout Standard
+可微函数的导函数不一定连续.
+\end_layout
+
+\begin_layout Standard
+尽管导函数连续性丧失, 但仍有介值定理成立, 也就是Darboux介值定理.
+\end_layout
+
+\begin_layout Paragraph
+例4.2.4
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $k=1,2,\cdots$
+\end_inset
+
+, 则函数
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+x^{2k+1}\sin\frac{1}{x}, & x\neq0\\
+0, & x=0
+\end{cases}
+\]
+
+\end_inset
+
+有
+\begin_inset Formula $f\in C^{k}\setminus C^{k+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例4.2.5
+\end_layout
+
+\begin_layout Standard
+证明函数
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+0, & x\leqslant0\\
+e^{-\frac{1}{x}}, & x>0
+\end{cases}
+\]
+
+\end_inset
+
+是光滑函数.
+\end_layout
+
+\begin_layout Paragraph
+命题4.2.1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f,g$
+\end_inset
+
+均为
+\begin_inset Formula $n$
+\end_inset
+
+阶可导函数, 则
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $(\alpha f+\beta g)^{(n)}=\alpha f^{(n)}+\beta g^{(n)}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\alpha,\beta\in\RR$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(2) (Leibniz) 
+\begin_inset Formula 
+\[
+(fg)^{(n)}=\sum_{k=0}^{n}\binom{n}{k}f^{(n-k)}g^{(k)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+不定积分
+\end_layout
+
+\begin_layout Paragraph
+命题4.3.1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的可微函数, 则
+\begin_inset Formula $f'=0$
+\end_inset
+
+当且仅当
+\begin_inset Formula $f=C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+此定理使用中值定理证明最为简洁, 书中使用的方法可以归为极端原理.
+\end_layout
+
+\begin_layout Paragraph
+定义4.3.1 (原函数)
+\end_layout
+
+\begin_layout Standard
+方程
+\begin_inset Formula $F'(x)=f(x)$
+\end_inset
+
+的一个可微解
+\begin_inset Formula $F$
+\end_inset
+
+称为函数
+\begin_inset Formula $f$
+\end_inset
+
+的一个原函数.
+\end_layout
+
+\begin_layout Paragraph
+定义4.3.2 (不定积分)
+\end_layout
+
+\begin_layout Standard
+设函数
+\begin_inset Formula $f$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+上有原函数, 用记号
+\begin_inset Formula $\int f(x)\ud x$
+\end_inset
+
+表示
+\begin_inset Formula $f$
+\end_inset
+
+的原函数的一般表达式, 则
+\begin_inset Formula 
+\[
+\int f(x)dx=F(x)+C,\quad x\in I,
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $C$
+\end_inset
+
+为常数.
+\end_layout
+
+\begin_layout Paragraph
+定理4.3.2 (Newton-Leibniz)
+\end_layout
+
+\begin_layout Standard
+区间
+\begin_inset Formula $I$
+\end_inset
+
+中的连续函数都有原函数.
+ 设
+\begin_inset Formula $f$
+\end_inset
+
+连续, 
+\begin_inset Formula $a\in I$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+F(x)=\int_{a}^{x}f(t)\ud t,\quad x\in I
+\]
+
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+的一个原函数.
+\end_layout
+
+\begin_layout Standard
+需要注意Darboux介值定理, 将来会遇到有间断点的可积函数, 其变限积分在间断点处不可微, 所以不能形成一般非连续函数的原函数.
+\end_layout
+
+\begin_layout Standard
+此定理称为微积分基本定理, 它有其它形式:
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C(I)$
+\end_inset
+
+, 
+\begin_inset Formula $F$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+的任一原函数, 则存在常数
+\begin_inset Formula $C$
+\end_inset
+
+, 使得, 
+\begin_inset Formula $F(x)=\int_{a}^{x}f(t)dt+C$
+\end_inset
+
+, 所以
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=F(b)-F(a)=F\mid_{a}^{b}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+另有一种表述是当
+\begin_inset Formula $G$
+\end_inset
+
+连续可微时, 
+\begin_inset Formula 
+\[
+\int_{a}^{b}G'(x)dx=G(b)-G(a)=G\mid_{a}^{b}.
+\]
+
+\end_inset
+
+上式对于
+\begin_inset Formula $C^{1}$
+\end_inset
+
+函数总是对的, 但需要注意Volterra函数, 它在定义的区间上处处可导, 且导函数有界, 但导函数不可定积分.
+\end_layout
+
+\begin_layout Paragraph
+命题4.3.3 (不定积分的线性性质)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f,g$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+上均有原函数, 则
+\begin_inset Formula 
+\[
+\int[\alpha f(x)+\beta g(x)]dx=\alpha\int f(x)dx+\beta\int g(x)dx,
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+为常数.
+\end_layout
+
+\begin_layout Paragraph
+命题4.3.4
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+的原函数为
+\begin_inset Formula $F$
+\end_inset
+
+, 若
+\begin_inset Formula $f$
+\end_inset
+
+可逆, 且
+\begin_inset Formula $g=f^{-1}$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\int g(x)dx=xg(x)-F(g(x))+C.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+积分的计算
+\end_layout
+
+\begin_layout Paragraph
+命题4.4.1 (换元积分法, 变量替换法)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(u)$
+\end_inset
+
+是区间
+\begin_inset Formula $J$
+\end_inset
+
+上有定义的函数, 
+\begin_inset Formula $u=\phi(x)$
+\end_inset
+
+是区间
+\begin_inset Formula $I$
+\end_inset
+
+中的可微函数, 且
+\begin_inset Formula $\phi(I)\subset J$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(1) 设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $J$
+\end_inset
+
+上的原函数是
+\begin_inset Formula $F$
+\end_inset
+
+, 则
+\begin_inset Formula $F(\phi)$
+\end_inset
+
+是
+\begin_inset Formula $f(\phi)\phi'$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+上的原函数, 即
+\begin_inset Formula 
+\[
+\int f(\phi(x))\phi^{\prime}(x)dx=\int f(u)du+C=F(\phi(x))+C;
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2) 设
+\begin_inset Formula $\phi$
+\end_inset
+
+可逆, 且其逆可微, 
+\begin_inset Formula $\phi(I)=J$
+\end_inset
+
+.
+ 如果
+\begin_inset Formula $f(\phi(x))\phi'(x)$
+\end_inset
+
+有原函数
+\begin_inset Formula $G$
+\end_inset
+
+, 则
+\begin_inset Formula $f$
+\end_inset
+
+有原函数
+\begin_inset Formula $G(\phi^{-1}(u))$
+\end_inset
+
+, 即
+\begin_inset Formula 
+\[
+\int f(u)du=G(\phi^{-1}(u))+C.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+命题4.4.2 (分部积分法)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $u(x),v(x)$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+中可微, 若
+\begin_inset Formula $u'(x)v(x)$
+\end_inset
+
+有原函数, 则
+\begin_inset Formula $u(x)v'(x)$
+\end_inset
+
+也有原函数, 且
+\begin_inset Formula 
+\[
+\int u(x)v'(x)dx=u(x)v(x)-\int u'(x)v(x)dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例4.4.10
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $a\ne0$
+\end_inset
+
+, 求不定积分
+\begin_inset Formula $I=\int\ue^{ax}\cos bx\ud x$
+\end_inset
+
+和
+\begin_inset Formula $J=\int\ue^{ax}\sin bx\ud x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例4.4.18
+\end_layout
+
+\begin_layout Standard
+求不定积分
+\begin_inset Formula 
+\[
+\int\frac{1-r^{2}}{1-2r\cos x+r^{2}}dx,\qquad0<r<1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+不能用初等函数表述的不定积分:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e^{\pm x^{2}},\sin(x^{2}),\cos(x^{2}),\frac{\sin x}{x},\frac{\cos x}{x},\sqrt{1-k^{2}\sin^{2}x},\frac{1}{\sqrt{1-k^{2}\sin^{2}x}},\ (0<k<1).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+作业
+\end_layout
+
+\begin_layout Standard
+19.
+ 设
+\begin_inset Formula $a_{ij}(x)$
+\end_inset
+
+均为可导函数, 求行列式函数
+\begin_inset Formula $\mathrm{det}\left(a_{ij}(x)\right)_{n\times n}$
+\end_inset
+
+的导数.
+\end_layout
+
+\begin_layout Standard
+20.
+ Riemann函数
+\begin_inset Formula $R(x)$
+\end_inset
+
+处处不可导.
+\end_layout
+
+\begin_layout Standard
+11.
+ 通过对 
+\begin_inset Formula $(1-x)^{n}$
+\end_inset
+
+ 求导并利用二项式定理证明等式 
+\begin_inset Formula 
+\[
+\sum_{k=0}^{n}(-1)^{k}C_{n}^{k}k^{m}=\begin{cases}
+0, & m=0,1,\cdots,n-1,\\
+(-1)^{n}n!, & m=n.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+10.
+ 求不定积分的递推公式 (
+\begin_inset Formula $a\ne0$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+I_{n}=\int\frac{dx}{(ax^{2}+bx+c)^{n}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11.
+ 设
+\begin_inset Formula $a,b>0$
+\end_inset
+
+, 求不定积分的递推公式:
+\begin_inset Formula 
+\[
+I_{mn}=\int\frac{dx}{(x+a)^{m}(x+b)^{n}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+简单的微分方程
+\end_layout
+
+\begin_layout Standard
+例4.5.4 微分方程能够解出通解的表达式通常和朗斯基行列式有关.
 \end_layout
 
 \end_body

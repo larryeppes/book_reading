@@ -10,9 +10,12 @@
 - 数学分析
   - Fourier Series, Fourier Transform and Laplace Transform
   - Properties of the Classical Fourier Transform; Some Examples
+  - 数学分析 - 梅加强
 - 微积分
   - Cesaro and Abel summability
   - Formulas for the Remainder Term in Taylor Series
   - Infinite Series
+  - 导数
 - 泛函分析
   - 度量空间及其拓扑
+  - Wassermann - Functional Analysis
