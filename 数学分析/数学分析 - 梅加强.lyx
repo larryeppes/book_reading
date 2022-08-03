@@ -6147,5 +6147,215 @@ x\in(x_{0},x_{0}+\delta)\text{时, }f'(x)>0.
 
 \end_layout
 
+\begin_layout Subsection
+作业
+\end_layout
+
+\begin_layout Standard
+3.
+ 设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上二阶可导, 且
+\begin_inset Formula $f(a)=f(b)=0$
+\end_inset
+
+, 
+\begin_inset Formula $f'_{+}(a)f'_{-}(b)>0$
+\end_inset
+
+.
+ 证明: 存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $f''(\xi)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+6.
+ 设
+\begin_inset Formula $f(x)$
+\end_inset
+
+为
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的三阶可导函数, 且
+\begin_inset Formula $f(a)=f'(a)=f(b)=0$
+\end_inset
+
+, 证明, 对于任意的
+\begin_inset Formula $c\in[a,b]$
+\end_inset
+
+, 存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+f(c)=\frac{f'''(\xi)}{6}(c-a)^{2}(c-b).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+8.
+ 设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在区间
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可导, 且存在
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\left|f'(x)\right|\le M,\quad\forall x\in[a,b].
+\]
+
+\end_inset
+
+证明:
+\begin_inset Formula 
+\[
+\left|f(x)-\frac{f(a)+f(b)}{2}\right|\le\frac{M}{2}(b-a),\quad\forall x\in[a,b].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+10.
+ 设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上可微, 且
+\begin_inset Formula $a<x_{i}\le y_{i}<b$
+\end_inset
+
+, 
+\begin_inset Formula $i=1,2,\cdots,n$
+\end_inset
+
+.
+ 证明: 存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}[f(y_{i})-f(x_{i})]=f'(\xi)\sum_{i=1}^{n}(y_{i}-x_{i}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11.
+ 设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上可微, 且
+\begin_inset Formula 
+\[
+f(a)=0,\quad\left|f'(x)\right|\le\left|f(x)\right|,\quad\forall x\in[a,+\infty).
+\]
+
+\end_inset
+
+证明: 
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+11.
+ 设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+上二阶可导, 若
+\begin_inset Formula 
+\[
+\lim_{x\to\infty}\frac{f(x)}{\left|x\right|}=0,
+\]
+
+\end_inset
+
+则存在
+\begin_inset Formula $\xi\in\RR$
+\end_inset
+
+, 使得
+\begin_inset Formula $f''(\xi)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+12.
+ 设
+\begin_inset Formula $f(0)=0$
+\end_inset
+
+, 
+\begin_inset Formula $f'(x)$
+\end_inset
+
+严格单调递增, 则
+\begin_inset Formula $\frac{f(x)}{x}$
+\end_inset
+
+在
+\begin_inset Formula $(0,+\infty)$
+\end_inset
+
+上也严格单调递增.
+\end_layout
+
 \end_body
 \end_document
