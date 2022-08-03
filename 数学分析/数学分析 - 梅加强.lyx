@@ -5053,5 +5053,1091 @@ I_{mn}=\int\frac{dx}{(x+a)^{m}(x+b)^{n}}.
 例4.5.4 微分方程能够解出通解的表达式通常和朗斯基行列式有关.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+微分中值定理和Taylor展开
+\end_layout
+
+\begin_layout Subsection
+函数极值
+\end_layout
+
+\begin_layout Paragraph
+定义5.1.1 (极值点)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+定义在
+\begin_inset Formula $I$
+\end_inset
+
+上, 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+, 若存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+f(x)\ge f(x_{0}),\qquad\forall x\in(x_{0}-\delta,x_{0}+\delta)\cap I,
+\]
+
+\end_inset
+
+则称
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上的极小值点, 
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+称为极小值.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+, 且
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)\ge f(x_{0})$
+\end_inset
+
+, 则称
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+上的最小值点, 
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+称为函数
+\begin_inset Formula $f$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+上的最小值.
+\end_layout
+
+\begin_layout Paragraph
+定理5.1.1 (Fermat定理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上的极值点, 且
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是内点, 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处可导, 则
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+注:
+\end_layout
+
+\begin_layout Standard
+由于极值点定义是在
+\begin_inset Formula $(x_{0}-\delta,x_{0}+\delta)\cap I$
+\end_inset
+
+上给出的, 所以以上定理要加上
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是内点.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+使用极限的保号性, 判断
+\begin_inset Formula 
+\[
+f'(x_{0})=\lim_{x\to x_{0}^{-}}\frac{f(x)-f(x_{0})}{x-x_{0}}=\lim_{x\to x_{0}^{+}}\frac{f(x)-f(x_{0})}{x-x_{0}}
+\]
+
+\end_inset
+
+的符号.
+\end_layout
+
+\begin_layout Standard
+满足
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+的点称为
+\begin_inset Formula $f$
+\end_inset
+
+的驻点, 临界点.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f'(x_{0})\ge0$
+\end_inset
+
+, 则
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall x\in(x_{0}-\delta,x_{0}+\delta)$
+\end_inset
+
+, 有
+\begin_inset Formula $(x-x_{0})(f(x)-f(x_{0}))\ge0$
+\end_inset
+
+, 但
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近不单调.
+\end_layout
+
+\begin_layout Paragraph
+定理5.1.2 (Darboux)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+为
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的可导函数, 则
+\begin_inset Formula $f'$
+\end_inset
+
+可以取到
+\begin_inset Formula $f'_{+}(a)$
+\end_inset
+
+和
+\begin_inset Formula $f'_{-}(b)$
+\end_inset
+
+之间的任意值.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $k$
+\end_inset
+
+介于
+\begin_inset Formula $f'_{+}(a)$
+\end_inset
+
+与
+\begin_inset Formula $f'_{-}(b)$
+\end_inset
+
+之间, 定义
+\begin_inset Formula $g(x)=f(x)-kx$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+g'_{+}(a)g'_{-}(b)=(f'_{+}(a)-k)(f'_{-}(b)-k)\le0.
+\]
+
+\end_inset
+
+若上式等于零, 命题显然.
+ 若上式小于零, 不妨设
+\begin_inset Formula $g'_{+}(a)>0$
+\end_inset
+
+, 此时
+\begin_inset Formula $x=a$
+\end_inset
+
+不是最大值点; 并有
+\begin_inset Formula $g'_{-}(b)<0$
+\end_inset
+
+, 此时
+\begin_inset Formula $x=b$
+\end_inset
+
+不是最大值点.
+\end_layout
+
+\begin_layout Standard
+从而
+\begin_inset Formula $g(x)$
+\end_inset
+
+只能在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+内取到最大值, 由Fermat定理, 存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $g'(\xi)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+注:
+\end_layout
+
+\begin_layout Standard
+导函数有介值定理, 但导函数可以不连续, 比如
+\begin_inset Formula $x^{2}\sin\frac{1}{x}$
+\end_inset
+
+, 
+\begin_inset Formula $x\in[-\pi,\pi]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Darboux定理说明, 若
+\begin_inset Formula $g'$
+\end_inset
+
+在任何点处不为零, 则
+\begin_inset Formula $g'$
+\end_inset
+
+不变号.
+\end_layout
+
+\begin_layout Standard
+Darboux定理的使用条件必须是区间内每点处可导.
+\end_layout
+
+\begin_layout Standard
+一般区间上连续函数最值判别法:
+\end_layout
+
+\begin_layout Paragraph
+命题5.1.3
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C(\RR)$
+\end_inset
+
+, 且
+\begin_inset Formula 
+\[
+\lim_{x\to-\infty}f(x)=\lim_{x\to+\infty}f(x)=+\infty\text{ (或}-\infty\text{)}.
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+上达到最小(大)值.
+\end_layout
+
+\begin_layout Subsection
+微分中值定理
+\end_layout
+
+\begin_layout Paragraph
+定理5.2.1 (Rolle)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上可微, 且
+\begin_inset Formula $f(a)=f(b)$
+\end_inset
+
+, 则存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $f'(\xi)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定理5.2.2 (Lagrange)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上可微, 则存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+f'(\xi)=\frac{f(b)-f(a)}{b-a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+证明是构造性的, 对
+\begin_inset Formula 
+\[
+F(x)=f(x)-\left[f(a)+\frac{f(b)-f(a)}{b-a}(x-a)\right]
+\]
+
+\end_inset
+
+使用Rolle定理.
+\end_layout
+
+\begin_layout Paragraph
+定理5.2.3 (Cauchy)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f,g\in C[a,b]$
+\end_inset
+
+, 在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上可微, 且
+\begin_inset Formula $\forall x\in(a,b)$
+\end_inset
+
+, 
+\begin_inset Formula $g'(x)\ne0$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\exists\xi\in(a,b),\ s.t.\ \frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f'(\xi)}{g'(\xi)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $g(a)\ne g(b)$
+\end_inset
+
+), 对
+\begin_inset Formula 
+\[
+F(x)=f(x)-\left[f(a)+\frac{f(b)-f(a)}{g(b)-g(a)}(g(x)-g(a))\right]
+\]
+
+\end_inset
+
+用Rolle定理.
+\end_layout
+
+\begin_layout Paragraph
+几何意义:
+\end_layout
+
+\begin_layout Standard
+定义参数曲线
+\begin_inset Formula $\overrightarrow{r}(t)=(g(t),f(t))$
+\end_inset
+
+, 
+\begin_inset Formula $A=\overrightarrow{r}(a)$
+\end_inset
+
+, 
+\begin_inset Formula $B=\overrightarrow{r}(b)$
+\end_inset
+
+.
+ 则
+\begin_inset Formula $\frac{f(b)-f(a)}{g(b)-g(a)}$
+\end_inset
+
+表示直线
+\begin_inset Formula $\ell_{AB}$
+\end_inset
+
+的斜率.
+ Cauchy定理指出, 
+\begin_inset Formula $\exists\xi$
+\end_inset
+
+使得
+\begin_inset Formula $\overrightarrow{r}(\xi)$
+\end_inset
+
+处的切线方向
+\begin_inset Formula $\overrightarrow{r}'(\xi)\parallel\ell_{AB}$
+\end_inset
+
+, 而
+\begin_inset Formula $\overrightarrow{r}'(\xi)=(g'(\xi),f'(\xi))$
+\end_inset
+
+, 有
+\begin_inset Formula 
+\[
+k_{AB}=\frac{f'(\xi)}{g'(\xi)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+注:
+\end_layout
+
+\begin_layout Standard
+由于
+\begin_inset Formula $\forall x\in(a,b)$
+\end_inset
+
+, 
+\begin_inset Formula $g'(x)\ne0$
+\end_inset
+
+, 由Darboux介值定理
+\begin_inset Formula $g'(x)$
+\end_inset
+
+不变号, 
+\begin_inset Formula $g(x)$
+\end_inset
+
+其实是单调可逆的, 这可以给出另一种证法:
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $A=g(a)$
+\end_inset
+
+, 
+\begin_inset Formula $B=g(b)$
+\end_inset
+
+, 不妨设
+\begin_inset Formula $A<B$
+\end_inset
+
+, 则
+\begin_inset Formula $f(g^{-1}(y))\in C[A,B]$
+\end_inset
+
+, 由复合函数求导与反函数求导法则
+\begin_inset Formula 
+\[
+\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f(g^{-1}(B))-f(g^{-1}(A))}{B-A}=\frac{\ud}{\ud x}f(g^{-1}(x))\mid_{x=\zeta}=f'(g^{-1}(\zeta))\cdot\frac{1}{g'(g^{-1}(\zeta))}=\frac{f'(\xi)}{g'(\xi)},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $g(\xi)=\zeta\in[A,B]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+例5.2.4
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)\in C[a,b]$
+\end_inset
+
+, 在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+二阶可导, 若
+\begin_inset Formula $f(a)=f(b)=0$
+\end_inset
+
+, 则对于任意的
+\begin_inset Formula $c\in[a,b]$
+\end_inset
+
+, 存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+f(c)=\frac{f''(\xi)}{2}(c-a)(c-b).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证: (K值法)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $K$
+\end_inset
+
+满足
+\begin_inset Formula $f(c)=K(c-a)(c-b)$
+\end_inset
+
+.
+ 则
+\begin_inset Formula $f(x)-K(x-a)(x-b)$
+\end_inset
+
+有三个零点
+\begin_inset Formula $a,b,c$
+\end_inset
+
+.
+ 故存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $f''(\xi)-2K=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证法二:
+\end_layout
+
+\begin_layout Standard
+构造
+\begin_inset Formula 
+\[
+F(x)=f(x)-\frac{f(c)}{(c-a)(c-b)}(x-a)(x-b)
+\]
+
+\end_inset
+
+也有三个零点
+\begin_inset Formula $a,b,c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+注: Lagrange插值公式
+\end_layout
+
+\begin_layout Standard
+经过
+\begin_inset Formula $\left(x_{i},f(x_{i})\right)_{i=1}^{n}$
+\end_inset
+
+的
+\begin_inset Formula $n-1$
+\end_inset
+
+次多项式有如下形式
+\begin_inset Formula 
+\[
+p_{n-1}(x)=\sum_{i=1}^{n}\prod_{j\ne i}\frac{(x-x_{j})}{(x_{i}-x_{j})}f(x_{i}).
+\]
+
+\end_inset
+
+用K值法证明:
+\begin_inset Formula 
+\[
+f(x)-p_{n-1}(x)=\frac{1}{n!}f^{(n)}(\xi)\prod_{i=1}^{n}(x-x_{i}),\quad\xi\in(a,b).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例5.2.5
+\end_layout
+
+\begin_layout Standard
+证明Legendre (勒让德)多项式
+\begin_inset Formula $\frac{d^{n}}{dx^{n}}\left(x^{2}-1\right)^{n}$
+\end_inset
+
+在
+\begin_inset Formula $(-1,1)$
+\end_inset
+
+上有
+\begin_inset Formula $n$
+\end_inset
+
+个不同实根, 其中
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+多项式
+\begin_inset Formula $\left(x^{2}-1\right)^{n}$
+\end_inset
+
+的直到
+\begin_inset Formula $n-1$
+\end_inset
+
+次导数总有
+\begin_inset Formula $\pm1$
+\end_inset
+
+作为其零点, 用Rolle定理, 在每次求导时会多出现一个零点.
+\end_layout
+
+\begin_layout Subsection
+单调函数
+\end_layout
+
+\begin_layout Paragraph
+命题5.3.2
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上可微, 则
+\begin_inset Formula $f$
+\end_inset
+
+单调当且仅当
+\begin_inset Formula $f'$
+\end_inset
+
+不变号.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+: 用极限的保号性; 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+: 用Lagrange中值定理.
+\end_layout
+
+\begin_layout Paragraph
+命题5.3.3 (反函数定理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的可微函数, 若
+\begin_inset Formula $f'\ne0$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+.
+ 则
+\begin_inset Formula $f$
+\end_inset
+
+可逆且反函数可微.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+用反证法+Lagrange定理, 
+\begin_inset Formula $f$
+\end_inset
+
+是单射, 从而可逆, 由
+\begin_inset Formula $f$
+\end_inset
+
+连续得到
+\begin_inset Formula $f$
+\end_inset
+
+单调.
+ 并且
+\begin_inset Formula 
+\[
+\left(f^{-1}(y)\right)'=\frac{1}{f'(x)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+命题5.3.4
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 
+\begin_inset Formula $f\in C(x_{0}-\delta,x_{0}+\delta)$
+\end_inset
+
+, 在
+\begin_inset Formula $(x_{0}-\delta,x_{0})\cup(x_{0},x_{0}+\delta)$
+\end_inset
+
+上可微, 若
+\begin_inset Formula 
+\[
+f'(x)\le0,\ x\in(x_{0}-\delta,x_{0});\quad f'(x)\ge0,\ x\in(x_{0},x_{0}+\delta).
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+的极小值点.
+ 反之为极大值点.
+\end_layout
+
+\begin_layout Paragraph
+命题5.3.5
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在内点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处二阶可导, 且
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+, 则若
+\begin_inset Formula $f''(x_{0})>0$
+\end_inset
+
+, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+的(严格)极小值点.
+\end_layout
+
+\begin_layout Paragraph
+证明: 
+\end_layout
+
+\begin_layout Standard
+有高阶导数的定义要求
+\begin_inset Formula $f'(x)$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近可计算, 再由极限保号性, 
+\begin_inset Formula $\exists\delta$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+x\in(x_{0}-\delta,x_{0})\text{时, }f'(x)<0,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\in(x_{0},x_{0}+\delta)\text{时, }f'(x)>0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例5.3.4
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+上二阶可导, 若
+\begin_inset Formula $f$
+\end_inset
+
+有界, 证明: 
+\begin_inset Formula $\exists\xi\in\RR$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $f''(\xi)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+(反证法), 
+\begin_inset Formula $\forall x\in\RR$
+\end_inset
+
+, 
+\begin_inset Formula $f''(x)\ne0$
+\end_inset
+
+, 由Darboux定理, 
+\begin_inset Formula $f''$
+\end_inset
+
+不变号, 从而
+\begin_inset Formula $f'$
+\end_inset
+
+单调.
+\end_layout
+
+\begin_layout Standard
+不妨设
+\begin_inset Formula $f'$
+\end_inset
+
+单调上升, 取
+\begin_inset Formula $x_{0}\in\RR$
+\end_inset
+
+, 
+\begin_inset Formula $f'(x_{0})\ne0$
+\end_inset
+
+.
+ 因为
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f'(x_{0})>0\Longrightarrow f(x)-f(x_{0})=\int_{x_{0}}^{x}f'(t)\ud t\ge f'(x_{0})(x-x_{0})\to+\infty,\quad x\to+\infty,
+\]
+
+\end_inset
+
+与
+\begin_inset Formula $f$
+\end_inset
+
+有界矛盾; 而且
+\begin_inset Formula 
+\[
+f'(x_{0})<0\Longrightarrow f(x_{0})-f(x)=\int_{x}^{x_{0}}f'(t)\ud t\le f'(x_{0})(x_{0}-x)\to-\infty,\quad x\to-\infty,
+\]
+
+\end_inset
+
+也与
+\begin_inset Formula $f$
+\end_inset
+
+有界矛盾.
+\end_layout
+
 \end_body
 \end_document
