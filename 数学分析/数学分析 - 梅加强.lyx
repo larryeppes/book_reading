@@ -1269,6 +1269,22 @@ Stolz公式不是万能的, 比如
 上式最后用到收敛序列有界的结论.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 连续函数
 \end_layout
@@ -1331,7 +1347,7 @@ Stolz公式不是万能的, 比如
 \end_inset
 
 , 
-\begin_inset Formula $\exists\delta\in(0,\delta_{0})$
+\begin_inset Formula $\exists\delta=\delta(\epsilon,x_{0})\in(0,\delta_{0})$
 \end_inset
 
 , 当
@@ -1780,7 +1796,11 @@ Heine定理可改述为:
 
 , s.t.
  
-\begin_inset Formula $y_{0}\not\in g(U_{x_{0}}^{\circ})$
+\begin_inset Formula $\forall x\in U_{x_{0}}^{\circ}$
+\end_inset
+
+, 
+\begin_inset Formula $g(x)\ne y_{0}$
 \end_inset
 
 , 则
@@ -1799,7 +1819,7 @@ Heine定理可改述为:
 \begin_inset Formula $y_{0}\not\in g(U_{x_{0}}^{\circ})$
 \end_inset
 
-可以弱化为: 存在收敛于
+不可以弱化为: 存在收敛于
 \begin_inset Formula $x_{0}$
 \end_inset
 
@@ -1816,7 +1836,7 @@ Heine定理可改述为:
 \end_inset
 
 .
- 若将此条件去掉, 则结论不一定成立, 比如
+ 比如
 \begin_inset Formula 
 \[
 f(y)=\begin{cases}
@@ -7778,6 +7798,313 @@ f(a)=0,\quad\left|f'(x)\right|\le\left|f(x)\right|,\quad\forall x\in[a,+\infty).
 \end_inset
 
 上也严格单调递增.
+\end_layout
+
+\begin_layout Standard
+11.
+ 证明, 定义在
+\begin_inset Formula $\RR$
+\end_inset
+
+上的有界凸函数是常数函数.
+\end_layout
+
+\begin_layout Standard
+12.
+ 设
+\begin_inset Formula $f(x)\in C(I)$
+\end_inset
+
+, 若
+\begin_inset Formula $\forall x_{0}\in I$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $(x_{0}-\delta,x_{0}+\delta)$
+\end_inset
+
+上凸, 则
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+中凸.
+\end_layout
+
+\begin_layout Standard
+13.
+ 设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的凸函数, 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为
+\begin_inset Formula $I$
+\end_inset
+
+的内点.
+ 若
+\begin_inset Formula $f'_{-}(x_{0})\le k\le f'_{+}(x_{0})$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+f(x)\ge k(x-x_{0})+f(x_{0}),\quad\forall x\in I.
+\]
+
+\end_inset
+
+并证明Jensen不等式.
+\end_layout
+
+\begin_layout Standard
+15.
+ 设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+凸, 证明Hadamard不等式
+\begin_inset Formula 
+\[
+f\left(\frac{a+b}{2}\right)\le\frac{1}{b-a}\int_{a}^{b}f(x)\ud x\le\frac{f(a)+f(b)}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+16.
+ (Schwarz symmetric derivative, Riemann derivative) 设
+\begin_inset Formula $f\in C(\RR)$
+\end_inset
+
+, 若
+\begin_inset Formula $\forall x\in\RR$
+\end_inset
+
+, 均有
+\begin_inset Formula 
+\[
+\lim_{h\to0}\frac{f(x+h)+f(x-h)-2f(x)}{h^{2}}=0,
+\]
+
+\end_inset
+
+证明
+\begin_inset Formula $f(x)$
+\end_inset
+
+为线性函数.
+\end_layout
+
+\begin_layout Standard
+连续性是必要的, 否则考虑符号函数.
+ 这个极限不能被改善成
+\begin_inset Formula 
+\[
+\lim_{h\to0}\frac{f(x+2h)-2f(x+h)+f(x)}{h^{2}}=0,
+\]
+
+\end_inset
+
+这只需要改变符号函数在0点处的值为1, 使其在0点处右连续.
+\end_layout
+
+\begin_layout Standard
+提示: 证明
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)+\epsilon x^{2}$
+\end_inset
+
+是凸的, 
+\begin_inset Formula $f(x)-\epsilon x^{2}$
+\end_inset
+
+是凹的, 
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上位于直线
+\begin_inset Formula $[f(a)+\epsilon a^{2},f(b)+\epsilon b^{2}]$
+\end_inset
+
+与直线
+\begin_inset Formula $[f(a)-\epsilon a^{2},f(b)-\epsilon b^{2}]$
+\end_inset
+
+之间.
+\end_layout
+
+\begin_layout Standard
+6.
+ 是否存在
+\begin_inset Formula $\RR$
+\end_inset
+
+上的凸函数, 使得
+\begin_inset Formula $f(0)<0$
+\end_inset
+
+, 且
+\begin_inset Formula 
+\[
+\lim_{\left|x\right|\to+\infty}(f(x)-\left|x\right|)=0\ ?
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.
+ 设
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处2阶可导, 且
+\begin_inset Formula $f''(x_{0})\ne0$
+\end_inset
+
+.
+ 由微分中值定理, 当
+\begin_inset Formula $h$
+\end_inset
+
+充分小时, 存在
+\begin_inset Formula $\theta=\theta(h)$
+\end_inset
+
+, (
+\begin_inset Formula $0<\theta<1$
+\end_inset
+
+), s.t.
+\begin_inset Formula 
+\[
+f(x_{0}+h)-f(x_{0})=f'(x_{0}+\theta h)h,
+\]
+
+\end_inset
+
+证明:
+\begin_inset Formula 
+\[
+\lim_{h\to0}\theta=\frac{1}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+7.
+ 设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $(a,+\infty)$
+\end_inset
+
+中可微, 且
+\begin_inset Formula 
+\[
+\lim_{x\to+\infty}\left[f(x)+f'(x)\right]=l,
+\]
+
+\end_inset
+
+证明:
+\begin_inset Formula 
+\[
+\lim_{x\to+\infty}f(x)=l.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+9.
+ 设
+\begin_inset Formula $f''(x_{0})$
+\end_inset
+
+存在, 
+\begin_inset Formula $f'(x_{0})\ne0$
+\end_inset
+
+, 求极限
+\begin_inset Formula 
+\[
+\lim_{x\to x_{0}}\left[\frac{1}{f(x)-f(x_{0})}-\frac{1}{f'(x_{0})(x-x_{0})}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+10.
+ 设
+\begin_inset Formula $a_{1}\in(0,\pi)$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n+1}=\sin a_{n}$
+\end_inset
+
+, (
+\begin_inset Formula $n\ge1$
+\end_inset
+
+).
+ 证明:
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\sqrt{n}a_{n}=\sqrt{3}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
