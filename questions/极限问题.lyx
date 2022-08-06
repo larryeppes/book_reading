@@ -1,0 +1,741 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+
+\DeclareMathOperator{\sech}{sech}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+极限问题
+\end_layout
+
+\begin_layout Section
+基本方法
+\end_layout
+
+\begin_layout Subsection
+FInd the Limit: 
+\begin_inset Formula $\lim_{x\to+\infty}(\tan{\frac{\pi x}{2x+1}})^{\frac{1}{x}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{x\to\infty}\tan^{\frac{1}{x}}{\frac{\pi x}{2x+1}}=$
+\end_inset
+
+ 
+\begin_inset Formula $\lim_{x\to\infty}\cot^{\frac{1}{x}}\left(\frac{\pi}{2}-\frac{\pi x}{2x+1}\right)=$
+\end_inset
+
+ 
+\begin_inset Formula $\lim_{x\to\infty}\cot^{\frac{1}{x}}\frac{\pi}{2(2x+1)}=$
+\end_inset
+
+ 
+\begin_inset Formula $\lim_{x\to\infty}\left[\frac{\frac{\pi}{2(2x+1)}}{\tan\frac{\pi}{2(2x+1)}}\right]^{\frac{1}{x}}\cdot\left[\frac{2(2x+1)}{\pi x}\right]^{\frac{1}{x}}\cdot x^{\frac{1}{x}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\lim_{x\to{0}}{[ln{(x+1)]}^{\sin{x}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)=[\ln(x+1)]^{\sin{x}}=$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\frac{\ln(x+1)}{x}\right]^{\sin x}\cdot\left(x^{x}\right)^{\frac{\sin x}{x}}\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\lim_{x\searrow0}f(x)=1^{0}\cdot1^{1}=1$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Section
+幂级数法
+\end_layout
+
+\begin_layout Subsection
+Find the limit: 
+\begin_inset Formula $\lim_{n\to\infty}(\sqrt[n]{1}+\sqrt[n]{2}+\sqrt[n]{3}+\cdots+\sqrt[n]{2011}-2010)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\to\infty}(\sqrt[n]{1}+\sqrt[n]{2}+\sqrt[n]{3}+\cdots+\sqrt[n]{2011}-2010)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\lim_{n\to\infty}\left[1+\sum_{a=2}^{2011}\left(a^{\dfrac{1}{n}}-1\right)\right]^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\lim_{n\to\infty}\left[1+\dfrac{1}{n}\sum_{a=2}^{2011}\ln(a)+O(n^{-2})\right]^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=\exp\left[\sum_{a=2}^{2011}\ln(a)\right]=2011!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Evaluate:
+\begin_inset Formula $\lim_{n\to\infty}\prod_{k=1}^{n}\left(1+\sin\frac{k}{n^{2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $P_{n}=\prod_{k=1}^{n}(1+\sin{\frac{k}{n^{2}}})$
+\end_inset
+
+, then 
+\begin_inset Formula $\ln P_{n}=\sum_{k=1}^{n}\ln(1+\sin{\frac{k}{n^{2}}})$
+\end_inset
+
+, We have: 
+\begin_inset Formula $\ln(1+x)=x+o(x)$
+\end_inset
+
+, 
+\begin_inset Formula $x\to0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Here we get: 
+\begin_inset Formula $\sum_{k=1}^{n}\ln(1+\sin{\frac{k}{n^{2}}})=\lim_{n\to\infty}\sum_{k=1}^{n}\sin{\frac{k}{n^{2}}}=\lim_{n\to\infty}\sum_{k=1}^{n}\frac{\sin{\frac{k}{n^{2}}}}{\frac{k}{n^{2}}}\frac{k}{n^{2}}=\lim_{n\to\infty}\sum_{k=1}^{n}\frac{k}{n^{2}}=\lim_{n\to\infty}\sum_{k=1}^{n}\frac{n+1}{2n}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And we conclude that: 
+\begin_inset Formula $P_{n}=e^{\frac{1}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Evaluate 
+\begin_inset Formula $\lim_{n\to\infty}\frac{n^{2}}{\ln n}\cdot\left(\sqrt[n]{n}-\sqrt[n+1]{n+1}\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Proof.
+ 
+\begin_inset Formula $\lim_{n\to\infty}\ \frac{n^{2}}{\ln n}\cdot\left(\sqrt[n]{n}-\sqrt[n+1]{n+1}\right)=$
+\end_inset
+
+ 
+\begin_inset Formula $\lim_{n\to\infty}\ \frac{n^{2}}{\ln n}\cdot\sqrt[n+1]{n+1}\cdot\left(\frac{\sqrt[n]{n}}{\sqrt[n+1]{n+1}}-1\right)=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\to\infty}\ \frac{n^{2}}{\ln n}\cdot\frac{\frac{\sqrt[n]{n}}{\sqrt[n+1]{n+1}}-1}{\ln\frac{\sqrt[n]{n}}{\sqrt[n+1]{n+1}}}\cdot\left[\frac{1}{n}\cdot\ln n-\frac{1}{n+1}\cdot\ln(n+1)\right]=$
+\end_inset
+
+ 
+\begin_inset Formula $\lim_{n\to\infty}\ \frac{(n+1)\ln n-n\ln(n+1)}{\ln n}=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\to\infty}\ \frac{\ln n-\ln\left(\frac{n+1}{n}\right)^{n}}{\ln n}=1$
+\end_inset
+
+ .
+ In conclusion, 
+\begin_inset Formula $\boxed{\ \lim_{n\to\infty}\ \frac{n^{2}}{\ln n}\cdot\left(\sqrt[n]{n}-\sqrt[n+1]{n+1}\right)=1\ }$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+I used the remarkable limits 
+\begin_inset Formula $\lim_{n\to\infty}\ \sqrt[n]{n}=1$
+\end_inset
+
+ , 
+\begin_inset Formula $\lim_{n\to\infty}\ \left(1+\frac{1}{n}\right)^{n}=e$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{t\to1}\ \frac{t-1}{\ln t}=1$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsection
+Calculate 
+\begin_inset Formula $\lim_{x\to\infty}\ x\cdot\left[\left(\frac{a^{\frac{1}{x}}+b^{\frac{1}{x}}}{2}\right)^{x}-\sqrt{ab}\right]$
+\end_inset
+
+ , where 
+\begin_inset Formula $0<a,b\ne1$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+We have from Theylor's series..
+ 
+\begin_inset Formula $a^{\frac{1}{x}}+b^{\frac{1}{x}}=e^{\frac{1}{x}\ln a}+e^{\frac{1}{x}\ln b}=1+\frac{1}{x}\ln a+\frac{1}{2x^{2}}\ln^{2}a+O(\frac{1}{x^{2}})+1+\frac{1}{x}\ln b+\frac{1}{x^{2}}\ln^{2}b+O(\frac{1}{x^{2}})=2+\frac{1}{x}\ln{(a\cdot b)}+\frac{1}{2x^{2}}(\ln^{2}a+\ln^{2}b)+O(\frac{1}{x^{2}})$
+\end_inset
+
+ here 
+\begin_inset Formula $(\frac{a^{\frac{1}{x}}+b^{\frac{1}{x}}}{2})^{x}=[1+(\frac{1}{x}\ln a\cdot b+\frac{1}{2x^{2}}(\ln^{2}a+\ln^{2}b)+O(\frac{1}{x^{2}}))]^{x}=e^{x\cdot\ln{(1+(\frac{1}{x}\ln a\cdot b+\frac{1}{2x^{2}}(\ln^{2}a+\ln^{2}b)})}=e^{x\cdot(\frac{1}{x}\ln a\cdot b+\frac{1}{2x^{2}}(\ln^{2}a+\ln^{2}b)+O(\frac{1}{x}))}=\sqrt{a\cdot b}(1+\frac{1}{4x}(\ln^{2}a+\ln^{2}b))$
+\end_inset
+
+ And conclusion is: 
+\begin_inset Formula $\lim_{x\to\infty}\ x\cdot\left[\left(\frac{a^{\frac{1}{x}}+b^{\frac{1}{x}}}{2}\right)^{x}-\sqrt{ab}\right]$
+\end_inset
+
+=
+\begin_inset Formula $\lim\limits _{x\to\infty}x\cdot(\frac{1}{2x}(\ln^{2}a+\ln^{2}b))=\boxed{\frac{1}{2}(\ln^{2}a+\ln^{2}b)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+积分法
+\end_layout
+
+\begin_layout Subsection
+Evaluate: 
+\begin_inset Formula $\lim_{n\to\infty}\sum_{k=1}^{n-1}\frac{1}{n}\sqrt{\frac{n+k}{n-k}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{\sum_{k=1}^{n}\left\vert \cos\left(k\right)\right\vert }{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+递推数列
+\end_layout
+
+\begin_layout Subsection
+Consider the recurrent sequence 
+\begin_inset Formula $x_{1}>0\ ,\ x_{n+1}=\left(1+\frac{x_{n}}{a}\right)^{a}-1$
+\end_inset
+
+ , where 
+\begin_inset Formula $0<a<1$
+\end_inset
+
+ .
+ Prove that 
+\begin_inset Formula $\lim_{n\to\infty}\ x_{n}=0$
+\end_inset
+
+ and ascertain 
+\begin_inset Formula $\lim_{n\to\infty}\ nx_{n}$
+\end_inset
+
+ .
+ Answer : 
+\begin_inset Formula $\frac{2a}{1-a}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+One can easily prove by induction that the sequence 
+\begin_inset Formula $(x_{n})_{n\ge1}$
+\end_inset
+
+ has positive terms.
+ On the other hand, by Bernoulli's inequality one gets: 
+\begin_inset Formula $x_{n+1}=(1+\frac{x_{n}}{a})^{a}-1$
+\end_inset
+
+ 
+\begin_inset Formula $\le1+a\cdot\frac{x_{n}}{a}-1=x_{n}$
+\end_inset
+
+ - note that 
+\begin_inset Formula $a\in(0,1)$
+\end_inset
+
+ - so the given sequence it is decreasing, thus convergent and let 
+\begin_inset Formula $l\in[0,x_{1})$
+\end_inset
+
+ be its limit.
+ By passing to limit in the recurrent relation we obtain: 
+\begin_inset Formula $l=(1+\frac{l}{a})^{a}-1$
+\end_inset
+
+ and differentiating with respect to 
+\begin_inset Formula $l$
+\end_inset
+
+ both sides of the latter equality we now have: 
+\begin_inset Formula $1=a\cdot(1+\frac{l}{a})^{a-1}\cdot\frac{1}{a}$
+\end_inset
+
+ whence the desired limit : 
+\begin_inset Formula $\boxed{\ l=\lim_{n\to\infty}\,x_{n}=0\ }$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For the second part of our problem let's note that the required limit, say
+ 
+\begin_inset Formula $L$
+\end_inset
+
+, can be written as : 
+\begin_inset Formula $L=\lim_{n\to\infty}\,\frac{n}{\frac{1}{x_{n}}}$
+\end_inset
+
+ so this is an indetermination case 
+\begin_inset Formula $\frac{\infty}{\infty}$
+\end_inset
+
+ - because 
+\begin_inset Formula $(x_{n})_{n\ge1}$
+\end_inset
+
+ is monotonously decreasing and its limit is equal to 
+\begin_inset Formula $0$
+\end_inset
+
+ then 
+\begin_inset Formula $(\frac{1}{x_{n}})_{n\ge1}$
+\end_inset
+
+ is monotonously increasing to 
+\begin_inset Formula $\frac{1}{0^{+}}=+\infty$
+\end_inset
+
+ .
+ Now we need to find the limit 
+\begin_inset Formula $J=\lim_{n\to\infty}\,\frac{(n+1)-n}{\frac{1}{x_{n+1}}-\frac{1}{x_{n}}}$
+\end_inset
+
+ and in case this is finite then, by Stolz-Cesaro theorem, we will conclude
+ that 
+\begin_inset Formula $L=J$
+\end_inset
+
+ .
+ Observe that : 
+\begin_inset Formula $J=\lim_{n\to\infty}\,\frac{x_{n}x_{n+1}}{x_{n}-x_{n+1}}=\lim_{n\to\infty}\,\frac{x_{n}[(1+\frac{x_{n}}{a})^{a}-1]}{x_{n}-(1+\frac{x_{n}}{a})^{a}+1}=$
+\end_inset
+
+ 
+\begin_inset Formula ${\lim_{n\to\infty}\,[\frac{(1+\frac{x_{n}}{a})^{a}-1}{\frac{x_{n}}{a}}\cdot\frac{x_{n}^{2}}{a}\cdot\frac{1}{1+x_{n}-(1+\frac{x_{n}}{a})^{a}}}]=$
+\end_inset
+
+ 
+\begin_inset Formula $\lim_{n\to\infty}\,\frac{x_{n}^{2}}{1+x_{n}-(1+\frac{x_{n}}{a})^{a}}$
+\end_inset
+
+ .
+ But 
+\begin_inset Formula $\lim_{x\to0}\,\frac{x^{2}}{1+x-(1+\frac{x}{a})^{a}}\stackrel{\text{l'H}}{=}$
+\end_inset
+
+ 
+\begin_inset Formula $\lim_{x\to0}\,\frac{2x}{1-a\cdot(1+\frac{x}{a})^{a-1}\cdot\frac{1}{a}}=$
+\end_inset
+
+ 
+\begin_inset Formula $2\lim_{x\to0}\,\frac{x}{1-(1+\frac{x}{a})^{a-1}}\stackrel{\text{l'H}}{=}$
+\end_inset
+
+ 
+\begin_inset Formula $2\lim_{x\to0}\,\frac{1}{(1-a)\cdot(1+\frac{x}{a})^{a-2}\cdot\frac{1}{a}}=\frac{2a}{1-a}$
+\end_inset
+
+ so 
+\begin_inset Formula $J=\lim_{n\to\infty}\,\frac{x_{n}^{2}}{1+x_{n}-(1+\frac{x_{n}}{a})^{a}}=\frac{2a}{1-a}$
+\end_inset
+
+ and accordingly 
+\begin_inset Formula $\boxed{\ L=\lim_{n\to\infty}\,nx_{n}=\frac{2a}{1-a}\ }$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsection
+Let 
+\begin_inset Formula $(x_{n})_{n\ge1}$
+\end_inset
+
+ be a sequence of real numbers such that: 
+\begin_inset Formula $\lim_{n\to\infty}\,(x_{n+2}+2x_{n+1}+x_{n})=0$
+\end_inset
+
+ .
+ Prove that : 
+\begin_inset Formula $\lim_{n\to\infty}\,\frac{x_{n}}{n^{2}}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Using Stolz theorem 
+\begin_inset Formula $\lim_{n\to\infty}\frac{(-1)^{n+2}x_{n+2}}{(n+2)^{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $=\lim_{n\to\infty}\frac{(-1)^{n+2}x_{n+2}-(-1)^{n+1}x_{n+1}}{(n+2)^{2}-(n+1)^{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $=\lim_{n\to\infty}\frac{(-1)^{n+2}x_{n+2}-2(-1)^{n+1}x_{n+1}+(-1)^{n}x_{n}}{(n+2)^{2}-2(n+1)^{2}+n^{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $=\lim_{n\to\infty}\frac{(-1)^{n}(x_{n+2}+2x_{n+1}+x_{n})}{2}=0$
+\end_inset
+
+ So 
+\begin_inset Formula $\lim_{n\to\infty}\frac{(-1)^{n}x_{n}}{n^{2}}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow\lim_{n\to\infty}\frac{x_{n}}{n^{2}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+方程类
+\end_layout
+
+\begin_layout Subsection
+Let 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ be a positive root of equation 
+\begin_inset Formula $x^{n}=x^{2}+x+1$
+\end_inset
+
+.
+ Find 
+\begin_inset Formula $\lim_{n\to\infty}n(x_{n}-1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}(x)=x^{n}-x^{2}-x-1$
+\end_inset
+
+; we have, for 
+\begin_inset Formula $n\ge3,f(1)=-2,f(2)>0$
+\end_inset
+
+.
+ Hence we have 
+\begin_inset Formula $x_{n}>1$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\ge3.$
+\end_inset
+
+ From here, we can strengthen the lower bound; since 
+\begin_inset Formula $x_{n}>1$
+\end_inset
+
+ we now have 
+\begin_inset Formula $x_{n}^{n}=x_{n}^{2}+x_{n}+1>3$
+\end_inset
+
+ and so 
+\begin_inset Formula $x_{n}>\sqrt[n]{3}$
+\end_inset
+
+.
+ Then, we can set our upper bound in a similar fashion: 
+\begin_inset Formula $x_{n}^{n}<3x_{n}^{2}$
+\end_inset
+
+ and so 
+\begin_inset Formula $x_{n}<\sqrt[n-2]{3}.$
+\end_inset
+
+ So, we have 
+\begin_inset Formula 
+\[
+n(\sqrt[n]{3}-1)<n(x_{n}-1)<n(\sqrt[n-2]{3}-1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, we note that 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}n(\sqrt[n]{3}-1)=\lim_{t\to0}\frac{3^{t}-1}{t}=\frac{d}{dt}\left(3^{t}\right)_{t=0}=\log{3}
+\]
+
+\end_inset
+
+and similarly 
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}n(\sqrt[n-2]{3}-1)=\lim_{n\to\infty}\frac{n}{n-2}(n-2)(\sqrt[n-2]{3}-1)=\log{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the squeeze theorem, the limit is 
+\begin_inset Formula $\log{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

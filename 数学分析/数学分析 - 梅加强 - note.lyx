@@ -7443,6 +7443,480 @@ f(x)-\left[f(x_{0})+f'(x_{0})(x-x_{0})+\frac{1}{2}f''(x_{0})(x-x_{0})^{2}\right]
 
 \end_layout
 
+\begin_layout Paragraph
+定理5.7.1 (带Peano余项的Taylor公式)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处
+\begin_inset Formula $n$
+\end_inset
+
+阶可导, 则
+\begin_inset Formula 
+\[
+f(x)=f(x_{0})+f'(x_{0})(x-x_{0})+\frac{1}{2!}f''(x_{0})(x-x_{0})^{2}+\cdots+\frac{1}{n!}f^{(n)}(x_{0})(x-x_{0})^{n}+o((x-x_{0})^{n}),\quad(x\to x_{0}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明: 
+\end_layout
+
+\begin_layout Standard
+(归纳法+中值定理) 记
+\begin_inset Formula 
+\[
+R_{n}(x)=f(x)-\left[f(x_{0})+f'(x_{0})(x-x_{0})+\cdots+\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}\right],
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+\frac{R_{k+1}(x)}{(x-x_{0})^{k+1}}\to\frac{R'_{k+1}(x)}{(k+1)(x-x_{0})^{k}}=\frac{o((x-x_{0})^{n})}{(k+1)(x-x_{0})^{k}}=o(1).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+定理5.7.2 (Taylor)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上
+\begin_inset Formula $n+1$
+\end_inset
+
+阶可导, 
+\begin_inset Formula $x_{0},x\in(a,b)$
+\end_inset
+
+.
+ 则存在
+\begin_inset Formula $\xi,\zeta\in(x,x_{0})$
+\end_inset
+
+或
+\begin_inset Formula $(x_{0},x)$
+\end_inset
+
+, s.t.
+ Taylor展开的余项
+\begin_inset Formula 
+\[
+R_{n}(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_{0})^{n+1},
+\]
+
+\end_inset
+
+称为Lagrange余项, 以及
+\begin_inset Formula 
+\[
+R_{n}(x)=\frac{1}{n!}f^{(n+1)}(\zeta)(x-\zeta)^{n}(x-x_{0}),
+\]
+
+\end_inset
+
+称为Cauchy余项.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula 
+\[
+F(t)=f(t)+\sum_{k=1}^{n}\frac{f^{(k)}(t)}{k!}(x-t)^{k},\quad t\in(a,b).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对
+\begin_inset Formula $t$
+\end_inset
+
+求导, 得到
+\begin_inset Formula 
+\[
+F'(t)=\frac{1}{n!}f^{(n+1)}(t)(x-t)^{n}.
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+F(x)-F(x_{0})=R_{n}(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cauchy余项: 用Lagrange中值定理, 
+\begin_inset Formula $\exists\zeta=x_{0}+\theta(x-x_{0})$
+\end_inset
+
+, (
+\begin_inset Formula $0<\theta<1$
+\end_inset
+
+), s.t.
+\begin_inset Formula 
+\[
+R_{n}(x)=F'(\zeta)(x-x_{0}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lagrange余项: 用Cauchy微分中值定理, 
+\begin_inset Formula $\exists\xi=x_{0}+\eta(x-x_{0})$
+\end_inset
+
+, (
+\begin_inset Formula $0<\eta<1$
+\end_inset
+
+), s.t.
+\begin_inset Formula 
+\[
+\frac{R_{n}(x)}{(x-x_{0})^{n+1}}=\frac{F(x)-F(x_{0})}{G(x)-G(x_{0})}=\frac{F'(\xi)}{G'(\xi)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+上面的证明给出Taylor展开的积分余项公式
+\begin_inset Formula 
+\[
+f(x)=f(x_{0})+\sum_{k=1}^{n}\frac{f^{(k)}(x_{0})}{k!}(x-x_{0})^{k}+\int_{x_{0}}^{x}\frac{f^{(n+1)}(t)}{n!}(x-t)^{n}\ud t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+应用
+\end_layout
+
+\begin_layout Standard
+证明: 
+\begin_inset Formula 
+\[
+\int_{0}^{1}(1-t^{2})^{n}\ud t=\frac{(2n)!!}{(2n+1)!!}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)=(1+x)^{2n+1}$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x=0$
+\end_inset
+
+处Taylor展开:
+\begin_inset Formula 
+\[
+(1+x)^{2n+1}=\sum_{k=0}^{n}\binom{2n+1}{k}x^{k}+\int_{0}^{x}\frac{(2n+1)!}{n!}(1+t)^{n}(x-t)^{n}\ud t,
+\]
+
+\end_inset
+
+令
+\begin_inset Formula $x=1$
+\end_inset
+
+, 所以
+\begin_inset Formula 
+\[
+\int_{0}^{1}(1-t^{2})^{n}\ud t=\frac{(2n)!!}{(2n+1)!!}.
+\]
+
+\end_inset
+
+这个积分可以换元法求解:
+\begin_inset Formula 
+\[
+\int_{0}^{1}(1-t^{2})^{n}\ud t=\int_{0}^{\pi/2}\cos^{2n+1}x\ud x=\frac{1}{2}B\left(\frac{1}{2},\frac{2n+2}{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+定理5.7.4 (Taylor系数的唯一性)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处
+\begin_inset Formula $n$
+\end_inset
+
+阶可导, 且
+\begin_inset Formula 
+\[
+f(x)=\sum_{k=0}^{n}a_{k}(x-x_{0})^{k}+o((x-x_{0})^{n})\quad(x\to x_{0}),
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+a_{k}=\frac{1}{k!}f^{(k)}(x_{0}),\quad k=0,1,\cdots,n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+给出Taylor展开的Peano余项表示, 两者作差比阶.
+\end_layout
+
+\begin_layout Paragraph
+命题5.7.5
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x=0$
+\end_inset
+
+处的Taylor展开为
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+, 则
+\end_layout
+
+\begin_layout Standard
+(1).
+ 
+\begin_inset Formula $f(-x)$
+\end_inset
+
+的Taylor展开为
+\begin_inset Formula $\sum_{n=0}^{\infty}(-1)^{n}a_{n}x^{n}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(2).
+ 
+\begin_inset Formula $f(x^{k})$
+\end_inset
+
+的Taylor展开为
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{kn}$
+\end_inset
+
+, 其中
+\begin_inset Formula $k\in\NN_{+}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(3).
+ 
+\begin_inset Formula $x^{k}f(x)$
+\end_inset
+
+的Taylor展开为
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{k+n}$
+\end_inset
+
+, 其中
+\begin_inset Formula $k\in\NN_{+}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(4).
+ 
+\begin_inset Formula $f'(x)$
+\end_inset
+
+的Taylor展开为
+\begin_inset Formula $\sum_{n=1}^{\infty}na_{n}x^{n-1}=\sum_{n=0}^{\infty}(n+1)a_{n+1}x^{n}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(5).
+ 
+\begin_inset Formula $\int_{0}^{x}f(t)\ud t$
+\end_inset
+
+的Taylor展开为
+\begin_inset Formula $\sum_{n=0}^{\infty}\frac{a_{n}}{n+1}x^{n+1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(6).
+ 如果
+\begin_inset Formula $g(x)$
+\end_inset
+
+在
+\begin_inset Formula $x=0$
+\end_inset
+
+处的Taylor展开为
+\begin_inset Formula $\sum_{n=0}^{\infty}b_{n}x^{n}$
+\end_inset
+
+, 则
+\begin_inset Formula $\lambda f(x)+\mu g(x)$
+\end_inset
+
+的Taylor展开为
+\begin_inset Formula $\sum_{n=0}^{\infty}(\lambda a_{n}+\mu b_{n})x^{n}$
+\end_inset
+
+, 其中
+\begin_inset Formula $\lambda,\mu\in\RR$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ln(1-x)=-\left(x+\frac{x^{2}}{2}+\cdots+\frac{x^{n}}{n}\right)-\int_{0}^{x}\frac{t^{n}}{1-t}\ud t.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\arctan x=\left(x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\cdots+(-1)^{n-1}\frac{x^{2n-1}}{2n-1}\right)+(-1)^{n}\int_{0}^{x}\frac{t^{2n}}{1+t^{2}}\ud t=\frac{\ui}{2}\ln\frac{1-\ui x}{1+\ui x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例5.7.5 
+\end_layout
+
+\begin_layout Standard
+Taylor展开收敛, 但不收敛到函数本身的例子.
+\end_layout
+
+\begin_layout Standard
+定义
+\begin_inset Formula 
+\[
+\phi(x)=\begin{cases}
+0, & x\le0;\\
+\ue^{-\frac{1}{x}}, & x>0.
+\end{cases}
+\]
+
+\end_inset
+
+在
+\begin_inset Formula $x=0$
+\end_inset
+
+处展开的Taylor级数恒为
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 作业
 \end_layout
@@ -8100,6 +8574,124 @@ f(x_{0}+h)-f(x_{0})=f'(x_{0}+\theta h)h,
 \begin_inset Formula 
 \[
 \lim_{n\to\infty}\sqrt{n}a_{n}=\sqrt{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是 
+\begin_inset Formula $x$
+\end_inset
+
+ 的 
+\begin_inset Formula $n$
+\end_inset
+
+ 次多项式, 则 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ 处的Taylor展开的 Peano 余项 
+\begin_inset Formula $R_{n}(x)$
+\end_inset
+
+ 恒为零.
+ (提示: 考虑其它余项公式.)
+\end_layout
+
+\begin_layout Standard
+10.
+ 设 
+\begin_inset Formula $f(x),g(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $(-1,1)$
+\end_inset
+
+ 中无限次可微, 且 
+\begin_inset Formula 
+\[
+\left|f^{(n)}(x)-g^{(n)}(x)\right|\le n!|x|,\quad\forall x\in(-1,1),n=0,1,2,\cdots.
+\]
+
+\end_inset
+
+证明 
+\begin_inset Formula $f(x)=g(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+12.
+ 设 
+\begin_inset Formula $f$
+\end_inset
+
+ 在 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 附近可以表示为 
+\begin_inset Formula 
+\[
+f(x)=\sum_{k=0}^{n}a_{k}\left(x-x_{0}\right)^{k}+o\left(\left(x-x_{0}\right)^{n}\right)\quad\left(x\rightarrow x_{0}\right),
+\]
+
+\end_inset
+
+则 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是否在 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 处 
+\begin_inset Formula $n$
+\end_inset
+
+ 阶可导? 
+\end_layout
+
+\begin_layout Standard
+13.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上二阶可导, 且 
+\begin_inset Formula $f^{\prime}(a)=f^{\prime}(b)=0$
+\end_inset
+
+.
+ 证明, 存在 
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, 使得 
+\begin_inset Formula 
+\[
+\left|f^{\prime\prime}(\xi)\right|\ge\frac{4}{(b-a)^{2}}|f(b)-f(a)|.
 \]
 
 \end_inset
