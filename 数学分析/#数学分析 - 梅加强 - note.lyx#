@@ -5105,6 +5105,65 @@ I_{mn}=\int\frac{dx}{(x+a)^{m}(x+b)^{n}}.
 
 \end_layout
 
+\begin_layout Standard
+7.
+ 设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(0,+\infty)$
+\end_inset
+
+上可导, 且
+\begin_inset Formula 
+\[
+2f(x)=f(x^{2}),\quad\forall x>0.
+\]
+
+\end_inset
+
+证明
+\begin_inset Formula $f(x)=c\ln x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+hint: 设
+\begin_inset Formula $g(x)=f(\ue^{x})$
+\end_inset
+
+.
+ 题目条件可以弱化为
+\begin_inset Formula $f$
+\end_inset
+
+仅在
+\begin_inset Formula $x=1$
+\end_inset
+
+处可导.
+ 
+\begin_inset Formula 
+\[
+g(x)=\frac{g\left(\frac{x}{2^{n}}\right)}{x/2^{n}}x=g'(0)x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+可导性不能省去, 否则考虑
+\begin_inset Formula $\max\left\{ 0,c\ln x\right\} $
+\end_inset
+
+作为函数的另一个解.
+\end_layout
+
 \begin_layout Subsection
 简单的微分方程
 \end_layout
@@ -7918,6 +7977,294 @@ Taylor展开收敛, 但不收敛到函数本身的例子.
 \end_layout
 
 \begin_layout Subsection
+Taylor公式和微分学的应用
+\end_layout
+
+\begin_layout Paragraph
+Thm.
+ 5.8.1 (函数极值的判断)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处
+\begin_inset Formula $n$
+\end_inset
+
+阶可导, 且
+\begin_inset Formula 
+\[
+f'(x_{0})=f''(x_{0})=\cdots=f^{(n-1)}(x_{0})=0,\quad f^{(n)}(x_{0})\ne0,
+\]
+
+\end_inset
+
+则
+\end_layout
+
+\begin_layout Standard
+(1).
+ 
+\begin_inset Formula $n$
+\end_inset
+
+为偶数, 若
+\begin_inset Formula $f^{(n)}(x_{0})<0$
+\end_inset
+
+, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为极大值点; 若
+\begin_inset Formula $f^{(n)}(x_{0})>0$
+\end_inset
+
+, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为极小值点.
+\end_layout
+
+\begin_layout Standard
+(2).
+ 
+\begin_inset Formula $n$
+\end_inset
+
+为奇数时, 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+不是极值点.
+\end_layout
+
+\begin_layout Paragraph
+Thm.
+ 5.8.2 (Jensen不等式的余项)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上二阶可导.
+ 当
+\begin_inset Formula $x_{i}\in[a,b]$
+\end_inset
+
+, (
+\begin_inset Formula $1\le i\le n$
+\end_inset
+
+)时, 
+\begin_inset Formula $\exists\xi\in(a,b)$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+f\left(\sum_{i=1}^{n}\lambda_{i}x_{i}\right)-\sum_{i=1}^{n}\lambda_{i}f(x_{i})=-\frac{1}{2}f''(\xi)\sum_{i<j}\lambda_{i}\lambda_{j}(x_{i}-x_{j})^{2},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $\lambda_{i}\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{i=1}^{n}\lambda_{i}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证明: 
+\end_layout
+
+\begin_layout Standard
+记
+\begin_inset Formula 
+\[
+\overline{x}=\sum_{i=1}^{n}\lambda_{i}x_{i}\in[a,b].
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+f(x_{i})=f(\overline{x})+f'(x)(x_{i}-\overline{x})+\frac{1}{2}f''(\xi_{i})(x_{i}-\overline{x})^{2},\quad\xi_{i}\in(a,b).
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}\lambda_{i}f(x_{i})=f(\overline{x})+\frac{1}{2}\sum_{i=1}^{n}f''(\xi_{i})\lambda_{i}(x_{i}-\overline{x})^{2}.
+\]
+
+\end_inset
+
+而
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}\lambda_{i}(x_{i}-\overline{x})^{2}=\frac{1}{2}\sum_{i,j=1}^{n}\lambda_{i}\lambda_{j}(x_{i}-x_{j})^{2}.
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\frac{m}{4}\sum_{i,j=1}^{n}\lambda_{i}\lambda_{j}(x_{i}-x_{j})^{2}\le\sum_{i=1}^{n}\lambda_{i}f(x_{i})-f(\overline{x})\le\frac{M}{4}\sum_{i,j=1}^{n}\lambda_{i}\lambda_{j}(x_{i}-x_{j})^{2}.
+\]
+
+\end_inset
+
+用Darboux定理.
+\end_layout
+
+\begin_layout Standard
+用于求极限
+\end_layout
+
+\begin_layout Paragraph
+例5.8.1
+\end_layout
+
+\begin_layout Standard
+求
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow\infty}\left[x-x^{2}\ln\left(1+\frac{1}{x}\right)\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+解:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ln\left(1+\frac{1}{x}\right)=\frac{1}{x}-\frac{1}{2x^{2}}+o\left(\frac{1}{x^{2}}\right)\quad(x\rightarrow\infty),
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+x-x^{2}\ln\left(1+\frac{1}{x}\right)=\frac{1}{2}+o(1)\rightarrow\frac{1}{2}(x\rightarrow\infty).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例5.8.2
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $0$
+\end_inset
+
+附近二阶可导, 且
+\begin_inset Formula $\left|f''\right|\le M$
+\end_inset
+
+, 
+\begin_inset Formula $f(0)=0$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\sum_{k=1}^{n}f\left(\frac{k}{n^{2}}\right)=\frac{1}{2}f^{\prime}(0).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+解:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(\frac{k}{n^{2}}\right)=f(0)+f^{\prime}(0)\frac{k}{n^{2}}+R_{k,n},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula 
+\[
+\left|R_{k,n}\right|=\frac{1}{2}\left|f^{\prime\prime}\left(\xi_{k,n}\right)\right|\left(\frac{k}{n^{2}}\right)^{2}\leqslant\frac{1}{2}M\frac{k^{2}}{n^{4}},
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\begin{aligned}\sum_{k=1}^{n}f\left(\frac{k}{n^{2}}\right) & =f^{\prime}(0)\frac{1}{n^{2}}\sum_{k=1}^{n}k+\sum_{k=1}^{n}R_{k,n}\\
+ & =f^{\prime}(0)\frac{n+1}{2n}+o(1)\quad(n\rightarrow\infty),
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Stirling公式
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n!=\sqrt{2\pi n}\left(\frac{n}{e}\right)^{n}e^{\frac{\theta_{n}}{12n}},\quad0<\theta_{n}<1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 作业
 \end_layout
 
@@ -8697,6 +9044,58 @@ f(x)=\sum_{k=0}^{n}a_{k}\left(x-x_{0}\right)^{k}+o\left(\left(x-x_{0}\right)^{n}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+4.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 的一个开邻域内 
+\begin_inset Formula $n+1$
+\end_inset
+
+ 次连续可微, 且 
+\begin_inset Formula $f^{(n+1)}\left(x_{0}\right)\neq0$
+\end_inset
+
+, 其 Taylor 公式为 
+\begin_inset Formula 
+\[
+f\left(x_{0}+h\right)=f\left(x_{0}\right)+f^{\prime}\left(x_{0}\right)h+\cdots+\frac{1}{n!}f^{(n)}\left(x_{0}+\theta h\right)h^{n},
+\]
+
+\end_inset
+
+其中 
+\begin_inset Formula $0<\theta<1$
+\end_inset
+
+.
+ 证明 
+\begin_inset Formula $\lim_{h\rightarrow0}\theta=\frac{1}{n+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+8.
+ 设 
+\begin_inset Formula $a_{1}\in\mathbb{R},a_{n+1}=\arctan a_{n}(n\geqslant1)$
+\end_inset
+
+.
+ 求极限 
+\begin_inset Formula $\lim_{n\rightarrow\infty}na_{n}^{2}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
