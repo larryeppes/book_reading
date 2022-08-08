@@ -9132,5 +9132,1921 @@ M_{0}=\sup_{x\in\mathbb{R}}|f(x)|<\infty,\quad M_{2}=\sup_{x\in\mathbb{R}}\left|
  的 Taylor 展开.)
 \end_layout
 
+\begin_layout Section
+Riemann积分
+\end_layout
+
+\begin_layout Subsection
+Riemann可积
+\end_layout
+
+\begin_layout Standard
+设定义在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+区间上的函数
+\begin_inset Formula $f(x)$
+\end_inset
+
+, 将
+\begin_inset Formula $[a,b]$
+\end_inset
+
+分割为
+\begin_inset Formula 
+\[
+\pi:a=x_{0}<x_{1}<\cdots<x_{n}=b,
+\]
+
+\end_inset
+
+近似第
+\begin_inset Formula $i$
+\end_inset
+
+个小梯形的面积为
+\begin_inset Formula $f(\xi_{i})\Delta x_{i}$
+\end_inset
+
+, 其中
+\begin_inset Formula $\xi_{i}\in[x_{i-1},x_{i}]$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta x_{i}=x_{i}-x_{i-1}$
+\end_inset
+
+.
+ 用
+\begin_inset Formula $\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}$
+\end_inset
+
+表示曲边梯形ABCD的面积的近似值, 称为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的Riemann和.
+ 若
+\begin_inset Formula 
+\[
+\lim_{\norm{\pi}\to0}\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}
+\]
+
+\end_inset
+
+存在, 其中
+\begin_inset Formula $\norm{\pi}=\max_{1\le i\le n}\left\{ \Delta x_{i}\right\} $
+\end_inset
+
+为分割的模.
+ 则记为
+\begin_inset Formula $\int_{a}^{b}f(x)\ud x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定义6.1.1 (Riemann积分)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+定义在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上, 若存在
+\begin_inset Formula $I\in\RR$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+, 对任何分割
+\begin_inset Formula $\pi$
+\end_inset
+
+, 只要
+\begin_inset Formula $\norm{\pi}<\delta$
+\end_inset
+
+, 就有
+\begin_inset Formula 
+\[
+\left|\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}-I\right|<\epsilon,\quad\forall\xi_{i}\in[x_{i-1},x_{i}],\ i=1,2,\cdots,n,
+\]
+
+\end_inset
+
+则称
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上Riemann可积或可积, 
+\begin_inset Formula $I$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的(定)积分, 记为
+\begin_inset Formula 
+\[
+I=\int_{a}^{b}f(x)\ud x=\lim_{\norm{\pi}\to0}\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}.
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $f$
+\end_inset
+
+称为被积函数, 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+称为积分区间, 
+\begin_inset Formula $a,b$
+\end_inset
+
+分别称为积分下限与积分上限.
+\end_layout
+
+\begin_layout Paragraph
+定理6.1.1 (可积的必要条件)
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有界, 反之不然.
+\end_layout
+
+\begin_layout Standard
+有界函数未必可积: Dirichlet函数
+\begin_inset Formula $D(x)$
+\end_inset
+
+, 对于任意的分割
+\begin_inset Formula $\xi_{i}\in[x_{i-1},x_{i}]\setminus\QQ$
+\end_inset
+
+, 积分和为
+\begin_inset Formula $0$
+\end_inset
+
+; 当
+\begin_inset Formula $\xi_{i}\in[x_{i-1},x_{i}]\cap\QQ$
+\end_inset
+
+时, 积分和为
+\begin_inset Formula $1$
+\end_inset
+
+.
+ 所以
+\begin_inset Formula $D(x)$
+\end_inset
+
+的积分和没有极限.
+\end_layout
+
+\begin_layout Standard
+对于分割
+\begin_inset Formula 
+\[
+\pi:a=x_{0}<x_{1}<\cdots<x_{n}=b,
+\]
+
+\end_inset
+
+记
+\begin_inset Formula 
+\[
+M_{i}=\sup_{x\in[x_{i-1},x_{i}]}f(x),\quad m_{i}=\inf_{x\in[x_{i-1},x_{i}]}f(x),
+\]
+
+\end_inset
+
+令
+\begin_inset Formula 
+\[
+S=\sum_{i=1}^{n}M_{i}\cdot\Delta x_{i},\quad s=\sum_{i=1}^{n}m_{i}\cdot\Delta x_{i},
+\]
+
+\end_inset
+
+称
+\begin_inset Formula $S$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+关于
+\begin_inset Formula $\pi$
+\end_inset
+
+的Darboux上和, 简称上和, 记为
+\begin_inset Formula $S(\pi)$
+\end_inset
+
+或
+\begin_inset Formula $S(\pi,f)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $s$
+\end_inset
+
+称为Darboux下和, 简称下和, 记为
+\begin_inset Formula $s(\pi)$
+\end_inset
+
+或
+\begin_inset Formula $s(\pi,f)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+称
+\begin_inset Formula 
+\[
+\omega_{i}=M_{i}-m_{i}=\sup_{x\in\left[x_{i-1},x_{i}\right]}f(x)-\inf_{x\in\left[x_{i-1},x_{i}\right]}f(x)
+\]
+
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[x_{i-1},x_{i}]$
+\end_inset
+
+上的振幅.
+ 则
+\begin_inset Formula 
+\[
+S-s=\sum_{i=1}^{n}\omega_{i}\cdot\Delta x_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+引理6.1.2
+\end_layout
+
+\begin_layout Standard
+设分割
+\begin_inset Formula $\pi'$
+\end_inset
+
+是从
+\begin_inset Formula $\pi$
+\end_inset
+
+添加
+\begin_inset Formula $k$
+\end_inset
+
+个分点得到的, 则
+\begin_inset Formula 
+\[
+\begin{aligned}S(\pi)\geqslant & S\left(\pi^{\prime}\right)\geqslant S(\pi)-(M-m)k\|\pi\|,\\
+s(\pi)\leqslant & s\left(\pi^{\prime}\right)\leqslant s(\pi)+(M-m)k\|\pi\|.
+\end{aligned}
+\]
+
+\end_inset
+
+即, 对于给定的分割, 增加分点时下和不减, 上和不增.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+只需要对
+\begin_inset Formula $k=1$
+\end_inset
+
+进行即可.
+\end_layout
+
+\begin_layout Paragraph
+推论6.1.3
+\end_layout
+
+\begin_layout Standard
+对于任何两个分割
+\begin_inset Formula $\pi_{1}$
+\end_inset
+
+和
+\begin_inset Formula $\pi_{2}$
+\end_inset
+
+, 有
+\begin_inset Formula 
+\[
+s(\pi_{1})\le S(\pi_{2}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+定理6.1.4 (Darboux)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{\|\pi\|\rightarrow0}S(\pi)=\inf_{\pi}S(\pi),\quad\lim_{\|\pi\|\rightarrow0}s(\pi)=\sup_{\pi}s(\pi).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+称
+\begin_inset Formula $\inf_{\pi}S(\pi)$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的上积分, 
+\begin_inset Formula $\sup_{\pi}s(\pi)$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的下积分.
+\end_layout
+
+\begin_layout Paragraph
+定理6.1.5 (可积的充要条件)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有界, 则以下命题等价:
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上Riemann可积.
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的上积分和下积分相等.
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula 
+\[
+\lim_{\norm{\pi}\to0}\sum_{i=1}^{n}\omega_{i}\cdot\Delta x_{i}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(4) 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的分割
+\begin_inset Formula $\pi$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+S(\pi)-s(\pi)=\sum_{i=1}^{n}\omega_{i}\cdot\Delta x_{i}<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+推论6.1.6
+\end_layout
+
+\begin_layout Standard
+(1) 设
+\begin_inset Formula $[\alpha,\beta]\subseteq[a,b]$
+\end_inset
+
+, 如果
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[\alpha,\beta]$
+\end_inset
+
+上也可积.
+\end_layout
+
+\begin_layout Standard
+(2) 设
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+, 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,c]$
+\end_inset
+
+及
+\begin_inset Formula $[c,b]$
+\end_inset
+
+上都可积, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积.
+\end_layout
+
+\begin_layout Paragraph
+例6.1.1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f,g$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上均可积, 则
+\begin_inset Formula $fg$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上也可积.
+\end_layout
+
+\begin_layout Standard
+注意,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\omega_{i}(fg) & =\sup_{x^{\prime},x^{\prime\prime}\in\left[x_{i-1},x_{i}\right]}\left|f\left(x^{\prime}\right)g\left(x^{\prime}\right)-f\left(x^{\prime\prime}\right)g\left(x^{\prime\prime}\right)\right|\\
+ & =\sup_{x^{\prime},x^{\prime\prime}\in\left[x_{i-1},x_{i}\right]}\left|f\left(x^{\prime}\right)g\left(x^{\prime}\right)-f\left(x^{\prime}\right)g\left(x^{\prime\prime}\right)+f\left(x^{\prime}\right)g\left(x^{\prime\prime}\right)-f\left(x^{\prime\prime}\right)g\left(x^{\prime\prime}\right)\right|\\
+ & \leqslant\sup_{x^{\prime},x^{\prime\prime}\in\left[x_{i-1},x_{i}\right]}\left[\left|f\left(x^{\prime}\right)\right|\left|g\left(x^{\prime}\right)-g\left(x^{\prime\prime}\right)\right|+\left|g\left(x^{\prime\prime}\right)\right|\left|f\left(x^{\prime}\right)-f\left(x^{\prime\prime}\right)\right|\right]\\
+ & \leqslant K\left(\omega_{i}(g)+\omega_{i}(f)\right),
+\end{aligned}
+\]
+
+\end_inset
+
+并用前面的定理6.1.5 (3).
+\end_layout
+
+\begin_layout Paragraph
+定理6.1.7 (可积函数类)
+\end_layout
+
+\begin_layout Standard
+(1) 若
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积;
+\end_layout
+
+\begin_layout Standard
+(2) 若有界函数
+\begin_inset Formula $f$
+\end_inset
+
+只在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有限个点处不连续, 则
+\begin_inset Formula $f$
+\end_inset
+
+可积;
+\end_layout
+
+\begin_layout Standard
+(3) 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上单调, 则
+\begin_inset Formula $f$
+\end_inset
+
+可积.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+(2) 主要依赖以下不等式
+\begin_inset Formula 
+\[
+\begin{aligned}S(\pi)-s(\pi) & \leqslant\frac{\varepsilon}{2(b-a)}(b-a)+2M\sum_{i=1}^{N}2\rho\\
+ & \leqslant\frac{\varepsilon}{2}+2M\cdot2N\rho<\varepsilon.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(3) 主要依赖以下不等式
+\begin_inset Formula 
+\[
+\begin{aligned}\sum_{i=1}^{n}\omega_{i}\cdot\Delta x_{i} & =\sum_{i=1}^{n}\left(f\left(x_{i}\right)-f\left(x_{i-1}\right)\right)\cdot\Delta x_{i}\\
+ & \leqslant\sum_{i=1}^{n}\left(f\left(x_{i}\right)-f\left(x_{i-1}\right)\right)\cdot\norm{\pi}\\
+ & =\left(f\left(x_{n}\right)-f\left(x_{0}\right)\right)\norm{\pi}\\
+ & =(f(b)-f(a))\norm{\pi}<\varepsilon.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+为
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上定义的函数, 若存在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的分割
+\begin_inset Formula 
+\[
+\pi:a=x_{0}<x_{1}<x_{2}<\cdots<x_{n}=b,
+\]
+
+\end_inset
+
+使得
+\begin_inset Formula $f$
+\end_inset
+
+在每个小区间
+\begin_inset Formula $(x_{i-1},x_{i})$
+\end_inset
+
+上均为常数, 则称
+\begin_inset Formula $f$
+\end_inset
+
+为阶梯函数.
+\end_layout
+
+\begin_layout Paragraph
+推论6.1.8
+\end_layout
+
+\begin_layout Standard
+阶梯函数均为可积函数.
+\end_layout
+
+\begin_layout Paragraph
+定理6.1.9 (Riemann)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有界, 则
+\begin_inset Formula $f$
+\end_inset
+
+可积的充要条件是
+\begin_inset Formula $\forall\epsilon,\eta>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的分割
+\begin_inset Formula $\pi$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+\sum_{\omega_{i}\ge\eta}\Delta x_{i}<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例6.1.3
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+在
+\begin_inset Formula $[\alpha,\beta]$
+\end_inset
+
+上可积, 
+\begin_inset Formula $\phi([\alpha,\beta])\subseteq[a,b]$
+\end_inset
+
+.
+ 则
+\begin_inset Formula $f\circ\phi$
+\end_inset
+
+在
+\begin_inset Formula $[\alpha,\beta]$
+\end_inset
+
+上仍可积.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上一致连续.
+ 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+, 当 
+\begin_inset Formula $x,y\in$
+\end_inset
+
+ 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $|x-y|<\delta$
+\end_inset
+
+ 时, 
+\begin_inset Formula $|f(x)-f(y)|<\frac{\varepsilon}{2(\beta-\alpha)}$
+\end_inset
+
+.
+ 因为 
+\begin_inset Formula $\phi$
+\end_inset
+
+ 在 
+\begin_inset Formula $[\alpha,\beta]$
+\end_inset
+
+ 上可积, 则存在 
+\begin_inset Formula $[\alpha,\beta]$
+\end_inset
+
+ 的分割 
+\begin_inset Formula $\pi:\alpha=t_{0}<t_{1}<\cdots<t_{m}=\beta$
+\end_inset
+
+, 使得 
+\begin_inset Formula 
+\[
+\sum_{\omega_{i}(\phi)\geqslant\delta}\Delta t_{i}<\frac{\varepsilon}{4K+1},
+\]
+
+\end_inset
+
+其中 
+\begin_inset Formula $K=\max_{x\in[a,b]}|f(x)|$
+\end_inset
+
+.
+ 于是 
+\begin_inset Formula 
+\[
+\begin{aligned}\sum_{i=1}^{m}\omega_{i}(f\circ\varphi)\cdot\Delta t_{i} & =\sum_{\omega_{i}(\phi)\geqslant\delta}\omega_{i}(f\circ\varphi)\cdot\Delta t_{i}+\sum_{\omega_{i}(\phi)<\delta}\omega_{i}(f\circ\varphi)\cdot\Delta t_{i}\\
+ & \leqslant2K\cdot\sum_{\omega_{i}(\phi)\geqslant\delta}\Delta t_{i}+\frac{\varepsilon}{2(\beta-\alpha)}\cdot\sum_{\omega_{i}(\phi)<\delta}\Delta t_{i}\\
+ & \leqslant2K\cdot\frac{\varepsilon}{4K+1}+\frac{\varepsilon}{2(\beta-\alpha)}\cdot(\beta-\alpha)<\varepsilon.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+两个可积函数的复合不可积的例子: 
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+1, & x\ne0,\\
+0, & x=0.
+\end{cases}\quad g(x)=R(x)\Longrightarrow f\circ g(x)=D(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+可积函数复合连续函数不可积的例子:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+0, & 0\le x<1,\\
+1, & x=1.
+\end{cases}
+\]
+
+\end_inset
+
+设
+\begin_inset Formula $A$
+\end_inset
+
+为
+\begin_inset Formula $[0,1]$
+\end_inset
+
+上有正测度的类Cantor集, 
+\begin_inset Formula $(a_{i},b_{i})$
+\end_inset
+
+, (
+\begin_inset Formula $i\in\NN_{+}$
+\end_inset
+
+)为
+\begin_inset Formula $A$
+\end_inset
+
+的邻接区间.
+ 
+\begin_inset Formula 
+\[
+g(x)=\begin{cases}
+1, & x\in A,\\
+1-\frac{1}{2}(b_{i}-c_{i})+\left|x-\frac{1}{2}(a_{i}+b_{i})\right|, & x\in(a_{i},b_{i}),\ i\in\NN_{+}.
+\end{cases}
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+f\circ g(x)=\begin{cases}
+1, & x\in A,\\
+0, & x\in[0,1]\setminus A.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+定理6.1.10 (Lebsegue)
+\end_layout
+
+\begin_layout Standard
+有界函数
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上Riemann可积的充要条件是它的不连续点集
+\begin_inset Formula $D_{f}$
+\end_inset
+
+为零测集.
+ 其中
+\begin_inset Formula $D_{f}=\bigcup_{n=1}^{\infty}D_{\frac{1}{n}}$
+\end_inset
+
+, 而
+\begin_inset Formula 
+\[
+D_{\delta}=\left\{ x\in[a,b]:\omega(f,x)\ge\delta\right\} ,\quad\omega(f,x)=\lim_{r\rightarrow0^{+}}\sup\left\{ \left|f\left(x_{1}\right)-f\left(x_{2}\right)\right|:x_{1},x_{2}\in(x-r,x+r)\cap[a,b]\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+定积分的性质
+\end_layout
+
+\begin_layout Standard
+线性性质, 积分区间可加性, 保号性, 绝对值不等式.
+\end_layout
+
+\begin_layout Paragraph
+定理6.2.3 (积分第一中值定理)
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f,g$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上可积, 且 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ 不变号, 则存在 
+\begin_inset Formula $\mu$
+\end_inset
+
+, 
+\begin_inset Formula $\inf_{x\in[a,b]}f(x)\leqslant\mu\leqslant\sup_{x\in[a,b]}f(x)$
+\end_inset
+
+, 使得 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)dx=\mu\cdot\int_{a}^{b}g(x)dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+引理 6.2.4.
+ 
+\end_layout
+
+\begin_layout Standard
+如果 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上可积, 令 
+\begin_inset Formula 
+\[
+F(x)=\int_{a}^{x}f(t)dt,\quad x\in[a,b],
+\]
+
+\end_inset
+
+则 
+\begin_inset Formula $F$
+\end_inset
+
+ 是 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上的连续函数.
+\end_layout
+
+\begin_layout Standard
+注: 尽管这个变限积分常被用来和Newton-Leibnitz公式混用来求定积分, 但是这并不表示
+\begin_inset Formula $F$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+的原函数.
+ 根据导函数的介值定理, 如果
+\begin_inset Formula $F$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+的原函数, 则
+\begin_inset Formula $f$
+\end_inset
+
+不能有间断点, 这对于可积函数
+\begin_inset Formula $f$
+\end_inset
+
+是条件不足的.
+\end_layout
+
+\begin_layout Paragraph
+定理 6.2.5 (积分第二中值定理).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上可积.
+ 
+\end_layout
+
+\begin_layout Standard
+(1) 如果 
+\begin_inset Formula $g$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上单调递减, 且 
+\begin_inset Formula $g(x)\geqslant0$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in[a,b]$
+\end_inset
+
+, 则存在 
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+ 使得 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)dx=g(a)\cdot\int_{a}^{\xi}f(x)dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2) 如果 
+\begin_inset Formula $g$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上单调递增, 且 
+\begin_inset Formula $g(x)\geqslant0$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in[a,b]$
+\end_inset
+
+, 则存在 
+\begin_inset Formula $\eta\in[a,b]$
+\end_inset
+
+ 使得 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)dx=g(b)\cdot\int_{\eta}^{b}f(x)dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(3) 一般地, 如果 
+\begin_inset Formula $g$
+\end_inset
+
+ 为 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上的单调函数, 则存在 
+\begin_inset Formula $\zeta\in[a,b]$
+\end_inset
+
+, 使得 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)dx=g(a)\cdot\int_{a}^{\zeta}f(x)dx+g(b)\cdot\int_{\zeta}^{b}f(x)dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例 6.2.2.
+ 
+\end_layout
+
+\begin_layout Paragraph
+设 
+\begin_inset Formula $\beta\geqslant0,b>a>0$
+\end_inset
+
+, 证明 
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}e^{-\beta x}\frac{\sin x}{x}dx\right|\leqslant\frac{2}{a}.
+\]
+
+\end_inset
+
+证明.
+ 
+\end_layout
+
+\begin_layout Standard
+对 
+\begin_inset Formula $g(x)=\frac{e^{-\beta x}}{x}$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)=\sin x$
+\end_inset
+
+ 用积分第二中值公式, 存在 
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+, 使得 
+\begin_inset Formula 
+\[
+\int_{a}^{b}e^{-\beta x}\frac{\sin x}{x}dx=\frac{e^{-\beta a}}{a}\cdot\int_{a}^{\xi}\sin xdx=\frac{e^{-\beta a}}{a}(\cos a-\cos\xi)
+\]
+
+\end_inset
+
+这说明 
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}e^{-\beta x}\frac{\sin x}{x}dx\right|\leqslant2\frac{e^{-\beta a}}{a}\leqslant\frac{2}{a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例 6.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+证明 
+\begin_inset Formula $\lim_{A\rightarrow\infty}\int_{0}^{A}\frac{\sin x}{x}dx$
+\end_inset
+
+ 存在.
+ 
+\end_layout
+
+\begin_layout Paragraph
+证明.
+ 
+\end_layout
+
+\begin_layout Standard
+在上例中取 
+\begin_inset Formula $\beta=0$
+\end_inset
+
+, 则当 
+\begin_inset Formula $B>A>0$
+\end_inset
+
+ 时, 有
+\begin_inset Formula 
+\[
+\left|\int_{0}^{B}\frac{\sin x}{x}dx-\int_{0}^{A}\frac{\sin x}{x}dx\right|=\left|\int_{A}^{B}\frac{\sin x}{x}dx\right|\leqslant\frac{2}{A}\rightarrow0\quad(A\rightarrow\infty),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例3.5.15
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+是周期为
+\begin_inset Formula $T$
+\end_inset
+
+的连续函数, 则
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\int_{a}^{b}f(x)g(nx)\ud x=\frac{1}{T}\int_{a}^{b}f(x)\ud x\int_{0}^{T}g(x)\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例 6.2.6 (Riemann-Lebesgue).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 为 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上的可积函数, 则 
+\begin_inset Formula 
+\[
+\lim_{\lambda\rightarrow+\infty}\int_{a}^{b}f(x)\sin\lambda xdx=0,\quad\lim_{\lambda\rightarrow+\infty}\int_{a}^{b}f(x)\cos\lambda xdx=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明.
+ 
+\end_layout
+
+\begin_layout Standard
+以第一个极限为例.
+ 因为 
+\begin_inset Formula $f$
+\end_inset
+
+ 可积, 故任给 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 的分割 
+\begin_inset Formula 
+\[
+\pi:a=x_{0}<x_{1}<x_{2}<\cdots<x_{n}=b,
+\]
+
+\end_inset
+
+使得 
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}\omega_{i}(f)\Delta x_{i}<\frac{1}{2}\varepsilon.
+\]
+
+\end_inset
+
+又因为 
+\begin_inset Formula $f$
+\end_inset
+
+ 有界, 故存在 
+\begin_inset Formula $K$
+\end_inset
+
+, 使得 
+\begin_inset Formula $|f(x)|\leqslant K$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in[a,b]$
+\end_inset
+
+.
+ 于是当 
+\begin_inset Formula $\lambda>\frac{4nK}{\varepsilon}$
+\end_inset
+
+ 时, 有 
+\begin_inset Formula 
+\[
+\begin{aligned}\left|\int_{a}^{b}f(x)\sin\lambda xdx\right| & =\left|\sum_{i=1}^{n}\int_{x_{i-1}}^{x_{i}}f(x)\sin\lambda xdx\right|\\
+ & =\left|\sum_{i=1}^{n}\int_{x_{i-1}}^{x_{i}}\left[f(x)-f\left(x_{i-1}\right)\right]\sin\lambda xdx+\sum_{i=1}^{n}\int_{x_{i-1}}^{x_{i}}f\left(x_{i-1}\right)\sin\lambda xdx\right|\\
+ & \leqslant\sum_{i=1}^{n}\int_{x_{i-1}}^{x_{i}}\left|f(x)-f\left(x_{i-1}\right)\right|dx+\sum_{i=1}^{n}\left|f\left(x_{i-1}\right)\right|\left|\int_{x_{i-1}}^{x_{i}}\sin\lambda xdx\right|\\
+ & \leqslant\sum_{i=1}^{n}\omega_{i}(f)\Delta x_{i}+\sum_{i=1}^{n}K\frac{1}{\lambda}\left|\cos\lambda x_{i-1}-\cos\lambda x_{i}\right|\\
+ & <\frac{1}{2}\varepsilon+\frac{2nK}{\lambda}<\varepsilon.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+微积分基本公式
+\end_layout
+
+\begin_layout Paragraph
+定理 6.3.1 (微积分基本定理).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上可积, 且在 
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+ 处连续, 则 
+\begin_inset Formula $F(x)=\int_{a}^{x}f(t)dt$
+\end_inset
+
+ 在 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 处可导, 且 
+\begin_inset Formula 
+\[
+F^{\prime}\left(x_{0}\right)=f\left(x_{0}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这个定理说明变限积分是函数
+\begin_inset Formula $f$
+\end_inset
+
+的原函数的条件是
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 而不能有第一类间断点.
+ 但第二类间断点是可以有的.
+\end_layout
+
+\begin_layout Paragraph
+定理 6.3.3 (Newton-Leibniz 公式).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $F$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上可微, 且 
+\begin_inset Formula $F^{\prime}=f$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上 Riemann 可积, 则 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=F(b)-F(a).
+\]
+
+\end_inset
+
+(此式又写为 
+\begin_inset Formula $\int_{a}^{b}F^{\prime}(x)dx=F(b)-F(a)=\left.F(x)\right|_{a}^{b}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+注: 可微函数的导函数不一定是可积的, 如函数 
+\begin_inset Formula 
+\[
+F(x)=\begin{cases}
+x^{2}\sin\frac{1}{x^{2}}, & x\neq0\\
+0, & x=0
+\end{cases}
+\]
+
+\end_inset
+
+在 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ 上可微.
+ 进一步还可以构造导函数有界但不可积的例子.
+\end_layout
+
+\begin_layout Paragraph
+例 6.3.2.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上连续可微, 
+\begin_inset Formula $f(a)=0$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f^{2}(x)dx\leqslant\frac{(b-a)^{2}}{2}\int_{a}^{b}\left[f^{\prime}(x)\right]^{2}dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}f^{2}(x) & =(f(x)-f(a))^{2}=\left[\int_{a}^{x}f^{\prime}(t)dt\right]^{2}\\
+ & \leqslant\int_{a}^{x}\left[f^{\prime}(t)\right]^{2}dt\int_{a}^{x}1^{2}dt\quad(\text{Cauchy}-\text{Schwarz})\\
+ & \leqslant(x-a)\int_{a}^{b}\left[f^{\prime}(t)\right]^{2}dt.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+作业
+\end_layout
+
+\begin_layout Standard
+6.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 为 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ 上的非负可积函数, 且 
+\begin_inset Formula $\int_{0}^{1}f(x)dx=0$
+\end_inset
+
+.
+ 证明, 任给 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 均存在子区间 
+\begin_inset Formula $[\alpha,\beta]$
+\end_inset
+
+, 使得 
+\begin_inset Formula $f(x)<\varepsilon$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in[\alpha,\beta]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+8.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上可积, 且存在常数 
+\begin_inset Formula $C>0$
+\end_inset
+
+, 使得 
+\begin_inset Formula $|f(x)|\geqslant C(a\leqslant x\leqslant b)$
+\end_inset
+
+.
+ 证 明 
+\begin_inset Formula $\frac{1}{f}$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上也是可积的.
+\end_layout
+
+\begin_layout Standard
+11.
+ 设 
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+ 为 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上的可积函数, 证明 
+\begin_inset Formula $\int_{a}^{b}f(x)dx>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上定义的函数.
+ 如果 
+\begin_inset Formula $f^{2}(x)$
+\end_inset
+
+ 可积, 则 
+\begin_inset Formula $|f(x)|$
+\end_inset
+
+ 也可积.
+\end_layout
+
+\begin_layout Standard
+6.
+ 设 
+\begin_inset Formula $f(x)\geqslant0$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上可积, 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+\left(\int_{a}^{b}f(x)\cos\lambda xdx\right)^{2}+\left(\int_{a}^{b}f(x)\sin\lambda xdx\right)^{2}\leqslant\left[\int_{a}^{b}f(x)dx\right]^{2}.
+\]
+
+\end_inset
+
+(提示: 
+\begin_inset Formula $f=\sqrt{f}\cdot\sqrt{f}$
+\end_inset
+
+, 用Cauchy-Schwarz不等式.)
+\end_layout
+
+\begin_layout Standard
+9.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 为 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ 上的连续函数, 则 
+\begin_inset Formula $\lim_{n\rightarrow+\infty}n\int_{0}^{1}x^{n}f(x)dx=f(1)$
+\end_inset
+
+.
+ (提示: 
+\begin_inset Formula $nx^{n}$
+\end_inset
+
+ 在 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ 上积分趋于 1 , 在 
+\begin_inset Formula $[0,\delta]$
+\end_inset
+
+ 上很小, 如果 
+\begin_inset Formula $0<\delta<1$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+11.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 为 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上的可积函数, 则任给 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在连续函数 
+\begin_inset Formula $g(x)$
+\end_inset
+
+, 使得 
+\begin_inset Formula $\inf f\leqslant g(x)\leqslant\sup f$
+\end_inset
+
+, 且 
+\begin_inset Formula 
+\[
+\int_{a}^{b}|f(x)-g(x)|dx<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+12.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[c,d]$
+\end_inset
+
+ 上可积, 设 
+\begin_inset Formula $[a,b]\subset(c,d)$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+\lim_{h\rightarrow0}\int_{a}^{b}|f(x+h)-f(x)|dx=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+不等式
+\end_layout
+
+\begin_layout Paragraph
+例3.5.13 (Young不等式)
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f$
+\end_inset
+
+ 是 
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+ 中的单调递增连续函数, 
+\begin_inset Formula $f(0)=0$
+\end_inset
+
+, 
+\begin_inset Formula $f^{-1}(y)$
+\end_inset
+
+ 表示 
+\begin_inset Formula $f$
+\end_inset
+
+ 的反函数, 则当 
+\begin_inset Formula $a,b>0$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+ab\leqslant\int_{0}^{a}f(x)dx+\int_{0}^{b}f^{-1}(y)dy,
+\]
+
+\end_inset
+
+等号成立当且仅当 
+\begin_inset Formula $b=f(a)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例 3.5.14 (Hölder 不等式).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f,g$
+\end_inset
+
+ 为 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上非负连续函数, 
+\begin_inset Formula $p>1,\frac{1}{p}+\frac{1}{q}=1$
+\end_inset
+
+.
+ 则 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)dx\leqslant\left[\int_{a}^{b}f^{p}(x)dx\right]^{\frac{1}{p}}\left[\int_{a}^{b}g^{q}(x)dx\right]^{\frac{1}{q}},
+\]
+
+\end_inset
+
+等号成立当且仅当 
+\begin_inset Formula $f^{p}=cg^{q}$
+\end_inset
+
+ 或 
+\begin_inset Formula $cf^{p}=g^{q},c$
+\end_inset
+
+ 为常数.
+\end_layout
+
+\begin_layout Standard
+应用重积分证明不等式的经典例子.
+\end_layout
+
+\begin_layout Standard
+14.
+ 设 
+\begin_inset Formula $f(x),g(x)$
+\end_inset
+
+ 为 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上同时单调递减或同时单调递增函数, 则 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)dx\geqslant\frac{1}{b-a}\int_{a}^{b}f(x)dx\int_{a}^{b}g(x)dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
