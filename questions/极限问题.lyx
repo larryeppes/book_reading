@@ -737,5 +737,612 @@ From the squeeze theorem, the limit is
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+考研真题
+\end_layout
+
+\begin_layout Standard
+2.
+ (13 分) 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $x=a$
+\end_inset
+
+ 处可微, 
+\begin_inset Formula $f(a)\neq0$
+\end_inset
+
+.
+ 求极限 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\left(\frac{f\left(a+\frac{1}{n}\right)}{f(a)}\right)^{n}$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1996.北大.数分
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.
+ (20 分) 设 
+\begin_inset Formula $a_{n}\neq0(n=1,2,\ldots)$
+\end_inset
+
+ 且 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+.
+ 若存在极限 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a_{n+1}}{a_{n}}=\ell$
+\end_inset
+
+, 证明 
+\begin_inset Formula $|\ell|\leqslant1$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1996.北大.数分
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ (24 分) 计算下列极限: (1) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{1+a^{n}}(a>0)$
+\end_inset
+
+; (2) 
+\begin_inset Formula $\lim_{x\rightarrow0}\left(\frac{1}{x^{2}}-\frac{\cot x}{x}\right)$
+\end_inset
+
+; (3) 
+\begin_inset Formula $\lim_{x\rightarrow0+}\sum_{n=1}^{\infty}\frac{1}{2^{n}n^{x}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+ (40 分) 求下列极限值: 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\lim_{x\rightarrow0}\frac{a\tan x+b(1-\cos x)}{\alpha\log(1-x)+\beta\left(1-\mathrm{e}^{-x^{2}}\right)}\left(a^{2}+\alpha^{2}\neq0\right)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\int_{0}^{1}\left(1-x^{2}\right)^{n}\mathrm{~d}x$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\left(\frac{\sin\frac{\pi}{n}}{n+1}+\frac{\sin\frac{2\pi}{n}}{n+\frac{1}{2}}+\cdots+\frac{\sin\pi}{n+\frac{1}{n}}\right)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(4) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{1+a^{n}}(a>0)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(1) 求极限 
+\begin_inset Formula $\lim_{x\rightarrow0}\frac{(a+x)^{x}-a^{x}}{x^{2}},a>0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+2.
+ (10 分) 叙述定义.
+ (1) 
+\begin_inset Formula $\lim_{x\rightarrow-\infty}f(x)=+\infty$
+\end_inset
+
+; (2) 当 
+\begin_inset Formula $x\rightarrow a-0$
+\end_inset
+
+ 时, 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 不以 
+\begin_inset Formula $A$
+\end_inset
+
+ 为极限.
+\end_layout
+
+\begin_layout Standard
+1.
+ (10 分) 求极限 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a^{2n}}{1+a^{2n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+6.
+ (10 分) 求极限 
+\begin_inset Formula $\lim_{t\rightarrow0+0}\frac{1}{t^{4}}\iiint_{x^{2}+y^{2}+z^{2}\leqslant t^{2}}f\left(\sqrt{x^{2}+y^{2}+z^{2}}\right)\mathrm{d}x\mathrm{~d}y\mathrm{~d}z$
+\end_inset
+
+, 其中 
+\begin_inset Formula $f$
+\end_inset
+
+ 在 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ 上连续, 
+\begin_inset Formula $f(0)=0$
+\end_inset
+
+, 
+\begin_inset Formula $f^{\prime}(0)=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1.
+ (10 分) 求极限 
+\begin_inset Formula $\lim_{x\rightarrow0}\left(\frac{\sin x}{x}\right)^{\frac{1}{1-\cos x}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+ (10 分) 设 
+\begin_inset Formula $a\geqslant0,x_{1}=\sqrt{2+a},\cdots,x_{n+1}=\sqrt{2+x_{n}},n=1,2,\cdots$
+\end_inset
+
+, 证明极限 
+\begin_inset Formula $\lim_{n\rightarrow\infty}x_{n}$
+\end_inset
+
+ 存在并求其极限值.
+\end_layout
+
+\begin_layout Standard
+2.
+ 是否存在数列 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+, 其极限点构成的集合为 
+\begin_inset Formula 
+\[
+M=\left\{ 1,\frac{1}{2},\frac{1}{3},\ldots\right\} ?
+\]
+
+\end_inset
+
+请说明理由。
+\end_layout
+
+\begin_layout Standard
+1.
+ (15 分) 设 
+\begin_inset Formula $x_{n+1}=1+\frac{x_{n}^{2}}{1+x_{n}^{2}},x_{1}=\alpha$
+\end_inset
+
+.
+ 证明数列 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ 收敛, 并求其极限.
+\end_layout
+
+\begin_layout Standard
+1.
+ (15 分) 求下列极限: (1) 
+\begin_inset Formula $\lim_{n\rightarrow+\infty}\left(1+\frac{x+\alpha_{n}}{n}\right)^{n}$
+\end_inset
+
+, 其中 
+\begin_inset Formula $\lim_{n\rightarrow+\infty}\alpha_{n}=0$
+\end_inset
+
+; (2) 
+\begin_inset Formula $\lim_{n\rightarrow+\infty}\frac{1+\sqrt{2}+\sqrt[3]{3}+\cdots+\sqrt[n]{n}}{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ (15 分) 若对任意 
+\begin_inset Formula $n,a_{n}>0,\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+, 且级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散.
+ 令 
+\begin_inset Formula $S_{n}=\sum_{k=1}^{n}a_{k}$
+\end_inset
+
+, 试计算极限 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{\sin\left(\sqrt{S_{n+1}}-\sqrt{S_{n}}\right)}{a_{n+1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ (15 分) 定义 
+\begin_inset Formula $f(x)=\left\{ \begin{array}{cl}
+\frac{\sin\sqrt{x}}{\sqrt{x}}, & x\neq0\\
+0, & x=0
+\end{array}\right.$
+\end_inset
+
+.
+ 计算极限 
+\begin_inset Formula $\lim_{x\rightarrow0+}f^{\prime}(x)$
+\end_inset
+
+ 和 
+\begin_inset Formula $\lim_{x\rightarrow0+}f^{\prime\prime}(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ (20 分) 计算下列极限: 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\left(\frac{1}{n^{2}}+\frac{2}{n^{2}}+\cdots+\frac{n}{n^{2}}\right)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\lim_{x\rightarrow\infty}\left(\frac{x^{2}+1}{x^{2}-1}\right)^{x^{2}}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\left(\frac{1}{1\times2}+\frac{1}{2\times3}+\cdots+\frac{1}{(n-1)\times n}\right)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(4) 
+\begin_inset Formula $\lim_{x\rightarrow0}\frac{x\left(\mathrm{e}^{x}+1\right)-2\left(\mathrm{e}^{x}-1\right)}{x^{3}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ (20 分) 求下列极限: (1) 
+\begin_inset Formula $\lim_{x\rightarrow0}\frac{\int_{0}^{x}(1-\cos t)\mathrm{d}t}{\frac{1}{3}x^{3}}$
+\end_inset
+
+; (2) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sin\frac{\pi}{n}\sum_{k=1}^{n}\frac{\cos\frac{k\pi}{n}}{2+\sin\frac{k\pi}{n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ (16 分) 计算极限: (1) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{1^{p}+3^{p}+\cdots+(2n-1)^{p}}{n^{p+1}}$
+\end_inset
+
+, 其中 
+\begin_inset Formula $p$
+\end_inset
+
+ 为正整数; (2) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\left(\frac{2^{\frac{1}{n}}}{n+1}+\frac{2^{\frac{2}{n}}}{n+\frac{1}{2}}+\cdots+\frac{2^{\frac{n}{n}}}{n+\frac{1}{n}}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ (15 分) 设 
+\begin_inset Formula $x_{1}>0,x_{n+1}=\frac{3\left(1+x_{n}\right)}{3+x_{n}}(n=1,2,3,\cdots)$
+\end_inset
+
+.
+ 证明 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ 有极限, 并求出极限值.
+\end_layout
+
+\begin_layout Standard
+1.
+ (15 分) 计算极限: 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sum_{k=1}^{n}\frac{k}{n^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ (10 分 
+\begin_inset Formula $)$
+\end_inset
+
+ 计算极限: 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\left(n-\frac{1}{\mathrm{e}^{\frac{1}{n}}-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ (21 分) 计算下列极限: (1) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}n\left(\left(1+\frac{1}{n}\right)^{n}-\mathrm{e}\right)$
+\end_inset
+
+; (2) 
+\begin_inset Formula $\lim_{x\rightarrow\frac{\pi}{2}}(\sec x-\tan x)$
+\end_inset
+
+; (3) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{\sqrt[n]{n!}}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1.
+ (28 分) 计算以下极限: (1) 
+\begin_inset Formula $\lim_{x\rightarrow\infty}\mathrm{e}^{-x}\left(1+\frac{1}{x}\right)^{x^{2}}$
+\end_inset
+
+; (2) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}n\mathrm{e}^{\frac{1}{n}}-n^{2}\ln\left(1+\frac{1}{n}\right)$
+\end_inset
+
+; (3) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(n!)^{\frac{1}{n^{2}}}$
+\end_inset
+
+; (4) 
+\begin_inset Formula $\lim_{x\rightarrow0}\frac{\cos x-\mathrm{e}^{-\frac{x^{2}}{2}}}{x^{2}(x+\ln(1-x))}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+6.
+ (10 分) 设 
+\begin_inset Formula $x_{0}>0,x_{n}=\frac{2\left(1-x_{n-1}\right)}{2+x_{n-1}}(n=1,2,\cdots)$
+\end_inset
+
+.
+ 证明, 
+\begin_inset Formula $\lim_{n\rightarrow\infty}x_{n}$
+\end_inset
+
+ 存在, 并求此极限.
+\end_layout
+
+\begin_layout Standard
+(2) 求以下极限: (1) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}n\left(\frac{1}{n+1}+\frac{1}{n^{2}+2^{2}}+\cdots+\frac{1}{2n^{2}}\right)$
+\end_inset
+
+; (2) 
+\begin_inset Formula $\lim_{x\rightarrow0}\left(\frac{1}{x^{2}}-\frac{1}{\sin^{2}x}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(2) 叙述极限 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)$
+\end_inset
+
+ 的 Cauchy 收玫准则, 并用它证明 
+\begin_inset Formula $\lim_{x\rightarrow0}\cos\frac{1}{x}$
+\end_inset
+
+ 不存在.
+\end_layout
+
+\begin_layout Standard
+9.
+ 设函数 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在区间 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ 上有一阶连续导数且 
+\begin_inset Formula $f(0)=f(1),g(x)$
+\end_inset
+
+ 是周期为 1 的连续函数, 并且满 足 
+\begin_inset Formula $\int_{0}^{1}g(x)\mathrm{d}x=0$
+\end_inset
+
+.
+ 记 
+\begin_inset Formula $a_{n}=\int_{0}^{1}f(x)g(nx)\mathrm{d}x$
+\end_inset
+
+, 证明 
+\begin_inset Formula $\lim_{n\rightarrow\infty}na_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+6.
+ 已知 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是 
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+ 上的单调连续函数且 
+\begin_inset Formula $\lim_{x\rightarrow\infty}f(x)=0$
+\end_inset
+
+.
+ 证明 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\int_{0}^{+\infty}f(x)\sin nx\mathrm{~d}x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+10.
+ 已知 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是 
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+ 上的正的连续函数, 且 
+\begin_inset Formula $\int_{0}^{+\infty}\frac{\mathrm{d}x}{f(x)}<+\infty$
+\end_inset
+
+.
+ 证明 
+\begin_inset Formula $\lim_{A\rightarrow+\infty}\frac{1}{A^{2}}\int_{0}^{A}f(x)\mathrm{d}x=+\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ (14 分) 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上连续且单调增加.
+ 若 
+\begin_inset Formula $a<f(x)<b,x\in[a,b]$
+\end_inset
+
+.
+ 证明若对任意 
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n+1}=f\left(x_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $n=0,1,2,\cdots$
+\end_inset
+
+, 则 
+\begin_inset Formula $x=\lim_{n\rightarrow\infty}f\left(x_{n}\right)$
+\end_inset
+
+ 存在且 
+\begin_inset Formula $x=f(x)$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document

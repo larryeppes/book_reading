@@ -10451,8 +10451,7 @@ F(x)=\int_{a}^{x}f(t)dt,\quad x\in[a,b],
 \end_layout
 
 \begin_layout Paragraph
-例 6.2.6 (Riemann-Lebesgue).
- 
+例 6.2.6 (Riemann-Lebesgue)
 \end_layout
 
 \begin_layout Standard
@@ -10464,7 +10463,7 @@ F(x)=\int_{a}^{x}f(t)dt,\quad x\in[a,b],
 \begin_inset Formula $[a,b]$
 \end_inset
 
- 上的可积函数, 则 
+ 上的可积函数, 则
 \begin_inset Formula 
 \[
 \lim_{\lambda\rightarrow+\infty}\int_{a}^{b}f(x)\sin\lambda xdx=0,\quad\lim_{\lambda\rightarrow+\infty}\int_{a}^{b}f(x)\cos\lambda xdx=0.
@@ -10707,6 +10706,466 @@ x^{2}\sin\frac{1}{x^{2}}, & x\neq0\\
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+定积分的近似计算
+\end_layout
+
+\begin_layout Paragraph
+不等式1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+可微, 且
+\begin_inset Formula $\left|f'(x)\right|\le M$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}f(x)\ud x-f\left(\frac{a+b}{2}\right)(b-a)\right|\le\frac{M}{4}(b-a)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\left|\int_{a}^{b}f(x)dx-f\left(\frac{a+b}{2}\right)(b-a)\right| & =\left|\int_{a}^{b}\left(f(x)-f\left(\frac{a+b}{2}\right)\right)dx\right|=\left|\int_{a}^{b}f^{\prime}(\xi)\left(x-\frac{a+b}{2}\right)dx\right|\\
+ & \leqslant\int_{a}^{b}\left|f^{\prime}(\xi)\right|\left|x-\frac{a+b}{2}\right|dx\leqslant M\int_{a}^{b}\left|x-\frac{a+b}{2}\right|dx\\
+ & =\frac{M}{4}(b-a)^{2}.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+不等式2
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+二阶可微, 且
+\begin_inset Formula $\left|f''(x)\right|\le M$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in[a,b]$
+\end_inset
+
+.
+ 则
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}f(x)\ud x-f\left(\frac{a+b}{2}\right)(b-a)\right|\le\frac{1}{24}M(b-a)^{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+用Taylor展开
+\begin_inset Formula 
+\[
+f(x)=f\left(\frac{a+b}{2}\right)+f^{\prime}\left(\frac{a+b}{2}\right)\left(x-\frac{a+b}{2}\right)+\frac{1}{2}f^{\prime\prime}(\xi)\left(x-\frac{a+b}{2}\right)^{2},
+\]
+
+\end_inset
+
+两边积分, 得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=f\left(\frac{a+b}{2}\right)(b-a)+\frac{1}{2}\int_{a}^{b}f^{\prime\prime}(\xi)\left(x-\frac{a+b}{2}\right)^{2}dx,
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}f(x)dx-f\left(\frac{a+b}{2}\right)(b-a)\right|\leqslant\frac{1}{2}M\int_{a}^{b}\left(x-\frac{a+b}{2}\right)^{2}dx=\frac{1}{24}M(b-a)^{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+注:
+\end_layout
+
+\begin_layout Standard
+上面的系数
+\begin_inset Formula $\frac{1}{24}$
+\end_inset
+
+可以改进成
+\begin_inset Formula $\frac{1}{48}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+使用带积分型余项的Taylor公式
+\begin_inset Formula 
+\[
+f(x)=f\left(\frac{a+b}{2}\right)+f'\left(\frac{a+b}{2}\right)\left(x-\frac{a+b}{2}\right)+\int_{\frac{a+b}{2}}^{x}\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\ud t.
+\]
+
+\end_inset
+
+两边同时积分得到
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\ud x=f\left(\frac{a+b}{2}\right)(b-a)+\int_{a}^{b}\int_{\frac{a+b}{2}}^{x}\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\ud t\ud x,
+\]
+
+\end_inset
+
+后者可以通过交换积分次序化简为
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}\int_{\frac{a+b}{2}}^{x}\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\ud t\ud x & =\int_{a}^{b}\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\min\left\{ t-a,b-t\right\} \ud t\\
+ & =-\int_{a}^{\frac{a+b}{2}}(t-a)\cdot\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\ud t+\int_{\frac{a+b}{2}}^{b}(b-t)\cdot\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\ud t.\\
+ & =-\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)\frac{f''(t)+f''(a+b-t)}{2}\ud t.
+\end{align*}
+
+\end_inset
+
+所以有下面的恒等式
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\ud x=f\left(\frac{a+b}{2}\right)(b-a)-\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)\frac{f''(t)+f''(a+b-t)}{2}\ud t.
+\]
+
+\end_inset
+
+而
+\begin_inset Formula 
+\[
+\left|\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)\frac{f''(t)+f''(a+b-t)}{2}\ud t\right|\le M\left|\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)\ud t\right|=\frac{M}{48}(b-a)^{3}.
+\]
+
+\end_inset
+
+即
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}f(x)\ud x-f\left(\frac{a+b}{2}\right)(b-a)\right|\le\frac{(b-a)^{3}}{48}\sup_{x\in[a,b]}f''(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+不等式3
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 若
+\begin_inset Formula $f$
+\end_inset
+
+二阶可微, 且
+\begin_inset Formula $\left|f''(x)\right|\le M$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}f(x)\ud x-\frac{f(a)+f(b)}{2}(b-a)\right|\le\frac{M}{12}(b-a)^{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}f(x)\ud x & =(x-a)f(x)\mid_{a}^{b}-\int_{a}^{b}(x-a)f'(x)\ud(x-b)\\
+ & =(b-a)f(b)+\int_{a}^{b}(x-b)\left(f'(x)+(x-a)f''(x)\right)\\
+ & =(b-a)f(b)+(x-b)f(x)\mid_{a}^{b}-\int_{a}^{b}f(x)\ud x+\int_{a}^{b}(x-a)(x-b)f''(x)\ud x\\
+ & =(b-a)(f(b)+f(a))-\int_{a}^{b}f(x)\ud x+\int_{a}^{b}(x-a)(x-b)f''(x)\ud x,
+\end{align*}
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}f(x)\ud x-\frac{f(a)+f(b)}{2}(b-a)\right|=\frac{1}{2}\left|\int_{a}^{b}(x-a)(x-b)f''(x)\ud x\right|\le\frac{M}{12}(b-a)^{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+上面的等式的一些应用, 取
+\begin_inset Formula $a=n$
+\end_inset
+
+, 
+\begin_inset Formula $b=n+1$
+\end_inset
+
+, 则有
+\begin_inset Formula 
+\[
+\int_{n}^{n+1}f(t)\ud t=\frac{f(n)+f(n+1)}{2}-\frac{1}{2}\int_{0}^{1}x(1-x)f''(x+n)\ud x.
+\]
+
+\end_inset
+
+对
+\begin_inset Formula $n$
+\end_inset
+
+做累和, 
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}f(k)=\int_{1}^{n}f(t)\ud t+\frac{f(1)+f(n)}{2}+\frac{1}{2}\int_{0}^{1}x(1-x)\sum_{k=1}^{n-1}f''(x+n)\ud x.
+\]
+
+\end_inset
+
+当取
+\begin_inset Formula $f(x)=\frac{1}{x}$
+\end_inset
+
+时, 得到
+\begin_inset Formula 
+\[
+H_{n}=\ln n+\frac{n+1}{2n}+\frac{1}{2}\int_{0}^{1}x(1-x)\sum_{k=1}^{n-1}\frac{2}{(x+n)^{3}}\ud x=\ln n+O(1).
+\]
+
+\end_inset
+
+当取
+\begin_inset Formula $f(x)=\ln x$
+\end_inset
+
+时, 得到
+\begin_inset Formula 
+\[
+\ln n!=\ln\left(\sqrt{n}\left(\frac{n}{e}\right)^{n}\right)+1-\frac{1}{2}\int_{0}^{1}x(1-x)\sum_{k=1}^{n-1}\frac{1}{(x+n)^{2}}\ud x=\ln\left(\sqrt{n}\left(\frac{n}{e}\right)^{n}\right)+O(1),
+\]
+
+\end_inset
+
+所以极限
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{n!}{\sqrt{n}\left(\frac{n}{e}\right)^{n}}=C.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+注:
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f(x)\in C^{4}[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx-\frac{f(a)+f(b)}{2}(b-a)=\frac{1}{24}\int_{a}^{b}f^{(4)}(x)(x-a)^{2}(x-b)^{2}dx-\frac{1}{12}(b-a)^{2}\left[f^{\prime}(b)-f^{\prime}(a)\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+关于习题3
+\end_layout
+
+\begin_layout Standard
+是否存在常数 
+\begin_inset Formula $C$
+\end_inset
+
+, 使得对于满足条件 
+\begin_inset Formula $\left|f^{\prime\prime\prime}(x)\right|\leqslant M$
+\end_inset
+
+ 的任意函数 
+\begin_inset Formula $f$
+\end_inset
+
+ 有如下估计: 
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}f(x)dx-\frac{f(a)+f(b)}{2}(b-a)\right|\leqslant CM(b-a)^{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+解:
+\end_layout
+
+\begin_layout Standard
+条件存在.
+ 不等式相当于
+\begin_inset Formula 
+\[
+\frac{1}{2}\left|\int_{a}^{b}(x-a)(x-b)f''(x)\ud x\right|\le CM(b-a)^{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+由于
+\begin_inset Formula $\left|f'''\right|\le M$
+\end_inset
+
+, 所以
+\begin_inset Formula $-M(x-a)\le f''(x)-f''(a)\le M(x-a)$
+\end_inset
+
+.
+ 所以
+\begin_inset Formula 
+\[
+\int_{a}^{b}(x-a)(x-b)f''(x)\ud x\le\int_{a}^{b}(x-a)(x-b)(f''(a)-M(x-a))\ud x=\frac{M}{12}(b-a)^{4}-\frac{f''(a)}{6}(b-a)^{3},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{a}^{b}(x-a)(x-b)f''(x)\ud x\ge\int_{a}^{b}(x-a)(x-b)(f''(a)+M(x-a))\ud x=-\frac{M}{12}(b-a)^{4}-\frac{f''(a)}{6}(b-a)^{3}.
+\]
+
+\end_inset
+
+当
+\begin_inset Formula $f''(a)=0$
+\end_inset
+
+时, 上面的
+\begin_inset Formula $C$
+\end_inset
+
+存在, 而一般情况的
+\begin_inset Formula $f$
+\end_inset
+
+, 上面的
+\begin_inset Formula $C$
+\end_inset
+
+是不存在的.
+\end_layout
+
+\begin_layout Standard
+当问题加上对于任意的
+\begin_inset Formula $a,b\in D_{f}$
+\end_inset
+
+时, 常数
+\begin_inset Formula $C$
+\end_inset
+
+也是不存在的.
+ 这相当于对于任意的
+\begin_inset Formula $a,b$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\frac{1}{2}\left|\int_{a}^{b}(x-a)(x-b)f''(x)\ud x\right|\le CM(b-a)^{4}.
+\]
+
+\end_inset
+
+由介值定理, 存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula 
+\[
+\left|f''(\xi)\right|(b-a)^{3}\le CM(b-a)^{4}.
+\]
+
+\end_inset
+
+令
+\begin_inset Formula $b\to a^{+}$
+\end_inset
+
+, 得到
+\begin_inset Formula $f''(a)\equiv0$
+\end_inset
+
+, 也与
+\begin_inset Formula $f$
+\end_inset
+
+的任意性矛盾.
 \end_layout
 
 \begin_layout Subsection

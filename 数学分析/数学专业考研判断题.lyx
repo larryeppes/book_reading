@@ -1,0 +1,735 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+
+\DeclareMathOperator{\sech}{sech}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+判断题
+\end_layout
+
+\begin_layout Standard
+1.
+ (25 分) 判断下列命题的真伪: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1996.北大.数学分析
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(1) 对数列 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 作和 
+\begin_inset Formula $S_{n}=\sum_{k=1}^{n}a_{k}$
+\end_inset
+
+, 若 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ 是有界数列, 则 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 是有界数列; 
+\end_layout
+
+\begin_layout Standard
+(2) 数列 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 存在极限 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+ 的充要条件是: 对任一正整数 
+\begin_inset Formula $p$
+\end_inset
+
+, 都有 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\left|a_{n+p}-a_{n}\right|=0$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(3) 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 上的递增连续函数, 若 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 上有界, 则 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 上一致连续; 
+\end_layout
+
+\begin_layout Standard
+(4) 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上连续, 且在 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ 上可微, 若存在极限 
+\begin_inset Formula $\lim_{x\rightarrow a+0}f^{\prime}(x)=\ell$
+\end_inset
+
+, 则右导数 
+\begin_inset Formula $f_{+}^{\prime}(a)$
+\end_inset
+
+ 存在且等于 
+\begin_inset Formula $\ell$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(5) 若 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 上的非负连续函数, 且积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\mathrm{d}x$
+\end_inset
+
+ 收敛, 则 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+1.
+ (15 分) 判断下列命题的真伪: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1999.北大.数学分析
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(1) 设 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 是一个数列.
+ 若任何一个子列 
+\begin_inset Formula $\left\{ a_{n_{k}}\right\} $
+\end_inset
+
+ 存在收敛子列 
+\begin_inset Formula $\left\{ a_{n_{k_{i}}}\right\} $
+\end_inset
+
+, 则 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 必为收敛列; 
+\end_layout
+
+\begin_layout Standard
+(2) 设 
+\begin_inset Formula $f\in\mathcal{C}((a,b))$
+\end_inset
+
+.
+ 若存在 
+\begin_inset Formula $\lim_{x\rightarrow a+}f(x)=A<0$
+\end_inset
+
+, 
+\begin_inset Formula $\lim_{x\rightarrow b-}f(x)=B>0$
+\end_inset
+
+, 则必存在 
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, 使得 
+\begin_inset Formula $f(\xi)=0$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(3) 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上有界.
+ 若对任意 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a+\delta,b]$
+\end_inset
+
+ 上可积, 则 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上可积; 
+\end_layout
+
+\begin_layout Standard
+(4) 设 
+\begin_inset Formula $f(x),g(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ 上的暇积分均存在, 则乘积 
+\begin_inset Formula $f(x)\cdot g(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ 上的暇积分必存在; 
+\end_layout
+
+\begin_layout Standard
+(5) 设级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 收敛.
+ 若有 
+\begin_inset Formula $a_{n}\leqslant b_{n}(n=1,2,\cdots)$
+\end_inset
+
+, 则级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Standard
+1.
+ (20 分) 判断下述变换那些 A 是线性变换，哪些不是，说明理由．
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1999.北师大.高等代数
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(1) 在数域 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ 上的线性空间 
+\begin_inset Formula $V$
+\end_inset
+
+ 中, 
+\begin_inset Formula $\mathscr{A}(\alpha)=k\alpha+\beta$
+\end_inset
+
+, 其中 
+\begin_inset Formula $k$
+\end_inset
+
+ 是 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ 中的固定元素, 
+\begin_inset Formula $\beta$
+\end_inset
+
+ 是 
+\begin_inset Formula $V$
+\end_inset
+
+ 中的固定 非零向量; 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ 是数域，在 
+\begin_inset Formula $\mathbb{F}^{3}$
+\end_inset
+
+ 中, 
+\begin_inset Formula $\mathscr{A}\left(x_{1},x_{2},x_{3}\right)=\left(x_{1}+2x_{3},-4x_{2},x_{3}^{2}\right)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(3) 在 
+\begin_inset Formula $\mathbb{F}[x]$
+\end_inset
+
+ 中, 
+\begin_inset Formula $\mathscr{A}(f(x))=f(x+a),a$
+\end_inset
+
+ 是 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ 中一个固定元素; 
+\end_layout
+
+\begin_layout Standard
+(4) 在 
+\begin_inset Formula $\mathbb{F}[x]$
+\end_inset
+
+ 中, 
+\begin_inset Formula $\mathscr{A}(f(x))=f(a)$
+\end_inset
+
+, 其中 
+\begin_inset Formula $a$
+\end_inset
+
+ 是 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ 中一个固定元素; 
+\end_layout
+
+\begin_layout Standard
+(5) 在 
+\begin_inset Formula $M_{n}(\mathbb{F})$
+\end_inset
+
+ 中, 
+\begin_inset Formula $\mathscr{A}(x)=BC$
+\end_inset
+
+, 其中 
+\begin_inset Formula $B,C\in M_{n}(\mathbb{F})$
+\end_inset
+
+ 是固定矩阵; 
+\end_layout
+
+\begin_layout Standard
+(6) 把复数域 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ 分别看成实数域 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ 和复数域 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ 上的线性空间, 
+\begin_inset Formula $\mathscr{A}(z)=\bar{z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ (36 分) 判断说明下列命题: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+2007.西南大学.数学分析
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(1) 若对每一正整数 
+\begin_inset Formula $p$
+\end_inset
+
+ 都有 
+\begin_inset Formula $\lim_{n\rightarrow+\infty}\left(x_{n+p}-x_{n}\right)=0$
+\end_inset
+
+, 则数列 
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+ 收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 若函数 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 和 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ 都在区间 
+\begin_inset Formula $I$
+\end_inset
+
+ 上一致收敛, 则 
+\begin_inset Formula $f(x)g(x)$
+\end_inset
+
+ 也在 
+\begin_inset Formula $I$
+\end_inset
+
+ 上一致收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+(3) 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $a$
+\end_inset
+
+ 的某邻域内有定义, 且在 
+\begin_inset Formula $x=a$
+\end_inset
+
+ 处连续, 又 
+\begin_inset Formula $\lim_{x\rightarrow0}\frac{f(a+h)-f(a-h)}{2h}=b$
+\end_inset
+
+, 则 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $a$
+\end_inset
+
+ 处的导数存在且等于 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(4) 若闭区间列 
+\begin_inset Formula $\left\{ \left[a_{n},b_{n}\right]\right\} $
+\end_inset
+
+ 具有如下性质 
+\begin_inset Formula $\left[a_{n},b_{n}\right]\supseteq\left[a_{n+1},b_{n+1}\right],n=1,2,\cdots$
+\end_inset
+
+.
+ 那么存在 
+\begin_inset Formula $\xi\in$
+\end_inset
+
+ 
+\begin_inset Formula $\left[a_{n},b_{n}\right],n=1,2,\cdots$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(5) 若 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 与 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 都收敛, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ 也收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+(6) 若 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\mathrm{d}x$
+\end_inset
+
+ 收敛, 且 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)$
+\end_inset
+
+ 存在, 则 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
