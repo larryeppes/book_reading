@@ -7306,6 +7306,116 @@ l-\frac{\epsilon}{2}<\frac{f'(x)}{g'(x)}<l+\frac{\epsilon}{2},\qquad\forall x\in
 
 \end_layout
 
+\begin_layout Standard
+注: 当
+\begin_inset Formula $\lim_{x\to a+}\frac{f'(x)}{g'(x)}$
+\end_inset
+
+不存在时, 
+\begin_inset Formula $\lim_{x\to a+}\frac{f(x)}{g(x)}$
+\end_inset
+
+仍然可能存在.
+ 比如求
+\begin_inset Formula 
+\[
+\lim_{x\to0+}\int_{0}^{x}\cos\frac{1}{t}\ud t.
+\]
+
+\end_inset
+
+用L'H
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+^{o}
+\end_layout
+
+\end_inset
+
+pital法则有如下过程:
+\begin_inset Formula 
+\[
+f'_{+}(0)=\underset{x\to0+}{\mathop{\lim}}\frac{f(x)-f(0)}{x-0}=\underset{x\to0+}{\mathop{\lim}}\frac{\int_{0}^{x}\cos\frac{1}{t}\ud t}{x}=\underset{x\to0+}{\mathop{\lim}}\cos\frac{1}{x}
+\]
+
+\end_inset
+
+不存在, 但是做变量替换
+\begin_inset Formula $s=\frac{1}{t}$
+\end_inset
+
+, 
+\begin_inset Formula $y=\frac{1}{x}$
+\end_inset
+
+之后, 
+\begin_inset Formula 
+\[
+\underset{x\to0+}{\mathop{\lim}}\frac{\int_{0}^{x}\cos\frac{1}{t}\ud t}{x}=\lim_{y\to+\infty}y\int_{y}^{\infty}\frac{\cos s}{s^{2}}\ud s=y\cdot\left(\frac{1}{2}\int_{y}^{y+\pi}\frac{\cos s}{s^{2}}\ud s+\frac{1}{2}\int_{y+\pi}^{\infty}\frac{\cos s}{s^{2}}\ud s+\frac{1}{2}\int_{y}^{\infty}\frac{\cos s}{s^{2}}\ud s\right).
+\]
+
+\end_inset
+
+显然, 
+\begin_inset Formula $\int_{y}^{y+\pi}\frac{\cos s}{s^{2}}\ud s=O\left(\frac{1}{y^{2}}\right)$
+\end_inset
+
+.
+ 而
+\begin_inset Formula 
+\[
+\int_{y+\pi}^{\infty}\frac{\cos s}{s^{2}}\ud s+\int_{y}^{\infty}\frac{\cos s}{s^{2}}\ud s=\int_{y}^{\infty}\cos s\left(\frac{1}{s^{2}}-\frac{1}{(s+\pi)^{2}}\right)\ud s=\int_{y}^{\infty}\cos s\left(\frac{2s\pi+\pi^{2}}{s^{2}(s+\pi)^{2}}\right)\ud s=O\left(\frac{1}{y^{2}}\right).
+\]
+
+\end_inset
+
+所以应当有
+\begin_inset Formula 
+\[
+\lim_{y\to+\infty}y\int_{y}^{\infty}\frac{\cos s}{s^{2}}\ud s=0.
+\]
+
+\end_inset
+
+或者对上式用分部积分
+\begin_inset Formula 
+\[
+\int_{y}^{\infty}\frac{\cos s}{s^{2}}\ud s=\frac{\sin s}{s^{2}}\mid_{y}^{\infty}+\int_{y}^{\infty}\frac{2\sin s}{s^{3}}\ud s=-\frac{\sin y}{y^{2}}+O\left(\int_{y}^{\infty}\frac{2}{s^{3}}\ud s\right)=O\left(\frac{1}{y^{2}}\right).
+\]
+
+\end_inset
+
+再或者用Riemann-Lebesgue引理
+\begin_inset Formula 
+\[
+\lim_{y\to+\infty}y\int_{y}^{\infty}\frac{\cos s}{s^{2}}\ud s=\lim_{y\to+\infty}\int_{1}^{\infty}\frac{\cos yt}{t^{2}}\ud t=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+再或者在计算导数前按以下过程分部积分将积分改写为
+\begin_inset Formula 
+\[
+\begin{aligned}\int_{\varepsilon}^{x}\cos\left(t^{-1}\right)dt & =-\int_{\varepsilon}^{x}t^{2}d\sin\left(t^{-1}\right)\\
+ & =-x^{2}\sin\left(x^{-1}\right)+\varepsilon^{2}\sin\left(\varepsilon^{-1}\right)+2\int_{\varepsilon}^{x}t\sin\left(t^{-1}\right)dt\\
+ & \stackrel{\varepsilon\rightarrow0}{\longrightarrow}-x^{2}\sin\left(x^{-1}\right)+2\int_{0}^{x}t\sin\left(t^{-1}\right)dt.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 例5.6.4
 \end_layout
@@ -7546,7 +7656,7 @@ R_{n}(x)=f(x)-\left[f(x_{0})+f'(x_{0})(x-x_{0})+\cdots+\frac{f^{(n)}(x_{0})}{n!}
 则
 \begin_inset Formula 
 \[
-\frac{R_{k+1}(x)}{(x-x_{0})^{k+1}}\to\frac{R'_{k+1}(x)}{(k+1)(x-x_{0})^{k}}=\frac{o((x-x_{0})^{n})}{(k+1)(x-x_{0})^{k}}=o(1).
+\frac{R_{k+1}(x)}{(x-x_{0})^{k+1}}\to\frac{R'_{k+1}(x)}{(k+1)(x-x_{0})^{k}}=\frac{o((x-x_{0})^{k})}{(k+1)(x-x_{0})^{k}}=o(1).
 \]
 
 \end_inset
@@ -7732,7 +7842,7 @@ f(x)=f(x_{0})+\sum_{k=1}^{n}\frac{f^{(k)}(x_{0})}{k!}(x-x_{0})^{k}+\int_{x_{0}}^
 处Taylor展开:
 \begin_inset Formula 
 \[
-(1+x)^{2n+1}=\sum_{k=0}^{n}\binom{2n+1}{k}x^{k}+\int_{0}^{x}\frac{(2n+1)!}{n!}(1+t)^{n}(x-t)^{n}\ud t,
+(1+x)^{2n+1}=\sum_{k=0}^{n}\binom{2n+1}{k}x^{k}+\frac{1}{n!}\int_{0}^{x}\frac{(2n+1)!}{n!}(1+t)^{n}(x-t)^{n}\ud t,
 \]
 
 \end_inset
@@ -8598,6 +8708,10 @@ f(a)=0,\quad\left|f'(x)\right|\le\left|f(x)\right|,\quad\forall x\in[a,+\infty).
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+用Darboux定理
 \end_layout
 
 \begin_layout Standard
@@ -10820,23 +10934,10 @@ f(x)=f\left(\frac{a+b}{2}\right)+f^{\prime}\left(\frac{a+b}{2}\right)\left(x-\fr
 \end_layout
 
 \begin_layout Standard
-上面的系数
-\begin_inset Formula $\frac{1}{24}$
-\end_inset
-
-可以改进成
-\begin_inset Formula $\frac{1}{48}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
 使用带积分型余项的Taylor公式
 \begin_inset Formula 
 \[
-f(x)=f\left(\frac{a+b}{2}\right)+f'\left(\frac{a+b}{2}\right)\left(x-\frac{a+b}{2}\right)+\int_{\frac{a+b}{2}}^{x}\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\ud t.
+f(x)=f\left(\frac{a+b}{2}\right)+f'\left(\frac{a+b}{2}\right)\left(x-\frac{a+b}{2}\right)+\int_{\frac{a+b}{2}}^{x}\frac{f''(t)}{1!}\left(t-\frac{a+b}{2}\right)\ud t.
 \]
 
 \end_inset
@@ -10844,7 +10945,7 @@ f(x)=f\left(\frac{a+b}{2}\right)+f'\left(\frac{a+b}{2}\right)\left(x-\frac{a+b}{
 两边同时积分得到
 \begin_inset Formula 
 \[
-\int_{a}^{b}f(x)\ud x=f\left(\frac{a+b}{2}\right)(b-a)+\int_{a}^{b}\int_{\frac{a+b}{2}}^{x}\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\ud t\ud x,
+\int_{a}^{b}f(x)\ud x=f\left(\frac{a+b}{2}\right)(b-a)+\int_{a}^{b}\int_{\frac{a+b}{2}}^{x}f''(t)\left(t-\frac{a+b}{2}\right)\ud t\ud x,
 \]
 
 \end_inset
@@ -10852,9 +10953,9 @@ f(x)=f\left(\frac{a+b}{2}\right)+f'\left(\frac{a+b}{2}\right)\left(x-\frac{a+b}{
 后者可以通过交换积分次序化简为
 \begin_inset Formula 
 \begin{align*}
-\int_{a}^{b}\int_{\frac{a+b}{2}}^{x}\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\ud t\ud x & =\int_{a}^{b}\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\min\left\{ t-a,b-t\right\} \ud t\\
- & =-\int_{a}^{\frac{a+b}{2}}(t-a)\cdot\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\ud t+\int_{\frac{a+b}{2}}^{b}(b-t)\cdot\frac{f''(t)}{2}\left(t-\frac{a+b}{2}\right)\ud t.\\
- & =-\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)\frac{f''(t)+f''(a+b-t)}{2}\ud t.
+\int_{a}^{b}\int_{\frac{a+b}{2}}^{x}f''(t)\left(t-\frac{a+b}{2}\right)\ud t\ud x & =\int_{a}^{b}f''(t)\left(t-\frac{a+b}{2}\right)\min\left\{ t-a,b-t\right\} \ud t\\
+ & =-\int_{a}^{\frac{a+b}{2}}(t-a)\cdot f''(t)\left(t-\frac{a+b}{2}\right)\ud t+\int_{\frac{a+b}{2}}^{b}(b-t)\cdot f''(t)\left(t-\frac{a+b}{2}\right)\ud t\\
+ & =-\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)(f''(t)+f''(a+b-t))\ud t.
 \end{align*}
 
 \end_inset
@@ -10862,7 +10963,7 @@ f(x)=f\left(\frac{a+b}{2}\right)+f'\left(\frac{a+b}{2}\right)\left(x-\frac{a+b}{
 所以有下面的恒等式
 \begin_inset Formula 
 \[
-\int_{a}^{b}f(x)\ud x=f\left(\frac{a+b}{2}\right)(b-a)-\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)\frac{f''(t)+f''(a+b-t)}{2}\ud t.
+\int_{a}^{b}f(x)\ud x=f\left(\frac{a+b}{2}\right)(b-a)-\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)(f''(t)+f''(a+b-t))\ud t.
 \]
 
 \end_inset
@@ -10870,15 +10971,7 @@ f(x)=f\left(\frac{a+b}{2}\right)+f'\left(\frac{a+b}{2}\right)\left(x-\frac{a+b}{
 而
 \begin_inset Formula 
 \[
-\left|\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)\frac{f''(t)+f''(a+b-t)}{2}\ud t\right|\le M\left|\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)\ud t\right|=\frac{M}{48}(b-a)^{3}.
-\]
-
-\end_inset
-
-即
-\begin_inset Formula 
-\[
-\left|\int_{a}^{b}f(x)\ud x-f\left(\frac{a+b}{2}\right)(b-a)\right|\le\frac{(b-a)^{3}}{48}\sup_{x\in[a,b]}f''(x).
+\left|\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)(f''(t)+f''(a+b-t))\ud t\right|\le2M\left|\int_{a}^{\frac{a+b}{2}}(t-a)\left(t-\frac{a+b}{2}\right)\ud t\right|=\frac{M}{24}(b-a)^{3}.
 \]
 
 \end_inset
@@ -11394,6 +11487,407 @@ H_{n}=\ln n+\frac{n+1}{2n}+\frac{1}{2}\int_{0}^{1}x(1-x)\sum_{k=1}^{n-1}\frac{2}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+定积分的应用和推广
+\end_layout
+
+\begin_layout Subsection
+定积分的应用
+\end_layout
+
+\begin_layout Paragraph
+曲线的长度
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $I=[\alpha,\beta]$
+\end_inset
+
+, 映射
+\begin_inset Formula $\sigma:I\to\RR^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $t\mapsto\left(x(t),y(t)\right)$
+\end_inset
+
+, 
+\begin_inset Formula $t\in I$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+如果
+\begin_inset Formula $x(t)$
+\end_inset
+
+, 
+\begin_inset Formula $y(t)$
+\end_inset
+
+为连续函数, 则称
+\begin_inset Formula $\sigma$
+\end_inset
+
+为
+\begin_inset Formula $\RR^{2}$
+\end_inset
+
+上的连续曲线.
+ 
+\end_layout
+
+\begin_layout Standard
+如果
+\begin_inset Formula $x(t)$
+\end_inset
+
+, 
+\begin_inset Formula $y(t)\in C^{1}$
+\end_inset
+
+, 则称
+\begin_inset Formula $\sigma$
+\end_inset
+
+为
+\begin_inset Formula $C^{1}$
+\end_inset
+
+曲线.
+\end_layout
+
+\begin_layout Standard
+定义
+\begin_inset Formula $\sigma$
+\end_inset
+
+的长度为
+\begin_inset Formula 
+\[
+L(\sigma)=\int_{\alpha}^{\beta}\left[\left(x'(t)\right)^{2}+\left(y'(t)\right)^{2}\right]^{1/2}\ud t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例7.1.1.
+ 
+\end_layout
+
+\begin_layout Standard
+求摆线
+\begin_inset Formula 
+\[
+\left(x(t),y(t)\right)=\left(a(t-\sin t),a(1-\cos t)\right),\quad a>0.
+\]
+
+\end_inset
+
+一拱的长度.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}l & =\int_{0}^{2\pi}\left[\left(x^{\prime}(t)\right)^{2}+\left(y^{\prime}(t)\right)^{2}\right]^{\frac{1}{2}}dt\\
+ & =\int_{0}^{2\pi}a\left[(1-\cos t)^{2}+\sin^{2}t\right]^{\frac{1}{2}}dt\\
+ & =2a\int_{0}^{2\pi}\sin\frac{t}{2}dt=8a.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+简单图形的面积
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\int_{a}^{b}f(x)dx.
+\]
+
+\end_inset
+
+当
+\begin_inset Formula $f$
+\end_inset
+
+变号时, 上式称为代数面积和.
+\end_layout
+
+\begin_layout Standard
+设平面曲线
+\begin_inset Formula $\sigma$
+\end_inset
+
+的极坐标方程为
+\begin_inset Formula $r=r(\theta)$
+\end_inset
+
+, 
+\begin_inset Formula $r(\theta)\in C[\alpha,\beta]$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+S=\frac{1}{2}\int_{\alpha}^{\beta}r^{2}(\theta)d\theta.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+设曲线
+\begin_inset Formula $\sigma$
+\end_inset
+
+上的点满足
+\begin_inset Formula $\sigma(t)=\left(x(t),y(t)\right)$
+\end_inset
+
+, 
+\begin_inset Formula $t\in[\alpha,\beta]$
+\end_inset
+
+.
+ 则
+\begin_inset Formula $\sigma$
+\end_inset
+
+, 
+\begin_inset Formula $x=a$
+\end_inset
+
+, 
+\begin_inset Formula $x=b$
+\end_inset
+
+和
+\begin_inset Formula $y=0$
+\end_inset
+
+围成的曲边梯形的面积为
+\begin_inset Formula 
+\[
+S=\int_{\alpha}^{\beta}y(t)x'(t)dt.
+\]
+
+\end_inset
+
+面积公式也可以改写成
+\begin_inset Formula 
+\[
+S=\frac{1}{2}\left|\int_{\alpha}^{\beta}\left[y(t)x'(t)-y'(t)x(t)\right]\right|\ud t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+旋转曲面的面积
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $\sigma$
+\end_inset
+
+为平面曲线
+\begin_inset Formula $\sigma(t)=(x(t),y(t))$
+\end_inset
+
+, 
+\begin_inset Formula $t\in[\alpha,\beta$
+\end_inset
+
+], 
+\begin_inset Formula $y(t)\ge0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+绕
+\begin_inset Formula $x$
+\end_inset
+
+轴旋转所得曲面的面积为
+\begin_inset Formula 
+\[
+S=\int_{\alpha}^{\beta}2\pi y(t)\left[\left(x^{\prime}(t)\right)^{2}+\left(y^{\prime}(t)\right)^{2}\right]^{\frac{1}{2}}dt.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+简单立体的体积
+\end_layout
+
+\begin_layout Standard
+(1) 平行截面之间的立体体积
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $\Omega$
+\end_inset
+
+是
+\begin_inset Formula $\RR^{3}$
+\end_inset
+
+中的一块立体区域, 夹在平面
+\begin_inset Formula $x=a$
+\end_inset
+
+和
+\begin_inset Formula $x=b$
+\end_inset
+
+, (
+\begin_inset Formula $a<b$
+\end_inset
+
+) 之间.
+ 记
+\begin_inset Formula $S(x)$
+\end_inset
+
+为
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+处垂直于
+\begin_inset Formula $x$
+\end_inset
+
+轴的平面截
+\begin_inset Formula $\Omega$
+\end_inset
+
+的截面面积函数.
+ 如果
+\begin_inset Formula $S(x)\in C[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula $\Omega$
+\end_inset
+
+的体积为
+\begin_inset Formula 
+\[
+V=\int_{a}^{b}S(x)\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2) 旋转体体积
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\Omega=\left\{ (x,y,z)\mid x\in[a,b],y\in[-\left|f(x)\right|,\left|f(x)\right|],\left|z\right|\le\sqrt{x^{2}+y^{2}}\right\} .
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+V(\Omega)=\int_{a}^{b}\pi f^{2}(x)\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+广义积分
+\end_layout
+
+\begin_layout Paragraph
+定义 7.2.1 (无穷积分).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+, 定义在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 中的函数 
+\begin_inset Formula $f$
+\end_inset
+
+ 如果在任何有限区间 
+\begin_inset Formula $[a,A]$
+\end_inset
+
+ 上都是 Riemann 可积的, 且极限 
+\begin_inset Formula 
+\[
+\lim_{A\rightarrow+\infty}\int_{a}^{A}f(x)dx
+\]
+
+\end_inset
+
+存在 (且有限), 则称无穷积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 存在或收敛, 记为 
+\begin_inset Formula 
+\[
+\int_{a}^{+\infty}f(x)dx=\lim_{A\rightarrow+\infty}\int_{a}^{A}f(x)dx
+\]
+
+\end_inset
+
+否则就称无穷积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 不存在或发散.
 \end_layout
 
 \begin_layout Section
