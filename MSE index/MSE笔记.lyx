@@ -191,12 +191,8 @@ theorems-ams-extended-chap-bytype
 MSE笔记
 \end_layout
 
-\begin_layout Section
-linear-algebra
-\end_layout
-
 \begin_layout Paragraph
-Q455695
+Q455695 linear-algebra
 \end_layout
 
 \begin_layout Standard
@@ -221,10 +217,6 @@ Q455695
 \end_inset
 
 只能恒为零.
-\end_layout
-
-\begin_layout Section
-other
 \end_layout
 
 \begin_layout Paragraph
@@ -292,6 +284,59 @@ Q919144
 \end_inset
 
 , a.e..
+\end_layout
+
+\begin_layout Paragraph
+Q2813879 linear-algebra eigenvalues-eigenvectors linear-transformations
+\end_layout
+
+\begin_layout Standard
+同Q455695.
+\end_layout
+
+\begin_layout Paragraph
+Q3658038 functional-analysis operator-theory normed-spaces spectral-theory
+ eigenfunctions
+\end_layout
+
+\begin_layout Standard
+设乘积算子
+\begin_inset Formula $M:L^{2}(\RR;\RR)\to L^{2}(\RR;\RR)$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)\mapsto\left(-3\chi_{[-5,1]}(x)+2\chi_{[-1,2]}(x)\right)f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+求
+\begin_inset Formula $\norm{M}=3$
+\end_inset
+
+和
+\begin_inset Formula $M$
+\end_inset
+
+的点谱为
+\begin_inset Formula $\left\{ -3,-1,0,2\right\} $
+\end_inset
+
+, 特征函数有无穷多个.
+\end_layout
+
+\begin_layout Section
+TODOList
+\end_layout
+
+\begin_layout Paragraph
+Q3661879
+\end_layout
+
+\begin_layout Standard
+紧算子分数幂的特征值问题
 \end_layout
 
 \end_body

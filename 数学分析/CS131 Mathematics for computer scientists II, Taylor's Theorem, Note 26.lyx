@@ -18,6 +18,7 @@
 \usepackage{extarrows}
 
 \DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\curl}{curl}
 
 %\everymath{\color{blue}\everymath{}}
 \everymath\expandafter{\color{blue}\displaystyle}
@@ -187,156 +188,94 @@ theorems-ams-extended-chap-bytype
 
 \begin_body
 
-\begin_layout Title
-MSE笔记
-\end_layout
-
-\begin_layout Paragraph
-Q455695 linear-algebra
+\begin_layout Standard
+术语表:
 \end_layout
 
 \begin_layout Standard
-积分算子没有特征值.
-\end_layout
-
-\begin_layout Standard
-如果
-\begin_inset Formula $\lambda\in\RR^{*}=\RR\setminus\{0\}$
-\end_inset
-
-, 满足
-\begin_inset Formula 
-\[
-\int_{0}^{x}f(t)\ud t=\lambda f(x).
-\]
-
-\end_inset
-
-则
 \begin_inset Formula $f$
 \end_inset
 
-只能恒为零.
-\end_layout
+在点
+\begin_inset Formula $a$
+\end_inset
 
-\begin_layout Paragraph
-Q674893
+处的
+\begin_inset Formula $n$
+\end_inset
+
+次Taylor多项式(the Taylor polynomial of degree 
+\begin_inset Formula $n$
+\end_inset
+
+ of 
+\begin_inset Formula $f$
+\end_inset
+
+ at 
+\begin_inset Formula $a$
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Standard
-表面重构, 从Laplace-Beltrami特征函数
+余项(remainder term)
 \end_layout
 
 \begin_layout Standard
-仅从谱不能重构度量.
- 
+\begin_inset Formula $f$
+\end_inset
+
+的Taylor级数(the Taylor series for 
+\begin_inset Formula $f$
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Standard
-对于等距嵌入, 那是非常困难的, 因为这是一个global问题, 局部上你当然能将表面等距形变, 比如圆柱和锥面.
+驻点性质的
+\begin_inset Formula $n$
+\end_inset
+
+阶导数判别法(
+\begin_inset Formula $n$
+\end_inset
+
+-th derivative test for the nature of stationary points)
 \end_layout
 
 \begin_layout Standard
-论文: Zeng et al., Discrete Heat Kernel Determines Discrete Riemannian Metric.
- 处理离散情况.
+拐点
+\begin_inset Formula $a$
+\end_inset
+
+(a point of inflection at 
+\begin_inset Formula $a$
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Standard
-热核完全决定了Riemann度量, 除了一个scaling变换外是唯一的.
-\end_layout
-
-\begin_layout Paragraph
-Q919144
+Maclaurin级数(Maclaurin series)
 \end_layout
 
 \begin_layout Standard
-没有特征值的自伴算子
+比值判别法(the Ratio Test)
 \end_layout
 
 \begin_layout Standard
-设算子
-\begin_inset Formula $M:L^{2}[0,1]\to L^{2}[0,1]$
-\end_inset
-
-, 
-\begin_inset Formula $f(x)\mapsto xf(x)$
-\end_inset
-
-.
- 容易验证算子
-\begin_inset Formula $M$
-\end_inset
-
-的谱在
-\begin_inset Formula $[0,1]$
-\end_inset
-
-中, (因为它是值域在
-\begin_inset Formula $[0,1]$
-\end_inset
-
-上的连续函数构成的乘积算子), 然而特征值方程
-\begin_inset Formula $Mf=\lambda f$
-\end_inset
-
-只能推出
-\begin_inset Formula $f=0$
-\end_inset
-
-, a.e..
-\end_layout
-
-\begin_layout Paragraph
-Q2813879 linear-algebra eigenvalues-eigenvectors linear-transformations
+夹逼准则(the Squeeze Rule)
 \end_layout
 
 \begin_layout Standard
-同Q455695.
-\end_layout
-
-\begin_layout Paragraph
-Q3658038 functional-analysis operator-theory normed-spaces spectral-theory
- eigenfunctions
+知识点:
 \end_layout
 
 \begin_layout Standard
-设乘积算子
-\begin_inset Formula $M:L^{2}(\RR;\RR)\to L^{2}(\RR;\RR)$
-\end_inset
-
-, 
-\begin_inset Formula $f(x)\mapsto\left(-3\chi_{[-5,1]}(x)+2\chi_{[-1,2]}(x)\right)f(x)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-求
-\begin_inset Formula $\norm{M}=3$
-\end_inset
-
-和
-\begin_inset Formula $M$
-\end_inset
-
-的点谱为
-\begin_inset Formula $\left\{ -3,-1,0,2\right\} $
-\end_inset
-
-, 特征函数有无穷多个.
-\end_layout
-
-\begin_layout Section
-TODOList
-\end_layout
-
-\begin_layout Paragraph
-Q3661879
-\end_layout
-
-\begin_layout Standard
-紧算子分数幂的特征值问题
+用Rolle定理证明Taylor定理
 \end_layout
 
 \end_body
