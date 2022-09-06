@@ -1191,6 +1191,177 @@ Stolz公式
 \end_layout
 
 \begin_layout Paragraph
+习题2
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\lim_{n\rightarrow\infty}n\left(a_{n}-A\right)=B,k$
+\end_inset
+
+ 为正整数, 则 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}n\left(\frac{a_{1}+2^{k}a_{2}+\cdots+n^{k}a_{n}}{n^{k+1}}-\frac{A}{k+1}\right)=\frac{B}{k}+\frac{A}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{(k+1)(a_{1}+\cdots+n^{k}a_{n})-n^{k+1}A}{(k+1)n^{k}} & =\lim_{n\to\infty}\frac{(k+1)\left((n+1)^{k}a_{n+1}\right)-\left((n+1)^{k+1}-n^{k+1}\right)A}{(k+1)\left((n+1)^{k}-n^{k}\right)}\\
+ & =\lim_{n\to\infty}\frac{(k+1)\left[n^{k}+\binom{k}{1}n^{k-1}+o\left(n^{k-1}\right)\right]a_{n+1}-\left(\binom{k+1}{1}n^{k}+\binom{k+1}{2}n^{k-1}+o(n^{k-1})\right)A}{(k+1)\left(\binom{k}{1}n^{k-1}+o(n^{k-1})\right)}\\
+ & =\lim_{n\to\infty}\frac{(k+1)\left[n+\binom{k}{1}+o(1)\right]a_{n+1}-\left(\binom{k+1}{1}n+\binom{k+1}{2}+o(1)\right)A}{(k+1)\left(\binom{k}{1}+o(1)\right)}\\
+ & =\lim_{n\to\infty}\frac{\boldsymbol{(k+1)}\left({\color{teal}n}+\boldsymbol{k}+{\color{lime}o(1)}\right)\boldsymbol{{\color{teal}a_{n+1}}}-\left({\color{teal}(k+1)n}+{\color{magenta}\frac{k(k+1)}{2}}+{\color{lime}o(1)}\right){\color{teal}A}}{(k+1)\left(k+o(1)\right)}\\
+ & =\lim_{n\to\infty}\left(\frac{{\color{teal}n}\left({\color{teal}a_{n+1}-A}\right)}{k+o(1)}-\frac{{\color{magenta}\frac{k(k+1)}{2}A}}{(k+1)(k+o(1))}+\frac{\boldsymbol{k(k+1)a_{n+1}}+{\color{lime}o(1)}\cdot(a_{n+1}-A)}{(k+1)(k+o(1))}\right)\\
+ & =\frac{B}{k}-\frac{A}{2}+A
+\end{align*}
+
+\end_inset
+
+其中
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}n(a_{n}-A)=B\Longrightarrow\lim_{n\to\infty}a_{n}=A+\lim_{n\to\infty}(a_{n}-A)=A+\lim_{n\to\infty}\frac{n(a_{n}-A)}{n}=A+\lim_{n\to\infty}\frac{B}{n}+\lim_{n\to\infty}\frac{n(a_{n}-A)-B}{n}=A+0+0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+习题6
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $a_{1}=1,a_{n+1}=a_{n}+\frac{1}{2a_{n}}$
+\end_inset
+
+, 证明 (1) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a_{n}}{\sqrt{n}}=1$
+\end_inset
+
+, (2) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a_{n}^{2}-n}{\ln n}=\frac{1}{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+pf.
+ (2) 由Stolz公式
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{a_{n}^{2}-n}{\ln n} & =\lim_{n\to\infty}\frac{a_{n+1}^{2}-a_{n}^{2}-1}{\ln(n+1)-\ln n}\\
+ & =\lim_{n\to\infty}\frac{a_{n+1}^{2}-a_{n}^{2}-1}{\ln\left(1+\frac{1}{n}\right)}
+\end{align*}
+
+\end_inset
+
+这启发我们去简化
+\begin_inset Formula $a_{n+1}^{2}-a_{n}^{2}$
+\end_inset
+
+项, 由递推公式
+\begin_inset Formula 
+\[
+a_{n+1}-a_{n}=\frac{1}{2a_{n}}\Longrightarrow a_{n+1}^{2}-a_{n}^{2}=\frac{a_{n+1}+a_{n}}{2a_{n}}=\frac{a_{n}+\frac{1}{2a_{n}}+a_{n}}{2a_{n}}=1+\frac{1}{4a_{n}^{2}}\Longrightarrow a_{n+1}^{2}-a_{n}^{2}-1=\frac{1}{4a_{n}^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{a_{n+1}^{2}-a_{n}^{2}-1}{\ln\left(1+\frac{1}{n}\right)}=\lim_{n\to\infty}\frac{\frac{1}{4a_{n}^{2}}}{\frac{1}{n}}=\frac{1}{4}\lim_{n\to\infty}\frac{n}{a_{n}^{2}}=\frac{1}{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+习题8
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\left(a_{n+2}-a_{n}\right)=A$
+\end_inset
+
+, 证明 (1) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a_{n}}{n}=\frac{A}{2}$
+\end_inset
+
+, (2) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{a_{n+1}-a_{n}}{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+pf.
+ (1) 用stolz公式
+\begin_inset Formula 
+\begin{align*}
+\lim_{n\to\infty}\frac{a_{n}}{n} & =\lim_{n\to\infty}\frac{a_{n+2}-a_{n}}{(n+2)-n}=\lim_{n\to\infty}\frac{a_{n+2}-a_{n}}{2}=\frac{A}{2}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2) 用stolz公式
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{a_{n+1}-a_{n}}{n}=\lim_{n\to\infty}\frac{a_{n+3}-a_{n+1}-(a_{n+2}-a_{n})}{(n+2)-n}=\lim_{n\to\infty}\left(\frac{a_{n+3}-a_{n+1}}{2}-\frac{a_{n+2}-a_{n}}{2}\right)=\frac{A}{2}-\frac{A}{2}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $y_{n}$
+\end_inset
+
+单调上升趋于无穷, 且
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{x_{n+k}-x_{n}}{y_{n+k}-y_{n}}=A,
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{x_{n}}{y_{n}}=A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
 习题9
 \end_layout
 
@@ -1509,6 +1680,134 @@ f_{1}(x)\le f(x)\le f_{2}(x).
 
 \begin_layout Standard
 同样类似地给出涉及无穷大与无穷远时的函数极限的定义.
+\end_layout
+
+\begin_layout Paragraph
+习题12
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f,g$
+\end_inset
+
+ 为两个周期函数, 如果 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}[f(x)-g(x)]=0$
+\end_inset
+
+, 则 
+\begin_inset Formula $f=g$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+注: 
+\begin_inset Formula $f,g$
+\end_inset
+
+的周期比可能是无理数, 所以
+\begin_inset Formula $f-g$
+\end_inset
+
+可能不是周期函数.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 设
+\begin_inset Formula $f$
+\end_inset
+
+的周期为
+\begin_inset Formula $T$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+的周期为
+\begin_inset Formula $S$
+\end_inset
+
+.
+ 则
+\begin_inset Formula 
+\begin{align*}
+f(x)-g(x) & =f(x+nT)-g(x+nS)\\
+ & =f(x+nT)-g(x+nT)\\
+ & \quad+g(x+nT{\color{magenta}+nS})-f(x+nS{\color{magenta}+nT})\\
+ & \quad+f(x+nS)-g(x+nS)\\
+ & =\lim_{n\to\infty}f(x+nT)-g(x+nT)\\
+ & \quad+\lim_{n\to\infty}g(x+nT{\color{magenta}+nS})-f(x+nS{\color{magenta}+nT})\\
+ & \quad+\lim_{n\to\infty}f(x+nS)-g(x+nS)\\
+ & =0+0+0.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+习题13
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\lim_{x\rightarrow0}f(x)=0,\lim_{x\rightarrow0}\frac{1}{x}[f(2x)-f(x)]=0$
+\end_inset
+
+, 证明 
+\begin_inset Formula $\lim_{x\rightarrow0}\frac{f(x)}{x}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists X>0$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall x>X$
+\end_inset
+
+, 
+\begin_inset Formula $\left|f(x)\right|<\epsilon$
+\end_inset
+
+, 且
+\begin_inset Formula 
+\[
+\left|f(2x)-f(x)\right|\le\epsilon x.
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\left|f(x)-f\left(\frac{x}{2^{n}}\right)\right|\le\epsilon x.
+\]
+
+\end_inset
+
+令
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+即可.
 \end_layout
 
 \begin_layout Subsection
@@ -11888,6 +12187,3441 @@ V(\Omega)=\int_{a}^{b}\pi f^{2}(x)\ud x.
 \end_inset
 
  不存在或发散.
+\end_layout
+
+\begin_layout Standard
+类似的，我们可以定义无穷积分
+\begin_inset Formula $\int_{-\infty}^{a}f(x)\ud x$
+\end_inset
+
+和
+\begin_inset Formula $\int_{-\infty}^{\infty}f(x)\ud x$
+\end_inset
+
+.
+ 如果极限
+\begin_inset Formula 
+\[
+\lim_{A\to+\infty}\int_{-A}^{A}f(x)\ud x
+\]
+
+\end_inset
+
+存在, 它和上面定义的无穷积分是不等价的, 称为Cauchy主值积分, 记为
+\begin_inset Formula 
+\[
+(V.P.)\int_{-\infty}^{\infty}f(x)\ud x\coloneqq\lim_{A\to+\infty}\int_{-A}^{A}f(x)\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+无穷积分的Cauchy准则
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上的积分收敛, 当且仅当, 对于任意的
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $M=M(\epsilon)$
+\end_inset
+
+, 使得对于任何
+\begin_inset Formula $B>A>M$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+\left|\int_{A}^{B}f(x)\ud x\right|<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例7.2.1
+\end_layout
+
+\begin_layout Standard
+无穷积分
+\begin_inset Formula $\int_{1}^{+\infty}\frac{1}{x^{p}}\ud x$
+\end_inset
+
+, (
+\begin_inset Formula $p\in\RR$
+\end_inset
+
+) 仅在
+\begin_inset Formula $p>1$
+\end_inset
+
+时收敛.
+\end_layout
+
+\begin_layout Paragraph
+例7.2.2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{-\infty}^{\infty}\frac{1}{1+x^{2}}\ud x=\arctan x\mid_{-\infty}^{\infty}=\frac{\pi}{2}-\left(-\frac{\pi}{2}\right)=\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定义7.2.2 (瑕积分)
+\end_layout
+
+\begin_layout Standard
+设函数
+\begin_inset Formula $f$
+\end_inset
+
+在任何区间
+\begin_inset Formula $[a',b]$
+\end_inset
+
+, (
+\begin_inset Formula $a<a'<b$
+\end_inset
+
+) 上均Riemann可积, 如果极限
+\begin_inset Formula 
+\[
+\lim_{a'\to a+}\int_{a'}^{b}f(x)\ud x
+\]
+
+\end_inset
+
+存在且有限, 则称瑕积分
+\begin_inset Formula $\int_{a}^{b}f(x)\ud x$
+\end_inset
+
+存在或收敛, 记为
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\ud x=\lim_{a'\to a+}\int_{a'}^{b}f(x)\ud x,
+\]
+
+\end_inset
+
+否则称瑕积分
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\ud x=\lim_{a'\to a+}\int_{a'}^{b}f(x)\ud x,
+\]
+
+\end_inset
+
+否则称瑕积分
+\begin_inset Formula $\int_{a}^{b}f(x)\ud x$
+\end_inset
+
+不存在或发散.
+ 
+\end_layout
+
+\begin_layout Standard
+如果
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $a$
+\end_inset
+
+附近无界, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上不是Riemann可积的, 称
+\begin_inset Formula $a$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+的瑕点.
+\end_layout
+
+\begin_layout Standard
+无穷积分和瑕积分统称为广义积分, 也称为反常积分.
+\end_layout
+
+\begin_layout Paragraph
+例7.2.3
+\end_layout
+
+\begin_layout Standard
+瑕积分
+\begin_inset Formula $\int_{0}^{1}\frac{1}{x^{p}}\ud x$
+\end_inset
+
+仅在
+\begin_inset Formula $p<1$
+\end_inset
+
+时收敛.
+\end_layout
+
+\begin_layout Standard
+运算法则: 分部积分, 变量替换, 积分区间可加性, 线性性质.
+\end_layout
+
+\begin_layout Paragraph
+例7.2.5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{0}^{1}\ln x\ud x=\lim_{\epsilon\to0+}\int_{\epsilon}^{1}\ln x\ud x=\lim_{\epsilon\to0+}\left(x\ln x-x\right)\mid_{\epsilon}^{1}=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例7.2.6
+\end_layout
+
+\begin_layout Standard
+求Fresnel积分
+\begin_inset Formula $\int_{0}^{+\infty}\cos(x^{2})\ud x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{1}^{+\infty}\cos\left(x^{2}\right)dx=\frac{1}{2}\int_{1}^{+\infty}\frac{\cos t}{\sqrt{t}}dt.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{aligned}\left|\int_{A}^{B}\frac{\cos t}{\sqrt{t}}dt\right| & =\left|\frac{\sin t}{\sqrt{t}}\right|_{A}^{B}+\frac{1}{2}\int_{A}^{B}\frac{\sin t}{t^{\frac{3}{2}}}dt\mid\\
+ & \leqslant\frac{1}{\sqrt{A}}+\frac{1}{\sqrt{B}}+\frac{1}{2}\int_{A}^{B}t^{-\frac{3}{2}}dt=\frac{2}{\sqrt{A}}\rightarrow0\quad(B>A\rightarrow+\infty).
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{+\infty}\cos(x^{2})\ud x & =\frac{1}{2}\int_{0}^{+\infty}\frac{\cos t}{\sqrt{t}}\ud t\\
+ & =\frac{1}{2}\int_{0}^{+\infty}\cos t\left(\frac{2}{\sqrt{\pi}}\int_{0}^{+\infty}\ue^{-tx^{2}}\ud x\right)\ud t\\
+ & =\frac{1}{\sqrt{\pi}}\int_{0}^{+\infty}\int_{0}^{+\infty}\ue^{-tx^{2}}\cos t\ud t\ud x\\
+ & =\frac{1}{\sqrt{\pi}}\int_{0}^{+\infty}\frac{x^{2}}{1+x^{4}}\ud x=\frac{1}{2\sqrt{\pi}}\int_{0}^{\pi/2}\tan^{1/2}t\ud t\\
+ & =\frac{1}{2\sqrt{\pi}}\cdot\frac{1}{2}B\left(\frac{3/2}{2},\frac{1/2}{2}\right)=\frac{1}{4\sqrt{\pi}}\cdot\frac{\Gamma(1/4)\Gamma(3/4)}{\Gamma(1)}\\
+ & =\frac{1}{4\sqrt{\pi}}\cdot\frac{\pi}{\sin\frac{\pi}{4}}=\frac{\sqrt{2\pi}}{4}.
+\end{align*}
+
+\end_inset
+
+其中
+\begin_inset Formula 
+\[
+\int\ue^{-tx^{2}}\cos t\ud t=\frac{\ue^{-tx^{2}}\left(-\cos t\cdot x^{2}+\sin t\right)}{1+x^{4}},
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\int_{0}^{+\infty}\ue^{-tx^{2}}\ud x=\frac{1}{\sqrt{t}}\int_{0}^{+\infty}\ue^{-x^{2}}\ud x=\frac{\sqrt{\pi}}{2\sqrt{t}}.
+\]
+
+\end_inset
+
+综上, 并类似的证明
+\begin_inset Formula 
+\[
+\int_{\RR}\cos(x^{2})\ud x=\sqrt{\frac{\pi}{2}},\qquad\int_{\RR}\sin(x^{2})\ud x=\sqrt{\frac{\pi}{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+作业
+\end_layout
+
+\begin_layout Standard
+7.
+ 设 
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+, 如果 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 上广义可积, 则 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+在
+\begin_inset Formula $[a,A]$
+\end_inset
+
+上, 
+\begin_inset Formula $f(x)$
+\end_inset
+
+的不连续点集是零测集, 存在不连续点集的至多可数个开区间
+\begin_inset Formula $\left\{ I_{i}\right\} $
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\sum\left|I_{i}\right|\le\epsilon.
+\]
+
+\end_inset
+
+因
+\begin_inset Formula $A-a>\epsilon$
+\end_inset
+
+, 所以存在连续点, 设为
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, 则存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得任何
+\begin_inset Formula $\left|x-x_{0}\right|<\delta$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+, 与
+\begin_inset Formula $\int_{a}^{A}f(x)\ud x=0$
+\end_inset
+
+矛盾.
+\end_layout
+
+\begin_layout Standard
+8.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 上广义可积, 如果 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 中一致连续, 则 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}f(x)=0.
+\]
+
+\end_inset
+
+(提示: 先用 Cauchy 准则和中值定理找收敛子列.) 对于任何
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 只要
+\begin_inset Formula $\left|x-y\right|<\delta$
+\end_inset
+
+, 就有
+\begin_inset Formula $\left|f(x)-f(y)\right|<\epsilon$
+\end_inset
+
+.
+ 又对于这样小的
+\begin_inset Formula $\epsilon$
+\end_inset
+
+, 存在
+\begin_inset Formula $M>0$
+\end_inset
+
+, s.t.
+ 对于任何
+\begin_inset Formula $A>M$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left|\int_{A}^{A+\delta}f(x)\ud x\right|<\epsilon.
+\]
+
+\end_inset
+
+则存在
+\begin_inset Formula $\xi\in(A,A+\delta)$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\left|f(\xi)\right|<\epsilon.
+\]
+
+\end_inset
+
+所以对于任何
+\begin_inset Formula $x\in(A,A+\delta)$
+\end_inset
+
+, 有
+\begin_inset Formula 
+\[
+\left|f(x)\right|\le\left|f(\xi)\right|+\left|f(x)-f(\xi)\right|\le\epsilon+\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+9.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 上广义可积, 如果 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 中可导, 且导函数 
+\begin_inset Formula $f^{\prime}(x)$
+\end_inset
+
+ 有界, 则 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=0$
+\end_inset
+
+.
+ (提示: 用上一题.)
+\end_layout
+
+\begin_layout Standard
+11.
+ 举例说明, 当无穷积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 收敛, 且 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 为正连续函数时, 无穷积分 
+\begin_inset Formula $\int_{a}^{+\infty}f^{2}(x)dx$
+\end_inset
+
+ 不一定收敛.
+\end_layout
+
+\begin_layout Standard
+磨光函数
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}n\chi_{[n,n+1/n^{3}]}(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+12.
+ 举例说明, 当无穷积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 收敛, 且 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 为正连续函数时, 不一定有 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}f(x)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+比如图形类似于下式的函数
+\begin_inset Formula 
+\[
+\sum_{k=1}^{\infty}n\chi_{[n,n+1/n]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+广义积分的收敛判别法
+\end_layout
+
+\begin_layout Paragraph
+Thm 7.3.1.
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f\geqslant0$
+\end_inset
+
+, 则无穷积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 收敛当且仅当 
+\begin_inset Formula 
+\[
+F(A)=\int_{a}^{A}f(x)dx
+\]
+
+\end_inset
+
+是 
+\begin_inset Formula $A\in[a,+\infty)$
+\end_inset
+
+ 的有界函数; 对瑕积分有完全类似的结果.
+\end_layout
+
+\begin_layout Paragraph
+定理 7.3.2.
+ (比较判别法)
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $0\leqslant f\leqslant Mg,M>0$
+\end_inset
+
+ 为常数, 则当无穷积分 
+\begin_inset Formula $\int_{a}^{+\infty}g(x)dx$
+\end_inset
+
+ 收敛时, 无穷积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 也收敛; 当无穷积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 发散时, 无穷积分 
+\begin_inset Formula $\int_{a}^{+\infty}g(x)dx$
+\end_inset
+
+ 也发散; 瑕积分有完全类似的结果.
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Formula $M$
+\end_inset
+
+的求法
+\end_layout
+
+\begin_layout Standard
+求
+\begin_inset Formula $\lim_{x\to+\infty}\frac{f(x)}{g(x)}=l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0<l<\infty$
+\end_inset
+
+时, 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\ud x$
+\end_inset
+
+与
+\begin_inset Formula $\int_{a}^{+\infty}g(x)\ud x$
+\end_inset
+
+同收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l=0$
+\end_inset
+
+时, 
+\begin_inset Formula $\int_{a}^{+\infty}g(x)\ud x$
+\end_inset
+
+收敛可以推出
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\ud x$
+\end_inset
+
+收敛.
+ 注: 
+\begin_inset Formula $0\le f\le Mg$
+\end_inset
+
+不可省, 否则取
+\begin_inset Formula $f(x)=\left|\frac{\sin x}{x\ln x}\right|$
+\end_inset
+
+, 
+\begin_inset Formula $g(x)=\frac{\sin x}{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l=+\infty$
+\end_inset
+
+时, 
+\begin_inset Formula $\int_{a}^{+\infty}g(x)\ud x$
+\end_inset
+
+发散, 则
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\ud x$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Paragraph
+Cauchy判别法
+\end_layout
+
+\begin_layout Standard
+将
+\begin_inset Formula $f$
+\end_inset
+
+与
+\begin_inset Formula $x^{-p}$
+\end_inset
+
+比较, (无穷积分) (瑕积分有类似结论)
+\end_layout
+
+\begin_layout Standard
+1.
+ 若
+\begin_inset Formula $p>1$
+\end_inset
+
+, 且存在
+\begin_inset Formula $c>0$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $0\le f(x)\le\frac{c}{x^{p}}$
+\end_inset
+
+, (
+\begin_inset Formula $\forall x\ge x_{0}$
+\end_inset
+
+), 则
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\ud x$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+2.
+ 若
+\begin_inset Formula $p\le1$
+\end_inset
+
+, 且存在
+\begin_inset Formula $c>0$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $f(x)\ge\frac{c}{x^{p}}$
+\end_inset
+
+, (
+\begin_inset Formula $\forall x\ge x_{0}$
+\end_inset
+
+), 则
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\ud x$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $\lim_{x\to\infty}x^{p}f(x)=l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ 若
+\begin_inset Formula $p>1$
+\end_inset
+
+, 
+\begin_inset Formula $0\le l<+\infty$
+\end_inset
+
+, 则
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\ud x$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+4.
+ 若
+\begin_inset Formula $p\le1$
+\end_inset
+
+, 
+\begin_inset Formula $0<l\le+\infty$
+\end_inset
+
+, 则
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\ud x$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Paragraph
+例7.3.3
+\end_layout
+
+\begin_layout Standard
+判断
+\begin_inset Formula $\int_{1}^{+\infty}\frac{1}{x(1+\ln x)}\ud x$
+\end_inset
+
+的敛散性.
+\end_layout
+
+\begin_layout Standard
+对于一般函数
+\begin_inset Formula $f$
+\end_inset
+
+, 定义
+\begin_inset Formula 
+\[
+f^{+}(x)=\max\{0,f(x)\},\quad f^{-}(x)=\max\{0,-f(x)\}.
+\]
+
+\end_inset
+
+若
+\begin_inset Formula $\int f^{\pm}$
+\end_inset
+
+收敛, 则
+\begin_inset Formula $f$
+\end_inset
+
+收敛.
+ (绝对收敛)
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $\int f$
+\end_inset
+
+收敛, 但
+\begin_inset Formula $\int\left|f\right|$
+\end_inset
+
+发散.
+ (条件收敛)
+\end_layout
+
+\begin_layout Paragraph
+例7.3.5
+\end_layout
+
+\begin_layout Standard
+判断
+\begin_inset Formula $\int_{1}^{+\infty}\cos x^{p}\ud x$
+\end_inset
+
+, (
+\begin_inset Formula $p>1$
+\end_inset
+
+), 的敛散性.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{1}^{\infty}\cos t\cdot t^{\frac{1}{p}-1}\ud t,
+\]
+
+\end_inset
+
+取
+\begin_inset Formula $B>A\gg1$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\left|\int_{A}^{B}\frac{\cos t}{t^{1-\frac{1}{p}}}\ud t\right|=\left|\frac{1}{A^{1-1/p}}\int_{A}^{\xi}\cos t\ud t+\frac{1}{B^{1-1/p}}\int_{\xi}^{B}\cos t\ud t\right|\le\frac{4}{A^{1-1/p}}\to0,\quad A\to+\infty.
+\]
+
+\end_inset
+
+但
+\begin_inset Formula 
+\[
+\left|\cos x^{p}\right|\ge\cos^{2}x^{p}=\frac{1}{2}\left(1+\cos2x^{p}\right),
+\]
+
+\end_inset
+
+反证
+\begin_inset Formula $\int\left|\cos x^{p}\right|$
+\end_inset
+
+不收敛.
+\end_layout
+
+\begin_layout Paragraph
+定理 
+\begin_inset Formula $7.3.3$
+\end_inset
+
+ (Dirichlet).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $F(A)=\int_{a}^{A}f(x)dx$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 中有界, 函数 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 中单调, 且 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}g(x)=0$
+\end_inset
+
+, 则积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)g(x)dx$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula $\left|F(A)\right|\le C$
+\end_inset
+
+, 
+\begin_inset Formula $\forall A\ge a$
+\end_inset
+
+.
+ 所以
+\begin_inset Formula 
+\[
+\left|\int_{A}^{B}f(x)\ud x\right|\le2C,\quad\forall A,B\ge a.
+\]
+
+\end_inset
+
+
+\begin_inset Formula $g(x)=o(1)$
+\end_inset
+
+, 
+\begin_inset Formula $x\to+\infty$
+\end_inset
+
+.
+ 所以
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists M>0$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall x>M$
+\end_inset
+
+, 
+\begin_inset Formula $\left|g(x)\right|\le\frac{\epsilon}{4C}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\left|\int_{A}^{B}f(x)g(x)\ud x\right| & =\left|g(A)\int_{A}^{\xi}f(x)\ud x+g(B)\int_{\xi}^{B}f(x)\ud x\right|\\
+ & \le\frac{\epsilon}{4C}\cdot2C\cdot2=\epsilon.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例7.3.6.
+\end_layout
+
+\begin_layout Standard
+判断积分
+\begin_inset Formula $\int_{0}^{+\infty}\frac{\sin x}{x^{p}}\ud x$
+\end_inset
+
+, (
+\begin_inset Formula $0<p<2$
+\end_inset
+
+) 的敛散性.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula $\frac{\sin x}{x^{p}}\sim\frac{1}{x^{p-1}}$
+\end_inset
+
+, (
+\begin_inset Formula $x\to0+$
+\end_inset
+
+).
+ 所以
+\begin_inset Formula $\int_{0}^{1}\frac{\sin x}{x^{p}}\ud x$
+\end_inset
+
+与
+\begin_inset Formula $\int_{0}^{1}x^{1-p}\ud x$
+\end_inset
+
+同敛散, (
+\begin_inset Formula $p<2$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{1}^{A}\sin x\ud x$
+\end_inset
+
+有界, 
+\begin_inset Formula $\frac{1}{x^{p}}\searrow0$
+\end_inset
+
+, 由Dirichlet判别法, 
+\begin_inset Formula $\int_{1}^{\infty}\frac{\sin x}{x^{p}}\ud x$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0<p\le1$
+\end_inset
+
+时, 
+\begin_inset Formula $\int_{1}^{\infty}\left|\frac{\sin x}{x^{p}}\right|\ud x$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1<p<2$
+\end_inset
+
+时, 
+\begin_inset Formula $\int_{1}^{\infty}\left|\frac{\sin x}{x^{p}}\right|\ud x$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Paragraph
+定理 7.3.4 (Abel).
+ 
+\end_layout
+
+\begin_layout Standard
+如果广义积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 收敛, 函数 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 中单调有界, 则积分 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)g(x)dx$
+\end_inset
+
+ 也收敛.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula $g$
+\end_inset
+
+有界, 所以
+\begin_inset Formula $\left|g(x)\right|\le c$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in[a,+\infty)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int f$
+\end_inset
+
+收敛, 所以
+\begin_inset Formula $\forall\epsilon$
+\end_inset
+
+>0, 
+\begin_inset Formula $\exists M>0$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall B>A>M$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\int_{A}^{B}f(x)dx\right|\le\frac{\epsilon}{2c}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\begin{aligned}\left|\int_{A}^{B}f(x)g(x)dx\right| & =\left|g(A)\int_{A}^{\xi}f(x)dx+g(B)\int_{\xi}^{B}f(x)dx\right|\\
+ & \leqslant c\left|\int_{A}^{\xi}f(x)dx\right|+c\left|\int_{\xi}^{B}f(x)dx\right|\\
+ & \leqslant c\frac{\epsilon}{2c}+c\frac{\epsilon}{2c}=\epsilon.
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例7.3.7
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $a\geqslant0$
+\end_inset
+
+, 研究积分 
+\begin_inset Formula $\int_{0}^{+\infty}e^{-ax}\frac{\sin x}{x}dx$
+\end_inset
+
+ 的敛散性.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula $e^{-ax}\searrow0$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{0}^{A}\frac{\sin x}{x}$
+\end_inset
+
+有界, 由Dirichlet判别法, 
+\begin_inset Formula $\int_{0}^{\infty}e^{-ax}\frac{\sin x}{x}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e^{-ax}\searrow$
+\end_inset
+
+有界, 
+\begin_inset Formula $\int_{0}^{\infty}\frac{\sin x}{x}$
+\end_inset
+
+收敛, 由Abel判别法, 
+\begin_inset Formula $\int_{0}^{\infty}e^{-ax}\frac{\sin x}{x}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Subsubsection
+作业
+\end_layout
+
+\begin_layout Standard
+5.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[1,+\infty)$
+\end_inset
+
+ 中连续, 如果 
+\begin_inset Formula $\int_{1}^{+\infty}f^{2}(x)dx$
+\end_inset
+
+ 收敛, 则 
+\begin_inset Formula $\int_{1}^{+\infty}\frac{f(x)}{x}dx$
+\end_inset
+
+ 绝对收敛.
+ (提示: 用Cauchy不等式.)
+\end_layout
+
+\begin_layout Standard
+6.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,A](A<\infty)$
+\end_inset
+
+ 上均可积.
+ 如果 
+\begin_inset Formula $\int_{a}^{+\infty}|f(x)|dx$
+\end_inset
+
+ 收敛, 且 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=L$
+\end_inset
+
+, 证明 
+\begin_inset Formula $L=0$
+\end_inset
+
+, 且 
+\begin_inset Formula $\int_{a}^{+\infty}f^{2}(x)dx$
+\end_inset
+
+ 也收敛.
+\end_layout
+
+\begin_layout Standard
+7.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 中单调递减, 且 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 收敛, 证明 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}xf(x)=0$
+\end_inset
+
+.
+ (提示: 在区间 
+\begin_inset Formula $[A/2,A]$
+\end_inset
+
+ 上估计积分.)
+\end_layout
+
+\begin_layout Standard
+8.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 中单调递减趋于零, 且 
+\begin_inset Formula $\int_{a}^{+\infty}\sqrt{f(x)/x}dx$
+\end_inset
+
+ 收敛, 则 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 也收敛.
+ (提示: 利用上题, 比较被积函数.)
+\end_layout
+
+\begin_layout Standard
+pf.
+ 取
+\begin_inset Formula $\epsilon=1/2$
+\end_inset
+
+, 则存在
+\begin_inset Formula $X>a$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall x>X$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\frac{x}{2}\cdot\sqrt{\frac{f(x)}{x}}<\int_{x/2}^{x}\sqrt{\frac{f(t)}{t}}dt<\epsilon=\frac{1}{2},
+\]
+
+\end_inset
+
+即
+\begin_inset Formula $\sqrt{xf(x)}<1$
+\end_inset
+
+.
+ 所以
+\begin_inset Formula $f(x)<\sqrt{\frac{f(x)}{x}}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x>X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+9.
+ 设 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 收敛, 如果 
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+ 时 
+\begin_inset Formula $xf(x)$
+\end_inset
+
+ 单调递减趋于零, 则 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}xf(x)\ln x=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ 对于任意的
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 因为
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+收敛, 则存在
+\begin_inset Formula $M>\max(0,a)$
+\end_inset
+
+, s.t.
+ 对于任意的
+\begin_inset Formula $x>M$
+\end_inset
+
+, 有
+\begin_inset Formula 
+\[
+xf(x)\int_{\sqrt{x}}^{x}\frac{1}{t}dt\le\int_{\sqrt{x}}^{x}tf(t)\cdot\frac{1}{t}dt=\int_{\sqrt{x}}^{x}f(t)dt<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+即
+\begin_inset Formula $xf(x)\ln x<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+10.
+ 设 
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+ 在 
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+ 中连续, 且 
+\begin_inset Formula $\int_{0}^{+\infty}\frac{dx}{f(x)}$
+\end_inset
+
+ 收敛, 证明 
+\begin_inset Formula 
+\[
+\lim_{\lambda\rightarrow+\infty}\frac{1}{\lambda}\int_{0}^{\lambda}f(x)dx=+\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ Cauchy不等式:
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\frac{dx}{f(x)}\int_{0}^{\lambda}f(x)dx\ge\left(\int_{0}^{\lambda}dx\right)^{2}=\lambda^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11.
+ 研究广义积分 
+\begin_inset Formula 
+\[
+\int_{2}^{+\infty}\frac{dx}{x^{p}\ln^{q}x}dx\quad(p,q\in\mathbb{R})
+\]
+
+\end_inset
+
+的敛散性.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula $p>1$
+\end_inset
+
+收敛, 
+\begin_inset Formula $p<1$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p=1$
+\end_inset
+
+, 
+\begin_inset Formula $q>1$
+\end_inset
+
+时收敛; 
+\begin_inset Formula $p=1$
+\end_inset
+
+, 
+\begin_inset Formula $q\le1$
+\end_inset
+
+时发散.
+\end_layout
+
+\begin_layout Subsection
+广义积分的例子
+\end_layout
+
+\begin_layout Paragraph
+例7.4.1
+\end_layout
+
+\begin_layout Standard
+求
+\begin_inset Formula 
+\[
+I=\int_{0}^{+\infty}e^{-ax}\sin bxdx,\qquad(a>0).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ 原函数可求
+\begin_inset Formula 
+\[
+F(x)=-\frac{a\sin bx+b\cos bx}{a^{2}+b^{2}}e^{-ax},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I=F(\infty)-F(0)=\frac{b}{a^{2}+b^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+令
+\begin_inset Formula $b=n$
+\end_inset
+
+, 
+\begin_inset Formula $a=1$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}e^{-x}\sin nxdx=\frac{n}{n^{2}+1},
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}e^{-x}\frac{\sin nx}{n}dx=\frac{1}{n^{2}+1},
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=1}^{\infty}\frac{1}{n^{2}+1} & =\int_{0}^{\infty}e^{-x}\left\langle \frac{\pi-x}{2}\right\rangle dx\\
+ & =\sum_{k=0}^{\infty}\int_{2k\pi}^{2(k+1)\pi}e^{-x}\frac{\pi-(x-2k\pi)}{2}dx\\
+ & =\sum_{k=0}^{\infty}\int_{0}^{2\pi}e^{-(x+2k\pi)}\frac{\pi-x}{2}dx\\
+ & =\int_{0}^{2\pi}\frac{e^{\pi}}{e^{\pi}-e^{-\pi}}e^{-x}\frac{\pi-x}{2}dx\\
+ & =\frac{1}{2}\frac{e^{\pi}}{e^{\pi}-e^{-\pi}}\cdot\left((\pi-1)+e^{-2\pi}(\pi+1)\right)=\frac{\pi\coth\pi-1}{2}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例7.4.2
+\end_layout
+
+\begin_layout Standard
+求
+\begin_inset Formula 
+\[
+I=\int_{-\pi}^{+\pi}\frac{1-r^{2}}{1-2r\cos x+r^{2}}dx,\qquad(0<r<1).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ 令
+\begin_inset Formula $t=\tan\frac{x}{2}$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+I=\int_{\RR}\frac{2(1-r^{2})}{(1-r)^{2}+(1+r)^{2}t^{2}}dt=2\arctan\left(\frac{1+r}{1-r}t\right)\mid_{-\infty}^{\infty}=2\pi.
+\]
+
+\end_inset
+
+另外注意
+\begin_inset Formula 
+\[
+\sum_{n\in\ZZ}r^{\left|n\right|}e^{inx}=\frac{1-r^{2}}{1-2r\cos x+r^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例7.4.3
+\end_layout
+
+\begin_layout Standard
+求
+\begin_inset Formula 
+\[
+I=\int_{0}^{\infty}\frac{1}{1+x^{4}}dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+.
+ 取
+\begin_inset Formula $x^{\alpha/2}=\tan t$
+\end_inset
+
+, 则
+\begin_inset Formula $x=\left(\tan t\right)^{2/\alpha}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+I=\int_{0}^{\infty}\frac{1}{1+x^{\alpha}}dx=\int_{0}^{\pi/2}\frac{2}{\alpha}\left(\tan t\right)^{2/\alpha-1}dt=\frac{2}{\alpha}\cdot\frac{1}{2}B\left(\frac{1}{\alpha},1-\frac{1}{\alpha}\right)=\frac{1}{\alpha}\Gamma\left(\frac{1}{\alpha}\right)\Gamma\left(1-\frac{1}{\alpha}\right)=\frac{\pi}{\alpha\sin\frac{\pi}{\alpha}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例7.4.5
+\end_layout
+
+\begin_layout Standard
+求
+\begin_inset Formula 
+\[
+I=\int_{0}^{+\infty}\frac{1}{\left(1+x^{2}\right)^{n}}dx\qquad(n\geqslant1).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ 令
+\begin_inset Formula $x=\tan t$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\frac{1}{(1+x^{2})^{\alpha}}dx=\int_{0}^{\pi/2}\cos^{2\alpha-2}tdt=\frac{1}{2}B\left(\frac{1}{2},\frac{2\alpha-1}{2}\right).
+\]
+
+\end_inset
+
+当
+\begin_inset Formula $\alpha=n$
+\end_inset
+
+时, 
+\begin_inset Formula $I=\frac{\pi}{2}\cdot\frac{(2n-3)!!}{(2n-2)!!}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例7.4.8
+\end_layout
+
+\begin_layout Standard
+求
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\frac{\sin^{2}x}{x^{2}}dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ 注意
+\begin_inset Formula $\sin^{2}nx-\sin^{2}(n-1)x=\sin x\cdot\sin\left[(2n-1)x\right]$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\frac{\sin^{2}nx}{\sin^{2}x}=\sum_{k=1}^{n}\frac{\sin(2k-1)x}{\sin x}.
+\]
+
+\end_inset
+
+又注意
+\begin_inset Formula 
+\[
+\sin(2n-1)x-\sin(2n-3)x=2\sin x\cos\left[2(n-1)x\right],
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sin(2n-1)x=2\sin x\left(\frac{1}{2}+\sum_{k=1}^{n-1}\cos2kx\right),
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\int_{0}^{\pi/2}\frac{\sin^{2}nx}{\sin^{2}x}=\sum_{k=1}^{n}\int_{0}^{\pi/2}\frac{\sin(2k-1)x}{\sin x}dx=\sum_{k=1}^{n}\int_{0}^{\pi/2}1+2\sum_{j=1}^{k-1}\cos2jxdx=n\cdot\frac{\pi}{2}.
+\]
+
+\end_inset
+
+最后由Riemann Lebesgue引理
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{\infty}\frac{\sin^{2}x}{x^{2}}dx & =\lim_{n\to\infty}\int_{0}^{\frac{n\pi}{2}}\frac{\sin^{2}x}{x^{2}}dx\\
+ & =\lim_{n\to\infty}\int_{0}^{\pi/2}\frac{\sin^{2}nx}{nx^{2}}dx\\
+ & =\lim_{n\to\infty}\left(\int_{0}^{\pi/2}\frac{\sin^{2}nx}{n\sin^{2}x}dx+\int_{0}^{\pi/2}\frac{\sin^{2}nx}{n}\left(\frac{1}{x^{2}}-\frac{1}{\sin^{2}x}\right)dx\right)\\
+ & =\frac{\pi}{2}+O\left(\frac{1}{n}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+也可以不用Riemann Lebesgue引理, 需要用夹逼原理, 使用不等式
+\begin_inset Formula 
+\[
+x-\frac{x^{3}}{3!}\le\sin x\le x,\qquad\forall x\in\left[0,\frac{\pi}{2}\right].
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{n}\int_{0}^{\pi/2}\frac{\sin^{2}nx}{x^{2}}dx & \le\frac{1}{n}\int_{0}^{\pi/2}\frac{\sin^{2}nx}{\sin^{2}x}dx=\frac{\pi}{2}\le\frac{1}{n}\int_{0}^{\pi/2}\frac{\sin^{2}nx}{\left(x-\frac{x^{3}}{3!}\right)^{2}}dx\\
+ & \le\frac{1}{n}\int_{0}^{\delta}\frac{\sin^{2}nx}{x^{2}}\left(1-\frac{\delta^{2}}{6}\right)^{-2}dx+\frac{1}{n}\int_{\delta}^{\pi/2}\frac{1}{x^{2}}\left(1-\frac{(\pi/2)^{2}}{6}\right)^{-2}dx\qquad\forall\delta>0.
+\end{align*}
+
+\end_inset
+
+由于
+\begin_inset Formula 
+\[
+\frac{\pi}{2}\ge\frac{1}{n}\int_{0}^{\pi/2}\frac{\sin^{2}nx}{x^{2}}dx\ge\left(1-\frac{\delta^{2}}{6}\right)^{2}\left[\frac{\pi}{2}-\frac{1}{n}\int_{\delta}^{\pi/2}\frac{1}{x^{2}}\left(1-\frac{\pi^{2}}{24}\right)^{-2}dx\right],\qquad\forall\delta>0.
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\frac{\pi}{2}\ge I\ge\left(1-\frac{\delta^{2}}{6}\right)^{-2}\frac{\pi}{2},\qquad\forall\delta>0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+同上面类似的过程有Dirichlet积分
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{\infty}\frac{\sin x}{x}dx & =\lim_{n\to\infty}\int_{0}^{\frac{(2n-1)\pi}{2}}\frac{\sin x}{x}dx\\
+ & =\lim_{n\to\infty}\int_{0}^{\pi/2}\frac{\sin(2n-1)x}{x}dx\\
+ & =\lim_{n\to\infty}\left[\int_{0}^{\pi/2}\frac{\sin(2n-1)x}{\sin x}dx+\int_{0}^{\pi/2}\sin(2n-1)x\cdot\left(\frac{1}{x}-\frac{1}{\sin x}\right)dx\right]=\frac{\pi}{2}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例7.4.9.
+\end_layout
+
+\begin_layout Standard
+求Euler积分
+\begin_inset Formula 
+\[
+I=\int_{0}^{\pi/2}\ln\sin xdx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+\begin_inset Formula 
+\begin{align*}
+I\xlongequal{x=2t}2\int_{0}^{\pi/4}\ln\sin2tdt & =2\int_{0}^{\pi/4}\ln2+\ln\sin t+\ln\cos tdt\\
+ & =2\ln2\cdot\frac{\pi}{4}+2\int_{0}^{\pi/4}\ln\sin tdt+2\int_{0}^{\pi/4}\ln\cos tdt\\
+ & =\frac{\pi}{2}\ln2+2I.
+\end{align*}
+
+\end_inset
+
+所以
+\begin_inset Formula $I=-\frac{\pi}{2}\ln2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+作业
+\end_layout
+
+\begin_layout Standard
+8.
+ (Frullani积分)设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 在 
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+ 上连续, 且对任意 
+\begin_inset Formula $c>0$
+\end_inset
+
+, 积分 
+\begin_inset Formula $\int_{c}^{+\infty}\frac{f(x)}{x}$
+\end_inset
+
+ 收敛, 则 
+\begin_inset Formula 
+\[
+\int_{0}^{+\infty}\frac{f(\alpha x)-f(\beta x)}{x}dx=f(0)\ln\frac{\beta}{\alpha},\quad(\alpha,\beta>0).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+9.
+ (Frullani积分) 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是定义在 
+\begin_inset Formula $(0,+\infty)$
+\end_inset
+
+ 上的函数, 如果对于任意 
+\begin_inset Formula $b>a>0$
+\end_inset
+
+, 积分 
+\begin_inset Formula $\int_{a}^{b}\frac{f(x)}{x}dx$
+\end_inset
+
+ 收敛, 且 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0^{+}}f(x)=L,\quad\lim_{x\rightarrow+\infty}f(x)=M,
+\]
+
+\end_inset
+
+则 
+\begin_inset Formula 
+\[
+\int_{0}^{+\infty}\frac{f(\alpha x)-f(\beta x)}{x}dx=(L-M)\ln\frac{\beta}{\alpha},\quad(\alpha,\beta>0).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula 
+\begin{align*}
+\int_{\epsilon}^{M}\frac{f(\alpha x)-f(\beta x)}{x}dx & =\int_{\alpha\epsilon}^{\alpha M}\frac{f(x)}{x}dx-\int_{\beta\epsilon}^{\beta M}\frac{f(x)}{x}dx\\
+ & =\int_{\alpha\epsilon}^{\beta\epsilon}\frac{f(x)}{x}dx-\int_{\alpha M}^{\beta M}\frac{f(x)}{x}dx\qquad(\alpha<\beta)\\
+ & =\int_{\alpha\epsilon}^{\beta\epsilon}\frac{f(0)+o(1)}{x}dx-\int_{\alpha M}^{\beta M}\frac{f(\infty)+o(1)}{x}dx\\
+ & =L\ln\frac{\beta}{\alpha}-M\ln\frac{\beta}{\alpha}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+10.
+ 计算下列积分 
+\begin_inset Formula $(a,b>0)$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\int_{0}^{+\infty}\left(\frac{x}{e^{x}-e^{-x}}-\frac{1}{2}\right)\frac{dx}{x^{2}}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\int_{0}^{+\infty}\frac{b\sin ax-a\sin bx}{x^{2}}dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+pf.
+ (1) 注意到
+\begin_inset Formula 
+\[
+\frac{1}{x^{2}}\left(\frac{x}{e^{x}-e^{-x}}-\frac{1}{2}\right)=\frac{1}{x}\left(\frac{e^{x}+1-1}{e^{2x}-1}-\frac{1}{2x}\right)=\frac{1}{x}\left(\frac{1}{e^{x}-1}-\frac{1}{e^{2x}-1}-\frac{1}{x}+\frac{1}{2x}\right).
+\]
+
+\end_inset
+
+如令
+\begin_inset Formula $f(x)=\frac{1}{e^{x}-1}-\frac{1}{x}$
+\end_inset
+
+, 则由Frullani积分, 
+\begin_inset Formula 
+\[
+\int_{0}^{+\infty}\left(\frac{x}{e^{x}-e^{-x}}-\frac{1}{2}\right)\frac{dx}{x^{2}}=f(0+)\ln2=-\frac{1}{2}\ln2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+数项级数
+\end_layout
+
+\begin_layout Subsection
+级数收敛与发散的概念
+\end_layout
+
+\begin_layout Standard
+无穷级数
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}a_{n}=a_{1}+a_{2}+\cdots+a_{n}+\cdots
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula 
+\[
+S_{n}=\sum_{k=1}^{n}a_{k}=a_{1}+\cdots+a_{n}
+\]
+
+\end_inset
+
+称为级数的第
+\begin_inset Formula $n$
+\end_inset
+
+个部分和.
+\end_layout
+
+\begin_layout Paragraph
+级数收敛的必要条件:
+\end_layout
+
+\begin_layout Standard
+如果 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛, 则通项 
+\begin_inset Formula $a_{n}\rightarrow0$
+\end_inset
+
+, 
+\begin_inset Formula $(n\rightarrow\infty)$
+\end_inset
+
+.
+ (否定表述)
+\end_layout
+
+\begin_layout Paragraph
+级数收敛的Cauchy准则:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+ 任给 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在 
+\begin_inset Formula $N=N(\epsilon)$
+\end_inset
+
+, 当 
+\begin_inset Formula $n>N$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+\left|a_{n+1}+a_{n+2}+\cdots+a_{n+p}\right|<\varepsilon,\quad\forall p\geqslant1.
+\]
+
+\end_inset
+
+(否定表述)
+\end_layout
+
+\begin_layout Paragraph
+例 8.1.2.
+ 
+\end_layout
+
+\begin_layout Standard
+判断级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{2}}$
+\end_inset
+
+ 的敛散性.
+\end_layout
+
+\begin_layout Paragraph
+例 8.1.3.
+ 
+\end_layout
+
+\begin_layout Standard
+判断级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n}$
+\end_inset
+
+ 的敛散性 (调和级数).
+\end_layout
+
+\begin_layout Paragraph
+例 8.1.4.
+ 
+\end_layout
+
+\begin_layout Standard
+判断级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\sin n$
+\end_inset
+
+ 的敛散性.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula 
+\[
+\sin(n+1)=\sin n\cdot\cos1+\cos n\cdot\sin1\Longrightarrow\cos n\to0,\ n\to\infty
+\]
+
+\end_inset
+
+这与
+\begin_inset Formula 
+\[
+\sin^{2}n+\cos^{2}n=1
+\]
+
+\end_inset
+
+矛盾.
+\end_layout
+
+\begin_layout Paragraph
+例 8.1.5.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $q>0$
+\end_inset
+
+, 则当 
+\begin_inset Formula $q<1$
+\end_inset
+
+ 时, 
+\begin_inset Formula $\sum_{n=1}^{\infty}q^{n}$
+\end_inset
+
+ 收敛; 
+\begin_inset Formula $q\geqslant1$
+\end_inset
+
+ 时, 
+\begin_inset Formula $\sum_{n=1}^{\infty}q^{n}$
+\end_inset
+
+ 发散(几何级数).
+\end_layout
+
+\begin_layout Paragraph
+Thm8.1.1
+\end_layout
+
+\begin_layout Standard
+(1) 如果 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 均收敛, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\lambda a_{n}+\mu b_{n}\right)$
+\end_inset
+
+ 也收敛, 且 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\lambda a_{n}+\mu b_{n}\right)=\lambda\sum_{n=1}^{\infty}a_{n}+\mu\sum_{n=1}^{\infty}b_{n},\quad(\lambda,\mu\in\mathbb{R})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 级数的敛散性与其有限项的值无关.
+\end_layout
+
+\begin_layout Standard
+3.
+ 设级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的部分和为 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+ 如果 
+\begin_inset Formula $S_{2n}\rightarrow S$
+\end_inset
+
+, 且 
+\begin_inset Formula $a_{n}\rightarrow0$
+\end_inset
+
+, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+条件
+\begin_inset Formula $a_{n}\to0$
+\end_inset
+
+不能舍去, 比如
+\begin_inset Formula $1-1+1-1+1-1+\cdots$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+4.
+ 设级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n+1}-a_{n}\right|$
+\end_inset
+
+ 收敛, 则数列 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 收敛.
+ (提示: 用 Cauchy 准则.) 
+\end_layout
+
+\begin_layout Standard
+5.
+ 设数列 
+\begin_inset Formula $na_{n}$
+\end_inset
+
+ 收敛, 且级数 
+\begin_inset Formula $\sum_{n=2}^{\infty}n\left(a_{n}-a_{n-1}\right)$
+\end_inset
+
+ 收敛, 证明级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 也是收敛的.
+ 
+\end_layout
+
+\begin_layout Standard
+6.
+ 证明, 如果级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}^{2}$
+\end_inset
+
+ 收敛, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{n}$
+\end_inset
+
+ 也收敛.
+ (提示: 用平均值不等式.)
+\end_layout
+
+\begin_layout Standard
+8.
+ 设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 为发散级数, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}\min\left\{ a_{n},1\right\} $
+\end_inset
+
+ 也发散.
+\end_layout
+
+\begin_layout Standard
+hint: 反证法, 比Cauchy收敛准则的否定表述更好写证明过程.
+\end_layout
+
+\begin_layout Subsection
+正项级数收敛与发散的判别法
+\end_layout
+
+\begin_layout Paragraph
+基本判别法
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛 
+\begin_inset Formula $\Longleftrightarrow\left\{ S_{n}\right\} $
+\end_inset
+
+ 收敛 
+\begin_inset Formula $\Longleftrightarrow\left\{ S_{n}\right\} $
+\end_inset
+
+ 有上界.
+\end_layout
+
+\begin_layout Paragraph
+定理 8.2.1 (比较判别法).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 为正项级数, 如果存在常数 
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得 
+\begin_inset Formula 
+\[
+a_{n}\leqslant Mb_{n},\quad\forall n\geqslant1.
+\]
+
+\end_inset
+
+则 (1) 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 收敛时 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 也收敛; (2) 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散时 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 也发散.
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+判别 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left[\frac{1}{n}-\ln\left(1+\frac{1}{n}\right)\right]$
+\end_inset
+
+ 的敛散性.
+ 
+\end_layout
+
+\begin_layout Standard
+解.
+ 根据 Taylor 展开, 
+\begin_inset Formula 
+\[
+0<\frac{1}{n}-\ln\left(1+\frac{1}{n}\right)=\frac{1}{2}\frac{1}{n^{2}}+o\left(\frac{1}{n^{2}}\right).
+\]
+
+\end_inset
+
+因此 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left[\frac{1}{n}-\ln\left(1+\frac{1}{n}\right)\right]/\frac{1}{n^{2}}=\frac{1}{2},
+\]
+
+\end_inset
+
+而 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{2}}$
+\end_inset
+
+ 收敛, 故原级数收敛.
+\end_layout
+
+\begin_layout Paragraph
+Cauchy判别法或根值判别法
+\end_layout
+
+\begin_layout Standard
+如果
+\begin_inset Formula $n$
+\end_inset
+
+充分大时, 
+\begin_inset Formula $\sqrt[n]{a_{n}}\le q<1$
+\end_inset
+
+, 则
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+收敛;
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.4.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $p\in\mathbb{R}$
+\end_inset
+
+, 判别级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(1-\frac{p}{n}\right)^{n^{2}}$
+\end_inset
+
+ 的敛散性.
+ 
+\end_layout
+
+\begin_layout Standard
+解.
+ 因为 
+\begin_inset Formula 
+\[
+\sqrt[n]{a_{n}}=\left(1-\frac{p}{n}\right)^{n}\rightarrow e^{-p},
+\]
+
+\end_inset
+
+故 
+\begin_inset Formula $p>0$
+\end_inset
+
+ 时原级数收敛; 
+\begin_inset Formula $p<0$
+\end_inset
+
+ 时级数发散.
+ 显然, 
+\begin_inset Formula $p=0$
+\end_inset
+
+ 时级数也发散.
+\end_layout
+
+\begin_layout Paragraph
+d'Alembert判别法或比值判别法
+\end_layout
+
+\begin_layout Standard
+如果
+\begin_inset Formula $n$
+\end_inset
+
+充分大时, 
+\begin_inset Formula $\frac{a_{n+1}}{a_{n}}\le q<1$
+\end_inset
+
+, 则
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+收敛;
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.5.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $x>0$
+\end_inset
+
+, 判别级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}n!\left(\frac{x}{n}\right)^{n}$
+\end_inset
+
+ 的敛散性.
+ 
+\end_layout
+
+\begin_layout Standard
+解.
+ 因为 
+\begin_inset Formula 
+\[
+\frac{a_{n+1}}{a_{n}}=\frac{x}{\left(1+\frac{1}{n}\right)^{n}}\rightarrow\frac{x}{e},
+\]
+
+\end_inset
+
+故 
+\begin_inset Formula $0<x<e$
+\end_inset
+
+ 时级数收敛; 
+\begin_inset Formula $x>e$
+\end_inset
+
+ 时级数发散.
+ 
+\begin_inset Formula $x=e$
+\end_inset
+
+ 时, 
+\begin_inset Formula 
+\[
+\frac{a_{n+1}}{a_{n}}=e/\left(1+\frac{1}{n}\right)^{n}\geqslant1,
+\]
+
+\end_inset
+
+故此时级数也发散.
+\end_layout
+
+\begin_layout Paragraph
+定理 8.2.2 (积分判别法).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是定义在 
+\begin_inset Formula $[1,+\infty)$
+\end_inset
+
+ 上的非负单调递减函数, 记 
+\begin_inset Formula $a_{n}=f(n)$
+\end_inset
+
+, 
+\begin_inset Formula $(n\geqslant1)$
+\end_inset
+
+.
+ 则级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的敛散性与广义积分 
+\begin_inset Formula $\int_{1}^{+\infty}f(x)dx$
+\end_inset
+
+ 的敛散性相同.
+\end_layout
+
+\begin_layout Standard
+证明.
+ 令 
+\begin_inset Formula 
+\[
+F(x)=\int_{1}^{x}f(t)dt,\quad\forall x\geqslant1.
+\]
+
+\end_inset
+
+因为 
+\begin_inset Formula $f$
+\end_inset
+
+ 为单调递减函数, 故当 
+\begin_inset Formula $n\leqslant x\leqslant n+1$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+a_{n+1}=f(n+1)\leqslant f(x)\leqslant f(n)=a_{n},
+\]
+
+\end_inset
+
+这说明 
+\begin_inset Formula 
+\[
+a_{n+1}\leqslant\int_{n}^{n+1}f(t)dt\leqslant a_{n},
+\]
+
+\end_inset
+
+从而有 
+\begin_inset Formula 
+\[
+S_{n}\leqslant a_{1}+F(n),\quad F(n)\leqslant S_{n-1}.
+\]
+
+\end_inset
+
+其中 
+\begin_inset Formula $S_{n}=\sum_{k=1}^{n}a_{k}$
+\end_inset
+
+ 为级数的部分和.
+ 因为 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ 及 
+\begin_inset Formula $F(n)$
+\end_inset
+
+ 关于 
+\begin_inset Formula $n$
+\end_inset
+
+ 都是单调递增的, 二者同时有界或无界, 即 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 与 
+\begin_inset Formula $\int_{1}^{+\infty}f(x)dx$
+\end_inset
+
+ 同敛散.
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $s\in\mathbb{R}$
+\end_inset
+
+, 判断级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{s}}$
+\end_inset
+
+ 的敛散性.
+\end_layout
+
+\begin_layout Paragraph
+定理 8.2.3 (Kummer).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 为正项级数, 如果 
+\begin_inset Formula $n$
+\end_inset
+
+ 充分大时 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\geqslant\lambda>0$
+\end_inset
+
+, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛; 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\leqslant0$
+\end_inset
+
+ 且 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 发散, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散.
+\end_layout
+
+\begin_layout Standard
+pf.
+ (1) 条件可改写为 
+\begin_inset Formula 
+\[
+a_{n+1}\leqslant\frac{1}{\lambda}\left(\frac{a_{n}}{b_{n}}-\frac{a_{n+1}}{b_{n+1}}\right),\quad\forall n\geqslant N\text{. }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这说明当 
+\begin_inset Formula $n\geqslant N$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+\begin{aligned}S_{n+1} & =S_{N}+\sum_{k=N}^{n}a_{k+1}\\
+ & \leqslant S_{N}+\frac{1}{\lambda}\sum_{k=N}^{n}\left(\frac{a_{k}}{b_{k}}-\frac{a_{k+1}}{b_{k+1}}\right)\\
+ & =S_{N}+\frac{1}{\lambda}\left(\frac{a_{N}}{b_{N}}-\frac{a_{n+1}}{b_{n+1}}\right)\\
+ & \leqslant S_{N}+\frac{1}{\lambda}\frac{a_{N}}{b_{N}}
+\end{aligned}
+\]
+
+\end_inset
+
+即 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ 有上界, 从而 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 由 
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\leqslant0
+\]
+
+\end_inset
+
+可知 
+\begin_inset Formula 
+\[
+\frac{a_{n}}{b_{n}}\leqslant\frac{a_{n+1}}{b_{n+1}},
+\]
+
+\end_inset
+
+即 
+\begin_inset Formula $\left\{ \frac{a_{n}}{b_{n}}\right\} $
+\end_inset
+
+ 关于 
+\begin_inset Formula $n$
+\end_inset
+
+ 单调递增, 从而 
+\begin_inset Formula $a_{n}\geqslant\frac{a_{1}}{b_{1}}b_{n}$
+\end_inset
+
+, 因此由 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 发散知 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 也发散.
+\end_layout
+
+\begin_layout Paragraph
+Kummer判别法推d'Alembert判别法
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $b_{n}=1$
+\end_inset
+
+, 则当
+\begin_inset Formula $n$
+\end_inset
+
+充分大, 有
+\begin_inset Formula $\frac{a_{n+1}}{a_{n}}\le q<1$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\ge\frac{1}{q}-1>0,
+\]
+
+\end_inset
+
+所以由Kummer判别法有
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+收敛.
+ 当
+\begin_inset Formula $n$
+\end_inset
+
+充分大满足
+\begin_inset Formula $\frac{a_{n+1}}{a_{n}}\ge1$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\le1-1=0,
+\]
+
+\end_inset
+
+再由Kummer判别法和
+\begin_inset Formula $\sum1$
+\end_inset
+
+发散, 知
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Paragraph
+Kummer判别法证明Raabe判别法
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $b_{n}=\frac{1}{n}$
+\end_inset
+
+, 当
+\begin_inset Formula $n$
+\end_inset
+
+充分大时, 如果有
+\begin_inset Formula $n\left(\frac{a_{n}}{a_{n+1}}-1\right)\ge\mu>1$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\ge n\left(1+\frac{\mu}{n}\right)-(n+1)=\mu-1>0,
+\]
+
+\end_inset
+
+由Kummer判别法, 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+当
+\begin_inset Formula $n$
+\end_inset
+
+充分大时, 如果有
+\begin_inset Formula $n\left(\frac{a_{n}}{a_{n+1}}-1\right)\le1$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\le n\left(1+\frac{1}{n}\right)-(n+1)=0,
+\]
+
+\end_inset
+
+由Kummer判别法以及
+\begin_inset Formula $\sum\frac{1}{n}$
+\end_inset
+
+是发散的, 所以
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+也发散.
+\end_layout
+
+\begin_layout Paragraph
+Kummer判别法推出Gauss判别法
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $b_{n}=\frac{1}{n\ln n}$
+\end_inset
+
+, 当
+\begin_inset Formula $n>N$
+\end_inset
+
+充分大时, 如果有
+\begin_inset Formula $\theta>1$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+\frac{a_{n}}{a_{n+1}}=1+\frac{\theta}{n}+o\left(\frac{1}{n\ln n}\right).
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}} & ={\color{magenta}n\ln n\left(1+\frac{\theta}{n}+o\left(\frac{1}{n\ln n}\right)\right)}-(n+1)\ln(n+1)\\
+ & ={\color{magenta}(n+1)\ln n+(\theta-1)\ln n+o(1)}-n\ln(n+1)-\ln(n+1)\\
+ & =(\theta-1)\ln n+o(1)-(n+1)\left(\frac{1}{n}+o\left(\frac{1}{n}\right)\right)\\
+ & \ge(\theta-1)\ln N>0
+\end{align*}
+
+\end_inset
+
+所以
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+收敛; 当
+\begin_inset Formula $n>N$
+\end_inset
+
+充分大时, 如果有
+\begin_inset Formula $\theta\le1$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+\frac{a_{n}}{a_{n+1}}=1+\frac{\theta}{n}+o\left(\frac{1}{n\ln n}\right).
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}} & ={\color{magenta}n\ln n\left(1+\frac{\theta}{n}+o\left(\frac{1}{n\ln n}\right)\right)}-(n+1)\ln(n+1)\\
+ & ={\color{magenta}(n+1)\ln n+(\theta-1)\ln n+o(1)}-n\ln(n+1)-\ln(n+1)\\
+ & =(\theta-1)\ln n+o(1)-(n+1)\left(\frac{1}{n}+o\left(\frac{1}{n}\right)\right)\\
+ & \le0
+\end{align*}
+
+\end_inset
+
+由Kummer判别法以及
+\begin_inset Formula $\sum\frac{1}{n\ln n}$
+\end_inset
+
+发散, 所以
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+也发散.
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.8.
+ 
+\end_layout
+
+\begin_layout Standard
+判别下列级数的玫散性: 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n!}{(\alpha+1)(\alpha+2)\cdots(\alpha+n)}$
+\end_inset
+
+, 
+\begin_inset Formula $(\alpha>0)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{(2n-1)!!}{(2n)!!}\right)^{s}\cdot\frac{1}{2n+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.9 (Cauchy 凝聚判别法).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ 单调递减趋于零.
+ 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛当且仅当 
+\begin_inset Formula $\sum_{k=0}^{\infty}2^{k}a_{2^{k}}$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Standard
+6.
+ 设 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+, 
+\begin_inset Formula $S_{n}=a_{1}+a_{2}+\cdots+a_{n}$
+\end_inset
+
+, 证明 
+\end_layout
+
+\begin_layout Standard
+(1) 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}^{2}}$
+\end_inset
+
+ 总是收敛的; 
+\end_layout
+
+\begin_layout Standard
+(2) 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{\sqrt{S_{n}}}$
+\end_inset
+
+ 收敛当且仅当 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum\frac{S_{n}-S_{n-1}}{S_{n}^{2}}\le\sum\frac{S_{n}-S_{n-1}}{S_{n}S_{n-1}};
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum\frac{a_{n}}{\sqrt{S_{n}}}\le\frac{1}{\sqrt{a_{1}}}\sum a_{n};
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum\frac{a_{n}}{\sqrt{S_{n}}}=\sum\left(\sqrt{S_{n}}-\frac{S_{n-1}}{\sqrt{S_{n}}}\right)\ge\sum\left(\sqrt{S_{n}}-\sqrt{S_{n-1}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+7.
+ 设正项级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散, 试用积分判别法证明 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n+1}}{S_{n}}$
+\end_inset
+
+ 也发散, 其中 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ 为 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的部分和.
+ 
+\end_layout
+
+\begin_layout Standard
+hint1: 取
+\begin_inset Formula $\epsilon=\frac{1}{2}$
+\end_inset
+
+, 则对于任何
+\begin_inset Formula $n$
+\end_inset
+
+, 存在
+\begin_inset Formula $m>n$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $S_{m+1}>2S_{n}$
+\end_inset
+
+.
+ 则
+\begin_inset Formula 
+\[
+\sum_{k=n}^{m}\frac{a_{k+1}}{S_{k}}\ge\sum_{k=n}^{m}\frac{a_{k+1}}{S_{k+1}}\ge\frac{\sum_{k=n}^{m}a_{k+1}}{S_{m+1}}=\frac{S_{m+1}-S_{n}}{S_{m+1}}\ge\frac{1}{2}=\epsilon,
+\]
+
+\end_inset
+
+由Cauchy收敛判别法即得.
+\end_layout
+
+\begin_layout Standard
+hint2: 
+\begin_inset Formula 
+\[
+\frac{a_{n+1}}{S_{n}}=\frac{S_{n+1}-S_{n}}{S_{n}}\ge\int_{S_{n}}^{S_{n+1}}\frac{dx}{x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+8.
+ 判断下列级数的敛散性: 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n!e^{n}}{n^{n+p}}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{p(p+1)\cdots(p+n-1)}{n!}\cdot\frac{1}{n^{q}}\quad(p>0,q>0)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{(2n-1)!!}{(2n)!!}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(4) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\sqrt{n!}}{(a+\sqrt{1})(a+\sqrt{2})\cdots(a+\sqrt{n})}(a>0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+9.
+ 设 
+\begin_inset Formula $a_{n}>0,S_{n}=a_{1}+a_{2}+\cdots+a_{n}$
+\end_inset
+
+, 证明 
+\end_layout
+
+\begin_layout Standard
+(1) 当 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+ 时, 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}^{\alpha}}$
+\end_inset
+
+ 总是收敛的; 
+\end_layout
+
+\begin_layout Standard
+(2) 当 
+\begin_inset Formula $\alpha\leqslant1$
+\end_inset
+
+ 时, 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}^{\alpha}}$
+\end_inset
+
+ 收敛当且仅当 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Standard
+(1) hint: 
+\begin_inset Formula $\frac{a_{n}}{S_{n}^{\alpha}}=\frac{S_{n}-S_{n-1}}{S_{n}^{\alpha}}\le\int_{S_{n-1}}^{S_{n}}\frac{dx}{x^{\alpha}}$
+\end_inset
+
+, (
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+(2) hint: 如果
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散, 类似第7题的证明.
+\end_layout
+
+\begin_layout Standard
+10.
+ 设 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+ 关于 
+\begin_inset Formula $n$
+\end_inset
+
+ 单调递增.
+ 证明级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(1-\frac{a_{n}}{a_{n+1}}\right)$
+\end_inset
+
+ 收敛当且仅当级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{a_{n+1}}{a_{n}}-1\right)$
+\end_inset
+
+ 收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\left(1-\frac{a_{n}}{a_{n+1}}\right)\le\sum_{n=1}^{\infty}\left(\frac{a_{n+1}}{a_{n}}-1\right);
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Sapagof 判别法: 
+\end_layout
+
+\begin_layout Standard
+设正数数列 
+\begin_inset Formula $\left\{ a_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ 单调递减，则 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+ 的充要条件是 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(1-\frac{a_{n+1}}{a_{n}}\right)$
+\end_inset
+
+ 发散。 
+\end_layout
+
+\begin_layout Standard
+上述断言等价于: 单调递增数列 
+\begin_inset Formula $\left\{ a_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ 与级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(1-\frac{a_{n}}{a_{n+1}}\right)$
+\end_inset
+
+ 同敛散.
+\end_layout
+
+\begin_layout Standard
+由此可以得到: 设正项级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的前 
+\begin_inset Formula $n$
+\end_inset
+
+ 项部分和为 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+, 那么级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}}$
+\end_inset
+
+ 同敛散.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $p>1$
+\end_inset
+
+, 正项级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的前 
+\begin_inset Formula $n$
+\end_inset
+
+ 项部分和为 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+, 那么级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}^{p}}$
+\end_inset
+
+ 始终是收敛的.
+\end_layout
+
+\begin_layout Standard
+11.
+ 设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 为正项级数, 且 
+\begin_inset Formula 
+\[
+\frac{a_{n}}{a_{n+1}}=1+\frac{1}{n}+\frac{\alpha_{n}}{n\ln n}.
+\]
+
+\end_inset
+
+如果 
+\begin_inset Formula $n$
+\end_inset
+
+ 充分大时 
+\begin_inset Formula $\alpha_{n}\geqslant\mu>1$
+\end_inset
+
+, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收玫; 如果 
+\begin_inset Formula $n$
+\end_inset
+
+ 充分大时 
+\begin_inset Formula $\alpha_{n}\leqslant1$
+\end_inset
+
+, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散.
+ 这个结果称为 Bertrand 判别法.
+\end_layout
+
+\begin_layout Standard
+hint: 取
+\series bold
+
+\begin_inset Formula $b_{n}=\frac{1}{n\ln n}$
+\end_inset
+
+
+\series default
+, 则
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}=\alpha_{n}-1+o(1).
+\]
+
+\end_inset
+
+然后用Kummer判别法.
+\end_layout
+
+\begin_layout Standard
+17.
+ 设 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{a_{n}}$
+\end_inset
+
+ 收敛.
+ 证明级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n}{a_{1}+a_{2}+\cdots+a_{n}}$
+\end_inset
+
+ 也收敛.
+\end_layout
+
+\begin_layout Standard
+hint: 将
+\begin_inset Formula $a_{n}$
+\end_inset
+
+递增重排.
 \end_layout
 
 \begin_layout Section
