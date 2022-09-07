@@ -3791,6 +3791,384 @@ f(x+y)=f(x)+f(y),\qquad\forall x,y\in\RR.
 \end_layout
 
 \begin_layout Standard
+13.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ 中定义的无第二类间断点的函数, 如果对任意的两点 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y\in(a,b)$
+\end_inset
+
+, 均有 
+\begin_inset Formula 
+\[
+f\left(\frac{x+y}{2}\right)\leqslant\frac{1}{2}[f(x)+f(y)],
+\]
+
+\end_inset
+
+则 
+\begin_inset Formula $f$
+\end_inset
+
+ 为 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ 中的连续函数.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 用反证法, 若
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上不连续, 则存在
+\begin_inset Formula $x_{0}\in(a,b)$
+\end_inset
+
+, 使得
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处为第一类间断点(因为
+\begin_inset Formula $f$
+\end_inset
+
+没有第二类间断点).
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处为跳跃间断点, 则
+\begin_inset Formula $f(x_{0}-0)$
+\end_inset
+
+和
+\begin_inset Formula $f(x_{0}+0)$
+\end_inset
+
+均存在且不相等, 不妨设
+\begin_inset Formula $f(x_{0}-0)<f(x_{0}+0)$
+\end_inset
+
+, 取
+\begin_inset Formula $\epsilon<\frac{f(x_{0}+0)-f(x_{0}-0)}{4}$
+\end_inset
+
+, 则存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得对于任何
+\begin_inset Formula $x\in(x_{0}-\delta,x_{0})$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+f(x)<f(x_{0}-0)+\epsilon;
+\]
+
+\end_inset
+
+且对于任何
+\begin_inset Formula $y\in(x_{0},x_{0}+\delta)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f(x_{0}+0)+\epsilon>f(y)>f(x_{0}+0)-\epsilon.
+\]
+
+\end_inset
+
+特别的
+\begin_inset Formula 
+\[
+f\left(x_{0}+\frac{\delta}{8}\right)=f\left(\frac{x_{0}-\frac{\delta}{4}+x_{0}+\frac{\delta}{2}}{2}\right)>f(x_{0}+0)-\epsilon>\frac{3f(x_{0}+0)+f(x_{0}-0)}{4}.
+\]
+
+\end_inset
+
+而
+\begin_inset Formula 
+\[
+\frac{1}{2}\left(f\left(x_{0}-\frac{\delta}{4}\right)+f\left(x_{0}+\frac{\delta}{2}\right)\right)<\frac{1}{2}\left(f(x_{0}-0)+\epsilon+f(x_{0}+0)+\epsilon\right)\le\frac{3f(x_{0}+0)+f(x_{0}-0)}{4},
+\]
+
+\end_inset
+
+这与
+\begin_inset Formula 
+\[
+f\left(\frac{x_{0}-\frac{\delta}{4}+x_{0}+\frac{\delta}{2}}{2}\right)\le\frac{1}{2}\left(f\left(x_{0}-\frac{\delta}{4}\right)+f\left(x_{0}+\frac{\delta}{2}\right)\right)
+\]
+
+\end_inset
+
+矛盾.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处是跳跃间断点, 则
+\begin_inset Formula $f(x_{0}\pm0)$
+\end_inset
+
+均存在且不等于
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+.
+ 取
+\begin_inset Formula $x=x_{0}-t$
+\end_inset
+
+, 
+\begin_inset Formula $y=x_{0}+t$
+\end_inset
+
+, 并令
+\begin_inset Formula $t\to0$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+f\left(\frac{x+y}{2}\right)=f(x_{0})\le\frac{f(x_{0}+t)+f(x_{0}-t)}{2}\to\lim_{x\to x_{0}}f(x),\qquad t\to0.
+\]
+
+\end_inset
+
+即
+\begin_inset Formula $f(x_{0})<\lim_{x\to x_{0}}f(x)$
+\end_inset
+
+.
+ 取
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $y=x_{0}+t$
+\end_inset
+
+, 并令
+\begin_inset Formula $t\to0+$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+f\left(\frac{t}{2}+x_{0}\right)=f\left(\frac{x+y}{2}\right)\le\frac{f(x_{0})+f(x_{0}+t)}{2}\Longrightarrow\lim_{x\to x_{0}}f(x)\le\frac{f(x_{0})+\lim_{x\to x_{0}}f(x)}{2}\Longrightarrow\lim_{x\to x_{0}}f(x)\le f(x_{0}).
+\]
+
+\end_inset
+
+又矛盾.
+\end_layout
+
+\begin_layout Standard
+15.
+ 设 
+\begin_inset Formula $f$
+\end_inset
+
+ 为 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ 上的连续函数, 如果对任意的 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+ 均有 
+\begin_inset Formula $f(x+y)=f(x)f(y)$
+\end_inset
+
+, 则要么 
+\begin_inset Formula $f$
+\end_inset
+
+ 恒为零, 要么存在常数 
+\begin_inset Formula $a>0$
+\end_inset
+
+, 使得 
+\begin_inset Formula $f(x)=a^{x}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 若
+\begin_inset Formula $f$
+\end_inset
+
+不恒为零, 则由于
+\begin_inset Formula $f$
+\end_inset
+
+连续, 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+上保持符号.
+ 不然则由连续函数的介值定理, 存在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+使得
+\begin_inset Formula $f(x_{0})=0$
+\end_inset
+
+, 则对于任意的
+\begin_inset Formula $x\in\RR$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f(x)=f(x_{0})f(x-x_{0})\equiv0.
+\]
+
+\end_inset
+
+与
+\begin_inset Formula $f$
+\end_inset
+
+不恒为零矛盾.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+不能恒为负值, 不然
+\begin_inset Formula $f(2x)=f(x)^{2}\Longrightarrow f(2x)>0$
+\end_inset
+
+导致
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+上不再保持符号, 与上述推导矛盾.
+ 所以
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+恒为正.
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $g(x)=\ln f(x)$
+\end_inset
+
+, 由于
+\begin_inset Formula $f$
+\end_inset
+
+的连续性, 
+\begin_inset Formula $g(x)$
+\end_inset
+
+也是
+\begin_inset Formula $\RR$
+\end_inset
+
+上的连续函数.
+ 并有
+\begin_inset Formula 
+\[
+g(x+y)=\ln f(x+y)=\ln\left(f(x)f(y)\right)=\ln f(x)+\ln f(y)=g(x)+g(y).
+\]
+
+\end_inset
+
+由于
+\begin_inset Formula $g$
+\end_inset
+
+连续, 所以
+\begin_inset Formula $g(x)=g(1)x$
+\end_inset
+
+.
+ 令
+\begin_inset Formula $c=g(1)$
+\end_inset
+
+, 
+\begin_inset Formula $a=f(1)>0$
+\end_inset
+
+, 即有
+\begin_inset Formula $\ln f(x)=cx=x\ln f(1)=\ln a^{x}$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)=a^{x}$
+\end_inset
+
+.
+ (14题的结论是经典结论, 任何时候都可以直接拿来用)
+\end_layout
+
+\begin_layout Standard
 3.
  设
 \begin_inset Formula $b,\alpha>0$
