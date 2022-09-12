@@ -246,6 +246,34 @@ Q674893
 \end_layout
 
 \begin_layout Paragraph
+Q689218 real-analysis integration functions
+\end_layout
+
+\begin_layout Standard
+给出一个函数
+\begin_inset Formula $f(x)$
+\end_inset
+
+, 使得对于任意的
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, 有
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}t^{n}f(t)dt=0,
+\]
+
+\end_inset
+
+但
+\begin_inset Formula $f\not\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
 Q919144
 \end_layout
 
@@ -325,6 +353,23 @@ Q3658038 functional-analysis operator-theory normed-spaces spectral-theory
 \end_inset
 
 , 特征函数有无穷多个.
+\end_layout
+
+\begin_layout Paragraph
+Q4327578 partial-differential-equations
+\end_layout
+
+\begin_layout Standard
+带Neumann边界条件的Helmholtz微分算子特征函数展开的点态收敛性问题.
+ 
+\end_layout
+
+\begin_layout Standard
+研究有界开区域
+\begin_inset Formula $\Omega\subseteq\RR^{3}$
+\end_inset
+
+上的问题.
 \end_layout
 
 \begin_layout Section
