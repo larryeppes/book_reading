@@ -372,6 +372,43 @@ Q4327578 partial-differential-equations
 上的问题.
 \end_layout
 
+\begin_layout Paragraph
+Q4463326 differential-geometry reference-request riemannian-geometry book-recomm
+endation
+\end_layout
+
+\begin_layout Standard
+关于Riemann流形的参考书推荐:
+\end_layout
+
+\begin_layout Itemize
+Introduction to Smooth Manifolds by Lee
+\end_layout
+
+\begin_layout Itemize
+Riemannian Geometry by do Carmo
+\end_layout
+
+\begin_layout Itemize
+Riemannian Geometry: A Beginners Guide by Frank Morgan
+\end_layout
+
+\begin_layout Itemize
+Fundamentals of Differential Geometry by Lang
+\end_layout
+
+\begin_layout Itemize
+Differential and Riemannian Manifolds by Lang
+\end_layout
+
+\begin_layout Itemize
+Differential Geometry by Prasolov
+\end_layout
+
+\begin_layout Itemize
+Differential Geometry by Sharpe
+\end_layout
+
 \begin_layout Section
 TODOList
 \end_layout
@@ -382,6 +419,50 @@ Q3661879
 
 \begin_layout Standard
 紧算子分数幂的特征值问题
+\end_layout
+
+\begin_layout Paragraph
+Q4468488 real-analysis probalility-theory measure-theory metric-spaces average
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $(X,d)$
+\end_inset
+
+是连通紧度量空间, 问是否存在唯一的
+\begin_inset Formula $\alpha\ge0$
+\end_inset
+
+满足:
+\end_layout
+
+\begin_layout Standard
+对于任何
+\begin_inset Formula $x_{1},\cdots,x_{k}\in X$
+\end_inset
+
+, 存在
+\begin_inset Formula $x\in X$
+\end_inset
+
+使得从
+\begin_inset Formula $x$
+\end_inset
+
+到
+\begin_inset Formula $x_{i}$
+\end_inset
+
+(
+\begin_inset Formula $i=1,\cdots,k$
+\end_inset
+
+)的平均距离恰好为
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
 \end_layout
 
 \end_body
