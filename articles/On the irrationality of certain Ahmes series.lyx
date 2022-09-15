@@ -18,6 +18,7 @@
 \usepackage{extarrows}
 
 \DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\curl}{curl}
 
 %\everymath{\color{blue}\everymath{}}
 \everymath\expandafter{\color{blue}\displaystyle}
@@ -188,245 +189,178 @@ theorems-ams-extended-chap-bytype
 \begin_body
 
 \begin_layout Title
-MSE笔记
+On the irrationality of certain Ahmes series
 \end_layout
 
 \begin_layout Paragraph
-Q455695 linear-algebra
+Theorem 1.
+ 
 \end_layout
 
 \begin_layout Standard
-积分算子没有特征值.
-\end_layout
-
-\begin_layout Standard
-如果
-\begin_inset Formula $\lambda\in\RR^{*}=\RR\setminus\{0\}$
+设 
+\begin_inset Formula $\left\{ n_{k}\right\} $
 \end_inset
 
-, 满足
+ 是递增正整数数列, 
+\begin_inset Formula $N_{k}$
+\end_inset
+
+ 为 
+\begin_inset Formula $n_{1},\cdots,n_{k}$
+\end_inset
+
+ 的最小公倍数, 并满足
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $\limsup\frac{n_{k}^{2}}{n_{k+1}}\le1$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $\left(\frac{N_{k}}{n_{k+1}}\right)$
+\end_inset
+
+ 有界;
+\end_layout
+
+\begin_layout Standard
+则级数
+\begin_inset Formula $\sum\frac{1}{n_{k}}\in\QQ$
+\end_inset
+
+ 当且仅当对于所有充分大的 
+\begin_inset Formula $k\ge k_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $n_{k+1}=n_{k}^{2}-n_{k}+1$
+\end_inset
+
+.
+ 此时
 \begin_inset Formula 
 \[
-\int_{0}^{x}f(t)\ud t=\lambda f(x).
+\sum\frac{1}{n_{k}}=\frac{1}{n_{1}}+\cdots+\frac{1}{n_{k_{0}-1}}+\frac{1}{n_{k_{0}}-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+证明中, 公式(3)应当是
+\begin_inset Formula 
+\begin{align*}
+0 & \equiv(c_{k}n_{k+1}-d_{k})\left(\frac{1}{n_{k+1}}+\frac{1}{n_{k+2}}+\cdots\right)\\
+ & \equiv-\frac{d_{k}}{n_{k+1}}+\frac{c_{k}n_{k+1}-d_{k}}{n_{k+2}}+o\left(\frac{n_{k+1}}{n_{k+2}}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $\left\{ n_{k}\right\} $
+\end_inset
+
+满足
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $\left\{ \frac{n_{k}^{2}}{n_{k+1}}\right\} $
+\end_inset
+
+ 有界;
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $\left\{ \frac{N_{k}^{*}}{n_{k+1}}\right\} $
+\end_inset
+
+ 有界, 其中
+\begin_inset Formula $N_{k}^{*}=n_{1}n_{2}\cdots n_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $\sum\frac{1}{n_{k}}$
+\end_inset
+
+ 是有理数, 则
+\begin_inset Formula $\left\{ \frac{n_{k}^{2}}{n_{k+1}}\right\} $
+\end_inset
+
+ 只有有限多个极限点, 而且都是有理数极限点, 以及
+\begin_inset Formula 
+\[
+\liminf\frac{n_{k}^{2}}{n_{k+1}}\le1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\left\{ n_{k}\right\} $
+\end_inset
+
+ 满足
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $\limsup\frac{n_{k}^{2}}{n_{k+1}}\le1$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+(ii'') 
+\begin_inset Formula 
+\[
+\limsup\frac{N_{k}}{n_{k+1}}\left(\frac{n_{k+1}^{2}}{n_{k+2}}-1\right)\le0,
 \]
 
 \end_inset
 
 则
-\begin_inset Formula $f$
+\begin_inset Formula $\sum\frac{1}{n_{k}}\in\QQ$
 \end_inset
 
-只能恒为零.
-\end_layout
-
-\begin_layout Paragraph
-Q674893
-\end_layout
-
-\begin_layout Standard
-表面重构, 从Laplace-Beltrami特征函数
-\end_layout
-
-\begin_layout Standard
-仅从谱不能重构度量.
- 
-\end_layout
-
-\begin_layout Standard
-对于等距嵌入, 那是非常困难的, 因为这是一个global问题, 局部上你当然能将表面等距形变, 比如圆柱和锥面.
-\end_layout
-
-\begin_layout Standard
-论文: Zeng et al., Discrete Heat Kernel Determines Discrete Riemannian Metric.
- 处理离散情况.
-\end_layout
-
-\begin_layout Standard
-热核完全决定了Riemann度量, 除了一个scaling变换外是唯一的.
-\end_layout
-
-\begin_layout Paragraph
-Q689218 real-analysis integration functions
-\end_layout
-
-\begin_layout Standard
-给出一个函数
-\begin_inset Formula $f(x)$
-\end_inset
-
-, 使得对于任意的
-\begin_inset Formula $n\in\NN$
+当且仅当对于任何充分大的
+\begin_inset Formula $k\ge k_{0}$
 \end_inset
 
 , 有
-\begin_inset Formula 
-\[
-\int_{0}^{\infty}t^{n}f(t)dt=0,
-\]
-
-\end_inset
-
-但
-\begin_inset Formula $f\not\equiv0$
+\begin_inset Formula $n_{k+1}=n_{k}^{2}-n_{k}+1$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Paragraph
-Q919144
-\end_layout
-
-\begin_layout Standard
-没有特征值的自伴算子
-\end_layout
-
-\begin_layout Standard
-设算子
-\begin_inset Formula $M:L^{2}[0,1]\to L^{2}[0,1]$
-\end_inset
-
-, 
-\begin_inset Formula $f(x)\mapsto xf(x)$
-\end_inset
-
-.
- 容易验证算子
-\begin_inset Formula $M$
-\end_inset
-
-的谱在
-\begin_inset Formula $[0,1]$
-\end_inset
-
-中, (因为它是值域在
-\begin_inset Formula $[0,1]$
-\end_inset
-
-上的连续函数构成的乘积算子), 然而特征值方程
-\begin_inset Formula $Mf=\lambda f$
-\end_inset
-
-只能推出
-\begin_inset Formula $f=0$
-\end_inset
-
-, a.e..
-\end_layout
-
-\begin_layout Paragraph
-Q2813879 linear-algebra eigenvalues-eigenvectors linear-transformations
-\end_layout
-
-\begin_layout Standard
-同Q455695.
-\end_layout
-
-\begin_layout Paragraph
-Q3658038 functional-analysis operator-theory normed-spaces spectral-theory
- eigenfunctions
-\end_layout
-
-\begin_layout Standard
-设乘积算子
-\begin_inset Formula $M:L^{2}(\RR;\RR)\to L^{2}(\RR;\RR)$
-\end_inset
-
-, 
-\begin_inset Formula $f(x)\mapsto\left(-3\chi_{[-5,1]}(x)+2\chi_{[-1,2]}(x)\right)f(x)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-求
-\begin_inset Formula $\norm{M}=3$
-\end_inset
-
-和
-\begin_inset Formula $M$
-\end_inset
-
-的点谱为
-\begin_inset Formula $\left\{ -3,-1,0,2\right\} $
-\end_inset
-
-, 特征函数有无穷多个.
-\end_layout
-
-\begin_layout Paragraph
-Q4327578 partial-differential-equations
-\end_layout
-
-\begin_layout Standard
-带Neumann边界条件的Helmholtz微分算子特征函数展开的点态收敛性问题.
- 
-\end_layout
-
-\begin_layout Standard
-研究有界开区域
-\begin_inset Formula $\Omega\subseteq\RR^{3}$
-\end_inset
-
-上的问题.
-\end_layout
-
-\begin_layout Paragraph
-Q4463326 differential-geometry reference-request riemannian-geometry book-recomm
-endation
-\end_layout
-
-\begin_layout Standard
-关于Riemann流形的参考书推荐:
-\end_layout
-
-\begin_layout Itemize
-Introduction to Smooth Manifolds by Lee
-\end_layout
-
-\begin_layout Itemize
-Riemannian Geometry by do Carmo
-\end_layout
-
-\begin_layout Itemize
-Riemannian Geometry: A Beginners Guide by Frank Morgan
-\end_layout
-
-\begin_layout Itemize
-Fundamentals of Differential Geometry by Lang
-\end_layout
-
-\begin_layout Itemize
-Differential and Riemannian Manifolds by Lang
-\end_layout
-
-\begin_layout Itemize
-Differential Geometry by Prasolov
-\end_layout
-
-\begin_layout Itemize
-Differential Geometry by Sharpe
-\end_layout
-
-\begin_layout Section
-TODOList
-\end_layout
-
-\begin_layout Paragraph
-Q3661879
-\end_layout
-
-\begin_layout Standard
-紧算子分数幂的特征值问题
-\end_layout
-
-\begin_layout Paragraph
-Q4468488 real-analysis probalility-theory measure-theory metric-spaces average
-\end_layout
-
-\begin_layout Standard
-是否每个连通紧度量空间都有唯一平均距离?
 \end_layout
 
 \end_body

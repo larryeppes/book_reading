@@ -409,6 +409,139 @@ Differential Geometry by Prasolov
 Differential Geometry by Sharpe
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Q4468593 calculus sequence-and-series inequality
+\end_layout
+
+\begin_layout Standard
+(1) 设
+\begin_inset Formula $a_{1}=2$
+\end_inset
+
+, 且
+\begin_inset Formula $a_{n+1}=a_{n}^{2}-a_{n}+1$
+\end_inset
+
+.
+ 则
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\frac{1}{a_{n}}=1,\qquad a_{n+1}=1+\prod_{m=1}^{n}a_{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2) 证明: 如果
+\begin_inset Formula $a_{1},a_{2},\cdots$
+\end_inset
+
+都是正整数, 且对于充分大的
+\begin_inset Formula $n$
+\end_inset
+
+满足
+\begin_inset Formula $a_{n+1}=a_{n}^{2}-a_{n}+1$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\frac{1}{a_{n}}
+\]
+
+\end_inset
+
+是有理数, 并且
+\begin_inset Formula $n$
+\end_inset
+
+充分大时有
+\begin_inset Formula 
+\[
+a_{n+1}\ge\prod_{k=1}^{n}a_{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(3) 设
+\begin_inset Formula $x_{0}=x\in\RR$
+\end_inset
+
+, 
+\begin_inset Formula $a_{k}$
+\end_inset
+
+是满足
+\begin_inset Formula $\frac{1}{a_{k}}<x$
+\end_inset
+
+的最小正整数, 且
+\begin_inset Formula $x_{k+1}=x_{k}-\frac{1}{a_{k}}$
+\end_inset
+
+.
+ 则
+\begin_inset Formula 
+\[
+x=\sum_{k=0}^{\infty}\frac{1}{a_{k}},\qquad a_{k+1}>a_{k}(a_{k}-1).
+\]
+
+\end_inset
+
+当
+\begin_inset Formula $x_{k}=\frac{m}{n}\in\QQ$
+\end_inset
+
+时, 证明
+\begin_inset Formula $x_{k+1}$
+\end_inset
+
+的最简分式表示
+\begin_inset Formula $\frac{r}{s}$
+\end_inset
+
+满足
+\begin_inset Formula $r<m$
+\end_inset
+
+; 特别地, 当
+\begin_inset Formula $x\in\QQ$
+\end_inset
+
+时, 存在充分大的
+\begin_inset Formula $K$
+\end_inset
+
+, 使得对于任意
+\begin_inset Formula $k\ge K$
+\end_inset
+
+, 
+\begin_inset Formula $a_{k+1}=a_{k}^{2}-a_{k}+1$
+\end_inset
+
+并且
+\begin_inset Formula $x_{k+1}=\frac{1}{a_{k}(a_{k}-1)}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 TODOList
 \end_layout
@@ -463,6 +596,17 @@ Q4468488 real-analysis probalility-theory measure-theory metric-spaces average
 \end_inset
 
 .
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: 在bookreading/MSE index下有goodnote 笔记, 这个问题描述的有点模糊不清.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
