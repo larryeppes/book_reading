@@ -830,6 +830,21 @@ f\left(\frac{a}{b}\right)=\frac{b^{2}}{a(a-b)}=\frac{r}{s}+k=\frac{r+ks}{s},
 
 \begin_layout Paragraph
 Q4469245 integration inequality
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -846,22 +861,6 @@ Q4469245 integration inequality
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-问题: 设
-\begin_inset Formula 
-\[
-J(t)=\log I(t)=\log\int_{-\infty}^{\infty}\frac{\ue^{-tx^{2}}}{\cosh\pi x}\ud x,\qquad\forall t\in[0,\infty).
-\]
-
-\end_inset
-
-证明: 
-\begin_inset Formula $J(t)$
-\end_inset
-
-是凸函数.
 \end_layout
 
 \begin_layout Section
