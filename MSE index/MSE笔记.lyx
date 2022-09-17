@@ -884,6 +884,11 @@ Q4469506 definite-integrals bessel-functions euler-mascheroni-constant
 是第一类Bessel函数.
 \end_layout
 
+\begin_layout Standard
+证明方法涉及: 交换积分次序, Laplace变换, Meijer G函数, 广义超几何级数, 拉马努金主定理(Ramanujan's master
+ theorem).
+\end_layout
+
 \begin_layout Section
 TODOList
 \end_layout
