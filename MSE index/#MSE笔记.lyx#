@@ -830,21 +830,6 @@ f\left(\frac{a}{b}\right)=\frac{b^{2}}{a(a-b)}=\frac{r}{s}+k=\frac{r+ks}{s},
 
 \begin_layout Paragraph
 Q4469245 integration inequality
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -857,6 +842,96 @@ status open
 \[
 \int_{-\infty}^{\infty}\frac{\ue^{-tx^{2}}}{\cosh\pi x}\ud x\ge\frac{\ue^{t/2}}{1+t}.
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+问题: 设
+\begin_inset Formula 
+\[
+J(t)=\log I(t)=\log\int_{-\infty}^{\infty}\frac{\ue^{-tx^{2}}}{\cosh\pi x}\ud x,\qquad\forall t\in[0,\infty).
+\]
+
+\end_inset
+
+证明: 
+\begin_inset Formula $J(t)$
+\end_inset
+
+是凸函数.
+\end_layout
+
+\begin_layout Paragraph
+Q4469506 definite-integrals bessel-functions euler-mascheroni-constant
+\end_layout
+
+\begin_layout Standard
+证明: 
+\begin_inset Formula 
+\[
+\int_{0}^{1}\frac{1-J_{0}(y)}{y}\ud y-\int_{1}^{\infty}\frac{J_{0}(y)}{y}\ud y=\gamma-\ln2,
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $J_{0}(y)$
+\end_inset
+
+是第一类Bessel函数.
+\end_layout
+
+\begin_layout Standard
+由于
+\begin_inset Formula 
+\[
+\gamma=\int_{0}^{1}\frac{1-\cos t}{t}\ud t-\int_{1}^{\infty}\frac{\cos t}{t}\ud t,
+\]
+
+\end_inset
+
+取
+\begin_inset Formula $t=ax$
+\end_inset
+
+, 
+\begin_inset Formula $a>0$
+\end_inset
+
+, 则有
+\begin_inset Formula 
+\[
+\gamma=\int_{0}^{1}\frac{1-\cos ax}{x}\ud x-\int_{1}^{\infty}\frac{\cos ax}{x}\ud x-\int_{1/a}^{1}\frac{1}{x}\ud x,
+\]
+
+\end_inset
+
+即
+\begin_inset Formula 
+\[
+\gamma+\ln a=\int_{0}^{1}\frac{1-\cos ax}{x}\ud x-\int_{1}^{\infty}\frac{\cos ax}{x}\ud x.
+\]
+
+\end_inset
+
+将
+\begin_inset Formula 
+\[
+J_{0}(y)=\frac{2}{\pi}\int_{0}^{\pi/2}\cos\left(y\cos x\right)\ud x
+\]
+
+\end_inset
+
+代入原积分, 并利用上面的式子有
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1}\frac{1-J_{0}(y)}{y}\ud y-\int_{1}^{\infty}\frac{J_{0}(y)}{y}\ud y & =\int_{0}^{1}\int_{0}^{\pi/2}\frac{2}{\pi}\frac{1-\cos(y\cos x)}{y}\ud x\ud y-\int_{1}^{\infty}\int_{0}^{\pi/2}\frac{2}{\pi}\frac{\cos(y\cos x)}{y}\ud x\ud y\\
+ & =\frac{2}{\pi}\int_{0}^{\pi/2}(\gamma+\ln\cos x)\ud x\\
+ & =\gamma-\ln2.
+\end{align*}
 
 \end_inset
 
@@ -976,6 +1051,14 @@ TODO: 不好理解, 可以先看看GTM274
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph
+Q4469284 logic model-theory
+\end_layout
+
+\begin_layout Standard
+Morley秩不等式
 \end_layout
 
 \end_body
