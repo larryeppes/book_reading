@@ -864,6 +864,26 @@ J(t)=\log I(t)=\log\int_{-\infty}^{\infty}\frac{\ue^{-tx^{2}}}{\cosh\pi x}\ud x,
 是凸函数.
 \end_layout
 
+\begin_layout Paragraph
+Q4469506 definite-integrals bessel-functions euler-mascheroni-constant
+\end_layout
+
+\begin_layout Standard
+证明: 
+\begin_inset Formula 
+\[
+\int_{0}^{1}\frac{1-J_{0}(y)}{y}\ud y-\int_{1}^{\infty}\frac{J_{0}(y)}{y}\ud y=\gamma-\ln2,
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $J_{0}(y)$
+\end_inset
+
+是第一类Bessel函数.
+\end_layout
+
 \begin_layout Section
 TODOList
 \end_layout
@@ -977,6 +997,14 @@ TODO: 不好理解, 可以先看看GTM274
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph
+Q4469284 logic model-theory
+\end_layout
+
+\begin_layout Standard
+Morley秩不等式
 \end_layout
 
 \end_body

@@ -263,16 +263,6 @@ Find
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-blog已登记
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -295,16 +285,6 @@ Evaluate the following integral :
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-blog已登记
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -331,16 +311,6 @@ This is an easy one
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-blog已登记
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -356,7 +326,7 @@ blog已登记
 
 \begin_layout Subsection
 Prove that 
-\begin_inset Formula $\int_{0}^{1}x^{x}(1-x)^{1-x}\sin\pi x\ud x=\frac{\pi e}{24}$
+\begin_inset Formula $\int_{0}^{1}x^{x}(1-x)^{1-x}\sin{(\pi x)}dx=\frac{\pi e}{24}$
 \end_inset
 
 
