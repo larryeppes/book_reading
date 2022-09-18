@@ -1012,5 +1012,30 @@ Q4469284 logic model-theory
 Morley秩不等式
 \end_layout
 
+\begin_layout Paragraph
+Q4469342 trigonometry fourier-analysis nonlinear-optimization density-function
+ trigonometric-series
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $A_{n}\in[0,1]$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+f(t)=\prod_{n=1}^{k}\left(1+A_{n}\cos(n\omega t+\phi_{n})\right)
+\]
+
+\end_inset
+
+求
+\begin_inset Formula $f(t)$
+\end_inset
+
+的最大值与最大值点.
+\end_layout
+
 \end_body
 \end_document
