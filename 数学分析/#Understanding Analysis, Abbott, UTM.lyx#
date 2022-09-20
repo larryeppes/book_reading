@@ -1361,24 +1361,7 @@ Use the Archimedean Property of
 \end_layout
 
 \begin_layout Paragraph
-Exercise 1.4.13 (Schr
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\begin_inset Quotes erd
-\end_inset
-
-{o}
-\end_layout
-
-\end_inset
-
-der-Bernstein Theorem).
+Exercise 1.4.13 (Schröder-Bernstein Theorem).
  
 \end_layout
 
@@ -1903,7 +1886,6 @@ It seems reasonable that the sequence
 \begin_layout Standard
 \begin_inset Graphics
 	filename understanding analysis/chap2.1
-	width 8cm
 
 \end_inset
 
@@ -1913,7 +1895,6 @@ It seems reasonable that the sequence
 \begin_layout Standard
 \begin_inset Graphics
 	filename understanding analysis/chap2.2
-	width 8cm
 
 \end_inset
 
@@ -2111,7 +2092,6 @@ A sequence
 \begin_layout Standard
 \begin_inset Graphics
 	filename understanding analysis/chap2.3
-	width 8cm
 
 \end_inset
 
@@ -2165,7 +2145,6 @@ Every convergent sequence is bounded.
 \begin_layout Standard
 \begin_inset Graphics
 	filename understanding analysis/chap2.4
-	width 8cm
 
 \end_inset
 
@@ -2484,7 +2463,6 @@ If a sequence is monotone and bounded, then it converges.
 \begin_layout Standard
 \begin_inset Graphics
 	filename understanding analysis/chap2.5
-	width 8cm
 
 \end_inset
 
@@ -2740,7 +2718,6 @@ Every bounded sequence contains a convergent subsequence.
 \begin_layout Standard
 \begin_inset Graphics
 	filename understanding analysis/chap2.6
-	width 8cm
 
 \end_inset
 
@@ -3219,25 +3196,14 @@ s_{n}=a_{1}-a_{2}+a_{3}-\cdots\pm a_{n}
 
 converges.
  Different characterizations of completeness lead to different proofs.
- 
-\end_layout
-
-\begin_layout Standard
-(a) Prove the Alternating Series Test by showing that 
+ (a) Prove the Alternating Series Test by showing that 
 \begin_inset Formula $\left(s_{n}\right)$
 \end_inset
 
  is a Cauchy sequence.
- 
-\end_layout
-
-\begin_layout Standard
-(b) Supply another proof for this result using the Nested Interval Property.
- 
-\end_layout
-
-\begin_layout Standard
-(c) Consider the subsequences 
+ (b) Supply another proof for this result using the Nested Interval Property
+ (Theorem 1.4.1).
+ (c) Consider the subsequences 
 \begin_inset Formula $\left(s_{2n}\right)$
 \end_inset
 
@@ -3247,138 +3213,6 @@ converges.
 
 , and show how the Monotone Convergence Theorem leads to a third proof for
  the Alternating Series Test.
-\end_layout
-
-\begin_layout Paragraph
-Exercise 2.7.9 (Ratio Test).
- 
-\end_layout
-
-\begin_layout Standard
-Given a series 
-\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
-\end_inset
-
- with 
-\begin_inset Formula $a_{n}\neq0$
-\end_inset
-
-, the Ratio Test states that if 
-\begin_inset Formula $\left(a_{n}\right)$
-\end_inset
-
- satisfies 
-\begin_inset Formula 
-\[
-\lim\left|\frac{a_{n+1}}{a_{n}}\right|=r<1,
-\]
-
-\end_inset
-
-then the series converges absolutely.
- 
-\end_layout
-
-\begin_layout Standard
-(a) Let 
-\begin_inset Formula $r^{\prime}$
-\end_inset
-
- satisfy 
-\begin_inset Formula $r<r^{\prime}<1$
-\end_inset
-
-.
- (Why must such an 
-\begin_inset Formula $r^{\prime}$
-\end_inset
-
- exist?) Explain why there exists an 
-\begin_inset Formula $N$
-\end_inset
-
- such that 
-\begin_inset Formula $n\geq N$
-\end_inset
-
- implies 
-\begin_inset Formula $\left|a_{n+1}\right|\leq\left|a_{n}\right|r^{\prime}$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-(b) Why does 
-\begin_inset Formula $\left|a_{N}\right|\sum\left(r^{\prime}\right)^{n}$
-\end_inset
-
- necessarily converge? 
-\end_layout
-
-\begin_layout Standard
-(c) Now, show that 
-\begin_inset Formula $\sum\left|a_{n}\right|$
-\end_inset
-
- converges.
-\end_layout
-
-\begin_layout Subsection
-Double Summations and Products of Infinite Series
-\end_layout
-
-\begin_layout Paragraph
-Theorem 2.8.1.
- 
-\end_layout
-
-\begin_layout Standard
-Let 
-\begin_inset Formula $\left\{ a_{ij}:i,j\in\NN\right\} $
-\end_inset
-
- be a doubly indexed array of real numbers.
- If 
-\begin_inset Formula 
-\[
-\sum_{i=1}^{\infty}\sum_{j=1}^{\infty}\left|a_{ij}\right|
-\]
-
-\end_inset
-
-converges, then both 
-\begin_inset Formula $\sum_{i=1}^{\infty}\sum_{j=1}^{\infty}a_{ij}$
-\end_inset
-
- and 
-\begin_inset Formula $\sum_{j=1}^{\infty}\sum_{i=1}^{\infty}a_{ij}$
-\end_inset
-
- converge to the same value.
- Moreover, 
-\begin_inset Formula 
-\[
-\lim_{n\rightarrow\infty}s_{nn}=\sum_{i=1}^{\infty}\sum_{j=1}^{\infty}a_{ij}=\sum_{j=1}^{\infty}\sum_{i=1}^{\infty}a_{ij},
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $s_{nn}=\sum_{i=1}^{n}\sum_{j=1}^{n}a_{ij}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-Epilogue
-\end_layout
-
-\begin_layout Standard
-Absolute convergence is an extremely desirable quality to manipulating series.
- The hypothesis of absolute convergence essentially allows us to treat infinite
- sums as though they were finite sums.
 \end_layout
 
 \end_body
