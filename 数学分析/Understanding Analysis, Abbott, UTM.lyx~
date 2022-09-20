@@ -1361,7 +1361,24 @@ Use the Archimedean Property of
 \end_layout
 
 \begin_layout Paragraph
-Exercise 1.4.13 (Schröder-Bernstein Theorem).
+Exercise 1.4.13 (Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+der-Bernstein Theorem).
  
 \end_layout
 
