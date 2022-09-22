@@ -4815,10 +4815,6 @@ Nowhere-dense sets are considered to be ``thin
 \end_inset
 
  is a complete metric space.
- The collection of continuous functions that are differentiable at even
- one point can be written as the countable union of nowhere-dense sets.
- Baire's Theorem implies that most continuous functions do not have derivates
- at any point.
 \end_layout
 
 \end_body
