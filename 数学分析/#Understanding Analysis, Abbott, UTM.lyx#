@@ -3410,6 +3410,7 @@ the Cantor set
 \begin_layout Standard
 \begin_inset Graphics
 	filename understanding analysis/chap3.1
+	width 8cm
 
 \end_inset
 
@@ -4815,6 +4816,1693 @@ Nowhere-dense sets are considered to be ``thin
 \end_inset
 
  is a complete metric space.
+ The collection of continuous functions that are differentiable at even
+ one point can be written as the countable union of nowhere-dense sets.
+ Baire's Theorem implies that most continuous functions do not have derivates
+ at any point.
+\end_layout
+
+\begin_layout Section
+Functional Limits and Continuity
+\end_layout
+
+\begin_layout Standard
+这一节主要研究函数极限和连续性.
+ 4.2节给出相关定义和简单判别法.
+ 4.3节给出连续函数的刻画, 复合函数的连续性, 和压缩映射定理的例子.
+ 4.4节证明了连续函数保持紧性, 证明了紧集上的最值定理, 一致收敛性和Cantor定理, 最重要的是拓扑刻画, 最后给出一致连续函数的扩张定理.
+ 4.5节讲中值定理, 中值定理的数学本质是连续函数保连通性.
+ 4.6节研究函数的不连续点集, 简单的有单调函数不连续点集的可数性定理, 对于一般函数的不连续点集与
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+集的对应定理, 给出了一个新的概念叫
+\begin_inset Formula $\alpha$
+\end_inset
+
+连续性, 由于不是
+\begin_inset Formula $\alpha$
+\end_inset
+
+连续的点集是闭集, 所以一般函数的不连续点集是一个
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+集, 最后指出Young给出了在仅在任给的
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+集上不连续的函数的构造.
+\end_layout
+
+\begin_layout Subsection
+Discussion: Examples of Dirichlet and Thomae
+\end_layout
+
+\begin_layout Subsection
+Functional Limits
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+, and let 
+\begin_inset Formula $c$
+\end_inset
+
+ be a limit point of the domain 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ We say that 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=L$
+\end_inset
+
+ provided that, for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $0<|x-c|<\delta$
+\end_inset
+
+ (and 
+\begin_inset Formula $x\in A$
+\end_inset
+
+) it follows that 
+\begin_inset Formula $|f(x)-L|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.2.1B (Topological Version).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $c$
+\end_inset
+
+ be a limit point of the domain of 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ We say 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=L$
+\end_inset
+
+ provided that, for every 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ neighborhood 
+\begin_inset Formula $V_{\epsilon}(L)$
+\end_inset
+
+ of 
+\begin_inset Formula $L$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta$
+\end_inset
+
+-neighborhood 
+\begin_inset Formula $V_{\delta}(c)$
+\end_inset
+
+ around 
+\begin_inset Formula $c$
+\end_inset
+
+ with the property that for all 
+\begin_inset Formula $x\in V_{\delta}(c)$
+\end_inset
+
+ different from 
+\begin_inset Formula $c$
+\end_inset
+
+ (with 
+\begin_inset Formula $x\in A$
+\end_inset
+
+) it follows that 
+\begin_inset Formula $f(x)\in V_{\epsilon}(L)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.2.3 (Sequential Criterion for Functional Limits).
+ 
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ and a limit point 
+\begin_inset Formula $c$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+, the following two statements are equivalent: 
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) For all sequences 
+\begin_inset Formula $\left(x_{n}\right)\subseteq A$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $x_{n}\neq c$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(x_{n}\right)\rightarrow c$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $f\left(x_{n}\right)\rightarrow L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 4.2.4 (Algebraic Limit Theorem for Functional Limits).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ be functions defined on a domain 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=L$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\rightarrow c}g(x)=M$
+\end_inset
+
+ for some limit point 
+\begin_inset Formula $c$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Then, 
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $\lim_{x\rightarrow c}kf(x)=kL$
+\end_inset
+
+ for all 
+\begin_inset Formula $k\in\mathbb{R}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $\lim_{x\rightarrow c}[f(x)+g(x)]=L+M$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+(iii) 
+\begin_inset Formula $\lim_{x\rightarrow c}[f(x)g(x)]=LM$
+\end_inset
+
+, and 
+\end_layout
+
+\begin_layout Standard
+(iv) 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)/g(x)=L/M$
+\end_inset
+
+, provided 
+\begin_inset Formula $M\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 4.2.5 (Divergence Criterion for Functional Limits).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be a function defined on 
+\begin_inset Formula $A$
+\end_inset
+
+, and let 
+\begin_inset Formula $c$
+\end_inset
+
+ be a limit point of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If there exist two sequences 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+ with 
+\begin_inset Formula $x_{n}\neq c$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{n}\neq c$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\lim x_{n}=\lim y_{n}=c\quad\text{ but }\quad\lim f\left(x_{n}\right)\neq\lim f\left(y_{n}\right)
+\]
+
+\end_inset
+
+then we can conclude that the functional limit 
+\begin_inset Formula $\lim_{x\rightarrow c}f(c)$
+\end_inset
+
+ does not exist.
+\end_layout
+
+\begin_layout Subsection
+Combinations of Continuous Functions
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.3.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ is continuous at a point 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ if, for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $|x-c|<\delta$
+\end_inset
+
+ (and 
+\begin_inset Formula $x\in A)$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $|f(x)-f(c)|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at every point in the domain 
+\begin_inset Formula $A$
+\end_inset
+
+, then we say that 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.3.2 (Characterizations of Continuity).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+, and let 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ be a limit point of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+ if and only if any one of the following conditions is met: 
+\end_layout
+
+\begin_layout Standard
+(i) For all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $|x-c|<\delta$
+\end_inset
+
+ (and 
+\begin_inset Formula $x\in A)$
+\end_inset
+
+ implies 
+\begin_inset Formula $|f(x)-f(c)|<\epsilon$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=f(c)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(iii) For all 
+\begin_inset Formula $V_{\epsilon}(f(c))$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $V_{\delta}(c)$
+\end_inset
+
+ with the property that 
+\begin_inset Formula $x\in V_{\delta}(c)$
+\end_inset
+
+ (and 
+\begin_inset Formula $x\in A)$
+\end_inset
+
+ implies 
+\begin_inset Formula $f(x)\in V_{\epsilon}(f(c))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(iv) If 
+\begin_inset Formula $\left(x_{n}\right)\rightarrow c$
+\end_inset
+
+ (with 
+\begin_inset Formula $x_{n}\in A$
+\end_inset
+
+), then 
+\begin_inset Formula $f\left(x_{n}\right)\rightarrow f(c)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 4.3.3 (Criterion for Discontinuity).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+, and let 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ be a limit point of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If there exists a sequence 
+\begin_inset Formula $\left(x_{n}\right)\subseteq A$
+\end_inset
+
+ where 
+\begin_inset Formula $\left(x_{n}\right)\rightarrow c$
+\end_inset
+
+ but such that 
+\begin_inset Formula $f\left(x_{n}\right)$
+\end_inset
+
+ does not converge to 
+\begin_inset Formula $f(c)$
+\end_inset
+
+, we may conclude that 
+\begin_inset Formula $f$
+\end_inset
+
+ is not continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.3.4 (Algebraic Continuity Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $g:A\rightarrow\mathbb{R}$
+\end_inset
+
+ are continuous at a point 
+\begin_inset Formula $c\in A$
+\end_inset
+
+.
+ Then, 
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $kf(x)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+ for all 
+\begin_inset Formula $k\in\mathbb{R}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $f(x)+g(x)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(iii) 
+\begin_inset Formula $f(x)g(x)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+; and 
+\end_layout
+
+\begin_layout Standard
+(iv) 
+\begin_inset Formula $f(x)/g(x)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+, provided the quotient is defined.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.3.9 (Composition of Continuous Functions).
+ 
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $f:A\rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $g:B\rightarrow\mathbb{R}$
+\end_inset
+
+, assume that the range 
+\begin_inset Formula $f(A)=\{f(x):x\in A\}$
+\end_inset
+
+ is contained in the domain 
+\begin_inset Formula $B$
+\end_inset
+
+ so that the composition 
+\begin_inset Formula $g\circ f(x)=g(f(x))$
+\end_inset
+
+ is well-defined on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, and if 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $f(c)\in B$
+\end_inset
+
+, then 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.3.9 (Contraction Mapping Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be a function defined on all of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, and assume there is a constant 
+\begin_inset Formula $c$
+\end_inset
+
+ such that 
+\begin_inset Formula $0<c<1$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+|f(x)-f(y)|\leq c|x-y|
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Pick some point 
+\begin_inset Formula $y_{1}\in\mathbb{R}$
+\end_inset
+
+ and construct the sequence 
+\begin_inset Formula 
+\[
+\left(y_{1},f\left(y_{1}\right),f\left(f\left(y_{1}\right)\right),\ldots\right).
+\]
+
+\end_inset
+
+In general, if 
+\begin_inset Formula $y_{n+1}=f\left(y_{n}\right)$
+\end_inset
+
+, show that the resulting sequence 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+ Hence we may let 
+\begin_inset Formula $y=\lim y_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) Prove that 
+\begin_inset Formula $y$
+\end_inset
+
+ is a fixed point of 
+\begin_inset Formula $f$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $f(y)=y$
+\end_inset
+
+) and that it is unique in this regard.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) Finally, prove that if 
+\begin_inset Formula $x$
+\end_inset
+
+ is any arbitrary point in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ then the sequence 
+\begin_inset Formula $(x,f(x),f(f(x)),\ldots)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $y$
+\end_inset
+
+ defined in (b).
+\end_layout
+
+\begin_layout Subsection
+Continuous Functions on Compact Sets
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.4.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ and a subset 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+, let 
+\begin_inset Formula $f(B)$
+\end_inset
+
+ represent the range of 
+\begin_inset Formula $f$
+\end_inset
+
+ over the set 
+\begin_inset Formula $B$
+\end_inset
+
+; that is, 
+\begin_inset Formula $f(B)=\{f(x):x\in B\}$
+\end_inset
+
+.
+ We say 
+\begin_inset Formula $f$
+\end_inset
+
+ is bounded if 
+\begin_inset Formula $f(A)$
+\end_inset
+
+ is bounded in the sense of Definition 2.3.1.
+ 
+\end_layout
+
+\begin_layout Standard
+For a given subset 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+, we say 
+\begin_inset Formula $f$
+\end_inset
+
+ is bounded on 
+\begin_inset Formula $B$
+\end_inset
+
+ if 
+\begin_inset Formula $f(B)$
+\end_inset
+
+ is bounded.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.4.2 (Preservation of Compact Sets).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ be continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $K\subseteq A$
+\end_inset
+
+ is compact, then 
+\begin_inset Formula $f(K)$
+\end_inset
+
+ is compact as well.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.4.3 (Extreme Value Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f:K\rightarrow\mathbb{R}$
+\end_inset
+
+ is continuous on a compact set 
+\begin_inset Formula $K\subseteq\mathbb{R}$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ attains a maximum and minimum value.
+ In other words, there exists 
+\begin_inset Formula $x_{0},x_{1}\in K$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(x_{0}\right)\leq f(x)\leq f\left(x_{1}\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.4.5.
+ 
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+ if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $|x-y|<\delta$
+\end_inset
+
+ implies 
+\begin_inset Formula $|f(x)-f(y)|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.4.6 (Sequential Criterion for Nonuniform Continuity).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ fails to be uniformly continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+ if there exists a particular 
+\begin_inset Formula $\epsilon_{0}>0$
+\end_inset
+
+ and two sequences 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+ satisfying 
+\begin_inset Formula 
+\[
+\left|x_{n}-y_{n}\right|\rightarrow0\quad\text{ but }\quad\left|f\left(x_{n}\right)-f\left(y_{n}\right)\right|\geq\epsilon_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.4.8.
+ (Cantor's Theorem)
+\end_layout
+
+\begin_layout Standard
+A function that is continuous on a compact set 
+\begin_inset Formula $K$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.4.11 (Topological Characterization of Continuity).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $g$
+\end_inset
+
+ be defined on all of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a subset of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, define the set 
+\begin_inset Formula $g^{-1}(A)$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+g^{-1}(A)=\{x\in\mathbb{R}:g(x)\in A\}.
+\]
+
+\end_inset
+
+Show that 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous if and only if 
+\begin_inset Formula $g^{-1}(O)$
+\end_inset
+
+ is open whenever 
+\begin_inset Formula $O\subseteq\mathbb{R}$
+\end_inset
+
+ is an open set.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.4.13 (Continuous Extension Theorem).
+\end_layout
+
+\begin_layout Standard
+(a) Show that a uniformly continuous function preserves Cauchy sequences;
+ that is, if 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ is uniformly continuous and 
+\begin_inset Formula $\left(x_{n}\right)\subseteq A$
+\end_inset
+
+ is a Cauchy sequence, then show 
+\begin_inset Formula $f\left(x_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Let 
+\begin_inset Formula $g$
+\end_inset
+
+ be a continuous function on the open interval 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $g$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ if and only if it is possible to define values 
+\begin_inset Formula $g(a)$
+\end_inset
+
+ and 
+\begin_inset Formula $g(b)$
+\end_inset
+
+ at the endpoints so that the extended function 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ (In the forward direction, first produce candidates for 
+\begin_inset Formula $g(a)$
+\end_inset
+
+ and 
+\begin_inset Formula $g(b)$
+\end_inset
+
+, and then show the extended 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous.)
+\end_layout
+
+\begin_layout Subsection
+The Intermediate Value Theorem
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.5.1 (Intermediate Value Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f:[a,b]\rightarrow\mathbb{R}$
+\end_inset
+
+ is continuous, and if 
+\begin_inset Formula $L$
+\end_inset
+
+ is a real number satisfying 
+\begin_inset Formula $f(a)<L<f(b)$
+\end_inset
+
+ or 
+\begin_inset Formula $f(a)>L>$
+\end_inset
+
+ 
+\begin_inset Formula $f(b)$
+\end_inset
+
+, then there exists a point 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+ where 
+\begin_inset Formula $f(c)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.5.2 (Preservation of Connectedness).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ be continuous.
+ If 
+\begin_inset Formula $E\subseteq A$
+\end_inset
+
+ is connected, then 
+\begin_inset Formula $f(E)$
+\end_inset
+
+ is connected as well.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.5.3.
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f$
+\end_inset
+
+ has the intermediate value property on an interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if for all 
+\begin_inset Formula $x<y$
+\end_inset
+
+ in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and all 
+\begin_inset Formula $L$
+\end_inset
+
+ between 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $f(y)$
+\end_inset
+
+, it is always possible to find a point 
+\begin_inset Formula $c\in(x,y)$
+\end_inset
+
+ where 
+\begin_inset Formula $f(c)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Sets of Discontinuity
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+, define 
+\begin_inset Formula $D_{f}\subseteq\mathbb{R}$
+\end_inset
+
+ to be the set of points where the function 
+\begin_inset Formula $f$
+\end_inset
+
+ fails to be continuous.
+\end_layout
+
+\begin_layout Standard
+The set of discontinuities of a real-valued function on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ has a specific topological structure that is not possessed by every subset
+ of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.6.1.
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ is increasing on 
+\begin_inset Formula $A$
+\end_inset
+
+ if 
+\begin_inset Formula $f(x)\leq f(y)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $x<y$
+\end_inset
+
+ and decreasing if 
+\begin_inset Formula $f(x)\geq f(y)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $x<y$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A monotone function is one that is either increasing or decreasing.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.6.2 (Right-hand limit).
+ 
+\end_layout
+
+\begin_layout Standard
+Given a limit point 
+\begin_inset Formula $c$
+\end_inset
+
+ of a set 
+\begin_inset Formula $A$
+\end_inset
+
+ and a function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+, we write 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow c^{+}}f(x)=L
+\]
+
+\end_inset
+
+if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $|f(x)-L|<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $0<x-c<\delta$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Equivalently, in terms of sequences, 
+\begin_inset Formula $\lim_{x\rightarrow c^{+}}f(x)=L$
+\end_inset
+
+ if 
+\begin_inset Formula $\lim f\left(x_{n}\right)=L$
+\end_inset
+
+ for all sequences 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $x_{n}>c$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim\left(x_{n}\right)=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.6.3.
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ and a limit point 
+\begin_inset Formula $c$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=L$
+\end_inset
+
+ if and only if 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow c^{+}}f(x)=L\quad\text{ and }\quad\lim_{x\rightarrow c^{-}}f(x)=L.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.6.4.
+\end_layout
+
+\begin_layout Standard
+A set that can be written as the countable union of closed sets is in the
+ class 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.6.5.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be defined on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, and let 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous at 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ if there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $y,z\in(x-\delta,x+\delta)$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $|f(y)-f(z)|<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, define 
+\begin_inset Formula $D_{\alpha}$
+\end_inset
+
+ to be the set of points where the function 
+\begin_inset Formula $f$
+\end_inset
+
+ fails to be 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous.
+ In other words, 
+\begin_inset Formula 
+\[
+D_{\alpha}=\{x\in\mathbb{R}:f\text{ is not }\alpha\text{-continuous at }x\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.6.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Prove that, for a fixed 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+, the set 
+\begin_inset Formula $D_{\alpha}$
+\end_inset
+
+ is closed.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.6.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ be an arbitary function.
+ Then, 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+ is an 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+ set.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.6.8.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\alpha_{1}<\alpha_{2}$
+\end_inset
+
+, show that 
+\begin_inset Formula $D_{\alpha_{2}}\subseteq D_{\alpha_{1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.6.9.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+ be given.
+ Show that if 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $x$
+\end_inset
+
+, then it is 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous at 
+\begin_inset Formula $x$
+\end_inset
+
+ as well.
+ Explain how it follows that 
+\begin_inset Formula $D_{\alpha}\subseteq D_{f}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.6.10.
+\end_layout
+
+\begin_layout Standard
+Show that if 
+\begin_inset Formula $f$
+\end_inset
+
+ is not continuous at 
+\begin_inset Formula $x$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is not 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ continuous for some 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+.
+ Now explain why this guarantees that 
+\begin_inset Formula 
+\[
+D_{f}=\bigcup_{n=1}^{\infty}D_{\frac{1}{n}}.
+\]
+
+\end_inset
+
+Because each 
+\begin_inset Formula $D_{\frac{1}{n}}$
+\end_inset
+
+ is closed, the proof is complete.
+\end_layout
+
+\begin_layout Subsection
+Epilogue
+\end_layout
+
+\begin_layout Standard
+Given an arbitrary 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+ set, W.
+ H.
+ Young showed in 1903 that it is always possible to construct a function
+ that has discontinuities precisely on this set.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula 
+\[
+D=\left\{ x_{1},x_{2},x_{3},x_{4},\ldots\right\} 
+\]
+
+\end_inset
+
+be an arbitrary countable set of real numbers, construct a monotone function
+ that has discontinuities precisely on 
+\begin_inset Formula $D$
+\end_inset
+
+.
 \end_layout
 
 \end_body
