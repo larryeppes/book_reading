@@ -7280,6 +7280,89 @@ Assume
 
 \end_layout
 
+\begin_layout Paragraph
+Exercise 5.3.7.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Recall that a function 
+\begin_inset Formula $f:(a,b)\rightarrow\RR$
+\end_inset
+
+ is increasing on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ if 
+\begin_inset Formula $f(x)\leq f(y)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $x<y$
+\end_inset
+
+ in 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ Assume 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ Show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is increasing on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $f^{\prime}(x)\geq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in(a,b)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Show that the function 
+\begin_inset Formula 
+\[
+g(x)=\begin{cases}
+x/2+x^{2}\sin(1/x) & \text{ if }x\neq0\\
+0 & \text{ if }x=0
+\end{cases}
+\]
+
+\end_inset
+
+is differentiable on 
+\begin_inset Formula $\RR$
+\end_inset
+
+ and satisfies 
+\begin_inset Formula $g^{\prime}(0)>0$
+\end_inset
+
+.
+ Now, prove that 
+\begin_inset Formula $g$
+\end_inset
+
+ is not increasing over any open interval containing 0.
+\end_layout
+
 \begin_layout Section
 Sequences and Series of Functions
 \end_layout
@@ -7308,6 +7391,1799 @@ g(x)=\begin{cases}
 \ue^{-1/x^{2}}, & \text{ for }x\ne0,\\
 0, & \text{ for }x=0.
 \end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Discussion: Branching Processes
+\end_layout
+
+\begin_layout Subsection
+Uniform Convergence of a Sequence of Functions
+\end_layout
+
+\begin_layout Paragraph
+Definition 6.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a function defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ The sequence 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ of functions converges pointwise on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a function 
+\begin_inset Formula $f:A\rightarrow\RR$
+\end_inset
+
+ if, for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, the sequence of real numbers 
+\begin_inset Formula $f_{n}(x)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 6.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a sequence of functions defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a limit function 
+\begin_inset Formula $f$
+\end_inset
+
+ defined on 
+\begin_inset Formula $A$
+\end_inset
+
+ if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|f_{n}(x)-f(x)\right|<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 6.2.1B.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a sequence of functions defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges pointwise on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a limit 
+\begin_inset Formula $f$
+\end_inset
+
+ defined on 
+\begin_inset Formula $A$
+\end_inset
+
+ if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ (perhaps dependent on 
+\begin_inset Formula $x$
+\end_inset
+
+) such that 
+\begin_inset Formula $\left|f_{n}(x)-f(x)\right|<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.2.5 (Cauchy Criterion for Uniform Convergence).
+ 
+\end_layout
+
+\begin_layout Standard
+A sequence of functions 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ if and only if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|f_{n}(x)-f_{m}(x)\right|<\epsilon$
+\end_inset
+
+ for all 
+\begin_inset Formula $m,n\geq N$
+\end_inset
+
+ and all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.2.6.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ be a sequence of functions defined on 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ that converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a function 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ If each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly to 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+ and that each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Decide which of the following conjectures are true and which are false.
+ Supply a proof for those that are valid and a counterexample for each one
+ that is not.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) If 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ pointwise on a compact set 
+\begin_inset Formula $K$
+\end_inset
+
+, then 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b) If 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ is a bounded function on 
+\begin_inset Formula $A$
+\end_inset
+
+, then 
+\begin_inset Formula $f_{n}g\rightarrow fg$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) If 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+, and if each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is bounded on 
+\begin_inset Formula $A$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ must also be bounded.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) If 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on a set 
+\begin_inset Formula $A$
+\end_inset
+
+, and if 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on a set 
+\begin_inset Formula $B$
+\end_inset
+
+, then 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(e) If 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on an interval, and if each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is increasing, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is also increasing.
+ 
+\end_layout
+
+\begin_layout Standard
+(f) Repeat conjecture (e) assuming only pointwise convergence.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.11.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $(f_{n})$
+\end_inset
+
+ and 
+\begin_inset Formula $(g_{n})$
+\end_inset
+
+ are uniformly convergent sequences of functions.
+\end_layout
+
+\begin_layout Standard
+(b) Give an example to show that the product 
+\begin_inset Formula $\left(f_{n}g_{n}\right)$
+\end_inset
+
+ may not converge uniformly.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.12.
+ 
+\end_layout
+
+\begin_layout Standard
+Theorem 6.2.6 has a partial converse.
+ Assume 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ pointwise on a compact set 
+\begin_inset Formula $K$
+\end_inset
+
+ and assume that for each 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ the sequence 
+\begin_inset Formula $f_{n}(x)$
+\end_inset
+
+ is increasing.
+ Follow these steps to show that if 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $f$
+\end_inset
+
+ are continuous on 
+\begin_inset Formula $K$
+\end_inset
+
+, then the convergence is uniform.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Set 
+\begin_inset Formula $g_{n}=f-f_{n}$
+\end_inset
+
+ and translate the preceding hypothesis into statements about the sequence
+ 
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b) Let 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ be arbitrary, and define 
+\begin_inset Formula $K_{n}=\left\{ x\in K:g_{n}(x)\geq\epsilon\right\} $
+\end_inset
+
+.
+ Argue that 
+\begin_inset Formula $K_{1}\supseteq K_{2}\supseteq K_{3}\supseteq\cdots$
+\end_inset
+
+ is a nested sequence of compact sets, and use this observation to finish
+ the argument.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.13 (Cantor Function).
+\end_layout
+
+\begin_layout Standard
+Review the construction of the Cantor set 
+\begin_inset Formula $C\subseteq[0,1]$
+\end_inset
+
+ from Section 3.1.
+ This exercise makes use of results and notation from this discussion.
+\end_layout
+
+\begin_layout Standard
+(a) Define 
+\begin_inset Formula $f_{0}(x)=x$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in[0,1]$
+\end_inset
+
+.
+ Now, let 
+\begin_inset Formula 
+\[
+f_{1}(x)=\begin{cases}
+(3/2)x & \text{ for }0\leq x\leq1/3\\
+1/2 & \text{ for }1/3<x<2/3\\
+(3/2)x-1/2 & \text{ for }2/3\leq x\leq1
+\end{cases}
+\]
+
+\end_inset
+
+Sketch 
+\begin_inset Formula $f_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ over 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ and observe that 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ is continuous, increasing, and constant on the middle third 
+\begin_inset Formula $(1/3,2/3)=[0,1]\backslash C_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b) Construct 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ by imitating this process of flattening out the middle third of each nonconstan
+t segment of 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+.
+ Specifically, let 
+\begin_inset Formula 
+\[
+f_{2}(x)=\begin{cases}
+(1/2)f_{1}(3x) & \text{ for }0\leq x\leq1/3\\
+f_{1}(x) & \text{ for }1/3<x<2/3\\
+(1/2)f_{1}(3x-2)+1/2 & \text{ for }2/3\leq x\leq1
+\end{cases}
+\]
+
+\end_inset
+
+If we continue this process, show that the resulting sequence 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(c) Let 
+\begin_inset Formula $f=\lim f_{n}$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is a continuous, increasing function on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ with 
+\begin_inset Formula $f(0)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $f(1)=1$
+\end_inset
+
+ that satisfies 
+\begin_inset Formula $f^{\prime}(x)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+ in the open set 
+\begin_inset Formula $[0,1]\backslash C$
+\end_inset
+
+.
+ Recall that the ``length
+\begin_inset Quotes erd
+\end_inset
+
+ of the Cantor set 
+\begin_inset Formula $C$
+\end_inset
+
+ is 0 .
+ Somehow, 
+\begin_inset Formula $f$
+\end_inset
+
+ manages to increase from 0 to 1 while remaining constant on a set of ``length
+ 1.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Exercise 6.2.15.
+ 
+\end_layout
+
+\begin_layout Standard
+A sequence of functions 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ defined on a set 
+\begin_inset Formula $E\subseteq\RR$
+\end_inset
+
+ is called equicontinuous if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|f_{n}(x)-f_{n}(y)\right|<\epsilon$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+ and 
+\begin_inset Formula $|x-y|<\delta$
+\end_inset
+
+ in 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(a) What is the difference between saying that a sequence of functions 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ is equicontinuous and just asserting that each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ in the sequence is individually uniformly continuous? 
+\end_layout
+
+\begin_layout Standard
+(b) Give a qualitative explanation for why the sequence 
+\begin_inset Formula $g_{n}(x)=x^{n}$
+\end_inset
+
+ is not equicontinuous on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ Is each 
+\begin_inset Formula $g_{n}$
+\end_inset
+
+ uniformly continuous on 
+\begin_inset Formula $[0,1]?$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.16 (Arzela-Ascoli Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a function defined on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ is bounded on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+-that is, there exists an 
+\begin_inset Formula $M>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|f_{n}(x)\right|\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in[0,1]$
+\end_inset
+
+-and if the collection of functions 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ is equicontinuous (Exercise 6.2.15), follow these steps to show that 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ contains a uniformly convergent subsequence.
+\end_layout
+
+\begin_layout Standard
+(a) Use Exercise 6.2.14 to produce a subsequence 
+\begin_inset Formula $\left(f_{n_{k}}\right)$
+\end_inset
+
+ that converges at every rational point in 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ To simplify the notation, set 
+\begin_inset Formula $g_{k}=f_{n_{k}}$
+\end_inset
+
+.
+ It remains to show that 
+\begin_inset Formula $\left(g_{k}\right)$
+\end_inset
+
+ converges uniformly on all of 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b) Let 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+.
+ By equicontinuity, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\left|g_{k}(x)-g_{k}(y)\right|<\frac{\epsilon}{3}
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $|x-y|<\delta$
+\end_inset
+
+ and 
+\begin_inset Formula $k\in\NN$
+\end_inset
+
+.
+ Using this 
+\begin_inset Formula $\delta$
+\end_inset
+
+, let 
+\begin_inset Formula $r_{1},r_{2},\ldots,r_{m}$
+\end_inset
+
+ be a finite collection of rational points with the property that the union
+ of the neighborhoods 
+\begin_inset Formula $V_{\delta}\left(r_{i}\right)$
+\end_inset
+
+ contains 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ Explain why there must exist an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\left|g_{s}\left(r_{i}\right)-g_{t}\left(r_{i}\right)\right|<\frac{\epsilon}{3}
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $s,t\geq N$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ in the finite subset of 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ just described.
+ Why does having the set 
+\begin_inset Formula $\left\{ r_{1},r_{2},\ldots,r_{m}\right\} $
+\end_inset
+
+ be finite matter? 
+\end_layout
+
+\begin_layout Standard
+(c) Finish the argument by showing that, for an arbitrary 
+\begin_inset Formula $x\in[0,1]$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|g_{s}(x)-g_{t}(x)\right|<\epsilon
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $s,t\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Uniform Convergence and Differentiation
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.3.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ pointwise on the closed interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and assume that each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is differentiable.
+ If 
+\begin_inset Formula $\left(f_{n}^{\prime}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ to a function 
+\begin_inset Formula $g$
+\end_inset
+
+, then the function 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable and 
+\begin_inset Formula $f^{\prime}=g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.3.2.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ be a sequence of differentiable functions defined on the closed interval
+ 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\left(f_{n}^{\prime}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ If there exists a point 
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+ where 
+\begin_inset Formula $f_{n}\left(x_{0}\right)$
+\end_inset
+
+ is convergent, then 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.3.3.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ be a sequence of differentiable functions defined on the closed interval
+ 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\left(f_{n}^{\prime}\right)$
+\end_inset
+
+ converges uniformly to a function 
+\begin_inset Formula $g$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ If there exists a point 
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+ for which 
+\begin_inset Formula $f_{n}\left(x_{0}\right)$
+\end_inset
+
+ is convergent, then 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly.
+ Moreover, the limit function 
+\begin_inset Formula $f=\lim f_{n}$
+\end_inset
+
+ is differentiable and satisfies 
+\begin_inset Formula $f^{\prime}=g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Series of Functions
+\end_layout
+
+\begin_layout Paragraph
+Definition 6.4.1.
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $f$
+\end_inset
+
+ be functions defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ The infinite series 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}f_{n}(x)=f_{1}(x)+f_{2}(x)+f_{3}(x)+\cdots
+\]
+
+\end_inset
+
+converges pointwise on 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ if the sequence 
+\begin_inset Formula $s_{k}(x)$
+\end_inset
+
+ of partial sums defined by 
+\begin_inset Formula 
+\[
+s_{k}(x)=f_{1}(x)+f_{2}(x)+\cdots+f_{k}(x)
+\]
+
+\end_inset
+
+converges pointwise to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+ The series converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $f$
+\end_inset
+
+ if the sequence 
+\begin_inset Formula $s_{k}(x)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.4.2.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be continuous functions defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a function 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.4.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be differentiable functions defined on an interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}^{\prime}(x)$
+\end_inset
+
+ converges uniformly to a limit 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If there exists a point 
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+ where 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}\left(x_{0}\right)$
+\end_inset
+
+ converges, then the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}(x)$
+\end_inset
+
+ converges uniformly to a differentiable function 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $f^{\prime}(x)=g(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula 
+\[
+f(x)=\sum_{n=1}^{\infty}f_{n}(x)\quad\text{ and }\quad f^{\prime}(x)=\sum_{n=1}^{\infty}f_{n}^{\prime}(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.4.4 (Cauchy Criterion for Uniform Convergence of Series).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ series 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ if and only if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $n>m\geq N$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|f_{m+1}(x)+f_{m+2}(x)+f_{m+3}(x)+\cdots+f_{n}(x)\right|<\epsilon
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 6.4.5 (Weierstrass M-Test).
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a function defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, and let 
+\begin_inset Formula $M_{n}>0$
+\end_inset
+
+ be a real number satisfying 
+\begin_inset Formula 
+\[
+\left|f_{n}(x)\right|\leq M_{n}
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\sum_{n=1}^{\infty}M_{n}$
+\end_inset
+
+ converges, then 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Power Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.1.
+ 
+\end_layout
+
+\begin_layout Standard
+If a power series 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges at some point 
+\begin_inset Formula $x_{0}\in\RR$
+\end_inset
+
+, then it converges absolutely for any 
+\begin_inset Formula $x$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $|x|<\left|x_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.2.
+ 
+\end_layout
+
+\begin_layout Standard
+If a power series 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges absolutely at a point 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, then it converges uniformly on the closed interval 
+\begin_inset Formula $[-c,c]$
+\end_inset
+
+, where 
+\begin_inset Formula $c=\left|x_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+What happens if we know that a series converges at an endpoint of its interval
+ of convergence? Does the good behavior of the series on 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+ necessarily extend to the endpoint 
+\begin_inset Formula $x=R$
+\end_inset
+
+ ? If the convergence of the series at 
+\begin_inset Formula $x=R$
+\end_inset
+
+ is absolute convergence, then we can again rely on Theorem 
+\begin_inset Formula $6.5.2$
+\end_inset
+
+ to conclude that the series converges uniformly on the set 
+\begin_inset Formula $[-R,R]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If a series converges conditionally at a point 
+\begin_inset Formula $x=R$
+\end_inset
+
+.
+ We may still use Theorem 6.5.1 to conclude that we have pointwise convergence
+ on the interval 
+\begin_inset Formula $(-R,R]$
+\end_inset
+
+, but more work is needed to establish uniform convergence on compact sets
+ containing 
+\begin_inset Formula $x=R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Remark that if the power series 
+\begin_inset Formula $g(x)=\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges conditionally at 
+\begin_inset Formula $x=R$
+\end_inset
+
+, then it is possible for it to diverge when 
+\begin_inset Formula $x=-R$
+\end_inset
+
+.
+ The series
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\frac{(-1)^{n}x^{n}}{n}
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $R=1$
+\end_inset
+
+ is an example.
+\end_layout
+
+\begin_layout Paragraph
+Lemma 6.5.3 (Abel's Lemma).
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ satisfy 
+\begin_inset Formula $b_{1}\geq b_{2}\geq b_{3}\geq\cdots\geq0$
+\end_inset
+
+, and let 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ be a series for which the partial sums are bounded.
+ In other words, assume there exists 
+\begin_inset Formula $A>0$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\left|a_{1}+a_{2}+\cdots+a_{n}\right|\leq A
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+.
+ Then, for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}+\cdots+a_{n}b_{n}\right|\leq2Ab_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.4 (Abel's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $g(x)=\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ be a power series that converges at the point 
+\begin_inset Formula $x=R>0$
+\end_inset
+
+.
+ Then the series converges uniformly on the interval 
+\begin_inset Formula $[0,R]$
+\end_inset
+
+.
+ A similar result holds if the series converges at 
+\begin_inset Formula $x=-R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.5.
+ 
+\end_layout
+
+\begin_layout Standard
+If a power series converges pointwise on the set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, then it converges uniformly on any compact set 
+\begin_inset Formula $K\subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.6.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges for all 
+\begin_inset Formula $x\in(-R,R)$
+\end_inset
+
+, then the differentiated series 
+\begin_inset Formula $\sum_{n=1}^{\infty}na_{n}x^{n-1}$
+\end_inset
+
+ converges at each 
+\begin_inset Formula $x\in(-R,R)$
+\end_inset
+
+ as well.
+ Consequently, the convergence is uniform on compact sets contained in 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.7.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula 
+\[
+g(x)=\sum_{n=0}^{\infty}a_{n}x^{n}
+\]
+
+\end_inset
+
+converges on an interval 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+ and differentiable on any open interval 
+\begin_inset Formula $(-R,R)\subseteq A$
+\end_inset
+
+.
+ The derivative is given by 
+\begin_inset Formula 
+\[
+g^{\prime}(x)=\sum_{n=1}^{\infty}na_{n}x^{n-1}.
+\]
+
+\end_inset
+
+Moreover, 
+\begin_inset Formula $g$
+\end_inset
+
+ is infinitely differentiable on 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+, and the successive derivatives can be obtained via term-by-term differentiatio
+n of the appropriate series.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.5.10.
+ 
+\end_layout
+
+\begin_layout Standard
+Review the definitions and results from Section 2.8 concerning products of
+ series and Cauchy products in particular.
+ At the end of Section 2.9, we mentioned the following result: If both 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ converge conditionally to 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ respectively, then it is possible for the Cauchy product, 
+\begin_inset Formula 
+\[
+\sum d_{n}\quad\text{ where }\quad d_{n}=a_{0}b_{n}+a_{1}b_{n-1}+\cdots+a_{n}b_{0},
+\]
+
+\end_inset
+
+to diverge.
+ However, if 
+\begin_inset Formula $\sum d_{n}$
+\end_inset
+
+ does converge, then it must converge to 
+\begin_inset Formula $AB$
+\end_inset
+
+.
+ To prove this, set 
+\begin_inset Formula 
+\[
+f(x)=\sum a_{n}x^{n},\quad g(x)=\sum b_{n}x^{n},\quad\text{ and }\quad h(x)=\sum d_{n}x^{n}.
+\]
+
+\end_inset
+
+Use Abel's Theorem and the result in Exercise 2.8.8 to establish this result.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.5.11.
+\end_layout
+
+\begin_layout Standard
+A series 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}$
+\end_inset
+
+ is said to be Abel-summable to 
+\begin_inset Formula $L$
+\end_inset
+
+ if the power series 
+\begin_inset Formula 
+\[
+f(x)=\sum_{n=0}^{\infty}a_{n}x^{n}
+\]
+
+\end_inset
+
+converges for all 
+\begin_inset Formula $x\in[0,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $L=\lim_{x\rightarrow1^{-}}f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(a) Show that any series that converges to a limit 
+\begin_inset Formula $L$
+\end_inset
+
+ is also Abel-summable to 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Show that 
+\begin_inset Formula $\sum_{n=0}^{\infty}(-1)^{n}$
+\end_inset
+
+ is Abel-summable and find the sum.
+\end_layout
+
+\begin_layout Subsection
+Taylor Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.6.1 (Lagrange's Remainder Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be infinitely differentiable on 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+, define 
+\begin_inset Formula $a_{n}=\frac{f^{(n)}(0)}{n!}$
+\end_inset
+
+, and let 
+\begin_inset Formula 
+\[
+S_{N}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{N}x^{N}.
+\]
+
+\end_inset
+
+Given 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, there exists a point c satisfying 
+\begin_inset Formula $|c|<|x|$
+\end_inset
+
+ where the error function 
+\begin_inset Formula $E_{N}(x)=f(x)-S_{N}(x)$
+\end_inset
+
+ satisfies 
+\begin_inset Formula 
+\[
+E_{N}(x)=\frac{f^{(N+1)}(c)}{(N+1)!}x^{N+1}.
 \]
 
 \end_inset
