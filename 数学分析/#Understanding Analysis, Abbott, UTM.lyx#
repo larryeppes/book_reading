@@ -9220,20 +9220,1080 @@ Discussion: How Should Integration be Defined?
 The Definition of the Riemann Integral
 \end_layout
 
+\begin_layout Paragraph
+Definition 7.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A partition 
+\begin_inset Formula $P$
+\end_inset
+
+ of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ is a finite, ordered set 
+\begin_inset Formula 
+\[
+P=\left\{ a=x_{0}<x_{1}<x_{2}<\cdots<x_{n}=b\right\} .
+\]
+
+\end_inset
+
+For each subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ of 
+\begin_inset Formula $P$
+\end_inset
+
+, let 
+\begin_inset Formula 
+\[
+m_{k}=\inf\left\{ f(x):x\in\left[x_{k-1},x_{k}\right]\right\} \quad\text{ and }\quad M_{k}=\sup\left\{ f(x):x\in\left[x_{k-1},x_{k}\right]\right\} 
+\]
+
+\end_inset
+
+The lower sum of 
+\begin_inset Formula $f$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $P$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\[
+L(f,P)=\sum_{k=1}^{n}m_{k}\left(x_{k}-x_{k-1}\right).
+\]
+
+\end_inset
+
+Likewise, we define the upper sum of 
+\begin_inset Formula $f$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $P$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+U(f,P)=\sum_{k=1}^{n}M_{k}\left(x_{k}-x_{k-1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.2.
+ 
+\end_layout
+
+\begin_layout Standard
+A partition 
+\begin_inset Formula $Q$
+\end_inset
+
+ is a refinement of a partition 
+\begin_inset Formula $P$
+\end_inset
+
+ if 
+\begin_inset Formula $Q$
+\end_inset
+
+ contains all of the points of 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ In this case, we write 
+\begin_inset Formula $P\subseteq Q$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.2.3.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $P\subseteq Q$
+\end_inset
+
+, then 
+\begin_inset Formula $L(f,P)\leq L(f,Q)$
+\end_inset
+
+, and 
+\begin_inset Formula $U(f,P)\geq U(f,Q)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.2.4.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ are any two partitions of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, then 
+\begin_inset Formula $L\left(f,P_{1}\right)\leq$
+\end_inset
+
+ 
+\begin_inset Formula $U\left(f,P_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.5.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ be the collection of all possible partitions of the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ The upper integral of 
+\begin_inset Formula $f$
+\end_inset
+
+ is defined to be 
+\begin_inset Formula 
+\[
+U(f)=\inf\{U(f,P):P\in\mathcal{P}\}.
+\]
+
+\end_inset
+
+In a similar way, define the lower integral of 
+\begin_inset Formula $f$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+L(f)=\sup\{U(f,P):P\in\mathcal{P}\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+For any bounded function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, it is always the case that 
+\begin_inset Formula $U(f)\geq L(f)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.7 (Riemann Integrability).
+ 
+\end_layout
+
+\begin_layout Standard
+A bounded function 
+\begin_inset Formula $f$
+\end_inset
+
+ defined on the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ is Riemann-integrable if 
+\begin_inset Formula $U(f)=L(f)$
+\end_inset
+
+.
+ In this case, we define 
+\begin_inset Formula $\int_{a}^{b}f$
+\end_inset
+
+ or 
+\begin_inset Formula $\int_{a}^{b}f(x)dx$
+\end_inset
+
+ to be this common value; namely, 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=U(f)=L(f).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.2.8.
+\end_layout
+
+\begin_layout Standard
+A bounded function 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if and only if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a partition 
+\begin_inset Formula $P_{\epsilon}$
+\end_inset
+
+ of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+U\left(f,P_{\epsilon}\right)-L\left(f,P_{\epsilon}\right)<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.2.9.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, then it is integrable.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.2.5.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that, for each 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is an integrable function on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\left(f_{n}\right)\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is also integrable on this set.
+ (We will see that this conclusion does not necessarily follow if the convergenc
+e is pointwise.)
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ be increasing on the set 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $f(x)\leq$
+\end_inset
+
+ 
+\begin_inset Formula $f(y)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $x<y)$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 Integrating Functions with Discontinuities
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.3.2.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is bounded, and 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[c,b]$
+\end_inset
+
+ for all 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ An analogous result holds at the other endpoint.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.3.6.
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq[a,b]$
+\end_inset
+
+ has content zero if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a finite collection of open intervals 
+\begin_inset Formula $\left\{ O_{1},O_{2},\ldots,O_{N}\right\} $
+\end_inset
+
+ that contain 
+\begin_inset Formula $A$
+\end_inset
+
+ in their union and whose lengths sum to 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ or less.
+ Using 
+\begin_inset Formula $\left|O_{n}\right|$
+\end_inset
+
+ to refer to the length of each interval, we have 
+\begin_inset Formula 
+\[
+A\subseteq\bigcup_{n=1}^{N}O_{n}\quad\text{ and }\quad\sum_{k=1}^{N}\left|O_{n}\right|\leq\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a) Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be bounded on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ Show that if the set of discontinuous points of 
+\begin_inset Formula $f$
+\end_inset
+
+ has content zero, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable.
+\end_layout
+
+\begin_layout Standard
+(b) Show that any finite set has content zero.
+\end_layout
+
+\begin_layout Standard
+(c) Content zero sets do not have to be finite.
+ They do not have to be countable.
+ Show that the Cantor set 
+\begin_inset Formula $C$
+\end_inset
+
+ defined in Section 3.1 has content zero.
+\end_layout
+
+\begin_layout Standard
+(d) Prove that 
+\begin_inset Formula 
+\[
+h(x)=\begin{cases}
+1 & \text{ if }x\in C\\
+0 & \text{ if }x\notin C.
+\end{cases}
+\]
+
+\end_inset
+
+is integrable, and find the value of the integral.
 \end_layout
 
 \begin_layout Subsection
 Properties of the Integral
 \end_layout
 
+\begin_layout Paragraph
+Theorem 7.4.1.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is bounded, and let 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,c]$
+\end_inset
+
+ and 
+\begin_inset Formula $[c,b]$
+\end_inset
+
+.
+ In this case, we have 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=\int_{a}^{c}f+\int_{c}^{b}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.4.3.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, define 
+\begin_inset Formula 
+\[
+\int_{b}^{a}f=-\int_{a}^{b}f.
+\]
+
+\end_inset
+
+Also, define 
+\begin_inset Formula 
+\[
+\int_{c}^{c}f=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and that each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is integrable.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable and 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\int_{a}^{b}f_{n}=\int_{a}^{b}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Decide which of the following conjectures is true and supply a short proof.
+ For those that are not true, give a counterexample.
+\end_layout
+
+\begin_layout Standard
+(d) If 
+\begin_inset Formula $\int_{a}^{b}f>0$
+\end_inset
+
+, there is an interval 
+\begin_inset Formula $[c,d]\subseteq[a,b]$
+\end_inset
+
+ and a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $f(x)\geq\delta$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in[c,d]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.4.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Review the discussion immediately preceding Theorem 7.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) Does it seem possible to construct the sequence 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ to be uniformly bounded? (Uniformly bounded means that there exists a single
+ 
+\begin_inset Formula $M>0$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $\left|f_{n}\right|\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.4.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $g_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ are bounded integrable functions with 
+\begin_inset Formula $g_{n}\rightarrow g$
+\end_inset
+
+ on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ The convergence is not uniform; however, the convergence is uniform on
+ any set of the form 
+\begin_inset Formula $[\delta,1]$
+\end_inset
+
+ where 
+\begin_inset Formula $0<\delta<1$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\int_{0}^{1}g_{n}=$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{0}^{1}g$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 The Fundamental Theorem of Calculus
 \end_layout
 
+\begin_layout Paragraph
+Exercise 7.5.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, define the total variation of 
+\begin_inset Formula $f$
+\end_inset
+
+ to be 
+\begin_inset Formula 
+\[
+Vf=\sup\left\{ \sum_{k=1}^{n}\left|f\left(x_{k}\right)-f\left(x_{k-1}\right)\right|\right\} 
+\]
+
+\end_inset
+
+where the supremum is taken over all partitions 
+\begin_inset Formula $P$
+\end_inset
+
+ of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(a) If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuously differentiable (
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ exists as a continuous function), use the Fundamental Theorem of Calculus
+ to show 
+\begin_inset Formula $Vf\leq\int_{a}^{b}\left|f^{\prime}\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Use the Mean Value Theorem to establish the reverse inequality and conclude
+ that 
+\begin_inset Formula $Vf=\int_{a}^{b}\left|f^{\prime}\right|$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 Lebesgue's Criterion for Riemann Integrability
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.6.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ has measure zero if, for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a countable collection of open intervals 
+\begin_inset Formula $O_{n}$
+\end_inset
+
+ with the property that 
+\begin_inset Formula $A$
+\end_inset
+
+ is contained in the union of all of the intervals 
+\begin_inset Formula $O_{n}$
+\end_inset
+
+ and the sum of the lengths of all of the intervals is less than or equal
+ to 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ More precisely, if 
+\begin_inset Formula $\left|O_{n}\right|$
+\end_inset
+
+ refers to the length of the interval 
+\begin_inset Formula $O_{n}$
+\end_inset
+
+, then we have 
+\begin_inset Formula 
+\[
+A\subseteq\bigcup_{n=1}^{\infty}O_{n}\quad\text{ and }\quad\sum_{n=1}^{\infty}\left|O_{n}\right|\leq\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.6.3.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be defined on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and let 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous at 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+ if there exists 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $y,z\in(x-\delta,x+\delta)$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $|f(y)-f(z)|<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.6.9.
+ 
+\end_layout
+
+\begin_layout Standard
+By imitating the proof of Theorem 4.4.8, show that if, for some fixed 
+\begin_inset Formula $\alpha>0,f$
+\end_inset
+
+ is 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous at every point on some compact set 
+\begin_inset Formula $K$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous on 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ By uniformly 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous, we mean that there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are points in 
+\begin_inset Formula $K$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $|x-y|<\delta$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $|f(x)-f(y)|<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.6.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $K\subseteq\RR$
+\end_inset
+
+.
+ The following three statements are all equivalent, in the sense that if
+ any one is true, then so are the two others.
+ 
+\end_layout
+
+\begin_layout Standard
+(i) Every sequence contained in 
+\begin_inset Formula $K$
+\end_inset
+
+ has a convergent subsequence that converges to a limit in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $K$
+\end_inset
+
+ is closed and bounded.
+ 
+\end_layout
+
+\begin_layout Standard
+(iii) Given a collection of open intervals 
+\begin_inset Formula $\left\{ G_{\alpha}:\alpha\in\Lambda\right\} $
+\end_inset
+
+ that covers 
+\begin_inset Formula $K$
+\end_inset
+
+; that is, 
+\begin_inset Formula $K\subseteq\bigcup_{\alpha\in\Lambda}G_{\alpha}$
+\end_inset
+
+, there exists a finite subcollection 
+\begin_inset Formula $\left\{ G_{\alpha_{1}},G_{\alpha_{2}},G_{\alpha_{3}},\ldots,G_{\alpha_{N}}\right\} $
+\end_inset
+
+ of the original set that also covers 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.6.5 (Lebesgue's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be a bounded function defined on the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is Riemann-integrable if and only if the set of points where 
+\begin_inset Formula $f$
+\end_inset
+
+ is not continuous has measure zero.
+\end_layout
+
+\begin_layout Standard
+The Lebesgue integral does have a few drawbacks.
+ There are functions whose improper Riemann integrals exist but that are
+ not Lebesgue-integrable.
+\end_layout
+
+\begin_layout Standard
+With the Lebesgue integral, it is still not possible to prove 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f^{\prime}=f(b)-f(a)
+\]
+
+\end_inset
+
+without some additional assumptions on 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Section
@@ -9335,6 +10395,977 @@ r部分和一致收敛于给定函数.
 证仍是一个集合, 且是一个有理数的分划, 如此得到实数完备性公理的证明.
  这要对分划构建数域和序结构, 定义加法和乘法, 其中一个需要克服的困难是乘法要符合``负负得正"的性质, 同时这样的实数有与有理数对应的子集.
  最后Cantor构建实数的方法是Cauchy列的等价类.
+\end_layout
+
+\begin_layout Standard
+What follows is a short introduction to the generalized Riemann integral,
+ discovered independently around 1960 by Jaroslav Kurzweil and Ralph Henstock.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Generalized Riemann Integral
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+.
+ A partition 
+\begin_inset Formula $P$
+\end_inset
+
+ is 
+\begin_inset Formula $\delta$
+\end_inset
+
+-fine if every subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $x_{k}-x_{k-1}<\delta$
+\end_inset
+
+.
+ In other words, every subinterval has width less than 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.2.
+ 
+\end_layout
+
+\begin_layout Standard
+A bounded function 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is Riemann-integrable with 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=A
+\]
+
+\end_inset
+
+if and only if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that, for any tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} \right)$
+\end_inset
+
+ that is 
+\begin_inset Formula $\delta$
+\end_inset
+
+-fine, it follows that 
+\begin_inset Formula 
+\[
+|R(f,P)-A|<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.3.
+ 
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $\delta:[a,b]\rightarrow\RR$
+\end_inset
+
+ is called a gauge on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if 
+\begin_inset Formula $\delta(x)>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.4.
+\end_layout
+
+\begin_layout Standard
+Given a particular gauge 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+, a tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} _{k=1}^{n}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+-fine if every subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $x_{k}-x_{k-1}<\delta\left(c_{k}\right)$
+\end_inset
+
+.
+ In other words, each subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ has width less than 
+\begin_inset Formula $\delta\left(c_{k}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.5.
+\end_layout
+
+\begin_layout Standard
+Given a gauge 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+ on an interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, there exists a tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} _{k=1}^{n}\right)$
+\end_inset
+
+ that is 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+-fine.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.6 (Generalized Riemann Integrability).
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ has generalized Riemann integral 
+\begin_inset Formula $A$
+\end_inset
+
+ if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a gauge 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ such that for each tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} _{k=1}^{n}\right)$
+\end_inset
+
+ that is 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+-fine, it is true that 
+\begin_inset Formula 
+\[
+|R(f,P)-A|<\epsilon.
+\]
+
+\end_inset
+
+In this case, we write 
+\begin_inset Formula $A=\int_{a}^{b}f$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.7.
+ 
+\end_layout
+
+\begin_layout Standard
+If a function has a generalized Riemann integral, then the value of the
+ integral is unique.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Dirichlet's function 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ is generalized Riemann-integrable on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ with 
+\begin_inset Formula $\int_{0}^{1}g=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.9.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $F:[a,b]\rightarrow\RR$
+\end_inset
+
+ is differentiable at each point in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and set 
+\begin_inset Formula $f(x)=F^{\prime}(x)$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ has the generalized Riemann integral 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=F(b)-F(a).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The central source for the material in this section is Robert Bartle’s excellent
+ article “Return to the Riemann Integral,” which appeared in the American
+ Mathematical Monthly, October, 1996.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Integral: An Easy Approach after Kurzweil and Henstock by Rudolph V´yborn´y
+ and Lee Peng Yee or in a forthcoming book by Robert Bartle to be published
+ by the American Mathematical Society.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Metric Spaces and the Baire Category Theorem
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a set 
+\begin_inset Formula $X$
+\end_inset
+
+, a function 
+\begin_inset Formula $d:X\times X\rightarrow\RR$
+\end_inset
+
+ is a metric on 
+\begin_inset Formula $X$
+\end_inset
+
+ if for all 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $d(x,y)\geq0$
+\end_inset
+
+ with 
+\begin_inset Formula $d(x,y)=0$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $x=y$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $d(x,y)=d(y,x)$
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Standard
+(iii) for all 
+\begin_inset Formula $z\in X,d(x,y)\leq d(x,z)+d(z,y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A metric space is a set 
+\begin_inset Formula $X$
+\end_inset
+
+ together with a metric 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.2.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ be a metric space.
+ A sequence 
+\begin_inset Formula $\left(x_{n}\right)\subseteq X$
+\end_inset
+
+ converges to an element 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $d\left(x_{n},x\right)<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+A sequence 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ in a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is a Cauchy sequence if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $d\left(x_{m},x_{n}\right)<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $m,n\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.4.
+ 
+\end_layout
+
+\begin_layout Standard
+A metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is complete if every Cauchy sequence in 
+\begin_inset Formula $X$
+\end_inset
+
+ converges to an element of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.5.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ be a metric space.
+ A function 
+\begin_inset Formula $f:X\rightarrow\RR$
+\end_inset
+
+ is continuous at a point 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $|f(x)-f(y)|<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $d(x,y)<\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ and an element 
+\begin_inset Formula $x$
+\end_inset
+
+ in the metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+, the 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-neighborhood of 
+\begin_inset Formula $x$
+\end_inset
+
+ is the set 
+\begin_inset Formula $V_{\epsilon}(x)=\{y\in X:d(x,y)<\epsilon\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.7.
+ 
+\end_layout
+
+\begin_layout Standard
+A subset 
+\begin_inset Formula $K$
+\end_inset
+
+ of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is compact if every sequence in 
+\begin_inset Formula $K$
+\end_inset
+
+ has a convergent subsequence that converges to a limit in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a subset 
+\begin_inset Formula $E$
+\end_inset
+
+ of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+, the closure 
+\begin_inset Formula $\bar{E}$
+\end_inset
+
+ is the union of 
+\begin_inset Formula $E$
+\end_inset
+
+ together with its limit points.
+ The interior of 
+\begin_inset Formula $E$
+\end_inset
+
+ is denoted by 
+\begin_inset Formula $E^{\circ}$
+\end_inset
+
+ and is defined as 
+\begin_inset Formula 
+\[
+E^{\circ}=\left\{ x\in E:\text{ there exists }V_{\epsilon}(x)\subseteq E\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.9.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ is dense in the metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ if 
+\begin_inset Formula $\bar{A}=X$
+\end_inset
+
+ A subset 
+\begin_inset Formula $E$
+\end_inset
+
+ of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is nowhere-dense in 
+\begin_inset Formula $X$
+\end_inset
+
+ if 
+\begin_inset Formula $\bar{E}^{\circ}$
+\end_inset
+
+ is empty.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 8.2.12.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is a subspace of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+, show that 
+\begin_inset Formula $E$
+\end_inset
+
+ is nowhere-dense in 
+\begin_inset Formula $X$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $\bar{E}^{c}$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.2.10.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ be a complete metric space, and let 
+\begin_inset Formula $\left\{ O_{n}\right\} $
+\end_inset
+
+ be a countable collection of dense, open subsets of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $\bigcap_{n=1}^{\infty}O_{n}$
+\end_inset
+
+ is not empty.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.2.11 (Baire Category Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+A complete metric space is not the union of a countable collection of nowhere-de
+nse sets.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.2.12.
+ 
+\end_layout
+
+\begin_layout Standard
+The set 
+\begin_inset Formula 
+\[
+D=\left\{ f\in C[0,1]:f^{\prime}(x)\text{ exists for some }x\in[0,1]\right\} 
+\]
+
+\end_inset
+
+is a set of first category in 
+\begin_inset Formula $C[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Fourier Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.2 (Riemann-Lebesgue Lemma).
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $h(x)$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula 
+\[
+\int_{-\pi}^{\pi}h(x)\sin(nx)dx\rightarrow0\quad\text{ and }\quad\int_{-\pi}^{\pi}h(x)\cos(nx)dx\rightarrow0
+\]
+
+\end_inset
+
+as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Unlike power series, Fourier series can converge conditionally.
+ This makes them less robust, perhaps, but more versatile and capable of
+ more interesting behavior.
+\end_layout
+
+\begin_layout Standard
+In 1966, Lennart Carleson proved (via an extremely complicated argument)
+ that the Fourier series for such a function converges pointwise at every
+ point in the domain excluding possibly a set of measure zero.
+\end_layout
+
+\begin_layout Standard
+There are examples of continuous functions with Fourier series that diverge
+ at uncountably many points.
+\end_layout
+
+\begin_layout Standard
+There is an example due to A.
+ Kolmogorov (1903–1987) of a Lebesgue-integrable function where the Fourier
+ series fails to converge at any point.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ be continuous on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+, and let 
+\begin_inset Formula $S_{N}(x)$
+\end_inset
+
+ be the 
+\begin_inset Formula $N$
+\end_inset
+
+ th partial sum of the Fourier series described in equation (7), where the
+ coefficients 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ are given by equations (9) and (10).
+ It follows that 
+\begin_inset Formula 
+\[
+\lim_{N\rightarrow\infty}S_{N}(x)=f(x)
+\]
+
+\end_inset
+
+pointwise at any 
+\begin_inset Formula $x\in(-\pi,\pi]$
+\end_inset
+
+ where 
+\begin_inset Formula $f^{\prime}(x)$
+\end_inset
+
+ exists.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.4 (Fejér's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $S_{N}(x)$
+\end_inset
+
+ be the Nth partial sum of the Fourier series for a function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+.
+ Define 
+\begin_inset Formula 
+\[
+\sigma_{N}(x)=\frac{1}{N+1}\sum_{n=0}^{N}S_{N}(x).
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+, then 
+\begin_inset Formula $\sigma_{N}(x)\rightarrow f(x)$
+\end_inset
+
+ uniformly.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.5 (Weierstrass Approximation Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is a continuous function on a closed interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, then there exists a sequence of polynomials that converges uniformly to
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The idea of approximation permeates the entire subject.
+ Every real number can be approximated with rational ones.
+ The value of an infinite sum is approximated with partial sums, and the
+ value of a continuous function can be approximated with its values nearby.
+ A function is differentiable when a straight line is a good approximation
+ to the curve, and it is integrable when finite sums of rectangles are a
+ good approximation to the area under the curve.
+ Now, we learn that every continuous function can be approximated arbitrarily
+ well with a polynomial.
+ In every case, the approximating objects are tangible and well-understood,
+ and the issue is how well these properties survive the limiting process.
+ By viewing the different infinities of mathematics through pathways crafted
+ out of finite objects, Weierstrass and the other founders of analysis created
+ a paradigm for how to extend the scope of mathematical explo- ration deep
+ into territory previously unattainable.
+ Although our journey ends here, the road is long and continues to be written.
+\end_layout
+
+\begin_layout Subsection
+A Construction of 
+\begin_inset Formula $\RR$
+\end_inset
+
+ From 
+\begin_inset Formula $\QQ$
+\end_inset
+
+
 \end_layout
 
 \end_body

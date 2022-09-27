@@ -10397,5 +10397,1404 @@ r部分和一致收敛于给定函数.
  最后Cantor构建实数的方法是Cauchy列的等价类.
 \end_layout
 
+\begin_layout Standard
+What follows is a short introduction to the generalized Riemann integral,
+ discovered independently around 1960 by Jaroslav Kurzweil and Ralph Henstock.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Generalized Riemann Integral
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+.
+ A partition 
+\begin_inset Formula $P$
+\end_inset
+
+ is 
+\begin_inset Formula $\delta$
+\end_inset
+
+-fine if every subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $x_{k}-x_{k-1}<\delta$
+\end_inset
+
+.
+ In other words, every subinterval has width less than 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.2.
+ 
+\end_layout
+
+\begin_layout Standard
+A bounded function 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is Riemann-integrable with 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=A
+\]
+
+\end_inset
+
+if and only if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that, for any tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} \right)$
+\end_inset
+
+ that is 
+\begin_inset Formula $\delta$
+\end_inset
+
+-fine, it follows that 
+\begin_inset Formula 
+\[
+|R(f,P)-A|<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.3.
+ 
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $\delta:[a,b]\rightarrow\RR$
+\end_inset
+
+ is called a gauge on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if 
+\begin_inset Formula $\delta(x)>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.4.
+\end_layout
+
+\begin_layout Standard
+Given a particular gauge 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+, a tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} _{k=1}^{n}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+-fine if every subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $x_{k}-x_{k-1}<\delta\left(c_{k}\right)$
+\end_inset
+
+.
+ In other words, each subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ has width less than 
+\begin_inset Formula $\delta\left(c_{k}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.5.
+\end_layout
+
+\begin_layout Standard
+Given a gauge 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+ on an interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, there exists a tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} _{k=1}^{n}\right)$
+\end_inset
+
+ that is 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+-fine.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.6 (Generalized Riemann Integrability).
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ has generalized Riemann integral 
+\begin_inset Formula $A$
+\end_inset
+
+ if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a gauge 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ such that for each tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} _{k=1}^{n}\right)$
+\end_inset
+
+ that is 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+-fine, it is true that 
+\begin_inset Formula 
+\[
+|R(f,P)-A|<\epsilon.
+\]
+
+\end_inset
+
+In this case, we write 
+\begin_inset Formula $A=\int_{a}^{b}f$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.7.
+ 
+\end_layout
+
+\begin_layout Standard
+If a function has a generalized Riemann integral, then the value of the
+ integral is unique.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Dirichlet's function 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ is generalized Riemann-integrable on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ with 
+\begin_inset Formula $\int_{0}^{1}g=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.9.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $F:[a,b]\rightarrow\RR$
+\end_inset
+
+ is differentiable at each point in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and set 
+\begin_inset Formula $f(x)=F^{\prime}(x)$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ has the generalized Riemann integral 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=F(b)-F(a).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The central source for the material in this section is Robert Bartle’s excellent
+ article “Return to the Riemann Integral,” which appeared in the American
+ Mathematical Monthly, October, 1996.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Integral: An Easy Approach after Kurzweil and Henstock by Rudolph V´yborn´y
+ and Lee Peng Yee or in a forthcoming book by Robert Bartle to be published
+ by the American Mathematical Society.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Metric Spaces and the Baire Category Theorem
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a set 
+\begin_inset Formula $X$
+\end_inset
+
+, a function 
+\begin_inset Formula $d:X\times X\rightarrow\RR$
+\end_inset
+
+ is a metric on 
+\begin_inset Formula $X$
+\end_inset
+
+ if for all 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $d(x,y)\geq0$
+\end_inset
+
+ with 
+\begin_inset Formula $d(x,y)=0$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $x=y$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $d(x,y)=d(y,x)$
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Standard
+(iii) for all 
+\begin_inset Formula $z\in X,d(x,y)\leq d(x,z)+d(z,y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A metric space is a set 
+\begin_inset Formula $X$
+\end_inset
+
+ together with a metric 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.2.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ be a metric space.
+ A sequence 
+\begin_inset Formula $\left(x_{n}\right)\subseteq X$
+\end_inset
+
+ converges to an element 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $d\left(x_{n},x\right)<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+A sequence 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ in a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is a Cauchy sequence if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $d\left(x_{m},x_{n}\right)<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $m,n\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.4.
+ 
+\end_layout
+
+\begin_layout Standard
+A metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is complete if every Cauchy sequence in 
+\begin_inset Formula $X$
+\end_inset
+
+ converges to an element of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.5.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ be a metric space.
+ A function 
+\begin_inset Formula $f:X\rightarrow\RR$
+\end_inset
+
+ is continuous at a point 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $|f(x)-f(y)|<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $d(x,y)<\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ and an element 
+\begin_inset Formula $x$
+\end_inset
+
+ in the metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+, the 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-neighborhood of 
+\begin_inset Formula $x$
+\end_inset
+
+ is the set 
+\begin_inset Formula $V_{\epsilon}(x)=\{y\in X:d(x,y)<\epsilon\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.7.
+ 
+\end_layout
+
+\begin_layout Standard
+A subset 
+\begin_inset Formula $K$
+\end_inset
+
+ of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is compact if every sequence in 
+\begin_inset Formula $K$
+\end_inset
+
+ has a convergent subsequence that converges to a limit in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a subset 
+\begin_inset Formula $E$
+\end_inset
+
+ of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+, the closure 
+\begin_inset Formula $\bar{E}$
+\end_inset
+
+ is the union of 
+\begin_inset Formula $E$
+\end_inset
+
+ together with its limit points.
+ The interior of 
+\begin_inset Formula $E$
+\end_inset
+
+ is denoted by 
+\begin_inset Formula $E^{\circ}$
+\end_inset
+
+ and is defined as 
+\begin_inset Formula 
+\[
+E^{\circ}=\left\{ x\in E:\text{ there exists }V_{\epsilon}(x)\subseteq E\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.9.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ is dense in the metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ if 
+\begin_inset Formula $\bar{A}=X$
+\end_inset
+
+ A subset 
+\begin_inset Formula $E$
+\end_inset
+
+ of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is nowhere-dense in 
+\begin_inset Formula $X$
+\end_inset
+
+ if 
+\begin_inset Formula $\bar{E}^{\circ}$
+\end_inset
+
+ is empty.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 8.2.12.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is a subspace of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+, show that 
+\begin_inset Formula $E$
+\end_inset
+
+ is nowhere-dense in 
+\begin_inset Formula $X$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $\bar{E}^{c}$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.2.10.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ be a complete metric space, and let 
+\begin_inset Formula $\left\{ O_{n}\right\} $
+\end_inset
+
+ be a countable collection of dense, open subsets of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $\bigcap_{n=1}^{\infty}O_{n}$
+\end_inset
+
+ is not empty.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.2.11 (Baire Category Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+A complete metric space is not the union of a countable collection of nowhere-de
+nse sets.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.2.12.
+ 
+\end_layout
+
+\begin_layout Standard
+The set 
+\begin_inset Formula 
+\[
+D=\left\{ f\in C[0,1]:f^{\prime}(x)\text{ exists for some }x\in[0,1]\right\} 
+\]
+
+\end_inset
+
+is a set of first category in 
+\begin_inset Formula $C[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Fourier Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.2 (Riemann-Lebesgue Lemma).
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $h(x)$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula 
+\[
+\int_{-\pi}^{\pi}h(x)\sin(nx)dx\rightarrow0\quad\text{ and }\quad\int_{-\pi}^{\pi}h(x)\cos(nx)dx\rightarrow0
+\]
+
+\end_inset
+
+as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Unlike power series, Fourier series can converge conditionally.
+ This makes them less robust, perhaps, but more versatile and capable of
+ more interesting behavior.
+\end_layout
+
+\begin_layout Standard
+In 1966, Lennart Carleson proved (via an extremely complicated argument)
+ that the Fourier series for such a function converges pointwise at every
+ point in the domain excluding possibly a set of measure zero.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are examples of continuous functions with Fourier series that diverge
+ at uncountably many points.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is an example due to A.
+ Kolmogorov (1903–1987) of a Lebesgue-integrable function where the Fourier
+ series fails to converge at any point.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ be continuous on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+, and let 
+\begin_inset Formula $S_{N}(x)$
+\end_inset
+
+ be the 
+\begin_inset Formula $N$
+\end_inset
+
+ th partial sum of the Fourier series described in equation (7), where the
+ coefficients 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ are given by equations (9) and (10).
+ It follows that 
+\begin_inset Formula 
+\[
+\lim_{N\rightarrow\infty}S_{N}(x)=f(x)
+\]
+
+\end_inset
+
+pointwise at any 
+\begin_inset Formula $x\in(-\pi,\pi]$
+\end_inset
+
+ where 
+\begin_inset Formula $f^{\prime}(x)$
+\end_inset
+
+ exists.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.4 (Fejér's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $S_{N}(x)$
+\end_inset
+
+ be the Nth partial sum of the Fourier series for a function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+.
+ Define 
+\begin_inset Formula 
+\[
+\sigma_{N}(x)=\frac{1}{N+1}\sum_{n=0}^{N}S_{N}(x).
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+, then 
+\begin_inset Formula $\sigma_{N}(x)\rightarrow f(x)$
+\end_inset
+
+ uniformly.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.5 (Weierstrass Approximation Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is a continuous function on a closed interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, then there exists a sequence of polynomials that converges uniformly to
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The idea of approximation permeates the entire subject.
+ Every real number can be approximated with rational ones.
+ The value of an infinite sum is approximated with partial sums, and the
+ value of a continuous function can be approximated with its values nearby.
+ A function is differentiable when a straight line is a good approximation
+ to the curve, and it is integrable when finite sums of rectangles are a
+ good approximation to the area under the curve.
+ Now, we learn that every continuous function can be approximated arbitrarily
+ well with a polynomial.
+ In every case, the approximating objects are tangible and well-understood,
+ and the issue is how well these properties survive the limiting process.
+ By viewing the different infinities of mathematics through pathways crafted
+ out of finite objects, Weierstrass and the other founders of analysis created
+ a paradigm for how to extend the scope of mathematical exploration deep
+ into territory previously unattainable.
+ Although our journey ends here, the road is long and continues to be written.
+\end_layout
+
+\begin_layout Subsection
+A Construction of 
+\begin_inset Formula $\RR$
+\end_inset
+
+ From 
+\begin_inset Formula $\QQ$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.4.1.
+ 
+\end_layout
+
+\begin_layout Standard
+There exists an ordered field in which every nonempty set that is bounded
+ above has a least upper bound.
+ In addition, this field contains 
+\begin_inset Formula $\QQ$
+\end_inset
+
+ as a subfield.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.4.2.
+ 
+\end_layout
+
+\begin_layout Standard
+A subset 
+\begin_inset Formula $A$
+\end_inset
+
+ of the rational numbers is called a cut if it possesses the following three
+ properties: 
+\end_layout
+
+\begin_layout Standard
+(c1) 
+\begin_inset Formula $A\neq\varnothing$
+\end_inset
+
+ and 
+\begin_inset Formula $A\neq\QQ$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c2) If 
+\begin_inset Formula $r\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+ also contains every rational 
+\begin_inset Formula $q<r$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c3) 
+\begin_inset Formula $A$
+\end_inset
+
+ does not have a maximum; that is, if 
+\begin_inset Formula $r\in A$
+\end_inset
+
+, then there exists 
+\begin_inset Formula $s\in A$
+\end_inset
+
+ with 
+\begin_inset Formula $r<s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.4.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Define the real numbers 
+\begin_inset Formula $\RR$
+\end_inset
+
+ to be the set of all cuts in 
+\begin_inset Formula $\QQ$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $F$
+\end_inset
+
+ is a field if there exist two operations - addition 
+\begin_inset Formula $(x+y)$
+\end_inset
+
+ and multiplication 
+\begin_inset Formula $(xy)$
+\end_inset
+
+ - that satisfy the following list of conditions: 
+\end_layout
+
+\begin_layout Standard
+(f1) (commutativity) 
+\begin_inset Formula $x+y=y+x$
+\end_inset
+
+ and 
+\begin_inset Formula $xy=yx$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(f2) (associativity) 
+\begin_inset Formula $(x+y)+z=x+(y+z)$
+\end_inset
+
+ and 
+\begin_inset Formula $(xy)z=x(yz)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y,z\in F$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(f3) (identities exist) There exist two special elements 0 and 1 with 
+\begin_inset Formula $0\neq1$
+\end_inset
+
+ such that 
+\begin_inset Formula $x+0=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x1=x$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in F$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(f4) (inverses exist) Given 
+\begin_inset Formula $x\in F$
+\end_inset
+
+, there exists an element 
+\begin_inset Formula $-x\in F$
+\end_inset
+
+ such that 
+\begin_inset Formula $x+(-x)=0$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, there exists an element 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+ such that 
+\begin_inset Formula $xx^{-1}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(f5) (distributive property) 
+\begin_inset Formula $x(y+z)=xy+xz$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y,z\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.4.5.
+ 
+\end_layout
+
+\begin_layout Standard
+An ordering on a set 
+\begin_inset Formula $F$
+\end_inset
+
+ is a relation, represented by 
+\begin_inset Formula $\leq$
+\end_inset
+
+, with the following three properties:
+\end_layout
+
+\begin_layout Standard
+(o1) For arbitrary 
+\begin_inset Formula $x,y\in F$
+\end_inset
+
+, at least one of the statements 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ or 
+\begin_inset Formula $y\leq x$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\begin_layout Standard
+(o2) If 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\leq x$
+\end_inset
+
+, then 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(o3) If 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\leq z$
+\end_inset
+
+, then 
+\begin_inset Formula $x\leq z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A field 
+\begin_inset Formula $F$
+\end_inset
+
+ is called an ordered field if 
+\begin_inset Formula $F$
+\end_inset
+
+ is endowed with an ordering 
+\begin_inset Formula $\leq$
+\end_inset
+
+ that satisfies 
+\end_layout
+
+\begin_layout Standard
+(o4) If 
+\begin_inset Formula $y\leq z$
+\end_inset
+
+, then 
+\begin_inset Formula $x+y\leq x+z$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(o5) If 
+\begin_inset Formula $x\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $y\geq0$
+\end_inset
+
+, then 
+\begin_inset Formula $xy\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.4.6.
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $\mathcal{A}\subseteq\RR$
+\end_inset
+
+ is bounded above if there exists a 
+\begin_inset Formula $B\in\RR$
+\end_inset
+
+ such that 
+\begin_inset Formula $A\leq B$
+\end_inset
+
+ for all 
+\begin_inset Formula $A\in\mathcal{A}$
+\end_inset
+
+.
+ The number 
+\begin_inset Formula $B$
+\end_inset
+
+ is called an upper bound for 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A real number 
+\begin_inset Formula $S\in\RR$
+\end_inset
+
+ is the least upper bound for a set 
+\begin_inset Formula $\mathcal{A}\subseteq\RR$
+\end_inset
+
+ if it meets the following two criteria:
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $S$
+\end_inset
+
+ is an upper bound for 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ and 
+\end_layout
+
+\begin_layout Standard
+(ii) if 
+\begin_inset Formula $B$
+\end_inset
+
+ is any upper bound for 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+, then 
+\begin_inset Formula $S\leq B$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
