@@ -8063,7 +8063,7 @@ If we continue this process, show that the resulting sequence
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph
 Exercise 6.2.15.
  
 \end_layout
@@ -9210,6 +9210,1090 @@ The Riemann Integral
 
 连续性和零测集的概念来说明充分必要条件.
  最后给出导数不可积的Volterra函数的例子.
+\end_layout
+
+\begin_layout Subsection
+Discussion: How Should Integration be Defined?
+\end_layout
+
+\begin_layout Subsection
+The Definition of the Riemann Integral
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A partition 
+\begin_inset Formula $P$
+\end_inset
+
+ of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ is a finite, ordered set 
+\begin_inset Formula 
+\[
+P=\left\{ a=x_{0}<x_{1}<x_{2}<\cdots<x_{n}=b\right\} .
+\]
+
+\end_inset
+
+For each subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ of 
+\begin_inset Formula $P$
+\end_inset
+
+, let 
+\begin_inset Formula 
+\[
+m_{k}=\inf\left\{ f(x):x\in\left[x_{k-1},x_{k}\right]\right\} \quad\text{ and }\quad M_{k}=\sup\left\{ f(x):x\in\left[x_{k-1},x_{k}\right]\right\} 
+\]
+
+\end_inset
+
+The lower sum of 
+\begin_inset Formula $f$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $P$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\[
+L(f,P)=\sum_{k=1}^{n}m_{k}\left(x_{k}-x_{k-1}\right).
+\]
+
+\end_inset
+
+Likewise, we define the upper sum of 
+\begin_inset Formula $f$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $P$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+U(f,P)=\sum_{k=1}^{n}M_{k}\left(x_{k}-x_{k-1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.2.
+ 
+\end_layout
+
+\begin_layout Standard
+A partition 
+\begin_inset Formula $Q$
+\end_inset
+
+ is a refinement of a partition 
+\begin_inset Formula $P$
+\end_inset
+
+ if 
+\begin_inset Formula $Q$
+\end_inset
+
+ contains all of the points of 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ In this case, we write 
+\begin_inset Formula $P\subseteq Q$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.2.3.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $P\subseteq Q$
+\end_inset
+
+, then 
+\begin_inset Formula $L(f,P)\leq L(f,Q)$
+\end_inset
+
+, and 
+\begin_inset Formula $U(f,P)\geq U(f,Q)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.2.4.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ are any two partitions of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, then 
+\begin_inset Formula $L\left(f,P_{1}\right)\leq$
+\end_inset
+
+ 
+\begin_inset Formula $U\left(f,P_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.5.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ be the collection of all possible partitions of the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ The upper integral of 
+\begin_inset Formula $f$
+\end_inset
+
+ is defined to be 
+\begin_inset Formula 
+\[
+U(f)=\inf\{U(f,P):P\in\mathcal{P}\}.
+\]
+
+\end_inset
+
+In a similar way, define the lower integral of 
+\begin_inset Formula $f$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+L(f)=\sup\{U(f,P):P\in\mathcal{P}\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+For any bounded function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, it is always the case that 
+\begin_inset Formula $U(f)\geq L(f)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.7 (Riemann Integrability).
+ 
+\end_layout
+
+\begin_layout Standard
+A bounded function 
+\begin_inset Formula $f$
+\end_inset
+
+ defined on the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ is Riemann-integrable if 
+\begin_inset Formula $U(f)=L(f)$
+\end_inset
+
+.
+ In this case, we define 
+\begin_inset Formula $\int_{a}^{b}f$
+\end_inset
+
+ or 
+\begin_inset Formula $\int_{a}^{b}f(x)dx$
+\end_inset
+
+ to be this common value; namely, 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=U(f)=L(f).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.2.8.
+\end_layout
+
+\begin_layout Standard
+A bounded function 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if and only if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a partition 
+\begin_inset Formula $P_{\epsilon}$
+\end_inset
+
+ of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+U\left(f,P_{\epsilon}\right)-L\left(f,P_{\epsilon}\right)<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.2.9.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, then it is integrable.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.2.5.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that, for each 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is an integrable function on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\left(f_{n}\right)\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is also integrable on this set.
+ (We will see that this conclusion does not necessarily follow if the convergenc
+e is pointwise.)
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ be increasing on the set 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $f(x)\leq$
+\end_inset
+
+ 
+\begin_inset Formula $f(y)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $x<y)$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Integrating Functions with Discontinuities
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.3.2.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is bounded, and 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[c,b]$
+\end_inset
+
+ for all 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ An analogous result holds at the other endpoint.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.3.6.
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq[a,b]$
+\end_inset
+
+ has content zero if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a finite collection of open intervals 
+\begin_inset Formula $\left\{ O_{1},O_{2},\ldots,O_{N}\right\} $
+\end_inset
+
+ that contain 
+\begin_inset Formula $A$
+\end_inset
+
+ in their union and whose lengths sum to 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ or less.
+ Using 
+\begin_inset Formula $\left|O_{n}\right|$
+\end_inset
+
+ to refer to the length of each interval, we have 
+\begin_inset Formula 
+\[
+A\subseteq\bigcup_{n=1}^{N}O_{n}\quad\text{ and }\quad\sum_{k=1}^{N}\left|O_{n}\right|\leq\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a) Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be bounded on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ Show that if the set of discontinuous points of 
+\begin_inset Formula $f$
+\end_inset
+
+ has content zero, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable.
+\end_layout
+
+\begin_layout Standard
+(b) Show that any finite set has content zero.
+\end_layout
+
+\begin_layout Standard
+(c) Content zero sets do not have to be finite.
+ They do not have to be countable.
+ Show that the Cantor set 
+\begin_inset Formula $C$
+\end_inset
+
+ defined in Section 3.1 has content zero.
+\end_layout
+
+\begin_layout Standard
+(d) Prove that 
+\begin_inset Formula 
+\[
+h(x)=\begin{cases}
+1 & \text{ if }x\in C\\
+0 & \text{ if }x\notin C.
+\end{cases}
+\]
+
+\end_inset
+
+is integrable, and find the value of the integral.
+\end_layout
+
+\begin_layout Subsection
+Properties of the Integral
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.4.1.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is bounded, and let 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,c]$
+\end_inset
+
+ and 
+\begin_inset Formula $[c,b]$
+\end_inset
+
+.
+ In this case, we have 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=\int_{a}^{c}f+\int_{c}^{b}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.4.3.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, define 
+\begin_inset Formula 
+\[
+\int_{b}^{a}f=-\int_{a}^{b}f.
+\]
+
+\end_inset
+
+Also, define 
+\begin_inset Formula 
+\[
+\int_{c}^{c}f=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and that each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is integrable.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable and 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\int_{a}^{b}f_{n}=\int_{a}^{b}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Decide which of the following conjectures is true and supply a short proof.
+ For those that are not true, give a counterexample.
+\end_layout
+
+\begin_layout Standard
+(d) If 
+\begin_inset Formula $\int_{a}^{b}f>0$
+\end_inset
+
+, there is an interval 
+\begin_inset Formula $[c,d]\subseteq[a,b]$
+\end_inset
+
+ and a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $f(x)\geq\delta$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in[c,d]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.4.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Review the discussion immediately preceding Theorem 7.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) Does it seem possible to construct the sequence 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ to be uniformly bounded? (Uniformly bounded means that there exists a single
+ 
+\begin_inset Formula $M>0$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $\left|f_{n}\right|\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.4.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $g_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ are bounded integrable functions with 
+\begin_inset Formula $g_{n}\rightarrow g$
+\end_inset
+
+ on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ The convergence is not uniform; however, the convergence is uniform on
+ any set of the form 
+\begin_inset Formula $[\delta,1]$
+\end_inset
+
+ where 
+\begin_inset Formula $0<\delta<1$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\int_{0}^{1}g_{n}=$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{0}^{1}g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+The Fundamental Theorem of Calculus
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.5.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, define the total variation of 
+\begin_inset Formula $f$
+\end_inset
+
+ to be 
+\begin_inset Formula 
+\[
+Vf=\sup\left\{ \sum_{k=1}^{n}\left|f\left(x_{k}\right)-f\left(x_{k-1}\right)\right|\right\} 
+\]
+
+\end_inset
+
+where the supremum is taken over all partitions 
+\begin_inset Formula $P$
+\end_inset
+
+ of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(a) If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuously differentiable (
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ exists as a continuous function), use the Fundamental Theorem of Calculus
+ to show 
+\begin_inset Formula $Vf\leq\int_{a}^{b}\left|f^{\prime}\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Use the Mean Value Theorem to establish the reverse inequality and conclude
+ that 
+\begin_inset Formula $Vf=\int_{a}^{b}\left|f^{\prime}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Lebesgue's Criterion for Riemann Integrability
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.6.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ has measure zero if, for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a countable collection of open intervals 
+\begin_inset Formula $O_{n}$
+\end_inset
+
+ with the property that 
+\begin_inset Formula $A$
+\end_inset
+
+ is contained in the union of all of the intervals 
+\begin_inset Formula $O_{n}$
+\end_inset
+
+ and the sum of the lengths of all of the intervals is less than or equal
+ to 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ More precisely, if 
+\begin_inset Formula $\left|O_{n}\right|$
+\end_inset
+
+ refers to the length of the interval 
+\begin_inset Formula $O_{n}$
+\end_inset
+
+, then we have 
+\begin_inset Formula 
+\[
+A\subseteq\bigcup_{n=1}^{\infty}O_{n}\quad\text{ and }\quad\sum_{n=1}^{\infty}\left|O_{n}\right|\leq\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.6.3.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be defined on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and let 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous at 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+ if there exists 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $y,z\in(x-\delta,x+\delta)$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $|f(y)-f(z)|<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.6.9.
+ 
+\end_layout
+
+\begin_layout Standard
+By imitating the proof of Theorem 4.4.8, show that if, for some fixed 
+\begin_inset Formula $\alpha>0,f$
+\end_inset
+
+ is 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous at every point on some compact set 
+\begin_inset Formula $K$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous on 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ By uniformly 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous, we mean that there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are points in 
+\begin_inset Formula $K$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $|x-y|<\delta$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $|f(x)-f(y)|<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.6.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $K\subseteq\RR$
+\end_inset
+
+.
+ The following three statements are all equivalent, in the sense that if
+ any one is true, then so are the two others.
+ 
+\end_layout
+
+\begin_layout Standard
+(i) Every sequence contained in 
+\begin_inset Formula $K$
+\end_inset
+
+ has a convergent subsequence that converges to a limit in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $K$
+\end_inset
+
+ is closed and bounded.
+ 
+\end_layout
+
+\begin_layout Standard
+(iii) Given a collection of open intervals 
+\begin_inset Formula $\left\{ G_{\alpha}:\alpha\in\Lambda\right\} $
+\end_inset
+
+ that covers 
+\begin_inset Formula $K$
+\end_inset
+
+; that is, 
+\begin_inset Formula $K\subseteq\bigcup_{\alpha\in\Lambda}G_{\alpha}$
+\end_inset
+
+, there exists a finite subcollection 
+\begin_inset Formula $\left\{ G_{\alpha_{1}},G_{\alpha_{2}},G_{\alpha_{3}},\ldots,G_{\alpha_{N}}\right\} $
+\end_inset
+
+ of the original set that also covers 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.6.5 (Lebesgue's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be a bounded function defined on the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is Riemann-integrable if and only if the set of points where 
+\begin_inset Formula $f$
+\end_inset
+
+ is not continuous has measure zero.
+\end_layout
+
+\begin_layout Standard
+The Lebesgue integral does have a few drawbacks.
+ There are functions whose improper Riemann integrals exist but that are
+ not Lebesgue-integrable.
+\end_layout
+
+\begin_layout Standard
+With the Lebesgue integral, it is still not possible to prove 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f^{\prime}=f(b)-f(a)
+\]
+
+\end_inset
+
+without some additional assumptions on 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Section

@@ -8063,7 +8063,7 @@ If we continue this process, show that the resulting sequence
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph
 Exercise 6.2.15.
  
 \end_layout
@@ -8457,7 +8457,737 @@ Let
 Series of Functions
 \end_layout
 
+\begin_layout Paragraph
+Definition 6.4.1.
+ 
+\end_layout
+
 \begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $f$
+\end_inset
+
+ be functions defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ The infinite series 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}f_{n}(x)=f_{1}(x)+f_{2}(x)+f_{3}(x)+\cdots
+\]
+
+\end_inset
+
+converges pointwise on 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ if the sequence 
+\begin_inset Formula $s_{k}(x)$
+\end_inset
+
+ of partial sums defined by 
+\begin_inset Formula 
+\[
+s_{k}(x)=f_{1}(x)+f_{2}(x)+\cdots+f_{k}(x)
+\]
+
+\end_inset
+
+converges pointwise to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+ The series converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $f$
+\end_inset
+
+ if the sequence 
+\begin_inset Formula $s_{k}(x)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.4.2.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be continuous functions defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a function 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.4.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be differentiable functions defined on an interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}^{\prime}(x)$
+\end_inset
+
+ converges uniformly to a limit 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If there exists a point 
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+ where 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}\left(x_{0}\right)$
+\end_inset
+
+ converges, then the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}(x)$
+\end_inset
+
+ converges uniformly to a differentiable function 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $f^{\prime}(x)=g(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula 
+\[
+f(x)=\sum_{n=1}^{\infty}f_{n}(x)\quad\text{ and }\quad f^{\prime}(x)=\sum_{n=1}^{\infty}f_{n}^{\prime}(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.4.4 (Cauchy Criterion for Uniform Convergence of Series).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ series 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ if and only if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $n>m\geq N$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|f_{m+1}(x)+f_{m+2}(x)+f_{m+3}(x)+\cdots+f_{n}(x)\right|<\epsilon
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 6.4.5 (Weierstrass M-Test).
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a function defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, and let 
+\begin_inset Formula $M_{n}>0$
+\end_inset
+
+ be a real number satisfying 
+\begin_inset Formula 
+\[
+\left|f_{n}(x)\right|\leq M_{n}
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\sum_{n=1}^{\infty}M_{n}$
+\end_inset
+
+ converges, then 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Power Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.1.
+ 
+\end_layout
+
+\begin_layout Standard
+If a power series 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges at some point 
+\begin_inset Formula $x_{0}\in\RR$
+\end_inset
+
+, then it converges absolutely for any 
+\begin_inset Formula $x$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $|x|<\left|x_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.2.
+ 
+\end_layout
+
+\begin_layout Standard
+If a power series 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges absolutely at a point 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, then it converges uniformly on the closed interval 
+\begin_inset Formula $[-c,c]$
+\end_inset
+
+, where 
+\begin_inset Formula $c=\left|x_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+What happens if we know that a series converges at an endpoint of its interval
+ of convergence? Does the good behavior of the series on 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+ necessarily extend to the endpoint 
+\begin_inset Formula $x=R$
+\end_inset
+
+ ? If the convergence of the series at 
+\begin_inset Formula $x=R$
+\end_inset
+
+ is absolute convergence, then we can again rely on Theorem 
+\begin_inset Formula $6.5.2$
+\end_inset
+
+ to conclude that the series converges uniformly on the set 
+\begin_inset Formula $[-R,R]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If a series converges conditionally at a point 
+\begin_inset Formula $x=R$
+\end_inset
+
+.
+ We may still use Theorem 6.5.1 to conclude that we have pointwise convergence
+ on the interval 
+\begin_inset Formula $(-R,R]$
+\end_inset
+
+, but more work is needed to establish uniform convergence on compact sets
+ containing 
+\begin_inset Formula $x=R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Remark that if the power series 
+\begin_inset Formula $g(x)=\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges conditionally at 
+\begin_inset Formula $x=R$
+\end_inset
+
+, then it is possible for it to diverge when 
+\begin_inset Formula $x=-R$
+\end_inset
+
+.
+ The series
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\frac{(-1)^{n}x^{n}}{n}
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $R=1$
+\end_inset
+
+ is an example.
+\end_layout
+
+\begin_layout Paragraph
+Lemma 6.5.3 (Abel's Lemma).
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ satisfy 
+\begin_inset Formula $b_{1}\geq b_{2}\geq b_{3}\geq\cdots\geq0$
+\end_inset
+
+, and let 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ be a series for which the partial sums are bounded.
+ In other words, assume there exists 
+\begin_inset Formula $A>0$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\left|a_{1}+a_{2}+\cdots+a_{n}\right|\leq A
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+.
+ Then, for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}+\cdots+a_{n}b_{n}\right|\leq2Ab_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.4 (Abel's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $g(x)=\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ be a power series that converges at the point 
+\begin_inset Formula $x=R>0$
+\end_inset
+
+.
+ Then the series converges uniformly on the interval 
+\begin_inset Formula $[0,R]$
+\end_inset
+
+.
+ A similar result holds if the series converges at 
+\begin_inset Formula $x=-R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.5.
+ 
+\end_layout
+
+\begin_layout Standard
+If a power series converges pointwise on the set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, then it converges uniformly on any compact set 
+\begin_inset Formula $K\subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.6.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges for all 
+\begin_inset Formula $x\in(-R,R)$
+\end_inset
+
+, then the differentiated series 
+\begin_inset Formula $\sum_{n=1}^{\infty}na_{n}x^{n-1}$
+\end_inset
+
+ converges at each 
+\begin_inset Formula $x\in(-R,R)$
+\end_inset
+
+ as well.
+ Consequently, the convergence is uniform on compact sets contained in 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.7.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula 
+\[
+g(x)=\sum_{n=0}^{\infty}a_{n}x^{n}
+\]
+
+\end_inset
+
+converges on an interval 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+ and differentiable on any open interval 
+\begin_inset Formula $(-R,R)\subseteq A$
+\end_inset
+
+.
+ The derivative is given by 
+\begin_inset Formula 
+\[
+g^{\prime}(x)=\sum_{n=1}^{\infty}na_{n}x^{n-1}.
+\]
+
+\end_inset
+
+Moreover, 
+\begin_inset Formula $g$
+\end_inset
+
+ is infinitely differentiable on 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+, and the successive derivatives can be obtained via term-by-term differentiatio
+n of the appropriate series.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.5.10.
+ 
+\end_layout
+
+\begin_layout Standard
+Review the definitions and results from Section 2.8 concerning products of
+ series and Cauchy products in particular.
+ At the end of Section 2.9, we mentioned the following result: If both 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ converge conditionally to 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ respectively, then it is possible for the Cauchy product, 
+\begin_inset Formula 
+\[
+\sum d_{n}\quad\text{ where }\quad d_{n}=a_{0}b_{n}+a_{1}b_{n-1}+\cdots+a_{n}b_{0},
+\]
+
+\end_inset
+
+to diverge.
+ However, if 
+\begin_inset Formula $\sum d_{n}$
+\end_inset
+
+ does converge, then it must converge to 
+\begin_inset Formula $AB$
+\end_inset
+
+.
+ To prove this, set 
+\begin_inset Formula 
+\[
+f(x)=\sum a_{n}x^{n},\quad g(x)=\sum b_{n}x^{n},\quad\text{ and }\quad h(x)=\sum d_{n}x^{n}.
+\]
+
+\end_inset
+
+Use Abel's Theorem and the result in Exercise 2.8.8 to establish this result.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.5.11.
+\end_layout
+
+\begin_layout Standard
+A series 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}$
+\end_inset
+
+ is said to be Abel-summable to 
+\begin_inset Formula $L$
+\end_inset
+
+ if the power series 
+\begin_inset Formula 
+\[
+f(x)=\sum_{n=0}^{\infty}a_{n}x^{n}
+\]
+
+\end_inset
+
+converges for all 
+\begin_inset Formula $x\in[0,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $L=\lim_{x\rightarrow1^{-}}f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(a) Show that any series that converges to a limit 
+\begin_inset Formula $L$
+\end_inset
+
+ is also Abel-summable to 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Show that 
+\begin_inset Formula $\sum_{n=0}^{\infty}(-1)^{n}$
+\end_inset
+
+ is Abel-summable and find the sum.
+\end_layout
+
+\begin_layout Subsection
+Taylor Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.6.1 (Lagrange's Remainder Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be infinitely differentiable on 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+, define 
+\begin_inset Formula $a_{n}=\frac{f^{(n)}(0)}{n!}$
+\end_inset
+
+, and let 
+\begin_inset Formula 
+\[
+S_{N}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{N}x^{N}.
+\]
+
+\end_inset
+
+Given 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, there exists a point c satisfying 
+\begin_inset Formula $|c|<|x|$
+\end_inset
+
+ where the error function 
+\begin_inset Formula $E_{N}(x)=f(x)-S_{N}(x)$
+\end_inset
+
+ satisfies 
+\begin_inset Formula 
+\[
+E_{N}(x)=\frac{f^{(N+1)}(c)}{(N+1)!}x^{N+1}.
+\]
+
+\end_inset
+
 
 \end_layout
 
@@ -8480,6 +9210,30 @@ The Riemann Integral
 
 连续性和零测集的概念来说明充分必要条件.
  最后给出导数不可积的Volterra函数的例子.
+\end_layout
+
+\begin_layout Subsection
+Discussion: How Should Integration be Defined?
+\end_layout
+
+\begin_layout Subsection
+The Definition of the Riemann Integral
+\end_layout
+
+\begin_layout Subsection
+Integrating Functions with Discontinuities
+\end_layout
+
+\begin_layout Subsection
+Properties of the Integral
+\end_layout
+
+\begin_layout Subsection
+The Fundamental Theorem of Calculus
+\end_layout
+
+\begin_layout Subsection
+Lebesgue's Criterion for Riemann Integrability
 \end_layout
 
 \begin_layout Section
