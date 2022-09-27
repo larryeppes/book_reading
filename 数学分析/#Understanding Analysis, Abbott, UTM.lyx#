@@ -4828,11 +4828,30 @@ Functional Limits and Continuity
 
 \begin_layout Standard
 这一节主要研究函数极限和连续性.
- 4.2节给出相关定义和简单判别法.
- 4.3节给出连续函数的刻画, 复合函数的连续性, 和压缩映射定理的例子.
- 4.4节证明了连续函数保持紧性, 证明了紧集上的最值定理, 一致收敛性和Cantor定理, 最重要的是拓扑刻画, 最后给出一致连续函数的扩张定理.
- 4.5节讲中值定理, 中值定理的数学本质是连续函数保连通性.
- 4.6节研究函数的不连续点集, 简单的有单调函数不连续点集的可数性定理, 对于一般函数的不连续点集与
+ 
+\end_layout
+
+\begin_layout Standard
+4.2节给出相关定义和简单判别法.
+ 
+\end_layout
+
+\begin_layout Standard
+4.3节给出连续函数的刻画, 复合函数的连续性, 和压缩映射定理的例子.
+ 
+\end_layout
+
+\begin_layout Standard
+4.4节证明了连续函数保持紧性, 证明了紧集上的最值定理, 一致收敛性和Cantor定理, 最重要的是拓扑刻画, 最后给出一致连续函数的扩张定理.
+ 
+\end_layout
+
+\begin_layout Standard
+4.5节讲中值定理, 中值定理的数学本质是连续函数保连通性, 证明是不依赖于维数的拓扑证明.
+\end_layout
+
+\begin_layout Standard
+4.6节研究函数的不连续点集, 简单的有单调函数不连续点集的可数性定理, 对于一般函数的不连续点集与
 \begin_inset Formula $F_{\sigma}$
 \end_inset
 
@@ -6503,6 +6522,684 @@ be an arbitrary countable set of real numbers, construct a monotone function
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+The Derivative
+\end_layout
+
+\begin_layout Standard
+本节面临的问题: 连续函数是否总是可微的? 如果不是, 不可微程度如何? 可微函数是否连续? 如果函数
+\begin_inset Formula $f$
+\end_inset
+
+在每一点处可导, 我们能对
+\begin_inset Formula $f'$
+\end_inset
+
+说些什么? 它是否连续? 对于所有导数的可能取值是否有什么限制? 另一方面, 对于任意给定的函数
+\begin_inset Formula $g$
+\end_inset
+
+, 能否找到一个可微函数
+\begin_inset Formula $f$
+\end_inset
+
+, 使得
+\begin_inset Formula $f'=g$
+\end_inset
+
+? 要使这样的
+\begin_inset Formula $f$
+\end_inset
+
+存在, 
+\begin_inset Formula $g$
+\end_inset
+
+要有哪些性质?
+\end_layout
+
+\begin_layout Subsection
+Discussion: Are Derivatives Continuous?
+\end_layout
+
+\begin_layout Subsection
+Derivatives and the Intermediate Value Property
+\end_layout
+
+\begin_layout Paragraph
+Definition 5.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $g:A\rightarrow\RR$
+\end_inset
+
+ be a function defined on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Given 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, the derivative of 
+\begin_inset Formula $g$
+\end_inset
+
+ at 
+\begin_inset Formula $c$
+\end_inset
+
+ is defined by 
+\begin_inset Formula 
+\[
+g^{\prime}(c)=\lim_{x\rightarrow c}\frac{g(x)-g(c)}{x-c},
+\]
+
+\end_inset
+
+provided this limit exists.
+ If 
+\begin_inset Formula $g^{\prime}$
+\end_inset
+
+ exists for all points 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, we say that 
+\begin_inset Formula $g$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $g:A\rightarrow\RR$
+\end_inset
+
+ is differentiable at a point 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+ as well.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.2.5 (Chain Rule).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\RR$
+\end_inset
+
+ and 
+\begin_inset Formula $g:B\rightarrow\RR$
+\end_inset
+
+ satisfy 
+\begin_inset Formula $f(A)\subseteq$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ so that the composition 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ is well-defined.
+ If 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ and if 
+\begin_inset Formula $g$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $f(c)\in B$
+\end_inset
+
+, then 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+ with 
+\begin_inset Formula $(g\circ f)^{\prime}(c)=g^{\prime}(f(c))\cdot f^{\prime}(c)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.2.6 (Interior Extremum Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be differentiable on an open interval 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $f$
+\end_inset
+
+ attains a maximum value at some point 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $f(c)\geq f(x)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in(a,b)$
+\end_inset
+
+), then 
+\begin_inset Formula $f^{\prime}(c)=0$
+\end_inset
+
+.
+ The same is true if 
+\begin_inset Formula $f(c)$
+\end_inset
+
+ is a minimum value.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.2.7 (Darboux's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on an interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and if 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $f^{\prime}(a)<\alpha<f^{\prime}(b)$
+\end_inset
+
+ (or 
+\begin_inset Formula $f^{\prime}(a)>\alpha>f^{\prime}(b)$
+\end_inset
+
+), then there exists a point 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+ where 
+\begin_inset Formula $f^{\prime}(c)=\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 5.2.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Review the definition of uniform continuity (Definition 4.4.5) and also the
+ content of Theorem 4.4.8, which states that continuous functions on compact
+ sets are uniformly continuous.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Propose a definition for what it should mean to say that 
+\begin_inset Formula $f:A\rightarrow\RR$
+\end_inset
+
+ is uniformly differentiable on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Give an example of a uniformly differentiable function on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) Is there a theorem analogous to Theorem 4.4.8 for differentiation? Are
+ functions that are differentiable on a closed interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ necessarily uniformly differentiable? The class of examples discussed in
+ Section 
+\begin_inset Formula $5.1$
+\end_inset
+
+ may be useful.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 5.2.8.
+\end_layout
+
+\begin_layout Standard
+Decide whether each conjecture is true or false.
+ Provide an argument for those that are true and a counterexample for each
+ one that is false.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) If a derivative function is not constant, then the derivative must take
+ on some irrational values.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) If 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ exists on an open interval, and there is some point 
+\begin_inset Formula $c$
+\end_inset
+
+ where 
+\begin_inset Formula $f^{\prime}(c)>0$
+\end_inset
+
+, then there exists a 
+\begin_inset Formula $\delta$
+\end_inset
+
+-neighborhood 
+\begin_inset Formula $V_{\delta}(c)$
+\end_inset
+
+ around 
+\begin_inset Formula $c$
+\end_inset
+
+ in which 
+\begin_inset Formula $f^{\prime}(x)>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in V_{\delta}(c)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) If 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on an interval containing zero and if 
+\begin_inset Formula $\lim_{x\rightarrow0}f^{\prime}(x)=$
+\end_inset
+
+ 
+\begin_inset Formula $L$
+\end_inset
+
+, then it must be that 
+\begin_inset Formula $L=f^{\prime}(0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) Repeat conjecture (c) but drop the assumption that 
+\begin_inset Formula $f^{\prime}(0)$
+\end_inset
+
+ necessarily exists.
+ If 
+\begin_inset Formula $f^{\prime}(x)$
+\end_inset
+
+ exists for all 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ and if 
+\begin_inset Formula $\lim_{x\rightarrow0}f^{\prime}(x)=L$
+\end_inset
+
+, then 
+\begin_inset Formula $f^{\prime}(0)$
+\end_inset
+
+ exists and equals 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+The Mean Value Theorem
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.3.1 (Rolle's Theorem).
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ be continuous on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and differentiable on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $f(a)=f(b)$
+\end_inset
+
+, then there exists a point 
+\begin_inset Formula $c\in$
+\end_inset
+
+ 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ where 
+\begin_inset Formula $f^{\prime}(c)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.3.2 (Mean Value Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and differentiable on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+, then there exists a point 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+f^{\prime}(c)=\frac{f(b)-f(a)}{b-a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Corollary 5.3.3.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $g:A\rightarrow\RR$
+\end_inset
+
+ is differentiable on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+ and satisfies 
+\begin_inset Formula $g^{\prime}(x)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $g(x)=k$
+\end_inset
+
+ for some constant 
+\begin_inset Formula $k\in R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Sequences and Series of Functions
+\end_layout
+
+\begin_layout Standard
+这章比较重要的结论有Abel定理, 用幂级数的内闭一致收敛得到逐项微分的可行性, 收敛半径的概念.
+ Abel定理保证了区间端点的收敛性可以证明
+\begin_inset Formula $[0,R]$
+\end_inset
+
+上幂级数的一致收敛性, 从而收敛于一个连续函数, 再由Cantor定理说明幂级数在
+\begin_inset Formula $[0,R]$
+\end_inset
+
+上有一致连续性.
+ 
+\end_layout
+
+\begin_layout Standard
+逐项微分的合理性用于求解Taylor展开的系数, 解析函数如果有Taylor展开表示, 则Taylor系数与导数的关系.
+ 提出反问题则是, 如果解析函数的Taylor级数的系数与其导数的表示, 则泰勒级数是否收敛于给定的解析函数? 然后引入Lagrange余项,
+ 但是因为以下反例的存在, 这个余项并不能用来证明一般的函数的Taylor级数收敛于函数本身.
+\begin_inset Formula 
+\[
+g(x)=\begin{cases}
+\ue^{-1/x^{2}}, & \text{ for }x\ne0,\\
+0, & \text{ for }x=0.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Riemann Integral
+\end_layout
+
+\begin_layout Standard
+引入Riemann积分的定义, 分划, 上和, 下和, 上积分, 下积分的概念, Riemann可积函数类和可积性判别法.
+ 7.3节包含了具有不连续点的函数的可积性.
+ 7.4节给出了定积分的运算性质, 一致收敛函数列在过渡极限的运算.
+ 7.5节建立微积分基本定理, 结论有两部分, 其一是一个可积函数的定积分由原函数在端点的差得到, 另一是可积函数的变限积分是连续函数, 并且在被积函数的连续点处
+可导, 证明主要依赖微分中值定理.
+\end_layout
+
+\begin_layout Standard
+7.6节给出Lebesgue判别法, Riemann可积的充要条件是函数的不连续点集为零测集, 证明主要依赖
+\begin_inset Formula $\alpha$
+\end_inset
+
+连续性和零测集的概念来说明充分必要条件.
+ 最后给出导数不可积的Volterra函数的例子.
+\end_layout
+
+\begin_layout Section
+Additional Topics
+\end_layout
+
+\begin_layout Standard
+这节推广Riemann积分, Riemann积分的缺点在于不能很好的过渡极限以及存在导函数不可积的情况, 也就是微积分基本定理的
+\begin_inset Formula 
+\[
+\int_{a}^{b}F'=F(b)-F(a)
+\]
+
+\end_inset
+
+存在
+\begin_inset Formula $F'$
+\end_inset
+
+不可积的问题.
+\end_layout
+
+\begin_layout Standard
+但是推广到Lebesgue积分, 尽管任何Riemann积分都是Lebesgue可积的, 并且能使Volterra函数的导数Lebesgue可积,
+ 但仍然有缺点.
+ 因为仍然有函数的导数不可积的情况, 并且像广义Riemann积分的
+\begin_inset Formula $\int_{0}^{\infty}\frac{\sin x}{x}\ud x$
+\end_inset
+
+并不是Lebesgue可积的.
+ 引入度规的概念定义广义Riemann积分, 更简单的证明微积分基本定理, 积分换元法.
+ 8.2节介绍了度量空间和Baire纲定理, 证明了
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+中处处不可为点集是第二纲集.
+\end_layout
+
+\begin_layout Standard
+8.3节讲Fourier级数, Fourier级数诱使学者追求分析的严谨性, 这是19世纪的数学的主要研究内容.
+ 它不同于幂级数的研究, 幂级数是一类更好的函数类, 蕴含着和函数的解析性, 这一好的性质没能使数学家们对极限和收敛进行更好的理解, (因为幂级数的收敛有内闭一
+致收敛性, 可以逐项积分, 逐项求导且无穷次可微).
+ 但是三角级数与之不同, 可以推广到
+\begin_inset Formula $L^{2}$
+\end_inset
+
+收敛性.
+ 然后给出Fourier系数, Riemann-Lebesgue引理, 并指出Fourier级数是作为条件收敛级数存在的, 这也说明了它与幂级数的不同.
+ 一般当函数
+\begin_inset Formula $f(x)$
+\end_inset
+
+在某一点
+\begin_inset Formula $x=x_{0}\in(-\pi,\pi]$
+\end_inset
+
+处可导时, 其Fourier级数的部分和点态收敛到
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+, 证明依赖于Dirichlet核和Riemann-Lebesgue引理.
+ 但这种收敛性的条件太强了, 通过引入Cesaro平均导出Fej
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+r核, 得到连续函数的Fej
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+r部分和一致收敛于给定函数.
+ 随后给出Weierstrass逼近定理, 在闭区间上用多项式一致收敛于任意给定的连续函数.
+ 最后总结贯穿分析的极限思想: 实数作为有理数的极限, 无穷级数作为部分和的极限, 连续函数作为其附近的函数值的极限, 可微函数作为分段线性函数的极限,
+ 可积函数的积分作为上下和的极限, 连续函数作为多项式的极限.
+ 其共性都是通过有限逼近无限.
+\end_layout
+
+\begin_layout Standard
+8.4节讲了如何从有理数构造实数, 通过Dedekind分划的概念引入实数.
+ 在这个概念下, 实数完备性公理被证明为定理.
+ 之所以公理降级为定理, 其关键步是将分划定义为满足一定条件的有理数的子集, 将有界实数列看成有理数分划的集族, 其最小上界就是集族的并集, 它由集合论的公理保
+证仍是一个集合, 且是一个有理数的分划, 如此得到实数完备性公理的证明.
+ 这要对分划构建数域和序结构, 定义加法和乘法, 其中一个需要克服的困难是乘法要符合``负负得正"的性质, 同时这样的实数有与有理数对应的子集.
+ 最后Cantor构建实数的方法是Cauchy列的等价类.
 \end_layout
 
 \end_body
