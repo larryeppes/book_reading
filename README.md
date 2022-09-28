@@ -15,7 +15,7 @@
   - 数学分析 - 梅加强
   - 数学专业考研判断题
   - CS131 Mathematics for computer scientists II, Taylor's Theorem, Note 26
-  - Understanding Analysis, Abbott, UTM
+  - Understanding Analysis, Abbott S., UTM
 - 微积分
   - Cesaro and Abel summability
   - Formulas for the Remainder Term in Taylor Series
