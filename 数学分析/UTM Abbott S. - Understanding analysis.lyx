@@ -1,0 +1,11807 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+\usepackage{indentfirst}
+
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\curl}{curl}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Understanding Analysis, Abbott, UTM
+\end_layout
+
+\begin_layout Standard
+The aim of a course in real analysis should be to challenge and improve
+ mathematical intuition rather than to verify it.
+\end_layout
+
+\begin_layout Paragraph
+The philosophy of 
+\emph on
+Understanding Analysis
+\emph default
+: focus attention on questions that give analysis its inherent fascination.
+\end_layout
+
+\begin_layout Paragraph
+Questions to think of while studying
+\end_layout
+
+\begin_layout Standard
+Does the Cantor set contain any irrational numbers?
+\end_layout
+
+\begin_layout Standard
+Can the set of points where a function is discontinuous be arbitrary?
+\end_layout
+
+\begin_layout Standard
+Are derivatives continuous?
+\end_layout
+
+\begin_layout Standard
+Are derivatives integrable?
+\end_layout
+
+\begin_layout Standard
+Is an infinitely differentiable function necessarily the limit of its Taylor
+ series?
+\end_layout
+
+\begin_layout Paragraph
+References with history
+\end_layout
+
+\begin_layout Standard
+A Radical Approach to Real Analysis, by David Bressoud.
+\end_layout
+
+\begin_layout Standard
+Analysis by Its History, by E.
+ Hairer and G.
+ Wanner.
+\end_layout
+
+\begin_layout Section
+The Real Numbers
+\end_layout
+
+\begin_layout Subsection
+Discussion: The Irrationality of 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+using a type of argument referred to as a proof by contradiciton.
+\end_layout
+
+\begin_layout Standard
+a field is any set where addition and multiplication are well-defined operations
+ that are commutative, associative, and the distributive property 
+\begin_inset Formula $a(b+c)=ab+ac$
+\end_inset
+
+.
+ There must be an additive identity, and every element must have an additive
+ inverse, a multiplicative identity and multiplicative inverse exist for
+ all nonzero elements of the field.
+\end_layout
+
+\begin_layout Standard
+The set 
+\begin_inset Formula $\QQ$
+\end_inset
+
+ also has a natural 
+\emph on
+order
+\emph default
+ defined on it, the order is transitive.
+\end_layout
+
+\begin_layout Standard
+It is not too inaccurate to say that 
+\begin_inset Formula $\RR$
+\end_inset
+
+ is obtained by filling in the gaps in 
+\begin_inset Formula $\QQ$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.1.1
+\end_layout
+
+\begin_layout Standard
+There is no rational number whose square is 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Some Preliminaries
+\end_layout
+
+\begin_layout Standard
+A 
+\emph on
+set
+\emph default
+ is any collection of objects.
+ These objects are referred to as the 
+\emph on
+elements
+\emph default
+ of the set.
+\end_layout
+
+\begin_layout Standard
+The set of natural numbers was defined by listing the elements: 
+\begin_inset Formula $\NN=\left\{ 1,2,3,\cdots\right\} $
+\end_inset
+
+, not contain 
+\begin_inset Formula $0$
+\end_inset
+
+ in this book!
+\end_layout
+
+\begin_layout Standard
+There is something imprecise about the definition of set.
+\end_layout
+
+\begin_layout Standard
+Each repair of one level of the foundation reveals something below it in
+ need of attention.
+\end_layout
+
+\begin_layout Paragraph
+Definition 1.2.3.
+\end_layout
+
+\begin_layout Standard
+Given two sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, a function from 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $B$
+\end_inset
+
+ is a rule or mapping that takes each element 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ and associates with it a single element of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ In this case, we write 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+.
+ Given an element 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, the expression 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ is used to represent the element of 
+\begin_inset Formula $B$
+\end_inset
+
+ associated with 
+\begin_inset Formula $x$
+\end_inset
+
+ by 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ The set 
+\begin_inset Formula $A$
+\end_inset
+
+ is called the domain of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ The range of 
+\begin_inset Formula $f$
+\end_inset
+
+ is not necessarily equal to 
+\begin_inset Formula $B$
+\end_inset
+
+ but refers to the subset of 
+\begin_inset Formula $B$
+\end_inset
+
+ given by 
+\begin_inset Formula 
+\[
+\left\{ y\in B:y=f(x)\text{ for some }x\in A\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This definition of function is more or less the one proposed by Peter Lejeune
+ Dirichlet (1805-1859) in the 1830s.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.2.6.
+\end_layout
+
+\begin_layout Standard
+Two real numbers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are equal, iff, for every real number 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $\left|a-b\right|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.2.7.
+\end_layout
+
+\begin_layout Standard
+the preimage of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.2.8.
+\end_layout
+
+\begin_layout Standard
+Form the logical negation of each claim.
+\end_layout
+
+\begin_layout Standard
+(a) For all real numbers satisfying 
+\begin_inset Formula $a<b$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $a+1/n<b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+The Axiom of Completeness
+\end_layout
+
+\begin_layout Paragraph
+Axiom of Completeness.
+\end_layout
+
+\begin_layout Standard
+Every nonempty set of real numbers that is bounded above has a least upper
+ bound.
+\end_layout
+
+\begin_layout Paragraph
+Definition 1.3.1.
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ is bounded above if there exists a number 
+\begin_inset Formula $b\in\RR$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\le b$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ The number 
+\begin_inset Formula $b$
+\end_inset
+
+ is called an upper bound for 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Similarly, the set 
+\begin_inset Formula $A$
+\end_inset
+
+ is bounded below if there exists a lower bound 
+\begin_inset Formula $l\in\RR$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $l\le a$
+\end_inset
+
+ for every 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 1.3.2.
+\end_layout
+
+\begin_layout Standard
+A real number 
+\begin_inset Formula $s$
+\end_inset
+
+ is the least upper bound for a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ if 
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $s$
+\end_inset
+
+ is an upper bound for 
+\begin_inset Formula $A$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(ii) if 
+\begin_inset Formula $b$
+\end_inset
+
+ is any upper bound for 
+\begin_inset Formula $A$
+\end_inset
+
+, then 
+\begin_inset Formula $s\le b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The least upper bound is called the supremum of the set 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ the notation 
+\begin_inset Formula $s=\mathrm{lub}A$
+\end_inset
+
+ is still common, we write 
+\begin_inset Formula $s=\sup A$
+\end_inset
+
+ for the least upper bound.
+\end_layout
+
+\begin_layout Standard
+The greatest lower bound or infimum for 
+\begin_inset Formula $A$
+\end_inset
+
+ si defined in a similar way and is denoted by 
+\begin_inset Formula $\inf A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 1.3.4.
+\end_layout
+
+\begin_layout Standard
+A real number 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ is a maximum of the set 
+\begin_inset Formula $A$
+\end_inset
+
+ if 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ is an element of 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{0}\ge a$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Similarly, a number 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ is a minimum of 
+\begin_inset Formula $A$
+\end_inset
+
+ if 
+\begin_inset Formula $a_{1}\in A$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{1}\le a$
+\end_inset
+
+ for every 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Lemma 1.3.7.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $s\in\RR$
+\end_inset
+
+ is an upper bound for a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $s=\sup A$
+\end_inset
+
+, iff, for every choice of 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an element 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $s-\epsilon<a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.3.3.
+\end_layout
+
+\begin_layout Standard
+(a) Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be bounded below, and define 
+\begin_inset Formula $B=\left\{ b\in\RR:b\text{ is a lower bound for }A\right\} $
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $\sup B=\inf A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.3.4.
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are nonempty, bounded above, and satisfy 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+.
+ Show 
+\begin_inset Formula $\sup B\le\sup A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.3.5.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ be bounded above, and let 
+\begin_inset Formula $c\in\RR$
+\end_inset
+
+.
+ Define the sets 
+\begin_inset Formula $c+A$
+\end_inset
+
+ and 
+\begin_inset Formula $cA$
+\end_inset
+
+ by 
+\begin_inset Formula $c+A=\left\{ c+a:a\in A\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $cA=\left\{ ca:a\in A\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(a) Show that 
+\begin_inset Formula $\sup(c+A)=c+\sup A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b) If 
+\begin_inset Formula $c\ge0$
+\end_inset
+
+, show that 
+\begin_inset Formula $\sup(cA)=c\sup A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(c) Postulate a similar type of statement for 
+\begin_inset Formula $\sup(cA)$
+\end_inset
+
+ for the case 
+\begin_inset Formula $c<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.3.8.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\sup A<\sup B$
+\end_inset
+
+, then show that there exists an element 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ that is an upper bound for 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.3.9.
+\end_layout
+
+\begin_layout Standard
+Without worrying about formal proofs for the moment, decide if the following
+ statements about suprema and infima are true or false.
+ For any that are false, supply and example where the claim in question
+ does not aprear to hold.
+\end_layout
+
+\begin_layout Standard
+(a) A finite, nonempty set always contains its supremum.
+\end_layout
+
+\begin_layout Standard
+(b) If 
+\begin_inset Formula $a<L$
+\end_inset
+
+ for every element 
+\begin_inset Formula $a$
+\end_inset
+
+ in the set 
+\begin_inset Formula $A$
+\end_inset
+
+, then 
+\begin_inset Formula $\sup A<L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(c) If 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are sets with the property that 
+\begin_inset Formula $a<b$
+\end_inset
+
+ for every 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ and every 
+\begin_inset Formula $b\in B$
+\end_inset
+
+, then it follows that 
+\begin_inset Formula $\sup A<\inf B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(d) If 
+\begin_inset Formula $\sup A=s$
+\end_inset
+
+ and 
+\begin_inset Formula $\sup B=t$
+\end_inset
+
+, then 
+\begin_inset Formula $\sup(A+B)=s+t$
+\end_inset
+
+.
+ The set 
+\begin_inset Formula $A+B$
+\end_inset
+
+ is defined as 
+\begin_inset Formula $A+B=\left\{ a+b:a\in A\text{ and }b\in B\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(e) If 
+\begin_inset Formula $\sup A\le\sup B$
+\end_inset
+
+, then there exists an element 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ that is an upper bound for 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Consequences of Completeness
+\end_layout
+
+\begin_layout Standard
+The first application of the Axiom of Completeness is a result that express
+ the sentiment that the real line contains no gaps.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.4.1.
+ (Nested Interval Property).
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, assume we are given a closed interval 
+\begin_inset Formula $I_{n}=\left[a_{n},b_{n}\right]=\left\{ x\in\RR:a_{n}\leq x\leq b_{n}\right\} $
+\end_inset
+
+.
+ Assume also that each 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+ contains 
+\begin_inset Formula $I_{n+1}$
+\end_inset
+
+.
+ Then, the resulting nested sequence of closed intervals 
+\begin_inset Formula 
+\[
+I_{1}\supseteq I_{2}\supseteq I_{3}\supseteq I_{4}\supseteq\cdots
+\]
+
+\end_inset
+
+has a nonempty intersection; that is, 
+\begin_inset Formula $\bigcap_{n=1}^{\infty}I_{n}\neq\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+The Density of 
+\begin_inset Formula $\QQ$
+\end_inset
+
+ in 
+\begin_inset Formula $\RR$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.4.2 (Archimedean Property).
+\end_layout
+
+\begin_layout Standard
+(i) Given any number 
+\begin_inset Formula $x\in\RR$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $n>x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) Given any real number 
+\begin_inset Formula $y>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $1/n<y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.4.3 (Density of 
+\begin_inset Formula $\QQ$
+\end_inset
+
+ in 
+\begin_inset Formula $\RR$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+For every two real numbers 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ with 
+\begin_inset Formula $a<b$
+\end_inset
+
+, there exists a rational number 
+\begin_inset Formula $r$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $a<r<b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 1.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Given any two real numbers 
+\begin_inset Formula $a<b$
+\end_inset
+
+, there exists an irrational number 
+\begin_inset Formula $t$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $a<t<b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+The Existence of Square Roots
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.4.5.
+\end_layout
+
+\begin_layout Standard
+There exists a real number 
+\begin_inset Formula $\alpha\in\RR$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $\alpha^{2}=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Countable and Uncountable Sets
+\end_layout
+
+\begin_layout Paragraph
+Cardinality
+\end_layout
+
+\begin_layout Standard
+The term cardinality is used in mathematics to refer to the size of a set.
+\end_layout
+
+\begin_layout Paragraph
+Definition 1.4.6.
+ 
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f:A\rightarrow B$
+\end_inset
+
+ is one-to-one (1-1) if 
+\begin_inset Formula $a_{1}\neq a_{2}$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+ implies that 
+\begin_inset Formula $f(a_{1})\neq f(a_{2})$
+\end_inset
+
+ in 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is onto if, given any 
+\begin_inset Formula $b\in B$
+\end_inset
+
+, it is possible to find an element 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ for which 
+\begin_inset Formula $f(a)=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 1.4.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Two sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ have the same cardinality if there exists 
+\begin_inset Formula $f:A\rightarrow B$
+\end_inset
+
+ that is 
+\begin_inset Formula $1-1$
+\end_inset
+
+ and onto.
+ In this case, we write 
+\begin_inset Formula $A\sim B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Countable Sets
+\end_layout
+
+\begin_layout Paragraph
+Definition 1.4.10.
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A$
+\end_inset
+
+ is countable if 
+\begin_inset Formula $\NN\sim A$
+\end_inset
+
+.
+ An infinite set that is not countable is called an uncountable set.
+\end_layout
+
+\begin_layout Standard
+Hardy remarks, ``[The mathematician's] subject is the most curious of all–there
+ is none in which truth plays such odd pranks.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.4.11.
+ 
+\end_layout
+
+\begin_layout Standard
+(i) The set 
+\begin_inset Formula $\QQ$
+\end_inset
+
+ is countable.
+\end_layout
+
+\begin_layout Standard
+(ii) The set 
+\begin_inset Formula $\RR$
+\end_inset
+
+ is uncountable.
+\end_layout
+
+\begin_layout Standard
+The force of Theorem 1.4.11 is that the cardinality of 
+\begin_inset Formula $\RR$
+\end_inset
+
+ is a larger type of infinity.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.4.12.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ is countable, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is either countable, finite, or empty.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.4.13.
+ 
+\end_layout
+
+\begin_layout Standard
+(i) If 
+\begin_inset Formula $A_{1},A_{2},\ldots A_{m}$
+\end_inset
+
+ are each countable sets, then the union 
+\begin_inset Formula $A_{1}\cup A_{2}\cup\cdots\cup A_{m}$
+\end_inset
+
+ is countable.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) If 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ is a countable set for each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, then 
+\begin_inset Formula $\bigcup_{n=1}^{\infty}A_{n}$
+\end_inset
+
+ is countable.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.4.4.
+\end_layout
+
+\begin_layout Standard
+Use the Archimedean Property of 
+\begin_inset Formula $\RR$
+\end_inset
+
+ to rigorously prove that 
+\begin_inset Formula $\inf\left\{ 1/n:n\in\NN\right\} =0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.4.13 (Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+der-Bernstein Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Assume there exists a 
+\begin_inset Formula $1-1$
+\end_inset
+
+ function 
+\begin_inset Formula $f:X\rightarrow Y$
+\end_inset
+
+ and another 
+\begin_inset Formula $1-1$
+\end_inset
+
+ function 
+\begin_inset Formula $g:Y\rightarrow X$
+\end_inset
+
+.
+ Follow the steps to show that there exists a 
+\begin_inset Formula $1-1$
+\end_inset
+
+, onto function 
+\begin_inset Formula $h:X\rightarrow Y$
+\end_inset
+
+ and hence 
+\begin_inset Formula $X\sim Y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) The range of 
+\begin_inset Formula $f$
+\end_inset
+
+ is defined by 
+\begin_inset Formula $f(X)=\{y\in Y:y=f(x)$
+\end_inset
+
+ for some 
+\begin_inset Formula $x\in X\}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $y\in f(X)$
+\end_inset
+
+.
+ (Because 
+\begin_inset Formula $f$
+\end_inset
+
+ is not necessarily onto, the range 
+\begin_inset Formula $f(X)$
+\end_inset
+
+ may not be all of 
+\begin_inset Formula $Y$
+\end_inset
+
+.) Explain why there exists a unique 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ such that 
+\begin_inset Formula $f(x)=y$
+\end_inset
+
+.
+ Now define 
+\begin_inset Formula $f^{-1}(y)=x$
+\end_inset
+
+, and show that 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ is a 
+\begin_inset Formula $1-1$
+\end_inset
+
+ function from 
+\begin_inset Formula $f(X)$
+\end_inset
+
+ onto 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ In a similar way, we can also define the 
+\begin_inset Formula $1-1$
+\end_inset
+
+ function 
+\begin_inset Formula $g^{-1}:g(X)\rightarrow Y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Let 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ be arbitrary.
+ Let the chain 
+\begin_inset Formula $C_{x}$
+\end_inset
+
+ be the set consisting of all elements of the form 
+\begin_inset Formula 
+\begin{equation}
+\ldots,f^{-1}\left(g^{-1}(x)\right),g^{-1}(x),x,f(x),g(f(x)),f(g(f(x))),\ldots\label{eq:1}
+\end{equation}
+
+\end_inset
+
+Explain why the number of elements to the left of 
+\begin_inset Formula $x$
+\end_inset
+
+ in the above chain may be zero, finite, or infinite.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) Show that any two chains are either identical or completely disjoint.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) Note that the terms of the chain in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) alternate between elements of 
+\begin_inset Formula $X$
+\end_inset
+
+ and elements of 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ Given a chain 
+\begin_inset Formula $C_{x}$
+\end_inset
+
+, we want to focus on 
+\begin_inset Formula $C_{x}\cap Y$
+\end_inset
+
+, which is just the part of the chain that sits in 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Define the set 
+\begin_inset Formula $A$
+\end_inset
+
+ to be the union of all chains 
+\begin_inset Formula $C_{x}$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $C_{x}\cap Y\subseteq f(X)$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $B$
+\end_inset
+
+ consist of the union of the remaining chains not in 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Show that any chain contained in 
+\begin_inset Formula $B$
+\end_inset
+
+ must be of the form 
+\begin_inset Formula 
+\[
+y,g(y),f(g(y)),g(f(g(y))),\ldots,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $y$
+\end_inset
+
+ is an element of 
+\begin_inset Formula $Y$
+\end_inset
+
+ that is not in 
+\begin_inset Formula $f(X)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(e) Let 
+\begin_inset Formula $X_{1}=A\cap X$
+\end_inset
+
+, 
+\begin_inset Formula $X_{2}=B\cap X$
+\end_inset
+
+, 
+\begin_inset Formula $Y_{1}=A\cap Y$
+\end_inset
+
+, and 
+\begin_inset Formula $Y_{2}=B\cap Y$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $f$
+\end_inset
+
+ maps 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ onto 
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+ and that 
+\begin_inset Formula $g$
+\end_inset
+
+ maps 
+\begin_inset Formula $Y_{2}$
+\end_inset
+
+ onto 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+.
+ Use this information to prove 
+\begin_inset Formula $X\sim Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Cantor's Theorem
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.5.1.
+ 
+\end_layout
+
+\begin_layout Standard
+The open interval 
+\begin_inset Formula $(0,1)$
+\end_inset
+
+ is uncountable.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.5.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Supply rebuttals to the following complaints about the proof of Theorem
+ 1.5.1.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Every rational numbers has a decimal expansion so we could apply this
+ same argument to show that the set of rational numbers between 0 and 1
+ is uncountable.
+ However, because we know that any subset of 
+\begin_inset Formula $\QQ$
+\end_inset
+
+ must be countable, the proof of Theorem 1.5.1 must be flawed.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) A few numbers have two different decimal representations.
+ Specifically, any decimal expansion that terminates can also be written
+ with repeating 9's.
+ For instance, 
+\begin_inset Formula $1/2$
+\end_inset
+
+ can be written as .
+ 5 or as 
+\begin_inset Formula $.4999\ldots$
+\end_inset
+
+.
+ Doesn't this cause some problems?
+\end_layout
+
+\begin_layout Standard
+Given a set 
+\begin_inset Formula $A$
+\end_inset
+
+, the power set 
+\begin_inset Formula $P(A)$
+\end_inset
+
+ refers to the collection of all subsets of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 1.5.2 (Cantor's Theorem).
+\end_layout
+
+\begin_layout Standard
+Given any set 
+\begin_inset Formula $A$
+\end_inset
+
+, there does not exist a function 
+\begin_inset Formula $f:A\to P(A)$
+\end_inset
+
+ that is onto.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 1.5.9.
+ (c) 
+\end_layout
+
+\begin_layout Standard
+Given a set 
+\begin_inset Formula $B$
+\end_inset
+
+, a subset 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ of 
+\begin_inset Formula $P(B)$
+\end_inset
+
+ is called an antichain if no element of 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ is a subset of any other element of 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+.
+ Does 
+\begin_inset Formula $P(\mathbb{N})$
+\end_inset
+
+ contain an uncountale antichain?
+\end_layout
+
+\begin_layout Paragraph
+Ans.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(\NN)$
+\end_inset
+
+ does contain an uncountable antichain.
+ Let 
+\begin_inset Formula $E$
+\end_inset
+
+ be the even natural numbers, 
+\begin_inset Formula $O$
+\end_inset
+
+ be the odd natural numbers.
+\end_layout
+
+\begin_layout Standard
+Consider the set 
+\begin_inset Formula $S=\left\{ 0.s_{1}s_{2}s_{3}\cdots:s_{n}\in\left\{ 0,1\right\} \right\} $
+\end_inset
+
+, which is obviously uncountable.
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $s\in S$
+\end_inset
+
+, we construct the subset 
+\begin_inset Formula $A_{s}\subseteq\NN$
+\end_inset
+
+ to be
+\begin_inset Formula 
+\[
+A_{s}=\left\{ 2n:\text{ if }s_{n}=1\right\} \cup\left\{ 2n-1:\text{ if }s_{n}=0\right\} .
+\]
+
+\end_inset
+
+Hence 
+\begin_inset Formula $A_{s}$
+\end_inset
+
+ cannot comparable for different 
+\begin_inset Formula $s\in S$
+\end_inset
+
+, then the collection 
+\begin_inset Formula $\left\{ A_{s}:s\in S\right\} $
+\end_inset
+
+ is an uncountable antichain contained in 
+\begin_inset Formula $P(\NN)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Sequences and Series
+\end_layout
+
+\begin_layout Subsection
+Discussion: Rearrangements of Infinite Series
+\end_layout
+
+\begin_layout Standard
+Consider the infinite series
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\frac{1}{6}+\frac{1}{7}-\frac{1}{8}+\cdots.
+\]
+
+\end_inset
+
+If we adding from the left-hand side, we get a sequence called partial sums.
+ Let 
+\begin_inset Formula $s_{n}$
+\end_inset
+
+ equal the sum of the first 
+\begin_inset Formula $n$
+\end_inset
+
+ terms of the series, then 
+\begin_inset Formula $s_{1}=1$
+\end_inset
+
+, 
+\begin_inset Formula $s_{2}=1/2$
+\end_inset
+
+, 
+\begin_inset Formula $s_{3}=5/6$
+\end_inset
+
+, 
+\begin_inset Formula $s_{4}=7/12$
+\end_inset
+
+, and so on.
+\end_layout
+
+\begin_layout Standard
+It seems reasonable that the sequence 
+\begin_inset Formula $(s_{n})$
+\end_inset
+
+ eventually hones in on a value, call it 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename understanding analysis/chap2.1
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename understanding analysis/chap2.2
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The sum in the previous equation consists precisecly of the same terms as
+ those in the original equation, only in a different order.
+ Adding a few hundred terms of the previous equation produces partial sums
+ in the neighborhood of 
+\begin_inset Formula $1.03$
+\end_inset
+
+.
+ In infinite setting, addition is not commutative.
+\end_layout
+
+\begin_layout Standard
+Given a grid of real numbers 
+\begin_inset Formula $\left\{ a_{ij}:i,j\in\NN\right\} $
+\end_inset
+
+, where 
+\begin_inset Formula $a_{ij}=1/2^{j-i}$
+\end_inset
+
+ if 
+\begin_inset Formula $j>i$
+\end_inset
+
+, 
+\begin_inset Formula $a_{ij}=-1$
+\end_inset
+
+ if 
+\begin_inset Formula $j=i$
+\end_inset
+
+, and 
+\begin_inset Formula $a_{ij}=0$
+\end_inset
+
+ if 
+\begin_inset Formula $j<i$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\begin{pmatrix}-1 & \frac{1}{2} & \frac{1}{4} & \frac{1}{8} & \frac{1}{16} & \cdots\\
+0 & -1 & \frac{1}{2} & \frac{1}{4} & \frac{1}{8} & \cdots\\
+0 & 0 & -1 & \frac{1}{2} & \frac{1}{4} & \cdots\\
+0 & 0 & 0 & -1 & \frac{1}{2} & \cdots\\
+0 & 0 & 0 & 0 & -1 & \cdots\\
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots
+\end{pmatrix}
+\]
+
+\end_inset
+
+Attach a mathematical meaning to the summation
+\begin_inset Formula 
+\[
+\sum_{i,j=1}^{\infty}a_{ij}.
+\]
+
+\end_inset
+
+Changing the order of the summation changes the value of the sum.
+\end_layout
+
+\begin_layout Subsection
+The Limit of a Sequence
+\end_layout
+
+\begin_layout Paragraph
+Def 2.2.1.
+\end_layout
+
+\begin_layout Standard
+A sequence is a function whose domain is 
+\begin_inset Formula $\NN$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.2.3 (Convergence of a Sequence).
+\end_layout
+
+\begin_layout Standard
+A sequence 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ converges to a real number 
+\begin_inset Formula $a$
+\end_inset
+
+ if, for every positive number 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n\ge N$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $\left|a_{n}-a\right|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.2.4.
+\end_layout
+
+\begin_layout Standard
+Given a real number 
+\begin_inset Formula $a\in\RR$
+\end_inset
+
+ and a positive number 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, the set
+\begin_inset Formula 
+\[
+V_{\epsilon}(a)=\left\{ x\in\RR:\left|x-a\right|<\epsilon\right\} 
+\]
+
+\end_inset
+
+is called the 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-neighborhood of 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.2.3B (Convergence of a Sequence: Topological Version).
+\end_layout
+
+\begin_layout Standard
+A sequence 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ converges to 
+\begin_inset Formula $a$
+\end_inset
+
+ if, given any 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-neighborhood 
+\begin_inset Formula $V_{\epsilon}(a)$
+\end_inset
+
+ of 
+\begin_inset Formula $a$
+\end_inset
+
+, there exists a point in the sequence after which all of the terms are
+ in 
+\begin_inset Formula $V_{\epsilon}(a)$
+\end_inset
+
+.
+ In other words, every 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-neighborhood contains all but a finite number of the terms of 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename understanding analysis/chap2.3
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.2.8.
+\end_layout
+
+\begin_layout Standard
+A sequence that does not converge is said to diverge.
+\end_layout
+
+\begin_layout Subsection
+The Algebraic and Order Limit Theorems
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.3.1.
+\end_layout
+
+\begin_layout Standard
+A sequence 
+\begin_inset Formula $(x_{n})$
+\end_inset
+
+ is bounded if there exists a number 
+\begin_inset Formula $M>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|x_{n}\right|\le M$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.3.2.
+\end_layout
+
+\begin_layout Standard
+Every convergent sequence is bounded.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename understanding analysis/chap2.4
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.3.3 (Algebraic Limit Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\lim a_{n}=a$
+\end_inset
+
+, and 
+\begin_inset Formula $\lim b_{n}=b$
+\end_inset
+
+.
+ Then,
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $\lim(ca_{n})=ca$
+\end_inset
+
+, for all 
+\begin_inset Formula $c\in\RR$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $\lim(a_{n}+b_{n})=a+b$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(iii) 
+\begin_inset Formula $\lim(a_{n}b_{n})=ab$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(iv) 
+\begin_inset Formula $\lim(a_{n}/b_{n})=a/b$
+\end_inset
+
+, provided 
+\begin_inset Formula $b\ne0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Limits and Order
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.3.4 (Order Limit Theorem).
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $\lim a_{n}=a$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim b_{n}=b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(i) If 
+\begin_inset Formula $a_{n}\ge0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, then 
+\begin_inset Formula $a\ge0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(ii) If 
+\begin_inset Formula $a_{n}\le b_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, then 
+\begin_inset Formula $a\le b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(iii) If there exists 
+\begin_inset Formula $c\in\RR$
+\end_inset
+
+ for which 
+\begin_inset Formula $c\le b_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, then 
+\begin_inset Formula $c\le b$
+\end_inset
+
+.
+ Similarly, if 
+\begin_inset Formula $a_{n}\le c$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, then 
+\begin_inset Formula $a\le c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 2.3.3 (Squeeze Theorem).
+\end_layout
+
+\begin_layout Standard
+Show that if 
+\begin_inset Formula $x_{n}\le y_{n}\le z_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, and if 
+\begin_inset Formula $\lim x_{n}=\lim z_{n}=l$
+\end_inset
+
+, then 
+\begin_inset Formula $\lim y_{n}=l$
+\end_inset
+
+ as well.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 2.3.4.
+\end_layout
+
+\begin_layout Standard
+Show that limits, if exists, must be unique.
+ In other words, assume 
+\begin_inset Formula $\lim a_{n}=l_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim a_{n}=l_{2}$
+\end_inset
+
+, and prove that 
+\begin_inset Formula $l_{1}=l_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 2.3.11 (Cesaro Means).
+\end_layout
+
+\begin_layout Standard
+Show that if 
+\begin_inset Formula $(x_{n})$
+\end_inset
+
+ is a convergent sequence, then the sequence given by the averages
+\begin_inset Formula 
+\[
+y_{n}=\frac{x_{1}+x_{2}+\cdots+x_{n}}{n}
+\]
+
+\end_inset
+
+also converges to the same limit.
+ 
+\end_layout
+
+\begin_layout Standard
+Given an example to show that it is possible for the sequence 
+\begin_inset Formula $(y_{n})$
+\end_inset
+
+ of averages to converge even if 
+\begin_inset Formula $(x_{n})$
+\end_inset
+
+ does not.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 2.3.12.
+\end_layout
+
+\begin_layout Standard
+Consider the doubly indexed array 
+\begin_inset Formula $a_{m,n}=m/(m+n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(a) Intuitively speaking, what should 
+\begin_inset Formula $\lim_{m,n\to\infty}a_{m,n}$
+\end_inset
+
+ represent? Compute the ``iterated
+\begin_inset Quotes erd
+\end_inset
+
+ limits
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\lim_{m\to\infty}a_{m,n}\quad\text{and}\quad\lim_{m\to\infty}\lim_{n\to\infty}a_{m,n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) Formulate a rigorous definition in the style of Definition 2.2.3 for the
+ statement
+\begin_inset Formula 
+\[
+\lim_{m,n\to\infty}a_{m,n}=l.
+\]
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+The Monotone Convergence Theorem and a First Look at Infinite Series
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.4.1.
+\end_layout
+
+\begin_layout Standard
+A sequence 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ is increasing if 
+\begin_inset Formula $a_{n}\le a_{n+1}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+ and decreasing if 
+\begin_inset Formula $a_{n}\ge a_{n+1}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+.
+ A sequence is monotone if it is either increasing or decreasing.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.4.2 (Monotone Convergence Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If a sequence is monotone and bounded, then it converges.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename understanding analysis/chap2.5
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.4.3.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(b_{n})$
+\end_inset
+
+ be a sequence.
+ An infinite series is a formal expression of the form
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}b_{n}=b_{1}+b_{2}+b_{3}+\cdots.
+\]
+
+\end_inset
+
+Define the corresponding sequence of partial sums 
+\begin_inset Formula $(s_{m})$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+s_{m}=b_{1}+b_{2}+\cdots+b_{m},
+\]
+
+\end_inset
+
+and say that the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ converges to 
+\begin_inset Formula $B$
+\end_inset
+
+ if the sequence 
+\begin_inset Formula $(s_{m})$
+\end_inset
+
+ converges to 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ In this case, we write 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}=B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.4.6 (Cauchy Condensation Test).
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $(b_{n})$
+\end_inset
+
+ is decreasing and satisfies 
+\begin_inset Formula $b_{n}\ge0$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+.
+ Then, the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ converges if and only if the series
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}2^{n}b_{2^{n}}=b_{1}+2b_{2}+4b_{4}+8b_{8}+16b_{16}+\cdots
+\]
+
+\end_inset
+
+converges.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 2.4.7.
+\end_layout
+
+\begin_layout Standard
+The series 
+\begin_inset Formula $\sum_{n=1}^{\infty}1/n^{p}$
+\end_inset
+
+ converges if and only if 
+\begin_inset Formula $p>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 2.4.6 (Limit Superior).
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ be a bounded sequence.
+\end_layout
+
+\begin_layout Standard
+(a) Prove that the sequence defined by 
+\begin_inset Formula $y_{n}=\sup\left\{ a_{k}:k\ge n\right\} $
+\end_inset
+
+ converges.
+\end_layout
+
+\begin_layout Standard
+(b) The limit superior of 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+, or 
+\begin_inset Formula $\limsup a_{n}$
+\end_inset
+
+, is defined by
+\begin_inset Formula 
+\[
+\limsup a_{n}=\lim y_{n},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $y_{n}$
+\end_inset
+
+ is the sequence from part (a) of this exercise.
+ Provide a reasonable definition for 
+\begin_inset Formula $\liminf a_{n}$
+\end_inset
+
+ and briefly explain why it always exists for any bounded sequence.
+\end_layout
+
+\begin_layout Standard
+(c) Prove that 
+\begin_inset Formula $\liminf a_{n}\le\limsup a_{n}$
+\end_inset
+
+ for every bounded sequence, and give an example of a sequence for which
+ the inequality is strict.
+\end_layout
+
+\begin_layout Standard
+(d) Show that 
+\begin_inset Formula $\liminf a_{n}=\limsup a_{n}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $\lim a_{n}$
+\end_inset
+
+ exists.
+ In this case, all three share the same value.
+\end_layout
+
+\begin_layout Subsection
+Subsequence and the Bolzano-Weierstrass Theorem
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.5.1.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ be a sequence of real numbers, and let 
+\begin_inset Formula $n_{1}<n_{2}<n_{3}<n_{4}<n_{5}<\cdots$
+\end_inset
+
+ be an increasing sequence of natural numbers.
+ Then the sequence
+\begin_inset Formula 
+\[
+a_{n_{1}},a_{n_{2}},a_{n_{3}},\cdots
+\]
+
+\end_inset
+
+is called a subsequence of 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ and is denoted by 
+\begin_inset Formula $(a_{n_{j}})$
+\end_inset
+
+, where 
+\begin_inset Formula $j\in\NN$
+\end_inset
+
+ indexes the subsequence.
+\end_layout
+
+\begin_layout Standard
+The order of the terms in a subsequence is the same as in the original sequence,
+ and repetitions are not allowed.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.5.2.
+\end_layout
+
+\begin_layout Standard
+Subsequence of a convergent sequence converge to the same limit as the original
+ sequence.
+\end_layout
+
+\begin_layout Subsubsection
+The Bolzano-Weierstrass Theorem
+\end_layout
+
+\begin_layout Standard
+For bounded sequences, it is always possible to find at least one convergent
+ subsequence.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.5.5 (Bolzano-Weierstrass Theorem).
+\end_layout
+
+\begin_layout Standard
+Every bounded sequence contains a convergent subsequence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename understanding analysis/chap2.6
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Exercise 2.5.4.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ is a bounded sequence with the property that every convergent subsequence
+ of 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ converges to the same limit 
+\begin_inset Formula $a\in\RR$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ must converge to 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 2.5.6.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ be a bounded sequence, and define the set 
+\begin_inset Formula 
+\[
+S=\left\{ x\in\RR:x<a_{n}\text{ for infinitely many terms }a_{n}\right\} .
+\]
+
+\end_inset
+
+Show that there exists a subsequence 
+\begin_inset Formula $(a_{n_{k}})$
+\end_inset
+
+ converging to 
+\begin_inset Formula $s=\sup S$
+\end_inset
+
+.
+ (This is a direct proof of the Bolzano-Weierstrass Theorem using the Axiom
+ of Completeness.)
+\end_layout
+
+\begin_layout Subsection
+The Cauchy Criterion
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.6.1.
+\end_layout
+
+\begin_layout Standard
+A sequence 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ is called a Cauchy sequence if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $m,n\ge N$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $\left|a_{n}-a_{m}\right|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.2.3 (Convergence of a Sequence).
+\end_layout
+
+\begin_layout Standard
+A sequence 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ converges to a real number 
+\begin_inset Formula $a$
+\end_inset
+
+ if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n\ge N$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $\left|a_{n}-a\right|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.6.2.
+\end_layout
+
+\begin_layout Standard
+Every convergent sequence is a Cauchy sequence.
+\end_layout
+
+\begin_layout Paragraph
+Lemma 2.6.3.
+\end_layout
+
+\begin_layout Standard
+Cauchy sequences are bounded.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.6.4 (Cauchy Criterion).
+\end_layout
+
+\begin_layout Standard
+A sequence converges if and only if it is a Cauchy sequence.
+\end_layout
+
+\begin_layout Subsubsection
+Completeness Revisited
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{AoC}\Longrightarrow\begin{cases}
+\text{NIP}\Longrightarrow\text{BW}\Longrightarrow\text{CC}.\\
+\text{MCT}.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The assertion that ``set bounded above have least upper bounds
+\begin_inset Quotes erd
+\end_inset
+
+ is simply one way to mathematically articulate our insistence that there
+ be no ``holes
+\begin_inset Quotes erd
+\end_inset
+
+ in our number field, but it is not the only way.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 2.6.4.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ and 
+\begin_inset Formula $(b_{n})$
+\end_inset
+
+ are Cauchy sequences.
+ Use a triangle inequality argument to prove 
+\begin_inset Formula $c_{n}=\left|a_{n}-b_{n}\right|$
+\end_inset
+
+ is Cauchy.
+\end_layout
+
+\begin_layout Standard
+One can use Theorem 2.6.2 to give a prove.
+\end_layout
+
+\begin_layout Subsection
+Properties of Infinite Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.7.1 (Algebraic Limit Theorem for Series).
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}=A$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum_{k=1}^{\infty}b_{k}=B$
+\end_inset
+
+, then
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $\sum_{k=1}^{\infty}ca_{k}=cA$
+\end_inset
+
+ for all 
+\begin_inset Formula $c\in\RR$
+\end_inset
+
+ and
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $\sum_{k=1}^{\infty}(a_{k}+b_{k})=A+B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.7.2 (Cauchy Criterion for Series).
+ 
+\end_layout
+
+\begin_layout Standard
+The series 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+ converges if and only if, given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $n>m\ge N$
+\end_inset
+
+ it follows that 
+\begin_inset Formula 
+\[
+\left|a_{m+1}+a_{m+2}+\cdots+a_{n}\right|<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.7.4 (Comparison Test).
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $(a_{k})$
+\end_inset
+
+ and 
+\begin_inset Formula $(b_{k})$
+\end_inset
+
+ are sequences satisfying 
+\begin_inset Formula $0\le a_{k}\le b_{k}$
+\end_inset
+
+ for all 
+\begin_inset Formula $k\in\NN$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(i) If 
+\begin_inset Formula $\sum_{k=1}^{\infty}b_{k}$
+\end_inset
+
+ converges, then 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+ converges.
+\end_layout
+
+\begin_layout Standard
+(ii) If 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+ diverges, then 
+\begin_inset Formula $\sum_{k=1}^{\infty}b_{k}$
+\end_inset
+
+ diverges.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.7.6 (Absolute Convergece Test).
+\end_layout
+
+\begin_layout Standard
+If the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ converges, then 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ converges as well
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.7.7 (Alternating Series Test).
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(a_{n})$
+\end_inset
+
+ be a sequence satisfying,
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $a_{1}\ge a_{2}\ge a_{3}\ge\cdots\ge a_{n}\ge a_{n+1}\ge\cdots$
+\end_inset
+
+ and 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $(a_{n})\to0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Then, the alternating series 
+\begin_inset Formula $\sum_{n=1}^{\infty}(-1)^{n+1}a_{n}$
+\end_inset
+
+ converges.
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.7.8.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ converges, then we say that the original series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ converges absolutely.
+ If, on the other hand, the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ converges but the series of absolute values 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ does not converge, then we say that the original series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ converges conditionally.
+\end_layout
+
+\begin_layout Paragraph
+Definition 2.7.9.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+ be a series.
+ A series 
+\begin_inset Formula $\sum_{k=1}^{\infty}b_{k}$
+\end_inset
+
+ is called a rearrangement of 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+ if there exists a one-to-one, onto function 
+\begin_inset Formula $f:\NN\to\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $b_{f(k)}=a_{k}$
+\end_inset
+
+ for all 
+\begin_inset Formula $k\in\NN$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.7.10.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\sum_{k=1}^{\infty}a_{k}$
+\end_inset
+
+ converges absolutely, then any rearrangement of this series converges to
+ the same limit.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 2.7.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Proving the Alternating Series Test amounts to showing that the sequence
+ of partial sums 
+\begin_inset Formula 
+\[
+s_{n}=a_{1}-a_{2}+a_{3}-\cdots\pm a_{n}
+\]
+
+\end_inset
+
+converges.
+ Different characterizations of completeness lead to different proofs.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Prove the Alternating Series Test by showing that 
+\begin_inset Formula $\left(s_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Supply another proof for this result using the Nested Interval Property.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) Consider the subsequences 
+\begin_inset Formula $\left(s_{2n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(s_{2n+1}\right)$
+\end_inset
+
+, and show how the Monotone Convergence Theorem leads to a third proof for
+ the Alternating Series Test.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 2.7.9 (Ratio Test).
+ 
+\end_layout
+
+\begin_layout Standard
+Given a series 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ with 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+, the Ratio Test states that if 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ satisfies 
+\begin_inset Formula 
+\[
+\lim\left|\frac{a_{n+1}}{a_{n}}\right|=r<1,
+\]
+
+\end_inset
+
+then the series converges absolutely.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Let 
+\begin_inset Formula $r^{\prime}$
+\end_inset
+
+ satisfy 
+\begin_inset Formula $r<r^{\prime}<1$
+\end_inset
+
+.
+ (Why must such an 
+\begin_inset Formula $r^{\prime}$
+\end_inset
+
+ exist?) Explain why there exists an 
+\begin_inset Formula $N$
+\end_inset
+
+ such that 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+ implies 
+\begin_inset Formula $\left|a_{n+1}\right|\leq\left|a_{n}\right|r^{\prime}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Why does 
+\begin_inset Formula $\left|a_{N}\right|\sum\left(r^{\prime}\right)^{n}$
+\end_inset
+
+ necessarily converge? 
+\end_layout
+
+\begin_layout Standard
+(c) Now, show that 
+\begin_inset Formula $\sum\left|a_{n}\right|$
+\end_inset
+
+ converges.
+\end_layout
+
+\begin_layout Subsection
+Double Summations and Products of Infinite Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 2.8.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\left\{ a_{ij}:i,j\in\NN\right\} $
+\end_inset
+
+ be a doubly indexed array of real numbers.
+ If 
+\begin_inset Formula 
+\[
+\sum_{i=1}^{\infty}\sum_{j=1}^{\infty}\left|a_{ij}\right|
+\]
+
+\end_inset
+
+converges, then both 
+\begin_inset Formula $\sum_{i=1}^{\infty}\sum_{j=1}^{\infty}a_{ij}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum_{j=1}^{\infty}\sum_{i=1}^{\infty}a_{ij}$
+\end_inset
+
+ converge to the same value.
+ Moreover, 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}s_{nn}=\sum_{i=1}^{\infty}\sum_{j=1}^{\infty}a_{ij}=\sum_{j=1}^{\infty}\sum_{i=1}^{\infty}a_{ij},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $s_{nn}=\sum_{i=1}^{n}\sum_{j=1}^{n}a_{ij}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Epilogue
+\end_layout
+
+\begin_layout Standard
+Absolute convergence is an extremely desirable quality to manipulating series.
+ The hypothesis of absolute convergence essentially allows us to treat infinite
+ sums as though they were finite sums.
+ 
+\end_layout
+
+\begin_layout Section
+Basic Topology of 
+\begin_inset Formula $\RR$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Discussion: The Cantor Set
+\end_layout
+
+\begin_layout Standard
+the Cantor set 
+\begin_inset Formula $C$
+\end_inset
+
+ has zero length.
+ 
+\begin_inset Formula $C$
+\end_inset
+
+ is uncountable.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename understanding analysis/chap3.1
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Open and Closed Sets
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $a\in\RR$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, recall that the 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-neighborhood of 
+\begin_inset Formula $a$
+\end_inset
+
+ is the set
+\begin_inset Formula 
+\[
+V_{\epsilon}(a)=\left\{ x\in\RR:\left|x-a\right|<\epsilon\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $O\subseteq\RR$
+\end_inset
+
+ is open if for all points 
+\begin_inset Formula $a\in O$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-neighborhood 
+\begin_inset Formula $V_{\epsilon}(a)\subseteq O$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+(i) The union of an arbitrary collection of open sets is open.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) The intersection of a finite collection of open sets is open.
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.2.4.
+ 
+\end_layout
+
+\begin_layout Standard
+A point 
+\begin_inset Formula $x$
+\end_inset
+
+ is a limit point of a set 
+\begin_inset Formula $A$
+\end_inset
+
+ if every 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-neighborhood 
+\begin_inset Formula $V_{\epsilon}(x)$
+\end_inset
+
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+ intersects the set 
+\begin_inset Formula $A$
+\end_inset
+
+ in some point other than 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+limit points are also referred to as ``cluster points
+\begin_inset Quotes erd
+\end_inset
+
+ or ``accumulation points
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.2.5.
+ 
+\end_layout
+
+\begin_layout Standard
+A point 
+\begin_inset Formula $x$
+\end_inset
+
+ is a limit point of a set 
+\begin_inset Formula $A$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $x=\lim a_{n}$
+\end_inset
+
+ for some sequence 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ contained in 
+\begin_inset Formula $A$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $a_{n}\neq x$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+A point 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ is an isolated point of 
+\begin_inset Formula $A$
+\end_inset
+
+ if it is not a limit point of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.2.7.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $F\subseteq\RR$
+\end_inset
+
+ is closed if it contains its limit points.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.2.8.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $F\subseteq\RR$
+\end_inset
+
+ is closed if and only if every Cauchy sequence contained in 
+\begin_inset Formula $F$
+\end_inset
+
+ has a limit that is also an element of 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.2.10 (Density of 
+\begin_inset Formula $\QQ$
+\end_inset
+
+ in 
+\begin_inset Formula $\RR$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Given any 
+\begin_inset Formula $y\in\RR$
+\end_inset
+
+, there exists a sequence of rational numbers that converges to 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.2.11.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, let 
+\begin_inset Formula $L$
+\end_inset
+
+ be the set of all limit points of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ The closure of 
+\begin_inset Formula $A$
+\end_inset
+
+ is defined to be 
+\begin_inset Formula $\overline{A}=A\cup L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.2.12.
+ 
+\end_layout
+
+\begin_layout Standard
+For any 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, the closure 
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+ is a closed set and is the smallest closed set containing 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The complement of a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ is defined to be the set 
+\begin_inset Formula 
+\[
+A^{c}=\left\{ x\in\RR:x\not\in A\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.2.13.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $O$
+\end_inset
+
+ is open if and only if 
+\begin_inset Formula $O^{c}$
+\end_inset
+
+ is closed.
+ Likewise, a set 
+\begin_inset Formula $F$
+\end_inset
+
+ is closed if and only if 
+\begin_inset Formula $F^{c}$
+\end_inset
+
+ is open.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.2.14.
+ 
+\end_layout
+
+\begin_layout Standard
+(i) The union of a finite collection of closed sets is closed.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) The intersection of an arbitrary collection of closed sets is closed.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 3.2.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, let 
+\begin_inset Formula $L$
+\end_inset
+
+ be the set of all limit points of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Show that the set 
+\begin_inset Formula $L$
+\end_inset
+
+ is closed.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Argue that if 
+\begin_inset Formula $x$
+\end_inset
+
+ is a limit point of 
+\begin_inset Formula $A\cup L$
+\end_inset
+
+, then 
+\begin_inset Formula $x$
+\end_inset
+
+ is a limit point of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Compact Sets
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.3.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $K\subseteq\RR$
+\end_inset
+
+ is (sequentially) compact if every sequence in 
+\begin_inset Formula $K$
+\end_inset
+
+ has a subsequence that converges to a limit that is also in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.3.3.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ is bounded if there exists 
+\begin_inset Formula $M>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $|a|\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $a\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.3.4 (Heine-Borel Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $K\subseteq\RR$
+\end_inset
+
+ is compact if and only if it is closed and bounded.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.3.5.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $K_{1}\supseteq K_{2}\supseteq K_{3}\supseteq K_{4}\supseteq\cdots$
+\end_inset
+
+ is a nested sequence of nonempty compact sets, then the intersection 
+\begin_inset Formula $\bigcap_{n=1}^{\infty}K_{n}$
+\end_inset
+
+ is not empty.
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.3.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ An open cover for 
+\begin_inset Formula $A$
+\end_inset
+
+ is a (possibly infinite) collection of open sets 
+\begin_inset Formula $\left\{ O_{\lambda}:\lambda\in\Lambda\right\} $
+\end_inset
+
+ whose union contains the set 
+\begin_inset Formula $A$
+\end_inset
+
+; that is, 
+\begin_inset Formula $A\subseteq\bigcup_{\lambda\in\Lambda}O_{\lambda}$
+\end_inset
+
+.
+ Given an open cover for 
+\begin_inset Formula $A$
+\end_inset
+
+, a finite subcover is a finite subcollection of open sets from the original
+ open cover whose union still manages to completely contain 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.3.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $K$
+\end_inset
+
+ be a subset of 
+\begin_inset Formula $\RR$
+\end_inset
+
+.
+ All of the following statements are equivalent in the sense that any one
+ of them implies the two others: 
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $K$
+\end_inset
+
+ is compact.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $K$
+\end_inset
+
+ is closed and bounded.
+ 
+\end_layout
+
+\begin_layout Standard
+(iii) Any open cover for 
+\begin_inset Formula $K$
+\end_inset
+
+ has a finite subcover.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 3.3.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Show that if 
+\begin_inset Formula $K$
+\end_inset
+
+ is compact and 
+\begin_inset Formula $F$
+\end_inset
+
+ is closed, then 
+\begin_inset Formula $K\cap F$
+\end_inset
+
+ is compact.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 3.3.6.
+ 
+\end_layout
+
+\begin_layout Standard
+As some more evidence of the surprising nature of the Cantor set, follow
+ these steps to show that the sum 
+\begin_inset Formula $C+C=\{x+y:x,y\in C\}$
+\end_inset
+
+ is equal to the closed interval 
+\begin_inset Formula $[0,2]$
+\end_inset
+
+.
+ (Keep in mind that 
+\begin_inset Formula $C$
+\end_inset
+
+ has zero length and contains no intervals.)
+\end_layout
+
+\begin_layout Standard
+The observation that 
+\begin_inset Formula $\{x+y:x,y\in C\}\subseteq[0,2]$
+\end_inset
+
+ passes for obvious, so we only need to prove the reverse inclusion 
+\begin_inset Formula $[0,2]\subseteq\{x+y:x,y\in C\}$
+\end_inset
+
+.
+ Thus, given 
+\begin_inset Formula $s\in[0,2]$
+\end_inset
+
+, we must find two elements 
+\begin_inset Formula $x,y\in C$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $x+y=s$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Show that there exist 
+\begin_inset Formula $x_{1},y_{1}\in C_{1}$
+\end_inset
+
+ for which 
+\begin_inset Formula $x_{1}+y_{1}=s$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Show in general that, for an arbitrary 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, we can always find 
+\begin_inset Formula $x_{n},y_{n}\in C_{n}$
+\end_inset
+
+ for which 
+\begin_inset Formula $x_{n}+y_{n}=s$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Keeping in mind that the sequences 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ do not necessarily converge, show how they can nevertheless be used to
+ produce the desired 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ in 
+\begin_inset Formula $C$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $x+y=s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 3.3.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Decide whether the following propositions are true or false.
+ If the claim is valid, supply a short proof, and if the claim is false,
+ provide a counterexample.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) An arbitrary intersection of compact sets is compact.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Let 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ be arbitrary, and let 
+\begin_inset Formula $K\subseteq\RR$
+\end_inset
+
+ be compact.
+ Then, the intersection 
+\begin_inset Formula $A\cap K$
+\end_inset
+
+ is compact.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) If 
+\begin_inset Formula $F_{1}\supseteq F_{2}\supseteq F_{3}\supseteq F_{4}\supseteq\cdots$
+\end_inset
+
+ is a nested sequence of nonempty closed sets, then the intersection 
+\begin_inset Formula $\bigcap_{n=1}^{\infty}F_{n}\neq\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 3.3.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Follow these steps to prove the final implication in Theorem 3.3.8.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $K$
+\end_inset
+
+ satisfies (i) and (ii), and let 
+\begin_inset Formula $\left\{ O_{\lambda}:\lambda\in\Lambda\right\} $
+\end_inset
+
+ be an open cover for 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ For contradiction, let's assume that no finite subcover exists.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+ be a closed interval containing 
+\begin_inset Formula $K$
+\end_inset
+
+, and bisect 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+ into two closed intervals 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Why must either 
+\begin_inset Formula $A_{1}\cap K$
+\end_inset
+
+ or 
+\begin_inset Formula $B_{1}\cap K$
+\end_inset
+
+ (or both) have no finite subcover consisting of sets from 
+\begin_inset Formula $\left\{ O_{\lambda}:\lambda\in\Lambda\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Show that there exists a nested sequence of closed intervals 
+\begin_inset Formula $I_{0}\supseteq I_{1}\supseteq$
+\end_inset
+
+ 
+\begin_inset Formula $I_{2}\supseteq\cdots$
+\end_inset
+
+ with the property that, for each 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $I_{n}\cap K$
+\end_inset
+
+ cannot be finitely covered and 
+\begin_inset Formula $\lim\left|I_{n}\right|=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) Show that there exists an 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\in I_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) Because 
+\begin_inset Formula $x\in K$
+\end_inset
+
+, there must exist an open set 
+\begin_inset Formula $O_{\lambda_{0}}$
+\end_inset
+
+ from the original collection that contains 
+\begin_inset Formula $x$
+\end_inset
+
+ as an element.
+ Argue that there must be an 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ large enough to guarantee that 
+\begin_inset Formula $I_{n_{0}}\subseteq O_{\lambda_{0}}$
+\end_inset
+
+.
+ Explain why this furnishes us with the desired contradiction.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 3.3.10.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's call a set clompact if it has the property that every closed cover
+ (i.e., a cover consisting of closed sets) admits a finite subcover.
+ Describe all of the clompact subsets of 
+\begin_inset Formula $\RR$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Perfect Sets and Connected Sets
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.4.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $P\subseteq\RR$
+\end_inset
+
+ is perfect if it is closed and contains no isolated points.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.4.2.
+ 
+\end_layout
+
+\begin_layout Standard
+The Cantor set is perfect.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.4.3.
+\end_layout
+
+\begin_layout Standard
+A nonempty perfect set is uncountable.
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Two nonempty sets 
+\begin_inset Formula $A,B\subseteq\RR$
+\end_inset
+
+ are separated if 
+\begin_inset Formula $\overline{A}\cap B$
+\end_inset
+
+ and 
+\begin_inset Formula $A\cap\overline{B}$
+\end_inset
+
+ are both empty.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $E\subseteq\RR$
+\end_inset
+
+ is disconnected if it can be written as 
+\begin_inset Formula $E=A\cup B$
+\end_inset
+
+, where 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are nonempty separated sets.
+ 
+\end_layout
+
+\begin_layout Standard
+A set that is not disconnected is called a connected set.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.4.6.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $E\subseteq\RR$
+\end_inset
+
+ is connected if and only if, for all nonempty disjoint sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $E=A\cup B$
+\end_inset
+
+, there always exists a convergent sequence 
+\begin_inset Formula $\left(x_{n}\right)\rightarrow x$
+\end_inset
+
+ with 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ contained in one of 
+\begin_inset Formula $A$
+\end_inset
+
+ or 
+\begin_inset Formula $B$
+\end_inset
+
+, and 
+\begin_inset Formula $x$
+\end_inset
+
+ an element of the other.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.4.7.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $E\subseteq\RR$
+\end_inset
+
+ is connected if and only if whenever 
+\begin_inset Formula $a<c<b$
+\end_inset
+
+ with 
+\begin_inset Formula $a,b\in E$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $c\in E$
+\end_inset
+
+ as well.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 3.4.8.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $E$
+\end_inset
+
+ is totally disconnected if, given any two points 
+\begin_inset Formula $x,y\in$
+\end_inset
+
+ 
+\begin_inset Formula $E$
+\end_inset
+
+, there exist separated sets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ with 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, 
+\begin_inset Formula $y\in B$
+\end_inset
+
+, and 
+\begin_inset Formula $E=A\cup B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Show that 
+\begin_inset Formula $\QQ$
+\end_inset
+
+ is totally disconnected.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Is the set of irrational numbers totally disconnected? 
+\end_layout
+
+\begin_layout Paragraph
+Exercise 3.4.9.
+ 
+\end_layout
+
+\begin_layout Standard
+Follow these steps to show that the Cantor set 
+\begin_inset Formula $C=\bigcap_{n=0}^{\infty}C_{n}$
+\end_inset
+
+ described in Section 3.1 is totally disconnected in the sense described
+ in Exercise 3.4.8 
+\end_layout
+
+\begin_layout Standard
+(a) Given 
+\begin_inset Formula $x,y\in C$
+\end_inset
+
+, with 
+\begin_inset Formula $x<y$
+\end_inset
+
+, set 
+\begin_inset Formula $\epsilon=y-x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n=0,1,2,\ldots$
+\end_inset
+
+, the set 
+\begin_inset Formula $C_{n}$
+\end_inset
+
+ consists of a finite number of closed intervals.
+ 
+\end_layout
+
+\begin_layout Standard
+Explain why there must exist an 
+\begin_inset Formula $N$
+\end_inset
+
+ large enough so that it is impossible for 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ both to belong to the same closed interval of 
+\begin_inset Formula $C_{N}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Argue that there exists a point 
+\begin_inset Formula $z\notin C$
+\end_inset
+
+ such that 
+\begin_inset Formula $x<z<y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Explain how this proves that there can be no interval of the form 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ with 
+\begin_inset Formula $a<b$
+\end_inset
+
+ contained in 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) Show that 
+\begin_inset Formula $C$
+\end_inset
+
+ is totally disconnected.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 3.4.10.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\left\{ r_{1},r_{2},r_{3},\ldots\right\} $
+\end_inset
+
+ be an enumeration of the rational numbers, and for each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+ set 
+\begin_inset Formula $\epsilon_{n}=1/2^{n}$
+\end_inset
+
+.
+ Define 
+\begin_inset Formula $O=\bigcup_{n=1}^{\infty}V_{\epsilon_{n}}\left(r_{n}\right)$
+\end_inset
+
+, and let 
+\begin_inset Formula $F=O^{c}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Argue that 
+\begin_inset Formula $F$
+\end_inset
+
+ is a closed, nonempty set consisting only of irrational numbers.
+\end_layout
+
+\begin_layout Standard
+(b) Does 
+\begin_inset Formula $F$
+\end_inset
+
+ contain any nonempty open intervals? Is 
+\begin_inset Formula $F$
+\end_inset
+
+ totally disconnected? (See Exercise 3.4.8 for the definition.) 
+\end_layout
+
+\begin_layout Standard
+(c) Is it possible to know whether 
+\begin_inset Formula $F$
+\end_inset
+
+ is perfect? If not, can we modify this construction to produce a nonempty
+ perfect set of irrational numbers?
+\end_layout
+
+\begin_layout Subsection
+Baire's Theorem
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.5.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ is called an 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+ set if it can be written as the countable union of closed sets.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $B\subseteq\RR$
+\end_inset
+
+ is called a 
+\begin_inset Formula $G_{\delta}$
+\end_inset
+
+ set if it can be written as the countable intersection of open sets.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.5.2.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\left\{ G_{1},G_{2},G_{3},\ldots\right\} $
+\end_inset
+
+ is a countable collection of dense, open sets, then the intersection 
+\begin_inset Formula $\bigcap_{n=1}^{\infty}G_{n}$
+\end_inset
+
+ is not empty.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 3.5.4.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Starting with 
+\begin_inset Formula $n=1$
+\end_inset
+
+, inductively construct a nested sequence of closed intervals 
+\begin_inset Formula $I_{1}\supseteq I_{2}\supseteq I_{3}\supseteq\cdots$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $I_{n}\subseteq G_{n}$
+\end_inset
+
+.
+ Give special attention to the issue of the endpoints of each 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Now, use Theorem 3.3.5 or the Nested Interval Property to finish the proof.
+\end_layout
+
+\begin_layout Paragraph
+Definition 3.5.3.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $E$
+\end_inset
+
+ is nowhere-dense if 
+\begin_inset Formula $\overline{E}$
+\end_inset
+
+ contains no nonempty open intervals.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 3.5.4 (Baire's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+The set of real numbers 
+\begin_inset Formula $\RR$
+\end_inset
+
+ cannot be written as the countable union of nowhere-dense sets.
+\end_layout
+
+\begin_layout Subsection
+Epilogue
+\end_layout
+
+\begin_layout Standard
+Baire's Theorem is another statement about the size of 
+\begin_inset Formula $\RR$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+There are several ways to describe the sizes of infinite sets, such as,
+ cardinality, countable sets and uncountable sets.
+\end_layout
+
+\begin_layout Standard
+Nowhere-dense sets are considered to be ``thin
+\begin_inset Quotes erd
+\end_inset
+
+ sets.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C[0,1]$
+\end_inset
+
+ is a complete metric space.
+ The collection of continuous functions that are differentiable at even
+ one point can be written as the countable union of nowhere-dense sets.
+ Baire's Theorem implies that most continuous functions do not have derivates
+ at any point.
+\end_layout
+
+\begin_layout Section
+Functional Limits and Continuity
+\end_layout
+
+\begin_layout Standard
+这一节主要研究函数极限和连续性.
+ 
+\end_layout
+
+\begin_layout Standard
+4.2节给出相关定义和简单判别法.
+ 
+\end_layout
+
+\begin_layout Standard
+4.3节给出连续函数的刻画, 复合函数的连续性, 和压缩映射定理的例子.
+ 
+\end_layout
+
+\begin_layout Standard
+4.4节证明了连续函数保持紧性, 证明了紧集上的最值定理, 一致收敛性和Cantor定理, 最重要的是拓扑刻画, 最后给出一致连续函数的扩张定理.
+ 
+\end_layout
+
+\begin_layout Standard
+4.5节讲中值定理, 中值定理的数学本质是连续函数保连通性, 证明是不依赖于维数的拓扑证明.
+\end_layout
+
+\begin_layout Standard
+4.6节研究函数的不连续点集, 简单的有单调函数不连续点集的可数性定理, 对于一般函数的不连续点集与
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+集的对应定理, 给出了一个新的概念叫
+\begin_inset Formula $\alpha$
+\end_inset
+
+连续性, 由于不是
+\begin_inset Formula $\alpha$
+\end_inset
+
+连续的点集是闭集, 所以一般函数的不连续点集是一个
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+集, 最后指出Young给出了在仅在任给的
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+集上不连续的函数的构造.
+\end_layout
+
+\begin_layout Subsection
+Discussion: Examples of Dirichlet and Thomae
+\end_layout
+
+\begin_layout Subsection
+Functional Limits
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+, and let 
+\begin_inset Formula $c$
+\end_inset
+
+ be a limit point of the domain 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ We say that 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=L$
+\end_inset
+
+ provided that, for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $0<|x-c|<\delta$
+\end_inset
+
+ (and 
+\begin_inset Formula $x\in A$
+\end_inset
+
+) it follows that 
+\begin_inset Formula $|f(x)-L|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.2.1B (Topological Version).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $c$
+\end_inset
+
+ be a limit point of the domain of 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ We say 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=L$
+\end_inset
+
+ provided that, for every 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ neighborhood 
+\begin_inset Formula $V_{\epsilon}(L)$
+\end_inset
+
+ of 
+\begin_inset Formula $L$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta$
+\end_inset
+
+-neighborhood 
+\begin_inset Formula $V_{\delta}(c)$
+\end_inset
+
+ around 
+\begin_inset Formula $c$
+\end_inset
+
+ with the property that for all 
+\begin_inset Formula $x\in V_{\delta}(c)$
+\end_inset
+
+ different from 
+\begin_inset Formula $c$
+\end_inset
+
+ (with 
+\begin_inset Formula $x\in A$
+\end_inset
+
+) it follows that 
+\begin_inset Formula $f(x)\in V_{\epsilon}(L)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.2.3 (Sequential Criterion for Functional Limits).
+ 
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ and a limit point 
+\begin_inset Formula $c$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+, the following two statements are equivalent: 
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) For all sequences 
+\begin_inset Formula $\left(x_{n}\right)\subseteq A$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $x_{n}\neq c$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(x_{n}\right)\rightarrow c$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $f\left(x_{n}\right)\rightarrow L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 4.2.4 (Algebraic Limit Theorem for Functional Limits).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ be functions defined on a domain 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=L$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\rightarrow c}g(x)=M$
+\end_inset
+
+ for some limit point 
+\begin_inset Formula $c$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Then, 
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $\lim_{x\rightarrow c}kf(x)=kL$
+\end_inset
+
+ for all 
+\begin_inset Formula $k\in\mathbb{R}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $\lim_{x\rightarrow c}[f(x)+g(x)]=L+M$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+(iii) 
+\begin_inset Formula $\lim_{x\rightarrow c}[f(x)g(x)]=LM$
+\end_inset
+
+, and 
+\end_layout
+
+\begin_layout Standard
+(iv) 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)/g(x)=L/M$
+\end_inset
+
+, provided 
+\begin_inset Formula $M\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 4.2.5 (Divergence Criterion for Functional Limits).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be a function defined on 
+\begin_inset Formula $A$
+\end_inset
+
+, and let 
+\begin_inset Formula $c$
+\end_inset
+
+ be a limit point of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If there exist two sequences 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+ with 
+\begin_inset Formula $x_{n}\neq c$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{n}\neq c$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\lim x_{n}=\lim y_{n}=c\quad\text{ but }\quad\lim f\left(x_{n}\right)\neq\lim f\left(y_{n}\right)
+\]
+
+\end_inset
+
+then we can conclude that the functional limit 
+\begin_inset Formula $\lim_{x\rightarrow c}f(c)$
+\end_inset
+
+ does not exist.
+\end_layout
+
+\begin_layout Subsection
+Combinations of Continuous Functions
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.3.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ is continuous at a point 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ if, for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $|x-c|<\delta$
+\end_inset
+
+ (and 
+\begin_inset Formula $x\in A)$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $|f(x)-f(c)|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at every point in the domain 
+\begin_inset Formula $A$
+\end_inset
+
+, then we say that 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.3.2 (Characterizations of Continuity).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+, and let 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ be a limit point of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+ if and only if any one of the following conditions is met: 
+\end_layout
+
+\begin_layout Standard
+(i) For all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $|x-c|<\delta$
+\end_inset
+
+ (and 
+\begin_inset Formula $x\in A)$
+\end_inset
+
+ implies 
+\begin_inset Formula $|f(x)-f(c)|<\epsilon$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=f(c)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(iii) For all 
+\begin_inset Formula $V_{\epsilon}(f(c))$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $V_{\delta}(c)$
+\end_inset
+
+ with the property that 
+\begin_inset Formula $x\in V_{\delta}(c)$
+\end_inset
+
+ (and 
+\begin_inset Formula $x\in A)$
+\end_inset
+
+ implies 
+\begin_inset Formula $f(x)\in V_{\epsilon}(f(c))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(iv) If 
+\begin_inset Formula $\left(x_{n}\right)\rightarrow c$
+\end_inset
+
+ (with 
+\begin_inset Formula $x_{n}\in A$
+\end_inset
+
+), then 
+\begin_inset Formula $f\left(x_{n}\right)\rightarrow f(c)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 4.3.3 (Criterion for Discontinuity).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+, and let 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ be a limit point of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If there exists a sequence 
+\begin_inset Formula $\left(x_{n}\right)\subseteq A$
+\end_inset
+
+ where 
+\begin_inset Formula $\left(x_{n}\right)\rightarrow c$
+\end_inset
+
+ but such that 
+\begin_inset Formula $f\left(x_{n}\right)$
+\end_inset
+
+ does not converge to 
+\begin_inset Formula $f(c)$
+\end_inset
+
+, we may conclude that 
+\begin_inset Formula $f$
+\end_inset
+
+ is not continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.3.4 (Algebraic Continuity Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $g:A\rightarrow\mathbb{R}$
+\end_inset
+
+ are continuous at a point 
+\begin_inset Formula $c\in A$
+\end_inset
+
+.
+ Then, 
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $kf(x)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+ for all 
+\begin_inset Formula $k\in\mathbb{R}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $f(x)+g(x)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(iii) 
+\begin_inset Formula $f(x)g(x)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+; and 
+\end_layout
+
+\begin_layout Standard
+(iv) 
+\begin_inset Formula $f(x)/g(x)$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+, provided the quotient is defined.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.3.9 (Composition of Continuous Functions).
+ 
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $f:A\rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $g:B\rightarrow\mathbb{R}$
+\end_inset
+
+, assume that the range 
+\begin_inset Formula $f(A)=\{f(x):x\in A\}$
+\end_inset
+
+ is contained in the domain 
+\begin_inset Formula $B$
+\end_inset
+
+ so that the composition 
+\begin_inset Formula $g\circ f(x)=g(f(x))$
+\end_inset
+
+ is well-defined on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, and if 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $f(c)\in B$
+\end_inset
+
+, then 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.3.9 (Contraction Mapping Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be a function defined on all of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, and assume there is a constant 
+\begin_inset Formula $c$
+\end_inset
+
+ such that 
+\begin_inset Formula $0<c<1$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+|f(x)-f(y)|\leq c|x-y|
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Pick some point 
+\begin_inset Formula $y_{1}\in\mathbb{R}$
+\end_inset
+
+ and construct the sequence 
+\begin_inset Formula 
+\[
+\left(y_{1},f\left(y_{1}\right),f\left(f\left(y_{1}\right)\right),\ldots\right).
+\]
+
+\end_inset
+
+In general, if 
+\begin_inset Formula $y_{n+1}=f\left(y_{n}\right)$
+\end_inset
+
+, show that the resulting sequence 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+ Hence we may let 
+\begin_inset Formula $y=\lim y_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) Prove that 
+\begin_inset Formula $y$
+\end_inset
+
+ is a fixed point of 
+\begin_inset Formula $f$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $f(y)=y$
+\end_inset
+
+) and that it is unique in this regard.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) Finally, prove that if 
+\begin_inset Formula $x$
+\end_inset
+
+ is any arbitrary point in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ then the sequence 
+\begin_inset Formula $(x,f(x),f(f(x)),\ldots)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $y$
+\end_inset
+
+ defined in (b).
+\end_layout
+
+\begin_layout Subsection
+Continuous Functions on Compact Sets
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.4.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ and a subset 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+, let 
+\begin_inset Formula $f(B)$
+\end_inset
+
+ represent the range of 
+\begin_inset Formula $f$
+\end_inset
+
+ over the set 
+\begin_inset Formula $B$
+\end_inset
+
+; that is, 
+\begin_inset Formula $f(B)=\{f(x):x\in B\}$
+\end_inset
+
+.
+ We say 
+\begin_inset Formula $f$
+\end_inset
+
+ is bounded if 
+\begin_inset Formula $f(A)$
+\end_inset
+
+ is bounded in the sense of Definition 2.3.1.
+ 
+\end_layout
+
+\begin_layout Standard
+For a given subset 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+, we say 
+\begin_inset Formula $f$
+\end_inset
+
+ is bounded on 
+\begin_inset Formula $B$
+\end_inset
+
+ if 
+\begin_inset Formula $f(B)$
+\end_inset
+
+ is bounded.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.4.2 (Preservation of Compact Sets).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ be continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $K\subseteq A$
+\end_inset
+
+ is compact, then 
+\begin_inset Formula $f(K)$
+\end_inset
+
+ is compact as well.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.4.3 (Extreme Value Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f:K\rightarrow\mathbb{R}$
+\end_inset
+
+ is continuous on a compact set 
+\begin_inset Formula $K\subseteq\mathbb{R}$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ attains a maximum and minimum value.
+ In other words, there exists 
+\begin_inset Formula $x_{0},x_{1}\in K$
+\end_inset
+
+ such that 
+\begin_inset Formula $f\left(x_{0}\right)\leq f(x)\leq f\left(x_{1}\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.4.5.
+ 
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+ if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $|x-y|<\delta$
+\end_inset
+
+ implies 
+\begin_inset Formula $|f(x)-f(y)|<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.4.6 (Sequential Criterion for Nonuniform Continuity).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ fails to be uniformly continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+ if there exists a particular 
+\begin_inset Formula $\epsilon_{0}>0$
+\end_inset
+
+ and two sequences 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(y_{n}\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+ satisfying 
+\begin_inset Formula 
+\[
+\left|x_{n}-y_{n}\right|\rightarrow0\quad\text{ but }\quad\left|f\left(x_{n}\right)-f\left(y_{n}\right)\right|\geq\epsilon_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.4.8.
+ (Cantor's Theorem)
+\end_layout
+
+\begin_layout Standard
+A function that is continuous on a compact set 
+\begin_inset Formula $K$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.4.11 (Topological Characterization of Continuity).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $g$
+\end_inset
+
+ be defined on all of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a subset of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, define the set 
+\begin_inset Formula $g^{-1}(A)$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+g^{-1}(A)=\{x\in\mathbb{R}:g(x)\in A\}.
+\]
+
+\end_inset
+
+Show that 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous if and only if 
+\begin_inset Formula $g^{-1}(O)$
+\end_inset
+
+ is open whenever 
+\begin_inset Formula $O\subseteq\mathbb{R}$
+\end_inset
+
+ is an open set.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.4.13 (Continuous Extension Theorem).
+\end_layout
+
+\begin_layout Standard
+(a) Show that a uniformly continuous function preserves Cauchy sequences;
+ that is, if 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ is uniformly continuous and 
+\begin_inset Formula $\left(x_{n}\right)\subseteq A$
+\end_inset
+
+ is a Cauchy sequence, then show 
+\begin_inset Formula $f\left(x_{n}\right)$
+\end_inset
+
+ is a Cauchy sequence.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Let 
+\begin_inset Formula $g$
+\end_inset
+
+ be a continuous function on the open interval 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $g$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ if and only if it is possible to define values 
+\begin_inset Formula $g(a)$
+\end_inset
+
+ and 
+\begin_inset Formula $g(b)$
+\end_inset
+
+ at the endpoints so that the extended function 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ (In the forward direction, first produce candidates for 
+\begin_inset Formula $g(a)$
+\end_inset
+
+ and 
+\begin_inset Formula $g(b)$
+\end_inset
+
+, and then show the extended 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous.)
+\end_layout
+
+\begin_layout Subsection
+The Intermediate Value Theorem
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.5.1 (Intermediate Value Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f:[a,b]\rightarrow\mathbb{R}$
+\end_inset
+
+ is continuous, and if 
+\begin_inset Formula $L$
+\end_inset
+
+ is a real number satisfying 
+\begin_inset Formula $f(a)<L<f(b)$
+\end_inset
+
+ or 
+\begin_inset Formula $f(a)>L>$
+\end_inset
+
+ 
+\begin_inset Formula $f(b)$
+\end_inset
+
+, then there exists a point 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+ where 
+\begin_inset Formula $f(c)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.5.2 (Preservation of Connectedness).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ be continuous.
+ If 
+\begin_inset Formula $E\subseteq A$
+\end_inset
+
+ is connected, then 
+\begin_inset Formula $f(E)$
+\end_inset
+
+ is connected as well.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.5.3.
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f$
+\end_inset
+
+ has the intermediate value property on an interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if for all 
+\begin_inset Formula $x<y$
+\end_inset
+
+ in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and all 
+\begin_inset Formula $L$
+\end_inset
+
+ between 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $f(y)$
+\end_inset
+
+, it is always possible to find a point 
+\begin_inset Formula $c\in(x,y)$
+\end_inset
+
+ where 
+\begin_inset Formula $f(c)=L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Sets of Discontinuity
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+, define 
+\begin_inset Formula $D_{f}\subseteq\mathbb{R}$
+\end_inset
+
+ to be the set of points where the function 
+\begin_inset Formula $f$
+\end_inset
+
+ fails to be continuous.
+\end_layout
+
+\begin_layout Standard
+The set of discontinuities of a real-valued function on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ has a specific topological structure that is not possessed by every subset
+ of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.6.1.
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ is increasing on 
+\begin_inset Formula $A$
+\end_inset
+
+ if 
+\begin_inset Formula $f(x)\leq f(y)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $x<y$
+\end_inset
+
+ and decreasing if 
+\begin_inset Formula $f(x)\geq f(y)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $x<y$
+\end_inset
+
+ in 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A monotone function is one that is either increasing or decreasing.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.6.2 (Right-hand limit).
+ 
+\end_layout
+
+\begin_layout Standard
+Given a limit point 
+\begin_inset Formula $c$
+\end_inset
+
+ of a set 
+\begin_inset Formula $A$
+\end_inset
+
+ and a function 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+, we write 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow c^{+}}f(x)=L
+\]
+
+\end_inset
+
+if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $|f(x)-L|<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $0<x-c<\delta$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Equivalently, in terms of sequences, 
+\begin_inset Formula $\lim_{x\rightarrow c^{+}}f(x)=L$
+\end_inset
+
+ if 
+\begin_inset Formula $\lim f\left(x_{n}\right)=L$
+\end_inset
+
+ for all sequences 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $x_{n}>c$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim\left(x_{n}\right)=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.6.3.
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $f:A\rightarrow\mathbb{R}$
+\end_inset
+
+ and a limit point 
+\begin_inset Formula $c$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $\lim_{x\rightarrow c}f(x)=L$
+\end_inset
+
+ if and only if 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow c^{+}}f(x)=L\quad\text{ and }\quad\lim_{x\rightarrow c^{-}}f(x)=L.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.6.4.
+\end_layout
+
+\begin_layout Standard
+A set that can be written as the countable union of closed sets is in the
+ class 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 4.6.5.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be defined on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, and let 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous at 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ if there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $y,z\in(x-\delta,x+\delta)$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $|f(y)-f(z)|<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, define 
+\begin_inset Formula $D_{\alpha}$
+\end_inset
+
+ to be the set of points where the function 
+\begin_inset Formula $f$
+\end_inset
+
+ fails to be 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous.
+ In other words, 
+\begin_inset Formula 
+\[
+D_{\alpha}=\{x\in\mathbb{R}:f\text{ is not }\alpha\text{-continuous at }x\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.6.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Prove that, for a fixed 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+, the set 
+\begin_inset Formula $D_{\alpha}$
+\end_inset
+
+ is closed.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 4.6.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ be an arbitary function.
+ Then, 
+\begin_inset Formula $D_{f}$
+\end_inset
+
+ is an 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+ set.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.6.8.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\alpha_{1}<\alpha_{2}$
+\end_inset
+
+, show that 
+\begin_inset Formula $D_{\alpha_{2}}\subseteq D_{\alpha_{1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.6.9.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+ be given.
+ Show that if 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $x$
+\end_inset
+
+, then it is 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous at 
+\begin_inset Formula $x$
+\end_inset
+
+ as well.
+ Explain how it follows that 
+\begin_inset Formula $D_{\alpha}\subseteq D_{f}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 4.6.10.
+\end_layout
+
+\begin_layout Standard
+Show that if 
+\begin_inset Formula $f$
+\end_inset
+
+ is not continuous at 
+\begin_inset Formula $x$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is not 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ continuous for some 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+.
+ Now explain why this guarantees that 
+\begin_inset Formula 
+\[
+D_{f}=\bigcup_{n=1}^{\infty}D_{\frac{1}{n}}.
+\]
+
+\end_inset
+
+Because each 
+\begin_inset Formula $D_{\frac{1}{n}}$
+\end_inset
+
+ is closed, the proof is complete.
+\end_layout
+
+\begin_layout Subsection
+Epilogue
+\end_layout
+
+\begin_layout Standard
+Given an arbitrary 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+ set, W.
+ H.
+ Young showed in 1903 that it is always possible to construct a function
+ that has discontinuities precisely on this set.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula 
+\[
+D=\left\{ x_{1},x_{2},x_{3},x_{4},\ldots\right\} 
+\]
+
+\end_inset
+
+be an arbitrary countable set of real numbers, construct a monotone function
+ that has discontinuities precisely on 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+The Derivative
+\end_layout
+
+\begin_layout Standard
+本节面临的问题: 连续函数是否总是可微的? 如果不是, 不可微程度如何? 可微函数是否连续? 如果函数
+\begin_inset Formula $f$
+\end_inset
+
+在每一点处可导, 我们能对
+\begin_inset Formula $f'$
+\end_inset
+
+说些什么? 它是否连续? 对于所有导数的可能取值是否有什么限制? 另一方面, 对于任意给定的函数
+\begin_inset Formula $g$
+\end_inset
+
+, 能否找到一个可微函数
+\begin_inset Formula $f$
+\end_inset
+
+, 使得
+\begin_inset Formula $f'=g$
+\end_inset
+
+? 要使这样的
+\begin_inset Formula $f$
+\end_inset
+
+存在, 
+\begin_inset Formula $g$
+\end_inset
+
+要有哪些性质?
+\end_layout
+
+\begin_layout Subsection
+Discussion: Are Derivatives Continuous?
+\end_layout
+
+\begin_layout Subsection
+Derivatives and the Intermediate Value Property
+\end_layout
+
+\begin_layout Paragraph
+Definition 5.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $g:A\rightarrow\RR$
+\end_inset
+
+ be a function defined on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Given 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, the derivative of 
+\begin_inset Formula $g$
+\end_inset
+
+ at 
+\begin_inset Formula $c$
+\end_inset
+
+ is defined by 
+\begin_inset Formula 
+\[
+g^{\prime}(c)=\lim_{x\rightarrow c}\frac{g(x)-g(c)}{x-c},
+\]
+
+\end_inset
+
+provided this limit exists.
+ If 
+\begin_inset Formula $g^{\prime}$
+\end_inset
+
+ exists for all points 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, we say that 
+\begin_inset Formula $g$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $g:A\rightarrow\RR$
+\end_inset
+
+ is differentiable at a point 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+ as well.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.2.5 (Chain Rule).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:A\rightarrow\RR$
+\end_inset
+
+ and 
+\begin_inset Formula $g:B\rightarrow\RR$
+\end_inset
+
+ satisfy 
+\begin_inset Formula $f(A)\subseteq$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ so that the composition 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ is well-defined.
+ If 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c\in A$
+\end_inset
+
+ and if 
+\begin_inset Formula $g$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $f(c)\in B$
+\end_inset
+
+, then 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ is differentiable at 
+\begin_inset Formula $c$
+\end_inset
+
+ with 
+\begin_inset Formula $(g\circ f)^{\prime}(c)=g^{\prime}(f(c))\cdot f^{\prime}(c)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.2.6 (Interior Extremum Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be differentiable on an open interval 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $f$
+\end_inset
+
+ attains a maximum value at some point 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $f(c)\geq f(x)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in(a,b)$
+\end_inset
+
+), then 
+\begin_inset Formula $f^{\prime}(c)=0$
+\end_inset
+
+.
+ The same is true if 
+\begin_inset Formula $f(c)$
+\end_inset
+
+ is a minimum value.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.2.7 (Darboux's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on an interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and if 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $f^{\prime}(a)<\alpha<f^{\prime}(b)$
+\end_inset
+
+ (or 
+\begin_inset Formula $f^{\prime}(a)>\alpha>f^{\prime}(b)$
+\end_inset
+
+), then there exists a point 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+ where 
+\begin_inset Formula $f^{\prime}(c)=\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 5.2.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Review the definition of uniform continuity (Definition 4.4.5) and also the
+ content of Theorem 4.4.8, which states that continuous functions on compact
+ sets are uniformly continuous.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Propose a definition for what it should mean to say that 
+\begin_inset Formula $f:A\rightarrow\RR$
+\end_inset
+
+ is uniformly differentiable on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Give an example of a uniformly differentiable function on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) Is there a theorem analogous to Theorem 4.4.8 for differentiation? Are
+ functions that are differentiable on a closed interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ necessarily uniformly differentiable? The class of examples discussed in
+ Section 
+\begin_inset Formula $5.1$
+\end_inset
+
+ may be useful.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 5.2.8.
+\end_layout
+
+\begin_layout Standard
+Decide whether each conjecture is true or false.
+ Provide an argument for those that are true and a counterexample for each
+ one that is false.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) If a derivative function is not constant, then the derivative must take
+ on some irrational values.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) If 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ exists on an open interval, and there is some point 
+\begin_inset Formula $c$
+\end_inset
+
+ where 
+\begin_inset Formula $f^{\prime}(c)>0$
+\end_inset
+
+, then there exists a 
+\begin_inset Formula $\delta$
+\end_inset
+
+-neighborhood 
+\begin_inset Formula $V_{\delta}(c)$
+\end_inset
+
+ around 
+\begin_inset Formula $c$
+\end_inset
+
+ in which 
+\begin_inset Formula $f^{\prime}(x)>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in V_{\delta}(c)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) If 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on an interval containing zero and if 
+\begin_inset Formula $\lim_{x\rightarrow0}f^{\prime}(x)=$
+\end_inset
+
+ 
+\begin_inset Formula $L$
+\end_inset
+
+, then it must be that 
+\begin_inset Formula $L=f^{\prime}(0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) Repeat conjecture (c) but drop the assumption that 
+\begin_inset Formula $f^{\prime}(0)$
+\end_inset
+
+ necessarily exists.
+ If 
+\begin_inset Formula $f^{\prime}(x)$
+\end_inset
+
+ exists for all 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+ and if 
+\begin_inset Formula $\lim_{x\rightarrow0}f^{\prime}(x)=L$
+\end_inset
+
+, then 
+\begin_inset Formula $f^{\prime}(0)$
+\end_inset
+
+ exists and equals 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+The Mean Value Theorem
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.3.1 (Rolle's Theorem).
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ be continuous on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and differentiable on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $f(a)=f(b)$
+\end_inset
+
+, then there exists a point 
+\begin_inset Formula $c\in$
+\end_inset
+
+ 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ where 
+\begin_inset Formula $f^{\prime}(c)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.3.2 (Mean Value Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and differentiable on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+, then there exists a point 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+f^{\prime}(c)=\frac{f(b)-f(a)}{b-a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Corollary 5.3.3.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $g:A\rightarrow\RR$
+\end_inset
+
+ is differentiable on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+ and satisfies 
+\begin_inset Formula $g^{\prime}(x)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $g(x)=k$
+\end_inset
+
+ for some constant 
+\begin_inset Formula $k\in\RR$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 5.3.4.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ are differentiable functions on an interval 
+\begin_inset Formula $A$
+\end_inset
+
+ and satisfy 
+\begin_inset Formula $f^{\prime}(x)=g^{\prime}(x)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $f(x)=g(x)+k$
+\end_inset
+
+ for some constant 
+\begin_inset Formula $k\in\RR$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.3.5 (Generalized Mean Value Theorem).
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ are continuous on the closed interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and differentiable on the open interval 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+, then there exists a point 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+[f(b)-f(a)]g^{\prime}(c)=[g(b)-g(a)]f^{\prime}(c).
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $g^{\prime}$
+\end_inset
+
+ is never zero on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+, then the conclusion can be stated as 
+\begin_inset Formula 
+\[
+\frac{f^{\prime}(c)}{g^{\prime}(c)}=\frac{f(b)-f(a)}{g(b)-g(a)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.3.6 (L'Hospital's Rule: 
+\begin_inset Formula $0/0$
+\end_inset
+
+ case).
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ are continuous functions defined on an interval containing 
+\begin_inset Formula $a$
+\end_inset
+
+, and assume that 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ are differentiable on this interval, with the possible exception of the
+ point 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $f(a)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $g(a)=0$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow a}\frac{f^{\prime}(x)}{g^{\prime}(x)}=L\quad\Longrightarrow\quad\lim_{x\rightarrow a}\frac{f(x)}{g(x)}=L.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 5.3.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $g:A\rightarrow\RR$
+\end_inset
+
+ and a limit point 
+\begin_inset Formula $c$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+, we say that 
+\begin_inset Formula $\lim_{x\rightarrow c}g(x)=\infty$
+\end_inset
+
+ if, for every 
+\begin_inset Formula $M>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $0<|x-c|<\delta$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $g(x)\geq M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We can define 
+\begin_inset Formula $\lim_{x\rightarrow c}g(x)=-\infty$
+\end_inset
+
+ in a similar way.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 5.3.8 (L'Hospital's Rule: 
+\begin_inset Formula $\infty/\infty$
+\end_inset
+
+ case).
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ are differentiable on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+, and that 
+\begin_inset Formula $\lim_{x\rightarrow a}g(x)=\infty$
+\end_inset
+
+ (or 
+\begin_inset Formula $-\infty)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow a}\frac{f^{\prime}(x)}{g^{\prime}(x)}=L\quad\Longrightarrow\quad\lim_{x\rightarrow a}\frac{f(x)}{g(x)}=L.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Exercise 5.3.7.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Recall that a function 
+\begin_inset Formula $f:(a,b)\rightarrow\RR$
+\end_inset
+
+ is increasing on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ if 
+\begin_inset Formula $f(x)\leq f(y)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $x<y$
+\end_inset
+
+ in 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ Assume 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ Show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is increasing on 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $f^{\prime}(x)\geq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in(a,b)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Show that the function 
+\begin_inset Formula 
+\[
+g(x)=\begin{cases}
+x/2+x^{2}\sin(1/x) & \text{ if }x\neq0\\
+0 & \text{ if }x=0
+\end{cases}
+\]
+
+\end_inset
+
+is differentiable on 
+\begin_inset Formula $\RR$
+\end_inset
+
+ and satisfies 
+\begin_inset Formula $g^{\prime}(0)>0$
+\end_inset
+
+.
+ Now, prove that 
+\begin_inset Formula $g$
+\end_inset
+
+ is not increasing over any open interval containing 0.
+\end_layout
+
+\begin_layout Section
+Sequences and Series of Functions
+\end_layout
+
+\begin_layout Standard
+这章比较重要的结论有Abel定理, 用幂级数的内闭一致收敛得到逐项微分的可行性, 收敛半径的概念.
+ Abel定理保证了区间端点的收敛性可以证明
+\begin_inset Formula $[0,R]$
+\end_inset
+
+上幂级数的一致收敛性, 从而收敛于一个连续函数, 再由Cantor定理说明幂级数在
+\begin_inset Formula $[0,R]$
+\end_inset
+
+上有一致连续性.
+ 
+\end_layout
+
+\begin_layout Standard
+逐项微分的合理性用于求解Taylor展开的系数, 解析函数如果有Taylor展开表示, 则Taylor系数与导数的关系.
+ 提出反问题则是, 如果解析函数的Taylor级数的系数与其导数的表示, 则泰勒级数是否收敛于给定的解析函数? 然后引入Lagrange余项,
+ 但是因为以下反例的存在, 这个余项并不能用来证明一般的函数的Taylor级数收敛于函数本身.
+\begin_inset Formula 
+\[
+g(x)=\begin{cases}
+\ue^{-1/x^{2}}, & \text{ for }x\ne0,\\
+0, & \text{ for }x=0.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Discussion: Branching Processes
+\end_layout
+
+\begin_layout Subsection
+Uniform Convergence of a Sequence of Functions
+\end_layout
+
+\begin_layout Paragraph
+Definition 6.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a function defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ The sequence 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ of functions converges pointwise on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a function 
+\begin_inset Formula $f:A\rightarrow\RR$
+\end_inset
+
+ if, for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, the sequence of real numbers 
+\begin_inset Formula $f_{n}(x)$
+\end_inset
+
+ converges to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 6.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a sequence of functions defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a limit function 
+\begin_inset Formula $f$
+\end_inset
+
+ defined on 
+\begin_inset Formula $A$
+\end_inset
+
+ if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|f_{n}(x)-f(x)\right|<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 6.2.1B.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a sequence of functions defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges pointwise on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a limit 
+\begin_inset Formula $f$
+\end_inset
+
+ defined on 
+\begin_inset Formula $A$
+\end_inset
+
+ if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in A$
+\end_inset
+
+, there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ (perhaps dependent on 
+\begin_inset Formula $x$
+\end_inset
+
+) such that 
+\begin_inset Formula $\left|f_{n}(x)-f(x)\right|<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.2.5 (Cauchy Criterion for Uniform Convergence).
+ 
+\end_layout
+
+\begin_layout Standard
+A sequence of functions 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ if and only if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|f_{n}(x)-f_{m}(x)\right|<\epsilon$
+\end_inset
+
+ for all 
+\begin_inset Formula $m,n\geq N$
+\end_inset
+
+ and all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.2.6.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ be a sequence of functions defined on 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ that converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a function 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ If each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly to 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+ and that each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Decide which of the following conjectures are true and which are false.
+ Supply a proof for those that are valid and a counterexample for each one
+ that is not.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) If 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ pointwise on a compact set 
+\begin_inset Formula $K$
+\end_inset
+
+, then 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b) If 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ is a bounded function on 
+\begin_inset Formula $A$
+\end_inset
+
+, then 
+\begin_inset Formula $f_{n}g\rightarrow fg$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c) If 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+, and if each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is bounded on 
+\begin_inset Formula $A$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ must also be bounded.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) If 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on a set 
+\begin_inset Formula $A$
+\end_inset
+
+, and if 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on a set 
+\begin_inset Formula $B$
+\end_inset
+
+, then 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(e) If 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on an interval, and if each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is increasing, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is also increasing.
+ 
+\end_layout
+
+\begin_layout Standard
+(f) Repeat conjecture (e) assuming only pointwise convergence.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.11.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $(f_{n})$
+\end_inset
+
+ and 
+\begin_inset Formula $(g_{n})$
+\end_inset
+
+ are uniformly convergent sequences of functions.
+\end_layout
+
+\begin_layout Standard
+(b) Give an example to show that the product 
+\begin_inset Formula $\left(f_{n}g_{n}\right)$
+\end_inset
+
+ may not converge uniformly.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.12.
+ 
+\end_layout
+
+\begin_layout Standard
+Theorem 6.2.6 has a partial converse.
+ Assume 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ pointwise on a compact set 
+\begin_inset Formula $K$
+\end_inset
+
+ and assume that for each 
+\begin_inset Formula $x\in K$
+\end_inset
+
+ the sequence 
+\begin_inset Formula $f_{n}(x)$
+\end_inset
+
+ is increasing.
+ Follow these steps to show that if 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $f$
+\end_inset
+
+ are continuous on 
+\begin_inset Formula $K$
+\end_inset
+
+, then the convergence is uniform.
+ 
+\end_layout
+
+\begin_layout Standard
+(a) Set 
+\begin_inset Formula $g_{n}=f-f_{n}$
+\end_inset
+
+ and translate the preceding hypothesis into statements about the sequence
+ 
+\begin_inset Formula $\left(g_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b) Let 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ be arbitrary, and define 
+\begin_inset Formula $K_{n}=\left\{ x\in K:g_{n}(x)\geq\epsilon\right\} $
+\end_inset
+
+.
+ Argue that 
+\begin_inset Formula $K_{1}\supseteq K_{2}\supseteq K_{3}\supseteq\cdots$
+\end_inset
+
+ is a nested sequence of compact sets, and use this observation to finish
+ the argument.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.13 (Cantor Function).
+\end_layout
+
+\begin_layout Standard
+Review the construction of the Cantor set 
+\begin_inset Formula $C\subseteq[0,1]$
+\end_inset
+
+ from Section 3.1.
+ This exercise makes use of results and notation from this discussion.
+\end_layout
+
+\begin_layout Standard
+(a) Define 
+\begin_inset Formula $f_{0}(x)=x$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in[0,1]$
+\end_inset
+
+.
+ Now, let 
+\begin_inset Formula 
+\[
+f_{1}(x)=\begin{cases}
+(3/2)x & \text{ for }0\leq x\leq1/3\\
+1/2 & \text{ for }1/3<x<2/3\\
+(3/2)x-1/2 & \text{ for }2/3\leq x\leq1
+\end{cases}
+\]
+
+\end_inset
+
+Sketch 
+\begin_inset Formula $f_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ over 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ and observe that 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ is continuous, increasing, and constant on the middle third 
+\begin_inset Formula $(1/3,2/3)=[0,1]\backslash C_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b) Construct 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ by imitating this process of flattening out the middle third of each nonconstan
+t segment of 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+.
+ Specifically, let 
+\begin_inset Formula 
+\[
+f_{2}(x)=\begin{cases}
+(1/2)f_{1}(3x) & \text{ for }0\leq x\leq1/3\\
+f_{1}(x) & \text{ for }1/3<x<2/3\\
+(1/2)f_{1}(3x-2)+1/2 & \text{ for }2/3\leq x\leq1
+\end{cases}
+\]
+
+\end_inset
+
+If we continue this process, show that the resulting sequence 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(c) Let 
+\begin_inset Formula $f=\lim f_{n}$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is a continuous, increasing function on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ with 
+\begin_inset Formula $f(0)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $f(1)=1$
+\end_inset
+
+ that satisfies 
+\begin_inset Formula $f^{\prime}(x)=0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+ in the open set 
+\begin_inset Formula $[0,1]\backslash C$
+\end_inset
+
+.
+ Recall that the ``length
+\begin_inset Quotes erd
+\end_inset
+
+ of the Cantor set 
+\begin_inset Formula $C$
+\end_inset
+
+ is 0 .
+ Somehow, 
+\begin_inset Formula $f$
+\end_inset
+
+ manages to increase from 0 to 1 while remaining constant on a set of ``length
+ 1.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.15.
+ 
+\end_layout
+
+\begin_layout Standard
+A sequence of functions 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ defined on a set 
+\begin_inset Formula $E\subseteq\RR$
+\end_inset
+
+ is called equicontinuous if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|f_{n}(x)-f_{n}(y)\right|<\epsilon$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+ and 
+\begin_inset Formula $|x-y|<\delta$
+\end_inset
+
+ in 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(a) What is the difference between saying that a sequence of functions 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ is equicontinuous and just asserting that each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ in the sequence is individually uniformly continuous? 
+\end_layout
+
+\begin_layout Standard
+(b) Give a qualitative explanation for why the sequence 
+\begin_inset Formula $g_{n}(x)=x^{n}$
+\end_inset
+
+ is not equicontinuous on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ Is each 
+\begin_inset Formula $g_{n}$
+\end_inset
+
+ uniformly continuous on 
+\begin_inset Formula $[0,1]?$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.2.16 (Arzela-Ascoli Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a function defined on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ is bounded on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+-that is, there exists an 
+\begin_inset Formula $M>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|f_{n}(x)\right|\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in[0,1]$
+\end_inset
+
+-and if the collection of functions 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ is equicontinuous (Exercise 6.2.15), follow these steps to show that 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ contains a uniformly convergent subsequence.
+\end_layout
+
+\begin_layout Standard
+(a) Use Exercise 6.2.14 to produce a subsequence 
+\begin_inset Formula $\left(f_{n_{k}}\right)$
+\end_inset
+
+ that converges at every rational point in 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ To simplify the notation, set 
+\begin_inset Formula $g_{k}=f_{n_{k}}$
+\end_inset
+
+.
+ It remains to show that 
+\begin_inset Formula $\left(g_{k}\right)$
+\end_inset
+
+ converges uniformly on all of 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b) Let 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+.
+ By equicontinuity, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\left|g_{k}(x)-g_{k}(y)\right|<\frac{\epsilon}{3}
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $|x-y|<\delta$
+\end_inset
+
+ and 
+\begin_inset Formula $k\in\NN$
+\end_inset
+
+.
+ Using this 
+\begin_inset Formula $\delta$
+\end_inset
+
+, let 
+\begin_inset Formula $r_{1},r_{2},\ldots,r_{m}$
+\end_inset
+
+ be a finite collection of rational points with the property that the union
+ of the neighborhoods 
+\begin_inset Formula $V_{\delta}\left(r_{i}\right)$
+\end_inset
+
+ contains 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ Explain why there must exist an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\left|g_{s}\left(r_{i}\right)-g_{t}\left(r_{i}\right)\right|<\frac{\epsilon}{3}
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $s,t\geq N$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ in the finite subset of 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ just described.
+ Why does having the set 
+\begin_inset Formula $\left\{ r_{1},r_{2},\ldots,r_{m}\right\} $
+\end_inset
+
+ be finite matter? 
+\end_layout
+
+\begin_layout Standard
+(c) Finish the argument by showing that, for an arbitrary 
+\begin_inset Formula $x\in[0,1]$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|g_{s}(x)-g_{t}(x)\right|<\epsilon
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $s,t\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Uniform Convergence and Differentiation
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.3.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ pointwise on the closed interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and assume that each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is differentiable.
+ If 
+\begin_inset Formula $\left(f_{n}^{\prime}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ to a function 
+\begin_inset Formula $g$
+\end_inset
+
+, then the function 
+\begin_inset Formula $f$
+\end_inset
+
+ is differentiable and 
+\begin_inset Formula $f^{\prime}=g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.3.2.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ be a sequence of differentiable functions defined on the closed interval
+ 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\left(f_{n}^{\prime}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ If there exists a point 
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+ where 
+\begin_inset Formula $f_{n}\left(x_{0}\right)$
+\end_inset
+
+ is convergent, then 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.3.3.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ be a sequence of differentiable functions defined on the closed interval
+ 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\left(f_{n}^{\prime}\right)$
+\end_inset
+
+ converges uniformly to a function 
+\begin_inset Formula $g$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ If there exists a point 
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+ for which 
+\begin_inset Formula $f_{n}\left(x_{0}\right)$
+\end_inset
+
+ is convergent, then 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ converges uniformly.
+ Moreover, the limit function 
+\begin_inset Formula $f=\lim f_{n}$
+\end_inset
+
+ is differentiable and satisfies 
+\begin_inset Formula $f^{\prime}=g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Series of Functions
+\end_layout
+
+\begin_layout Paragraph
+Definition 6.4.1.
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $f$
+\end_inset
+
+ be functions defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ The infinite series 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}f_{n}(x)=f_{1}(x)+f_{2}(x)+f_{3}(x)+\cdots
+\]
+
+\end_inset
+
+converges pointwise on 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ if the sequence 
+\begin_inset Formula $s_{k}(x)$
+\end_inset
+
+ of partial sums defined by 
+\begin_inset Formula 
+\[
+s_{k}(x)=f_{1}(x)+f_{2}(x)+\cdots+f_{k}(x)
+\]
+
+\end_inset
+
+converges pointwise to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+ The series converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $f$
+\end_inset
+
+ if the sequence 
+\begin_inset Formula $s_{k}(x)$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.4.2.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be continuous functions defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+ to a function 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.4.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be differentiable functions defined on an interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and assume 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}^{\prime}(x)$
+\end_inset
+
+ converges uniformly to a limit 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ If there exists a point 
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+ where 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}\left(x_{0}\right)$
+\end_inset
+
+ converges, then the series 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}(x)$
+\end_inset
+
+ converges uniformly to a differentiable function 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $f^{\prime}(x)=g(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ In other words, 
+\begin_inset Formula 
+\[
+f(x)=\sum_{n=1}^{\infty}f_{n}(x)\quad\text{ and }\quad f^{\prime}(x)=\sum_{n=1}^{\infty}f_{n}^{\prime}(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.4.4 (Cauchy Criterion for Uniform Convergence of Series).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ series 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ if and only if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $n>m\geq N$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|f_{m+1}(x)+f_{m+2}(x)+f_{m+3}(x)+\cdots+f_{n}(x)\right|<\epsilon
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Corollary 6.4.5 (Weierstrass M-Test).
+ 
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, let 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ be a function defined on a set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, and let 
+\begin_inset Formula $M_{n}>0$
+\end_inset
+
+ be a real number satisfying 
+\begin_inset Formula 
+\[
+\left|f_{n}(x)\right|\leq M_{n}
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\sum_{n=1}^{\infty}M_{n}$
+\end_inset
+
+ converges, then 
+\begin_inset Formula $\sum_{n=1}^{\infty}f_{n}$
+\end_inset
+
+ converges uniformly on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Power Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.1.
+ 
+\end_layout
+
+\begin_layout Standard
+If a power series 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges at some point 
+\begin_inset Formula $x_{0}\in\RR$
+\end_inset
+
+, then it converges absolutely for any 
+\begin_inset Formula $x$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $|x|<\left|x_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.2.
+ 
+\end_layout
+
+\begin_layout Standard
+If a power series 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges absolutely at a point 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, then it converges uniformly on the closed interval 
+\begin_inset Formula $[-c,c]$
+\end_inset
+
+, where 
+\begin_inset Formula $c=\left|x_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+What happens if we know that a series converges at an endpoint of its interval
+ of convergence? Does the good behavior of the series on 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+ necessarily extend to the endpoint 
+\begin_inset Formula $x=R$
+\end_inset
+
+? If the convergence of the series at 
+\begin_inset Formula $x=R$
+\end_inset
+
+ is absolute convergence, then we can again rely on Theorem 6.5.2 to conclude
+ that the series converges uniformly on the set 
+\begin_inset Formula $[-R,R]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+If a series converges conditionally at a point 
+\begin_inset Formula $x=R$
+\end_inset
+
+.
+ We may still use Theorem 6.5.1 to conclude that we have pointwise convergence
+ on the interval 
+\begin_inset Formula $(-R,R]$
+\end_inset
+
+, but more work is needed to establish uniform convergence on compact sets
+ containing 
+\begin_inset Formula $x=R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Remark that if the power series 
+\begin_inset Formula $g(x)=\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges conditionally at 
+\begin_inset Formula $x=R$
+\end_inset
+
+, then it is possible for it to diverge when 
+\begin_inset Formula $x=-R$
+\end_inset
+
+.
+ The series
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\frac{(-1)^{n}x^{n}}{n}
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $R=1$
+\end_inset
+
+ is an example.
+\end_layout
+
+\begin_layout Paragraph
+Lemma 6.5.3 (Abel's Lemma).
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ satisfy 
+\begin_inset Formula $b_{1}\geq b_{2}\geq b_{3}\geq\cdots\geq0$
+\end_inset
+
+, and let 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ be a series for which the partial sums are bounded.
+ In other words, assume there exists 
+\begin_inset Formula $A>0$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\left|a_{1}+a_{2}+\cdots+a_{n}\right|\leq A
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+.
+ Then, for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}+\cdots+a_{n}b_{n}\right|\leq2Ab_{1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.4 (Abel's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $g(x)=\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ be a power series that converges at the point 
+\begin_inset Formula $x=R>0$
+\end_inset
+
+.
+ Then the series converges uniformly on the interval 
+\begin_inset Formula $[0,R]$
+\end_inset
+
+.
+ A similar result holds if the series converges at 
+\begin_inset Formula $x=-R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.5.
+ 
+\end_layout
+
+\begin_layout Standard
+If a power series converges pointwise on the set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+, then it converges uniformly on any compact set 
+\begin_inset Formula $K\subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.6.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ converges for all 
+\begin_inset Formula $x\in(-R,R)$
+\end_inset
+
+, then the differentiated series 
+\begin_inset Formula $\sum_{n=1}^{\infty}na_{n}x^{n-1}$
+\end_inset
+
+ converges at each 
+\begin_inset Formula $x\in(-R,R)$
+\end_inset
+
+ as well.
+ Consequently, the convergence is uniform on compact sets contained in 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.5.7.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula 
+\[
+g(x)=\sum_{n=0}^{\infty}a_{n}x^{n}
+\]
+
+\end_inset
+
+converges on an interval 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $g$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $A$
+\end_inset
+
+ and differentiable on any open interval 
+\begin_inset Formula $(-R,R)\subseteq A$
+\end_inset
+
+.
+ The derivative is given by 
+\begin_inset Formula 
+\[
+g^{\prime}(x)=\sum_{n=1}^{\infty}na_{n}x^{n-1}.
+\]
+
+\end_inset
+
+Moreover, 
+\begin_inset Formula $g$
+\end_inset
+
+ is infinitely differentiable on 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+, and the successive derivatives can be obtained via term-by-term differentiatio
+n of the appropriate series.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.5.10.
+ 
+\end_layout
+
+\begin_layout Standard
+Review the definitions and results from Section 2.8 concerning products of
+ series and Cauchy products in particular.
+ At the end of Section 2.9, we mentioned the following result: If both 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ converge conditionally to 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ respectively, then it is possible for the Cauchy product, 
+\begin_inset Formula 
+\[
+\sum d_{n}\quad\text{ where }\quad d_{n}=a_{0}b_{n}+a_{1}b_{n-1}+\cdots+a_{n}b_{0},
+\]
+
+\end_inset
+
+to diverge.
+ However, if 
+\begin_inset Formula $\sum d_{n}$
+\end_inset
+
+ does converge, then it must converge to 
+\begin_inset Formula $AB$
+\end_inset
+
+.
+ To prove this, set 
+\begin_inset Formula 
+\[
+f(x)=\sum a_{n}x^{n},\quad g(x)=\sum b_{n}x^{n},\quad\text{ and }\quad h(x)=\sum d_{n}x^{n}.
+\]
+
+\end_inset
+
+Use Abel's Theorem and the result in Exercise 2.8.8 to establish this result.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 6.5.11.
+\end_layout
+
+\begin_layout Standard
+A series 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}$
+\end_inset
+
+ is said to be Abel-summable to 
+\begin_inset Formula $L$
+\end_inset
+
+ if the power series 
+\begin_inset Formula 
+\[
+f(x)=\sum_{n=0}^{\infty}a_{n}x^{n}
+\]
+
+\end_inset
+
+converges for all 
+\begin_inset Formula $x\in[0,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $L=\lim_{x\rightarrow1^{-}}f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(a) Show that any series that converges to a limit 
+\begin_inset Formula $L$
+\end_inset
+
+ is also Abel-summable to 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Show that 
+\begin_inset Formula $\sum_{n=0}^{\infty}(-1)^{n}$
+\end_inset
+
+ is Abel-summable and find the sum.
+\end_layout
+
+\begin_layout Subsection
+Taylor Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 6.6.1 (Lagrange's Remainder Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be infinitely differentiable on 
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+, define 
+\begin_inset Formula $a_{n}=\frac{f^{(n)}(0)}{n!}$
+\end_inset
+
+, and let 
+\begin_inset Formula 
+\[
+S_{N}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots+a_{N}x^{N}.
+\]
+
+\end_inset
+
+Given 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, there exists a point c satisfying 
+\begin_inset Formula $|c|<|x|$
+\end_inset
+
+ where the error function 
+\begin_inset Formula $E_{N}(x)=f(x)-S_{N}(x)$
+\end_inset
+
+ satisfies 
+\begin_inset Formula 
+\[
+E_{N}(x)=\frac{f^{(N+1)}(c)}{(N+1)!}x^{N+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Riemann Integral
+\end_layout
+
+\begin_layout Standard
+引入Riemann积分的定义, 分划, 上和, 下和, 上积分, 下积分的概念, Riemann可积函数类和可积性判别法.
+ 7.3节包含了具有不连续点的函数的可积性.
+ 7.4节给出了定积分的运算性质, 一致收敛函数列在过渡极限的运算.
+ 7.5节建立微积分基本定理, 结论有两部分, 其一是一个可积函数的定积分由原函数在端点的差得到, 另一是可积函数的变限积分是连续函数, 并且在被积函数的连续点处
+可导, 证明主要依赖微分中值定理.
+\end_layout
+
+\begin_layout Standard
+7.6节给出Lebesgue判别法, Riemann可积的充要条件是函数的不连续点集为零测集, 证明主要依赖
+\begin_inset Formula $\alpha$
+\end_inset
+
+连续性和零测集的概念来说明充分必要条件.
+ 最后给出导数不可积的Volterra函数的例子.
+\end_layout
+
+\begin_layout Subsection
+Discussion: How Should Integration be Defined?
+\end_layout
+
+\begin_layout Subsection
+The Definition of the Riemann Integral
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A partition 
+\begin_inset Formula $P$
+\end_inset
+
+ of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ is a finite, ordered set 
+\begin_inset Formula 
+\[
+P=\left\{ a=x_{0}<x_{1}<x_{2}<\cdots<x_{n}=b\right\} .
+\]
+
+\end_inset
+
+For each subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ of 
+\begin_inset Formula $P$
+\end_inset
+
+, let 
+\begin_inset Formula 
+\[
+m_{k}=\inf\left\{ f(x):x\in\left[x_{k-1},x_{k}\right]\right\} \quad\text{ and }\quad M_{k}=\sup\left\{ f(x):x\in\left[x_{k-1},x_{k}\right]\right\} 
+\]
+
+\end_inset
+
+The lower sum of 
+\begin_inset Formula $f$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $P$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\[
+L(f,P)=\sum_{k=1}^{n}m_{k}\left(x_{k}-x_{k-1}\right).
+\]
+
+\end_inset
+
+Likewise, we define the upper sum of 
+\begin_inset Formula $f$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $P$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+U(f,P)=\sum_{k=1}^{n}M_{k}\left(x_{k}-x_{k-1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.2.
+ 
+\end_layout
+
+\begin_layout Standard
+A partition 
+\begin_inset Formula $Q$
+\end_inset
+
+ is a refinement of a partition 
+\begin_inset Formula $P$
+\end_inset
+
+ if 
+\begin_inset Formula $Q$
+\end_inset
+
+ contains all of the points of 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ In this case, we write 
+\begin_inset Formula $P\subseteq Q$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.2.3.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $P\subseteq Q$
+\end_inset
+
+, then 
+\begin_inset Formula $L(f,P)\leq L(f,Q)$
+\end_inset
+
+, and 
+\begin_inset Formula $U(f,P)\geq U(f,Q)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.2.4.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ are any two partitions of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, then 
+\begin_inset Formula $L\left(f,P_{1}\right)\leq$
+\end_inset
+
+ 
+\begin_inset Formula $U\left(f,P_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.5.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ be the collection of all possible partitions of the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ The upper integral of 
+\begin_inset Formula $f$
+\end_inset
+
+ is defined to be 
+\begin_inset Formula 
+\[
+U(f)=\inf\{U(f,P):P\in\mathcal{P}\}.
+\]
+
+\end_inset
+
+In a similar way, define the lower integral of 
+\begin_inset Formula $f$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+L(f)=\sup\{U(f,P):P\in\mathcal{P}\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Lemma 7.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+For any bounded function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, it is always the case that 
+\begin_inset Formula $U(f)\geq L(f)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.2.7 (Riemann Integrability).
+ 
+\end_layout
+
+\begin_layout Standard
+A bounded function 
+\begin_inset Formula $f$
+\end_inset
+
+ defined on the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ is Riemann-integrable if 
+\begin_inset Formula $U(f)=L(f)$
+\end_inset
+
+.
+ In this case, we define 
+\begin_inset Formula $\int_{a}^{b}f$
+\end_inset
+
+ or 
+\begin_inset Formula $\int_{a}^{b}f(x)dx$
+\end_inset
+
+ to be this common value; namely, 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=U(f)=L(f).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.2.8.
+\end_layout
+
+\begin_layout Standard
+A bounded function 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if and only if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a partition 
+\begin_inset Formula $P_{\epsilon}$
+\end_inset
+
+ of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+U\left(f,P_{\epsilon}\right)-L\left(f,P_{\epsilon}\right)<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.2.9.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, then it is integrable.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.2.5.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that, for each 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is an integrable function on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\left(f_{n}\right)\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, prove that 
+\begin_inset Formula $f$
+\end_inset
+
+ is also integrable on this set.
+ (We will see that this conclusion does not necessarily follow if the convergenc
+e is pointwise.)
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ be increasing on the set 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $f(x)\leq$
+\end_inset
+
+ 
+\begin_inset Formula $f(y)$
+\end_inset
+
+ whenever 
+\begin_inset Formula $x<y)$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Integrating Functions with Discontinuities
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.3.2.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is bounded, and 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[c,b]$
+\end_inset
+
+ for all 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ An analogous result holds at the other endpoint.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.3.6.
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq[a,b]$
+\end_inset
+
+ has content zero if for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a finite collection of open intervals 
+\begin_inset Formula $\left\{ O_{1},O_{2},\ldots,O_{N}\right\} $
+\end_inset
+
+ that contain 
+\begin_inset Formula $A$
+\end_inset
+
+ in their union and whose lengths sum to 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ or less.
+ Using 
+\begin_inset Formula $\left|O_{n}\right|$
+\end_inset
+
+ to refer to the length of each interval, we have 
+\begin_inset Formula 
+\[
+A\subseteq\bigcup_{n=1}^{N}O_{n}\quad\text{ and }\quad\sum_{k=1}^{N}\left|O_{n}\right|\leq\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a) Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be bounded on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ Show that if the set of discontinuous points of 
+\begin_inset Formula $f$
+\end_inset
+
+ has content zero, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable.
+\end_layout
+
+\begin_layout Standard
+(b) Show that any finite set has content zero.
+\end_layout
+
+\begin_layout Standard
+(c) Content zero sets do not have to be finite.
+ They do not have to be countable.
+ Show that the Cantor set 
+\begin_inset Formula $C$
+\end_inset
+
+ defined in Section 3.1 has content zero.
+\end_layout
+
+\begin_layout Standard
+(d) Prove that 
+\begin_inset Formula 
+\[
+h(x)=\begin{cases}
+1 & \text{ if }x\in C\\
+0 & \text{ if }x\notin C.
+\end{cases}
+\]
+
+\end_inset
+
+is integrable, and find the value of the integral.
+\end_layout
+
+\begin_layout Subsection
+Properties of the Integral
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.4.1.
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is bounded, and let 
+\begin_inset Formula $c\in(a,b)$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on 
+\begin_inset Formula $[a,c]$
+\end_inset
+
+ and 
+\begin_inset Formula $[c,b]$
+\end_inset
+
+.
+ In this case, we have 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=\int_{a}^{c}f+\int_{c}^{b}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.4.3.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable on the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, define 
+\begin_inset Formula 
+\[
+\int_{b}^{a}f=-\int_{a}^{b}f.
+\]
+
+\end_inset
+
+Also, define 
+\begin_inset Formula 
+\[
+\int_{c}^{c}f=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $f_{n}\rightarrow f$
+\end_inset
+
+ uniformly on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and that each 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ is integrable.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is integrable and 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\int_{a}^{b}f_{n}=\int_{a}^{b}f.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Decide which of the following conjectures is true and supply a short proof.
+ For those that are not true, give a counterexample.
+\end_layout
+
+\begin_layout Standard
+(d) If 
+\begin_inset Formula $\int_{a}^{b}f>0$
+\end_inset
+
+, there is an interval 
+\begin_inset Formula $[c,d]\subseteq[a,b]$
+\end_inset
+
+ and a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $f(x)\geq\delta$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in[c,d]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.4.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Review the discussion immediately preceding Theorem 7.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+(d) Does it seem possible to construct the sequence 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ to be uniformly bounded? (Uniformly bounded means that there exists a single
+ 
+\begin_inset Formula $M>0$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $\left|f_{n}\right|\leq M$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.4.7.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that 
+\begin_inset Formula $g_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ are bounded integrable functions with 
+\begin_inset Formula $g_{n}\rightarrow g$
+\end_inset
+
+ on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ The convergence is not uniform; however, the convergence is uniform on
+ any set of the form 
+\begin_inset Formula $[\delta,1]$
+\end_inset
+
+ where 
+\begin_inset Formula $0<\delta<1$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\int_{0}^{1}g_{n}=$
+\end_inset
+
+ 
+\begin_inset Formula $\int_{0}^{1}g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+The Fundamental Theorem of Calculus
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.5.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, define the total variation of 
+\begin_inset Formula $f$
+\end_inset
+
+ to be 
+\begin_inset Formula 
+\[
+Vf=\sup\left\{ \sum_{k=1}^{n}\left|f\left(x_{k}\right)-f\left(x_{k-1}\right)\right|\right\} 
+\]
+
+\end_inset
+
+where the supremum is taken over all partitions 
+\begin_inset Formula $P$
+\end_inset
+
+ of 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(a) If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuously differentiable (
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ exists as a continuous function), use the Fundamental Theorem of Calculus
+ to show 
+\begin_inset Formula $Vf\leq\int_{a}^{b}\left|f^{\prime}\right|$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(b) Use the Mean Value Theorem to establish the reverse inequality and conclude
+ that 
+\begin_inset Formula $Vf=\int_{a}^{b}\left|f^{\prime}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Lebesgue's Criterion for Riemann Integrability
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.6.1.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq\RR$
+\end_inset
+
+ has measure zero if, for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a countable collection of open intervals 
+\begin_inset Formula $O_{n}$
+\end_inset
+
+ with the property that 
+\begin_inset Formula $A$
+\end_inset
+
+ is contained in the union of all of the intervals 
+\begin_inset Formula $O_{n}$
+\end_inset
+
+ and the sum of the lengths of all of the intervals is less than or equal
+ to 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ More precisely, if 
+\begin_inset Formula $\left|O_{n}\right|$
+\end_inset
+
+ refers to the length of the interval 
+\begin_inset Formula $O_{n}$
+\end_inset
+
+, then we have 
+\begin_inset Formula 
+\[
+A\subseteq\bigcup_{n=1}^{\infty}O_{n}\quad\text{ and }\quad\sum_{n=1}^{\infty}\left|O_{n}\right|\leq\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 7.6.3.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be defined on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, and let 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $f$
+\end_inset
+
+ is 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous at 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+ if there exists 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $y,z\in(x-\delta,x+\delta)$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $|f(y)-f(z)|<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 7.6.9.
+ 
+\end_layout
+
+\begin_layout Standard
+By imitating the proof of Theorem 4.4.8, show that if, for some fixed 
+\begin_inset Formula $\alpha>0,f$
+\end_inset
+
+ is 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous at every point on some compact set 
+\begin_inset Formula $K$
+\end_inset
+
+, then 
+\begin_inset Formula $f$
+\end_inset
+
+ is uniformly 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous on 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ By uniformly 
+\begin_inset Formula $\alpha$
+\end_inset
+
+-continuous, we mean that there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that whenever 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are points in 
+\begin_inset Formula $K$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $|x-y|<\delta$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $|f(x)-f(y)|<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.6.4.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $K\subseteq\RR$
+\end_inset
+
+.
+ The following three statements are all equivalent, in the sense that if
+ any one is true, then so are the two others.
+ 
+\end_layout
+
+\begin_layout Standard
+(i) Every sequence contained in 
+\begin_inset Formula $K$
+\end_inset
+
+ has a convergent subsequence that converges to a limit in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $K$
+\end_inset
+
+ is closed and bounded.
+ 
+\end_layout
+
+\begin_layout Standard
+(iii) Given a collection of open intervals 
+\begin_inset Formula $\left\{ G_{\alpha}:\alpha\in\Lambda\right\} $
+\end_inset
+
+ that covers 
+\begin_inset Formula $K$
+\end_inset
+
+; that is, 
+\begin_inset Formula $K\subseteq\bigcup_{\alpha\in\Lambda}G_{\alpha}$
+\end_inset
+
+, there exists a finite subcollection 
+\begin_inset Formula $\left\{ G_{\alpha_{1}},G_{\alpha_{2}},G_{\alpha_{3}},\ldots,G_{\alpha_{N}}\right\} $
+\end_inset
+
+ of the original set that also covers 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 7.6.5 (Lebesgue's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f$
+\end_inset
+
+ be a bounded function defined on the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ is Riemann-integrable if and only if the set of points where 
+\begin_inset Formula $f$
+\end_inset
+
+ is not continuous has measure zero.
+\end_layout
+
+\begin_layout Standard
+The Lebesgue integral does have a few drawbacks.
+ There are functions whose improper Riemann integrals exist but that are
+ not Lebesgue-integrable.
+\end_layout
+
+\begin_layout Standard
+With the Lebesgue integral, it is still not possible to prove 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f^{\prime}=f(b)-f(a)
+\]
+
+\end_inset
+
+without some additional assumptions on 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Additional Topics
+\end_layout
+
+\begin_layout Standard
+这节推广Riemann积分, Riemann积分的缺点在于不能很好的过渡极限以及存在导函数不可积的情况, 也就是微积分基本定理的
+\begin_inset Formula 
+\[
+\int_{a}^{b}F'=F(b)-F(a)
+\]
+
+\end_inset
+
+存在
+\begin_inset Formula $F'$
+\end_inset
+
+不可积的问题.
+\end_layout
+
+\begin_layout Standard
+但是推广到Lebesgue积分, 尽管任何Riemann积分都是Lebesgue可积的, 并且能使Volterra函数的导数Lebesgue可积,
+ 但仍然有缺点.
+ 因为仍然有函数的导数不可积的情况, 并且像广义Riemann积分的
+\begin_inset Formula $\int_{0}^{\infty}\frac{\sin x}{x}\ud x$
+\end_inset
+
+并不是Lebesgue可积的.
+ 引入度规的概念定义广义Riemann积分, 更简单的证明微积分基本定理, 积分换元法.
+ 8.2节介绍了度量空间和Baire纲定理, 证明了
+\begin_inset Formula $C[a,b]$
+\end_inset
+
+中处处不可微点集是第二纲集.
+\end_layout
+
+\begin_layout Standard
+8.3节讲Fourier级数, Fourier级数诱使学者追求分析的严谨性, 这是19世纪的数学的主要研究内容.
+ 它不同于幂级数的研究, 幂级数是一类更好的函数类, 蕴含着和函数的解析性, 这一好的性质没能使数学家们对极限和收敛进行更好的理解, (因为幂级数的收敛有内闭一
+致收敛性, 可以逐项积分, 逐项求导且无穷次可微).
+ 但是三角级数与之不同, 可以推广到
+\begin_inset Formula $L^{2}$
+\end_inset
+
+收敛性.
+ 然后给出Fourier系数, Riemann-Lebesgue引理, 并指出Fourier级数是作为条件收敛级数存在的, 这也说明了它与幂级数的不同.
+ 一般当函数
+\begin_inset Formula $f(x)$
+\end_inset
+
+在某一点
+\begin_inset Formula $x=x_{0}\in(-\pi,\pi]$
+\end_inset
+
+处可导时, 其Fourier级数的部分和点态收敛到
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+, 证明依赖于Dirichlet核和Riemann-Lebesgue引理.
+ 但这种收敛性的条件太强了, 通过引入Cesaro平均导出Fej
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+r核, 得到连续函数的Fej
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+r部分和一致收敛于给定函数.
+ 随后给出Weierstrass逼近定理, 在闭区间上用多项式一致收敛于任意给定的连续函数.
+ 最后总结贯穿分析的极限思想: 实数作为有理数的极限, 无穷级数作为部分和的极限, 连续函数作为其附近的函数值的极限, 可微函数作为分段线性函数的极限,
+ 可积函数的积分作为上下和的极限, 连续函数作为多项式的极限.
+ 其共性都是通过有限逼近无限.
+\end_layout
+
+\begin_layout Standard
+8.4节讲了如何从有理数构造实数, 通过Dedekind分划的概念引入实数.
+ 在这个概念下, 实数完备性公理被证明为定理.
+ 之所以公理降级为定理, 其关键步是将分划定义为满足一定条件的有理数的子集, 将有界实数列看成有理数分划的集族, 其最小上界就是集族的并集, 它由集合论的公理保
+证仍是一个集合, 且是一个有理数的分划, 如此得到实数完备性公理的证明.
+ 这要对分划构建数域和序结构, 定义加法和乘法, 其中一个需要克服的困难是乘法要符合``负负得正"的性质, 同时这样的实数有与有理数对应的子集.
+ 最后Cantor构建实数的方法是Cauchy列的等价类.
+\end_layout
+
+\begin_layout Standard
+What follows is a short introduction to the generalized Riemann integral,
+ discovered independently around 1960 by Jaroslav Kurzweil and Ralph Henstock.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Generalized Riemann Integral
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+.
+ A partition 
+\begin_inset Formula $P$
+\end_inset
+
+ is 
+\begin_inset Formula $\delta$
+\end_inset
+
+-fine if every subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $x_{k}-x_{k-1}<\delta$
+\end_inset
+
+.
+ In other words, every subinterval has width less than 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.2.
+ 
+\end_layout
+
+\begin_layout Standard
+A bounded function 
+\begin_inset Formula $f:[a,b]\rightarrow\RR$
+\end_inset
+
+ is Riemann-integrable with 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=A
+\]
+
+\end_inset
+
+if and only if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that, for any tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} \right)$
+\end_inset
+
+ that is 
+\begin_inset Formula $\delta$
+\end_inset
+
+-fine, it follows that 
+\begin_inset Formula 
+\[
+|R(f,P)-A|<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.3.
+ 
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $\delta:[a,b]\rightarrow\RR$
+\end_inset
+
+ is called a gauge on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ if 
+\begin_inset Formula $\delta(x)>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.4.
+\end_layout
+
+\begin_layout Standard
+Given a particular gauge 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+, a tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} _{k=1}^{n}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+-fine if every subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $x_{k}-x_{k-1}<\delta\left(c_{k}\right)$
+\end_inset
+
+.
+ In other words, each subinterval 
+\begin_inset Formula $\left[x_{k-1},x_{k}\right]$
+\end_inset
+
+ has width less than 
+\begin_inset Formula $\delta\left(c_{k}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.5.
+\end_layout
+
+\begin_layout Standard
+Given a gauge 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+ on an interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, there exists a tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} _{k=1}^{n}\right)$
+\end_inset
+
+ that is 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+-fine.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.1.6 (Generalized Riemann Integrability).
+\end_layout
+
+\begin_layout Standard
+A function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ has generalized Riemann integral 
+\begin_inset Formula $A$
+\end_inset
+
+ if, for every 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, there exists a gauge 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ such that for each tagged partition 
+\begin_inset Formula $\left(P,\left\{ c_{k}\right\} _{k=1}^{n}\right)$
+\end_inset
+
+ that is 
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+-fine, it is true that 
+\begin_inset Formula 
+\[
+|R(f,P)-A|<\epsilon.
+\]
+
+\end_inset
+
+In this case, we write 
+\begin_inset Formula $A=\int_{a}^{b}f$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.7.
+ 
+\end_layout
+
+\begin_layout Standard
+If a function has a generalized Riemann integral, then the value of the
+ integral is unique.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Dirichlet's function 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ is generalized Riemann-integrable on 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ with 
+\begin_inset Formula $\int_{0}^{1}g=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.1.9.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $F:[a,b]\rightarrow\RR$
+\end_inset
+
+ is differentiable at each point in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ and set 
+\begin_inset Formula $f(x)=F^{\prime}(x)$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $f$
+\end_inset
+
+ has the generalized Riemann integral 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f=F(b)-F(a).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The central source for the material in this section is Robert Bartle’s excellent
+ article “Return to the Riemann Integral,” which appeared in the American
+ Mathematical Monthly, October, 1996.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Integral: An Easy Approach after Kurzweil and Henstock by Rudolph V´yborn´y
+ and Lee Peng Yee or in a forthcoming book by Robert Bartle to be published
+ by the American Mathematical Society.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Metric Spaces and the Baire Category Theorem
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.1.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a set 
+\begin_inset Formula $X$
+\end_inset
+
+, a function 
+\begin_inset Formula $d:X\times X\rightarrow\RR$
+\end_inset
+
+ is a metric on 
+\begin_inset Formula $X$
+\end_inset
+
+ if for all 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $d(x,y)\geq0$
+\end_inset
+
+ with 
+\begin_inset Formula $d(x,y)=0$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $x=y$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\begin_inset Formula $d(x,y)=d(y,x)$
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Standard
+(iii) for all 
+\begin_inset Formula $z\in X,d(x,y)\leq d(x,z)+d(z,y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A metric space is a set 
+\begin_inset Formula $X$
+\end_inset
+
+ together with a metric 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.2.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ be a metric space.
+ A sequence 
+\begin_inset Formula $\left(x_{n}\right)\subseteq X$
+\end_inset
+
+ converges to an element 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $d\left(x_{n},x\right)<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+A sequence 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ in a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is a Cauchy sequence if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists an 
+\begin_inset Formula $N\in\NN$
+\end_inset
+
+ such that 
+\begin_inset Formula $d\left(x_{m},x_{n}\right)<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $m,n\geq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.4.
+ 
+\end_layout
+
+\begin_layout Standard
+A metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is complete if every Cauchy sequence in 
+\begin_inset Formula $X$
+\end_inset
+
+ converges to an element of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.5.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ be a metric space.
+ A function 
+\begin_inset Formula $f:X\rightarrow\RR$
+\end_inset
+
+ is continuous at a point 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ if for all 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ there exists a 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $|f(x)-f(y)|<\epsilon$
+\end_inset
+
+ whenever 
+\begin_inset Formula $d(x,y)<\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+Given 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ and an element 
+\begin_inset Formula $x$
+\end_inset
+
+ in the metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+, the 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-neighborhood of 
+\begin_inset Formula $x$
+\end_inset
+
+ is the set 
+\begin_inset Formula $V_{\epsilon}(x)=\{y\in X:d(x,y)<\epsilon\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.7.
+ 
+\end_layout
+
+\begin_layout Standard
+A subset 
+\begin_inset Formula $K$
+\end_inset
+
+ of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is compact if every sequence in 
+\begin_inset Formula $K$
+\end_inset
+
+ has a convergent subsequence that converges to a limit in 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.8.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a subset 
+\begin_inset Formula $E$
+\end_inset
+
+ of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+, the closure 
+\begin_inset Formula $\bar{E}$
+\end_inset
+
+ is the union of 
+\begin_inset Formula $E$
+\end_inset
+
+ together with its limit points.
+ The interior of 
+\begin_inset Formula $E$
+\end_inset
+
+ is denoted by 
+\begin_inset Formula $E^{\circ}$
+\end_inset
+
+ and is defined as 
+\begin_inset Formula 
+\[
+E^{\circ}=\left\{ x\in E:\text{ there exists }V_{\epsilon}(x)\subseteq E\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.2.9.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ is dense in the metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ if 
+\begin_inset Formula $\bar{A}=X$
+\end_inset
+
+ A subset 
+\begin_inset Formula $E$
+\end_inset
+
+ of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ is nowhere-dense in 
+\begin_inset Formula $X$
+\end_inset
+
+ if 
+\begin_inset Formula $\bar{E}^{\circ}$
+\end_inset
+
+ is empty.
+\end_layout
+
+\begin_layout Paragraph
+Exercise 8.2.12.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is a subspace of a metric space 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+, show that 
+\begin_inset Formula $E$
+\end_inset
+
+ is nowhere-dense in 
+\begin_inset Formula $X$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $\bar{E}^{c}$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.2.10.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $(X,d)$
+\end_inset
+
+ be a complete metric space, and let 
+\begin_inset Formula $\left\{ O_{n}\right\} $
+\end_inset
+
+ be a countable collection of dense, open subsets of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula $\bigcap_{n=1}^{\infty}O_{n}$
+\end_inset
+
+ is not empty.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.2.11 (Baire Category Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+A complete metric space is not the union of a countable collection of nowhere-de
+nse sets.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.2.12.
+ 
+\end_layout
+
+\begin_layout Standard
+The set 
+\begin_inset Formula 
+\[
+D=\left\{ f\in C[0,1]:f^{\prime}(x)\text{ exists for some }x\in[0,1]\right\} 
+\]
+
+\end_inset
+
+is a set of first category in 
+\begin_inset Formula $C[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Fourier Series
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.2 (Riemann-Lebesgue Lemma).
+ 
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $h(x)$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+.
+ Then, 
+\begin_inset Formula 
+\[
+\int_{-\pi}^{\pi}h(x)\sin(nx)dx\rightarrow0\quad\text{ and }\quad\int_{-\pi}^{\pi}h(x)\cos(nx)dx\rightarrow0
+\]
+
+\end_inset
+
+as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Unlike power series, Fourier series can converge conditionally.
+ This makes them less robust, perhaps, but more versatile and capable of
+ more interesting behavior.
+\end_layout
+
+\begin_layout Standard
+In 1966, Lennart Carleson proved (via an extremely complicated argument)
+ that the Fourier series for such a function converges pointwise at every
+ point in the domain excluding possibly a set of measure zero.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are examples of continuous functions with Fourier series that diverge
+ at uncountably many points.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is an example due to A.
+ Kolmogorov (1903–1987) of a Lebesgue-integrable function where the Fourier
+ series fails to converge at any point.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ be continuous on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+, and let 
+\begin_inset Formula $S_{N}(x)$
+\end_inset
+
+ be the 
+\begin_inset Formula $N$
+\end_inset
+
+ th partial sum of the Fourier series described in equation (7), where the
+ coefficients 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ are given by equations (9) and (10).
+ It follows that 
+\begin_inset Formula 
+\[
+\lim_{N\rightarrow\infty}S_{N}(x)=f(x)
+\]
+
+\end_inset
+
+pointwise at any 
+\begin_inset Formula $x\in(-\pi,\pi]$
+\end_inset
+
+ where 
+\begin_inset Formula $f^{\prime}(x)$
+\end_inset
+
+ exists.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.4 (Fejér's Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $S_{N}(x)$
+\end_inset
+
+ be the Nth partial sum of the Fourier series for a function 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+.
+ Define 
+\begin_inset Formula 
+\[
+\sigma_{N}(x)=\frac{1}{N+1}\sum_{n=0}^{N}S_{N}(x).
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous on 
+\begin_inset Formula $(-\pi,\pi]$
+\end_inset
+
+, then 
+\begin_inset Formula $\sigma_{N}(x)\rightarrow f(x)$
+\end_inset
+
+ uniformly.
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.3.5 (Weierstrass Approximation Theorem).
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is a continuous function on a closed interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, then there exists a sequence of polynomials that converges uniformly to
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ on 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The idea of approximation permeates the entire subject.
+ Every real number can be approximated with rational ones.
+ The value of an infinite sum is approximated with partial sums, and the
+ value of a continuous function can be approximated with its values nearby.
+ A function is differentiable when a straight line is a good approximation
+ to the curve, and it is integrable when finite sums of rectangles are a
+ good approximation to the area under the curve.
+ Now, we learn that every continuous function can be approximated arbitrarily
+ well with a polynomial.
+ In every case, the approximating objects are tangible and well-understood,
+ and the issue is how well these properties survive the limiting process.
+ By viewing the different infinities of mathematics through pathways crafted
+ out of finite objects, Weierstrass and the other founders of analysis created
+ a paradigm for how to extend the scope of mathematical exploration deep
+ into territory previously unattainable.
+ Although our journey ends here, the road is long and continues to be written.
+\end_layout
+
+\begin_layout Subsection
+A Construction of 
+\begin_inset Formula $\RR$
+\end_inset
+
+ From 
+\begin_inset Formula $\QQ$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Theorem 8.4.1.
+ 
+\end_layout
+
+\begin_layout Standard
+There exists an ordered field in which every nonempty set that is bounded
+ above has a least upper bound.
+ In addition, this field contains 
+\begin_inset Formula $\QQ$
+\end_inset
+
+ as a subfield.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.4.2.
+ 
+\end_layout
+
+\begin_layout Standard
+A subset 
+\begin_inset Formula $A$
+\end_inset
+
+ of the rational numbers is called a cut if it possesses the following three
+ properties: 
+\end_layout
+
+\begin_layout Standard
+(c1) 
+\begin_inset Formula $A\neq\varnothing$
+\end_inset
+
+ and 
+\begin_inset Formula $A\neq\QQ$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c2) If 
+\begin_inset Formula $r\in A$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+ also contains every rational 
+\begin_inset Formula $q<r$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(c3) 
+\begin_inset Formula $A$
+\end_inset
+
+ does not have a maximum; that is, if 
+\begin_inset Formula $r\in A$
+\end_inset
+
+, then there exists 
+\begin_inset Formula $s\in A$
+\end_inset
+
+ with 
+\begin_inset Formula $r<s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.4.3.
+ 
+\end_layout
+
+\begin_layout Standard
+Define the real numbers 
+\begin_inset Formula $\RR$
+\end_inset
+
+ to be the set of all cuts in 
+\begin_inset Formula $\QQ$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.4.4.
+ 
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $F$
+\end_inset
+
+ is a field if there exist two operations - addition 
+\begin_inset Formula $(x+y)$
+\end_inset
+
+ and multiplication 
+\begin_inset Formula $(xy)$
+\end_inset
+
+ - that satisfy the following list of conditions: 
+\end_layout
+
+\begin_layout Standard
+(f1) (commutativity) 
+\begin_inset Formula $x+y=y+x$
+\end_inset
+
+ and 
+\begin_inset Formula $xy=yx$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(f2) (associativity) 
+\begin_inset Formula $(x+y)+z=x+(y+z)$
+\end_inset
+
+ and 
+\begin_inset Formula $(xy)z=x(yz)$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y,z\in F$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(f3) (identities exist) There exist two special elements 0 and 1 with 
+\begin_inset Formula $0\neq1$
+\end_inset
+
+ such that 
+\begin_inset Formula $x+0=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x1=x$
+\end_inset
+
+ for all 
+\begin_inset Formula $x\in F$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(f4) (inverses exist) Given 
+\begin_inset Formula $x\in F$
+\end_inset
+
+, there exists an element 
+\begin_inset Formula $-x\in F$
+\end_inset
+
+ such that 
+\begin_inset Formula $x+(-x)=0$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+, there exists an element 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+ such that 
+\begin_inset Formula $xx^{-1}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(f5) (distributive property) 
+\begin_inset Formula $x(y+z)=xy+xz$
+\end_inset
+
+ for all 
+\begin_inset Formula $x,y,z\in F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.4.5.
+ 
+\end_layout
+
+\begin_layout Standard
+An ordering on a set 
+\begin_inset Formula $F$
+\end_inset
+
+ is a relation, represented by 
+\begin_inset Formula $\leq$
+\end_inset
+
+, with the following three properties:
+\end_layout
+
+\begin_layout Standard
+(o1) For arbitrary 
+\begin_inset Formula $x,y\in F$
+\end_inset
+
+, at least one of the statements 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ or 
+\begin_inset Formula $y\leq x$
+\end_inset
+
+ is true.
+ 
+\end_layout
+
+\begin_layout Standard
+(o2) If 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\leq x$
+\end_inset
+
+, then 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(o3) If 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\leq z$
+\end_inset
+
+, then 
+\begin_inset Formula $x\leq z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A field 
+\begin_inset Formula $F$
+\end_inset
+
+ is called an ordered field if 
+\begin_inset Formula $F$
+\end_inset
+
+ is endowed with an ordering 
+\begin_inset Formula $\leq$
+\end_inset
+
+ that satisfies 
+\end_layout
+
+\begin_layout Standard
+(o4) If 
+\begin_inset Formula $y\leq z$
+\end_inset
+
+, then 
+\begin_inset Formula $x+y\leq x+z$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(o5) If 
+\begin_inset Formula $x\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $y\geq0$
+\end_inset
+
+, then 
+\begin_inset Formula $xy\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Definition 8.4.6.
+\end_layout
+
+\begin_layout Standard
+A set 
+\begin_inset Formula $\mathcal{A}\subseteq\RR$
+\end_inset
+
+ is bounded above if there exists a 
+\begin_inset Formula $B\in\RR$
+\end_inset
+
+ such that 
+\begin_inset Formula $A\leq B$
+\end_inset
+
+ for all 
+\begin_inset Formula $A\in\mathcal{A}$
+\end_inset
+
+.
+ The number 
+\begin_inset Formula $B$
+\end_inset
+
+ is called an upper bound for 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A real number 
+\begin_inset Formula $S\in\RR$
+\end_inset
+
+ is the least upper bound for a set 
+\begin_inset Formula $\mathcal{A}\subseteq\RR$
+\end_inset
+
+ if it meets the following two criteria:
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $S$
+\end_inset
+
+ is an upper bound for 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ and 
+\end_layout
+
+\begin_layout Standard
+(ii) if 
+\begin_inset Formula $B$
+\end_inset
+
+ is any upper bound for 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+, then 
+\begin_inset Formula $S\leq B$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
