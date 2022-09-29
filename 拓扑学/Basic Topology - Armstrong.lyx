@@ -840,6 +840,16 @@ status open
 
 \begin_layout Paragraph
 分类定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+分类定理
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -868,12 +878,118 @@ bius带的球面.
 \begin_inset Formula $n$
 \end_inset
 
-个环柄的曲面叫做亏格为
+个环柄的曲面叫做亏格
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+亏格
+\end_layout
+
+\end_inset
+
+为
 \begin_inset Formula $n$
 \end_inset
 
 的可定向曲面.
- 其中, 如果在曲面上画一条光滑的闭曲线, 在曲线上某点处的切向量与法向量沿曲线运行一周, 仍然能回到原来的一组向量的曲面称为可定向曲面.
+ 其中, 如果在曲面上画一条光滑的闭曲线, 在曲线上某点处的切向量与法向量沿曲线运行一周, 仍然能回到原来的一组向量的曲面称为可定向曲面
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+可定向曲面
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+拓扑不变量
+\end_layout
+
+\begin_layout Paragraph
+曲面的分类
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+曲面的分类
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+分类定理所猎德表中任何两个曲面的基本群
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+基本群
+\end_layout
+
+\end_inset
+
+不同构, 即这些曲面互不同胚.
+\end_layout
+
+\begin_layout Paragraph
+Jordan分离定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Jordan分离定理
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+平面内的任何简单闭曲线将平面分为两块.
+\end_layout
+
+\begin_layout Paragraph
+Brouwer不动点定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Brouwer不动点定理
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+圆盘到自己的任何连续映射至少有一个不动点.
+\end_layout
+
+\begin_layout Paragraph
+Nielsen-Schreier定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Nielsen-Schreier定理
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+自由群的子群是自由群.
 \end_layout
 
 \begin_layout Standard
