@@ -1,0 +1,601 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+\usepackage{makeidx}
+
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\curl}{curl}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+
+\makeindex
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Basic Topology
+\end_layout
+
+\begin_layout Chapter
+引论
+\end_layout
+
+\begin_layout Section
+Euler定理
+\end_layout
+
+\begin_layout Standard
+一个多面体
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+多面体
+\end_layout
+
+\end_inset
+
+是满足下面性质的有限多个平面多边形拼凑而成:
+\end_layout
+
+\begin_layout Itemize
+若两个多边形相交, 则它们交于一条公共边;
+\end_layout
+
+\begin_layout Itemize
+多边形的每一条边是且仅是另一个多边形的边.
+\end_layout
+
+\begin_layout Itemize
+对于每个顶点, 包含此点的多边形可以顺次排成
+\begin_inset Formula $Q_{1},Q_{2},\cdots,Q_{k}$
+\end_inset
+
+, 使得对于任意的
+\begin_inset Formula $1\le i\le k$
+\end_inset
+
+, 
+\begin_inset Formula $Q_{i}$
+\end_inset
+
+与
+\begin_inset Formula $Q_{i+1}$
+\end_inset
+
+有一条公共边.
+ (其中记
+\begin_inset Formula $Q_{k+1}=Q_{1}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Paragraph
+Euler定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Euler定理
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $P$
+\end_inset
+
+是满足下列条件的多面体:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P$
+\end_inset
+
+的任何两个顶点可以用一串棱相连接;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P$
+\end_inset
+
+上任何由直线段构成的圈, 把
+\begin_inset Formula $P$
+\end_inset
+
+分割成两片,
+\end_layout
+
+\begin_layout Standard
+则
+\begin_inset Formula $P$
+\end_inset
+
+满足
+\begin_inset Formula $v-e+f=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P$
+\end_inset
+
+的一组连通的顶点与棱叫做一个图
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+图
+\end_layout
+
+\end_inset
+
+.
+ 连通是指任意两个顶点可以用图中的一串棱连接.
+\end_layout
+
+\begin_layout Standard
+不包含任何圈的图叫作树形
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+树形
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+拓扑等价
+\end_layout
+
+\begin_layout Paragraph
+定理
+\end_layout
+
+\begin_layout Standard
+拓扑等价的多面体有相同的Euler数
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Euler数
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Euler公式的Legendre证明
+\end_layout
+
+\begin_layout Standard
+用径向投影将多面体映到半径为
+\begin_inset Formula $1$
+\end_inset
+
+的球面上.
+ 多面体的面映为球面多边形.
+ 若
+\begin_inset Formula $Q$
+\end_inset
+
+为球面
+\begin_inset Formula $n$
+\end_inset
+
+边形, 以
+\begin_inset Formula $\alpha_{1},\alpha_{2},\cdots,\alpha_{k}$
+\end_inset
+
+为它的角, 则
+\begin_inset Formula $Q$
+\end_inset
+
+的面积是
+\begin_inset Formula 
+\[
+\alpha_{1}+\alpha_{2}+\cdots+\alpha_{k}-(n-2)\pi=(\alpha_{1}+\alpha_{2}+\cdots+\alpha_{k})-n\pi+2\pi.
+\]
+
+\end_inset
+
+各个球面多边形面积之和是
+\begin_inset Formula $2\pi v-2\pi e+2\pi f$
+\end_inset
+
+.
+ 这个面积刚好等于球面面积
+\begin_inset Formula $4\pi$
+\end_inset
+
+, 即得Euler公式.
+\end_layout
+
+\begin_layout Section
+曲面
+\end_layout
+
+\begin_layout Standard
+1.3节指出下面三个Mobius带的三个副本是两两同胚的, 它们只是同一个空间在欧式空间内的不同表示.
+ 这可以理解成Mobius带在三维空间上的投影, 要连续变形(a)到(c)可能要通过高维空间
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Check
+\end_layout
+
+\end_inset
+
+.
+ 两者之间可以建立同胚, 但这种同胚不能扩张(或者说延拓)到整个欧式空间到欧式空间的同胚.
+ 用数学语言来说就是如果记(a), (c)的拓扑空间分别为
+\begin_inset Formula $T_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+f:T_{1}\to T_{2}
+\]
+
+\end_inset
+
+是同胚映射, 则
+\begin_inset Formula $f$
+\end_inset
+
+不能延拓为同胚映射
+\begin_inset Formula $F:\RR^{3}\to\RR^{3}$
+\end_inset
+
+使得
+\begin_inset Formula $F\mid_{T_{1}}=f$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: proof.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename X:/book_reading/拓扑学/Basic Topology - Armstrong/已粘贴1.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+抽象空间
+\end_layout
+
+\begin_layout Paragraph
+古典连续性定义
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+为两个欧式空间之间的映射, 
+\begin_inset Formula $f:E^{m}\to E^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $x\in E^{m}$
+\end_inset
+
+, 如果对于任意的
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $\norm{y-x}<\delta$
+\end_inset
+
+时, 有
+\begin_inset Formula $\norm{f(y)-f(x)}<\epsilon$
+\end_inset
+
+, 则称
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x$
+\end_inset
+
+处连续.
+ 若
+\begin_inset Formula $f$
+\end_inset
+
+在每点
+\begin_inset Formula $x\in E^{m}$
+\end_inset
+
+连续, 则
+\begin_inset Formula $f$
+\end_inset
+
+称为连续映射
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+连续映射
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+如果
+\begin_inset Formula $p\in E^{m}$
+\end_inset
+
+, 
+\begin_inset Formula $N\subseteq E^{m}$
+\end_inset
+
+满足对于某个
+\begin_inset Formula $r>0$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{B_{r}(p)}\subseteq N$
+\end_inset
+
+, 则称
+\begin_inset Formula $N$
+\end_inset
+
+为点
+\begin_inset Formula $p$
+\end_inset
+
+的一个领域
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+领域
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+printindex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
