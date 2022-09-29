@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass ctex-book
+\textclass book
 \begin_preamble
 % 如果没有这一句命令，XeTeX会出错，原因参见
 % http://bbs.ctex.org/viewthread.php?tid=60547
@@ -116,7 +116,7 @@ theorems-ams-extended-chap-bytype
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
 \font_default_family default
-\use_non_tex_fonts true
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100 100
@@ -579,6 +579,45 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Paragraph
+拓扑空间
+\end_layout
+
+\begin_layout Standard
+设集合
+\begin_inset Formula $X$
+\end_inset
+
+, 对于任意的
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 有一个以
+\begin_inset Formula $X$
+\end_inset
+
+的子集为成员的非空集族, 这个非空集族满足以下4条公理时, 称集族中的每个元素为
+\begin_inset Formula $x$
+\end_inset
+
+的一个领域.
+\end_layout
+
+\begin_layout Itemize
+集族中的每个元素包含
+\begin_inset Formula $x$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x$
+\end_inset
+
+的任何
 \end_layout
 
 \begin_layout Standard
