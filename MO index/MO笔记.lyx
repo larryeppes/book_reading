@@ -1,0 +1,320 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\curl}{curl}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MO笔记
+\end_layout
+
+\begin_layout Paragraph
+Q314382 mg.metric-geometry
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $X$
+\end_inset
+
+是连通紧度量空间, 
+\begin_inset Formula $d:X^{2}\to\RR^{+}$
+\end_inset
+
+为
+\begin_inset Formula $X$
+\end_inset
+
+上的度量.
+ 是否存在正实数
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 仅依赖于
+\begin_inset Formula $X$
+\end_inset
+
+和
+\begin_inset Formula $d$
+\end_inset
+
+, 使得对于任意的
+\begin_inset Formula $n$
+\end_inset
+
+, 和
+\begin_inset Formula $x_{1},x_{2},\cdots,x_{n}\in X$
+\end_inset
+
+, 存在
+\begin_inset Formula $y$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+\frac{1}{n}\left(d(x_{1},y)+d(x_{2},y)+\cdots+d(x_{n},y)\right)=\alpha?
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+存在性:
+\end_layout
+
+\begin_layout Standard
+反证.
+ 假设这样的
+\begin_inset Formula $\alpha$
+\end_inset
+
+不存在, 则由1维Helly定理, 存在一对点列
+\begin_inset Formula $\left\{ x_{1},x_{2},\cdots,x_{n}\right\} $
+\end_inset
+
+和
+\begin_inset Formula $\left\{ y_{1},y_{2},\cdots,y_{m}\right\} $
+\end_inset
+
+使平均距离函数
+\begin_inset Formula 
+\[
+f(z)=\frac{1}{n}\cdot\sum_{i}\left|x_{i}-z\right|,\quad h(z)=\frac{1}{m}\cdot\sum_{j}\left|y_{j}-z\right|,
+\]
+
+\end_inset
+
+满足
+\begin_inset Formula 
+\[
+f(p)>h(q),\qquad\forall p,q\in X.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+但由于
+\begin_inset Formula 
+\[
+\ensuremath{\frac{1}{m}\cdot\sum_{i}f\left(y_{i}\right)=\frac{1}{m\cdot n}\cdot\sum_{i,j}\left|x_{i}-y_{j}\right|=\frac{1}{n}\cdot\sum_{i}h\left(x_{i}\right)},
+\]
+
+\end_inset
+
+矛盾.
+\end_layout
+
+\begin_layout Standard
+参考资料:
+\end_layout
+
+\begin_layout Standard
+O.
+ Gross, "The rendezvous value of a metric space", Advances in Game Theory,
+ Ann.
+ of Math.
+ Studies no.
+ 52, Princeton, 1964, 49–53.
+\end_layout
+
+\begin_layout Standard
+Cleary and Morris - Numbers for shapes: https://www.maa.org/sites/default/files/pd
+f/upload_library/22/Ford/Cleary-Morris-Yost260-275.pdf
+\end_layout
+
+\begin_layout Standard
+Helly's theorem: https://en.wikipedia.org/wiki/Helly%27s_theorem.
+\end_layout
+
+\end_body
+\end_document

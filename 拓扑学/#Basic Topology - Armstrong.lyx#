@@ -568,12 +568,12 @@ status open
 \begin_inset Formula $p$
 \end_inset
 
-的一个领域
+的一个邻域
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-领域
+邻域
 \end_layout
 
 \end_inset
@@ -602,7 +602,28 @@ status open
 \begin_inset Formula $x$
 \end_inset
 
-的一个领域.
+的一个邻域
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+邻域
+\end_layout
+
+\end_inset
+
+.
+ 即满足以下结构的空间称为拓扑空间
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+拓扑空间
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -614,10 +635,761 @@ status open
 \end_layout
 
 \begin_layout Itemize
+集族中任何两个元素的交集仍在集族中;
+\end_layout
+
+\begin_layout Itemize
+若
+\begin_inset Formula $N$
+\end_inset
+
+是
 \begin_inset Formula $x$
 \end_inset
 
-的任何
+的邻域, 
+\begin_inset Formula $N\subseteq U\subseteq X$
+\end_inset
+
+, 则
+\begin_inset Formula $U$
+\end_inset
+
+也是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域;
+\end_layout
+
+\begin_layout Itemize
+若
+\begin_inset Formula $N$
+\end_inset
+
+是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域, 并且
+\begin_inset Formula 
+\[
+N^{\circ}\coloneqq\left\{ z\in N\mid N\text{ 是 }z\text{ 的邻域}\right\} ,
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $N^{\circ}$
+\end_inset
+
+也是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域, 称为
+\begin_inset Formula $N$
+\end_inset
+
+的内部
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+内部
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+连续映射
+\end_layout
+
+\begin_layout Standard
+设映射
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+, 如果对于
+\begin_inset Formula $X$
+\end_inset
+
+的每一点
+\begin_inset Formula $x$
+\end_inset
+
+, 以及
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $Y$
+\end_inset
+
+内的任意邻域
+\begin_inset Formula $N$
+\end_inset
+
+, 集合
+\begin_inset Formula $f^{-1}(N)$
+\end_inset
+
+为
+\begin_inset Formula $x$
+\end_inset
+
+在
+\begin_inset Formula $X$
+\end_inset
+
+内的邻域, 则映射
+\begin_inset Formula $f$
+\end_inset
+
+称为是连续
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+连续
+\end_layout
+
+\end_inset
+
+的.
+ 如果
+\begin_inset Formula $f$
+\end_inset
+
+是一对一的, 连续满射, 且有连续逆映射, 则称
+\begin_inset Formula $f$
+\end_inset
+
+是一个同胚
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+同胚
+\end_layout
+
+\end_inset
+
+.
+ 如果空间
+\begin_inset Formula $X,Y$
+\end_inset
+
+上存在同胚映射
+\begin_inset Formula $f$
+\end_inset
+
+, 则称
+\begin_inset Formula $X$
+\end_inset
+
+同胚于
+\begin_inset Formula $Y$
+\end_inset
+
+, 或
+\begin_inset Formula $X$
+\end_inset
+
+拓扑等价
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+拓扑等价
+\end_layout
+
+\end_inset
+
+于
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+曲面
+\end_layout
+
+\begin_layout Standard
+曲面
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+曲面
+\end_layout
+
+\end_inset
+
+是一个拓扑空间, 它上的任一点处有同胚于平面的邻域, 且任意不同的两点有不交邻域.
+\end_layout
+
+\begin_layout Section
+一个分类定理
+\end_layout
+
+\begin_layout Paragraph
+分类定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+分类定理
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+任何闭曲面或者同胚于球面, 或者同胚于添加了有限多个环柄的球面, 或者同胚于挖去有限多个圆盘粘上M
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"{o}
+\end_layout
+
+\end_inset
+
+bius带的球面.
+\end_layout
+
+\begin_layout Paragraph
+亏格
+\end_layout
+
+\begin_layout Standard
+添加了
+\begin_inset Formula $n$
+\end_inset
+
+个环柄的曲面叫做亏格
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+亏格
+\end_layout
+
+\end_inset
+
+为
+\begin_inset Formula $n$
+\end_inset
+
+的可定向曲面.
+ 其中, 如果在曲面上画一条光滑的闭曲线, 在曲线上某点处的切向量与法向量沿曲线运行一周, 仍然能回到原来的一组向量的曲面称为可定向曲面
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+可定向曲面
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+拓扑不变量
+\end_layout
+
+\begin_layout Paragraph
+曲面的分类
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+曲面的分类
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+分类定理所猎德表中任何两个曲面的基本群
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+基本群
+\end_layout
+
+\end_inset
+
+不同构, 即这些曲面互不同胚.
+\end_layout
+
+\begin_layout Paragraph
+Jordan分离定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Jordan分离定理
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+平面内的任何简单闭曲线将平面分为两块.
+\end_layout
+
+\begin_layout Paragraph
+Brouwer不动点定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Brouwer不动点定理
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+圆盘到自己的任何连续映射至少有一个不动点.
+\end_layout
+
+\begin_layout Paragraph
+Nielsen-Schreier定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Nielsen-Schreier定理
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+自由群的子群是自由群.
+\end_layout
+
+\begin_layout Section
+习题
+\end_layout
+
+\begin_layout Paragraph
+1.
+ pf.
+\end_layout
+
+\begin_layout Standard
+用归纳法, 当点数
+\begin_inset Formula $v(T)=1$
+\end_inset
+
+时, 问题显然成立.
+ 假设
+\begin_inset Formula $v(T)=n$
+\end_inset
+
+时命题成立.
+ 现在考虑
+\begin_inset Formula $v(T)=n+1$
+\end_inset
+
+的情况.
+ 
+\end_layout
+
+\begin_layout Standard
+由于
+\begin_inset Formula $T$
+\end_inset
+
+是树, 所以必然存在顶点的度数为
+\begin_inset Formula $1$
+\end_inset
+
+, 否则任取一点
+\begin_inset Formula $v_{1}$
+\end_inset
+
+染色, 并从
+\begin_inset Formula $v_{1}$
+\end_inset
+
+发出的线中任取一条边
+\begin_inset Formula $e_{1}$
+\end_inset
+
+, 它连接的顶点记为
+\begin_inset Formula $v_{2}$
+\end_inset
+
+, 并对
+\begin_inset Formula $v_{2}$
+\end_inset
+
+染色, 如果
+\begin_inset Formula $v_{2}$
+\end_inset
+
+的度至少是
+\begin_inset Formula $2$
+\end_inset
+
+, 则除了
+\begin_inset Formula $e_{1}$
+\end_inset
+
+外还有另一条边
+\begin_inset Formula $e_{2}$
+\end_inset
+
+, 如此下去, 由于图的顶点数有限, 这种取法必然在有限步内到达一个已经被染色的顶点
+\begin_inset Formula $v_{i}$
+\end_inset
+
+, 这与树是无环图矛盾.
+ 
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $T$
+\end_inset
+
+的度数为
+\begin_inset Formula $1$
+\end_inset
+
+的顶点
+\begin_inset Formula $v$
+\end_inset
+
+, 从树中去掉这个顶点以及唯一与其相连接的边后形成图
+\begin_inset Formula $T'$
+\end_inset
+
+, 则
+\begin_inset Formula $v(T')=n$
+\end_inset
+
+, 由归纳假设
+\begin_inset Formula $v(T')-e(T')=1$
+\end_inset
+
+, 而
+\begin_inset Formula $v(T)=v(T')+1$
+\end_inset
+
+, 
+\begin_inset Formula $e(T)=e(T')+1$
+\end_inset
+
+.
+ 即得
+\begin_inset Formula $v(T)-e(T)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+1.
+ pf2
+\end_layout
+
+\begin_layout Standard
+可以对边数使用归纳法, 从树
+\begin_inset Formula $T$
+\end_inset
+
+中去掉一条边, 则将原来的树分成两个子树
+\begin_inset Formula $T_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $T_{2}$
+\end_inset
+
+, 从而
+\begin_inset Formula $v(T)=v(T_{1})+v(T_{2})$
+\end_inset
+
+, 
+\begin_inset Formula $e(T)=e(T_{1})+e(T_{2})+1$
+\end_inset
+
+, 所以
+\begin_inset Formula 
+\[
+v(T)-e(T)=v(T_{1})+v(T_{2})-e(T_{1})-e(T_{2})-1=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+2.
+ pf
+\end_layout
+
+\begin_layout Standard
+本题条件中的图精确来说是指连通图.
+ 由第1题的结论, 已经证明了当
+\begin_inset Formula $\Gamma$
+\end_inset
+
+是树时, 有
+\begin_inset Formula $v(\Gamma)-e(\Gamma)=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+由于任何连通图
+\begin_inset Formula $\Gamma$
+\end_inset
+
+都包含一个树
+\begin_inset Formula $T$
+\end_inset
+
+, 而
+\begin_inset Formula $v(\Gamma)=v(T)$
+\end_inset
+
+, 
+\begin_inset Formula $e(\Gamma)\ge e(T)$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+v(\Gamma)-e(\Gamma)\le v(T)-e(T)=1.
+\]
+
+\end_inset
+
+当
+\begin_inset Formula $v(\Gamma)-e(\Gamma)=1$
+\end_inset
+
+时, 必然有一个点的度数是
+\begin_inset Formula $1$
+\end_inset
+
+, 否则由于每条边有两个顶点, 当统计边的总数时同时统计连接的两个点, 则统计出的点数(重复计数统计)恰好是边数的两倍, 也恰好是所有顶点的度数之和,
+ 即如果记
+\begin_inset Formula $d(v)$
+\end_inset
+
+为顶点
+\begin_inset Formula $v$
+\end_inset
+
+的度数, 有
+\begin_inset Formula 
+\[
+\sum d(v_{i})=2e(\Gamma)\ge2v(\Gamma)=2e(\Gamma)+2,
+\]
+
+\end_inset
+
+矛盾.
+ 如果点
+\begin_inset Formula $v_{1}$
+\end_inset
+
+的度数是
+\begin_inset Formula $1$
+\end_inset
+
+, 则可从
+\begin_inset Formula $\Gamma$
+\end_inset
+
+中除去这个点和它发出的边, 然后根据归纳法可得
+\begin_inset Formula $\Gamma$
+\end_inset
+
+是一棵树.
+\end_layout
+
+\begin_layout Paragraph
+3.
+ pf
+\end_layout
+
+\begin_layout Standard
+题目中的图
+\begin_inset Formula $\Gamma$
+\end_inset
+
+是连通图.
+ 可以考虑树的生长过程, 任取一点
+\begin_inset Formula $v_{1}$
+\end_inset
+
+, 设
+\begin_inset Formula $A=\left\{ v_{1}\right\} $
+\end_inset
+
+.
+ 由于图是连通图, 且
+\begin_inset Formula $v_{1}$
+\end_inset
+
+有出度.
+ 所以可以将
+\begin_inset Formula $\Gamma$
+\end_inset
+
+中与
+\begin_inset Formula $v_{1}$
+\end_inset
+
+距离是
+\begin_inset Formula $1$
+\end_inset
+
+的所有顶点放入
+\begin_inset Formula $A$
+\end_inset
+
+中, 并将连接到
+\begin_inset Formula $A$
+\end_inset
+
+中点的边染色.
+ 由于
+\begin_inset Formula $\Gamma$
+\end_inset
+
+的连通性, 从
+\begin_inset Formula $\Gamma$
+\end_inset
+
+中又可找到与
+\begin_inset Formula $A$
+\end_inset
+
+距离是
+\begin_inset Formula $1$
+\end_inset
+
+的顶点, 将其放入
+\begin_inset Formula $A$
+\end_inset
+
+中, 并将连接到
+\begin_inset Formula $A$
+\end_inset
+
+中的边中任取一条染色.
+ 如此继续下去直到
+\begin_inset Formula $\Gamma$
+\end_inset
+
+中的所有顶点都放入
+\begin_inset Formula $A$
+\end_inset
+
+中, 则染色的边与顶点
+\begin_inset Formula $A$
+\end_inset
+
+形成一棵树.
+\end_layout
+
+\begin_layout Paragraph
+6.
+ pf
+\end_layout
+
+\begin_layout Standard
+由于一条边由两个面所共用, 所以
+\begin_inset Formula $fp=2e$
+\end_inset
+
+.
+ 由于一个顶点发出
+\begin_inset Formula $q$
+\end_inset
+
+条边, 一条边由两个顶点组成, 所以
+\begin_inset Formula $vq=2e$
+\end_inset
+
+即得.
+ 
+\end_layout
+
+\begin_layout Paragraph
+8.pf
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v-e+f=-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+10.pf
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{2}+\frac{1}{\pi}\arctan x:\RR\to(0,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+连续性
+\end_layout
+
+\begin_layout Section
+开集与闭集
 \end_layout
 
 \begin_layout Standard

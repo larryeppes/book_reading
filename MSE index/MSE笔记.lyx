@@ -944,6 +944,25 @@ Q4468488 real-analysis probalility-theory measure-theory metric-spaces average
 
 .
  
+\end_layout
+
+\begin_layout Standard
+问题中
+\begin_inset Formula $\alpha$
+\end_inset
+
+的存在唯一性是对于任意的点数
+\begin_inset Formula $k$
+\end_inset
+
+来说的.
+\end_layout
+
+\begin_layout Standard
+这个问题对应MO笔记里的Q314382.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
