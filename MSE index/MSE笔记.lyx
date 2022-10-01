@@ -409,6 +409,80 @@ Differential Geometry by Prasolov
 Differential Geometry by Sharpe
 \end_layout
 
+\begin_layout Paragraph
+Q4468488 real-analysis probalility-theory measure-theory metric-spaces average
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $(X,d)$
+\end_inset
+
+是连通紧度量空间, 问是否存在唯一的
+\begin_inset Formula $\alpha\ge0$
+\end_inset
+
+满足:
+\end_layout
+
+\begin_layout Standard
+对于任何
+\begin_inset Formula $x_{1},\cdots,x_{k}\in X$
+\end_inset
+
+, 存在
+\begin_inset Formula $x\in X$
+\end_inset
+
+使得从
+\begin_inset Formula $x$
+\end_inset
+
+到
+\begin_inset Formula $x_{i}$
+\end_inset
+
+(
+\begin_inset Formula $i=1,\cdots,k$
+\end_inset
+
+)的平均距离恰好为
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+问题中
+\begin_inset Formula $\alpha$
+\end_inset
+
+的存在唯一性是对于任意的点数
+\begin_inset Formula $k$
+\end_inset
+
+来说的.
+\end_layout
+
+\begin_layout Standard
+这个问题对应MO笔记里的Q314382.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+在bookreading/MSE index下有goodnote笔记, 这个问题描述的有点模糊不清.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -899,80 +973,6 @@ Q3661879
 
 \begin_layout Standard
 紧算子分数幂的特征值问题
-\end_layout
-
-\begin_layout Paragraph
-Q4468488 real-analysis probalility-theory measure-theory metric-spaces average
-\end_layout
-
-\begin_layout Standard
-设
-\begin_inset Formula $(X,d)$
-\end_inset
-
-是连通紧度量空间, 问是否存在唯一的
-\begin_inset Formula $\alpha\ge0$
-\end_inset
-
-满足:
-\end_layout
-
-\begin_layout Standard
-对于任何
-\begin_inset Formula $x_{1},\cdots,x_{k}\in X$
-\end_inset
-
-, 存在
-\begin_inset Formula $x\in X$
-\end_inset
-
-使得从
-\begin_inset Formula $x$
-\end_inset
-
-到
-\begin_inset Formula $x_{i}$
-\end_inset
-
-(
-\begin_inset Formula $i=1,\cdots,k$
-\end_inset
-
-)的平均距离恰好为
-\begin_inset Formula $\alpha$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-问题中
-\begin_inset Formula $\alpha$
-\end_inset
-
-的存在唯一性是对于任意的点数
-\begin_inset Formula $k$
-\end_inset
-
-来说的.
-\end_layout
-
-\begin_layout Standard
-这个问题对应MO笔记里的Q314382.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: 在bookreading/MSE index下有goodnote 笔记, 这个问题描述的有点模糊不清.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Paragraph

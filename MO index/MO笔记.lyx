@@ -245,7 +245,7 @@ Q314382 mg.metric-geometry
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph
 存在性:
 \end_layout
 
@@ -294,7 +294,7 @@ f(p)>h(q),\qquad\forall p,q\in X.
 矛盾.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph
 参考资料:
 \end_layout
 
@@ -308,12 +308,27 @@ O.
 \end_layout
 
 \begin_layout Standard
-Cleary and Morris - Numbers for shapes: https://www.maa.org/sites/default/files/pd
-f/upload_library/22/Ford/Cleary-Morris-Yost260-275.pdf
+\begin_inset CommandInset href
+LatexCommand href
+name "Cleary and Morris - Numbers for shapes"
+target "https://www.maa.org/sites/default/files/pdf/upload_library/22/Ford/Cleary-Morris-Yost260-275.pdf"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Helly's theorem: https://en.wikipedia.org/wiki/Helly%27s_theorem.
+\begin_inset CommandInset href
+LatexCommand href
+name "Helly's theorem"
+target "https://en.wikipedia.org/wiki/Helly%27s_theorem"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
