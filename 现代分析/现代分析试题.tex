@@ -1,0 +1,145 @@
+%% LyX 2.3.2-1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[a4paper,UTF8]{article}
+\usepackage[T1]{fontenc}
+\usepackage{CJKutf8}
+\usepackage{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=2cm}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\theoremstyle{plain}
+\newtheorem{thm}{\protect\theoremname}
+\theoremstyle{definition}
+\newtheorem{problem}[thm]{\protect\problemname}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\usepackage{tkz-euclide}
+%\usetkzobj{all}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\Res{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+
+\makeatother
+
+\providecommand{\problemname}{问题}
+\providecommand{\theoremname}{定理}
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}%
+\title{现代分析试题}
+\maketitle
+\begin{problem}
+设$\mathcal{E}_{1},\mathcal{E}_{2},\cdots,\mathcal{E}_{n}$为$\left(X,\mathscr{A},\mu\right)$中的可测子集族,
+其中每个$\mathcal{E}_{i}$都是$\pi$-系(即有限交封闭). 假设对于任意的$A_{1}\in\mathcal{E}_{1},\cdots,A_{n}\in\mathcal{E}_{n}$有
+\[
+\mu\left(\bigcap_{i=1}^{n}A_{i}\right)=\prod_{i=1}^{n}\mu\left(A_{i}\right).
+\]
+证明, 对于任意的$B_{1}\in\sigma\left(\mathcal{E}_{1}\right),\cdots,B_{n}\in\sigma\left(\mathcal{E}_{n}\right)$有
+\[
+\mu\left(\bigcap_{i=1}^{n}B_{i}\right)=\prod_{i=1}^{n}\mu\left(B_{i}\right).
+\]
+\end{problem}
+%
+\begin{problem}
+设$1\le p<\infty$, $\left\{ f_{n}\right\} _{1}^{\infty}$是$L^{p}\left(\Omega,\mu\right)$中序列,
+$\Omega$为$\RR^{d}$中有界集, $\mu$为Lebesgue测度, $f$为可测函数, $f_{n}\to f\ a.e.$且对于任意$\varepsilon>0$,
+存在$\delta_{\varepsilon}>0$, 使得对于任意的可测集$E$, 只要$\mu\left(E\right)\le\delta_{\varepsilon}$,
+便有
+\[
+\int_{E}\left|f_{n}\right|^{p}\ud\mu\le\varepsilon,\quad\forall n.
+\]
+证明$f_{n}$在$L^{p}$中收敛于$f$.
+\end{problem}
+%
+\begin{problem}
+设$K\in L^{1}\left(\left[0,1\right]^{2}\right)$, 若对于任意的$f\in C_{\left[0,1\right]}$,
+有
+\[
+\int_{\left[0,1\right]}K\left(x,y\right)f\left(y\right)\ud y=0,\ a.e.\ x\in\left[0,1\right].
+\]
+证明$K\left(x,y\right)=0,\ a.e.$
+\end{problem}
+%
+\begin{problem}
+在$\left[0,1\right]$上构造一个连续函数序列$f_{n}$, 使得$0\le f_{n}\le1$, 且
+\[
+\lim_{n\to\infty}\int_{0}^{1}f_{n}\left(x\right)\ud x=0,
+\]
+但对于任何$x\in\left[0,1\right]$, $\left\{ f_{n}\left(x\right)\right\} $都不收敛.
+\end{problem}
+%
+\begin{problem}
+证明:
+\end{problem}
+\begin{enumerate}
+\item 设$f\in L^{1}\left(0,1\right)$, $g$是周期为$1$的连续函数, 证明
+\[
+\lim_{n\to\infty}\int_{0}^{1}f\left(x\right)g\left(nx\right)\ud x=\int_{0}^{1}f\ud x\int_{0}^{1}g\ud x,
+\]
+并给出Riemann-Lebesgue引理, 及
+\[
+\lim_{n\to\infty}\int_{0}^{1}f\left(x\right)\left|\sin\left(nx\right)\right|\ud x,\ \ \lim_{n\to\infty}\int_{0}^{1}f\left(x\right)\sin^{2}\left(nx\right)\ud x
+\]
+的值.
+\item 设$\left\{ n_{k}\right\} $为递增正整数序列, $E$是$\left(-\pi,\pi\right)$中使序列$\left\{ \sin n_{k}x\right\} $收敛的$x$的点集.
+证明$E$是Lebesgue零测集.
+\end{enumerate}
+\end{CJK}
+
+\end{document}
