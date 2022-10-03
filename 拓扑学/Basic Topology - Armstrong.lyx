@@ -1393,6 +1393,2134 @@ TODO
 \end_layout
 
 \begin_layout Standard
+设
+\begin_inset Formula $X$
+\end_inset
+
+为拓扑空间, 
+\begin_inset Formula $O\subseteq X$
+\end_inset
+
+, 若
+\begin_inset Formula $O$
+\end_inset
+
+是它自己每个点的邻域, 则称
+\begin_inset Formula $O$
+\end_inset
+
+为
+\begin_inset Formula $X$
+\end_inset
+
+的开集.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Paragraph
+定义1.3.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $X$
+\end_inset
+
+是一个集合, 
+\begin_inset Formula $\forall x\in X$
+\end_inset
+
+, 取以
+\begin_inset Formula $X$
+\end_inset
+
+的子集为元素的集族, 这集族若满足以下条件, 则集族中的每个元素称为
+\begin_inset Formula $x$
+\end_inset
+
+的一个邻域.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+在它自己的每个邻域内;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+的任两个邻域的交集为
+\begin_inset Formula $x$
+\end_inset
+
+的一个邻域;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+ 若
+\begin_inset Formula $N$
+\end_inset
+
+是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域, 且
+\begin_inset Formula $N\subseteq U\subseteq X$
+\end_inset
+
+, 则
+\begin_inset Formula $U$
+\end_inset
+
+也是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(d)
+\end_layout
+
+\end_inset
+
+ 若
+\begin_inset Formula $N$
+\end_inset
+
+是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域, 且若
+\begin_inset Formula 
+\[
+N^{\circ}=\left\{ z\in N\mid N\text{ 是 }z\text{ 的邻域}\right\} ,
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $N^{\circ}$
+\end_inset
+
+也是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域.
+ (集合
+\begin_inset Formula $N^{\circ}$
+\end_inset
+
+叫作
+\begin_inset Formula $N$
+\end_inset
+
+的内部)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+注: 
+\end_layout
+
+\begin_layout Standard
+(c)推出: 任一组开集的并是开集;
+\end_layout
+
+\begin_layout Standard
+(b)推出: 有限多个开集的交为开集;
+\end_layout
+
+\begin_layout Standard
+整个空间
+\begin_inset Formula $X$
+\end_inset
+
+和
+\begin_inset Formula $\varnothing$
+\end_inset
+
+是开集;
+\end_layout
+
+\begin_layout Standard
+(d)推出: 对于点
+\begin_inset Formula $x$
+\end_inset
+
+的邻域, 
+\begin_inset Formula $N^{\circ}$
+\end_inset
+
+是开集, 
+\begin_inset Formula $x\in N^{\circ}$
+\end_inset
+
+且
+\begin_inset Formula $N^{\circ}\subseteq N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+由此, 可以将上面的拓扑定义改为以下形式:
+\end_layout
+
+\begin_layout Paragraph
+定义:
+\end_layout
+
+\begin_layout Standard
+若对集合
+\begin_inset Formula $X$
+\end_inset
+
+给定一组子集叫做开集, 满足以下结构的
+\begin_inset Formula $X$
+\end_inset
+
+与子集族一起使
+\begin_inset Formula $X$
+\end_inset
+
+称为一个拓扑空间.
+\end_layout
+
+\begin_layout Itemize
+任意多个开集的并集是开集;
+\end_layout
+
+\begin_layout Itemize
+任意有限多个开集的交集是开集;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X$
+\end_inset
+
+与
+\begin_inset Formula $\varnothing$
+\end_inset
+
+也是开集;
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $N\subseteq X$
+\end_inset
+
+, 若有开集
+\begin_inset Formula $O$
+\end_inset
+
+, 使
+\begin_inset Formula $x\in O\subseteq N$
+\end_inset
+
+, 则称
+\begin_inset Formula $N$
+\end_inset
+
+为
+\begin_inset Formula $x$
+\end_inset
+
+的邻域.
+\end_layout
+
+\begin_layout Standard
+其中上面最后一条作为邻域的定义.
+ 配备以上结构的集合
+\begin_inset Formula $X$
+\end_inset
+
+叫做一个拓扑空间.
+\end_layout
+
+\begin_layout Paragraph
+定义:
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $X$
+\end_inset
+
+是拓扑空间, 
+\begin_inset Formula $Y\subseteq X$
+\end_inset
+
+, 若以
+\begin_inset Formula $X$
+\end_inset
+
+的开集与
+\begin_inset Formula $Y$
+\end_inset
+
+的交集作为
+\begin_inset Formula $Y$
+\end_inset
+
+中开集, 则称为
+\begin_inset Formula $Y$
+\end_inset
+
+上的诱导拓扑.
+\end_layout
+
+\begin_layout Standard
+其他定义有离散拓扑, 离散空间; 余有限拓扑(含
+\begin_inset Formula $\varnothing$
+\end_inset
+
+); 闭集, 极限点或聚点, 闭包(
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+), 稠密集.
+\end_layout
+
+\begin_layout Paragraph
+Thm 2.2.
+\end_layout
+
+\begin_layout Standard
+一个子集是闭集当且仅当它包含自己的所有极限点.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+pf.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+: 
+\begin_inset Formula $A$
+\end_inset
+
+闭, 则
+\begin_inset Formula $A^{c}$
+\end_inset
+
+开, 故
+\begin_inset Formula $\forall x\in A^{c}$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+不是
+\begin_inset Formula $A$
+\end_inset
+
+的极限点.
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $A$
+\end_inset
+
+包含了自己所有极限点.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+: 若包含了自己的所有极限点, 即
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\forall x\in A^{c}$
+\end_inset
+
+, 则
+\begin_inset Formula $x$
+\end_inset
+
+不是
+\begin_inset Formula $A$
+\end_inset
+
+的极限点, 
+\end_layout
+
+\begin_layout Plain Layout
+则有
+\begin_inset Formula $x$
+\end_inset
+
+的邻域
+\begin_inset Formula $N$
+\end_inset
+
+与
+\begin_inset Formula $A$
+\end_inset
+
+不交.
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $N\subseteq A^{c}$
+\end_inset
+
+, 即
+\begin_inset Formula $A^{c}$
+\end_inset
+
+是它自己每点的邻域.
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $A^{c}$
+\end_inset
+
+开, 即
+\begin_inset Formula $A$
+\end_inset
+
+闭.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Thm.
+ 2.3.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+的闭包是最小的包含
+\begin_inset Formula $A$
+\end_inset
+
+的闭集, 即是包含
+\begin_inset Formula $A$
+\end_inset
+
+的一切闭集的交.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+pf.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overline{A}=A\cup A'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+1).
+ 
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+闭
+\end_layout
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $x\in\overline{A}^{c}$
+\end_inset
+
+, 则
+\begin_inset Formula $x$
+\end_inset
+
+不是
+\begin_inset Formula $A$
+\end_inset
+
+的极限点.
+\end_layout
+
+\begin_layout Plain Layout
+存在
+\begin_inset Formula $x$
+\end_inset
+
+的开邻域
+\begin_inset Formula $U_{x}$
+\end_inset
+
+使得
+\begin_inset Formula $U_{x}\cap A=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+由开集是它每个点的邻域, 故
+\begin_inset Formula $U_{x}\cap A'=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+即
+\begin_inset Formula $U_{x}\cap\overline{A}=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+由于
+\begin_inset Formula $\forall x\in\overline{A}^{c}$
+\end_inset
+
+, 存在开集
+\begin_inset Formula $U_{x}$
+\end_inset
+
+使
+\begin_inset Formula $U_{x}\subseteq\overline{A}^{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $\overline{A}^{c}$
+\end_inset
+
+开, 所以
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+闭.
+\end_layout
+
+\begin_layout Plain Layout
+2).
+ 若闭集
+\begin_inset Formula $B\supseteq A$
+\end_inset
+
+, 则由Thm2.2.
+ 
+\begin_inset Formula $B\supseteq B'\supseteq A'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $B\supseteq\overline{A}\supseteq A$
+\end_inset
+
+, 即任何包含
+\begin_inset Formula $A$
+\end_inset
+
+的闭集也包含
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Thm.
+ 2.4.
+\end_layout
+
+\begin_layout Standard
+一个集合为闭集当且仅当它等于自己的闭包.
+\end_layout
+
+\begin_layout Paragraph
+定义:
+\end_layout
+
+\begin_layout Standard
+集合
+\begin_inset Formula $A$
+\end_inset
+
+的背部是包含于
+\begin_inset Formula $A$
+\end_inset
+
+的所有开集之并, 记作
+\begin_inset Formula $A^{\circ}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+点
+\begin_inset Formula $x\in A^{\circ}$
+\end_inset
+
+当且仅当
+\begin_inset Formula $A$
+\end_inset
+
+是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域;
+\end_layout
+
+\begin_layout Itemize
+开集是它自己的内部.
+\end_layout
+
+\begin_layout Standard
+集合
+\begin_inset Formula $A$
+\end_inset
+
+的边界定义为
+\begin_inset Formula $\overline{A}\cap\overline{A^{c}}=\left(A^{\circ}\cup A^{c\circ}\right)^{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\left(A^{\circ}\cup A^{c\circ}\right)^{c}=A^{\circ c}\cap A^{c\circ c}=A^{cc\circ c}\cap A^{c\circ c}=\overline{A^{c}}\cap\overline{A}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+一个子集的边界可以是整个空间, 如
+\begin_inset Formula $\QQ^{3}\subseteq E^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+设集合
+\begin_inset Formula $X$
+\end_inset
+
+上有一个拓扑, 
+\begin_inset Formula $\beta$
+\end_inset
+
+为这个拓扑的一组开集, 使得每个开集可写成
+\begin_inset Formula $\beta$
+\end_inset
+
+中成员的并集, 则
+\begin_inset Formula $\beta$
+\end_inset
+
+称为此拓扑的一组拓扑基.
+\end_layout
+
+\begin_layout Paragraph
+Thm.
+ 2.5.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $\beta$
+\end_inset
+
+是由
+\begin_inset Formula $X$
+\end_inset
+
+的子集构成的一个非空组, 若
+\begin_inset Formula $\beta$
+\end_inset
+
+内有限多个成员的交仍属于
+\begin_inset Formula $\beta$
+\end_inset
+
+, 并且若
+\begin_inset Formula $\cup\beta=X$
+\end_inset
+
+, 则
+\begin_inset Formula $\beta$
+\end_inset
+
+是
+\begin_inset Formula $X$
+\end_inset
+
+上某个拓扑的拓扑基.
+\end_layout
+
+\begin_layout Paragraph
+pf.
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $\beta$
+\end_inset
+
+中元素的所有可能的并集作为开集, 它形成一个拓扑.
+\end_layout
+
+\begin_layout Subsection
+习题
+\end_layout
+
+\begin_layout Section
+连续映射
+\end_layout
+
+\begin_layout Paragraph
+Thm 2.6.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X,Y$
+\end_inset
+
+是拓扑空间, 从
+\begin_inset Formula $X$
+\end_inset
+
+到
+\begin_inset Formula $Y$
+\end_inset
+
+的映射连续当且仅当
+\begin_inset Formula $Y$
+\end_inset
+
+的每个开集的原像是
+\begin_inset Formula $X$
+\end_inset
+
+中的开集.
+\end_layout
+
+\begin_layout Standard
+此定理依赖的映射连续的定义是: 
+\begin_inset Formula $\forall x\in X$
+\end_inset
+
+, 对于任意的
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $Y$
+\end_inset
+
+中的邻域
+\begin_inset Formula $N$
+\end_inset
+
+, 集合
+\begin_inset Formula $f^{-1}(N)$
+\end_inset
+
+是
+\begin_inset Formula $x$
+\end_inset
+
+在
+\begin_inset Formula $X$
+\end_inset
+
+内的邻域.
+\end_layout
+
+\begin_layout Standard
+或者简而言之: 邻域的原像是邻域.
+\end_layout
+
+\begin_layout Paragraph
+Thm.
+ 2.7.
+ 
+\end_layout
+
+\begin_layout Standard
+连续函数的复合是连续函数.
+\end_layout
+
+\begin_layout Paragraph
+pf.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+, 
+\begin_inset Formula $g:Y\to Z$
+\end_inset
+
+均连续.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $O$
+\end_inset
+
+为
+\begin_inset Formula $Z$
+\end_inset
+
+内开集, 并由
+\begin_inset Formula 
+\[
+\left(g\circ f\right)^{-1}(O)=f^{-1}\left(g^{-1}(O)\right).
+\]
+
+\end_inset
+
+由
+\begin_inset Formula $g$
+\end_inset
+
+连续, 
+\begin_inset Formula $g^{-1}(O)$
+\end_inset
+
+为
+\begin_inset Formula $Y$
+\end_inset
+
+中开集.
+\end_layout
+
+\begin_layout Standard
+由
+\begin_inset Formula $f$
+\end_inset
+
+连续, 
+\begin_inset Formula $f^{-1}\left(g^{-1}(O)\right)$
+\end_inset
+
+为
+\begin_inset Formula $X$
+\end_inset
+
+中开集.
+\end_layout
+
+\begin_layout Paragraph
+Thm.
+ 2.8.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+连续, 且
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+有子空间拓扑.
+ 则限制映射
+\begin_inset Formula $f\mid_{A}:A\to Y$
+\end_inset
+
+连续.
+\end_layout
+
+\begin_layout Paragraph
+pf.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $O$
+\end_inset
+
+是
+\begin_inset Formula $Y$
+\end_inset
+
+中开集, 由
+\begin_inset Formula 
+\[
+\left(f\mid_{A}\right)^{-1}(O)=A\cap f^{-1}(O).
+\]
+
+\end_inset
+
+由
+\begin_inset Formula $f$
+\end_inset
+
+连续, 所以
+\begin_inset Formula $f^{-1}(O)$
+\end_inset
+
+为
+\begin_inset Formula $X$
+\end_inset
+
+中开集.
+\end_layout
+
+\begin_layout Standard
+所以
+\begin_inset Formula $A\cap f^{-1}(O)$
+\end_inset
+
+为
+\begin_inset Formula $A$
+\end_inset
+
+中开集.
+\end_layout
+
+\begin_layout Standard
+所以
+\begin_inset Formula $f\mid_{A}$
+\end_inset
+
+连续.
+\end_layout
+
+\begin_layout Standard
+其它术语定义: 恒等映射, 含入映射:
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+, 映射
+\begin_inset Formula $i:A\to X$
+\end_inset
+
+, 
+\begin_inset Formula $x\mapsto x$
+\end_inset
+
+, 则
+\begin_inset Formula $i$
+\end_inset
+
+称为含入映射.
+\end_layout
+
+\begin_layout Paragraph
+Thm.
+ 2.9.
+\end_layout
+
+\begin_layout Standard
+以下各条相互等价:
+\end_layout
+
+\begin_layout Standard
+(a).
+ 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+是连续映射;
+\end_layout
+
+\begin_layout Standard
+(b).
+ 若
+\begin_inset Formula $\beta$
+\end_inset
+
+是
+\begin_inset Formula $Y$
+\end_inset
+
+的一组拓扑基, 
+\begin_inset Formula $\beta$
+\end_inset
+
+内每个成员的原像为
+\begin_inset Formula $X$
+\end_inset
+
+的开集;
+\end_layout
+
+\begin_layout Standard
+(c).
+ 
+\begin_inset Formula $\forall A\subseteq X$
+\end_inset
+
+, 
+\begin_inset Formula $f(\overline{A})\subseteq\overline{f(A)}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(d).
+ 
+\begin_inset Formula $\forall B\subseteq Y$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{f^{-1}(B)}\subseteq f^{-1}(\overline{B})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(e).
+ 
+\begin_inset Formula $Y$
+\end_inset
+
+内任何闭集的原像是
+\begin_inset Formula $X$
+\end_inset
+
+的闭集.
+\end_layout
+
+\begin_layout Paragraph
+pf: 
+\end_layout
+
+\begin_layout Standard
+(b)
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+(c):
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+, 则
+\begin_inset Formula $f(A)\subseteq\overline{f(A)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $x\in\overline{A}\setminus A$
+\end_inset
+
+, 则
+\begin_inset Formula $f(x)$
+\end_inset
+
+是
+\begin_inset Formula $f(A)$
+\end_inset
+
+的极限点.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $N$
+\end_inset
+
+是
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $Y$
+\end_inset
+
+内的邻域, 则有
+\begin_inset Formula $\beta$
+\end_inset
+
+内的开集
+\begin_inset Formula $B$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+f(x)\in B\subseteq N.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+由(b), 
+\begin_inset Formula $f^{-1}(B)$
+\end_inset
+
+在
+\begin_inset Formula $X$
+\end_inset
+
+中开, 是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域.
+\end_layout
+
+\begin_layout Standard
+由
+\begin_inset Formula $x$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的极限点, 则
+\begin_inset Formula $\left(f^{-1}(B)\setminus\left\{ x\right\} \right)\cap A\ne\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+故
+\begin_inset Formula $\left(B\setminus\left\{ f(x)\right\} \right)\cap f(A)\ne\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+从而有
+\begin_inset Formula $\left(N\setminus\left\{ f(x)\right\} \right)\cap f(A)\ne\varnothing$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(d)
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+(e)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $B$
+\end_inset
+
+是
+\begin_inset Formula $Y$
+\end_inset
+
+中闭集, 则
+\begin_inset Formula $\overline{B}=B$
+\end_inset
+
+, 由(d),
+\begin_inset Formula 
+\[
+\overline{f^{-1}(B)}\subseteq f^{-1}(\overline{B})=f^{-1}(B).
+\]
+
+\end_inset
+
+故
+\begin_inset Formula $f^{-1}(B)$
+\end_inset
+
+在
+\begin_inset Formula $X$
+\end_inset
+
+中闭.
+\end_layout
+
+\begin_layout Paragraph
+一个反例:
+\end_layout
+
+\begin_layout Standard
+存在双射
+\begin_inset Formula $f$
+\end_inset
+
+, 使得
+\begin_inset Formula $f$
+\end_inset
+
+连续, 但
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+不连续.
+\end_layout
+
+\begin_layout Paragraph
+Hint:
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $C$
+\end_inset
+
+为复平面上的单位圆周,
+\end_layout
+
+\begin_layout Standard
+则
+\begin_inset Formula $f(x):[0,1)\to C$
+\end_inset
+
+, 
+\begin_inset Formula $x\mapsto\ue^{2\pi\ui x}$
+\end_inset
+
+连续.
+\end_layout
+
+\begin_layout Standard
+但
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+不连续, 因为开集
+\begin_inset Formula $[0,1)$
+\end_inset
+
+的原像
+\begin_inset Formula 
+\[
+\left(f^{-1}\right)^{-1}\left([0,1)\right)
+\]
+
+\end_inset
+
+不是
+\begin_inset Formula $C$
+\end_inset
+
+中开集.
+\end_layout
+
+\begin_layout Paragraph
+定义:
+\end_layout
+
+\begin_layout Standard
+一个同胚
+\begin_inset Formula $h:X\to Y$
+\end_inset
+
+是指一个连续双射, 其逆映射也连续.
+\end_layout
+
+\begin_layout Standard
+圆盘是同胚于
+\begin_inset Formula $E^{2}$
+\end_inset
+
+内单位闭圆盘
+\begin_inset Formula $D$
+\end_inset
+
+的任何拓扑空间, 令
+\begin_inset Formula $C$
+\end_inset
+
+为单位圆周, 若
+\begin_inset Formula $A$
+\end_inset
+
+为圆盘, 
+\begin_inset Formula $h:A\to D$
+\end_inset
+
+为同胚映射, 则
+\begin_inset Formula $h^{-1}(C)$
+\end_inset
+
+称为
+\begin_inset Formula $A$
+\end_inset
+
+的边界, 记为
+\begin_inset Formula $\partial A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Lem.
+ 2.10.
+\end_layout
+
+\begin_layout Standard
+圆盘边界到自身的任何同胚可扩张成圆盘自身的同胚.
+\end_layout
+
+\begin_layout Paragraph
+pf.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $A$
+\end_inset
+
+是圆盘, 取同胚映射
+\begin_inset Formula $h:A\to D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+设同胚映射
+\begin_inset Formula $g:\partial A\to\partial A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+则
+\begin_inset Formula $f:D\to D$
+\end_inset
+
+, 
+\begin_inset Formula $x\mapsto\norm{x}h\circ g\circ h^{-1}\left(\frac{x}{\norm{x}}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $x\ne0$
+\end_inset
+
+.
+ 额外定义
+\begin_inset Formula $f(0)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+即是
+\begin_inset Formula $D$
+\end_inset
+
+的自同胚, 这个扩张
+\begin_inset Formula $f$
+\end_inset
+
+称为辅式扩张.
+\end_layout
+
+\begin_layout Paragraph
+Lem.
+ 2.11.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $A$
+\end_inset
+
+与
+\begin_inset Formula $B$
+\end_inset
+
+为沿着边界弧相交的两个圆盘, 则
+\begin_inset Formula $A\cup B$
+\end_inset
+
+为圆盘.
+\end_layout
+
+\begin_layout Standard
+注: 
+\begin_inset Formula $A$
+\end_inset
+
+与
+\begin_inset Formula $B$
+\end_inset
+
+的交集边界弧是连通的, 否则有下图作为反例.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Basic Topology - Armstrong/已粘贴2.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+习题
+\end_layout
+
+\begin_layout Section
+充满空间的曲线
+\end_layout
+
+\begin_layout Standard
+维数作为参数表示所需的最少个数并不妥当.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Basic Topology - Armstrong/已粘贴3.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+习题
+\end_layout
+
+\begin_layout Section
+Tietze扩张定理
+\end_layout
+
+\begin_layout Paragraph
+反例:
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X$
+\end_inset
+
+是拓扑空间, 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+为子拓扑空间, 存在
+\begin_inset Formula $f:A\to\RR$
+\end_inset
+
+连续, 但
+\begin_inset Formula $f$
+\end_inset
+
+不能连续扩张到
+\begin_inset Formula $X$
+\end_inset
+
+中.
+\end_layout
+
+\begin_layout Standard
+比如:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=(0,1)$
+\end_inset
+
+, 
+\begin_inset Formula $X=[0,1]$
+\end_inset
+
+, 
+\begin_inset Formula $f:A\to E^{1}$
+\end_inset
+
+, 
+\begin_inset Formula $x\mapsto\ln\frac{x}{1-x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定义2.12.
+\end_layout
+
+\begin_layout Standard
+集合 
+\begin_inset Formula $X$
+\end_inset
+
+ 上的一个度量或距离函数是定义在笛卡尔积 
+\begin_inset Formula $X\times X$
+\end_inset
+
+ 上的一个实值函数 
+\begin_inset Formula $d$
+\end_inset
+
+, 它对于任意 
+\begin_inset Formula $x,y,z\in X$
+\end_inset
+
+ 满足: 
+\end_layout
+
+\begin_layout Standard
+(a).
+ 
+\begin_inset Formula $d(x,y)\ge0$
+\end_inset
+
+, 等号成立, 当且仅当 
+\begin_inset Formula $x=y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(b).
+ 
+\begin_inset Formula $d(x,y)=d(y,x)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(c).
+ 
+\begin_inset Formula $d(x,y)+d(y,z)\ge d(x,z)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+集合具备了一个度量, 以后叫作度量空间.
+\end_layout
+
+\begin_layout Paragraph
+Lem.
+ 2.13
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $d$
+\end_inset
+
+是
+\begin_inset Formula $X$
+\end_inset
+
+上的度量, 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+, 
+\begin_inset Formula $d(x,A)=\inf_{a\in A}d(x,a)$
+\end_inset
+
+, 则实值函数
+\begin_inset Formula $x\mapsto d(x,A)$
+\end_inset
+
+是连续的.
+\end_layout
+
+\begin_layout Paragraph
+pf.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $N$
+\end_inset
+
+是
+\begin_inset Formula $d=d(x,A)$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+上的邻域.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:X\to\RR$
+\end_inset
+
+, 
+\begin_inset Formula $x\mapsto d(x,A)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+以下证明
+\begin_inset Formula $f^{-1}(N)$
+\end_inset
+
+是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域, 即:
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+适当小, 使
+\begin_inset Formula $(d-\epsilon,d+\epsilon)\subseteq N$
+\end_inset
+
+, 只要证
+\begin_inset Formula $f^{-1}(d-\epsilon,d+\epsilon)$
+\end_inset
+
+是
+\begin_inset Formula $x$
+\end_inset
+
+的开邻域.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $U$
+\end_inset
+
+是以
+\begin_inset Formula $x$
+\end_inset
+
+为中心, 
+\begin_inset Formula $\frac{\epsilon}{2}$
+\end_inset
+
+为半径的开球.
+\end_layout
+
+\begin_layout Standard
+由于
+\begin_inset Formula $d(x,A)=\inf_{a\in A}d(x,a)$
+\end_inset
+
+, 取
+\begin_inset Formula $a\in A$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+d(x,a)<d(x,A)+\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+若
+\begin_inset Formula $z\in U$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+d(z,A)\le d(z,a)\le d(z,x)+d(x,a)<\frac{\epsilon}{2}+d(x,A)+\frac{\epsilon}{2}=d(x,A)+\epsilon.
+\]
+
+\end_inset
+
+同理
+\begin_inset Formula $d(x,A)\le d(z,A)+\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+所以
+\begin_inset Formula $f(z)\in(d-\epsilon,d+\epsilon)$
+\end_inset
+
+, 即
+\begin_inset Formula $\forall z\in U$
+\end_inset
+
+, 
+\begin_inset Formula $z\in f^{-1}(d-\epsilon,d+\epsilon)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+也即
+\begin_inset Formula $U\subseteq f^{-1}(d-\epsilon,d+\epsilon)\subseteq f^{-1}(N)$
+\end_inset
+
+.
+ 故
+\begin_inset Formula $f^{-1}(N)$
+\end_inset
+
+是
+\begin_inset Formula $x$
+\end_inset
+
+的邻域.
+\end_layout
+
+\begin_layout Paragraph
+Lem.
+ 2.14.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $A,B$
+\end_inset
+
+是度量空间
+\begin_inset Formula $X$
+\end_inset
+
+中的两不交闭集, 则存在连续函数
+\begin_inset Formula $f:X\to\RR$
+\end_inset
+
+, 使
+\begin_inset Formula $f(B)=-1$
+\end_inset
+
+, 
+\begin_inset Formula $f(A)=1$
+\end_inset
+
+, 
+\begin_inset Formula $f(X\setminus(A\cup B))=(-1,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+pf.
+\end_layout
+
+\begin_layout Standard
+由
+\begin_inset Formula $A,B$
+\end_inset
+
+为不交闭集, 故
+\begin_inset Formula $\forall x\in X$
+\end_inset
+
+, 
+\begin_inset Formula $d(x,A)+d(x,B)\ne0$
+\end_inset
+
+.
+ 则取
+\begin_inset Formula 
+\[
+f(x)=\frac{d(x,B)-d(x,A)}{d(x,B)+d(x,A)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Lem.
+ 2.15.
+ (Tietz扩张定理)
+\end_layout
+
+\begin_layout Standard
+在度量空间的闭子集上定义的任何连续实函数可扩张到整个空间.
+\end_layout
+
+\begin_layout Standard
+证明的关键部分: 定义
+\begin_inset Formula 
+\[
+A_{1}=\left\{ x\in C:f(x)\ge\frac{M}{3}\right\} ;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B_{1}=\left\{ x\in C:f(x)\le-\frac{M}{3}\right\} ,
+\]
+
+\end_inset
+
+
+\begin_inset Formula $A_{1}\cap B_{1}=\varnothing$
+\end_inset
+
+, 且都在
+\begin_inset Formula $X$
+\end_inset
+
+中闭.
+\end_layout
+
+\begin_layout Standard
+由Lem.
+ 2.14推出, 有连续映射
+\begin_inset Formula $g_{1}:X\to\left[-\frac{M}{3},\frac{M}{3}\right]$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+g_{1}(A_{1})=\frac{M}{3},\quad g_{1}(B_{1})=-\frac{M}{3},\quad g_{1}(X\setminus(A_{1}\cup B_{1}))=\left(-\frac{M}{3},\frac{M}{3}\right).
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall x\in C,\ \left|f(x)-g_{1}(x)\right|\le\frac{2M}{3}.
+\]
+
+\end_inset
+
+定义
+\begin_inset Formula 
+\[
+A_{2}=\left\{ x\in C:f(x)-g_{1}(x)\ge\frac{2M}{9}\right\} ;
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+B_{1}=\left\{ x\in C:f(x)-g_{1}(x)\le-\frac{2M}{9}\right\} ,
+\]
+
+\end_inset
+
+
+\begin_inset Formula $A_{2}\cap B_{2}=\varnothing$
+\end_inset
+
+, 且都在
+\begin_inset Formula $X$
+\end_inset
+
+中闭.
+\end_layout
+
+\begin_layout Standard
+由Lem.
+ 2.14推出, 有连续映射
+\begin_inset Formula $g_{2}:X\to\left[-\frac{2M}{9},\frac{2M}{9}\right]$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+g_{2}(A_{2})=\frac{2M}{9},\quad g_{2}(B_{2})=-\frac{2M}{9},\quad g_{2}(X\setminus(A_{2}\cup B_{2}))=\left(-\frac{2M}{9},\frac{2M}{9}\right).
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\forall x\in C,\ \left|f(x)-g_{1}(x)-g_{2}(x)\right|\le\frac{4M}{9}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+递归取极限得到
+\begin_inset Formula $g(x)$
+\end_inset
+
+, 在
+\begin_inset Formula $X\setminus C$
+\end_inset
+
+上
+\begin_inset Formula $\left|g(x)\right|<M$
+\end_inset
+
+是因为: 因
+\begin_inset Formula $C$
+\end_inset
+
+闭, 
+\begin_inset Formula $g^{-1}(X\setminus C)$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+中开, 所以娶不到等号.
+\end_layout
+
+\begin_layout Standard
+当
+\begin_inset Formula $f$
+\end_inset
+
+无界时的补充: 由于有界情况下的结论是
+\begin_inset Formula $h\circ f:C\to\RR$
+\end_inset
+
+在
+\begin_inset Formula $X$
+\end_inset
+
+上的延拓
+\begin_inset Formula $g:X\to\RR$
+\end_inset
+
+仅在
+\begin_inset Formula $X\setminus C$
+\end_inset
+
+上使
+\begin_inset Formula $\left|g(x)\right|<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+而
+\begin_inset Formula $g\mid_{C}=h\circ f\mid_{C}=(-1,1)$
+\end_inset
+
+, 故
+\begin_inset Formula $g:X\to(-1,1)$
+\end_inset
+
+.
+ 值域不含
+\begin_inset Formula $\pm1$
+\end_inset
+
+边界值.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
