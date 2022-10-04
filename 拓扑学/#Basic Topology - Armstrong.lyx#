@@ -4244,7 +4244,7 @@ name "thm:3.15"
 \end_layout
 
 \begin_layout Standard
-充分性的证明依赖下面的引理.
+证明依赖下面的引理.
  必要性用定理
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4334,51 +4334,6 @@ name "thm:3.1-1"
 \end_inset
 
 的子集为紧致集, 当且仅当它是有界闭的.
-\end_layout
-
-\begin_layout Standard
-必要性部分证明在定理
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "thm:3.9"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- 充分性用定理
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "thm:3.15"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, Heine-Borel定理
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "thm:3.3-1"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-和定理
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "thm:3.5-1"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
