@@ -862,7 +862,7 @@ status open
 
 
 \backslash
-"{o}
+''{o}
 \end_layout
 
 \end_inset
@@ -1414,7 +1414,17 @@ TODO
 \begin_inset Formula $X$
 \end_inset
 
-的开集.
+的开集
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+开集
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1459,7 +1469,17 @@ name "def:2.1"
 \begin_inset Formula $x$
 \end_inset
 
-的一个邻域.
+的一个邻域
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+邻域
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1576,7 +1596,17 @@ N^{\circ}=\left\{ z\in N\mid N\text{ 是 }z\text{ 的邻域}\right\} ,
 \begin_inset Formula $N$
 \end_inset
 
-的内部)
+的内部
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+内部
+\end_layout
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -1649,7 +1679,17 @@ N^{\circ}=\left\{ z\in N\mid N\text{ 是 }z\text{ 的邻域}\right\} ,
 \begin_inset Formula $X$
 \end_inset
 
-称为一个拓扑空间.
+称为一个拓扑空间
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+拓扑空间
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1695,7 +1735,17 @@ N^{\circ}=\left\{ z\in N\mid N\text{ 是 }z\text{ 的邻域}\right\} ,
 \begin_inset Formula $x$
 \end_inset
 
-的邻域.
+的邻域
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+邻域
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1704,7 +1754,17 @@ N^{\circ}=\left\{ z\in N\mid N\text{ 是 }z\text{ 的邻域}\right\} ,
 \begin_inset Formula $X$
 \end_inset
 
-叫做一个拓扑空间.
+叫做一个拓扑空间
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+拓扑空间
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -1736,19 +1796,109 @@ N^{\circ}=\left\{ z\in N\mid N\text{ 是 }z\text{ 的邻域}\right\} ,
 \begin_inset Formula $Y$
 \end_inset
 
-上的诱导拓扑.
+上的诱导拓扑
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+诱导拓扑
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-其他定义有离散拓扑, 离散空间; 余有限拓扑(含
+其他定义有离散拓扑
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+离散拓扑
+\end_layout
+
+\end_inset
+
+, 离散空间
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+离散空间
+\end_layout
+
+\end_inset
+
+; 余有限拓扑
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+余有限拓扑
+\end_layout
+
+\end_inset
+
+(含
 \begin_inset Formula $\varnothing$
 \end_inset
 
-); 闭集, 极限点或聚点, 闭包(
+); 闭集
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+闭集
+\end_layout
+
+\end_inset
+
+, 极限点
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+极限点
+\end_layout
+
+\end_inset
+
+或聚点
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+聚点
+\end_layout
+
+\end_inset
+
+, 闭包
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+闭包
+\end_layout
+
+\end_inset
+
+(
 \begin_inset Formula $\overline{A}$
 \end_inset
 
-), 稠密集.
+), 稠密集
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+稠密集
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Theorem
@@ -2077,7 +2227,7 @@ name "thm:2.4"
 \begin_inset Formula $A$
 \end_inset
 
-的背部是包含于
+的内部是包含于
 \begin_inset Formula $A$
 \end_inset
 
@@ -2113,7 +2263,17 @@ name "thm:2.4"
 \begin_inset Formula $A$
 \end_inset
 
-的边界定义为
+的边界
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+边界
+\end_layout
+
+\end_inset
+
+定义为
 \begin_inset Formula $\overline{A}\cap\overline{A^{c}}=\left(A^{\circ}\cup A^{c\circ}\right)^{c}$
 \end_inset
 
@@ -2180,7 +2340,17 @@ status open
 \begin_inset Formula $\beta$
 \end_inset
 
-称为此拓扑的一组拓扑基.
+称为此拓扑的一组拓扑基
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+拓扑基
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Theorem
@@ -2798,6 +2968,16 @@ Hint:
 
 \begin_layout Standard
 一个同胚
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+同胚
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $h:X\to Y$
 \end_inset
 
@@ -2805,7 +2985,17 @@ Hint:
 \end_layout
 
 \begin_layout Standard
-圆盘是同胚于
+圆盘
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+圆盘
+\end_layout
+
+\end_inset
+
+是同胚于
 \begin_inset Formula $E^{2}$
 \end_inset
 
@@ -2833,7 +3023,17 @@ Hint:
 \begin_inset Formula $A$
 \end_inset
 
-的边界, 记为
+的边界
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+边界
+\end_layout
+
+\end_inset
+
+, 记为
 \begin_inset Formula $\partial A$
 \end_inset
 
@@ -3043,7 +3243,27 @@ name "def:2.11"
 \begin_inset Formula $X$
 \end_inset
 
- 上的一个度量或距离函数是定义在笛卡尔积 
+ 上的一个度量
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+度量
+\end_layout
+
+\end_inset
+
+或距离函数
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+距离函数
+\end_layout
+
+\end_inset
+
+是定义在笛卡尔积 
 \begin_inset Formula $X\times X$
 \end_inset
 
@@ -3091,7 +3311,17 @@ name "def:2.11"
 \end_layout
 
 \begin_layout Definition
-集合具备了一个度量, 以后叫作度量空间.
+集合具备了一个度量, 以后叫做度量空间
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+度量空间
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Lemma
@@ -3352,6 +3582,16 @@ status open
 
 \begin_layout Plain Layout
 Tietz扩张定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Tietz扩张定理
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3566,7 +3806,17 @@ g_{2}(A_{2})=\frac{2M}{9},\quad g_{2}(B_{2})=-\frac{2M}{9},\quad g_{2}(X\setminu
 \begin_inset Formula $X$
 \end_inset
 
-的开覆盖.
+的开覆盖
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+开覆盖
+\end_layout
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -3591,7 +3841,17 @@ g_{2}(A_{2})=\frac{2M}{9},\quad g_{2}(B_{2})=-\frac{2M}{9},\quad g_{2}(X\setminu
 \begin_inset Formula $\mathcal{F}$
 \end_inset
 
-的一个子覆盖.
+的一个子覆盖
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+子覆盖
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Theorem
@@ -3627,7 +3887,17 @@ name "def:3.2"
 \begin_inset Formula $X$
 \end_inset
 
-紧致, 如果
+紧致
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+紧致
+\end_layout
+
+\end_inset
+
+, 如果
 \begin_inset Formula $X$
 \end_inset
 
@@ -3681,6 +3951,16 @@ status open
 
 \begin_layout Plain Layout
 Heine-Borel定理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Heine-Borel定理
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3696,7 +3976,7 @@ name "thm:3.3-1"
 \end_layout
 
 \begin_layout Standard
-``延伸法", 研究集合
+``延伸法'', 研究集合
 \begin_inset Formula 
 \[
 X=\left\{ x\in[a,b]\mid[a,x]\text{ 包含于 }\mathcal{F}\text{ 内的有限多个成员的并集中}\right\} 
@@ -3708,7 +3988,7 @@ X=\left\{ x\in[a,b]\mid[a,x]\text{ 包含于 }\mathcal{F}\text{ 内的有限多�
 \end_layout
 
 \begin_layout Standard
-``细分法", 加上反证法, 对
+``细分法'', 加上反证法, 对
 \begin_inset Formula $[a,b]$
 \end_inset
 
@@ -3786,7 +4066,17 @@ noprefix "false"
 \begin_inset Formula $X$
 \end_inset
 
-的紧致子集, 如果子空间
+的紧致子集
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+紧致子集
+\end_layout
+
+\end_inset
+
+, 如果子空间
 \begin_inset Formula $C$
 \end_inset
 
@@ -3883,6 +4173,16 @@ status open
 
 \begin_layout Plain Layout
 Bolzano-Weierstrass性质
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Bolzano-Weierstrass性质
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3945,6 +4245,16 @@ status open
 
 \begin_layout Plain Layout
 Lebesgue引理
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Lebesgue引理
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4080,12 +4390,42 @@ name "sec:3.4"
 \begin_inset Formula $X\times Y$
 \end_inset
 
-上的一组拓扑基, 这个拓扑叫做乘积拓扑.
+上的一组拓扑基
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+拓扑基
+\end_layout
+
+\end_inset
+
+, 这个拓扑叫做乘积拓扑
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+乘积拓扑
+\end_layout
+
+\end_inset
+
+.
  集合
 \begin_inset Formula $X\times Y$
 \end_inset
 
-连通乘积拓扑一起称为乘积空间.
+连通乘积拓扑一起称为乘积空间
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+乘积空间
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4138,7 +4478,7 @@ name "thm:3.12"
 \end_layout
 
 \begin_layout Standard
-连续用定义来证; 开映射在拓扑基上来证; 乘积拓扑的最小性由``任何是投影连续的拓扑必然包含乘积拓扑的拓扑基"来证.
+连续用定义来证; 开映射在拓扑基上来证; 乘积拓扑的最小性由``任何使投影连续的拓扑必然包含乘积拓扑的拓扑基''来证.
 \end_layout
 
 \begin_layout Theorem
@@ -4383,6 +4723,995 @@ noprefix "false"
 
 \begin_layout Standard
 定义无穷多个空间的乘积空间, 证明任意多个紧致空间的乘积是紧致空间, 称为Tychonoff定理; 它等价于选择公理.
+\end_layout
+
+\begin_layout Section
+连通性
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:3.17"
+
+\end_inset
+
+ 拓扑空间
+\begin_inset Formula $X$
+\end_inset
+
+是连通
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+连通
+\end_layout
+
+\end_inset
+
+的, 如果当它分解为两个非空子集的并集
+\begin_inset Formula $A\cup B$
+\end_inset
+
+时, 有
+\begin_inset Formula $\overline{A}\cap B\ne\varnothing$
+\end_inset
+
+, 或
+\begin_inset Formula $A\cap\overline{B}\ne\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3.18"
+
+\end_inset
+
+ 实数轴是连通空间.
+\end_layout
+
+\begin_layout Standard
+按定义证明, 用极限点的概念和确界原理.
+\end_layout
+
+\begin_layout Standard
+拓扑空间的子集叫做连通子集
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+连通子集
+\end_layout
+
+\end_inset
+
+, 如果给以诱导拓扑时, 它是一个连通空间.
+ 
+\end_layout
+
+\begin_layout Standard
+称实数轴的子集
+\begin_inset Formula $X$
+\end_inset
+
+是一个区间
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+区间
+\end_layout
+
+\end_inset
+
+, 如果对于任意两个不同的点
+\begin_inset Formula $a,b\in X$
+\end_inset
+
+, (
+\begin_inset Formula $a<b$
+\end_inset
+
+), 有
+\begin_inset Formula $\forall c\in(a,b)$
+\end_inset
+
+, 
+\begin_inset Formula $c\in X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3.19"
+
+\end_inset
+
+ 实数轴上的非空子集连通, 当且仅当它是一个区间.
+\end_layout
+
+\begin_layout Standard
+充分性, 用定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:3.18"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 必要性, 用反证法和连通性定义构造矛盾.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3.20"
+
+\end_inset
+
+ 对于空间
+\begin_inset Formula $X$
+\end_inset
+
+, 以下条件相互等价:
+\end_layout
+
+\begin_layout Theorem
+(a).
+ 
+\begin_inset Formula $X$
+\end_inset
+
+连通;
+\end_layout
+
+\begin_layout Theorem
+(b).
+ 
+\begin_inset Formula $X$
+\end_inset
+
+内同时为开集与闭集的子集只有
+\begin_inset Formula $X$
+\end_inset
+
+与空集;
+\end_layout
+
+\begin_layout Theorem
+(c).
+ 
+\begin_inset Formula $X$
+\end_inset
+
+不能表示成两个不交非空开集之并;
+\end_layout
+
+\begin_layout Theorem
+(d).
+ 不存在从
+\begin_inset Formula $X$
+\end_inset
+
+到一个多于一点的离散拓扑空间的连续满射.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3.21"
+
+\end_inset
+
+ 连通空间的连续像是连通空间.
+\end_layout
+
+\begin_layout Standard
+证明使用定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:3.20"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+的(b).
+\end_layout
+
+\begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:3.22"
+
+\end_inset
+
+ 若
+\begin_inset Formula $h:X\to Y$
+\end_inset
+
+是同胚, 则
+\begin_inset Formula $X$
+\end_inset
+
+连通, 当且仅当
+\begin_inset Formula $Y$
+\end_inset
+
+连通.
+ 即连通性是空间的拓扑性质.
+\end_layout
+
+\begin_layout Standard
+定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:3.21"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+的推论.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3.23"
+
+\end_inset
+
+ 设
+\begin_inset Formula $X$
+\end_inset
+
+是拓扑空间, 
+\begin_inset Formula $Z$
+\end_inset
+
+是
+\begin_inset Formula $X$
+\end_inset
+
+的子集.
+ 若
+\begin_inset Formula $Z$
+\end_inset
+
+连通, 且在
+\begin_inset Formula $X$
+\end_inset
+
+内稠密, 则
+\begin_inset Formula $X$
+\end_inset
+
+连通.
+\end_layout
+
+\begin_layout Standard
+证明使用定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:3.20"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:3.24"
+
+\end_inset
+
+ 若
+\begin_inset Formula $Z$
+\end_inset
+
+是拓扑空间
+\begin_inset Formula $X$
+\end_inset
+
+的连通子集, 且若
+\begin_inset Formula $Z\subseteq Y\subseteq\overline{Z}$
+\end_inset
+
+, 则
+\begin_inset Formula $Y$
+\end_inset
+
+连通.
+ 特别地, 
+\begin_inset Formula $Z$
+\end_inset
+
+的闭包
+\begin_inset Formula $\overline{Z}$
+\end_inset
+
+连通.
+\end_layout
+
+\begin_layout Standard
+用定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:3.23"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $A$
+\end_inset
+
+与
+\begin_inset Formula $B$
+\end_inset
+
+是空间
+\begin_inset Formula $X$
+\end_inset
+
+的子集, 且若
+\begin_inset Formula $\overline{A}\cap\overline{B}=\varnothing$
+\end_inset
+
+, 则称
+\begin_inset Formula $A$
+\end_inset
+
+和
+\begin_inset Formula $B$
+\end_inset
+
+在
+\begin_inset Formula $X$
+\end_inset
+
+内是相互分离的.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3.25"
+
+\end_inset
+
+ 设
+\begin_inset Formula $\mathscr{F}$
+\end_inset
+
+是空间
+\begin_inset Formula $X$
+\end_inset
+
+的一族子集, 它们的并集是整个
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $\mathscr{F}$
+\end_inset
+
+的每个成员是连通的, 且
+\begin_inset Formula $\mathscr{F}$
+\end_inset
+
+的任意两个成员在
+\begin_inset Formula $X$
+\end_inset
+
+内都不是互相分离的, 则
+\begin_inset Formula $X$
+\end_inset
+
+连通.
+\end_layout
+
+\begin_layout Standard
+证明用定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:3.20"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+的(b).
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3.26"
+
+\end_inset
+
+ 若
+\begin_inset Formula $X$
+\end_inset
+
+与
+\begin_inset Formula $Y$
+\end_inset
+
+是连通空间, 则乘积空间
+\begin_inset Formula $X\times Y$
+\end_inset
+
+是连通的.
+\end_layout
+
+\begin_layout Standard
+用定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:3.25"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+若一个空间不是连通的, 则它分裂为一些连通块的并集, 其中任意两个是相互分离的, 称这些连通块为连通分支.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3.27"
+
+\end_inset
+
+ 拓扑空间的连通分支为闭集, 不同的连通分支在空间内是相互分离的.
+\end_layout
+
+\begin_layout Standard
+用推论
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:3.24"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+证明第一部分.
+ 第二部分用定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:3.25"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+全体有理数
+\begin_inset Formula $\QQ$
+\end_inset
+
+在实数轴上所构成的子空间以它的每一个点为连通分支.
+ 
+\begin_inset Formula $\QQ$
+\end_inset
+
+不是离散空间.
+ 
+\end_layout
+
+\begin_layout Standard
+每个点都是连通分支的空间叫做完全不连通空间
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+完全不连通空间
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+道路连通性
+\end_layout
+
+\begin_layout Standard
+拓扑空间
+\begin_inset Formula $X$
+\end_inset
+
+内的一条道路
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+道路
+\end_layout
+
+\end_inset
+
+是指一个连续映射
+\begin_inset Formula $\gamma:[0,1]\to X$
+\end_inset
+
+.
+ 点
+\begin_inset Formula $\gamma(0)$
+\end_inset
+
+与
+\begin_inset Formula $\gamma(1)$
+\end_inset
+
+分别叫做道路的起点
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+起点
+\end_layout
+
+\end_inset
+
+与终点
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+终点
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:3.28"
+
+\end_inset
+
+ 空间称为是道路连通
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+道路连通
+\end_layout
+
+\end_inset
+
+的, 如果它的任意两点可以用一条道路连接.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+道路连通性也是空间的拓扑性质.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3.29"
+
+\end_inset
+
+ 道路连通空间是连通的.
+\end_layout
+
+\begin_layout Standard
+按定义和定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:3.20"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+的(b)反证.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:3.30"
+
+\end_inset
+
+ 欧式空间内的连通开集是道路连通的.
+\end_layout
+
+\begin_layout Standard
+用定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:3.20"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+的(b).
+\end_layout
+
+\begin_layout Standard
+空间
+\begin_inset Formula $X$
+\end_inset
+
+的道路连通分支
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+道路连通分支
+\end_layout
+
+\end_inset
+
+定义为
+\begin_inset Formula $X$
+\end_inset
+
+内的一个极大道路连通子集.
+\end_layout
+
+\begin_layout Chapter
+粘合空间
+\end_layout
+
+\begin_layout Section
+M
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+[o}
+\end_layout
+
+\end_inset
+
+bius带的制作
+\end_layout
+
+\begin_layout Section
+粘合拓扑
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $X$
+\end_inset
+
+为拓扑空间, 
+\begin_inset Formula $\mathscr{P}$
+\end_inset
+
+为
+\begin_inset Formula $X$
+\end_inset
+
+的一族互不相交的非空子集, 使得
+\begin_inset Formula $\cup\mathscr{P}=X$
+\end_inset
+
+.
+ 这样的集族
+\begin_inset Formula $\mathscr{P}$
+\end_inset
+
+叫做
+\begin_inset Formula $X$
+\end_inset
+
+的一个划分
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+划分
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+现在构造一个新的空间
+\begin_inset Formula $Y$
+\end_inset
+
+, 叫做粘合空间
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+粘合空间
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $Y$
+\end_inset
+
+的点是
+\begin_inset Formula $\mathscr{P}$
+\end_inset
+
+的成员, 且若
+\begin_inset Formula $\pi:X\to Y$
+\end_inset
+
+将
+\begin_inset Formula $X$
+\end_inset
+
+的每点映为该点所在的
+\begin_inset Formula $\mathscr{P}$
+\end_inset
+
+中的成员, 
+\begin_inset Formula $Y$
+\end_inset
+
+的拓扑是使
+\begin_inset Formula $\pi$
+\end_inset
+
+连续的最大拓扑.
+ 
+\begin_inset Formula $Y$
+\end_inset
+
+的子集
+\begin_inset Formula $O$
+\end_inset
+
+为开集, 当且仅当
+\begin_inset Formula $\pi^{-1}(O)$
+\end_inset
+
+为
+\begin_inset Formula $X$
+\end_inset
+
+中的开集.
+ 这个拓扑叫做
+\begin_inset Formula $Y$
+\end_inset
+
+上的粘合拓扑
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+粘合拓扑
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:4.1"
+
+\end_inset
+
+ 设
+\begin_inset Formula $Y$
+\end_inset
+
+为上面定义的粘合空间, 
+\begin_inset Formula $Z$
+\end_inset
+
+为任意的拓扑空间.
+ 则映射
+\begin_inset Formula $f:Y\to Z$
+\end_inset
+
+连续, 当且仅当映射
+\begin_inset Formula $f\circ\pi:X\to Z$
+\end_inset
+
+连续.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+是满射, 且设
+\begin_inset Formula $Y$
+\end_inset
+
+上的拓扑是使
+\begin_inset Formula $f$
+\end_inset
+
+连续的最大拓扑, 则称
+\begin_inset Formula $f$
+\end_inset
+
+为粘合映射
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+粘合映射
+\end_layout
+
+\end_inset
+
+.
+ 任何映射
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+给出
+\begin_inset Formula $X$
+\end_inset
+
+的一个划分, 子集
+\begin_inset Formula $\left\{ f^{-1}(y)\right\} $
+\end_inset
+
+是
+\begin_inset Formula $X$
+\end_inset
+
+的成员, 其中
+\begin_inset Formula $y\in Y$
+\end_inset
+
+.
+ 设
+\begin_inset Formula $Y_{*}$
+\end_inset
+
+是这个划分的粘合空间, 
+\begin_inset Formula $\pi:X\to Y_{*}$
+\end_inset
+
+为相应的映射.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:4.2"
+
+\end_inset
+
+ 若
+\begin_inset Formula $f$
+\end_inset
+
+是粘合映射, 则:
+\end_layout
+
+\begin_layout Theorem
+(a).
+ 空间
+\begin_inset Formula $Y$
+\end_inset
+
+同胚于空间
+\begin_inset Formula $Y_{*}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Theorem
+(b).
+ 映射
+\begin_inset Formula $g:Y\to Z$
+\end_inset
+
+连续, 当且仅当映射
+\begin_inset Formula $g\circ f:X\to Z$
+\end_inset
+
+连续.
+\end_layout
+
+\begin_layout Standard
+(b)的证明使用定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:4.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 并注意
+\begin_inset Formula 
+\[
+h\circ\pi=f,\quad h^{-1}\circ f=\pi.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
