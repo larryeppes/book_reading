@@ -5703,6 +5703,41 @@ noprefix "false"
 \end_inset
 
 .
+ 并注意
+\begin_inset Formula 
+\[
+h\circ\pi=f,\quad h^{-1}\circ f=\pi.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:4.3"
+
+\end_inset
+
+ 设
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+是连续满射, 若
+\begin_inset Formula $f$
+\end_inset
+
+把
+\begin_inset Formula $X$
+\end_inset
+
+的开集映为开集, 或把闭集映为闭集, 则
+\begin_inset Formula $f$
+\end_inset
+
+为粘合映射.
 \end_layout
 
 \begin_layout Standard

@@ -5434,7 +5434,7 @@ status open
 \begin_inset Quotes erd
 \end_inset
 
-[o}
+{o}
 \end_layout
 
 \end_inset
@@ -5712,6 +5712,95 @@ h\circ\pi=f,\quad h^{-1}\circ f=\pi.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:4.3"
+
+\end_inset
+
+ 设
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+是连续满射, 若
+\begin_inset Formula $f$
+\end_inset
+
+把
+\begin_inset Formula $X$
+\end_inset
+
+的开集映为开集, 或把闭集映为闭集, 则
+\begin_inset Formula $f$
+\end_inset
+
+为粘合映射.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:4.4"
+
+\end_inset
+
+ 设
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+是连续满射, 若
+\begin_inset Formula $X$
+\end_inset
+
+紧致, 
+\begin_inset Formula $Y$
+\end_inset
+
+是Hausdorff空间, 则
+\begin_inset Formula $f$
+\end_inset
+
+为粘合映射.
+\end_layout
+
+\begin_layout Standard
+环面, 锥形的构造, 几何锥形.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:4.5"
+
+\end_inset
+
+ 设
+\begin_inset Formula $X\subseteq E^{n}$
+\end_inset
+
+紧致, 则
+\begin_inset Formula $X$
+\end_inset
+
+上的几何锥形(用
+\begin_inset Formula $E^{n+1}$
+\end_inset
+
+中的诱导拓扑)同胚于
+\begin_inset Formula $X$
+\end_inset
+
+上的锥形(用粘合拓扑).
 \end_layout
 
 \begin_layout Standard
