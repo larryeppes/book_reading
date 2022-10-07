@@ -5774,7 +5774,32 @@ name "cor:4.4"
 \end_layout
 
 \begin_layout Standard
-环面, 锥形的构造, 几何锥形.
+环面, 锥形
+\begin_inset Formula $CX$
+\end_inset
+
+的构造, 几何锥形.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X/A$
+\end_inset
+
+表示
+\begin_inset Formula $X$
+\end_inset
+
+中将子空间
+\begin_inset Formula $A$
+\end_inset
+
+粘合为一点所得的粘合空间.
+ 
+\begin_inset Formula $CX=X\times I/X\times\left\{ 1\right\} $
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Lemma
@@ -5800,7 +5825,63 @@ name "lem:4.5"
 \begin_inset Formula $X$
 \end_inset
 
-上的锥形(用粘合拓扑).
+上的锥形
+\begin_inset Formula $CX$
+\end_inset
+
+(用粘合拓扑).
+\end_layout
+
+\begin_layout Standard
+证明使用推论
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:4.4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+和定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:4.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+的(a).
+\end_layout
+
+\begin_layout Standard
+证明
+\begin_inset Formula $B^{n}/S^{n-1}\simeq S^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $B^{n}$
+\end_inset
+
+为
+\begin_inset Formula $n$
+\end_inset
+
+维闭单位球体, 
+\begin_inset Formula $S^{n-1}$
+\end_inset
+
+为
+\begin_inset Formula $n$
+\end_inset
+
+维单位球面.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
