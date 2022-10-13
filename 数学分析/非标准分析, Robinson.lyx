@@ -1,0 +1,1390 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\curl}{curl}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+非标准分析
+\end_layout
+
+\begin_layout Section
+引言
+\end_layout
+
+\begin_layout Subsection
+本书目的
+\end_layout
+
+\begin_layout Standard
+分析的基本概念是极限, 导数, 积分, 无穷级数和函数连续性都用极限来定义.
+\end_layout
+
+\begin_layout Standard
+对数学语言和数学结构之间的关系进行分析的方法是现代
+\series bold
+模型论
+\series default
+的基础.
+\end_layout
+
+\begin_layout Subsection
+内容概述
+\end_layout
+
+\begin_layout Standard
+第二章: 数理逻辑的形式工具, 一阶和高阶理论, 有限性原理(紧致性定理)的证明.
+\end_layout
+
+\begin_layout Standard
+第三章: 非标准算术和非标准分析框架的数学结构的基本性质, 为无限小理论提供基础, 一阶和高阶微分.
+ 微分时无限小, 如在L'Hospital的``无限小分析''中使用的那样.
+ 去除了不协调的部分.
+\end_layout
+
+\begin_layout Standard
+第四章: 无限小理论的推广形式, 用于(非度量的)拓扑空间.
+\end_layout
+
+\begin_layout Standard
+第五章: 实变函数, 用非标准分析术语定义Lebesgue测度, Schwartz分布理论, 分布的局部值.
+\end_layout
+
+\begin_layout Standard
+第六章: 复变函数的非标准理论.
+ 多项式的解析理论, 多项式零点的位置; 整函数奇点理论, Picard定理, Julia方向.
+ 给出某些广义函数代替正规族理论.
+\end_layout
+
+\begin_layout Standard
+第七章: 线性赋范空间, 紧致算子的非标准理论, Hilbert空间中紧致平方的线性算子有非平凡不变子空间.
+ 解决了K.
+ T.
+ Smith和P.
+ R.
+ Halmos的问题(ref: Bernstein, Robinson [1966]).
+ 谱分析.
+\end_layout
+
+\begin_layout Standard
+第八章: 拓扑群, Lie群.
+ 群的单位元的无限小邻域是实际存在的且形成一个群.
+ 对于给定的拓扑群或Lie群, 这个群体现了无限小群的直观概念.
+\end_layout
+
+\begin_layout Standard
+第九章: 在非标准分析框架内使用变分原理.
+ Riemann映象定理, 位势理论中的Dirichlet积分法.
+ 流体动力学中的若干问题.
+ 用无限小解释边界层理论.
+ 弹性理论的de Saint-Venant原理.
+\end_layout
+
+\begin_layout Standard
+第十章: 微积分学历史.
+\end_layout
+
+\begin_layout Section
+逻辑工具
+\end_layout
+
+\begin_layout Subsection
+狭义谓词演算
+\end_layout
+
+\begin_layout Standard
+有数理逻辑和抽象集论的初步知识为基础.
+\end_layout
+
+\begin_layout Standard
+描述狭义或一阶谓词演算的语言.
+ 数理逻辑的基本形式体系.
+\end_layout
+
+\begin_layout Standard
+一个
+\series bold
+一阶语言
+\series default
+
+\begin_inset Formula $L$
+\end_inset
+
+是如下定义的.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L$
+\end_inset
+
+的
+\series bold
+原子符号
+\series default
+是:
+\end_layout
+
+\begin_layout Standard
+(i) 
+\series bold
+个体对象符号
+\series default
+, 或
+\series bold
+个体常项
+\series default
+, 小写英文字母表示.
+ 个体常项集是任意取定的, 超限的.
+\end_layout
+
+\begin_layout Standard
+(ii) 
+\series bold
+(个体)变量
+\series default
+, 常用英文字母表最后几个小写字母表示, 个数是无限可数的.
+\end_layout
+
+\begin_layout Standard
+(iii) 
+\begin_inset Formula $n$
+\end_inset
+
+元
+\series bold
+关系符号
+\series default
+, 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+, 
+\begin_inset Formula $S(\ )$
+\end_inset
+
+, 
+\begin_inset Formula $R(\ ,\ ,\ )$
+\end_inset
+
+, 
+\begin_inset Formula $n$
+\end_inset
+
+表示括号内空缺位置的个数.
+ 关系符号集是任意的, 取定的, 且可以是超限的.
+\end_layout
+
+\begin_layout Standard
+(iv) 
+\series bold
+连接符号
+\series default
+, 或
+\series bold
+连接词
+\series default
+, 
+\begin_inset Formula $\lnot$
+\end_inset
+
+(非), 
+\begin_inset Formula $\lor$
+\end_inset
+
+(析取), 
+\begin_inset Formula $\land$
+\end_inset
+
+(合取), 
+\begin_inset Formula $\supset$
+\end_inset
+
+(蕴含), 
+\begin_inset Formula $\equiv$
+\end_inset
+
+(等价).
+\end_layout
+
+\begin_layout Standard
+(v) 
+\series bold
+量词
+\series default
+, 
+\begin_inset Formula $\exists$
+\end_inset
+
+(存在量词), 
+\begin_inset Formula $\forall$
+\end_inset
+
+(全称量词).
+\end_layout
+
+\begin_layout Standard
+(vi) 方括号, 
+\begin_inset Formula $[]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+原子公式
+\series default
+是把个体常项或变量填入关系符号中的空缺位置而得.
+ 由原子公式得到
+\series bold
+合式公式
+\series default
+, 对合式公式使用连接符号和量词得到新的合式公式.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $X$
+\end_inset
+
+是一个原子公式, 则
+\begin_inset Formula $[X]$
+\end_inset
+
+是一个合式公式; 
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $X$
+\end_inset
+
+和
+\begin_inset Formula $Y$
+\end_inset
+
+是合式公式, 则
+\begin_inset Formula $[\lnot X]$
+\end_inset
+
+, 
+\begin_inset Formula $[X\lor Y]$
+\end_inset
+
+, 
+\begin_inset Formula $[X\land Y]$
+\end_inset
+
+, 
+\begin_inset Formula $[X\supset Y]$
+\end_inset
+
+, 
+\begin_inset Formula $[X\equiv Y]$
+\end_inset
+
+是合式公式;
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $X$
+\end_inset
+
+是一个合式公式, 而
+\begin_inset Formula $y$
+\end_inset
+
+作为任意的变量不出现在
+\begin_inset Formula $X$
+\end_inset
+
+的量词中, 即
+\begin_inset Formula $X$
+\end_inset
+
+中不含
+\begin_inset Formula $(\exists y)$
+\end_inset
+
+或
+\begin_inset Formula $(\forall y)$
+\end_inset
+
+, 则
+\begin_inset Formula $[(\exists y)X]$
+\end_inset
+
+和
+\begin_inset Formula $[(\forall y)X]$
+\end_inset
+
+是合式公式.
+\end_layout
+
+\begin_layout Standard
+在
+\begin_inset Formula $[(\exists y)X]$
+\end_inset
+
+或
+\begin_inset Formula $[(\forall y)X]$
+\end_inset
+
+中, 或由连接符号或量词得到的更长的合式公式中, 
+\begin_inset Formula $X$
+\end_inset
+
+称为量词
+\begin_inset Formula $(\exists y)$
+\end_inset
+
+或
+\begin_inset Formula $(\forall y)$
+\end_inset
+
+的
+\series bold
+辖域
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+在合式公式
+\begin_inset Formula $X$
+\end_inset
+
+中, 如果变量
+\begin_inset Formula $y$
+\end_inset
+
+的出现不是在
+\begin_inset Formula $X$
+\end_inset
+
+中的
+\begin_inset Formula $(\exists y)$
+\end_inset
+
+或
+\begin_inset Formula $(\forall y)$
+\end_inset
+
+或它们的辖域内, 则称变量
+\begin_inset Formula $y$
+\end_inset
+
+是
+\series bold
+自由(变量)
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+不包含任何自由变量的合式公式称为一个
+\series bold
+句子
+\series default
+, 否则称为一个
+\series bold
+谓词
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+若一阶语言
+\begin_inset Formula $L$
+\end_inset
+
+的原子符号集是一阶语言
+\begin_inset Formula $L'$
+\end_inset
+
+的原子符号集的子集, 则称
+\begin_inset Formula $L'$
+\end_inset
+
+是
+\begin_inset Formula $L$
+\end_inset
+
+的一个
+\series bold
+扩张
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+一个一阶结构
+\begin_inset Formula $M$
+\end_inset
+
+, 包括一个非空的个体集
+\begin_inset Formula $A$
+\end_inset
+
+, 以及定义在
+\begin_inset Formula $A$
+\end_inset
+
+中的
+\begin_inset Formula $n$
+\end_inset
+
+元关系, 这些关系形成的集合记为
+\begin_inset Formula $P$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+可以把代数域看成是它的个体集和三个关系
+\begin_inset Formula $E(,)$
+\end_inset
+
+, 
+\begin_inset Formula $S(,,)$
+\end_inset
+
+, 
+\begin_inset Formula $P(,,)$
+\end_inset
+
+给出的一阶结构, 其中
+\begin_inset Formula $E$
+\end_inset
+
+(相等)是二元关系, 
+\begin_inset Formula $S$
+\end_inset
+
+(和)与
+\begin_inset Formula $P$
+\end_inset
+
+(积)是三元关系.
+\end_layout
+
+\begin_layout Subsection
+解释
+\end_layout
+
+\begin_layout Standard
+note: 一阶结构有个体集和
+\begin_inset Formula $n$
+\end_inset
+
+元关系组成.
+ 可以把一阶结构理解成一种数学结构中所有的命题组成的集合, 每个命题不包含个体变量, 相当于定理的具体例子.
+ 把一阶语言理解成命题的表述, 属于抽象层, 其中的个体变量是具体实例的抽象.
+ 下面的映射
+\begin_inset Formula $C$
+\end_inset
+
+相当于数学定理往具体的数学例子的映射, 例子可能是无穷多的, 但这无穷多的例子被看成一个集合来实现定理和例子集之间的一一对应关系.
+ 说到``扩张''一词, 则对应定理的推广.
+\end_layout
+
+\begin_layout Standard
+令
+\begin_inset Formula $M$
+\end_inset
+
+是一阶结构, 
+\begin_inset Formula $L$
+\end_inset
+
+是一阶语言, 假定在
+\begin_inset Formula $M$
+\end_inset
+
+的个体集和
+\begin_inset Formula $L$
+\end_inset
+
+的个体常项集的子集之间, 
+\begin_inset Formula $M$
+\end_inset
+
+中的各个关系与
+\begin_inset Formula $L$
+\end_inset
+
+的关系符号集的一个子集之间定义一个一一映射
+\begin_inset Formula $C$
+\end_inset
+
+, 使得
+\begin_inset Formula $n$
+\end_inset
+
+元关系对应于
+\begin_inset Formula $n$
+\end_inset
+
+元关系符号.
+ 如果
+\begin_inset Formula $L$
+\end_inset
+
+的一个合式公式
+\begin_inset Formula $X$
+\end_inset
+
+内出现的一切个体常项和关系符号在
+\begin_inset Formula $C$
+\end_inset
+
+下都有对应于
+\begin_inset Formula $M$
+\end_inset
+
+内的个体和关系, 就说合式公式
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+下(在映射
+\begin_inset Formula $C$
+\end_inset
+
+下)有意义.
+\end_layout
+
+\begin_layout Standard
+设句子
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+下有意义:
+\end_layout
+
+\begin_layout Standard
+(i) 令
+\begin_inset Formula $X=[Y]$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内有意义, 其中
+\begin_inset Formula $Y$
+\end_inset
+
+是原子公式, 而
+\begin_inset Formula $Y=R(a_{1},\cdots,a_{n})$
+\end_inset
+
+, 其中
+\begin_inset Formula $R$
+\end_inset
+
+是一个
+\begin_inset Formula $n$
+\end_inset
+
+元关系符号, 
+\begin_inset Formula $a_{1},\cdots,a_{n}$
+\end_inset
+
+是个体常项, 
+\begin_inset Formula $R$
+\end_inset
+
+在
+\begin_inset Formula $C$
+\end_inset
+
+下的像对应
+\begin_inset Formula $M$
+\end_inset
+
+中的关系
+\begin_inset Formula $R'$
+\end_inset
+
+, 
+\begin_inset Formula $a_{1},\cdots,a_{n}$
+\end_inset
+
+对应
+\begin_inset Formula $M$
+\end_inset
+
+内的个体
+\begin_inset Formula $a_{1}',\cdots,a_{n}'$
+\end_inset
+
+, 则定义
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+成立(在
+\begin_inset Formula $C$
+\end_inset
+
+下), 当且仅当
+\begin_inset Formula $R'(a_{1}',\cdots,a_{n}')$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立.
+\end_layout
+
+\begin_layout Standard
+(ii) 假定句子
+\begin_inset Formula $X=[\lnot Y]$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内有意义, 所以
+\begin_inset Formula $Y$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内也有意义.
+ 则称
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 当且仅当
+\begin_inset Formula $Y$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内不成立.
+\end_layout
+
+\begin_layout Standard
+假定句子
+\begin_inset Formula $X=[Y\lor Z]$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内有意义, 则称
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 当且仅当
+\begin_inset Formula $Y$
+\end_inset
+
+或
+\begin_inset Formula $Z$
+\end_inset
+
+两个句子之一在
+\begin_inset Formula $M$
+\end_inset
+
+内成立.
+\end_layout
+
+\begin_layout Standard
+假定句子
+\begin_inset Formula $X=[Y\land Z]$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内有意义, 则称
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 当且仅当
+\begin_inset Formula $Y$
+\end_inset
+
+和
+\begin_inset Formula $Z$
+\end_inset
+
+都在
+\begin_inset Formula $M$
+\end_inset
+
+内成立.
+\end_layout
+
+\begin_layout Standard
+假定句子
+\begin_inset Formula $X=[Y\supset Z]$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内有意义, 则称
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 当且仅当
+\begin_inset Formula $Z$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 或者
+\begin_inset Formula $Y$
+\end_inset
+
+和
+\begin_inset Formula $Z$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内都不成立.
+\end_layout
+
+\begin_layout Standard
+假定句子
+\begin_inset Formula $X=[Y\equiv Z]$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内有意义, 则称
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 当且仅当
+\begin_inset Formula $Y$
+\end_inset
+
+或
+\begin_inset Formula $Z$
+\end_inset
+
+两个句子之一在
+\begin_inset Formula $M$
+\end_inset
+
+内都成立, 或都不成立.
+\end_layout
+
+\begin_layout Standard
+(iii) 假定句子
+\begin_inset Formula $X=[(\exists y)Z(y)]$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内有意义, 则称
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 当且仅当在
+\begin_inset Formula $L$
+\end_inset
+
+内存在一个个体常项
+\begin_inset Formula $a$
+\end_inset
+
+使得
+\begin_inset Formula $Z(a)$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 即
+\begin_inset Formula $a$
+\end_inset
+
+在映射
+\begin_inset Formula $C$
+\end_inset
+
+下对应
+\begin_inset Formula $M$
+\end_inset
+
+的某个个体.
+ 特别地, 当
+\begin_inset Formula $y$
+\end_inset
+
+不出现在
+\begin_inset Formula $Z$
+\end_inset
+
+内时, 称
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 当且仅当
+\begin_inset Formula $Z$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立.
+\end_layout
+
+\begin_layout Standard
+假定句子
+\begin_inset Formula $X=[(\forall y)Z(y)]$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内有意义, 则称
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 当且仅当对
+\begin_inset Formula $L$
+\end_inset
+
+的每个个体常项
+\begin_inset Formula $a$
+\end_inset
+
+, 句子
+\begin_inset Formula $Z(a)$
+\end_inset
+
+都在
+\begin_inset Formula $M$
+\end_inset
+
+内成立.
+\end_layout
+
+\begin_layout Subsection
+超积(Ultraproduct)
+\end_layout
+
+\begin_layout Standard
+令
+\begin_inset Formula $Q=\left\{ M_{\nu}\right\} _{\nu\in I}$
+\end_inset
+
+是一个一阶结构的集合, 假定
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+是相互相似的, 就是说它们都定义了同样的关系.
+ 比如
+\begin_inset Formula $\left(\QQ,+,\times,=\right)$
+\end_inset
+
+与
+\begin_inset Formula $\left(\ZZ,+,\times,=\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $D$
+\end_inset
+
+是
+\begin_inset Formula $I$
+\end_inset
+
+的子集族, 且满足:
+\end_layout
+
+\begin_layout Standard
+(i) 
+\begin_inset Formula $\varnothing\notin D$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(ii) 若
+\begin_inset Formula $A\in D$
+\end_inset
+
+, 
+\begin_inset Formula $B\in D$
+\end_inset
+
+, 则
+\begin_inset Formula $A\cap B\in D$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(iii) 若
+\begin_inset Formula $A\in D$
+\end_inset
+
+且
+\begin_inset Formula $A\subset B\subset I$
+\end_inset
+
+, 则
+\begin_inset Formula $B\in D$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(iv) 若任何
+\begin_inset Formula $A\subset I$
+\end_inset
+
+, 或者有
+\begin_inset Formula $A\in D$
+\end_inset
+
+或者有
+\begin_inset Formula $I-A\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+则称
+\begin_inset Formula $D$
+\end_inset
+
+是
+\begin_inset Formula $I$
+\end_inset
+
+上的一个
+\series bold
+超滤
+\series default
+(ultrafilter).
+ 或说是
+\begin_inset Formula $I$
+\end_inset
+
+的子集族组成的
+\series bold
+Boole代数
+\series default
+中的
+\series bold
+极大对偶理想
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f(x)$
+\end_inset
+
+是定义在
+\begin_inset Formula $I$
+\end_inset
+
+上的函数, 且对于每个
+\begin_inset Formula $\nu\in I$
+\end_inset
+
+, 有
+\begin_inset Formula $f(\nu)\in M_{\nu}$
+\end_inset
+
+; 则把所有这样的函数
+\begin_inset Formula $f(x)$
+\end_inset
+
+组成的集称为
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+的个体集.
+ 令
+\begin_inset Formula $R(x_{1},\cdots,x_{n})$
+\end_inset
+
+是结构
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+的一个给定
+\begin_inset Formula $n$
+\end_inset
+
+元关系.
+ 令
+\begin_inset Formula $f_{1},\cdots,f_{n}$
+\end_inset
+
+是
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+的个体, 则
+\begin_inset Formula $f_{i}=f_{i}(x)$
+\end_inset
+
+, (
+\begin_inset Formula $i=1,\cdots,n$
+\end_inset
+
+).
+ 其中
+\begin_inset Formula $\forall\nu\in I$
+\end_inset
+
+, 有
+\begin_inset Formula $f_{i}(\nu)\in M_{\nu}$
+\end_inset
+
+.
+ 在
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+上定义关系
+\begin_inset Formula $R$
+\end_inset
+
+为: 称
+\begin_inset Formula $R(f_{1},\cdots,f_{n})$
+\end_inset
+
+在
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+内成立, 当且仅当集合
+\begin_inset Formula 
+\[
+\left\{ \nu\mid R(f_{1}(\nu),\cdots,f_{n}(\nu))\text{ 在 }M_{\nu}\text{ 内成立}\right\} 
+\]
+
+\end_inset
+
+是超滤
+\begin_inset Formula $D$
+\end_inset
+
+的一个元素.
+ 称具有以上个体集
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+和关系
+\begin_inset Formula $R$
+\end_inset
+
+的新的一阶结构
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+称为
+\series bold
+超积
+\series default
+.
+\end_layout
+
+\begin_layout Section
+关于微积分的历史
+\end_layout
+
+\begin_layout Subsection
+引言
+\end_layout
+
+\begin_layout Subsection
+无限小数, 无限大数和无限
+\end_layout
+
+\begin_layout Standard
+数学哲学的研究是和较为一般的概念(如协调性, 预测性, 可构造性等)相联系的.
+\end_layout
+
+\begin_layout Standard
+Aristotle反对实在的无限而承认潜在的无限.
+\end_layout
+
+\begin_layout Standard
+Leibniz一般不排斥实在的无限, 无限小在微积分里是没有地位的.
+ 在他的思想中, 无穷级数的所有项构成潜在的无穷集, 但无限大数和无限小数是实在的无限.
+ 后者是理想的或虚构的, 前者才是真实的.
+ 当年一般公认: 无限大数或无限小数是实的无穷的形式.
+ 
+\end_layout
+
+\begin_layout Standard
+Berkeley对当时微积分基础的猛烈攻击, 揭露了后者的不协调性.
+\end_layout
+
+\end_body
+\end_document
