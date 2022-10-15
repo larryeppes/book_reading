@@ -1354,6 +1354,308 @@ Boole代数
 .
 \end_layout
 
+\begin_layout Subsection
+前束范式
+\end_layout
+
+\begin_layout Standard
+对
+\begin_inset Formula $L$
+\end_inset
+
+中的和式公式
+\begin_inset Formula $X$
+\end_inset
+
+, 若
+\begin_inset Formula $X$
+\end_inset
+
+是由原子公式先经过逻辑连接符号, 再经过量词作用而构成, 则称
+\begin_inset Formula $X$
+\end_inset
+
+为
+\series bold
+前束范式
+\series default
+.
+ 前述范式的形式表达: 连接符号(
+\begin_inset Formula $\lnot,\lor,\land,\supset,\equiv$
+\end_inset
+
+)在每一个量词( 
+\begin_inset Formula $\exists,\forall$
+\end_inset
+
+)的辖域内.
+\end_layout
+
+\begin_layout Standard
+若两个句子
+\begin_inset Formula $X$
+\end_inset
+
+和
+\begin_inset Formula $Y$
+\end_inset
+
+包含同样的个体常量和关系符号, 且在这些句子都有定义的所有结构中有
+\begin_inset Formula $X\equiv Y$
+\end_inset
+
+成立, 则称
+\begin_inset Formula $X$
+\end_inset
+
+与
+\begin_inset Formula $Y$
+\end_inset
+
+
+\series bold
+等价
+\series default
+.
+ 即, 
+\begin_inset Formula $X$
+\end_inset
+
+和
+\begin_inset Formula $Y$
+\end_inset
+
+等价, 当且仅当, 任何对
+\begin_inset Formula $X,Y$
+\end_inset
+
+有定义的结构
+\begin_inset Formula $M$
+\end_inset
+
+中, 
+\begin_inset Formula $X$
+\end_inset
+
+和
+\begin_inset Formula $Y$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内同时为真或同时为假.
+\end_layout
+
+\begin_layout Standard
+句子之间的等价关系是传递的.
+ 对于给定的句子
+\begin_inset Formula $X$
+\end_inset
+
+, 通过接连的如下修改得到等价的句子
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(i) 若
+\begin_inset Formula $X$
+\end_inset
+
+包含形如
+\begin_inset Formula $[Y\equiv Z]$
+\end_inset
+
+的合式公式, 用
+\begin_inset Formula $[[Y\supset Z]\land[Z\supset Y]]$
+\end_inset
+
+来替换
+\begin_inset Formula $[Y\equiv Z]$
+\end_inset
+
+, 得到一个与
+\begin_inset Formula $X$
+\end_inset
+
+等价的句子
+\begin_inset Formula $X'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(ii) 若
+\begin_inset Formula $X$
+\end_inset
+
+包含形如
+\begin_inset Formula $[Y\supset Z]$
+\end_inset
+
+的合式公式, 用
+\begin_inset Formula $[[\lnot Y]\lor Z]$
+\end_inset
+
+来替换
+\begin_inset Formula $[Y\supset Z]$
+\end_inset
+
+, 得到
+\begin_inset Formula $X$
+\end_inset
+
+等价的句子
+\begin_inset Formula $X'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(iii) 句子
+\begin_inset Formula $Y=[\lnot[Z\lor W]]$
+\end_inset
+
+等价于句子
+\begin_inset Formula $Y'=[[\lnot Z]\land[\lnot W]]$
+\end_inset
+
+; 句子
+\begin_inset Formula $Y=[\lnot[Z\land W]]$
+\end_inset
+
+等价于
+\begin_inset Formula $Y'=[[\lnot Z]\lor[\lnot W]]$
+\end_inset
+
+.
+ 将包含前述合式公式
+\begin_inset Formula $Y$
+\end_inset
+
+的句子
+\begin_inset Formula $X$
+\end_inset
+
+换成和式公式
+\begin_inset Formula $Y'$
+\end_inset
+
+, 得到与
+\begin_inset Formula $X$
+\end_inset
+
+等价的句子
+\begin_inset Formula $X'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(iv) 若句子
+\begin_inset Formula $Y=[\lnot[(\exists y)Z]]$
+\end_inset
+
+, 则
+\begin_inset Formula $Y$
+\end_inset
+
+等价于
+\begin_inset Formula $Y'=[(\forall y)[\lnot Z]]$
+\end_inset
+
+; 若
+\begin_inset Formula $Y=[\lnot[(\forall y)Z]]$
+\end_inset
+
+, 则
+\begin_inset Formula $Y$
+\end_inset
+
+等价于
+\begin_inset Formula $Y'=[(\exists y)[\lnot Z]]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(v) 若
+\begin_inset Formula $X=[[(\exists y)Z]\lor W]$
+\end_inset
+
+, 且
+\begin_inset Formula $X$
+\end_inset
+
+与变量
+\begin_inset Formula $u$
+\end_inset
+
+无关, 则
+\begin_inset Formula $X$
+\end_inset
+
+等价于
+\begin_inset Formula $X'=[(\exists u)[Z'\lor W]]$
+\end_inset
+
+, 其中
+\begin_inset Formula $Z'$
+\end_inset
+
+是将
+\begin_inset Formula $u$
+\end_inset
+
+代入
+\begin_inset Formula $Z$
+\end_inset
+
+中的
+\begin_inset Formula $y$
+\end_inset
+
+而得到.
+ 同理, 若
+\begin_inset Formula $X=[W\lor[(\exists y)Z]]$
+\end_inset
+
+, 则
+\begin_inset Formula $X$
+\end_inset
+
+等价于
+\begin_inset Formula $X'=[(\exists u)[W\lor Z']]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+对每个句子
+\begin_inset Formula $X$
+\end_inset
+
+, 恒存在一个等价的前束范式的句子
+\begin_inset Formula $X_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+这个定理说明了, 任何句子中的量词可以提到合式公式的开头.
+\end_layout
+
 \begin_layout Section
 关于微积分的历史
 \end_layout
