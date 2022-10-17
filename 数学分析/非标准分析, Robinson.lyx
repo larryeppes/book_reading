@@ -1119,8 +1119,89 @@ note: 一阶结构有个体集和
 内成立.
 \end_layout
 
+\begin_layout Standard
+如果对于
+\begin_inset Formula $L$
+\end_inset
+
+的某个扩张
+\begin_inset Formula $L'$
+\end_inset
+
+, 
+\begin_inset Formula $C_{K}$
+\end_inset
+
+能扩张到映射
+\begin_inset Formula $C$
+\end_inset
+
+, 它遍历
+\begin_inset Formula $M$
+\end_inset
+
+内的所有个体和关系, 使得
+\begin_inset Formula $K$
+\end_inset
+
+的所有句子在映射
+\begin_inset Formula $C$
+\end_inset
+
+下成立, 则说
+\begin_inset Formula $K$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 或在
+\begin_inset Formula $M$
+\end_inset
+
+内为真, 被
+\begin_inset Formula $M$
+\end_inset
+
+所满足, 
+\begin_inset Formula $M$
+\end_inset
+
+是
+\begin_inset Formula $K$
+\end_inset
+
+的一个模型.
+ 这个定义是为
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:有穷性原理"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+节的主要定理服务的.
+\end_layout
+
 \begin_layout Subsection
 超积(Ultraproduct)
+\end_layout
+
+\begin_layout Standard
+以下概念在
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:有穷性原理"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+节中可以看出动机.
 \end_layout
 
 \begin_layout Standard
@@ -1641,7 +1722,13 @@ Boole代数
 \end_layout
 
 \begin_layout Theorem
-对每个句子
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:前束范式定理"
+
+\end_inset
+
+ 对每个句子
 \begin_inset Formula $X$
 \end_inset
 
@@ -1654,6 +1741,1329 @@ Boole代数
 
 \begin_layout Standard
 这个定理说明了, 任何句子中的量词可以提到合式公式的开头.
+\end_layout
+
+\begin_layout Subsection
+有穷性原理
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:有穷性原理"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+狭义谓词演算的重心结果.
+\end_layout
+
+\begin_layout Standard
+一个句子集若有一个模型, 就成为是
+\series bold
+协调的
+\series default
+(consistent, 相容的).
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+有穷性原理, 紧致性定理
+\end_layout
+
+\end_inset
+
+ 令
+\begin_inset Formula $K$
+\end_inset
+
+是一个句子集, 若
+\begin_inset Formula $K$
+\end_inset
+
+的每个有穷子集是协调的(相容的), 则
+\begin_inset Formula $K$
+\end_inset
+
+是协调的(相容的).
+\end_layout
+
+\begin_layout Proof
+step 1.
+ 不妨设
+\begin_inset Formula $K$
+\end_inset
+
+的一切句子都是前束范式, 否则用定理
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:前束范式定理"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+将相应的句子替换为等价的前束范式的句子, 得到新的句子集
+\begin_inset Formula $K_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+若
+\begin_inset Formula $K$
+\end_inset
+
+的每个有穷子集是协调的, 且
+\begin_inset Formula $K_{0}'$
+\end_inset
+
+是
+\begin_inset Formula $K_{0}$
+\end_inset
+
+的一个有穷子集.
+\end_layout
+
+\begin_layout Proof
+则
+\begin_inset Formula $K_{0}'$
+\end_inset
+
+对应
+\begin_inset Formula $K$
+\end_inset
+
+的有穷子集
+\begin_inset Formula $K'$
+\end_inset
+
+, 
+\begin_inset Formula $K'$
+\end_inset
+
+中的句子通过前束范式等价替换与
+\begin_inset Formula $K_{0}'$
+\end_inset
+
+一一对应.
+\end_layout
+
+\begin_layout Proof
+因
+\begin_inset Formula $K'$
+\end_inset
+
+是协调的, 
+\begin_inset Formula $K'$
+\end_inset
+
+上的模型也是
+\begin_inset Formula $K_{0}'$
+\end_inset
+
+上的模型.
+ 即
+\begin_inset Formula $K_{0}'$
+\end_inset
+
+也是协调的.
+ 反之亦然.
+\end_layout
+
+\begin_layout Proof
+对于前束范式的句子, 一个解释的方式是Skolem和Hilbert给出的, 并由Herbrand进一步发展.
+\end_layout
+
+\begin_layout Proof
+考虑句子
+\begin_inset Formula $X=(\forall x)(\exists y)Q(x,y)$
+\end_inset
+
+, 其中
+\begin_inset Formula $Q(x,y)$
+\end_inset
+
+是一个合式公式.
+ 
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $X$
+\end_inset
+
+在结构
+\begin_inset Formula $M$
+\end_inset
+
+内成立是指: 对于每个个体常项
+\begin_inset Formula $a$
+\end_inset
+
+, 它对应于
+\begin_inset Formula $M$
+\end_inset
+
+的一个个体, 即恒存在一个个体常项
+\begin_inset Formula $b$
+\end_inset
+
+使得
+\begin_inset Formula $Q(a,b)$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立.
+\end_layout
+
+\begin_layout Proof
+由选择公理, 对每个
+\begin_inset Formula $a$
+\end_inset
+
+, 可以选出这样的
+\begin_inset Formula $b$
+\end_inset
+
+.
+ 因此可以说存在一个定义在个体常项集(对应
+\begin_inset Formula $M$
+\end_inset
+
+的个体), 且取值在同一集上的函数
+\begin_inset Formula $\phi(x)$
+\end_inset
+
+, 称为Skolem函数或函子, 使得在此集内的每个
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $Q(a,\phi(a))$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立.
+ 这里, 
+\begin_inset Formula $\phi$
+\end_inset
+
+是个体常项(
+\begin_inset Formula $L$
+\end_inset
+
+内的事物)到个体常项的函数.
+\end_layout
+
+\begin_layout Proof
+因此若
+\begin_inset Formula $a,b$
+\end_inset
+
+分别对应
+\begin_inset Formula $M$
+\end_inset
+
+内的个体
+\begin_inset Formula $a',b'$
+\end_inset
+
+, 且
+\begin_inset Formula $b=\phi(a)$
+\end_inset
+
+, 则也可记作
+\begin_inset Formula $b'=\phi(a')$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+而从函数
+\begin_inset Formula $\phi$
+\end_inset
+
+的存在性推出句子
+\begin_inset Formula $(\forall x)(\exists y)Q(x,y)$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立.
+\end_layout
+
+\begin_layout Proof
+表达式
+\begin_inset Formula $Q(x,\phi(x))$
+\end_inset
+
+是形式语言之外的, 称为Skolem开形句子.
+\end_layout
+
+\begin_layout Proof
+称
+\begin_inset Formula $Q(x,\phi(x))$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立, 就是对于任何个体常项
+\begin_inset Formula $a$
+\end_inset
+
+, 它对应
+\begin_inset Formula $M$
+\end_inset
+
+的个体, 有
+\begin_inset Formula $Q(a,\phi(a))$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+内成立.
+\end_layout
+
+\begin_layout Proof
+step 2.
+ 假定
+\begin_inset Formula $K$
+\end_inset
+
+是一个前束范式的句子集, 且
+\begin_inset Formula $K$
+\end_inset
+
+的每个有穷子集是协调的.
+\end_layout
+
+\begin_layout Proof
+现在构造一个
+\begin_inset Formula $K$
+\end_inset
+
+的超积形状的模型.
+\end_layout
+
+\begin_layout Proof
+将
+\begin_inset Formula $K$
+\end_inset
+
+的一切有穷子集的集定义为指标集
+\begin_inset Formula $I$
+\end_inset
+
+, 从而
+\begin_inset Formula $I$
+\end_inset
+
+不空.
+\end_layout
+
+\begin_layout Proof
+对每个
+\begin_inset Formula $\nu\in I$
+\end_inset
+
+, 选择相应的结构
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+, 使得在某个特殊映射
+\begin_inset Formula $C_{\nu}$
+\end_inset
+
+下
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+是
+\begin_inset Formula $\nu$
+\end_inset
+
+的一个模型.
+\end_layout
+
+\begin_layout Proof
+按照假设, 对于每个
+\begin_inset Formula $\nu\in I$
+\end_inset
+
+, 结构
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+是存在的, 但当
+\begin_inset Formula $I$
+\end_inset
+
+是无穷集时, 断言带指标的集合
+\begin_inset Formula $Q=\left\{ M_{\nu}\right\} _{\nu\in I}$
+\end_inset
+
+的存在性需要选择公理.
+\end_layout
+
+\begin_layout Proof
+对于每个
+\begin_inset Formula $\nu$
+\end_inset
+
+, 
+\begin_inset Formula $C_{\nu}$
+\end_inset
+
+是
+\begin_inset Formula $\nu$
+\end_inset
+
+的句子中个体常项与关系符号到
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+的相应个体和关系上的映射.
+\end_layout
+
+\begin_layout Proof
+如果
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+内不同的关系被
+\begin_inset Formula $K$
+\end_inset
+
+内的同一个关系符号所对应, 就把它们看成是同一个关系.
+\end_layout
+
+\begin_layout Proof
+因为关系符号
+\begin_inset Formula $R$
+\end_inset
+
+在
+\begin_inset Formula $\nu$
+\end_inset
+
+的句子中可以不出现.
+ 如果对于某个
+\begin_inset Formula $\nu$
+\end_inset
+
+, 
+\begin_inset Formula $K$
+\end_inset
+
+的一个关系符号
+\begin_inset Formula $R$
+\end_inset
+
+不对应
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+内的任何关系.
+ 则在
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+内任意定义一个相应的关系
+\begin_inset Formula $R'$
+\end_inset
+
+, 
+\begin_inset Formula $R'$
+\end_inset
+
+与
+\begin_inset Formula $R$
+\end_inset
+
+有相同个数的变量, 如规定
+\begin_inset Formula $R'$
+\end_inset
+
+对
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+内的任何一组个体都不成立.
+\end_layout
+
+\begin_layout Proof
+由此保证了
+\begin_inset Formula $Q=\left\{ M_{\nu}\right\} $
+\end_inset
+
+中的所有结构都是相似的.
+ 下面在
+\begin_inset Formula $I$
+\end_inset
+
+上选择一个适当的超滤
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+step 3.
+ 对每个
+\begin_inset Formula $\nu\in I$
+\end_inset
+
+, 令
+\begin_inset Formula 
+\[
+d_{\nu}=\left\{ \mu\in I:\nu\subset\mu\right\} ,
+\]
+
+\end_inset
+
+令
+\begin_inset Formula $D_{0}=\left\{ d_{\nu}\right\} _{\nu\in I}$
+\end_inset
+
+.
+ 则
+\begin_inset Formula $D_{0}$
+\end_inset
+
+有下列性质:
+\end_layout
+
+\begin_layout Proof
+(i).
+ 
+\begin_inset Formula $\varnothing\notin D_{0}$
+\end_inset
+
+.
+ 因为若
+\begin_inset Formula $A\in D_{0}$
+\end_inset
+
+, 则对某个
+\begin_inset Formula $\nu\in I$
+\end_inset
+
+, 有
+\begin_inset Formula $A=d_{\nu}$
+\end_inset
+
+, 从而
+\begin_inset Formula $\nu\in A$
+\end_inset
+
+, 所以
+\begin_inset Formula $A\ne\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+(ii).
+ 若
+\begin_inset Formula $A\in D_{0}$
+\end_inset
+
+, 且
+\begin_inset Formula $B\in D_{0}$
+\end_inset
+
+, 则
+\begin_inset Formula $A\cap B\in D_{0}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+pf.
+ 若
+\begin_inset Formula $A\in D_{0}$
+\end_inset
+
+, 且
+\begin_inset Formula $B\in D_{0}$
+\end_inset
+
+, 则
+\begin_inset Formula $I$
+\end_inset
+
+中有
+\begin_inset Formula $\nu,\mu$
+\end_inset
+
+使得
+\begin_inset Formula $A=d_{\nu}$
+\end_inset
+
+, 
+\begin_inset Formula $B=d_{\mu}$
+\end_inset
+
+.
+ 令
+\begin_inset Formula $\sigma=\nu\cup\mu$
+\end_inset
+
+, 则
+\begin_inset Formula $\sigma$
+\end_inset
+
+是
+\begin_inset Formula $K$
+\end_inset
+
+的一个有限子集, 从而是
+\begin_inset Formula $I$
+\end_inset
+
+中的元素.
+\end_layout
+
+\begin_layout Proof
+若
+\begin_inset Formula $\rho\in A\cap B$
+\end_inset
+
+, 则
+\begin_inset Formula $\rho\supset\nu$
+\end_inset
+
+, 
+\begin_inset Formula $\rho\supset\mu$
+\end_inset
+
+.
+ 从而
+\begin_inset Formula $\rho\supset\mu\cup\nu$
+\end_inset
+
+.
+ 因此
+\begin_inset Formula $\rho\in d_{\sigma}$
+\end_inset
+
+.
+ 而
+\begin_inset Formula $\rho\in d_{\sigma}$
+\end_inset
+
+推出
+\begin_inset Formula $\rho\supset\sigma$
+\end_inset
+
+, 
+\begin_inset Formula $\rho\supset\nu$
+\end_inset
+
+, 
+\begin_inset Formula $\rho\supset\mu$
+\end_inset
+
+, 所以
+\begin_inset Formula $\rho\in A$
+\end_inset
+
+, 
+\begin_inset Formula $\rho\in B$
+\end_inset
+
+, 
+\begin_inset Formula $\rho\in A\cap B$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+所以
+\begin_inset Formula $A\cap B=d_{\sigma}$
+\end_inset
+
+, 从而
+\begin_inset Formula $A\cap B\in D_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+考虑一切
+\begin_inset Formula $D_{0}$
+\end_inset
+
+的扩张并满足上述条件(i)和(ii)的
+\begin_inset Formula $I$
+\end_inset
+
+的子集的集合.
+ 有Zorn引理, 这些集合有极大元, 令
+\begin_inset Formula $D$
+\end_inset
+
+是这样的极大元.
+ 则
+\begin_inset Formula $D$
+\end_inset
+
+有性质:
+\end_layout
+
+\begin_layout Proof
+(iii) 若
+\begin_inset Formula $A\in D$
+\end_inset
+
+, 且
+\begin_inset Formula $A\subset B\subset I$
+\end_inset
+
+, 则
+\begin_inset Formula $B\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+pf.
+ 令
+\begin_inset Formula 
+\[
+D'=\left\{ B\mid B\subset I\text{ 且对于某个 }A\in D\text{ 有 }A\subset B\right\} .
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $D'$
+\end_inset
+
+是
+\begin_inset Formula $I$
+\end_inset
+
+的子集族, 
+\begin_inset Formula $D\subset D'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+若
+\begin_inset Formula $B\in D'$
+\end_inset
+
+, 因为
+\begin_inset Formula $B$
+\end_inset
+
+包含一个
+\begin_inset Formula $D$
+\end_inset
+
+的元素
+\begin_inset Formula $A$
+\end_inset
+
+为子集, 而
+\begin_inset Formula $A$
+\end_inset
+
+不能是空集, 所以
+\begin_inset Formula $B\ne\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+若
+\begin_inset Formula $B$
+\end_inset
+
+和
+\begin_inset Formula $B'$
+\end_inset
+
+都属于
+\begin_inset Formula $D'$
+\end_inset
+
+, 则有
+\begin_inset Formula $A,A'\in D$
+\end_inset
+
+, 使得
+\begin_inset Formula $B\supset A$
+\end_inset
+
+, 
+\begin_inset Formula $B'\supset A'$
+\end_inset
+
+.
+ 所以
+\begin_inset Formula $B\cap B'\supset A\cap A'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+由于
+\begin_inset Formula $D$
+\end_inset
+
+是
+\begin_inset Formula $D_{0}$
+\end_inset
+
+在满足(i), (ii)时的扩张, 由(ii)知, 
+\begin_inset Formula $A\cap A'\in D$
+\end_inset
+
+.
+ 所以
+\begin_inset Formula $B\cap B'\in D'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+因此
+\begin_inset Formula $D'$
+\end_inset
+
+也是
+\begin_inset Formula $I$
+\end_inset
+
+的子集的集合, 并满足(i), (ii).
+ 由
+\begin_inset Formula $D$
+\end_inset
+
+是极大元, 所以
+\begin_inset Formula $D=D'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+(iv) 若
+\begin_inset Formula $A\subset I$
+\end_inset
+
+, 则
+\begin_inset Formula $A\in D$
+\end_inset
+
+或
+\begin_inset Formula $I-A\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+pf.
+ 由于
+\begin_inset Formula $A\cap(I-A)=\varnothing$
+\end_inset
+
+, 所以
+\begin_inset Formula $A$
+\end_inset
+
+和
+\begin_inset Formula $I-A$
+\end_inset
+
+不能都属于
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+假设
+\begin_inset Formula $A\subset I$
+\end_inset
+
+, 而
+\begin_inset Formula $A$
+\end_inset
+
+和
+\begin_inset Formula $I-A$
+\end_inset
+
+都不属于
+\begin_inset Formula $D$
+\end_inset
+
+.
+ 定义
+\begin_inset Formula 
+\[
+D_{1}=\left\{ B\mid B=C\cap F,\text{ 其中 }A\subset C\subset I\text{ 且 }F\in D\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+若
+\begin_inset Formula $F\in D$
+\end_inset
+
+, 取
+\begin_inset Formula $C=I$
+\end_inset
+
+, 则
+\begin_inset Formula $B=F\in D_{1}$
+\end_inset
+
+, 所以
+\begin_inset Formula $D\subset D_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+若
+\begin_inset Formula $B\in D_{1}$
+\end_inset
+
+且
+\begin_inset Formula $B'\in D_{1}$
+\end_inset
+
+, 有
+\begin_inset Formula $D_{1}$
+\end_inset
+
+的定义, 存在
+\begin_inset Formula $C,F,C',F'$
+\end_inset
+
+, 满足
+\begin_inset Formula $A\subset C\subset I$
+\end_inset
+
+, 
+\begin_inset Formula $F\in D$
+\end_inset
+
+, 
+\begin_inset Formula $A\subset C'\subset I$
+\end_inset
+
+, 
+\begin_inset Formula $F'\in D$
+\end_inset
+
+, 使得
+\begin_inset Formula $B=C\cap F$
+\end_inset
+
+, 
+\begin_inset Formula $B'=C'\cap F'$
+\end_inset
+
+, 则
+\begin_inset Formula $B\cap B'=(C\cap C')\cap(F\cap F')$
+\end_inset
+
+, 其中
+\begin_inset Formula $A\subset C\cap C'\subset I$
+\end_inset
+
+, 且
+\begin_inset Formula $F\cap F'\in D$
+\end_inset
+
+, 从而
+\begin_inset Formula $B\cap B'\in D_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+再在
+\begin_inset Formula $D_{1}$
+\end_inset
+
+的定义中取
+\begin_inset Formula $C=A$
+\end_inset
+
+, 
+\begin_inset Formula $F=I$
+\end_inset
+
+, 就有
+\begin_inset Formula $A\in D_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+由此
+\begin_inset Formula $D_{1}$
+\end_inset
+
+是满足条件(ii)的
+\begin_inset Formula $D$
+\end_inset
+
+的真扩张.
+\end_layout
+
+\begin_layout Proof
+由
+\begin_inset Formula $D$
+\end_inset
+
+的极大性知, 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+不能满足条件(i), 所以
+\begin_inset Formula $\varnothing\in D_{1}$
+\end_inset
+
+, 即存在
+\begin_inset Formula $F_{1}\in D$
+\end_inset
+
+使得
+\begin_inset Formula $A\cap F_{1}=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+类似地, 定义
+\begin_inset Formula 
+\[
+D_{2}=\left\{ B\mid B=C\cap F,\text{ 其中 }I-A\subset C\subset I\text{ 且 }F\in D\right\} .
+\]
+
+\end_inset
+
+知存在
+\begin_inset Formula $F_{2}\in D$
+\end_inset
+
+使得
+\begin_inset Formula $(I-A)\cap F_{2}=\varnothing$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+现在令
+\begin_inset Formula $F_{3}=F_{1}\cap F_{2}$
+\end_inset
+
+, 则
+\begin_inset Formula $F_{3}\in D$
+\end_inset
+
+, 且
+\begin_inset Formula 
+\begin{align*}
+F_{3} & =I\cap F_{3}=\left(A\cup(I-A)\right)\cap F_{3}\\
+ & =(A\cap F_{3})\cup\left((I-A)\cap F_{3}\right)\\
+ & =\left(A\cap(F_{1}\cap F_{2})\right)\cup\left((I-A)\cap(F_{1}\cap F_{2})\right)\\
+ & \subset(A\cap F_{1})\cup\left((I-A)\cap F_{2}\right)=\varnothing.
+\end{align*}
+
+\end_inset
+
+矛盾.
+\end_layout
+
+\begin_layout Proof
+step 4.
+ 由超滤的定义, 
+\begin_inset Formula $D$
+\end_inset
+
+是
+\begin_inset Formula $I$
+\end_inset
+
+上的超滤.
+ 下证: 在
+\begin_inset Formula $K$
+\end_inset
+
+的个体常项与关系符号的一个适当的解释
+\begin_inset Formula $C_{K}$
+\end_inset
+
+下, 超积
+\begin_inset Formula $Q_{D}\left(Q=\left\{ M_{\nu}\right\} \right)$
+\end_inset
+
+是
+\begin_inset Formula $K$
+\end_inset
+
+的一个模型.
+\end_layout
+
+\begin_layout Proof
+对于
+\begin_inset Formula $K$
+\end_inset
+
+内的一个给定关系符号
+\begin_inset Formula $R$
+\end_inset
+
+, 把
+\begin_inset Formula $R$
+\end_inset
+
+看成是对应在所有
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+内都出现的一个关系
+\begin_inset Formula $R'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+由超积的定义, 
+\begin_inset Formula $R'$
+\end_inset
+
+也出现在
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+内, 定义在
+\begin_inset Formula $C_{K}$
+\end_inset
+
+下
+\begin_inset Formula $R$
+\end_inset
+
+对应到
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+内的关系为
+\begin_inset Formula $R'$
+\end_inset
+
+.
+ 
+\begin_inset Formula $K$
+\end_inset
+
+的个体常项在
+\begin_inset Formula $C_{K}$
+\end_inset
+
+下的解释: 令
+\begin_inset Formula $a$
+\end_inset
+
+是出现在
+\begin_inset Formula $K$
+\end_inset
+
+中的个体常项, 即
+\begin_inset Formula $a$
+\end_inset
+
+至少在
+\begin_inset Formula $K$
+\end_inset
+
+的一个句子中出现.
+ 
+\end_layout
+
+\begin_layout Proof
+在
+\begin_inset Formula $I$
+\end_inset
+
+上定义函数
+\begin_inset Formula $f(\nu)$
+\end_inset
+
+使得
+\begin_inset Formula $f(\nu)\in M_{\nu}$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $\nu$
+\end_inset
+
+的某个句子包含
+\begin_inset Formula $a$
+\end_inset
+
+, 则
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+包含个体
+\begin_inset Formula $a'$
+\end_inset
+
+, 它在
+\begin_inset Formula $C_{\nu}$
+\end_inset
+
+之下对应
+\begin_inset Formula $a$
+\end_inset
+
+, 就取
+\begin_inset Formula $f(\nu)=a'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+若
+\begin_inset Formula $a$
+\end_inset
+
+不出现在
+\begin_inset Formula $\nu$
+\end_inset
+
+中, 
+\begin_inset Formula $f(\nu)$
+\end_inset
+
+取
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+中的任意元素.
+\end_layout
+
+\begin_layout Proof
+令
+\begin_inset Formula $X$
+\end_inset
+
+是
+\begin_inset Formula $K$
+\end_inset
+
+的任意一个句子.
+ 根据假设, 
+\begin_inset Formula $X$
+\end_inset
+
+是前束范式.
+\end_layout
+
+\begin_layout Proof
+要证明
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+内成立, 或等价地, 证明在
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+内能定义Skolem函数使其在
+\begin_inset Formula $Q_{D}$
+\end_inset
+
+内成立.
+\end_layout
+
+\begin_layout Proof
+可以假定对于
+\begin_inset Formula $X\in\nu$
+\end_inset
+
+的所有
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+内已经选出了适当的Skolem函数, 并且
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+内的其它元素上已经随意定义好了, 且各函数值与相应的自变量分别属于同一个结构
+\begin_inset Formula $M_{\nu}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+接下来的证明是通过一个具体的例子给出的, 暂时略去.
 \end_layout
 
 \begin_layout Section
@@ -1669,7 +3079,11 @@ Boole代数
 \end_layout
 
 \begin_layout Standard
-数学哲学的研究是和较为一般的概念(如协调性, 预测性, 可构造性等)相联系的.
+数学哲学的研究是和较为一般的概念(如
+\series bold
+协调性
+\series default
+(相容性), 预测性, 可构造性等)相联系的.
 \end_layout
 
 \begin_layout Standard
@@ -1685,7 +3099,7 @@ Leibniz一般不排斥实在的无限, 无限小在微积分里是没有地位�
 \end_layout
 
 \begin_layout Standard
-Berkeley对当时微积分基础的猛烈攻击, 揭露了后者的不协调性.
+Berkeley对当时微积分基础的猛烈攻击, 揭露了后者的不协调性(不相容性).
 \end_layout
 
 \end_body
