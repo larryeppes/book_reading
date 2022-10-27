@@ -3119,11 +3119,6 @@ step 4.
 
 \begin_layout Standard
 上述集合和关系中排除的``不正规''的对象: 既含有个体又含有个体的集合为元素的集合.
- 比如, 排除了形如
-\begin_inset Formula $\left\{ a,b,c,\{a,b\}\right\} $
-\end_inset
-
-的集合.
 \end_layout
 
 \begin_layout Standard
@@ -3355,10 +3350,6 @@ step 4.
 
 \begin_layout Standard
 ``可容许的''可以理解成现在常说的``...是良定的''.
-\end_layout
-
-\begin_layout Standard
-``分层''的概念, 指的是合式公式中的变量之间没有依赖和制约关系, 也就是在关系符中的自由变量之间是各自独立的.
 \end_layout
 
 \begin_layout Standard
@@ -4522,55 +4513,7 @@ ii).
 \begin_inset Formula $M$
 \end_inset
 
-中是可容许的.
-\end_layout
 
-\begin_layout Standard
-由归纳假设, 
-\begin_inset Formula $Z(a)$
-\end_inset
-
-在
-\begin_inset Formula $M$
-\end_inset
-
-中成立.
-\end_layout
-
-\begin_layout Standard
-又由于对常项
-\begin_inset Formula $a$
-\end_inset
-
-, 要求它所对应的关系的型是
-\begin_inset Formula $y$
-\end_inset
-
-在
-\begin_inset Formula $Z(y)$
-\end_inset
-
-中各出现位置的型, 即要求
-\begin_inset Formula $Z(a)$
-\end_inset
-
-是在
-\begin_inset Formula $M$
-\end_inset
-
-中是可容许的.
-\end_layout
-
-\begin_layout Standard
-所以
-\begin_inset Formula $\left[(\forall y)Z\right]$
-\end_inset
-
-在
-\begin_inset Formula $M$
-\end_inset
-
-中成立.
 \end_layout
 
 \begin_layout Section
