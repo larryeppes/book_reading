@@ -51,3 +51,5 @@
     - 应用泛函分析(薛小平)
 - manuscript
   - understanding analysis 手写笔记
+- 数学竞赛
+  - 全国高中数学竞赛 (2022年)
