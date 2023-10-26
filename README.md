@@ -6,6 +6,7 @@
   - 华东师范大学数学系编数学分析第三版上册教案
 - 课外读物
   - A Few Classic Unknowns in Mathematics
+  - UTM Mathematics: A Concise History and Philosophy Anglin
 - 软件
   - mma
     - Getting Started with Mathematica
