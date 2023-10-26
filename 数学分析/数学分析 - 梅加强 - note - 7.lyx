@@ -1,0 +1,3573 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+
+\DeclareMathOperator{\sech}{sech}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+数项级数
+\end_layout
+
+\begin_layout Subsection
+级数收敛与发散的概念
+\end_layout
+
+\begin_layout Standard
+无穷级数
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}a_{n}=a_{1}+a_{2}+\cdots+a_{n}+\cdots
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula 
+\[
+S_{n}=\sum_{k=1}^{n}a_{k}=a_{1}+\cdots+a_{n}
+\]
+
+\end_inset
+
+称为级数的第
+\begin_inset Formula $n$
+\end_inset
+
+个部分和.
+\end_layout
+
+\begin_layout Paragraph
+级数收敛的必要条件:
+\end_layout
+
+\begin_layout Standard
+如果 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛, 则通项 
+\begin_inset Formula $a_{n}\rightarrow0$
+\end_inset
+
+, 
+\begin_inset Formula $(n\rightarrow\infty)$
+\end_inset
+
+.
+ (否定表述)
+\end_layout
+
+\begin_layout Paragraph
+级数收敛的Cauchy准则:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+ 任给 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在 
+\begin_inset Formula $N=N(\epsilon)$
+\end_inset
+
+, 当 
+\begin_inset Formula $n>N$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+\left|a_{n+1}+a_{n+2}+\cdots+a_{n+p}\right|<\varepsilon,\quad\forall p\geqslant1.
+\]
+
+\end_inset
+
+(否定表述)
+\end_layout
+
+\begin_layout Paragraph
+例 8.1.2.
+ 
+\end_layout
+
+\begin_layout Standard
+判断级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{2}}$
+\end_inset
+
+ 的敛散性.
+\end_layout
+
+\begin_layout Paragraph
+例 8.1.3.
+ 
+\end_layout
+
+\begin_layout Standard
+判断级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n}$
+\end_inset
+
+ 的敛散性 (调和级数).
+\end_layout
+
+\begin_layout Paragraph
+例 8.1.4.
+ 
+\end_layout
+
+\begin_layout Standard
+判断级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\sin n$
+\end_inset
+
+ 的敛散性.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula 
+\[
+\sin(n+1)=\sin n\cdot\cos1+\cos n\cdot\sin1\Longrightarrow\cos n\to0,\ n\to\infty
+\]
+
+\end_inset
+
+这与
+\begin_inset Formula 
+\[
+\sin^{2}n+\cos^{2}n=1
+\]
+
+\end_inset
+
+矛盾.
+\end_layout
+
+\begin_layout Paragraph
+例 8.1.5.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $q>0$
+\end_inset
+
+, 则当 
+\begin_inset Formula $q<1$
+\end_inset
+
+ 时, 
+\begin_inset Formula $\sum_{n=1}^{\infty}q^{n}$
+\end_inset
+
+ 收敛; 
+\begin_inset Formula $q\geqslant1$
+\end_inset
+
+ 时, 
+\begin_inset Formula $\sum_{n=1}^{\infty}q^{n}$
+\end_inset
+
+ 发散(几何级数).
+\end_layout
+
+\begin_layout Paragraph
+Thm8.1.1
+\end_layout
+
+\begin_layout Standard
+(1) 如果 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 均收敛, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\lambda a_{n}+\mu b_{n}\right)$
+\end_inset
+
+ 也收敛, 且 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\lambda a_{n}+\mu b_{n}\right)=\lambda\sum_{n=1}^{\infty}a_{n}+\mu\sum_{n=1}^{\infty}b_{n},\quad(\lambda,\mu\in\mathbb{R})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 级数的敛散性与其有限项的值无关.
+\end_layout
+
+\begin_layout Standard
+3.
+ 设级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的部分和为 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+ 如果 
+\begin_inset Formula $S_{2n}\rightarrow S$
+\end_inset
+
+, 且 
+\begin_inset Formula $a_{n}\rightarrow0$
+\end_inset
+
+, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+条件
+\begin_inset Formula $a_{n}\to0$
+\end_inset
+
+不能舍去, 比如
+\begin_inset Formula $1-1+1-1+1-1+\cdots$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+4.
+ 设级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n+1}-a_{n}\right|$
+\end_inset
+
+ 收敛, 则数列 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 收敛.
+ (提示: 用 Cauchy 准则.) 
+\end_layout
+
+\begin_layout Standard
+5.
+ 设数列 
+\begin_inset Formula $na_{n}$
+\end_inset
+
+ 收敛, 且级数 
+\begin_inset Formula $\sum_{n=2}^{\infty}n\left(a_{n}-a_{n-1}\right)$
+\end_inset
+
+ 收敛, 证明级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 也是收敛的.
+ 
+\end_layout
+
+\begin_layout Standard
+6.
+ 证明, 如果级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}^{2}$
+\end_inset
+
+ 收敛, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{n}$
+\end_inset
+
+ 也收敛.
+ (提示: 用平均值不等式.)
+\end_layout
+
+\begin_layout Standard
+8.
+ 设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 为发散级数, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}\min\left\{ a_{n},1\right\} $
+\end_inset
+
+ 也发散.
+\end_layout
+
+\begin_layout Standard
+hint: 反证法, 比Cauchy收敛准则的否定表述更好写证明过程.
+\end_layout
+
+\begin_layout Subsection
+正项级数收敛与发散的判别法
+\end_layout
+
+\begin_layout Paragraph
+基本判别法
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛 
+\begin_inset Formula $\Longleftrightarrow\left\{ S_{n}\right\} $
+\end_inset
+
+ 收敛 
+\begin_inset Formula $\Longleftrightarrow\left\{ S_{n}\right\} $
+\end_inset
+
+ 有上界.
+\end_layout
+
+\begin_layout Paragraph
+定理 8.2.1 (比较判别法).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 为正项级数, 如果存在常数 
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得 
+\begin_inset Formula 
+\[
+a_{n}\leqslant Mb_{n},\quad\forall n\geqslant1.
+\]
+
+\end_inset
+
+则 (1) 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 收敛时 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 也收敛; (2) 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散时 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 也发散.
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.3.
+ 
+\end_layout
+
+\begin_layout Standard
+判别 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left[\frac{1}{n}-\ln\left(1+\frac{1}{n}\right)\right]$
+\end_inset
+
+ 的敛散性.
+ 
+\end_layout
+
+\begin_layout Standard
+解.
+ 根据 Taylor 展开, 
+\begin_inset Formula 
+\[
+0<\frac{1}{n}-\ln\left(1+\frac{1}{n}\right)=\frac{1}{2}\frac{1}{n^{2}}+o\left(\frac{1}{n^{2}}\right).
+\]
+
+\end_inset
+
+因此 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left[\frac{1}{n}-\ln\left(1+\frac{1}{n}\right)\right]/\frac{1}{n^{2}}=\frac{1}{2},
+\]
+
+\end_inset
+
+而 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{2}}$
+\end_inset
+
+ 收敛, 故原级数收敛.
+\end_layout
+
+\begin_layout Paragraph
+Cauchy判别法或根值判别法
+\end_layout
+
+\begin_layout Standard
+如果
+\begin_inset Formula $n$
+\end_inset
+
+充分大时, 
+\begin_inset Formula $\sqrt[n]{a_{n}}\le q<1$
+\end_inset
+
+, 则
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+收敛;
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.4.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $p\in\mathbb{R}$
+\end_inset
+
+, 判别级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(1-\frac{p}{n}\right)^{n^{2}}$
+\end_inset
+
+ 的敛散性.
+ 
+\end_layout
+
+\begin_layout Standard
+解.
+ 因为 
+\begin_inset Formula 
+\[
+\sqrt[n]{a_{n}}=\left(1-\frac{p}{n}\right)^{n}\rightarrow e^{-p},
+\]
+
+\end_inset
+
+故 
+\begin_inset Formula $p>0$
+\end_inset
+
+ 时原级数收敛; 
+\begin_inset Formula $p<0$
+\end_inset
+
+ 时级数发散.
+ 显然, 
+\begin_inset Formula $p=0$
+\end_inset
+
+ 时级数也发散.
+\end_layout
+
+\begin_layout Paragraph
+d'Alembert判别法或比值判别法
+\end_layout
+
+\begin_layout Standard
+如果
+\begin_inset Formula $n$
+\end_inset
+
+充分大时, 
+\begin_inset Formula $\frac{a_{n+1}}{a_{n}}\le q<1$
+\end_inset
+
+, 则
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+收敛;
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.5.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $x>0$
+\end_inset
+
+, 判别级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}n!\left(\frac{x}{n}\right)^{n}$
+\end_inset
+
+ 的敛散性.
+ 
+\end_layout
+
+\begin_layout Standard
+解.
+ 因为 
+\begin_inset Formula 
+\[
+\frac{a_{n+1}}{a_{n}}=\frac{x}{\left(1+\frac{1}{n}\right)^{n}}\rightarrow\frac{x}{e},
+\]
+
+\end_inset
+
+故 
+\begin_inset Formula $0<x<e$
+\end_inset
+
+ 时级数收敛; 
+\begin_inset Formula $x>e$
+\end_inset
+
+ 时级数发散.
+ 
+\begin_inset Formula $x=e$
+\end_inset
+
+ 时, 
+\begin_inset Formula 
+\[
+\frac{a_{n+1}}{a_{n}}=e/\left(1+\frac{1}{n}\right)^{n}\geqslant1,
+\]
+
+\end_inset
+
+故此时级数也发散.
+\end_layout
+
+\begin_layout Paragraph
+定理 8.2.2 (积分判别法).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是定义在 
+\begin_inset Formula $[1,+\infty)$
+\end_inset
+
+ 上的非负单调递减函数, 记 
+\begin_inset Formula $a_{n}=f(n)$
+\end_inset
+
+, 
+\begin_inset Formula $(n\geqslant1)$
+\end_inset
+
+.
+ 则级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的敛散性与广义积分 
+\begin_inset Formula $\int_{1}^{+\infty}f(x)dx$
+\end_inset
+
+ 的敛散性相同.
+\end_layout
+
+\begin_layout Standard
+证明.
+ 令 
+\begin_inset Formula 
+\[
+F(x)=\int_{1}^{x}f(t)dt,\quad\forall x\geqslant1.
+\]
+
+\end_inset
+
+因为 
+\begin_inset Formula $f$
+\end_inset
+
+ 为单调递减函数, 故当 
+\begin_inset Formula $n\leqslant x\leqslant n+1$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+a_{n+1}=f(n+1)\leqslant f(x)\leqslant f(n)=a_{n},
+\]
+
+\end_inset
+
+这说明 
+\begin_inset Formula 
+\[
+a_{n+1}\leqslant\int_{n}^{n+1}f(t)dt\leqslant a_{n},
+\]
+
+\end_inset
+
+从而有 
+\begin_inset Formula 
+\[
+S_{n}\leqslant a_{1}+F(n),\quad F(n)\leqslant S_{n-1}.
+\]
+
+\end_inset
+
+其中 
+\begin_inset Formula $S_{n}=\sum_{k=1}^{n}a_{k}$
+\end_inset
+
+ 为级数的部分和.
+ 因为 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ 及 
+\begin_inset Formula $F(n)$
+\end_inset
+
+ 关于 
+\begin_inset Formula $n$
+\end_inset
+
+ 都是单调递增的, 二者同时有界或无界, 即 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 与 
+\begin_inset Formula $\int_{1}^{+\infty}f(x)dx$
+\end_inset
+
+ 同敛散.
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.6.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $s\in\mathbb{R}$
+\end_inset
+
+, 判断级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{s}}$
+\end_inset
+
+ 的敛散性.
+\end_layout
+
+\begin_layout Paragraph
+定理 8.2.3 (Kummer).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 为正项级数, 如果 
+\begin_inset Formula $n$
+\end_inset
+
+ 充分大时 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\geqslant\lambda>0$
+\end_inset
+
+, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛; 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\leqslant0$
+\end_inset
+
+ 且 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 发散, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散.
+\end_layout
+
+\begin_layout Standard
+pf.
+ (1) 条件可改写为 
+\begin_inset Formula 
+\[
+a_{n+1}\leqslant\frac{1}{\lambda}\left(\frac{a_{n}}{b_{n}}-\frac{a_{n+1}}{b_{n+1}}\right),\quad\forall n\geqslant N\text{. }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这说明当 
+\begin_inset Formula $n\geqslant N$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+\begin{aligned}S_{n+1} & =S_{N}+\sum_{k=N}^{n}a_{k+1}\\
+ & \leqslant S_{N}+\frac{1}{\lambda}\sum_{k=N}^{n}\left(\frac{a_{k}}{b_{k}}-\frac{a_{k+1}}{b_{k+1}}\right)\\
+ & =S_{N}+\frac{1}{\lambda}\left(\frac{a_{N}}{b_{N}}-\frac{a_{n+1}}{b_{n+1}}\right)\\
+ & \leqslant S_{N}+\frac{1}{\lambda}\frac{a_{N}}{b_{N}}
+\end{aligned}
+\]
+
+\end_inset
+
+即 
+\begin_inset Formula $\left\{ S_{n}\right\} $
+\end_inset
+
+ 有上界, 从而 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 由 
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\leqslant0
+\]
+
+\end_inset
+
+可知 
+\begin_inset Formula 
+\[
+\frac{a_{n}}{b_{n}}\leqslant\frac{a_{n+1}}{b_{n+1}},
+\]
+
+\end_inset
+
+即 
+\begin_inset Formula $\left\{ \frac{a_{n}}{b_{n}}\right\} $
+\end_inset
+
+ 关于 
+\begin_inset Formula $n$
+\end_inset
+
+ 单调递增, 从而 
+\begin_inset Formula $a_{n}\geqslant\frac{a_{1}}{b_{1}}b_{n}$
+\end_inset
+
+, 因此由 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 发散知 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 也发散.
+\end_layout
+
+\begin_layout Paragraph
+Kummer判别法推d'Alembert判别法
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $b_{n}=1$
+\end_inset
+
+, 则当
+\begin_inset Formula $n$
+\end_inset
+
+充分大, 有
+\begin_inset Formula $\frac{a_{n+1}}{a_{n}}\le q<1$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\ge\frac{1}{q}-1>0,
+\]
+
+\end_inset
+
+所以由Kummer判别法有
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+收敛.
+ 当
+\begin_inset Formula $n$
+\end_inset
+
+充分大满足
+\begin_inset Formula $\frac{a_{n+1}}{a_{n}}\ge1$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\le1-1=0,
+\]
+
+\end_inset
+
+再由Kummer判别法和
+\begin_inset Formula $\sum1$
+\end_inset
+
+发散, 知
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Paragraph
+Kummer判别法证明Raabe判别法
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $b_{n}=\frac{1}{n}$
+\end_inset
+
+, 当
+\begin_inset Formula $n$
+\end_inset
+
+充分大时, 如果有
+\begin_inset Formula $n\left(\frac{a_{n}}{a_{n+1}}-1\right)\ge\mu>1$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\ge n\left(1+\frac{\mu}{n}\right)-(n+1)=\mu-1>0,
+\]
+
+\end_inset
+
+由Kummer判别法, 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+当
+\begin_inset Formula $n$
+\end_inset
+
+充分大时, 如果有
+\begin_inset Formula $n\left(\frac{a_{n}}{a_{n+1}}-1\right)\le1$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}\le n\left(1+\frac{1}{n}\right)-(n+1)=0,
+\]
+
+\end_inset
+
+由Kummer判别法以及
+\begin_inset Formula $\sum\frac{1}{n}$
+\end_inset
+
+是发散的, 所以
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+也发散.
+\end_layout
+
+\begin_layout Paragraph
+Kummer判别法推出Gauss判别法
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $b_{n}=\frac{1}{n\ln n}$
+\end_inset
+
+, 当
+\begin_inset Formula $n>N$
+\end_inset
+
+充分大时, 如果有
+\begin_inset Formula $\theta>1$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+\frac{a_{n}}{a_{n+1}}=1+\frac{\theta}{n}+o\left(\frac{1}{n\ln n}\right).
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}} & ={\color{magenta}n\ln n\left(1+\frac{\theta}{n}+o\left(\frac{1}{n\ln n}\right)\right)}-(n+1)\ln(n+1)\\
+ & ={\color{magenta}(n+1)\ln n+(\theta-1)\ln n+o(1)}-n\ln(n+1)-\ln(n+1)\\
+ & =(\theta-1)\ln n+o(1)-(n+1)\left(\frac{1}{n}+o\left(\frac{1}{n}\right)\right)\\
+ & \ge(\theta-1)\ln N>0
+\end{align*}
+
+\end_inset
+
+所以
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+收敛; 当
+\begin_inset Formula $n>N$
+\end_inset
+
+充分大时, 如果有
+\begin_inset Formula $\theta\le1$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+\frac{a_{n}}{a_{n+1}}=1+\frac{\theta}{n}+o\left(\frac{1}{n\ln n}\right).
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}} & ={\color{magenta}n\ln n\left(1+\frac{\theta}{n}+o\left(\frac{1}{n\ln n}\right)\right)}-(n+1)\ln(n+1)\\
+ & ={\color{magenta}(n+1)\ln n+(\theta-1)\ln n+o(1)}-n\ln(n+1)-\ln(n+1)\\
+ & =(\theta-1)\ln n+o(1)-(n+1)\left(\frac{1}{n}+o\left(\frac{1}{n}\right)\right)\\
+ & \le0
+\end{align*}
+
+\end_inset
+
+由Kummer判别法以及
+\begin_inset Formula $\sum\frac{1}{n\ln n}$
+\end_inset
+
+发散, 所以
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+也发散.
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.8.
+ 
+\end_layout
+
+\begin_layout Standard
+判别下列级数的敛散性: 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n!}{(\alpha+1)(\alpha+2)\cdots(\alpha+n)}$
+\end_inset
+
+, 
+\begin_inset Formula $(\alpha>0)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{(2n-1)!!}{(2n)!!}\right)^{s}\cdot\frac{1}{2n+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例 8.2.9 (Cauchy 凝聚判别法).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ 单调递减趋于零.
+ 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛当且仅当 
+\begin_inset Formula $\sum_{k=0}^{\infty}2^{k}a_{2^{k}}$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Standard
+6.
+ 设 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+, 
+\begin_inset Formula $S_{n}=a_{1}+a_{2}+\cdots+a_{n}$
+\end_inset
+
+, 证明 
+\end_layout
+
+\begin_layout Standard
+(1) 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}^{2}}$
+\end_inset
+
+ 总是收敛的; 
+\end_layout
+
+\begin_layout Standard
+(2) 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{\sqrt{S_{n}}}$
+\end_inset
+
+ 收敛当且仅当 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum\frac{S_{n}-S_{n-1}}{S_{n}^{2}}\le\sum\frac{S_{n}-S_{n-1}}{S_{n}S_{n-1}};
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum\frac{a_{n}}{\sqrt{S_{n}}}\le\frac{1}{\sqrt{a_{1}}}\sum a_{n};
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum\frac{a_{n}}{\sqrt{S_{n}}}=\sum\left(\sqrt{S_{n}}-\frac{S_{n-1}}{\sqrt{S_{n}}}\right)\ge\sum\left(\sqrt{S_{n}}-\sqrt{S_{n-1}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+7.
+ 设正项级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散, 试用积分判别法证明 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n+1}}{S_{n}}$
+\end_inset
+
+ 也发散, 其中 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+ 为 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的部分和.
+ 
+\end_layout
+
+\begin_layout Standard
+hint1: 取
+\begin_inset Formula $\epsilon=\frac{1}{2}$
+\end_inset
+
+, 则对于任何
+\begin_inset Formula $n$
+\end_inset
+
+, 存在
+\begin_inset Formula $m>n$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $S_{m+1}>2S_{n}$
+\end_inset
+
+.
+ 则
+\begin_inset Formula 
+\[
+\sum_{k=n}^{m}\frac{a_{k+1}}{S_{k}}\ge\sum_{k=n}^{m}\frac{a_{k+1}}{S_{k+1}}\ge\frac{\sum_{k=n}^{m}a_{k+1}}{S_{m+1}}=\frac{S_{m+1}-S_{n}}{S_{m+1}}\ge\frac{1}{2}=\epsilon,
+\]
+
+\end_inset
+
+由Cauchy收敛判别法即得.
+\end_layout
+
+\begin_layout Standard
+hint2: 
+\begin_inset Formula 
+\[
+\frac{a_{n+1}}{S_{n}}=\frac{S_{n+1}-S_{n}}{S_{n}}\ge\int_{S_{n}}^{S_{n+1}}\frac{dx}{x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+8.
+ 判断下列级数的敛散性: 
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n!e^{n}}{n^{n+p}}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{p(p+1)\cdots(p+n-1)}{n!}\cdot\frac{1}{n^{q}}\quad(p>0,q>0)$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{(2n-1)!!}{(2n)!!}$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Standard
+(4) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{\sqrt{n!}}{(a+\sqrt{1})(a+\sqrt{2})\cdots(a+\sqrt{n})}(a>0)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+9.
+ 设 
+\begin_inset Formula $a_{n}>0,S_{n}=a_{1}+a_{2}+\cdots+a_{n}$
+\end_inset
+
+, 证明 
+\end_layout
+
+\begin_layout Standard
+(1) 当 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+ 时, 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}^{\alpha}}$
+\end_inset
+
+ 总是收敛的; 
+\end_layout
+
+\begin_layout Standard
+(2) 当 
+\begin_inset Formula $\alpha\leqslant1$
+\end_inset
+
+ 时, 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}^{\alpha}}$
+\end_inset
+
+ 收敛当且仅当 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Standard
+(1) hint: 
+\begin_inset Formula $\frac{a_{n}}{S_{n}^{\alpha}}=\frac{S_{n}-S_{n-1}}{S_{n}^{\alpha}}\le\int_{S_{n-1}}^{S_{n}}\frac{dx}{x^{\alpha}}$
+\end_inset
+
+, (
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+(2) hint: 如果
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散, 类似第7题的证明.
+\end_layout
+
+\begin_layout Standard
+10.
+ 设 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+ 关于 
+\begin_inset Formula $n$
+\end_inset
+
+ 单调递增.
+ 证明级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(1-\frac{a_{n}}{a_{n+1}}\right)$
+\end_inset
+
+ 收敛当且仅当级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(\frac{a_{n+1}}{a_{n}}-1\right)$
+\end_inset
+
+ 收敛.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\left(1-\frac{a_{n}}{a_{n+1}}\right)\le\sum_{n=1}^{\infty}\left(\frac{a_{n+1}}{a_{n}}-1\right);
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Sapagof 判别法: 
+\end_layout
+
+\begin_layout Standard
+设正数数列 
+\begin_inset Formula $\left\{ a_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ 单调递减，则 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+ 的充要条件是 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(1-\frac{a_{n+1}}{a_{n}}\right)$
+\end_inset
+
+ 发散。 
+\end_layout
+
+\begin_layout Standard
+上述断言等价于: 单调递增数列 
+\begin_inset Formula $\left\{ a_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ 与级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(1-\frac{a_{n}}{a_{n+1}}\right)$
+\end_inset
+
+ 同敛散.
+\end_layout
+
+\begin_layout Standard
+由此可以得到: 设正项级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的前 
+\begin_inset Formula $n$
+\end_inset
+
+ 项部分和为 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+, 那么级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}}$
+\end_inset
+
+ 同敛散.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $p>1$
+\end_inset
+
+, 正项级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的前 
+\begin_inset Formula $n$
+\end_inset
+
+ 项部分和为 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+, 那么级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}^{p}}$
+\end_inset
+
+ 始终是收敛的.
+\end_layout
+
+\begin_layout Standard
+11.
+ 设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 为正项级数, 且 
+\begin_inset Formula 
+\[
+\frac{a_{n}}{a_{n+1}}=1+\frac{1}{n}+\frac{\alpha_{n}}{n\ln n}.
+\]
+
+\end_inset
+
+如果 
+\begin_inset Formula $n$
+\end_inset
+
+ 充分大时 
+\begin_inset Formula $\alpha_{n}\geqslant\mu>1$
+\end_inset
+
+, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收玫; 如果 
+\begin_inset Formula $n$
+\end_inset
+
+ 充分大时 
+\begin_inset Formula $\alpha_{n}\leqslant1$
+\end_inset
+
+, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 发散.
+ 这个结果称为 Bertrand 判别法.
+\end_layout
+
+\begin_layout Standard
+hint: 取
+\series bold
+
+\begin_inset Formula $b_{n}=\frac{1}{n\ln n}$
+\end_inset
+
+
+\series default
+, 则
+\begin_inset Formula 
+\[
+\frac{1}{b_{n}}\cdot\frac{a_{n}}{a_{n+1}}-\frac{1}{b_{n+1}}=\alpha_{n}-1+o(1).
+\]
+
+\end_inset
+
+然后用Kummer判别法.
+\end_layout
+
+\begin_layout Standard
+17.
+ 设 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{a_{n}}$
+\end_inset
+
+ 收敛.
+ 证明级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{n}{a_{1}+a_{2}+\cdots+a_{n}}$
+\end_inset
+
+ 也收敛.
+\end_layout
+
+\begin_layout Standard
+hint: 将
+\begin_inset Formula $a_{n}$
+\end_inset
+
+递增重排.
+\end_layout
+
+\begin_layout Standard
+以上收敛判别法列表也可以参考:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://en.wikipedia.org/wiki/Convergence_tests
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+至今, 这些收敛判别法全部失效的正项级数是存在的, 比如Flint Hills级数
+\begin_inset Formula 
+\[
+\sum_{k=1}^{\infty}\frac{1}{n^{3}\sin^{2}n}
+\]
+
+\end_inset
+
+它的收敛性涉及到
+\begin_inset Formula $\pi$
+\end_inset
+
+的无理测度的大小, 见
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://math.stackexchange.com/questions/162573
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+一般级数收敛与发散判别法
+\end_layout
+
+\begin_layout Standard
+级数是正负交替出现的称为交错级数
+\end_layout
+
+\begin_layout Paragraph
+定理 8.3.1 (Leibniz).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ 单调递减趋于 0 , 则级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}(-1)^{n-1}a_{n}$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 使用Cauchy收敛准则.
+\begin_inset Formula 
+\[
+\begin{aligned}S_{n+p}-S_{n} & =(-1)^{n}\cdot a_{n+1}+(-1)^{n+1}a_{n+2}+\cdots+(-1)^{n+p-1}a_{n+p}\\
+ & =(-1)^{n}\left[a_{n+1}-a_{n+2}+a_{n+3}-a_{n+4}+\cdots+(-1)^{p-1}a_{n+p}\right].
+\end{aligned}
+\]
+
+\end_inset
+
+因此当 
+\begin_inset Formula $p=2k-1$
+\end_inset
+
+ 时, 
+\begin_inset Formula 
+\[
+\begin{aligned}(-1)^{n}\left(S_{n+p}-S_{n}\right) & =a_{n+1}-\left(a_{n+2}-a_{n+3}\right)-\left(a_{n+4}-a_{n+5}\right)-\cdots\leqslant a_{n+1},\\
+(-1)^{n}\left(S_{n+p}-S_{n}\right) & =\left(a_{n+1}-a_{n+2}\right)+\left(a_{n+3}-a_{n+4}\right)+\cdots+a_{n+2k-1}\\
+ & \geqslant0
+\end{aligned}
+\]
+
+\end_inset
+
+这说明 
+\begin_inset Formula 
+\[
+\left|S_{n+p}-S_{n}\right|\leqslant a_{n+1}\rightarrow0,\quad(n\rightarrow\infty).
+\]
+
+\end_inset
+
+当 
+\begin_inset Formula $p=2k$
+\end_inset
+
+ 时, 类似地可证上式仍成立.
+ 因此原级数收敛.
+\end_layout
+
+\begin_layout Paragraph
+例 8.3.1.
+ 
+\end_layout
+
+\begin_layout Standard
+级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}(-1)^{n-1}\frac{1}{\sqrt{n}}$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Paragraph
+引理 8.3.2 (分部求和).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\left\{ a_{k}\right\} ,\left\{ b_{k}\right\} $
+\end_inset
+
+ 为数列, 则 
+\begin_inset Formula 
+\[
+\sum_{k=m}^{n-1}a_{k+1}\left(b_{k+1}-b_{k}\right)+\sum_{k=m}^{n-1}b_{k}\left(a_{k+1}-a_{k}\right)=a_{n}b_{n}-a_{m}b_{m}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+推论 8.3.3 (Abel 变换).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $a_{i},b_{i}(i\geqslant1)$
+\end_inset
+
+ 为两组实数, 如果约定 
+\begin_inset Formula $b_{0}=0$
+\end_inset
+
+, 记 
+\begin_inset Formula 
+\[
+B_{0}=0,B_{k}=b_{1}+b_{2}+\cdots+b_{k}\quad(k\geqslant1),
+\]
+
+\end_inset
+
+则有 
+\begin_inset Formula 
+\[
+\sum_{i=m+1}^{n}a_{i}b_{i}=\sum_{i=m+1}^{n-1}\left(a_{i}-a_{i+1}\right)B_{i}+a_{n}B_{n}-a_{m+1}B_{m},\quad\forall m\geqslant0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+推论 8.3.4 (Abel 引理).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $a_{1},a_{2},\cdots,a_{n}$
+\end_inset
+
+ 为单调数列, 且 
+\begin_inset Formula $\left|B_{i}\right|\leqslant M$
+\end_inset
+
+, 
+\begin_inset Formula $(i\geqslant1)$
+\end_inset
+
+, 则 
+\begin_inset Formula 
+\[
+\left|\sum_{i=m+1}^{n}a_{i}b_{i}\right|\leqslant2M\left(\left|a_{n}\right|+\left|a_{m+1}\right|\right),\quad\forall m\geqslant0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+定理 8.3.5 (Dirichlet).
+ 
+\end_layout
+
+\begin_layout Standard
+设数列 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 单调趋于 0 , 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 的部分和有界, 则级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Paragraph
+证明.
+ 
+\end_layout
+
+\begin_layout Standard
+由假设, 存在 
+\begin_inset Formula $M>0$
+\end_inset
+
+ 使得 
+\begin_inset Formula 
+\[
+\left|\sum_{i=1}^{n}b_{i}\right|\leqslant M,\quad\forall n\geqslant1.
+\]
+
+\end_inset
+
+由 Abel 变换及其推论, 
+\begin_inset Formula 
+\[
+\left|\sum_{i=n+1}^{n+p}a_{i}b_{i}\right|\leqslant2M\left(\left|a_{n+1}\right|+\left|a_{n+p}\right|\right)\leqslant4M\left|a_{n+1}\right|\rightarrow0.
+\]
+
+\end_inset
+
+由 Cauchy 准则知级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Paragraph
+定理 8.3.6 (Abel).
+ 
+\end_layout
+
+\begin_layout Standard
+如果 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 为单调有界数列, 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 收敛, 则级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ 收敛.
+\end_layout
+
+\begin_layout Paragraph
+证明.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 单调有界意味着极限 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+ 存在.
+ 于是 
+\begin_inset Formula $\left\{ a_{n}-a\right\} $
+\end_inset
+
+ 单调趋于 0 .
+ 由 Dirichlet 判别法, 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(a_{n}-a\right)b_{n}$
+\end_inset
+
+ 收敛.
+ 从而级数 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}a_{n}b_{n}=\sum_{n=1}^{\infty}\left(a_{n}-a\right)b_{n}+\sum_{n=1}^{\infty}a\cdot b_{n}
+\]
+
+\end_inset
+
+也收敛.
+\end_layout
+
+\begin_layout Paragraph
+例 8.3.3.
+ 
+\end_layout
+
+\begin_layout Standard
+判断级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n}\sin nx$
+\end_inset
+
+ 的敛散性.
+\end_layout
+
+\begin_layout Standard
+解.
+ 
+\begin_inset Formula $a_{n}=\frac{1}{n}$
+\end_inset
+
+ 单调递减趋于 
+\begin_inset Formula $0,b_{n}=\sin nx$
+\end_inset
+
+.
+ 利用公式 
+\begin_inset Formula 
+\[
+2\sin\frac{x}{2}\cdot\sin kx=\cos\left(k-\frac{1}{2}\right)x-\cos\left(k+\frac{1}{2}\right)x
+\]
+
+\end_inset
+
+得 
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}b_{n}=\begin{cases}
+0, & x=2k\pi,\\
+\frac{\cos\frac{x}{2}-\cos\left(n+\frac{1}{2}\right)x}{2\sin\frac{x}{2}}, & x\neq2k\pi.
+\end{cases}
+\]
+
+\end_inset
+
+即 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ 的部分和总是有界的.
+ 故由 Dirichlet 判别法知, 原级数收敛.
+\end_layout
+
+\begin_layout Paragraph
+定义 8.3.1 (绝对收敛).
+ 
+\end_layout
+
+\begin_layout Standard
+如果 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ 收敛, 则称 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 绝对收敛 (此时, 由于 
+\begin_inset Formula 
+\[
+\left|a_{n+1}+\cdots+a_{n+p}\right|\leqslant\left|a_{n+1}\right|+\cdots+\left|a_{n+p}\right|\rightarrow0,
+\]
+
+\end_inset
+
+故 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 的确为收敛级数).
+ 如果 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛而 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ 发散, 则称 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 条件收敛.
+\end_layout
+
+\begin_layout Paragraph
+例 8.3.5.
+ 
+\end_layout
+
+\begin_layout Standard
+判断级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}(-1)^{n-1}\frac{x^{n}}{n}$
+\end_inset
+
+, 
+\begin_inset Formula $(x\in\mathbb{R})$
+\end_inset
+
+, 的敛散性.
+ 
+\end_layout
+
+\begin_layout Paragraph
+解.
+ 
+\end_layout
+
+\begin_layout Standard
+令 
+\begin_inset Formula $a_{n}=\frac{|x|^{n}}{n}$
+\end_inset
+
+, 则 
+\begin_inset Formula $\sqrt[n]{a_{n}}\rightarrow|x|$
+\end_inset
+
+.
+ 故 
+\begin_inset Formula $|x|<1$
+\end_inset
+
+ 时原级数绝对收敛; 而 
+\begin_inset Formula $|x|>1$
+\end_inset
+
+ 时显然发散.
+ 
+\begin_inset Formula $x=1$
+\end_inset
+
+ 时级数条件收敛; 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ 时级数发散.
+\end_layout
+
+\begin_layout Subsubsection
+作业
+\end_layout
+
+\begin_layout Standard
+6.
+ 设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 绝对收敛, 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ 为有界数列, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ 也是绝对收敛的.
+ 
+\end_layout
+
+\begin_layout Standard
+6'.
+ 证明或否定: 设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛, 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ 为有界数列, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ 也是收敛的.
+ 
+\end_layout
+
+\begin_layout Standard
+7.
+ 如果 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛, 则 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}^{3}$
+\end_inset
+
+ 是否也收敛? 证明你的结论.
+ 
+\end_layout
+
+\begin_layout Standard
+比如
+\begin_inset Formula 
+\[
+a_{n}=\frac{\cos\frac{n\pi}{3}}{\sqrt[3]{n}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+8.
+ 设级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n+1}-a_{n}\right|$
+\end_inset
+
+ 收敛且 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ 极限为零, 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 的部分和有界, 则级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ 收敛.
+ (提示: Abel 求和.)
+\end_layout
+
+\begin_layout Standard
+9.
+ 设级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n+1}-a_{n}\right|$
+\end_inset
+
+ 收敛, 级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}b_{n}$
+\end_inset
+
+ 收敛, 则级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+ 也收敛.
+ (用Abel求和)
+\end_layout
+
+\begin_layout Standard
+10.
+ 设 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 单调递减趋于零.
+ 证明下面的级数是收敛的: 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}(-1)^{n}\frac{a_{1}+a_{2}+\cdots+a_{n}}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+用9.
+\end_layout
+
+\begin_layout Standard
+11.
+ 设 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛, 证明 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{a_{1}+2a_{2}+\cdots+na_{n}}{n}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+考虑把
+\begin_inset Formula $a_{n}$
+\end_inset
+
+用部分和
+\begin_inset Formula $S_{n}$
+\end_inset
+
+表示的问题.
+ 或者使用
+\begin_inset Formula $\epsilon-N$
+\end_inset
+
+法+Abel变换.
+\end_layout
+
+\begin_layout Standard
+本题不能使用Stolz公式, 因为有反例如下:
+\begin_inset Formula 
+\[
+a_{n}=\begin{cases}
+\frac{1}{m^{2}}, & n=m^{2};\\
+\frac{1}{n^{3}}, & n\ne m^{2}.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+12.
+ 设 
+\begin_inset Formula $a_{n}>0,na_{n}$
+\end_inset
+
+ 单调趋于 
+\begin_inset Formula $0,\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛.
+ 证明 
+\begin_inset Formula $n\ln n\cdot a_{n}\rightarrow0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+类比下题:
+\end_layout
+
+\begin_layout Standard
+9.
+ 设 
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+ 收敛, 如果 
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+ 时 
+\begin_inset Formula $xf(x)$
+\end_inset
+
+ 单调递减趋于零, 则 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}xf(x)\ln x=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ 对于任意的
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+, 因为
+\begin_inset Formula $\int_{a}^{+\infty}f(x)dx$
+\end_inset
+
+收敛, 则存在
+\begin_inset Formula $M>\max(0,a)$
+\end_inset
+
+, s.t.
+ 对于任意的
+\begin_inset Formula $x>M$
+\end_inset
+
+, 有
+\begin_inset Formula 
+\[
+xf(x)\int_{\sqrt{x}}^{x}\frac{1}{t}dt\le\int_{\sqrt{x}}^{x}tf(t)\cdot\frac{1}{t}dt=\int_{\sqrt{x}}^{x}f(t)dt<\frac{\epsilon}{2}.
+\]
+
+\end_inset
+
+即
+\begin_inset Formula $xf(x)\ln x<\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+数项级数的进一步讨论
+\end_layout
+
+\begin_layout Subsubsection
+级数求和与求极限的可交换性
+\end_layout
+
+\begin_layout Paragraph
+定义 8.4.1 (级数的一致收敛).
+ 
+\end_layout
+
+\begin_layout Standard
+一列收敛级数 
+\begin_inset Formula $\sum_{j=1}^{\infty}a_{ij}=A_{i}$
+\end_inset
+
+ 关于 
+\begin_inset Formula $i$
+\end_inset
+
+ 一致收敛是指, 任给 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在 
+\begin_inset Formula $N$
+\end_inset
+
+, 当 
+\begin_inset Formula $n>N$
+\end_inset
+
+ 时, 
+\begin_inset Formula 
+\[
+\left|\sum_{j=1}^{n}a_{ij}-A_{i}\right|<\varepsilon,\quad\forall i\geqslant1.
+\]
+
+\end_inset
+
+当且仅当有Cauchy准则: 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists N$
+\end_inset
+
+, 当
+\begin_inset Formula $m,n>N$
+\end_inset
+
+时, 
+\begin_inset Formula 
+\[
+\left|\sum_{j=n}^{m}a_{ij}\right|<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+给出级数一致收敛的否定表述.
+\end_layout
+
+\begin_layout Paragraph
+定理 8.4.1.
+ 
+\end_layout
+
+\begin_layout Standard
+设一列级数 
+\begin_inset Formula $\sum_{j=1}^{\infty}a_{ij}=A_{i}$
+\end_inset
+
+ 关于 
+\begin_inset Formula $i$
+\end_inset
+
+ 一致收敛, 如果 
+\begin_inset Formula $\lim_{i\rightarrow\infty}a_{ij}=a_{j}$
+\end_inset
+
+ 
+\begin_inset Formula $(j\geqslant1)$
+\end_inset
+
+, 则极限 
+\begin_inset Formula $\lim_{i\rightarrow\infty}A_{i}$
+\end_inset
+
+ 存在, 级数 
+\begin_inset Formula $\sum_{j=1}^{\infty}a_{j}$
+\end_inset
+
+ 收敛, 且 
+\begin_inset Formula 
+\[
+\lim_{i\rightarrow\infty}A_{i}=\sum_{j=1}^{\infty}a_{j}
+\]
+
+\end_inset
+
+或改写为 
+\begin_inset Formula 
+\[
+\lim_{i\rightarrow\infty}\sum_{j=1}^{\infty}a_{ij}=\sum_{j=1}^{\infty}\lim_{i\rightarrow\infty}a_{ij}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf: 1.
+ 
+\begin_inset Formula $\sum_{j\ge1}a_{j}$
+\end_inset
+
+收敛
+\end_layout
+
+\begin_layout Standard
+证明.
+ 由一致收敛的定义, 任给 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在 
+\begin_inset Formula $N_{0}$
+\end_inset
+
+, 当 
+\begin_inset Formula $n\geqslant N_{0}$
+\end_inset
+
+ 时, 
+\begin_inset Formula 
+\[
+\left|\sum_{j=1}^{n}a_{ij}-A_{i}\right|<\frac{1}{4}\varepsilon,\quad\forall i\geqslant1.
+\]
+
+\end_inset
+
+因此, 当 
+\begin_inset Formula $m>n\geqslant N_{0}$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+\left|\sum_{j=n+1}^{m}a_{ij}\right|\leqslant\left|\sum_{j=1}^{m}a_{ij}-A_{i}\right|+\left|\sum_{j=1}^{n}a_{ij}-A_{i}\right|<\frac{1}{2}\varepsilon,\quad\forall i\geqslant1.
+\]
+
+\end_inset
+
+在上式中令 
+\begin_inset Formula $i\rightarrow\infty$
+\end_inset
+
+, 得 
+\begin_inset Formula 
+\[
+\left|\sum_{j=n+1}^{m}a_{j}\right|\leqslant\frac{1}{2}\varepsilon,
+\]
+
+\end_inset
+
+由 Cauchy 准则即知级数 
+\begin_inset Formula $\sum_{j=1}^{\infty}a_{j}$
+\end_inset
+
+ 收敛, 且在上式中令 
+\begin_inset Formula $m\rightarrow\infty$
+\end_inset
+
+ 可得 
+\begin_inset Formula 
+\[
+\left|\sum_{j=n+1}^{\infty}a_{j}\right|\leqslant\frac{1}{2}\varepsilon,\quad\forall n\geqslant N_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 证
+\begin_inset Formula $\lim_{i\to\infty}A_{i}=\sum_{j\ge1}a_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+对于 
+\begin_inset Formula $j=1,2,\cdots,N_{0}$
+\end_inset
+
+, 因为 
+\begin_inset Formula $a_{ij}\rightarrow a_{j}$
+\end_inset
+
+, 故存在 
+\begin_inset Formula $N$
+\end_inset
+
+, 当 
+\begin_inset Formula $i>N$
+\end_inset
+
+ 时, 
+\begin_inset Formula 
+\[
+\left|a_{ij}-a_{j}\right|<\frac{\varepsilon}{4N_{0}},\quad j=1,2,\cdots,N_{0}.
+\]
+
+\end_inset
+
+因此, 当 
+\begin_inset Formula $i>N$
+\end_inset
+
+ 时, 有 
+\begin_inset Formula 
+\[
+\begin{aligned}\left|A_{i}-\sum_{i=1}^{\infty}a_{j}\right| & \leqslant\left|A_{i}-\sum_{j=1}^{N_{0}}a_{ij}\right|+\left|\sum_{j=1}^{N_{0}}a_{ij}-\sum_{j=1}^{N_{0}}a_{j}\right|+\left|\sum_{j=N_{0}+1}^{\infty}a_{j}\right|\\
+ & <\frac{1}{4}\varepsilon+N_{0}\frac{\varepsilon}{4N_{0}}+\frac{1}{2}\varepsilon=\varepsilon
+\end{aligned}
+\]
+
+\end_inset
+
+这说明 
+\begin_inset Formula $\left\{ A_{i}\right\} $
+\end_inset
+
+ 的极限存在且极限为 
+\begin_inset Formula $\sum_{j=1}^{\infty}a_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+推论 8.4.2.
+ (控制收敛定理)
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\lim_{i\rightarrow\infty}a_{ij}=a_{j}(j\geqslant1)$
+\end_inset
+
+, 
+\begin_inset Formula $\left|a_{ij}\right|\leqslant b_{j}(i\geqslant1)$
+\end_inset
+
+, 且 
+\begin_inset Formula $\sum_{j=1}^{\infty}b_{j}$
+\end_inset
+
+ 收敛(控制级数), 则级数 
+\begin_inset Formula $\sum_{j=1}^{\infty}a_{j}$
+\end_inset
+
+ 收敛, 且 
+\begin_inset Formula 
+\[
+\sum_{j=1}^{\infty}a_{j}=\sum_{j=1}^{\infty}\lim_{i\rightarrow\infty}a_{ij}=\lim_{i\rightarrow\infty}\sum_{j=1}^{\infty}a_{ij}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明.
+ 
+\end_layout
+
+\begin_layout Standard
+由 
+\begin_inset Formula $a_{ij}\rightarrow a_{j}$
+\end_inset
+
+, 且 
+\begin_inset Formula $\left|a_{ij}\right|\leqslant b_{j}$
+\end_inset
+
+ 知 
+\begin_inset Formula $\left|a_{j}\right|\leqslant b_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $j=1,2,\cdots$
+\end_inset
+
+.
+ 因为级数 
+\begin_inset Formula $\sum_{j=1}^{\infty}b_{j}$
+\end_inset
+
+ 收敛, 故级数 
+\begin_inset Formula $\sum_{j=1}^{\infty}a_{j}$
+\end_inset
+
+ 绝对收敛.
+ 任给 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在 
+\begin_inset Formula $N$
+\end_inset
+
+, 当 
+\begin_inset Formula $n>N$
+\end_inset
+
+ 时, 
+\begin_inset Formula 
+\[
+0\leqslant\sum_{j=n+1}^{\infty}b_{j}<\varepsilon.
+\]
+
+\end_inset
+
+此时, 对任意 
+\begin_inset Formula $i\geqslant1$
+\end_inset
+
+, 有 
+\begin_inset Formula 
+\[
+\left|\sum_{j=1}^{n}a_{ij}-\sum_{j=1}^{\infty}a_{ij}\right|=\left|\sum_{j=n+1}^{\infty}a_{ij}\right|\leqslant\sum_{j=n+1}^{\infty}b_{j}<\varepsilon,
+\]
+
+\end_inset
+
+从而级数 
+\begin_inset Formula $\sum_{j=1}^{\infty}a_{ij}$
+\end_inset
+
+ 关于 
+\begin_inset Formula $i$
+\end_inset
+
+ 是一致收敛的.
+ 由上一定理知本推论结论成立.
+\end_layout
+
+\begin_layout Paragraph
+推论 8.4.3.
+ (Fubini)
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\sum_{i=1}^{\infty}\left|a_{ij}\right|\leqslant A_{j}(j\geqslant1)$
+\end_inset
+
+, 且 
+\begin_inset Formula $\sum_{j=1}^{\infty}A_{j}$
+\end_inset
+
+ 收敛, 则对任意 
+\begin_inset Formula $i\geqslant1$
+\end_inset
+
+, 级数 
+\begin_inset Formula $\sum_{j=1}^{\infty}a_{ij}$
+\end_inset
+
+ 收敛, 且 
+\begin_inset Formula 
+\[
+\sum_{i=1}^{\infty}\sum_{j=1}^{\infty}a_{ij}=\sum_{j=1}^{\infty}\sum_{i=1}^{\infty}a_{ij}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明.
+ 
+\end_layout
+
+\begin_layout Standard
+1.
+ 首先, 由题设知, 
+\begin_inset Formula $\left|a_{ij}\right|\leqslant A_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $j=1,2,\cdots$
+\end_inset
+
+.
+ 这说明, 对任意 
+\begin_inset Formula $i\geqslant1$
+\end_inset
+
+, 级数 
+\begin_inset Formula $\sum_{j=1}^{\infty}a_{ij}$
+\end_inset
+
+ 是绝对收敛的.
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ 因为 
+\begin_inset Formula 
+\[
+\left|\sum_{i=1}^{k}a_{ij}\right|\leqslant\sum_{i=1}^{k}\left|a_{ij}\right|\leqslant A_{j},\quad j\geqslant1.
+\]
+
+\end_inset
+
+故
+\begin_inset Formula $\left(\sum_{i=1}^{k}a_{ij}\right)_{kj}$
+\end_inset
+
+满足上一推论, 有 
+\begin_inset Formula 
+\[
+\begin{aligned}\sum_{i=1}^{\infty}\sum_{j=1}^{\infty}a_{ij} & =\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\sum_{j=1}^{\infty}a_{ij}\\
+ & {\color{magenta}=\lim_{k\rightarrow\infty}\sum_{j=1}^{\infty}\sum_{i=1}^{k}a_{ij}}\\
+ & {\color{magenta}=\sum_{j=1}^{\infty}\lim_{k\rightarrow\infty}\sum_{i=1}^{k}a_{ij}}\\
+ & =\sum_{j=1}^{\infty}\sum_{i=1}^{\infty}a_{ij}.
+\end{aligned}
+\]
+
+\end_inset
+
+这就证明了本推论.
+\end_layout
+
+\begin_layout Standard
+上述推论的条件中
+\begin_inset Formula $\sum_{i\ge1}\left|a_{ij}\right|$
+\end_inset
+
+的绝对值不能省去, 比如设
+\begin_inset Formula 
+\[
+a_{ij}=\begin{cases}
+\frac{1}{2^{j-i}}, & j>i;\\
+-1, & i=j;\\
+0, & j<i.
+\end{cases}
+\]
+
+\end_inset
+
+也即
+\begin_inset Formula 
+\[
+\left(a_{ij}\right)=\begin{pmatrix}-1 & \frac{1}{2} & \frac{1}{4} & \frac{1}{8} & \frac{1}{16} & \cdots\\
+0 & -1 & \frac{1}{2} & \frac{1}{4} & \frac{1}{8} & \cdots\\
+0 & 0 & -1 & \frac{1}{2} & \frac{1}{4} & \cdots\\
+0 & 0 & 0 & -1 & \frac{1}{2} & \cdots\\
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots
+\end{pmatrix}.
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+\sum_{i\ge1}a_{ij}=-\frac{1}{2^{j-1}},\qquad\sum_{j\ge1}a_{ij}\equiv0\ \Longrightarrow\ 0=\sum_{i\ge1}\sum_{j\ge1}a_{ij}\ne\sum_{j\ge1}\sum_{i\ge1}a_{ij}=-2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+例 8.4.1.
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\sum_{n=2}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ 收敛, 记 
+\begin_inset Formula $f(x)=\sum_{n=2}^{\infty}a_{n}x^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $x\in[-1,1]$
+\end_inset
+
+.
+ 则 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}f\left(\frac{1}{n}\right)=\sum_{n=2}^{\infty}a_{n}\zeta(n),
+\]
+
+\end_inset
+
+其中 
+\begin_inset Formula $\zeta(s)$
+\end_inset
+
+ 是 Riemann-Zeta 函数.
+\end_layout
+
+\begin_layout Paragraph
+证明.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=2}^{\infty}\frac{\left|a_{n}\right|}{m^{n}}\le\frac{1}{m^{2}}\sum_{n=2}^{\infty}\left|a_{n}\right|\Longrightarrow\sum_{m=1}^{\infty}\sum_{n=2}^{\infty}\frac{\left|a_{n}\right|}{m^{n}}\le\sum_{m=1}^{\infty}\left(\frac{1}{m^{2}}\sum_{n=2}^{\infty}\left|a_{n}\right|\right)<+\infty.
+\]
+
+\end_inset
+
+由Fubini定理, 
+\begin_inset Formula $\sum_{n=2}^{\infty}\sum_{m=1}^{\infty}\frac{a_{n}}{m^{n}}$
+\end_inset
+
+收敛, 且
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=2}^{\infty}\sum_{m=1}^{\infty}\frac{a_{n}}{m^{n}} & =\sum_{m=1}^{\infty}\sum_{n=2}^{\infty}\frac{a_{n}}{m^{n}}=\sum_{m=1}^{\infty}f\left(\frac{1}{m}\right)\\
+ & =\sum_{n=2}^{\infty}a_{n}\zeta(n).
+\end{align*}
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\begin{align*}
+\sum_{n=2}^{\infty}\frac{1}{2^{n}}\zeta(n) & =\sum_{n=2}^{\infty}\sum_{m=1}^{\infty}\frac{1}{2^{n}}\cdot\frac{1}{m^{n}}=\sum_{m=1}^{\infty}\sum_{n=2}^{\infty}\frac{1}{m^{n}}\cdot\frac{1}{2^{n}}=\sum_{m=1}^{\infty}\frac{1}{2^{2}m^{2}}\cdot\frac{1}{1-\frac{1}{2m}}\\
+ & =\sum_{m=1}^{\infty}\left(\frac{1}{2m-1}-\frac{1}{2m}\right)=\ln2.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+级数的乘积
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}$
+\end_inset
+
+和
+\begin_inset Formula $\sum_{n=0}^{\infty}b_{n}$
+\end_inset
+
+之积为
+\begin_inset Formula $\sum_{n=0}^{\infty}c_{n}$
+\end_inset
+
+, 称为Cauchy乘积
+\begin_inset Formula 
+\[
+c_{n}=\sum_{i+j=n}a_{i}b_{j},\qquad n\ge0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+定理 8.4.4 (Cauchy).
+ 
+\end_layout
+
+\begin_layout Standard
+如果 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $\sum_{n=0}^{\infty}b_{n}$
+\end_inset
+
+ 绝对收敛, 则它们的乘积级数也绝对收敛, 且 
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}c_{n}=\left(\sum_{n=0}^{\infty}a_{n}\right)\left(\sum_{n=0}^{\infty}b_{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+定理 8.4.5 (Mertens).
+ 
+\end_layout
+
+\begin_layout Standard
+如果 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $\sum_{n=0}^{\infty}b_{n}$
+\end_inset
+
+ 收敛, 且至少其中一个级数绝对收敛, 则它们的乘积级数也收敛, 且 
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}c_{n}=\left(\sum_{n=0}^{\infty}a_{n}\right)\left(\sum_{n=0}^{\infty}b_{n}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明.
+ 
+\end_layout
+
+\begin_layout Standard
+不妨设 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}$
+\end_inset
+
+ 绝对收敛.
+ 分别记 
+\begin_inset Formula 
+\[
+A_{n}=\sum_{k=0}^{n}a_{k},\quad B_{n}=\sum_{k=0}^{n}b_{k},\quad C_{n}=\sum_{k=0}^{n}c_{k}.
+\]
+
+\end_inset
+
+则 
+\begin_inset Formula $A_{n}\rightarrow A$
+\end_inset
+
+, 
+\begin_inset Formula $B_{n}\rightarrow B$
+\end_inset
+
+, 而 
+\begin_inset Formula 
+\[
+C_{n}=\sum_{i+j\leqslant n}a_{i}b_{j}=a_{0}B_{n}+a_{1}B_{n-1}+\cdots+a_{n}B_{0}=A_{n}B+\delta_{n},
+\]
+
+\end_inset
+
+其中 
+\begin_inset Formula 
+\[
+\delta_{n}=a_{0}\left(B_{n}-B\right)+a_{1}\left(B_{n-1}-B\right)+\cdots+a_{n}\left(B_{0}-B\right).
+\]
+
+\end_inset
+
+我们只要证明 
+\begin_inset Formula $\delta_{n}\rightarrow0$
+\end_inset
+
+ 即可.
+ 因为 
+\begin_inset Formula $B_{n}\rightarrow B$
+\end_inset
+
+, 故 
+\begin_inset Formula $\left\{ B_{n}\right\} $
+\end_inset
+
+ 关于 
+\begin_inset Formula $n$
+\end_inset
+
+ 有界, 从而存在 
+\begin_inset Formula $K$
+\end_inset
+
+, 使得 
+\begin_inset Formula 
+\[
+\left|B_{n}-B\right|\leqslant K,\quad\forall n\geqslant0.
+\]
+
+\end_inset
+
+由于 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}$
+\end_inset
+
+ 绝对收敛, 故任给 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在 
+\begin_inset Formula $N_{0}$
+\end_inset
+
+, 当 
+\begin_inset Formula $n>N_{0}$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+\left|a_{N_{0}+1}\right|+\cdots+\left|a_{n}\right|<\frac{\varepsilon}{2K+1}.
+\]
+
+\end_inset
+
+记 
+\begin_inset Formula $L=\left|a_{0}\right|+\left|a_{1}\right|+\cdots+\left|a_{N_{0}}\right|$
+\end_inset
+
+.
+ 由于 
+\begin_inset Formula $B_{n}-B\rightarrow0$
+\end_inset
+
+, 故存在 
+\begin_inset Formula $N_{1}$
+\end_inset
+
+, 当 
+\begin_inset Formula $n>N_{1}$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+\left|B_{n}-B\right|<\frac{\varepsilon}{2L+1}.
+\]
+
+\end_inset
+
+从而当 
+\begin_inset Formula $n>N_{0}+N_{1}$
+\end_inset
+
+ 时, 有 
+\begin_inset Formula 
+\[
+\begin{aligned}\left|\delta_{n}\right| & \leqslant\sum_{k=0}^{N_{0}}\left|a_{k}\right|\left|B_{n-k}-B\right|+\left(\left|a_{N_{0}+1}\right|+\cdots+\left|a_{n}\right|\right)K\\
+ & \leqslant\frac{\varepsilon}{2L+1}\left(\left|a_{0}\right|+\left|a_{1}\right|+\cdots+\left|a_{N_{0}}\right|\right)+\frac{\varepsilon}{2K+1}K\\
+ & =\frac{\varepsilon}{2L+1}L+\frac{\varepsilon}{2K+1}K\\
+ & <\varepsilon
+\end{aligned}
+\]
+
+\end_inset
+
+这说明 
+\begin_inset Formula $\delta_{n}\rightarrow0$
+\end_inset
+
+, 因而 
+\begin_inset Formula $C_{n}=A_{n}B+\delta_{n}\rightarrow AB$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+注.
+ 定理中的绝对收敛的条件不能去掉, 反例就是将 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ 均取为交错级数 
+\begin_inset Formula $(-1)^{n-1}\frac{1}{\sqrt{n}}$
+\end_inset
+
+, 此时所得乘积级数是发散的.
+ 
+\end_layout
+
+\begin_layout Standard
+但是, 如果乘积级数仍然收敛, 则其和等于两个级数和的乘积.
+ 为了说明这一点, 需要下面的引理.
+\end_layout
+
+\begin_layout Paragraph
+引理 8.4.6 (Abel).
+ 
+\end_layout
+
+\begin_layout Standard
+设级数 
+\begin_inset Formula $\sum_{n=0}^{\infty}c_{n}=C$
+\end_inset
+
+ 收敛, 令 
+\begin_inset Formula 
+\[
+f(x)=\sum_{n=0}^{\infty}c_{n}x^{n},\quad x\in[0,1),
+\]
+
+\end_inset
+
+则 
+\begin_inset Formula $\lim_{x\rightarrow1^{-}}f(x)=C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证明.
+ 
+\end_layout
+
+\begin_layout Standard
+级数收敛表明 
+\begin_inset Formula $\left\{ c_{n}\right\} $
+\end_inset
+
+ 有界, 因此当 
+\begin_inset Formula $x\in[0,1)$
+\end_inset
+
+ 时, 
+\begin_inset Formula $\sum_{n=0}^{\infty}c_{n}x^{n}$
+\end_inset
+
+ 绝对收敛.
+ 记 
+\begin_inset Formula 
+\[
+C_{-1}=0,\quad C_{n}=\sum_{k=0}^{n}c_{k},\quad n\geqslant0.
+\]
+
+\end_inset
+
+则有 
+\begin_inset Formula 
+\[
+\begin{aligned}\sum_{k=0}^{n}c_{k}x^{k} & =\sum_{k=0}^{n}\left(C_{k}-C_{k-1}\right)x^{k}\\
+ & =\sum_{k=0}^{n}C_{k}x^{k}-x\sum_{k=0}^{n-1}C_{k}x^{k}\\
+ & =C_{n}x^{n}+(1-x)\sum_{k=0}^{n-1}C_{k}x^{k}\\
+ & =C_{n}x^{n}+C\left(1-x^{n}\right)+(1-x)\sum_{k=0}^{n-1}\left(C_{k}-C\right)x^{k}.
+\end{aligned}
+\]
+
+\end_inset
+
+在上式中令 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ 就得到 
+\begin_inset Formula 
+\[
+f(x)=C+(1-x)\sum_{k=0}^{\infty}\left(C_{k}-C\right)x^{k}.
+\]
+
+\end_inset
+
+因为 
+\begin_inset Formula $C_{k}-C\rightarrow0$
+\end_inset
+
+, 故任给 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在 
+\begin_inset Formula $N$
+\end_inset
+
+, 当 
+\begin_inset Formula $k>N$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+\left|C_{k}-C\right|<\frac{1}{2}\varepsilon.
+\]
+
+\end_inset
+
+令 
+\begin_inset Formula $M=\sum_{k=0}^{N}\left|C_{k}-C\right|$
+\end_inset
+
+, 则有估计 
+\begin_inset Formula 
+\[
+|f(x)-C|\leqslant M(1-x)+(1-x)\sum_{k=N+1}\frac{1}{2}\varepsilon x^{k}\leqslant M(1-x)+\frac{1}{2}\varepsilon.
+\]
+
+\end_inset
+
+因此, 当 
+\begin_inset Formula $0<1-x<\frac{\varepsilon}{2M+1}$
+\end_inset
+
+ 时, 
+\begin_inset Formula 
+\[
+|f(x)-C|\leqslant M\frac{\varepsilon}{2M+1}+\frac{1}{2}\varepsilon<\varepsilon.
+\]
+
+\end_inset
+
+这说明 
+\begin_inset Formula $\lim_{x\rightarrow1^{-}}f(x)=C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定理 8.4.7 (Abel).
+ 
+\end_layout
+
+\begin_layout Standard
+设级数 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{n=0}^{\infty}b_{n}$
+\end_inset
+
+ 以及它们的乘积 
+\begin_inset Formula $\sum_{n=0}^{\infty}c_{n}$
+\end_inset
+
+ 均收敛, 则 
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}c_{n}=\left(\sum_{n=0}^{\infty}a_{n}\right)\left(\sum_{n=0}^{\infty}b_{n}\right).
+\]
+
+\end_inset
+
+证明.
+ 当 
+\begin_inset Formula $x\in[0,1)$
+\end_inset
+
+ 时, 级数 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $\sum_{n=0}^{\infty}b_{n}x^{n}$
+\end_inset
+
+ 绝对收敛, 它们的乘积级数为 
+\begin_inset Formula $\sum_{n=0}^{\infty}c_{n}x^{n}$
+\end_inset
+
+.
+ 根据 Cauchy 定理, 有 
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}c_{n}x^{n}=\left(\sum_{n=0}^{\infty}a_{n}x^{n}\right)\left(\sum_{n=0}^{\infty}b_{n}x^{n}\right).
+\]
+
+\end_inset
+
+令 
+\begin_inset Formula $x\rightarrow1^{-}$
+\end_inset
+
+, 由上述 Abel 引理即得欲证结论.
+\end_layout
+
+\begin_layout Subsubsection
+乘积级数
+\end_layout
+
+\begin_layout Standard
+将
+\begin_inset Formula $\prod_{n=1}^{\infty}p_{n}$
+\end_inset
+
+称为无穷乘积, 记部分乘积
+\begin_inset Formula $P_{n}=\prod_{k=1}^{n}p_{k}$
+\end_inset
+
+, (
+\begin_inset Formula $n\ge1$
+\end_inset
+
+).
+ 当
+\begin_inset Formula $\lim_{n\to\infty}P_{n}$
+\end_inset
+
+有限且非零时, 称无穷乘积收敛, 否则称它发散.
+\end_layout
+
+\begin_layout Paragraph
+命题 8.4.8.
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $p_{n}>0,\forall n\geqslant1$
+\end_inset
+
+.
+ 则 
+\end_layout
+
+\begin_layout Standard
+(1) 无穷乘积 
+\begin_inset Formula $\prod_{n=1}^{\infty}p_{n}$
+\end_inset
+
+ 收敛当且仅当级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}\ln p_{n}$
+\end_inset
+
+ 收敛, 且 
+\begin_inset Formula 
+\[
+\prod_{n=1}^{\infty}p_{n}=e^{\sum_{n=1}^{\infty}\ln p_{n}};
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2) 记 
+\begin_inset Formula $p_{n}=1+a_{n}$
+\end_inset
+
+.
+ 如果 
+\begin_inset Formula $n$
+\end_inset
+
+ 充分大时 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+ (或 
+\begin_inset Formula $a_{n}<0$
+\end_inset
+
+ ), 则无穷乘积 
+\begin_inset Formula $\prod_{n=1}^{\infty}p_{n}$
+\end_inset
+
+ 收敛当且仅当级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 收敛; 
+\end_layout
+
+\begin_layout Standard
+(3) 如果级数 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 和 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}^{2}$
+\end_inset
+
+ 均收敛, 则无穷乘积 
+\begin_inset Formula $\prod_{n=1}^{\infty}\left(1+a_{n}\right)$
+\end_inset
+
+ 也收敛.
+ 
+\end_layout
+
+\begin_layout Paragraph
+证明.
+ 
+\end_layout
+
+\begin_layout Standard
+(1) 是显然的.
+ (2) 只要利用 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{\ln\left(1+a_{n}\right)}{a_{n}}=1
+\]
+
+\end_inset
+
+以及数项级数的比较判别法即可.
+ 
+\end_layout
+
+\begin_layout Standard
+(3) 则是利用 (
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ 不为零时) 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{\left[a_{n}-\ln\left(1+a_{n}\right)\right]}{a_{n}^{2}}=\frac{1}{2}
+\]
+
+\end_inset
+
+以及(1).
+\end_layout
+
+\begin_layout Subsubsection
+级数重排
+\end_layout
+
+\begin_layout Paragraph
+定理 8.4.9 (Riemann).
+ 
+\end_layout
+
+\begin_layout Standard
+如果 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ 为条件收敛的级数, 则可以将它重排为一个收敛级数, 使得重排后的级数和为任意指定的实数.
+\end_layout
+
+\begin_layout Paragraph
+例.
+\end_layout
+
+\begin_layout Standard
+求证:
+\begin_inset Formula 
+\[
+\left(1+\frac{1}{3}-\frac{1}{2}\right)+\left(\frac{1}{5}+\frac{1}{7}-\frac{1}{4}\right)+\cdots+\left(\frac{1}{4n-3}+\frac{1}{4n-1}-\frac{1}{2n}\right)+\cdots=\ln\left(2\sqrt{2}\right).
+\]
+
+\end_inset
+
+这说明
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\ln2 & ={\color{teal}1-\frac{1}{2}+\frac{1}{3}}{\color{purple}-\frac{1}{4}+\frac{1}{5}}-\frac{1}{6}{\color{purple}+\frac{1}{7}}-\cdots{\color{orange}-\frac{1}{2n}}+\frac{1}{2n+1}-\cdots{\color{orange}+\frac{1}{4n-3}}-\frac{1}{4n-2}{\color{orange}+\frac{1}{4n-1}}-\cdots\\
+ & \ \xcancel{=}\left({\color{teal}1+\frac{1}{3}-\frac{1}{2}}\right)+\left({\color{purple}\frac{1}{5}+\frac{1}{7}-\frac{1}{4}}\right)+\cdots+\left({\color{orange}\frac{1}{4n-3}+\frac{1}{4n-1}-\frac{1}{2n}}\right)+\cdots\\
+ & =\ln\left(2\sqrt{2}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

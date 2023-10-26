@@ -1,0 +1,3636 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+
+\DeclareMathOperator{\sech}{sech}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+连续函数
+\end_layout
+
+\begin_layout Subsection
+函数的极限
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $x_{0}\in\RR$
+\end_inset
+
+, 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left(x_{0}-\delta,x_{0}+\delta\right)$
+\end_inset
+
+称为
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的开邻域.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(x_{0}-\delta,x_{0}\right)\cup\left(x_{0},x_{0}+\delta\right)$
+\end_inset
+
+称为
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的去心开邻域.
+\end_layout
+
+\begin_layout Paragraph
+定义3.1.1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+定义在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的某个去心开邻域上, 若
+\begin_inset Formula $\exists A\in\RR$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\delta=\delta(\epsilon,x_{0})\in(0,\delta_{0})$
+\end_inset
+
+, 当
+\begin_inset Formula $0<\left|x-x_{0}\right|<\delta$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+\left|f(x)-A\right|<\epsilon.
+\]
+
+\end_inset
+
+则称
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处有极限
+\begin_inset Formula $A$
+\end_inset
+
+, 记为
+\begin_inset Formula 
+\[
+\lim_{x\to x_{0}}f(x)=A,\text{ or }f(x)\to A,\ x\to x_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+注: 
+\end_layout
+
+\begin_layout Standard
+去心邻域说明
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+处可能没有定义.
+\end_layout
+
+\begin_layout Standard
+可以类似的定义左右极限.
+\end_layout
+
+\begin_layout Paragraph
+命题3.1.1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处有极限的充要条件是
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的左右极限存在且相等.
+\end_layout
+
+\begin_layout Paragraph
+命题3.1.2 (夹逼原理)
+\end_layout
+
+\begin_layout Standard
+设在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的一个空心领域内有
+\begin_inset Formula 
+\[
+f_{1}(x)\le f(x)\le f_{2}(x).
+\]
+
+\end_inset
+
+若
+\begin_inset Formula $f_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处的极限存在且等于
+\begin_inset Formula $A$
+\end_inset
+
+, 则
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处极限为
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+命题3.1.3 (极限唯一性)
+\end_layout
+
+\begin_layout Standard
+函数极限存在必然唯一.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\epsilon-\delta$
+\end_inset
+
+语言是证明函数极限的最简单框架, 其难点仅在于对不等式的掌握情况, 比如重要极限
+\begin_inset Formula 
+\[
+\lim_{x\to0}\frac{\sin x}{x}=1
+\]
+
+\end_inset
+
+对应不等式
+\begin_inset Formula 
+\[
+\cos x<\frac{\sin x}{x}<1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+同样类似地给出涉及无穷大与无穷远时的函数极限的定义.
+\end_layout
+
+\begin_layout Paragraph
+习题12
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f,g$
+\end_inset
+
+ 为两个周期函数, 如果 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}[f(x)-g(x)]=0$
+\end_inset
+
+, 则 
+\begin_inset Formula $f=g$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+注: 
+\begin_inset Formula $f,g$
+\end_inset
+
+的周期比可能是无理数, 所以
+\begin_inset Formula $f-g$
+\end_inset
+
+可能不是周期函数.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 设
+\begin_inset Formula $f$
+\end_inset
+
+的周期为
+\begin_inset Formula $T$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+的周期为
+\begin_inset Formula $S$
+\end_inset
+
+.
+ 则
+\begin_inset Formula 
+\begin{align*}
+f(x)-g(x) & =f(x+nT)-g(x+nS)\\
+ & =f(x+nT)-g(x+nT)\\
+ & \quad+g(x+nT{\color{magenta}+nS})-f(x+nS{\color{magenta}+nT})\\
+ & \quad+f(x+nS)-g(x+nS)\\
+ & =\lim_{n\to\infty}f(x+nT)-g(x+nT)\\
+ & \quad+\lim_{n\to\infty}g(x+nT{\color{magenta}+nS})-f(x+nS{\color{magenta}+nT})\\
+ & \quad+\lim_{n\to\infty}f(x+nS)-g(x+nS)\\
+ & =0+0+0.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+习题13
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $\lim_{x\rightarrow0}f(x)=0,\lim_{x\rightarrow0}\frac{1}{x}[f(2x)-f(x)]=0$
+\end_inset
+
+, 证明 
+\begin_inset Formula $\lim_{x\rightarrow0}\frac{f(x)}{x}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists X>0$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall x>X$
+\end_inset
+
+, 
+\begin_inset Formula $\left|f(x)\right|<\epsilon$
+\end_inset
+
+, 且
+\begin_inset Formula 
+\[
+\left|f(2x)-f(x)\right|\le\epsilon x.
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\left|f(x)-f\left(\frac{x}{2^{n}}\right)\right|\le\epsilon x.
+\]
+
+\end_inset
+
+令
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+即可.
+\end_layout
+
+\begin_layout Subsection
+函数极限的性质
+\end_layout
+
+\begin_layout Paragraph
+定理3.1.5 (Heine, 归结原则)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+定义在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的某个去心领域上, 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处极限为
+\begin_inset Formula $A$
+\end_inset
+
+的充要条件是
+\begin_inset Formula $\forall x_{n}\to x_{0}$
+\end_inset
+
+, (
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+), 且
+\begin_inset Formula $x_{n}\ne x_{0}$
+\end_inset
+
+, (
+\begin_inset Formula $\forall n$
+\end_inset
+
+), 均有
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}f(x_{n})=A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+: 是容易的; 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+: 用反证法, 则
+\begin_inset Formula 
+\[
+\exists\epsilon_{0}>0,\ s.t.\ \forall\delta>0,\ \exists x_{\delta},\ s.t.\ 0<\left|x_{\delta}-x_{0}\right|<\delta,
+\]
+
+\end_inset
+
+但
+\begin_inset Formula $\left|f(x_{\delta})-A\right|\ge\epsilon_{0}$
+\end_inset
+
+.
+ 取
+\begin_inset Formula $\delta=\frac{1}{n}$
+\end_inset
+
+, 构造子列
+\begin_inset Formula $(x_{n})\to x_{0}$
+\end_inset
+
+, 但
+\begin_inset Formula $\left|f(x_{n})-A\right|\ge\epsilon_{0}$
+\end_inset
+
+.
+ 矛盾.
+\end_layout
+
+\begin_layout Standard
+Heine定理可改述为: 
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处有极限当且仅当, 
+\begin_inset Formula $\forall x_{n}\to x_{0}$
+\end_inset
+
+, (
+\begin_inset Formula $x_{n}\ne x_{0}$
+\end_inset
+
+), 
+\begin_inset Formula $\lim_{n\to\infty}f(x_{n})$
+\end_inset
+
+存在.
+\end_layout
+
+\begin_layout Paragraph
+定理3.1.6 (Cauchy准则)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的空心领域上有定义, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处有极限, iff, 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+, s.t.
+ 当
+\begin_inset Formula $0<\left|x'-x_{0}\right|<\delta$
+\end_inset
+
+, 
+\begin_inset Formula $0<\left|x''-x_{0}\right|<\delta$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+\left|f(x')-f(x'')\right|<\epsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+注:
+\end_layout
+
+\begin_layout Standard
+对于无穷远处极限有限时, Cauchy准则仍然成立.
+\end_layout
+
+\begin_layout Standard
+给出Cauchy准则的否定表述.
+\end_layout
+
+\begin_layout Paragraph
+定理3.1.7 (单调有界原理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+定义在
+\begin_inset Formula $(x_{0}-\delta,x_{0})$
+\end_inset
+
+上, 若
+\begin_inset Formula $f$
+\end_inset
+
+单调上升有上界, 或
+\begin_inset Formula $f$
+\end_inset
+
+单调下降有下界, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+有左极限.
+\end_layout
+
+\begin_layout Paragraph
+定理3.1.8
+\end_layout
+
+\begin_layout Standard
+(1).
+ (局部有界原理) 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处有有限极限, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的某空心领域内有界.
+\end_layout
+
+\begin_layout Standard
+(2).
+ (保序性) 
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\to x_{0}}f(x)=A,\ \lim_{x\to x_{0}}g(x)=B,\ f(x)\ge g(x), & \Longrightarrow A\ge B.\\
+\lim_{x\to x_{0}}f(x)=A,\ \lim_{x\to x_{0}}g(x)=B,\ A>B, & \Longrightarrow\exists U_{x_{0}}^{\circ}\ s.t.\ f(x)>g(x),\ \forall x\in U_{x_{0}}^{\circ}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(3).
+ (四则运算)
+\end_layout
+
+\begin_layout Paragraph
+定理3.1.9 (复合函数极限)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(y)\to A$
+\end_inset
+
+, 
+\begin_inset Formula $y\to y_{0}$
+\end_inset
+
+; 
+\begin_inset Formula $g(x)\to y_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+, 且
+\begin_inset Formula $\exists U_{x_{0}}^{\circ}$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall x\in U_{x_{0}}^{\circ}$
+\end_inset
+
+, 
+\begin_inset Formula $g(x)\ne y_{0}$
+\end_inset
+
+, 则
+\begin_inset Formula $f(g(x))\to A$
+\end_inset
+
+, 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+这个定理说明极限定义中去心领域的重要性, 定理中
+\begin_inset Formula $y_{0}\not\in g(U_{x_{0}}^{\circ})$
+\end_inset
+
+不可以弱化为: 存在收敛于
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的序列
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+, 使得
+\begin_inset Formula $g(x_{n})\ne y_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall n$
+\end_inset
+
+.
+ 比如
+\begin_inset Formula 
+\[
+f(y)=\begin{cases}
+1, & y\ne0,\\
+0, & y=0,
+\end{cases}\quad g(x)\equiv0,\ y_{0}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+当
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $y_{0}$
+\end_inset
+
+处连续时, 这个去心领域的条件又可以去掉, 这说明研究连续函数是有价值的.
+\end_layout
+
+\begin_layout Subsection
+无穷小量与无穷大量的阶
+\end_layout
+
+\begin_layout Paragraph
+定义3.2.1 (无穷小量与无穷大量)
+\end_layout
+
+\begin_layout Standard
+若函数
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处的极限是
+\begin_inset Formula $0$
+\end_inset
+
+, 则称
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+时为无穷小量, 记为
+\begin_inset Formula $f(x)=o(1)$
+\end_inset
+
+, (
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+); 若
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+时, 
+\begin_inset Formula $\left|f\right|\to+\infty$
+\end_inset
+
+, 则称
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+时为无穷大量.
+\end_layout
+
+\begin_layout Standard
+在无穷远处也可以定义无穷小量和无穷大量, 数列也可以定义无穷小量和无穷大量.
+\end_layout
+
+\begin_layout Paragraph
+定理3.2.1 (等价代换)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+时, 
+\begin_inset Formula $f\sim f_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $g\sim g_{1}$
+\end_inset
+
+, 若
+\begin_inset Formula $\frac{f_{1}}{g_{1}}$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处有极限, 则
+\begin_inset Formula $\frac{f}{g}$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处有极限, 且极限相等.
+\end_layout
+
+\begin_layout Standard
+几个常用的等价代换:
+\begin_inset Formula 
+\[
+\tan x\sim\sin x\sim x\sim e^{x}-1\sim\ln(1+x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+无穷小量的性质:
+\end_layout
+
+\begin_layout Standard
+习题4.
+ 设
+\begin_inset Formula $f(x)=o(1)$
+\end_inset
+
+, (
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+), 证明, 当
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+时, 有
+\end_layout
+
+\begin_layout Standard
+(1) 
+\begin_inset Formula $o(f(x))+o(f(x))=o(f(x))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $o(cf(x))=o(f(x))$
+\end_inset
+
+, 其中
+\begin_inset Formula $c$
+\end_inset
+
+是常数.
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $g(x)\cdot o(f(x))=o(f(x)g(x))$
+\end_inset
+
+, 其中
+\begin_inset Formula $g(x)$
+\end_inset
+
+是有界函数.
+\end_layout
+
+\begin_layout Standard
+(4) 
+\begin_inset Formula $[o(f(x))]^{k}=o\left(f^{k}(x)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+连续函数
+\end_layout
+
+\begin_layout Standard
+用来刻画连续变化的量
+\end_layout
+
+\begin_layout Paragraph
+定义3.3.1 (连续性)
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的某领域上有定义, 且
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处的极限是
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+, 则称
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处连续, 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+称为
+\begin_inset Formula $f$
+\end_inset
+
+的连续点.
+ 类似地可以定义左右连续.
+ 在定义域上每一点都连续的函数称为连续函数.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处下半连续: 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+, 当
+\begin_inset Formula $\left|x-x_{0}\right|<\delta$
+\end_inset
+
+时, 总有
+\begin_inset Formula $f(x)>f(x_{0})-\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处上半连续: 
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\delta>0$
+\end_inset
+
+, 当
+\begin_inset Formula $\left|x-x_{0}\right|<\delta$
+\end_inset
+
+时, 总有
+\begin_inset Formula $f(x)<f(x_{0})+\epsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+连续函数的基本性质:
+\end_layout
+
+\begin_layout Standard
+(1).
+ 保持四则运算;
+\end_layout
+
+\begin_layout Standard
+(2).
+ 若
+\begin_inset Formula $f,g$
+\end_inset
+
+连续, 则
+\begin_inset Formula $\max\left\{ f,g\right\} $
+\end_inset
+
+和
+\begin_inset Formula $\min\left\{ f,g\right\} $
+\end_inset
+
+均连续.
+\end_layout
+
+\begin_layout Paragraph
+定理3.3.2 (复合函数连续性)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $y_{0}$
+\end_inset
+
+处连续, 
+\begin_inset Formula $g(x)\to y_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $x\to x_{0}$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\lim_{x\to x_{0}}f(g(x))=f\left(\lim_{x\to x_{0}}g(x)\right)=f(y_{0}).
+\]
+
+\end_inset
+
+当
+\begin_inset Formula $g$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处连续时, 
+\begin_inset Formula $f(g(x))$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处连续.
+\end_layout
+
+\begin_layout Paragraph
+定义3.3.2
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是
+\begin_inset Formula $f(x)$
+\end_inset
+
+的间断点, 如果
+\begin_inset Formula $f(x_{0}-0)$
+\end_inset
+
+, 
+\begin_inset Formula $f(x_{0}+0)$
+\end_inset
+
+均存在且有限, 则称
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是第一类间断点, 否则, 称为第二类间断点.
+ 按照左右极限不相等和相等来区分跳跃间断点和可去间断点.
+\end_layout
+
+\begin_layout Paragraph
+命题3.3.3
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上单调, 
+\begin_inset Formula $x_{0}\in\left(a,b\right)$
+\end_inset
+
+是
+\begin_inset Formula $f(x)$
+\end_inset
+
+的间断点, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是跳跃间断点.
+\end_layout
+
+\begin_layout Paragraph
+命题3.3.4
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+定义在区间
+\begin_inset Formula $I$
+\end_inset
+
+上的单调函数, 则
+\begin_inset Formula $f(x)$
+\end_inset
+
+的间断点至多可数.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+间断点
+\begin_inset Formula $x$
+\end_inset
+
+与开区间
+\begin_inset Formula $\left(f(x_{0}-0),f(x_{0}+0)\right)$
+\end_inset
+
+一一对应且至多可数.
+\end_layout
+
+\begin_layout Paragraph
+命题3.3.5
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f(x)$
+\end_inset
+
+定义在区间
+\begin_inset Formula $I$
+\end_inset
+
+上严格单调, 则
+\begin_inset Formula $f(x)$
+\end_inset
+
+连续当且仅当
+\begin_inset Formula $f(I)$
+\end_inset
+
+也是区间.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+: 用介值定理.
+ 
+\begin_inset Formula $\Longleftarrow$
+\end_inset
+
+: 反证法, 则有
+\begin_inset Formula $x_{0}$
+\end_inset
+
+使得
+\begin_inset Formula $\left(f(x_{0}-0),f(x_{0}+0)\right)$
+\end_inset
+
+不在区间
+\begin_inset Formula $f(I)$
+\end_inset
+
+内, 矛盾.
+\end_layout
+
+\begin_layout Paragraph
+推论3.3.6
+\end_layout
+
+\begin_layout Standard
+定义在区间
+\begin_inset Formula $I$
+\end_inset
+
+上的严格单调连续函数
+\begin_inset Formula $f(x)$
+\end_inset
+
+一定可逆, 且其逆严格单调连续.
+\end_layout
+
+\begin_layout Subsection
+闭区间上连续函数的性质
+\end_layout
+
+\begin_layout Standard
+依赖实数系的基本性质
+\end_layout
+
+\begin_layout Paragraph
+定理3.4.1 (有界性定理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有界.
+\end_layout
+
+\begin_layout Paragraph
+证法一:
+\end_layout
+
+\begin_layout Standard
+反证法, 取
+\begin_inset Formula $\left|f(x_{n})\right|\ge n$
+\end_inset
+
+, 由聚点定理
+\begin_inset Formula $\Longrightarrow x_{n_{k}}\to x_{0}\in[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+连续使得
+\begin_inset Formula $f(x_{n_{k}})\to f(x_{0})$
+\end_inset
+
+有界, 矛盾.
+\end_layout
+
+\begin_layout Paragraph
+证法二:
+\end_layout
+
+\begin_layout Standard
+连续点
+\begin_inset Formula $x$
+\end_inset
+
+处有领域
+\begin_inset Formula $U_{x}(\delta_{x})$
+\end_inset
+
+, 使得其上
+\begin_inset Formula $\left|f-f(x)\right|\le1$
+\end_inset
+
+, 这样的
+\begin_inset Formula $\left(U_{x}\right)$
+\end_inset
+
+形成
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的覆盖, 用有限覆盖定理.
+\end_layout
+
+\begin_layout Paragraph
+定理3.4.2 (最值定理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)\in C[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上取到最值.
+\end_layout
+
+\begin_layout Paragraph
+证法一:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+有界, 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+闭, 所以逼近上确界的点列
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+有收敛子列
+\begin_inset Formula $\left\{ x_{n_{k}}\right\} $
+\end_inset
+
+, 再由
+\begin_inset Formula $f$
+\end_inset
+
+连续得到最值点.
+\end_layout
+
+\begin_layout Paragraph
+证法二:
+\end_layout
+
+\begin_layout Standard
+反证法, 设
+\begin_inset Formula $f<M\coloneqq\sup f$
+\end_inset
+
+, 构造
+\begin_inset Formula $F(y)=\frac{1}{M-f(y)}\in C[a,b]$
+\end_inset
+
+, 同样有界
+\begin_inset Formula $F(y)<K$
+\end_inset
+
+, 
+\begin_inset Formula $K>0$
+\end_inset
+
+, 则
+\begin_inset Formula $\frac{1}{M-f(y)}<K$
+\end_inset
+
+得出
+\begin_inset Formula 
+\[
+\sup_{x}f(x)=M>f(y)+\frac{1}{K}\Longrightarrow\sup_{x}f(x)\ge\sup_{y}f(y)+\frac{1}{K}>\sup_{x}f(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+一般区间上连续函数最值判别法:
+\end_layout
+
+\begin_layout Paragraph
+命题5.1.3
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C(\RR)$
+\end_inset
+
+, 且
+\begin_inset Formula 
+\[
+\lim_{x\to-\infty}f(x)=\lim_{x\to+\infty}f(x)=+\infty\text{ (或}-\infty\text{)}.
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+上达到最小(大)值.
+\end_layout
+
+\begin_layout Paragraph
+定理3.4.3 (零点定理, Bolzano)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $f(a)f(b)<0$
+\end_inset
+
+, 则存在
+\begin_inset Formula $\xi\in\left(a,b\right)$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $f(\xi)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证法一:
+\end_layout
+
+\begin_layout Standard
+区间二分法+区间套定理.
+\end_layout
+
+\begin_layout Paragraph
+证法二:
+\end_layout
+
+\begin_layout Standard
+用连续函数的保号性, 构造
+\begin_inset Formula 
+\[
+A=\left\{ x\in[a,b]:f(x)<0\right\} ,
+\]
+
+\end_inset
+
+取
+\begin_inset Formula $\xi=\sup A$
+\end_inset
+
+, 则有
+\begin_inset Formula $x_{n}\in A$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n}\to\xi$
+\end_inset
+
+, 
+\begin_inset Formula $f(x_{n})<0$
+\end_inset
+
+, 所以
+\begin_inset Formula $f(\xi)\le0$
+\end_inset
+
+.
+ 反之, 在
+\begin_inset Formula $(\xi,b)$
+\end_inset
+
+上
+\begin_inset Formula $f\ge0$
+\end_inset
+
+, 取
+\begin_inset Formula $x_{n}\downarrow\xi$
+\end_inset
+
+, 则
+\begin_inset Formula $f(x_{n})\ge0\Longrightarrow f(\xi)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定理3.4.4 (介值定理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $\mu$
+\end_inset
+
+严格介于
+\begin_inset Formula $f(a)$
+\end_inset
+
+与
+\begin_inset Formula $f(b)$
+\end_inset
+
+之间, 则存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $f(\xi)=\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+推论3.4.5
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+是
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数, 则
+\begin_inset Formula $f([a,b])=[m,M]$
+\end_inset
+
+, 其中
+\begin_inset Formula $m,M$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的最小值, 最大值.
+\end_layout
+
+\begin_layout Paragraph
+推论3.4.6
+\end_layout
+
+\begin_layout Standard
+设区间
+\begin_inset Formula $I$
+\end_inset
+
+上, 
+\begin_inset Formula $f(x)\in C(I)$
+\end_inset
+
+, 则
+\begin_inset Formula $f(I)$
+\end_inset
+
+是区间.
+ (可以退化为单点集)
+\end_layout
+
+\begin_layout Paragraph
+注: 
+\end_layout
+
+\begin_layout Standard
+区间
+\begin_inset Formula $I$
+\end_inset
+
+可以无界, 可以是开集.
+\end_layout
+
+\begin_layout Paragraph
+推论3.4.7
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+是区间
+\begin_inset Formula $I$
+\end_inset
+
+上的连续函数, 则
+\begin_inset Formula $f(x)$
+\end_inset
+
+可逆的充要条件是
+\begin_inset Formula $f(x)$
+\end_inset
+
+严格单调.
+\end_layout
+
+\begin_layout Subsection
+一致连续性
+\end_layout
+
+\begin_layout Paragraph
+定义3.4.1 (一致连续)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+定义在区间
+\begin_inset Formula $I$
+\end_inset
+
+上, 若
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\delta=\delta(\epsilon)>0$
+\end_inset
+
+, s.t.
+ 当
+\begin_inset Formula $x_{1},x_{2}\in I$
+\end_inset
+
+, 
+\begin_inset Formula $\left|x_{1}-x_{2}\right|<\delta$
+\end_inset
+
+时, 有
+\begin_inset Formula $\left|f(x_{1})-f(x_{2})\right|<\epsilon$
+\end_inset
+
+, 则称
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+中一致连续.
+\end_layout
+
+\begin_layout Standard
+否定表述: 
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+中不一致连续: 
+\begin_inset Formula $\exists\epsilon_{0}>0$
+\end_inset
+
+, 以及
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(b_{n}\right)\subseteq I$
+\end_inset
+
+, 且
+\begin_inset Formula $a_{n}-b_{n}\to0$
+\end_inset
+
+, (
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+).
+ 有
+\begin_inset Formula $\left|f(a_{n})-f(b_{n})\right|\ge\epsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+定理3.4.9 (Cantor定理)
+\end_layout
+
+\begin_layout Standard
+闭区间上, 连续函数一致连续.
+\end_layout
+
+\begin_layout Paragraph
+证法一:
+\end_layout
+
+\begin_layout Standard
+(反证), 
+\begin_inset Formula $\exists\epsilon_{0}>0$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(b_{n}\right)\subseteq[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}-b_{n}\to0$
+\end_inset
+
+, 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, 且
+\begin_inset Formula $\left|f(a_{n})-f(b_{n})\right|\ge\epsilon_{0}$
+\end_inset
+
+.
+ 用聚点定理取
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+的收敛子列
+\begin_inset Formula $b_{n_{k}}\to x_{0}\in[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula $a_{n_{k}}\to x_{0}$
+\end_inset
+
+, 取极限.
+\end_layout
+
+\begin_layout Paragraph
+证法二:
+\end_layout
+
+\begin_layout Standard
+用连续性构造有限覆盖开集.
+\end_layout
+
+\begin_layout Paragraph
+定义3.4.2 (振幅, 连续性模)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的开邻域内有定义, 称
+\begin_inset Formula 
+\[
+\omega_{f}(x_{0},r)=\sup\left\{ \left|f(x')-f(x'')\right|:x',x''\in B_{x_{0}}(r)\right\} ,\quad r>0.
+\]
+
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(x_{0}-r,x_{0}+r)$
+\end_inset
+
+上的振幅, 显然, 
+\begin_inset Formula $\omega_{f}(x_{0},r)$
+\end_inset
+
+关于
+\begin_inset Formula $r\to0+$
+\end_inset
+
+递减, 故
+\begin_inset Formula 
+\[
+\omega_{f}(x_{0})=\lim_{r\to0+}\omega_{f}(x_{0},r)
+\]
+
+\end_inset
+
+存在, (不一定有限).
+ 称为
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处的振幅.
+\end_layout
+
+\begin_layout Standard
+注: 定义提到的是两种振幅, 分别表征函数
+\begin_inset Formula $f$
+\end_inset
+
+在"区间"上和在"一点"上的振幅.
+\end_layout
+
+\begin_layout Paragraph
+命题3.4.10
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处连续的充要条件是
+\begin_inset Formula $\omega_{f}(x_{0})=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+命题3.4.11
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+中一致连续的充要条件是
+\begin_inset Formula 
+\[
+\lim_{r\to0+}\omega_{f}(r)=0,
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula 
+\[
+\omega_{f}(r)=\sup\left\{ \left|f(x')-f(x'')\right|:\forall x',x''\in I,\ \left|x'-x''\right|\le r\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+连续函数的积分
+\end_layout
+
+\begin_layout Paragraph
+积分定义:
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 直线
+\begin_inset Formula $x=a$
+\end_inset
+
+, 
+\begin_inset Formula $x=b$
+\end_inset
+
+, 
+\begin_inset Formula $y=0$
+\end_inset
+
+与曲线
+\begin_inset Formula $f(x)$
+\end_inset
+
+的图像在平面上所围成图形的面积用
+\begin_inset Formula $\int_{a}^{b}f(x)\ud x$
+\end_inset
+
+来表示, 称为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的积分.
+\end_layout
+
+\begin_layout Paragraph
+命题3.5.1
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $f_{n}(x)$
+\end_inset
+
+是分段线性函数, 是将
+\begin_inset Formula $[a,b]$
+\end_inset
+
+进行
+\begin_inset Formula $n$
+\end_inset
+
+等分, 分点
+\begin_inset Formula $x_{i}=a+\frac{i}{n}(b-a)$
+\end_inset
+
+, 在
+\begin_inset Formula $x\in[x_{i-1},x_{i}]$
+\end_inset
+
+时
+\begin_inset Formula 
+\[
+f_{n}(x)=l_{i}(x)=f(x_{i-1})+\frac{f(x_{i})-f(x_{i-1})}{x_{i}-x_{i-1}}(x-x_{i-1}).
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $\forall\epsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists N=N(\epsilon)$
+\end_inset
+
+, 当
+\begin_inset Formula $n>N$
+\end_inset
+
+时, 
+\begin_inset Formula 
+\[
+\left|f(x)-f_{n}(x)\right|<\epsilon,\quad\forall x\in[a,b].
+\]
+
+\end_inset
+
+即
+\begin_inset Formula $f_{n}(x)\rightrightarrows f(x)$
+\end_inset
+
+.
+ 进而
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}f(x)\ud x & =\lim_{n\to\infty}\int_{a}^{b}f_{n}(x)\ud x\\
+ & =\lim_{n\to\infty}\sum_{i=1}^{n}\frac{1}{2}\left[f(x_{i-1})+f(x_{i})\right]\cdot\frac{b-a}{n}\\
+ & =\lim_{n\to\infty}\sum_{i=1}^{n}f(x_{i})\Delta x_{i}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+积分的基本性质
+\end_layout
+
+\begin_layout Standard
+约定
+\begin_inset Formula $\int_{a}^{a}f(x)\ud x=0$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{b}^{a}f(x)\ud x=-\int_{a}^{b}f(x)\ud x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(1) (线性性) 
+\begin_inset Formula $f,g\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha,\beta\in\RR$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\int_{a}^{b}\left(\alpha f(x)+\beta g(x)\right)\ud x=\alpha\int_{a}^{b}f(x)\ud x+\beta\int_{a}^{b}g(x)\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2) 若
+\begin_inset Formula $\left|f(x)\right|\le M$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}f(x)\ud x\right|\le M(b-a).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(3) (保序性) 若
+\begin_inset Formula $f\ge g$
+\end_inset
+
+, 
+\begin_inset Formula $f,g\in C[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula $\int_{a}^{b}f\ge\int_{a}^{b}g$
+\end_inset
+
+.
+ 特别地, 
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}f(x)\ud x\right|\le\int_{a}^{b}\left|f(x)\right|\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(4) (区间可加性) 设
+\begin_inset Formula $f\in C(I)$
+\end_inset
+
+, 
+\begin_inset Formula $a,b,c\in I$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\int_{a}^{c}f(x)\ud x=\int_{a}^{b}f(x)\ud x+\int_{b}^{c}f(x)\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(5) 若
+\begin_inset Formula $f(x)\in C[a,b]$
+\end_inset
+
+, 非负, 则
+\begin_inset Formula $\int_{a}^{b}f(x)\ge0$
+\end_inset
+
+, 等号仅当
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+时取到.
+\end_layout
+
+\begin_layout Paragraph
+例3.5.4
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $c\in[a,b]$
+\end_inset
+
+, 定义
+\begin_inset Formula $F(x)=\int_{c}^{x}f(t)\ud t$
+\end_inset
+
+, 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula $F$
+\end_inset
+
+是Lipschitz函数.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|F(x_{2})-F(x_{1})\right|\le M\int_{x_{1}}^{x_{2}}\ud t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+命题3.5.2 (积分中值定理)
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f,g\in C[a,b]$
+\end_inset
+
+, 若
+\begin_inset Formula $g$
+\end_inset
+
+不变号, 则
+\begin_inset Formula $\exists\xi\in[a,b]$
+\end_inset
+
+, s.t.
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)\ud x=f(\xi)\int_{a}^{b}g(x)\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+用连续函数介值定理.
+\end_layout
+
+\begin_layout Paragraph
+例3.5.10
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[0,a]$
+\end_inset
+
+, 定义
+\begin_inset Formula 
+\[
+f_{0}(x)=f(x),\quad f_{n}(x)=\int_{0}^{x}f_{n-1}(t)\ud t,\quad n=1,2,\cdots.
+\]
+
+\end_inset
+
+证明: 存在
+\begin_inset Formula $\xi=\xi_{n,x}\in[0,x]$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $f_{n}(x)=f(\xi)\frac{x^{n}}{n!}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m\frac{x^{n}}{n!}\le\int_{0}^{x}f_{n-1}(t)\ud t\le M\frac{x^{n}}{n!},
+\]
+
+\end_inset
+
+用介值定理.
+\end_layout
+
+\begin_layout Paragraph
+例3.5.12
+\end_layout
+
+\begin_layout Standard
+求连续函数
+\begin_inset Formula $f$
+\end_inset
+
+满足
+\begin_inset Formula 
+\[
+f(x+y)=f(x)+f(y),\qquad\forall x,y\in\RR.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+证明:
+\end_layout
+
+\begin_layout Standard
+此题的条件可以弱化为
+\begin_inset Formula $f$
+\end_inset
+
+是可积函数.
+ 取积分
+\begin_inset Formula 
+\[
+\int_{0}^{y}f(x+t)\ud t=\int_{x}^{x+y}f(t)\ud t=\int_{0}^{y}f(x)\ud t+\int_{0}^{y}f(t)\ud t,
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\int_{0}^{x+y}f(t)\ud t=yf(x)+\int_{0}^{x}f(t)\ud t+\int_{0}^{y}f(t)\ud t.
+\]
+
+\end_inset
+
+交换
+\begin_inset Formula $x,y$
+\end_inset
+
+的位置即得
+\begin_inset Formula $yf(x)=xf(y)$
+\end_inset
+
+, 再取
+\begin_inset Formula $y=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例3.5.15
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+是周期为
+\begin_inset Formula $T$
+\end_inset
+
+的连续函数, 则
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\int_{a}^{b}f(x)g(nx)\ud x=\frac{1}{T}\int_{a}^{b}f(x)\ud x\int_{0}^{T}g(x)\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+作业
+\end_layout
+
+\begin_layout Standard
+16.
+ 设 
+\begin_inset Formula $0<a<b,$
+\end_inset
+
+ 
+\begin_inset Formula $a_{1}=a$
+\end_inset
+
+, 
+\begin_inset Formula $b_{1}=b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(1) 如果 
+\begin_inset Formula $a_{n+1}=\sqrt{a_{n}b_{n}}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{n+1}=\frac{1}{2}\left(a_{n}+b_{n}\right)$
+\end_inset
+
+, 则 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 和 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ 收敛于同一极限.
+ 
+\end_layout
+
+\begin_layout Standard
+(2) 如果 
+\begin_inset Formula $a_{n+1}=\frac{1}{2}\left(a_{n}+b_{n}\right),b_{n+1}=\frac{2a_{n}b_{n}}{a_{n}+b_{n}}$
+\end_inset
+
+, 则 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ 和 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+ 收敛于同一极限.
+\end_layout
+
+\begin_layout Standard
+pf.
+ (1).
+ 因为
+\begin_inset Formula $a_{1},b_{1}>0$
+\end_inset
+
+, 由
+\begin_inset Formula $a_{n},b_{n}>0$
+\end_inset
+
+可以得到, 
+\begin_inset Formula 
+\[
+a_{n+1}=\sqrt{a_{n}b_{n}}>0,\ b_{n+1}=\frac{a_{n}+b_{n}}{2}>0.
+\]
+
+\end_inset
+
+即由归纳法, 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+均是正数数列.
+\end_layout
+
+\begin_layout Standard
+由均值不等式, 
+\begin_inset Formula 
+\[
+a_{n+1}=\sqrt{a_{n}b_{n}}\le\frac{a_{n}+b_{n}}{2}=b_{n+1},\quad n\ge1.
+\]
+
+\end_inset
+
+又由
+\begin_inset Formula $a_{1}=a<b=b_{1}$
+\end_inset
+
+, 故对于任意的
+\begin_inset Formula $n\in\NN$
+\end_inset
+
+, 有
+\begin_inset Formula $a_{n}\le b_{n}$
+\end_inset
+
+.
+ 于是
+\begin_inset Formula 
+\[
+b_{n+1}=\frac{a_{n}+b_{n}}{2}\le\frac{b_{n}+b_{n}}{2}=b_{n},
+\]
+
+\end_inset
+
+知
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+单调递减; 同理, 由
+\begin_inset Formula 
+\[
+a_{n+1}=\sqrt{a_{n}b_{n}}\ge\sqrt{a_{n}a_{n}}=a_{n},
+\]
+
+\end_inset
+
+知
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+单调上升.
+ 于是
+\begin_inset Formula 
+\[
+a_{1}\le a_{2}\le\cdots\le a_{n}\le b_{n}\le b_{n-1}\le\cdots\le b_{1}.
+\]
+
+\end_inset
+
+这说明
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+是单调上升的有界序列, 上界是
+\begin_inset Formula $b_{1}$
+\end_inset
+
+; 
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+是单调下降的有界序列, 下界是
+\begin_inset Formula $a_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+由于单调有界序列必然收敛, 可设
+\begin_inset Formula $a_{n}\to a$
+\end_inset
+
+, 
+\begin_inset Formula $b_{n}\to b$
+\end_inset
+
+, (
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+).
+ 对
+\begin_inset Formula $b_{n+1}=\frac{a_{n}+b_{n}}{2}$
+\end_inset
+
+两边同时取极限
+\begin_inset Formula $\lim_{n\to\infty}$
+\end_inset
+
+得到
+\begin_inset Formula 
+\[
+b=\frac{a+b}{2}\Longleftrightarrow a=b.
+\]
+
+\end_inset
+
+即
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+和
+\begin_inset Formula $\left\{ b_{n}\right\} $
+\end_inset
+
+收敛于同一极限.
+\end_layout
+
+\begin_layout Standard
+13.
+ 设 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 是 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ 中定义的无第二类间断点的函数, 如果对任意的两点 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y\in(a,b)$
+\end_inset
+
+, 均有 
+\begin_inset Formula 
+\[
+f\left(\frac{x+y}{2}\right)\leqslant\frac{1}{2}[f(x)+f(y)],
+\]
+
+\end_inset
+
+则 
+\begin_inset Formula $f$
+\end_inset
+
+ 为 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+ 中的连续函数.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 用反证法, 若
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上不连续, 则存在
+\begin_inset Formula $x_{0}\in(a,b)$
+\end_inset
+
+, 使得
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处为第一类间断点(因为
+\begin_inset Formula $f$
+\end_inset
+
+没有第二类间断点).
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处为跳跃间断点, 则
+\begin_inset Formula $f(x_{0}-0)$
+\end_inset
+
+和
+\begin_inset Formula $f(x_{0}+0)$
+\end_inset
+
+均存在且不相等, 不妨设
+\begin_inset Formula $f(x_{0}-0)<f(x_{0}+0)$
+\end_inset
+
+, 取
+\begin_inset Formula $\epsilon<\frac{f(x_{0}+0)-f(x_{0}-0)}{4}$
+\end_inset
+
+, 则存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得对于任何
+\begin_inset Formula $x\in(x_{0}-\delta,x_{0})$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+f(x_{0}-0)-\epsilon<f(x)<f(x_{0}-0)+\epsilon;
+\]
+
+\end_inset
+
+且对于任何
+\begin_inset Formula $y\in(x_{0},x_{0}+\delta)$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f(x_{0}+0)+\epsilon>f(y)>f(x_{0}+0)-\epsilon.
+\]
+
+\end_inset
+
+特别的
+\begin_inset Formula 
+\[
+f\left(x_{0}+\frac{\delta}{8}\right)=f\left(\frac{x_{0}-\frac{\delta}{4}+x_{0}+\frac{\delta}{2}}{2}\right)>f(x_{0}+0)-\epsilon>\frac{3f(x_{0}+0)+f(x_{0}-0)}{4}.
+\]
+
+\end_inset
+
+而
+\begin_inset Formula 
+\[
+\frac{1}{2}\left(f\left(x_{0}-\frac{\delta}{4}\right)+f\left(x_{0}+\frac{\delta}{2}\right)\right)<\frac{1}{2}\left(f(x_{0}-0)+\epsilon+f(x_{0}+0)+\epsilon\right)\le\frac{3f(x_{0}+0)+f(x_{0}-0)}{4},
+\]
+
+\end_inset
+
+这与
+\begin_inset Formula 
+\[
+f\left(\frac{x_{0}-\frac{\delta}{4}+x_{0}+\frac{\delta}{2}}{2}\right)\le\frac{1}{2}\left(f\left(x_{0}-\frac{\delta}{4}\right)+f\left(x_{0}+\frac{\delta}{2}\right)\right)
+\]
+
+\end_inset
+
+矛盾.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处是跳跃间断点, 则
+\begin_inset Formula $f(x_{0}\pm0)$
+\end_inset
+
+均存在且不等于
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+.
+ 取
+\begin_inset Formula $x=x_{0}-t$
+\end_inset
+
+, 
+\begin_inset Formula $y=x_{0}+t$
+\end_inset
+
+, 并令
+\begin_inset Formula $t\to0$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+f\left(\frac{x+y}{2}\right)=f(x_{0})\le\frac{f(x_{0}+t)+f(x_{0}-t)}{2}\to\lim_{x\to x_{0}}f(x),\qquad t\to0.
+\]
+
+\end_inset
+
+即
+\begin_inset Formula $f(x_{0})<\lim_{x\to x_{0}}f(x)$
+\end_inset
+
+.
+ 取
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $y=x_{0}+t$
+\end_inset
+
+, 并令
+\begin_inset Formula $t\to0+$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+f\left(\frac{t}{2}+x_{0}\right)=f\left(\frac{x+y}{2}\right)\le\frac{f(x_{0})+f(x_{0}+t)}{2}\Longrightarrow\lim_{x\to x_{0}}f(x)\le\frac{f(x_{0})+\lim_{x\to x_{0}}f(x)}{2}\Longrightarrow\lim_{x\to x_{0}}f(x)\le f(x_{0}).
+\]
+
+\end_inset
+
+又矛盾.
+\end_layout
+
+\begin_layout Standard
+15.
+ 设 
+\begin_inset Formula $f$
+\end_inset
+
+ 为 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ 上的连续函数, 如果对任意的 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+ 均有 
+\begin_inset Formula $f(x+y)=f(x)f(y)$
+\end_inset
+
+, 则要么 
+\begin_inset Formula $f$
+\end_inset
+
+ 恒为零, 要么存在常数 
+\begin_inset Formula $a>0$
+\end_inset
+
+, 使得 
+\begin_inset Formula $f(x)=a^{x}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 若
+\begin_inset Formula $f$
+\end_inset
+
+不恒为零, 则由于
+\begin_inset Formula $f$
+\end_inset
+
+连续, 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+上保持符号.
+ 不然则由连续函数的介值定理, 存在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+使得
+\begin_inset Formula $f(x_{0})=0$
+\end_inset
+
+, 则对于任意的
+\begin_inset Formula $x\in\RR$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f(x)=f(x_{0})f(x-x_{0})\equiv0.
+\]
+
+\end_inset
+
+与
+\begin_inset Formula $f$
+\end_inset
+
+不恒为零矛盾.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+不能恒为负值, 不然
+\begin_inset Formula $f(2x)=f(x)^{2}\Longrightarrow f(2x)>0$
+\end_inset
+
+导致
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+上不再保持符号, 与上述推导矛盾.
+ 所以
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $\RR$
+\end_inset
+
+恒为正.
+\end_layout
+
+\begin_layout Standard
+取
+\begin_inset Formula $g(x)=\ln f(x)$
+\end_inset
+
+, 由于
+\begin_inset Formula $f$
+\end_inset
+
+的连续性, 
+\begin_inset Formula $g(x)$
+\end_inset
+
+也是
+\begin_inset Formula $\RR$
+\end_inset
+
+上的连续函数.
+ 并有
+\begin_inset Formula 
+\[
+g(x+y)=\ln f(x+y)=\ln\left(f(x)f(y)\right)=\ln f(x)+\ln f(y)=g(x)+g(y).
+\]
+
+\end_inset
+
+由于
+\begin_inset Formula $g$
+\end_inset
+
+连续, 所以
+\begin_inset Formula $g(x)=g(1)x$
+\end_inset
+
+.
+ 令
+\begin_inset Formula $c=g(1)$
+\end_inset
+
+, 
+\begin_inset Formula $a=f(1)>0$
+\end_inset
+
+, 即有
+\begin_inset Formula $\ln f(x)=cx=x\ln f(1)=\ln a^{x}$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)=a^{x}$
+\end_inset
+
+.
+ (14题的结论是经典结论, 任何时候都可以直接拿来用)
+\end_layout
+
+\begin_layout Standard
+1.
+ 设 
+\begin_inset Formula $f$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 中连续, 且 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
+\end_inset
+
+, 则 
+\begin_inset Formula $f$
+\end_inset
+
+ 在 
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+ 中有界, 且最大值和最小值中的一个必定能被 
+\begin_inset Formula $f$
+\end_inset
+
+ 达到.
+\end_layout
+
+\begin_layout Standard
+pf1.
+ 考虑函数
+\begin_inset Formula 
+\[
+g(t)\coloneqq\sup_{x\ge t}f(x),
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $g(t)$
+\end_inset
+
+是
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上连续的递减函数.
+ 且
+\begin_inset Formula 
+\[
+\lim_{t\to\infty}g(t)=\limsup_{x\to\infty}f(x)=\alpha.
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula $g(t)\ge\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+如果存在
+\begin_inset Formula $t$
+\end_inset
+
+使得
+\begin_inset Formula $g(t)>\alpha$
+\end_inset
+
+, 也即
+\begin_inset Formula $\sup_{x\ge t}f(x)>\alpha$
+\end_inset
+
+, 取
+\begin_inset Formula $\epsilon<\sup_{x\ge t}f(x)-\alpha$
+\end_inset
+
+, 则有
+\begin_inset Formula $X>t$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall x>X$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left|f(x)-\alpha\right|<\epsilon\Longrightarrow f(x)<\alpha+\epsilon\Longrightarrow\sup_{x>X}f(x)\le\alpha+\epsilon<\sup_{x\ge t}f(x),
+\]
+
+\end_inset
+
+这说明
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[t,\infty)$
+\end_inset
+
+上的上确界不可能在
+\begin_inset Formula $[X,\infty)$
+\end_inset
+
+上取到, 即
+\begin_inset Formula 
+\[
+\sup_{x\ge t}f(x)=\sup_{t\le x\le X}f(x)\Longrightarrow\sup_{x\ge a}f(x)=\sup_{a\le x\le X}f(x)
+\]
+
+\end_inset
+
+即
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,X]$
+\end_inset
+
+上存在最大值, 也即
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,\infty)$
+\end_inset
+
+上存在最大值.
+\end_layout
+
+\begin_layout Standard
+若对于任何
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $g(t)=\alpha$
+\end_inset
+
+.
+ 也即
+\begin_inset Formula 
+\[
+\sup_{x\ge t}f(x)=\alpha,\quad\forall t\ge a.
+\]
+
+\end_inset
+
+当
+\begin_inset Formula $f(x)$
+\end_inset
+
+不为常数时, 则必然有
+\begin_inset Formula $f(x_{0})<\alpha$
+\end_inset
+
+.
+ 取
+\begin_inset Formula $\epsilon<\alpha-f(x_{0})$
+\end_inset
+
+, 则有
+\begin_inset Formula $X>x_{0}$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall x>X$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|f(x)-\alpha\right|<\epsilon\Longrightarrow f(x)>\alpha-\epsilon>f(x_{0}).
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula $f(x)$
+\end_inset
+
+必然在
+\begin_inset Formula $[a,X]$
+\end_inset
+
+中取到最小值.
+\end_layout
+
+\begin_layout Standard
+pf2.
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,\infty)$
+\end_inset
+
+不恒为常数.
+\end_layout
+
+\begin_layout Standard
+因为
+\begin_inset Formula $f(x)\to\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+, 则有点列
+\begin_inset Formula $\left\{ x_{n}\right\} $
+\end_inset
+
+, 使得
+\begin_inset Formula $f(x_{n})\to\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $f(x_{1})\ne\alpha$
+\end_inset
+
+(因为
+\begin_inset Formula $f$
+\end_inset
+
+不恒为常数).
+\end_layout
+
+\begin_layout Standard
+因为
+\begin_inset Formula $f(x_{1})\ne\alpha$
+\end_inset
+
+, 则取
+\begin_inset Formula $\epsilon<\left|f(x_{1})-\alpha\right|$
+\end_inset
+
+, 有
+\begin_inset Formula $X>x_{1}$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\forall x>X$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\left|f(x)-\alpha\right|<\epsilon<\left|f(x_{1})-\alpha\right|,
+\]
+
+\end_inset
+
+这意味着在
+\begin_inset Formula $[a,X]$
+\end_inset
+
+内存在点
+\begin_inset Formula $x_{1}$
+\end_inset
+
+的函数值
+\begin_inset Formula $f(x_{1})$
+\end_inset
+
+远离
+\begin_inset Formula $(\alpha-\epsilon,\alpha+\epsilon)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+当
+\begin_inset Formula $f(x_{1})$
+\end_inset
+
+>
+\begin_inset Formula $\alpha$
+\end_inset
+
+时, 
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,X]$
+\end_inset
+
+上存在最大值
+\begin_inset Formula $M\ge f(x_{1})$
+\end_inset
+
+, 而在
+\begin_inset Formula $(X,\infty)$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)\le\alpha+\epsilon<f(x_{1})\le M$
+\end_inset
+
+.
+ 最大值存在性得证.
+\end_layout
+
+\begin_layout Standard
+当
+\begin_inset Formula $f(x_{1})$
+\end_inset
+
+<
+\begin_inset Formula $\alpha$
+\end_inset
+
+时, 
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,X]$
+\end_inset
+
+上存在最小值
+\begin_inset Formula $m\le f(x_{1})$
+\end_inset
+
+, 而在
+\begin_inset Formula $(X,\infty)$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)\ge\alpha-\epsilon>f(x_{1})\ge m$
+\end_inset
+
+.
+ 最小值存在性得证.
+\end_layout
+
+\begin_layout Standard
+3.
+ 设
+\begin_inset Formula $b,\alpha>0$
+\end_inset
+
+, 求积分
+\begin_inset Formula $\int_{0}^{b}x^{\alpha}\ud x$
+\end_inset
+
+, 利用积分计算极限
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{1^{\alpha}+2^{\alpha}+\cdots+n^{\alpha}}{n^{\alpha+1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+8.
+ 设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 如果对于任意的
+\begin_inset Formula $g\in\left\{ g\in C[a,b]:g(a)=g(b)=0\right\} $
+\end_inset
+
+, 均有
+\begin_inset Formula $\int_{a}^{b}f(x)g(x)\ud x=0$
+\end_inset
+
+, 则
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+此题类比变分基本定理.
+\end_layout
+
+\begin_layout Standard
+9.
+ 设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 如果对于任意的
+\begin_inset Formula $g\in\left\{ g\in C[a,b]:\int_{a}^{b}g(x)\ud x=0\right\} $
+\end_inset
+
+, 均有
+\begin_inset Formula $\int_{a}^{b}f(x)g(x)\ud x=0$
+\end_inset
+
+, 则
+\begin_inset Formula $f=C$
+\end_inset
+
+为常函数.
+\end_layout
+
+\begin_layout Standard
+提示: 设
+\begin_inset Formula $f$
+\end_inset
+
+的平均值为
+\begin_inset Formula $C$
+\end_inset
+
+, 考虑
+\begin_inset Formula $g=f-C$
+\end_inset
+
+和
+\begin_inset Formula $g^{2}$
+\end_inset
+
+的积分.
+\end_layout
+
+\begin_layout Standard
+12.
+ 设
+\begin_inset Formula $f\in C[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\lim_{n\to+\infty}\left(\int_{a}^{b}\left|f(x)\right|^{n}\ud x\right)^{1/n}=\max_{x\in[a,b]}\left|f(x)\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+14.
+ 设
+\begin_inset Formula $f,g\in C[a,b]$
+\end_inset
+
+, 且
+\begin_inset Formula $f,g>0$
+\end_inset
+
+, 证明
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}\frac{\int_{a}^{b}f^{n+1}(x)g(x)\ud x}{\int_{a}^{b}f^{n}(x)g(x)\ud x}=\max_{x\in[a,b]}f(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+17.
+ 设
+\begin_inset Formula $f(x)\in C[0,+\infty)$
+\end_inset
+
+严格单调递增, 则
+\begin_inset Formula 
+\[
+F(x)=\begin{cases}
+\frac{1}{x}\int_{0}^{x}f(t)\ud t, & x>0,\\
+f(0), & x=0
+\end{cases}
+\]
+
+\end_inset
+
+也是严格单调递增连续函数.
+\end_layout
+
+\begin_layout Standard
+18.
+ 设
+\begin_inset Formula $f(x)\in C[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $f>0$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\lim_{r\to0+}\left(\frac{1}{b-a}\int_{a}^{b}f^{r}(x)\ud x\right)^{1/r}=\exp\left(\frac{1}{b-a}\int_{a}^{b}\ln f(x)\ud x\right),
+\]
+
+\end_inset
+
+并用H
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+lder不等式说明上式左端关于
+\begin_inset Formula $r$
+\end_inset
+
+单调递增.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,346 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+
+\DeclareMathOperator{\sech}{sech}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+不等式
+\end_layout
+
+\begin_layout Paragraph
+例3.5.13 (Young不等式)
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f$
+\end_inset
+
+ 是 
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+ 中的单调递增连续函数, 
+\begin_inset Formula $f(0)=0$
+\end_inset
+
+, 
+\begin_inset Formula $f^{-1}(y)$
+\end_inset
+
+ 表示 
+\begin_inset Formula $f$
+\end_inset
+
+ 的反函数, 则当 
+\begin_inset Formula $a,b>0$
+\end_inset
+
+ 时 
+\begin_inset Formula 
+\[
+ab\leqslant\int_{0}^{a}f(x)dx+\int_{0}^{b}f^{-1}(y)dy,
+\]
+
+\end_inset
+
+等号成立当且仅当 
+\begin_inset Formula $b=f(a)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+例 3.5.14 (Hölder 不等式).
+ 
+\end_layout
+
+\begin_layout Standard
+设 
+\begin_inset Formula $f,g$
+\end_inset
+
+ 为 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上非负连续函数, 
+\begin_inset Formula $p>1,\frac{1}{p}+\frac{1}{q}=1$
+\end_inset
+
+.
+ 则 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)dx\leqslant\left[\int_{a}^{b}f^{p}(x)dx\right]^{\frac{1}{p}}\left[\int_{a}^{b}g^{q}(x)dx\right]^{\frac{1}{q}},
+\]
+
+\end_inset
+
+等号成立当且仅当 
+\begin_inset Formula $f^{p}=cg^{q}$
+\end_inset
+
+ 或 
+\begin_inset Formula $cf^{p}=g^{q},c$
+\end_inset
+
+ 为常数.
+\end_layout
+
+\begin_layout Standard
+应用重积分证明不等式的经典例子.
+\end_layout
+
+\begin_layout Standard
+14.
+ 设 
+\begin_inset Formula $f(x),g(x)$
+\end_inset
+
+ 为 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 上同时单调递减或同时单调递增函数, 则 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)dx\geqslant\frac{1}{b-a}\int_{a}^{b}f(x)dx\int_{a}^{b}g(x)dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ex1.
+ 设
+\begin_inset Formula $f(x)\in C^{1}[0,1]$
+\end_inset
+
+, 
+\begin_inset Formula $f(0)=f(1)=0$
+\end_inset
+
+, 求证:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{1}f^{2}(x)\ud x\le\frac{1}{8}\int_{0}^{1}f'^{2}(x)\ud x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ 由
+\begin_inset Formula $f(x)=\int_{0}^{x}f'(t)\ud t$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{align*}
+\int_{0}^{1}f^{2}\ud x & =\int_{0}^{1/2}f^{2}\ud x+\int_{1/2}^{1}f^{2}\ud x\\
+ & =\int_{0}^{1/2}\left(\int_{0}^{x}f'(t)\ud t\right)^{2}\ud x+\int_{1/2}^{1}\left(\int_{x}^{1}f'(t)\ud t\right)\ud x\\
+ & \le\int_{0}^{1/2}\left(\int_{0}^{x}f'^{2}(t)\ud t\right)\left(\int_{0}^{x}1\ud t\right)\ud x+\int_{1/2}^{1}\left(\int_{x}^{1}f'^{2}(t)\ud t\right)\left(\int_{x}^{1}1\ud t\right)\ud x\\
+ & \le\int_{0}^{1/2}x\int_{0}^{1/2}f'^{2}(t)\ud t\ud x+\int_{1/2}^{1}(1-x)\left(\int_{1/2}^{1}f'^{2}(t)\ud t\right)\ud x\\
+ & =\frac{1}{8}\left(\int_{0}^{1/2}f'^{2}(t)\ud t+\int_{1/2}^{1}f'^{2}(t)\ud t\right)=\frac{1}{8}\int_{0}^{1}f'^{2}(t)\ud t.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

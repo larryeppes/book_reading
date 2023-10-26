@@ -1,0 +1,3655 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+% \usepackage{tkz-euclide}
+% \usetkzobj{all}
+\usepackage{comment}
+
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools, yhmath, mathrsfs}
+% http://ctan.org/pkg/extarrows
+% long equal sign
+\usepackage{extarrows}
+
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\curl}{curl}
+
+%\everymath{\color{blue}\everymath{}}
+\everymath\expandafter{\color{blue}\displaystyle}
+%\everydisplay\expandafter{\the\everydisplay \color{red}}
+
+\def\degree{^\circ}
+\def\bt{\begin{theorem}}
+\def\et{\end{theorem}}
+\def\bl{\begin{lemma}}
+\def\el{\end{lemma}}
+\def\bc{\begin{corrolary}}
+\def\ec{\end{corrolary}}
+\def\ba{\begin{proof}[解]}
+\def\ea{\end{proof}}
+\def\ue{\mathrm{e}}
+\def\ud{\,\mathrm{d}}
+\def\GF{\mathrm{GF}}
+\def\ui{\mathrm{i}}
+\def\Re{\mathrm{Re}}
+\def\Im{\mathrm{Im}}
+\def\uRes{\mathrm{Res}}
+\def\diag{\,\mathrm{diag}\,}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bee{\begin{equation*}}
+\def\eee{\end{equation*}}
+\def\sumcyc{\sum\limits_{cyc}}
+\def\prodcyc{\prod\limits_{cyc}}
+\def\i{\infty}
+\def\a{\alpha}
+\def\b{\beta}
+\def\g{\gamma}
+\def\d{\delta}
+\def\l{\lambda}
+\def\m{\mu}
+\def\t{\theta}
+\def\p{\partial}
+\def\wc{\rightharpoonup}
+\def\udiv{\mathrm{div}}
+\def\diam{\mathrm{diam}}
+\def\dist{\mathrm{dist}}
+\def\uloc{\mathrm{loc}}
+\def\uLip{\mathrm{Lip}}
+\def\ucurl{\mathrm{curl}}
+\def\usupp{\mathrm{supp}}
+\def\uspt{\mathrm{spt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\norm}[1]{\left\Vert#1\right\Vert}
+\providecommand{\paren}[1]{\left(#1\right)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\WW}{\mathbb{W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\pNN}{\mathbb{N}_{+}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cW}{\mathcal{W}}
+
+\newcommand{\eqdef}{\xlongequal{\text{def}}}%
+\newcommand{\eqexdef}{\xlongequal[\text{存在}]{\text{记为}}}%
+\end_preamble
+\options a4paper,UTF8
+\use_default_options true
+\begin_modules
+theorems-ams-chap-bytype
+theorems-ams-extended-chap-bytype
+\end_modules
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-cjk
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 2
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Mathematics: A Concise History and Philosophy
+\end_layout
+
+\begin_layout Author
+Anglin
+\end_layout
+
+\begin_layout Standard
+Preface 中提到的要小心对待的问题有: unit fractions, perfect numbers, linear Diophantine
+ equations, Euclidean construction, Euclidean proofs, the circle area formula,
+ the Pell equation, cubic equations, log table construction, the four square
+ theorem, quaternions, Cantor's set theory.
+\end_layout
+
+\begin_layout Section
+Mathematics for Civil Servants
+\end_layout
+
+\begin_layout Standard
+这本书谈到两种观点: 一种称为 Aristotelianism, 它将数学视为 ascending from the human animal;
+ 另一种称为 Platonism, 视数学为 descending from a divine realm.
+\end_layout
+
+\begin_layout Subsection
+The Moscow Papyrus
+\end_layout
+
+\begin_layout Standard
+古埃及数学相关的信息源: the Moscow Mathematical Papyrus (1850 B.
+ C.), 和 the Rhind Mathematical Papyrus.
+\end_layout
+
+\begin_layout Standard
+莫斯科草卷中最有趣的问题是 Problem 14.
+ 是计算正四棱台体积公式, 如果正四棱台高 
+\begin_inset Formula $h$
+\end_inset
+
+, 底面正方形边长为 
+\begin_inset Formula $a$
+\end_inset
+
+, 顶面正方形边长为 
+\begin_inset Formula $b$
+\end_inset
+
+, 则 正四棱台的体积为 
+\begin_inset Formula 
+\[
+\frac{h(a^{2}+ab+b^{2})}{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Rhind Papyrus
+\end_layout
+
+\begin_layout Standard
+由 1650 B.
+ C.
+ 一名叫 Ahmose 的抄写员抄录.
+ 有一个有趣的乘法运算倍乘折半法.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Unit Fractions
+\end_layout
+
+\begin_layout Standard
+任何真分数可以分解为单位分数的和.
+ (证明方法: 无穷递降原理)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Paul Erd
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+s 提出问题: 若 
+\begin_inset Formula $n>4$
+\end_inset
+
+ 为某整数, 则 
+\begin_inset Formula $4/n$
+\end_inset
+
+ 可以分解为三个不同的单位分数之和.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Straus_conjecture"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Great Pyramid Nonsense
+\end_layout
+
+\begin_layout Subsection
+Exercises 1
+\end_layout
+
+\begin_layout Standard
+7.
+ 证明 
+\begin_inset Formula $8/11$
+\end_inset
+
+ 不能表示成少于4个单位分数之和.
+\end_layout
+
+\begin_layout Standard
+9.
+ 若 
+\begin_inset Formula $p$
+\end_inset
+
+ 为素数, 
+\begin_inset Formula $2/p$
+\end_inset
+
+ 可以唯一的表示为两个不同的单位分数之和.
+\end_layout
+
+\begin_layout Standard
+11.
+ 若 
+\begin_inset Formula $p+q=4ef$
+\end_inset
+
+, 
+\begin_inset Formula $p+e=gq$
+\end_inset
+
+, 其中 
+\begin_inset Formula $e,f,g,p,q$
+\end_inset
+
+ 均为正整数, 则
+\begin_inset Formula 
+\[
+\frac{4}{p}=\frac{1}{ef}+\frac{1}{efg}+\frac{1}{fgp}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+12.
+ 要证明 Erd
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\begin_inset Quotes erd
+\end_inset
+
+{o}
+\end_layout
+
+\end_inset
+
+s 问题, 只需证明对于 
+\begin_inset Formula $24m+1$
+\end_inset
+
+ 型素数 
+\begin_inset Formula $p$
+\end_inset
+
+, 可以将 
+\begin_inset Formula $4/p$
+\end_inset
+
+ 分解为三个不同单位分数之和.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula 
+\begin{align*}
+\frac{4}{24m+9} & =\frac{1}{6m+3}+\frac{1}{(8m+4)(6m+3)}+\frac{1}{12(2m+1)^{2}(8m+3)};\\
+\frac{4}{24m+13} & =\frac{1}{6m+4}+\frac{1}{(8m+5)(6m+4)}+\frac{1}{(3m+2)(8m+5)(24m+13)};\\
+\frac{4}{24m+21} & =\frac{1}{6m+6}+\frac{1}{48(m+1)^{2}}+\frac{1}{48(m+1)^{2}(8m+7)}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Challenges for Experts
+\end_layout
+
+\begin_layout Standard
+1.
+ 设 
+\begin_inset Formula $a/b$
+\end_inset
+
+ 为真分数, 
+\begin_inset Formula $x,y,z,w$
+\end_inset
+
+ 为不同正整数满足 
+\begin_inset Formula $a/b=1/x+1/y+1/z+1/w$
+\end_inset
+
+, 证明 
+\begin_inset Formula $w<288b^{8}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+ 证明, 在能够表示成5个单位分数之和的真分数中, 
+\begin_inset Formula 
+\[
+\frac{1}{2}+\frac{1}{3}+\frac{1}{7}+\frac{1}{43}+\frac{1}{1807}
+\]
+
+\end_inset
+
+是最大的真分数.
+\end_layout
+
+\begin_layout Standard
+3.
+ 不存在整数 
+\begin_inset Formula $n$
+\end_inset
+
+, 使得所有真分数可以写成至多 
+\begin_inset Formula $n$
+\end_inset
+
+ 个不同单位分数之和.
+\end_layout
+
+\begin_layout Section
+The Earliest Number Theory
+\end_layout
+
+\begin_layout Subsection
+The Sumerians and Babylonians
+\end_layout
+
+\begin_layout Subsection
+Pythagorean Triples
+\end_layout
+
+\begin_layout Subsection
+Square Roots
+\end_layout
+
+\begin_layout Standard
+Heron 方法求平方根, 类似 Isaac Newton 迭代法.
+\end_layout
+
+\begin_layout Section
+The Dawn of Deductive Mathematics
+\end_layout
+
+\begin_layout Subsection
+Thales
+\end_layout
+
+\begin_layout Subsection
+Anaximander and the Infinite
+\end_layout
+
+\begin_layout Standard
+什么是潜无穷, 与实无穷的区别.
+\end_layout
+
+\begin_layout Subsection
+The Role of Individuals
+\end_layout
+
+\begin_layout Section
+The Pythagoreans
+\end_layout
+
+\begin_layout Subsection
+Pythagoras and Theano
+\end_layout
+
+\begin_layout Standard
+Theano may have been the first woman mathematician.
+\end_layout
+
+\begin_layout Subsection
+Number Mysticism
+\end_layout
+
+\begin_layout Subsection
+Pythagorean Mathematics
+\end_layout
+
+\begin_layout Standard
+几何原本的6大内容.
+\end_layout
+
+\begin_layout Standard
+Gauss: 每个正整数可以表示为3个三角形数之和.
+\end_layout
+
+\begin_layout Standard
+N.
+ Tzanakis, B.
+ de Weger, 只有6个三角形数可以表示成三个连续整数的积.
+ Journal of Number Theory, 1989.
+ 这样的三角形数最大为 
+\begin_inset Formula $258474216$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+The Pythagoreans and Perfection
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Euclid-form"
+
+\end_inset
+
+ The Proof in Euclid 
+\end_layout
+
+\begin_layout Standard
+形如 
+\begin_inset Formula $2^{m-1}(2^{m}-1)$
+\end_inset
+
+, 
+\begin_inset Formula $2^{m-1}$
+\end_inset
+
+ 素的完全数.
+\end_layout
+
+\begin_layout Subsection
+Mersenne Primes
+\end_layout
+
+\begin_layout Subsection
+Lucas's Test
+\end_layout
+
+\begin_layout Standard
+判断 
+\begin_inset Formula $2^{m}-1$
+\end_inset
+
+ 是否为素数的算法.
+ 首次由 Edouard Lucas 发现, 之后由 Derrick H.
+ Lehmer 改进.
+ 算法如下
+\end_layout
+
+\begin_layout Standard
+取 
+\begin_inset Formula $u_{1}=4$
+\end_inset
+
+, 
+\begin_inset Formula $u_{n+1}=u_{n}^{2}-2$
+\end_inset
+
+, 若 
+\begin_inset Formula $m>2$
+\end_inset
+
+, 则 当 
+\begin_inset Formula $2^{m}-1$
+\end_inset
+
+ 是 
+\begin_inset Formula $u_{m-1}$
+\end_inset
+
+ 的一个因子时, 
+\begin_inset Formula $2^{m}-1$
+\end_inset
+
+ 是素数.
+\end_layout
+
+\begin_layout Subsection
+Euler's Proof
+\end_layout
+
+\begin_layout Standard
+Euler 证明了每个欧完全数都有 Euclid 给出的形式, 见 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Euclid-form"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+命题: 若 
+\begin_inset Formula $n$
+\end_inset
+
+ 是偶完全数, 则 
+\begin_inset Formula $n$
+\end_inset
+
+ 可表示为 
+\begin_inset Formula $n=2^{m-1}(2^{m}-1)$
+\end_inset
+
+, 其中 
+\begin_inset Formula $2^{m}-1$
+\end_inset
+
+ 是素数.
+\end_layout
+
+\begin_layout Standard
+证明: 设 
+\begin_inset Formula $n=2^{m-1}q$
+\end_inset
+
+, 
+\begin_inset Formula $q$
+\end_inset
+
+ 为奇数.
+ 这里 
+\begin_inset Formula $m,q>1$
+\end_inset
+
+.
+ 则 
+\begin_inset Formula $n$
+\end_inset
+
+ 的因子有形式 
+\begin_inset Formula $2^{r}d$
+\end_inset
+
+, 其中 
+\begin_inset Formula $0\le r\le m-1$
+\end_inset
+
+, 
+\begin_inset Formula $d\mid q$
+\end_inset
+
+.
+ 于是
+\begin_inset Formula 
+\[
+s(n)=(1+2+\cdots+2^{m-1})s(q)=(2^{m}-1)s(q).
+\]
+
+\end_inset
+
+由于
+\begin_inset Formula $n$
+\end_inset
+
+ 是完全数, 所以 
+\begin_inset Formula $s(n)=2n=2^{m}q$
+\end_inset
+
+, 因此
+\begin_inset Formula 
+\[
+2^{m}q=s(n)=(2^{m}-1)s(q).
+\]
+
+\end_inset
+
+也即
+\begin_inset Formula $(2^{m}-1)(s(q)-q)=q$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+若 
+\begin_inset Formula $s(q)-q>1$
+\end_inset
+
+.
+ 则 
+\begin_inset Formula $q$
+\end_inset
+
+ 有互不相同素因子 
+\begin_inset Formula $1,s(q)-q$
+\end_inset
+
+, 
+\begin_inset Formula $q$
+\end_inset
+
+ (如果 
+\begin_inset Formula $s(q)-q=q$
+\end_inset
+
+, 就有 
+\begin_inset Formula $(2^{m}-1)q=q$
+\end_inset
+
+, 而这是不可能的).
+ 从而有 
+\begin_inset Formula 
+\[
+s(q)\ge1+(s(q)-q)+q=1+s(q).
+\]
+
+\end_inset
+
+矛盾, 所以只有可能 
+\begin_inset Formula $s(q)-q=1$
+\end_inset
+
+.
+ 于是 
+\begin_inset Formula $s(q)=q+1$
+\end_inset
+
+, 这又说明 
+\begin_inset Formula $q$
+\end_inset
+
+ 是素数.
+ 从而
+\begin_inset Formula 
+\[
+(2^{m}-1)(s(q)-q)=q=2^{m}-1
+\]
+
+\end_inset
+
+是素数.
+\end_layout
+
+\begin_layout Subsection
+The Fascination of Perfect Numbers
+\end_layout
+
+\begin_layout Standard
+define a superfluous number as one with 
+\begin_inset Formula $s(n)>2n$
+\end_inset
+
+; a diminished number as one with 
+\begin_inset Formula $s(n)<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Exercises 5
+\end_layout
+
+\begin_layout Standard
+3.
+ 设 
+\begin_inset Formula $n$
+\end_inset
+
+ 为完全数, 
+\begin_inset Formula $f_{1},\cdots,f_{t}$
+\end_inset
+
+ 为其所有因子.
+ 则有
+\begin_inset Formula 
+\[
+\frac{2}{n}=\frac{1}{f_{1}n}+\frac{1}{f_{2}n}+\cdots+\frac{1}{f_{t}n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ 证明每一个偶完全数的十进制数表示以 
+\begin_inset Formula $6$
+\end_inset
+
+ 或 
+\begin_inset Formula $8$
+\end_inset
+
+ 结尾.
+\end_layout
+
+\begin_layout Standard
+5.
+ 证明每个偶完全数(除了6), 可以表示成
+\begin_inset Formula 
+\[
+1^{3}+3^{3}+5^{3}+\cdots+(2^{n+1}-1)^{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+6.
+ 若 
+\begin_inset Formula $(m,n)=1$
+\end_inset
+
+, 则 
+\begin_inset Formula $s(mn)=s(m)s(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+The Pythagoreans and Polyhedra
+\end_layout
+
+\begin_layout Subsection
+Regular Polyhedra
+\end_layout
+
+\begin_layout Standard
+A polyhedron is a solid whose surface sonsists of polygon faces.
+\end_layout
+
+\begin_layout Standard
+A polyhedron is regular or Platonic if its faces are congruent regular polygons
+ and if its polyhedral angles are all congruent.
+\end_layout
+
+\begin_layout Standard
+5 种正多面体: tetrahedron, octahedron, cube, icosahedron, dodechedron.
+\end_layout
+
+\begin_layout Subsection
+The Timaeus
+\end_layout
+
+\begin_layout Subsection
+The Apex of the Elements
+\end_layout
+
+\begin_layout Standard
+Euclid 的几何原本给出了五个正多面体外接球半径与其边长的比.
+\end_layout
+
+\begin_layout Subsection
+Challenges for Experts
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1.
+ 边长为1的12正面体外接圆半径为
+\begin_inset Formula $\phi\sqrt{3}/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+2.
+ 边长为1的正十二面体体积为
+\begin_inset Formula $\frac{15+7\sqrt{5}}{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+3.
+ 边长为1的正二十面体体积为
+\begin_inset Formula $\frac{15+5\sqrt{5}}{12}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+5.
+ 正十二面体的每个面的中心连线得到一个正二十面体, 如果正十二面体的边长为1, 则正二十面体的边长为
+\begin_inset Formula $\frac{5+3\sqrt{5}}{10}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+6.
+ 证明在正十二面体内的正二十面体, 正二十面体的12个顶点分正十二面体的12条边成黄金分割数.
+\end_layout
+
+\begin_layout Standard
+7.
+ 设 
+\begin_inset Formula $R$
+\end_inset
+
+ 为正十二面体外接球半径, 
+\begin_inset Formula $r$
+\end_inset
+
+ 为内切球半径, 则
+\begin_inset Formula 
+\[
+\frac{R}{r}=\sqrt{15-6\sqrt{5}},
+\]
+
+\end_inset
+
+证明正二十面体也是这个比例.
+\end_layout
+
+\begin_layout Section
+The Pythagoreans and Irrationality
+\end_layout
+
+\begin_layout Subsection
+Hippasus and the Leak
+\end_layout
+
+\begin_layout Standard
+commensurable: 可公度的.
+\end_layout
+
+\begin_layout Standard
+Aristotle, Prior Analytics, 41a23-30.
+ 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ 的无理性.
+\end_layout
+
+\begin_layout Standard
+不可公度让希腊人用几何的方式做代数.
+\end_layout
+
+\begin_layout Subsection
+Diophantine Equations and Approximations to Irrationals
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: Euclid 辗转相除法与丢番图方程.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Exercises 7
+\end_layout
+
+\begin_layout Standard
+5.
+ 求解 
+\begin_inset Formula $67x-120y=1$
+\end_inset
+
+ 的整数解, 并通过 
+\begin_inset Formula $67/120=1/120x+y/x$
+\end_inset
+
+ 然后解方程 
+\begin_inset Formula 
+\[
+yx'-xy'=1
+\]
+
+\end_inset
+
+得到 
+\begin_inset Formula $y/x=1/xx'+y'/x'$
+\end_inset
+
+, 将 
+\begin_inset Formula $67/120$
+\end_inset
+
+ 表示为单位分数之和.
+\end_layout
+
+\begin_layout Standard
+8.
+ 求所有的整数对 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ 使得 
+\begin_inset Formula $x^{2}-4y^{2}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+9.
+ 用 Euclid 算法求方程 
+\begin_inset Formula $x^{2}-13y^{2}=1$
+\end_inset
+
+ 的非平凡整数解.
+\end_layout
+
+\begin_layout Standard
+10.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO:?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO:?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Need for the Infinite
+\end_layout
+
+\begin_layout Subsection
+Parmenides
+\end_layout
+
+\begin_layout Standard
+J.
+ Barnes, Early Greek Philosophy.
+\end_layout
+
+\begin_layout Subsection
+Zeno
+\end_layout
+
+\begin_layout Subsection
+Zeno's First Argument
+\end_layout
+
+\begin_layout Standard
+运动是不存在的, 现代物理则认为运动存在并且是连续的.
+\end_layout
+
+\begin_layout Subsection
+Zeno's Second Argument
+\end_layout
+
+\begin_layout Standard
+芝诺悖论.
+\end_layout
+
+\begin_layout Subsection
+Zeno's Third Argument
+\end_layout
+
+\begin_layout Standard
+飞矢不动
+\end_layout
+
+\begin_layout Subsection
+Zeno's Fourth Argument
+\end_layout
+
+\begin_layout Standard
+相对运动与相对论, 用相对运动说明最大运动速度导出的矛盾.
+\end_layout
+
+\begin_layout Subsection
+The General Form of Zeno's Arguments
+\end_layout
+
+\begin_layout Subsection
+Democritus
+\end_layout
+
+\begin_layout Section
+Mathematics in Athens Before Plato
+\end_layout
+
+\begin_layout Subsection
+Hippias and the Quadratrix
+\end_layout
+
+\begin_layout Standard
+三等分任意角与化圆为方的 quadratrix
+\end_layout
+
+\begin_layout Subsection
+Antiphon and the Circle Area
+\end_layout
+
+\begin_layout Standard
+割圆术的早期思想.
+\end_layout
+
+\begin_layout Subsection
+Hippocrates and the Lunes
+\end_layout
+
+\begin_layout Standard
+Hippocrates 的月牙, 还有正六边形上的一个小推广.
+\end_layout
+
+\begin_layout Subsection
+Duplicating the Cube
+\end_layout
+
+\begin_layout Standard
+倍立方问题.
+\end_layout
+
+\begin_layout Subsection
+Socrates
+\end_layout
+
+\begin_layout Standard
+倍正方形面积.
+\end_layout
+
+\begin_layout Subsection
+Challenge for Experts
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+原书上有误
+\end_layout
+
+\end_inset
+
+ 设 
+\begin_inset Formula $s_{k}$
+\end_inset
+
+ 为单位圆的内接正 
+\begin_inset Formula $k$
+\end_inset
+
+ 边形, 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ 为单位元的外切正 
+\begin_inset Formula $k$
+\end_inset
+
+ 边形.
+ 则
+\begin_inset Formula 
+\[
+S_{2k}=\frac{s_{k}S_{k}}{s_{k}+S_{k}},\quad s_{2k}=\sqrt{\frac{s_{k}S_{2k}}{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pf.
+ 
+\begin_inset Formula $CH=s_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $OM=S_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $OC=\frac{S_{k}}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $QR=S_{2k}$
+\end_inset
+
+, 
+\begin_inset Formula $LC=s_{2k}$
+\end_inset
+
+, 
+\begin_inset Formula $\triangle QLC\sim\triangle LHC$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{LQ}{LC}=\frac{LC}{HC}=\frac{S_{2k}}{2s_{2k}}=\frac{s_{2k}}{s_{k}}$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{s_{k}}{S_{k}}=\frac{HC}{OM}=\frac{AC}{AO}=\sin\angle AOC=\frac{LQ}{OQ}=\frac{S_{2k}}{S_{k}-S_{2k}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s_{2k}^{2}=\frac{s_{k}S_{2k}}{2},\qquad\frac{s_{k}}{s_{k}+S_{k}}=\frac{S_{2k}}{S_{k}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 已粘贴11.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Plato
+\end_layout
+
+\begin_layout Section
+Aristotle
+\end_layout
+
+\begin_layout Subsection
+Aristotle's Logic
+\end_layout
+
+\begin_layout Standard
+将论述/论断/命题分为四种基本类型: PaS, PeS, PiS, PoS.
+\end_layout
+
+\begin_layout Standard
+PaS: 所有满足性质 
+\begin_inset Formula $P$
+\end_inset
+
+ 也满足性质 
+\begin_inset Formula $S$
+\end_inset
+
+ 的事物.
+\end_layout
+
+\begin_layout Standard
+PeS: Nothing has both property 
+\begin_inset Formula $P$
+\end_inset
+
+ and Property 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+PiS: At least one thing has properties 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+PoS: At least one thing has property 
+\begin_inset Formula $P$
+\end_inset
+
+ but lacks property 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+三段论: syllogism
+\end_layout
+
+\begin_layout Subsection
+Aristotle and the Infinite
+\end_layout
+
+\begin_layout Standard
+Aristotle 拒绝接受无穷大, 无穷小, 也拒绝直线无限长的说法.
+\end_layout
+
+\begin_layout Section
+In the Time of Eudoxus
+\end_layout
+
+\begin_layout Subsection
+Theaetetus
+\end_layout
+
+\begin_layout Standard
+证明了非平方数的平方根都是无理数.
+ 负责 Euclid's Elements 的第 X 和 XIII 卷.
+\end_layout
+
+\begin_layout Subsection
+Eudoxus
+\end_layout
+
+\begin_layout Standard
+负责 Euclid's Elements 的第 V 和 XII 卷.
+ 
+\end_layout
+
+\begin_layout Subsection
+Eudoxus and the Circle
+\end_layout
+
+\begin_layout Subsection
+Menaechmus
+\end_layout
+
+\begin_layout Standard
+圆锥曲线上抛物线的数量关系, 解决倍立方问题.
+\end_layout
+
+\begin_layout Section
+Ruler and Compass Constructions
+\end_layout
+
+\begin_layout Standard
+尺规作图的规则.
+\end_layout
+
+\begin_layout Standard
+用尺规作图给出已知角的角平分线, 已知线段的中垂线, 过线段外一点做给定线段的平行线, 两个给定线段的乘积, 构造线段的平方根.
+\end_layout
+
+\begin_layout Standard
+Pierre Wantzel 在 1837 年证明了倍立方是不可能的, 
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+ 角的三等分线是不可尺规作图的.
+ C.L.F.
+ Lindemann 在 1882 年证明了化圆为方是不可能的.
+ 
+\end_layout
+
+\begin_layout Subsection
+Exercises
+\end_layout
+
+\begin_layout Standard
+7.
+ 使用 Wantzel 的结果构造正 771 边形.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 正三角形和正257边形是可构造的, 所以角 
+\begin_inset Formula 
+\[
+\frac{\pi}{3}-\frac{\pi}{257}=\frac{254\pi}{771}
+\]
+
+\end_inset
+
+是可构造的, 由于 
+\begin_inset Formula $(254,771)=1$
+\end_inset
+
+, 所以有 
+\begin_inset Formula $113\times771-343\times254=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Challenges for Experts
+\end_layout
+
+\begin_layout Standard
+1.
+ 根据以下问题证明正 17 边形是可尺规作图的.
+\end_layout
+
+\begin_layout Standard
+(a) 设 
+\begin_inset Formula $p=\frac{1}{4}\left(-1-\sqrt{17}+\sqrt{34+2\sqrt{17}}\right)$
+\end_inset
+
+, 则 
+\begin_inset Formula $p$
+\end_inset
+
+ 是方程
+\begin_inset Formula 
+\[
+2w^{2}+w-2=-\sqrt{17}w
+\]
+
+\end_inset
+
+的一个根, 从而也是方程 
+\begin_inset Formula 
+\[
+w^{4}+w^{3}-6w^{2}-w+1=0.
+\]
+
+\end_inset
+
+的一个根.
+\end_layout
+
+\begin_layout Standard
+(b) 证明 
+\begin_inset Formula $3/10<p<4/10$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(c) 设 
+\begin_inset Formula $q=\frac{p-1}{p+1}$
+\end_inset
+
+, 则有 
+\begin_inset Formula $pq=p-q-1$
+\end_inset
+
+, 且 
+\begin_inset Formula $-6/10<q<-4/10$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(d) 设 
+\begin_inset Formula 
+\[
+x=\frac{p}{4}+\sqrt{\frac{p^{2}}{16}-\frac{q}{4}},\quad y=\frac{p}{4}-\sqrt{\frac{p^{2}}{16}-\frac{q}{4}};
+\]
+
+\end_inset
+
+则有 
+\begin_inset Formula $x+y=p/2$
+\end_inset
+
+, 
+\begin_inset Formula $xy=q/4$
+\end_inset
+
+, 
+\begin_inset Formula $x^{2}=px/2-q/4$
+\end_inset
+
+, 
+\begin_inset Formula $y^{2}=py/2-q/4$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(e) 证明 
+\begin_inset Formula $\frac{\sqrt{5}-1}{4}<x<\frac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $-1<y<0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(f) 设锐角 
+\begin_inset Formula $A$
+\end_inset
+
+ 满足 
+\begin_inset Formula $\cos A=x$
+\end_inset
+
+, 钝角 
+\begin_inset Formula $B$
+\end_inset
+
+ 满足 
+\begin_inset Formula $\cos B=y$
+\end_inset
+
+, 证明 
+\begin_inset Formula $60^{\circ}<A<72^{\circ}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(g) 证明 
+\begin_inset Formula $p^{3}=2pq+4p-1$
+\end_inset
+
+, 
+\begin_inset Formula $p^{2}q=q^{2}+4q-p+2$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(h) 由于 
+\begin_inset Formula $x^{2}-\frac{px}{2}+\frac{q}{4}=0$
+\end_inset
+
+, 两边同乘 
+\begin_inset Formula $2p^{2}$
+\end_inset
+
+, 并使用 (g) 的结论有
+\begin_inset Formula 
+\[
+2p^{2}x^{2}-(2pq+4p-1)x+\frac{q^{2}+4q-p+2}{2}=0;
+\]
+
+\end_inset
+
+由此证明
+\begin_inset Formula 
+\[
+2\left(px-\frac{q}{2}-1\right)^{2}-1=\frac{p}{2}-x,\quad2(2x^{2}-1)^{2}-1=y;
+\]
+
+\end_inset
+
+类似地, 有 
+\begin_inset Formula $2(2y^{2}-1)^{2}-1=x$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(i) 由于 
+\begin_inset Formula $x=\cos A$
+\end_inset
+
+, 
+\begin_inset Formula $y=\cos B$
+\end_inset
+
+, 则有 
+\begin_inset Formula $\cos4A=\cos B$
+\end_inset
+
+ 且 
+\begin_inset Formula $\cos4B=\cos A$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(j) 证明
+\begin_inset Formula 
+\[
+\cos16A=2(2\cos^{2}4A-1)^{2}-1=2(2\cos^{2}B-1)^{2}-1=\cos4B=\cos A,
+\]
+
+\end_inset
+
+因此 
+\begin_inset Formula $16A\pm A$
+\end_inset
+
+ 为 
+\begin_inset Formula $360^{\circ}$
+\end_inset
+
+ 的整数倍;
+\end_layout
+
+\begin_layout Standard
+(k) 证明 
+\begin_inset Formula $900^{\circ}<15A<1080^{\circ}$
+\end_inset
+
+, 
+\begin_inset Formula $17A$
+\end_inset
+
+ 为 
+\begin_inset Formula $360^{\circ}$
+\end_inset
+
+ 的整数倍, 从而有 
+\begin_inset Formula $A=\frac{12}{17}\cdot90^{\circ}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+(l) 证明 
+\begin_inset Formula $A$
+\end_inset
+
+ 可由尺规作图构造, 从而 
+\begin_inset Formula $A/4$
+\end_inset
+
+ 也可以由尺规作图构造.
+\end_layout
+
+\begin_layout Standard
+(m) 证明正 17 边形可由尺规作图构造.
+\end_layout
+
+\begin_layout Section
+The Oldest Surviving Math Book
+\end_layout
+
+\begin_layout Subsection
+A Synopsis of the Elements
+\end_layout
+
+\begin_layout Standard
+几何原本的各卷内容概述.
+\end_layout
+
+\begin_layout Subsection
+Book I
+\end_layout
+
+\begin_layout Standard
+几何原本第一卷的几个内容: 做正三角形, 证明全等(不严谨, 涉及运动), 等腰三角形两底角相等, 
+\end_layout
+
+\begin_layout Section
+Euclid's Geometry Continued
+\end_layout
+
+\begin_layout Subsection
+Book I Continued
+\end_layout
+
+\begin_layout Standard
+内错角相等的两条直线平行, 三角形内角和为 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+, 勾股定理.
+\end_layout
+
+\begin_layout Subsection
+Book III
+\end_layout
+
+\begin_layout Standard
+垂径定理, 圆周角定理, 相交弦定理, 切割线定理.
+\end_layout
+
+\begin_layout Subsection
+Book VI
+\end_layout
+
+\begin_layout Standard
+平行线分线段成比例定理, 角平分线性质定理.
+\end_layout
+
+\begin_layout Subsection
+Exercises
+\end_layout
+
+\begin_layout Standard
+13.
+ 设 
+\begin_inset Formula $DBCE$
+\end_inset
+
+ 为直线上的四个点, 点 
+\begin_inset Formula $A$
+\end_inset
+
+ 在此直线外, 设 
+\begin_inset Formula $BF$
+\end_inset
+
+ 为 
+\begin_inset Formula $\angle ABD$
+\end_inset
+
+ 的角平分线, 
+\begin_inset Formula $CF$
+\end_inset
+
+ 为 
+\begin_inset Formula $\angle ACD$
+\end_inset
+
+ 的角平分线, 
+\begin_inset Formula $BF$
+\end_inset
+
+ 与 
+\begin_inset Formula $CF$
+\end_inset
+
+ 交于点 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ 设 
+\begin_inset Formula $\angle ABE$
+\end_inset
+
+ 和 
+\begin_inset Formula $\angle ACE$
+\end_inset
+
+ 的角平分线 
+\begin_inset Formula $BG$
+\end_inset
+
+ 和 
+\begin_inset Formula $CG$
+\end_inset
+
+ 交于点 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 证明点 
+\begin_inset Formula $A$
+\end_inset
+
+ 在直线 
+\begin_inset Formula $FG$
+\end_inset
+
+ 上.
+\end_layout
+
+\begin_layout Standard
+pf.
+ 先证明角关系 
+\begin_inset Formula $\angle BFC=\angle BGC$
+\end_inset
+
+, 所以 
+\begin_inset Formula $B,C,G,F$
+\end_inset
+
+ 四点共圆, 设 
+\begin_inset Formula $O$
+\end_inset
+
+ 为线段 
+\begin_inset Formula $FG$
+\end_inset
+
+ 的中点, 为 
+\begin_inset Formula $BCGF$
+\end_inset
+
+ 外接圆的圆心.
+ 再证明角关系 
+\begin_inset Formula $\angle BAC=\angle BOC=2\angle BFC=2\angle BGC$
+\end_inset
+
+, 所以 
+\begin_inset Formula $B,C,O,A$
+\end_inset
+
+ 四点共圆.
+ 最后计算
+\begin_inset Formula 
+\begin{align*}
+\angle AOB+\angle BOG & =\angle ACB+2\angle BFG\\
+ & =\angle ACB+2\angle GCE\\
+ & =\angle ACB+\angle ACE=\pi.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+14.
+ 证明底角平分线长相等的三角形是等腰三角形.
+ 也即, 如果 
+\begin_inset Formula $ABC$
+\end_inset
+
+ 为给定三角形, 
+\begin_inset Formula $BM$
+\end_inset
+
+ 为 
+\begin_inset Formula $\angle ABC$
+\end_inset
+
+ 的角平分线交 
+\begin_inset Formula $AC$
+\end_inset
+
+ 于点 
+\begin_inset Formula $M$
+\end_inset
+
+, 
+\begin_inset Formula $CN$
+\end_inset
+
+ 为 
+\begin_inset Formula $\angle ACB$
+\end_inset
+
+ 的角平分线交 
+\begin_inset Formula $AB$
+\end_inset
+
+ 于点 
+\begin_inset Formula $N$
+\end_inset
+
+, 如果 
+\begin_inset Formula $BM=CN$
+\end_inset
+
+, 则 
+\begin_inset Formula $AC=AB$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Hint: 反证法, 设 
+\begin_inset Formula $\angle ABC<\angle ACB$
+\end_inset
+
+, 则有 
+\begin_inset Formula $\angle ABM<\angle ACN$
+\end_inset
+
+.
+ 设 
+\begin_inset Formula $BM$
+\end_inset
+
+ 交 
+\begin_inset Formula $CN$
+\end_inset
+
+ 于点 
+\begin_inset Formula $J$
+\end_inset
+
+, 取 
+\begin_inset Formula $JM$
+\end_inset
+
+ 上一点 
+\begin_inset Formula $M'$
+\end_inset
+
+ 使得 
+\begin_inset Formula $\angle M'CN=\angle ABM$
+\end_inset
+
+.
+ 则 
+\begin_inset Formula $M',N,B,C$
+\end_inset
+
+ 四点共圆.
+ 由于 
+\begin_inset Formula $\angle M'CB>\angle CBN$
+\end_inset
+
+, 并由大角对大弦, 
+\begin_inset Formula $BM'>CN$
+\end_inset
+
+, 从而 
+\begin_inset Formula $BM>CN$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+15.
+ 设 
+\begin_inset Formula $ABC$
+\end_inset
+
+ 为任意三角形, 向外做三个等边三角形 
+\begin_inset Formula $\triangle A'BC$
+\end_inset
+
+, 
+\begin_inset Formula $\triangle AB'C$
+\end_inset
+
+, 
+\begin_inset Formula $\triangle ABC'$
+\end_inset
+
+, 并设其对应的中心分别为 
+\begin_inset Formula $A'',B'',C''$
+\end_inset
+
+, 证明 
+\begin_inset Formula $\triangle A''B''C''$
+\end_inset
+
+ 为等边三角形.
+\end_layout
+
+\begin_layout Standard
+Hint: 
+\begin_inset Formula $AA'$
+\end_inset
+
+, 
+\begin_inset Formula $BB'$
+\end_inset
+
+, 
+\begin_inset Formula $CC'$
+\end_inset
+
+ 交于一点 
+\begin_inset Formula $F$
+\end_inset
+
+, 这一点也是三个等边三角形的外接圆交点.
+\end_layout
+
+\begin_layout Standard
+16.
+ An old map reads:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+Start from the gallows and walk to the white rock, counting
+\end_layout
+
+\begin_layout Plain Layout
+
+your paces.
+ At that rock, turn left and walk the same number
+\end_layout
+
+\begin_layout Plain Layout
+
+of paces.
+ Then leave your knife in the ground.
+ Return
+\end_layout
+
+\begin_layout Plain Layout
+
+to the gallows.
+ Count your paces to the black rock, turn
+\end_layout
+
+\begin_layout Plain Layout
+
+right and walk the same number of paces.
+ The treasure is
+\end_layout
+
+\begin_layout Plain Layout
+
+the midway between you and your knife.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You have the map, you have found the rocks, but the gallows are gone! How
+ do you find the treasure?
+\end_layout
+
+\begin_layout Section
+Alexandria and Archimedes
+\end_layout
+
+\begin_layout Subsection
+Aristarchus
+\end_layout
+
+\begin_layout Standard
+早期测量日地距离与地月距离之比的方法.
+\end_layout
+
+\begin_layout Subsection
+Archimedes
+\end_layout
+
+\begin_layout Standard
+H.L.
+ Nelson, A Solution to Archimedes' Cattle Problem, Journal of Recreational
+ Mathematics, Vol.
+ 13, 164-176.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: 没找到.
+ archive上也没有
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Archimedes and the Circle
+\end_layout
+
+\begin_layout Standard
+圆面积公式的证明, 证明过程有微积分思想和反证法的结合.
+\end_layout
+
+\begin_layout Subsection
+Apollonius
+\end_layout
+
+\begin_layout Standard
+圆的反演变换.
+ 与三圆都相切的圆怎么构造?
+\end_layout
+
+\begin_layout Subsection
+Eratosthenes
+\end_layout
+
+\begin_layout Standard
+素数筛法.
+\end_layout
+
+\begin_layout Subsection
+Exercises
+\end_layout
+
+\begin_layout Standard
+4.
+ 设线段 
+\begin_inset Formula $AC$
+\end_inset
+
+ 上一点 
+\begin_inset Formula $B$
+\end_inset
+
+, 以 
+\begin_inset Formula $AB,AC,BC$
+\end_inset
+
+ 为直径向同一侧做半圆, 过点 
+\begin_inset Formula $B$
+\end_inset
+
+ 做 
+\begin_inset Formula $AC$
+\end_inset
+
+ 的垂线交 
+\begin_inset Formula $AC$
+\end_inset
+
+ 上的半圆于点 
+\begin_inset Formula $W$
+\end_inset
+
+, 以 
+\begin_inset Formula $BW$
+\end_inset
+
+ 为直径的圆交 
+\begin_inset Formula $AB,BC$
+\end_inset
+
+ 上的半圆于点 
+\begin_inset Formula $U$
+\end_inset
+
+ 和 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ 则
+\end_layout
+
+\begin_layout Standard
+(1).
+ 
+\begin_inset Formula $W,U,A$
+\end_inset
+
+ 三点共线;
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $UV$
+\end_inset
+
+ 为 
+\begin_inset Formula $AB,BC$
+\end_inset
+
+ 上半圆的公切线;
+\end_layout
+
+\begin_layout Standard
+(3) 线段 
+\begin_inset Formula $BW$
+\end_inset
+
+ 与 
+\begin_inset Formula $UV$
+\end_inset
+
+ 的长相等且互相平分.
+\end_layout
+
+\begin_layout Standard
+6.
+ 证明以下定理 (来自 Apollonius 的圆锥曲线论 Book I 命题 33): 任给抛物线上两点 
+\begin_inset Formula $A,B$
+\end_inset
+
+, 在抛物线上另有两点 
+\begin_inset Formula $C,D$
+\end_inset
+
+ 满足 
+\begin_inset Formula $CD\parallel AB$
+\end_inset
+
+, 点 
+\begin_inset Formula $M$
+\end_inset
+
+ 为线段 
+\begin_inset Formula $AB$
+\end_inset
+
+ 的中点, 点 
+\begin_inset Formula $N$
+\end_inset
+
+ 为线段 
+\begin_inset Formula $CD$
+\end_inset
+
+ 的中点, 延长 
+\begin_inset Formula $MN$
+\end_inset
+
+ 交抛物线于点 
+\begin_inset Formula $X$
+\end_inset
+
+, 并延长至点 
+\begin_inset Formula $Y$
+\end_inset
+
+, 使得 
+\begin_inset Formula $XY=MX$
+\end_inset
+
+.
+ 则 
+\begin_inset Formula $YA$
+\end_inset
+
+ 与 
+\begin_inset Formula $YB$
+\end_inset
+
+ 为抛物线的切线.
+\end_layout
+
+\begin_layout Subsection
+Challenges for Experts
+\end_layout
+
+\begin_layout Standard
+3.
+ 给定两个半径不同的不交圆, 点 
+\begin_inset Formula $P$
+\end_inset
+
+ 为两个圆外任一点.
+ 以 
+\begin_inset Formula $P$
+\end_inset
+
+ 为中心画圆并包含给定的两个圆, 以这个大圆做反演变换.
+ 用欧式方法构造两个给定圆的反演圆并构造其公切线, 则这个公切线的反演圆过点 
+\begin_inset Formula $P$
+\end_inset
+
+ 且与给定两个圆都相切.
+\end_layout
+
+\begin_layout Standard
+4.
+ 给定三个互不相交的圆, 用尺规作图给出这三个圆的公切圆.
+\end_layout
+
+\begin_layout Section
+The End of Greek Mathematics
+\end_layout
+
+\begin_layout Subsection
+Hipparchus
+\end_layout
+
+\begin_layout Standard
+三角学之父的称号.
+\end_layout
+
+\begin_layout Subsection
+Menelaus
+\end_layout
+
+\begin_layout Standard
+梅涅劳斯定理.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Nicomachus
+\end_layout
+
+\begin_layout Standard
+尼科梅彻斯 Nicomachus 定理: 任何一个整数的立方都可以写成一串奇数之和.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diophantus
+\end_layout
+
+\begin_layout Standard
+代数学之父.
+\end_layout
+
+\begin_layout Subsection
+Pappus
+\end_layout
+
+\begin_layout Standard
+用 6 次梅涅劳斯定理证明帕布斯定理.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Hypatia
+\end_layout
+
+\begin_layout Subsection
+Conclusion
+\end_layout
+
+\begin_layout Section
+Early Medieval Number Theory
+\end_layout
+
+\begin_layout Subsection
+Sun Tsu
+\end_layout
+
+\begin_layout Standard
+韩信点兵.
+\end_layout
+
+\begin_layout Subsection
+Thabit Ibn-Qurra
+\end_layout
+
+\begin_layout Standard
+孪生素数.
+\end_layout
+
+\begin_layout Subsection
+Brahmagupta
+\end_layout
+
+\begin_layout Standard
+负数的运算规则, 线性丢番图方程的通解, 圆内接四边形面积公式.
+\end_layout
+
+\begin_layout Subsection
+Bhaskara
+\end_layout
+
+\begin_layout Section
+Algebra in the Early Middle Ages
+\end_layout
+
+\begin_layout Subsection
+Wang Hs'iao-t'ung
+\end_layout
+
+\begin_layout Subsection
+Al-Khwarizmi
+\end_layout
+
+\begin_layout Section
+Geometry in the Early Middle Ages
+\end_layout
+
+\begin_layout Subsection
+Tahbit Again
+\end_layout
+
+\begin_layout Standard
+推广毕达哥拉斯定理.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: 相似三角形证明.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Brahmagupta Again
+\end_layout
+
+\begin_layout Standard
+圆内接四边形面积公式, 一般凸四边形面积公式
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+有一个定理
+\end_layout
+
+\end_inset
+
+, 通常的海伦公式也叫 Archimede 公式.
+ 圆内接四边形的对角线长公式.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Khayyam and the Cubic
+\end_layout
+
+\begin_layout Subsection
+The Three Friends
+\end_layout
+
+\begin_layout Subsection
+The Positive Roots of the Cubic Equation
+\end_layout
+
+\begin_layout Standard
+用圆锥曲线的交点求三次方程的根.
+\end_layout
+
+\begin_layout Subsection
+The Rubaiyat
+\end_layout
+
+\begin_layout Section
+The Later Middle Ages
+\end_layout
+
+\begin_layout Subsection
+Fibonacci and the Rabbits
+\end_layout
+
+\begin_layout Standard
+Fibonacci引入了阿拉伯数字.
+\end_layout
+
+\begin_layout Subsection
+De Moivre's Formula
+\end_layout
+
+\begin_layout Standard
+Fibonacci数列的通项公式.
+\end_layout
+
+\begin_layout Subsection
+The Liber Quadratorum
+\end_layout
+
+\begin_layout Standard
+求解两个丢番图方程.
+\end_layout
+
+\begin_layout Subsection
+The Infinite
+\end_layout
+
+\begin_layout Standard
+调和级数的发散性.
+\end_layout
+
+\begin_layout Section
+Modern Mathematical Notation
+\end_layout
+
+\begin_layout Standard
+现代数学符号出现, 其中包括幂, 加减, 等号的出现历史.
+ 后面给了球面三角形的面积公式.
+\end_layout
+
+\begin_layout Section
+The Secret of the Cubic
+\end_layout
+
+\begin_layout Standard
+关于三次方程求根公式的历史.
+\end_layout
+
+\begin_layout Subsection
+Tartaglia
+\end_layout
+
+\begin_layout Subsection
+Cardano
+\end_layout
+
+\begin_layout Subsection
+Ferrari
+\end_layout
+
+\begin_layout Subsection
+Vi
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+`{e}
+\end_layout
+
+\end_inset
+
+te
+\end_layout
+
+\begin_layout Standard
+Vi
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+`{e}
+\end_layout
+
+\end_inset
+
+te 用三角函数求解三次方程; 用尺规作图做出三个圆的公切圆; 发现了三角函数的和差化积公式.
+\end_layout
+
+\begin_layout Subsection
+Challenges for Experts
+\end_layout
+
+\begin_layout Standard
+1.
+ 证明:
+\begin_inset Formula 
+\[
+\frac{\sin x}{2^{n}\sin\frac{x}{2^{n}}}=\left(\cos\frac{x}{2}\right)\left(\cos\frac{x}{2^{2}}\right)\left(\cos\frac{x}{2^{3}}\right)\cdots\left(\cos\frac{x}{2^{n}}\right),
+\]
+
+\end_inset
+
+从而
+\begin_inset Formula 
+\[
+\frac{\sin x}{x}=\prod_{k=1}^{\infty}\cos\frac{x}{2^{k}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 证明 Vi
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+`{e}
+\end_layout
+
+\end_inset
+
+te 公式: 设 
+\begin_inset Formula $a_{1}=\sqrt{1/2}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n+1}=\sqrt{(1+a_{n})/2}$
+\end_inset
+
+, 则有
+\begin_inset Formula 
+\[
+\prod_{n=1}^{\infty}a_{n}=\frac{2}{\pi}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Secret Revealed
+\end_layout
+
+\begin_layout Subsection
+The Cubic
+\end_layout
+
+\begin_layout Standard
+三次方程求根公式的推导.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Quartic
+\end_layout
+
+\begin_layout Standard
+四次方程求根公式的推导.
+\end_layout
+
+\begin_layout Subsection
+The Quintic?
+\end_layout
+
+\begin_layout Standard
+五次方程没有求根公式.
+\end_layout
+
+\begin_layout Subsection
+A Recent Application of the Cubic Formula
+\end_layout
+
+\begin_layout Standard
+Wild, Roy.
+ "On the number of primitive Pythagorean triangles with area less than n."
+ Pacific Journal of Mathematics 5.1 (1955): 85-91.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+文献已下载.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A New Calculating Device
+\end_layout
+
+\begin_layout Standard
+Napier的对数.
+\end_layout
+
+\begin_layout Section
+Mathematics and Astronomy
+\end_layout
+
+\begin_layout Subsection
+Galileo
+\end_layout
+
+\begin_layout Standard
+关于两门新科学的对话有关的日心说.
+\end_layout
+
+\begin_layout Subsection
+Kepler
+\end_layout
+
+\begin_layout Standard
+开普勒三大定律.
+\end_layout
+
+\begin_layout Section
+The Seventeenth Century
+\end_layout
+
+\begin_layout Subsection
+Desargues
+\end_layout
+
+\begin_layout Standard
+笛沙格定理
+\end_layout
+
+\begin_layout Subsection
+Descartes
+\end_layout
+
+\begin_layout Subsection
+Fermat
+\end_layout
+
+\begin_layout Standard
+用归纳法证明 Fermat 小定理; Fermat 大定理.
+\end_layout
+
+\begin_layout Section
+Pascal
+\end_layout
+
+\begin_layout Subsection
+A Madman?
+\end_layout
+
+\begin_layout Standard
+Bell 等人对 Pascal 的负面评价.
+\end_layout
+
+\begin_layout Subsection
+Before November 23, 1654
+\end_layout
+
+\begin_layout Standard
+Pascal 定理; 一道概率问题
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: 待整理出来的一个小型概率问题
+\end_layout
+
+\end_inset
+
+; Pascal 三角与组合数.
+\end_layout
+
+\begin_layout Subsection
+November 23, 1654
+\end_layout
+
+\begin_layout Standard
+著名的 Pascal 赌注.
+\end_layout
+
+\begin_layout Subsection
+The Real Madman
+\end_layout
+
+\begin_layout Subsection
+Challenges for Experts
+\end_layout
+
+\begin_layout Standard
+3.
+ Pascal 定理的证明.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: 用梅涅劳斯定理.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Seventeenth Century II
+\end_layout
+
+\begin_layout Subsection
+Torricelli
+\end_layout
+
+\begin_layout Standard
+证明了 
+\begin_inset Formula $1/x$
+\end_inset
+
+ 在 
+\begin_inset Formula $[1,\infty)$
+\end_inset
+
+ 上与 
+\begin_inset Formula $x$
+\end_inset
+
+ 轴围成的面积无限, 但绕 
+\begin_inset Formula $x$
+\end_inset
+
+ 轴旋转的体积有限.
+\end_layout
+
+\begin_layout Standard
+旋轮线(cycloid)所围成的面积是轮子面积的3倍.
+\end_layout
+
+\begin_layout Standard
+三角形的Fermat点.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: 整理.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Wallis' Expression for 
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wallis公式:
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}2\frac{2^{2}4^{2}\cdots(2n)^{2}}{3^{2}5^{2}\cdots(2n-1)^{2}(2n+1)}=\pi.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+用两个相似而不全同的三角形的存在性证明了平行公设.
+\end_layout
+
+\begin_layout Subsection
+Newton
+\end_layout
+
+\begin_layout Subsection
+The Law of Gravity
+\end_layout
+
+\begin_layout Subsection
+The Cows in the Meadow
+\end_layout
+
+\begin_layout Subsection
+Newton's Modesty
+\end_layout
+
+\begin_layout Section
+Leibniz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\frac{2}{n(n+1)}=\sum_{n=1}^{\infty}2\left(\frac{1}{n}-\frac{1}{n+1}\right)=2(1+0)=2,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\frac{2}{n(n+1)}=\sum_{n=1}^{\infty}2\left(\frac{n+1}{n}-\frac{n+2}{n+1}\right)=2\left(2-\frac{3}{2}+\frac{3}{2}-\frac{4}{3}+\frac{4}{3}-\cdots\right)=2(2+0)=4,
+\]
+
+\end_inset
+
+以上哪一个计算是正确的, 为什么?
+\end_layout
+
+\begin_layout Section
+The Eighteenth Century
+\end_layout
+
+\begin_layout Subsection
+De Moivre
+\end_layout
+
+\begin_layout Standard
+De Moivre公式; Fibonacci数列的通项公式; Stirling公式.
+\end_layout
+
+\begin_layout Subsection
+Euler
+\end_layout
+
+\begin_layout Standard
+Euler公式
+\begin_inset Formula $V+F-E=2$
+\end_inset
+
+; 
+\begin_inset Formula $\ue^{\ui\pi}=-1$
+\end_inset
+
+; 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\frac{1}{n^{2}}=\frac{\pi^{2}}{6};
+\]
+
+\end_inset
+
+每个偶完全数具有形式
+\begin_inset Formula $2^{n-1}(2^{n}-1)$
+\end_inset
+
+, 其中 
+\begin_inset Formula $2^{n}-1$
+\end_inset
+
+ 为素数; Euler函数
+\begin_inset Formula $\phi(n)$
+\end_inset
+
+; 证明Fermat数
+\begin_inset Formula $2^{2^{n}}+1$
+\end_inset
+
+ 不全是素数; Euler线
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: 整理证明过程
+\end_layout
+
+\end_inset
+
+; 为J.L.
+ Lagrange证明任何自然数可表示为四平方数之和, 提供两个引理.
+\end_layout
+
+\begin_layout Standard
+引理A: 若 
+\begin_inset Formula 
+\begin{align*}
+p=ae+bf+cg+dh,\\
+q=af-be+ch-dg,\\
+r=ag-bh-ce+df,\\
+s=ah+bg-cf-de,
+\end{align*}
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+(a^{2}+b^{2}+c^{2}+d^{2})(e^{2}+f^{2}+g^{2}+h^{2})=p^{2}+q^{2}+r^{2}+s^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+引理B.
+ 对于任意的奇素数
+\begin_inset Formula $p$
+\end_inset
+
+, 存在整数
+\begin_inset Formula $m$
+\end_inset
+
+, 使得
+\begin_inset Formula $0<m<p$
+\end_inset
+
+与
+\begin_inset Formula $mp$
+\end_inset
+
+都是四平方数.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: 整理证明
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Laplace
+\end_layout
+
+\begin_layout Subsection
+Legendre
+\end_layout
+
+\begin_layout Standard
+平行公设的证明; 
+\begin_inset Formula $x^{5}+y^{5}=z^{5}$
+\end_inset
+
+没有正整数解.
+\end_layout
+
+\begin_layout Subsection
+Exercise
+\end_layout
+
+\begin_layout Standard
+5.
+ Euler猜想
+\begin_inset Formula $a^{5}+b^{5}+c^{5}+d^{5}=e^{5}$
+\end_inset
+
+没有正整数解.
+ 1966年, L.
+ Lander和T.
+ Parkin得到了一个反例: 
+\begin_inset Formula $a=27$
+\end_inset
+
+, 
+\begin_inset Formula $b=84$
+\end_inset
+
+, 
+\begin_inset Formula $c=110$
+\end_inset
+
+, 
+\begin_inset Formula $d=135$
+\end_inset
+
+, 与 
+\begin_inset Formula $e=144$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Challenges for Experts
+\end_layout
+
+\begin_layout Standard
+1.
+ 设
+\begin_inset Formula 
+\[
+g(n)=\frac{\ue^{n}n!}{n^{n}\sqrt{n}},
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+\frac{g^{2}(n)}{g(2n)}=\sqrt{\frac{(4n+2)f(n)}{n}},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula 
+\[
+f(n)\coloneqq2\cdot\frac{2^{2}4^{2}\cdots(2n)^{2}}{3^{2}5^{2}\cdots(2n-1)^{2}(2n+1)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 继续上一问题, 取
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, 并假设
+\begin_inset Formula $g(n)$
+\end_inset
+
+有有限非零极限, 证明
+\begin_inset Formula 
+\[
+\lim_{n\to\infty}g(n)=\sqrt{2\pi}.
+\]
+
+\end_inset
+
+从而给出Stirling公式.
+\end_layout
+
+\begin_layout Standard
+3.
+ 证明上一问, 当
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+时, 
+\begin_inset Formula $g(n)$
+\end_inset
+
+有有限非零极限.
+\end_layout
+
+\begin_layout Section
+Lagrange
+\end_layout
+
+\begin_layout Subsection
+Joseph and Ren
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+e
+\end_layout
+
+\begin_layout Subsection
+Some of Lagrange's Triumphs
+\end_layout
+
+\begin_layout Standard
+John Wilson定理: 如果
+\begin_inset Formula $p$
+\end_inset
+
+是素数, 则
+\begin_inset Formula $p\mid(p-1)!+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+若
+\begin_inset Formula $R$
+\end_inset
+
+为给定正的非平方数, 则
+\begin_inset Formula $x^{2}-Ry^{2}=1$
+\end_inset
+
+有正整数解.
+\end_layout
+
+\begin_layout Standard
+Diophantine方程
+\begin_inset Formula 
+\[
+Ax^{2}+Bxy+Cy^{2}+Dx+Ey=F
+\]
+
+\end_inset
+
+的first complete solution.
+\end_layout
+
+\begin_layout Standard
+证明任何自然数是四平方数之和.
+\end_layout
+
+\begin_layout Subsection
+Four Square Theorem
+\end_layout
+
+\begin_layout Standard
+Lemma C: 若 
+\begin_inset Formula $p$
+\end_inset
+
+ 为奇素数, 
+\begin_inset Formula $m$
+\end_inset
+
+是满足
+\begin_inset Formula $0<m<p$
+\end_inset
+
+和
+\begin_inset Formula $mp=a^{2}+b^{2}+c^{2}+d^{2}$
+\end_inset
+
+的最小正整数, 其中
+\begin_inset Formula $a,b,c,d\in\NN_{+}$
+\end_inset
+
+, 则 
+\begin_inset Formula $m$
+\end_inset
+
+ 是奇数.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: 证明过程
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+证明四平方数定理.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+整理证明过程
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Exercise
+\end_layout
+
+\begin_layout Standard
+5.
+ 设
+\begin_inset Formula $x=\frac{m-m^{3}}{6}$
+\end_inset
+
+, 其中
+\begin_inset Formula $m$
+\end_inset
+
+为某整数.
+ 证明
+\begin_inset Formula $x$
+\end_inset
+
+也是整数, 并验证
+\begin_inset Formula 
+\[
+m=m^{3}+(x+1)^{3}+(x-1)^{3}+(-x)^{3}+(-x)^{3}
+\]
+
+\end_inset
+
+为五立方数之和.
+\end_layout
+
+\begin_layout Section
+Nineteenth-Century Algebra
+\end_layout
+
+\begin_layout Standard
+代数方法不能用于解决五次方程; 矩阵代数的发展; 哈密尔顿的四元数.
+\end_layout
+
+\begin_layout Subsection
+Exercise
+\end_layout
+
+\begin_layout Standard
+7.
+ 找出沿着一个十二面体的边行走的路径，使得路径经过每个顶点一次且仅一次。(Hamilton回路问题)
+\end_layout
+
+\begin_layout Section
+Nineteenth-Century Analysis
+\end_layout
+
+\begin_layout Subsection
+Cauchy
+\end_layout
+
+\begin_layout Subsection
+Weierstrass
+\end_layout
+
+\begin_layout Subsection
+Exercise
+\end_layout
+
+\begin_layout Standard
+1.
+ 证明Cauchy的如下结果: 若
+\begin_inset Formula 
+\[
+a_{1}\ge a_{2}\ge a_{3}\ge\cdots,
+\]
+
+\end_inset
+
+则级数
+\begin_inset Formula 
+\[
+\sum_{n}a_{n}
+\]
+
+\end_inset
+
+收敛当且仅当级数
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}2^{n-1}a_{n}
+\]
+
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+2.
+ 根据以上结果证明
+\begin_inset Formula 
+\[
+\sum_{n=2}^{\infty}\frac{1}{n(\ln n)^{p}}
+\]
+
+\end_inset
+
+收敛当且仅当
+\begin_inset Formula $p>1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Nineteenth-Century Geometry
+\end_layout
+
+\begin_layout Subsection
+The Golden Age of Euclidean Geometry
+\end_layout
+
+\begin_layout Standard
+Gauss给出了正17边形的尺规作图; Louis Poinsot 发现了 dodecahedron, 什么是 icosahedron? Charles-Jul
+ien Brianchon和Jean Victor Poncelet给出了九点圆; Pierre Germinal Dandelin: 圆锥曲线截得的椭圆内接球
+与外接球分别切椭圆平面于两个焦点处; Karl Wilhelm Feuerbach证明了九点圆圆心位于Euler线上, 且九点圆与内接圆相切;
+ Pierre Wantzel倍立方与三等分
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+角不可能尺规作图给出, 并给出了正
+\begin_inset Formula $n$
+\end_inset
+
+边形能被尺规作图的充要条件.
+\end_layout
+
+\begin_layout Subsection
+Hyperbolic Geometry
+\end_layout
+
+\begin_layout Subsection
+Elliptic Geometry
+\end_layout
+
+\begin_layout Standard
+Riemann的工作
+\end_layout
+
+\begin_layout Subsection
+Which Geometry is True?
+\end_layout
+
+\begin_layout Section
+Nineteenth-Century Number Theory
+\end_layout
+
+\begin_layout Subsection
+Gauss and Cauchy
+\end_layout
+
+\begin_layout Standard
+Fermat的猜想: 任何正整数可以表示为
+\begin_inset Formula $m+2$
+\end_inset
+
+个
+\begin_inset Formula $(m+2)$
+\end_inset
+
+-角形数之和.
+\end_layout
+
+\begin_layout Subsection
+Dirichlet
+\end_layout
+
+\begin_layout Standard
+解析数论中的Dirichlet定理.
+\end_layout
+
+\begin_layout Subsection
+Sylvester
+\end_layout
+
+\begin_layout Subsection
+Hadamard and de la Vall
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+e-Poussin
+\end_layout
+
+\begin_layout Standard
+素数定理的独立发现.
+\end_layout
+
+\begin_layout Subsection
+Lucas
+\end_layout
+
+\begin_layout Section
+Cantor
+\end_layout
+
+\begin_layout Standard
+集合论与超限无穷.
+\end_layout
+
+\begin_layout Section
+Foundations
+\end_layout
+
+\begin_layout Standard
+在二十世纪，有大量的具体数学和实践数学研究。统计学蓬勃发展，计算机证明了四色定理，数论学家能分解100位数字的整数。另一方面，二十世纪的许多数学研究具有前所未有
+的抽象程度。研究的不再是欧几里得平面，而是它的抽象，如向量空间和拓扑空间。研究的不再是特定的群，而是整个“范畴”中的群。二十世纪的许多数学研究可以被归类为哲学性
+的。集合论学家试图找到所有数学的终极基础。他们还探索了无限。基础领域的研究人员审视了人类理性本身的极限，库尔特·哥德尔（1906-1978）证明了一些数学陈述既
+不能证明也不能证否。
+\end_layout
+
+\begin_layout Subsection
+Platonism
+\end_layout
+
+\begin_layout Standard
+接受选择公理.
+\end_layout
+
+\begin_layout Subsection
+Formalism
+\end_layout
+
+\begin_layout Standard
+符号的游戏.
+\end_layout
+
+\begin_layout Subsection
+Intuitionism
+\end_layout
+
+\begin_layout Standard
+拒绝反证法和无穷的概念.
+\end_layout
+
+\begin_layout Section
+Twentieth-Century Number Theory
+\end_layout
+
+\begin_layout Subsection
+The Backet Equation
+\end_layout
+
+\begin_layout Standard
+研究丢番图方程
+\begin_inset Formula $x^{2}+k=y^{3},$
+\end_inset
+
+其中
+\begin_inset Formula $k\in\ZZ\setminus\left\{ 0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Hilbert's Tenth Problem
+\end_layout
+
+\begin_layout Subsection
+Computational Advances
+\end_layout
+
+\begin_layout Subsection
+Congruent Numbers
+\end_layout
+
+\begin_layout Subsection
+Fermat's Last Theorem
+\end_layout
+
+\begin_layout Subsection
+Angles in Pythagorean Triangles
+\end_layout
+
+\begin_layout Subsection
+Partitions
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
