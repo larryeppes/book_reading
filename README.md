@@ -7,6 +7,7 @@
 - 课外读物
   - A Few Classic Unknowns in Mathematics
   - UTM Mathematics: A Concise History and Philosophy Anglin
+  - 程序员延寿指南
 - 软件
   - mma
     - Getting Started with Mathematica

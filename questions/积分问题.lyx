@@ -363,6 +363,137 @@ Prove that
 \end_layout
 
 \begin_layout Subsection
+设
+\begin_inset Formula $m\ge1$
+\end_inset
+
+, 求
+\begin_inset Formula $\int_{0}^{\infty}\frac{\sin^{m}t}{t^{m}}\ud t$
+\end_inset
+
+的值
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $f(x)=\sin^{m}x$
+\end_inset
+
+, 
+\begin_inset Formula $m>1$
+\end_inset
+
+, 则由分部积分有
+\begin_inset Formula 
+\[
+\int_{0}^{\infty}\frac{f(x)}{x^{m}}\ud x=\frac{1}{m-1}\int_{0}^{\infty}\frac{f'(x)}{x^{m-1}}\ud x=\cdots=\frac{1}{(m-1)!}\int_{0}^{\infty}\frac{f^{(m-1)}(x)}{x}\ud x.
+\]
+
+\end_inset
+
+注意到
+\begin_inset Formula 
+\begin{align}
+\sin^{2n}x & =\frac{1}{2^{2n-1}}\sum_{k=0}^{n-1}(-1)^{n-k}\binom{2n}{k}\cos\left((2n-2k)x\right)+\frac{1}{2^{2n}}\binom{2n}{n},\label{eq:sin2nx}\\
+\sin^{2n-1}x & =\frac{1}{2^{2n-2}}\sum_{k=0}^{n-1}(-1)^{n-k-1}\binom{2n-1}{k}\sin\left((2n-2k-1)x\right).\label{eq:sin2n1x}
+\end{align}
+
+\end_inset
+
+其中, 以上两式的证明可以通过Euler公式与De Moivre公式给出, 比如
+\begin_inset Formula 
+\begin{align*}
+\sin^{m}x & =\left(\frac{\ue^{\ui x}-\ue^{-\ui x}}{2\ui}\right)^{m}=\frac{1}{2^{m}\ui^{m}}\sum_{k=0}^{m}(-1)^{m-k}\binom{m}{k}\ue^{\ui kx}\ue^{-\ui(m-k)x}\\
+ & =\frac{1}{2^{m}}\mathrm{Re}\left(\frac{1}{\ui^{m}}\sum_{k=0}^{m}(-1)^{m-k}\binom{m}{k}\ue^{\ui(-m+2k)x}\right)
+\end{align*}
+
+\end_inset
+
+当
+\begin_inset Formula $m=2n$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\begin{align*}
+\sin^{2n}x & =\frac{1}{2^{2n}}\sum_{k=0}^{2n}(-1)^{n-k}\binom{2n}{k}\cos\left((2n-2k)x\right)\\
+ & =\frac{1}{2^{2n-1}}\sum_{k=0}^{n-1}(-1)^{n-k}\binom{2n}{k}\cos\left((2n-2k)x\right)+\frac{1}{2^{2n}}\binom{2n}{n};
+\end{align*}
+
+\end_inset
+
+当
+\begin_inset Formula $m=2n-1$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\begin{align*}
+\sin^{2n-1}x & =\frac{(-1)^{n-1}}{2^{2n-1}}\mathrm{Im}\left(\sum_{k=0}^{2n-1}(-1)^{2n-k-1}\binom{2n-1}{k}\ue^{\ui(-2n+1+2k)x}\right)\\
+ & =\frac{1}{2^{2n-2}}\sum_{k=0}^{n-1}(-1)^{n-k-1}\binom{2n-1}{k}\sin\left((2n-2k-1)x\right).
+\end{align*}
+
+\end_inset
+
+分别对(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sin2nx"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sin2n1x"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)求
+\begin_inset Formula $2n-1$
+\end_inset
+
+次与
+\begin_inset Formula $2n-2$
+\end_inset
+
+次导, 得到
+\begin_inset Formula 
+\begin{align*}
+\left(\sin^{2n}x\right)^{(2n-1)} & =\frac{1}{2^{2n-1}}\sum_{k=0}^{n}(-1)^{n-k}\binom{2n}{k}(2n-2k)^{2n-1}(-1)^{n}\sin\left((2n-2k)x\right),\\
+\left(\sin^{2n-1}x\right)^{(2n-2)} & =\frac{1}{2^{2n-2}}\sum_{k=0}^{n-1}(-1)^{n-k-1}\binom{2n-1}{k}(-1)^{n-1}(2n-2k-1)^{2n-2}\sin\left((2n-2k-1)x\right).
+\end{align*}
+
+\end_inset
+
+也即
+\begin_inset Formula 
+\[
+\left(\sin^{m}x\right)^{(m-1)}=\frac{1}{2^{m-1}}\sum_{k=0}^{\lfloor\frac{m}{2}\rfloor}(-1)^{k}\binom{m}{k}(m-2k)^{m-1}\sin\left((m-2k)x\right).
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{(m-1)!}\int_{0}^{\infty}\frac{f^{(m-1)}(x)}{x}\ud x & =\frac{1}{(m-1)!}\int_{0}^{\infty}\frac{1}{2^{m-1}}\sum_{k=0}^{\lfloor\frac{m}{2}\rfloor}(-1)^{k}\binom{m}{k}(m-2k)^{m-1}\frac{\sin\left((m-2k)x\right)}{x}\ud x\\
+ & =\frac{1}{(m-1)!}\frac{1}{2^{m-1}}\sum_{k=0}^{\lfloor\frac{m}{2}\rfloor}(-1)^{k}\binom{m}{k}(m-2k)^{m-1}\frac{\pi}{2}\\
+ & =\frac{1}{(m-1)!}\frac{\pi}{2^{m}}\sum_{k=0}^{\lfloor\frac{m}{2}\rfloor}(-1)^{k}\binom{m}{k}(m-2k)^{m-1}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Bessel函数相关
 \end_layout
 
@@ -437,6 +568,33 @@ J_{0}(y)=\frac{2}{\pi}\int_{0}^{\pi/2}\cos\left(y\cos x\right)\ud x
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

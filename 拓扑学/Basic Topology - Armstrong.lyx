@@ -284,7 +284,11 @@ Euler定理
 \begin_inset Formula $P$
 \end_inset
 
-上任何由直线段构成的圈, 把
+上任何由直线段构成的圈(不一定非是
+\begin_inset Formula $P$
+\end_inset
+
+的棱构成的圈), 把
 \begin_inset Formula $P$
 \end_inset
 
@@ -333,6 +337,19 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Euler定理的粗糙证明.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -465,7 +482,7 @@ TODO: proof.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename X:/book_reading/拓扑学/Basic Topology - Armstrong/已粘贴1.png
+	filename Basic Topology - Armstrong/已粘贴1.png
 	width 8cm
 
 \end_inset
